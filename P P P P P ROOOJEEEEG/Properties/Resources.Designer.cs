@@ -83,6 +83,16 @@ namespace RUSUNAWAAA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Coming_soon {
+            get {
+                object obj = ResourceManager.GetObject("Coming soon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap home_trend_up {
             get {
                 object obj = ResourceManager.GetObject("home-trend-up", resourceCulture);
@@ -103,6 +113,16 @@ namespace RUSUNAWAAA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Kaming_sun {
+            get {
+                object obj = ResourceManager.GetObject("Kaming_sun", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap kontak {
             get {
                 object obj = ResourceManager.GetObject("kontak", resourceCulture);
@@ -116,6 +136,16 @@ namespace RUSUNAWAAA.Properties {
         internal static System.Drawing.Bitmap laporan {
             get {
                 object obj = ResourceManager.GetObject("laporan", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap listharga {
+            get {
+                object obj = ResourceManager.GetObject("listharga", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,6 +223,26 @@ namespace RUSUNAWAAA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Rusun_Putri {
+            get {
+                object obj = ResourceManager.GetObject("Rusun_Putri", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rusunawa_Putra {
+            get {
+                object obj = ResourceManager.GetObject("Rusunawa_Putra", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap setting_2 {
             get {
                 object obj = ResourceManager.GetObject("setting-2", resourceCulture);
@@ -246,6 +296,16 @@ namespace RUSUNAWAAA.Properties {
         internal static System.Drawing.Bitmap Virtual_tour {
             get {
                 object obj = ResourceManager.GetObject("Virtual_tour", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2025_05_13_at_23_25_21_8b528e3b_3 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2025-05-13 at 23.25.21_8b528e3b 3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

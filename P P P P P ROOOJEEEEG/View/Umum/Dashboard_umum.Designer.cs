@@ -55,8 +55,11 @@
             pictureBox3 = new PictureBox();
             label1 = new Label();
             panel7 = new Panel();
+            button5 = new Button();
             panel8 = new Panel();
             panel10 = new Panel();
+            panel6 = new Panel();
+            pictureBox6 = new PictureBox();
             label34 = new Label();
             label33 = new Label();
             label32 = new Label();
@@ -104,7 +107,6 @@
             panel17 = new Panel();
             label14 = new Label();
             label6 = new Label();
-            button5 = new Button();
             panel1.SuspendLayout();
             panel29.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
@@ -124,6 +126,8 @@
             panel7.SuspendLayout();
             panel8.SuspendLayout();
             panel10.SuspendLayout();
+            panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel25.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
             panel26.SuspendLayout();
@@ -424,6 +428,21 @@
             panel7.Size = new Size(1182, 70);
             panel7.TabIndex = 2;
             // 
+            // button5
+            // 
+            button5.BackColor = Color.White;
+            button5.Cursor = Cursors.Hand;
+            button5.FlatAppearance.BorderSize = 0;
+            button5.FlatStyle = FlatStyle.Flat;
+            button5.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button5.ForeColor = Color.Black;
+            button5.Location = new Point(1066, 14);
+            button5.Name = "button5";
+            button5.Size = new Size(91, 29);
+            button5.TabIndex = 2;
+            button5.Text = "Masuk";
+            button5.UseVisualStyleBackColor = false;
+            // 
             // panel8
             // 
             panel8.Controls.Add(panel10);
@@ -438,6 +457,7 @@
             // panel10
             // 
             panel10.BackColor = Color.FromArgb(37, 39, 48);
+            panel10.Controls.Add(panel6);
             panel10.Controls.Add(label34);
             panel10.Controls.Add(label33);
             panel10.Controls.Add(label32);
@@ -451,38 +471,57 @@
             panel10.Size = new Size(1165, 362);
             panel10.TabIndex = 6;
             // 
+            // panel6
+            // 
+            panel6.BackColor = Color.FromArgb(23, 24, 30);
+            panel6.Controls.Add(pictureBox6);
+            panel6.Location = new Point(878, 43);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(250, 303);
+            panel6.TabIndex = 12;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Image = Properties.Resources.Kaming_sun;
+            pictureBox6.Location = new Point(3, 0);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(244, 300);
+            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox6.TabIndex = 0;
+            pictureBox6.TabStop = false;
+            // 
             // label34
             // 
             label34.AutoSize = true;
             label34.Font = new Font("Inter", 10F, FontStyle.Bold);
             label34.ForeColor = Color.White;
-            label34.Location = new Point(946, 16);
+            label34.Location = new Point(910, 11);
             label34.Name = "label34";
-            label34.Size = new Size(109, 24);
+            label34.Size = new Size(183, 24);
             label34.TabIndex = 11;
-            label34.Text = "Virtual Tour";
+            label34.Text = "Fitur belum Tersedia";
             // 
             // label33
             // 
             label33.AutoSize = true;
             label33.Font = new Font("Inter", 10F, FontStyle.Bold);
             label33.ForeColor = Color.White;
-            label33.Location = new Point(376, 16);
+            label33.Location = new Point(361, 9);
             label33.Name = "label33";
-            label33.Size = new Size(109, 24);
+            label33.Size = new Size(146, 24);
             label33.TabIndex = 10;
-            label33.Text = "Virtual Tour";
+            label33.Text = "Skor dan Ulasan";
             // 
             // label32
             // 
             label32.AutoSize = true;
             label32.Font = new Font("Inter", 10F, FontStyle.Bold);
             label32.ForeColor = Color.White;
-            label32.Location = new Point(664, 14);
+            label32.Location = new Point(643, 11);
             label32.Name = "label32";
-            label32.Size = new Size(109, 24);
+            label32.Size = new Size(145, 24);
             label32.TabIndex = 9;
-            label32.Text = "Virtual Tour";
+            label32.Text = "List Harga Sewa";
             // 
             // panel25
             // 
@@ -499,6 +538,7 @@
             // pictureBox13
             // 
             pictureBox13.ErrorImage = null;
+            pictureBox13.Image = Properties.Resources.listharga;
             pictureBox13.Location = new Point(14, 36);
             pictureBox13.Name = "pictureBox13";
             pictureBox13.Size = new Size(217, 97);
@@ -544,9 +584,9 @@
             button4.FlatStyle = FlatStyle.Flat;
             button4.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button4.ForeColor = Color.White;
-            button4.Location = new Point(28, 3);
+            button4.Location = new Point(0, 3);
             button4.Name = "button4";
-            button4.Size = new Size(166, 39);
+            button4.Size = new Size(217, 39);
             button4.TabIndex = 0;
             button4.Text = "Ajukan Sewa";
             button4.UseVisualStyleBackColor = false;
@@ -636,7 +676,7 @@
             label22.AutoSize = true;
             label22.Font = new Font("Inter", 10F, FontStyle.Bold);
             label22.ForeColor = Color.White;
-            label22.Location = new Point(78, 12);
+            label22.Location = new Point(92, 9);
             label22.Name = "label22";
             label22.Size = new Size(109, 24);
             label22.TabIndex = 6;
@@ -691,7 +731,7 @@
             label23.AutoSize = true;
             label23.Font = new Font("Inter", 9F, FontStyle.Bold);
             label23.ForeColor = Color.White;
-            label23.Location = new Point(62, 7);
+            label23.Location = new Point(92, 7);
             label23.Name = "label23";
             label23.Size = new Size(59, 22);
             label23.TabIndex = 8;
@@ -980,21 +1020,6 @@
             label6.TabIndex = 4;
             label6.Text = "Beranda Umum";
             // 
-            // button5
-            // 
-            button5.BackColor = Color.White;
-            button5.Cursor = Cursors.Hand;
-            button5.FlatAppearance.BorderSize = 0;
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button5.ForeColor = Color.Black;
-            button5.Location = new Point(1066, 14);
-            button5.Name = "button5";
-            button5.Size = new Size(91, 29);
-            button5.TabIndex = 2;
-            button5.Text = "Masuk";
-            button5.UseVisualStyleBackColor = false;
-            // 
             // Dashboard_umum
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -1036,6 +1061,8 @@
             panel8.PerformLayout();
             panel10.ResumeLayout(false);
             panel10.PerformLayout();
+            panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             panel25.ResumeLayout(false);
             panel25.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
@@ -1147,5 +1174,7 @@
         private Label label32;
         private Label label34;
         private Button button5;
+        private Panel panel6;
+        private PictureBox pictureBox6;
     }
 }

@@ -48,6 +48,7 @@
             label5 = new Label();
             pictureBox5 = new PictureBox();
             panel4 = new Panel();
+            panel6 = new Panel();
             label4 = new Label();
             pictureBox4 = new PictureBox();
             panel3 = new Panel();
@@ -57,8 +58,9 @@
             label2 = new Label();
             pictureBox3 = new PictureBox();
             label1 = new Label();
-            panel6 = new Panel();
+            panel10 = new Panel();
             panel8.SuspendLayout();
+            panel9.SuspendLayout();
             panel7.SuspendLayout();
             panel1.SuspendLayout();
             panel29.SuspendLayout();
@@ -91,10 +93,11 @@
             // panel9
             // 
             panel9.BackColor = Color.FromArgb(37, 39, 48);
+            panel9.Controls.Add(panel10);
             panel9.Location = new Point(5, 54);
             panel9.Name = "panel9";
             panel9.Padding = new Padding(50);
-            panel9.Size = new Size(1165, 635);
+            panel9.Size = new Size(1165, 662);
             panel9.TabIndex = 5;
             // 
             // label6
@@ -299,6 +302,14 @@
             panel4.Size = new Size(240, 50);
             panel4.TabIndex = 3;
             // 
+            // panel6
+            // 
+            panel6.BackColor = Color.White;
+            panel6.Location = new Point(-1, 0);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(4, 50);
+            panel6.TabIndex = 6;
+            // 
             // label4
             // 
             label4.AutoSize = true;
@@ -395,13 +406,14 @@
             label1.Text = "RUSAKITA";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // panel6
+            // panel10
             // 
-            panel6.BackColor = Color.White;
-            panel6.Location = new Point(-1, 0);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(4, 50);
-            panel6.TabIndex = 6;
+            panel10.BackColor = Color.FromArgb(23, 24, 29);
+            panel10.Cursor = Cursors.Hand;
+            panel10.Location = new Point(53, 13);
+            panel10.Name = "panel10";
+            panel10.Size = new Size(1059, 627);
+            panel10.TabIndex = 8;
             // 
             // SkorUlasan_Umum
             // 
@@ -417,6 +429,7 @@
             Text = "PengajuanSewa_Umum";
             panel8.ResumeLayout(false);
             panel8.PerformLayout();
+            panel9.ResumeLayout(false);
             panel7.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -477,5 +490,6 @@
         private PictureBox pictureBox3;
         private Label label1;
         private Panel panel6;
+        private Panel panel10;
     }
 }

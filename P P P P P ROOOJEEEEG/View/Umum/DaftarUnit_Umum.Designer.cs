@@ -46,6 +46,7 @@
             label4 = new Label();
             pictureBox4 = new PictureBox();
             panel3 = new Panel();
+            panel28 = new Panel();
             label3 = new Label();
             pictureBox2 = new PictureBox();
             panel2 = new Panel();
@@ -57,7 +58,6 @@
             panel8 = new Panel();
             panel9 = new Panel();
             label6 = new Label();
-            panel28 = new Panel();
             panel1.SuspendLayout();
             panel29.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
@@ -277,6 +277,14 @@
             panel3.Size = new Size(240, 50);
             panel3.TabIndex = 3;
             // 
+            // panel28
+            // 
+            panel28.BackColor = Color.White;
+            panel28.Location = new Point(-1, 0);
+            panel28.Name = "panel28";
+            panel28.Size = new Size(4, 50);
+            panel28.TabIndex = 5;
+            // 
             // label3
             // 
             label3.AutoSize = true;
@@ -381,7 +389,7 @@
             panel9.Location = new Point(5, 54);
             panel9.Name = "panel9";
             panel9.Padding = new Padding(50);
-            panel9.Size = new Size(1165, 635);
+            panel9.Size = new Size(1165, 662);
             panel9.TabIndex = 5;
             // 
             // label6
@@ -394,14 +402,6 @@
             label6.Size = new Size(327, 45);
             label6.TabIndex = 4;
             label6.Text = "Daftar Unit tersedia";
-            // 
-            // panel28
-            // 
-            panel28.BackColor = Color.White;
-            panel28.Location = new Point(-1, 0);
-            panel28.Name = "panel28";
-            panel28.Size = new Size(4, 50);
-            panel28.TabIndex = 5;
             // 
             // DaftarUnit_Umum
             // 

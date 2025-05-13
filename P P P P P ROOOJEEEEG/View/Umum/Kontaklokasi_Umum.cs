@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace RUSUNAWAAA.View.Umum
 {
-    public partial class Kontaklokasi_Umum: Form
+    public partial class Kontaklokasi_Umum : Form
     {
         public Kontaklokasi_Umum()
         {
             InitializeComponent();
+        }
+
+        private void panel13_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

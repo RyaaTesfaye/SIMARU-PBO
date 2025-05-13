@@ -38,6 +38,7 @@
             label26 = new Label();
             pictureBox16 = new PictureBox();
             panel22 = new Panel();
+            panel6 = new Panel();
             label13 = new Label();
             pictureBox10 = new PictureBox();
             panel21 = new Panel();
@@ -57,7 +58,6 @@
             label2 = new Label();
             pictureBox3 = new PictureBox();
             label1 = new Label();
-            panel6 = new Panel();
             panel8.SuspendLayout();
             panel7.SuspendLayout();
             panel1.SuspendLayout();
@@ -94,7 +94,7 @@
             panel9.Location = new Point(5, 54);
             panel9.Name = "panel9";
             panel9.Padding = new Padding(50);
-            panel9.Size = new Size(1165, 635);
+            panel9.Size = new Size(1165, 662);
             panel9.TabIndex = 5;
             // 
             // label6
@@ -192,6 +192,14 @@
             panel22.Name = "panel22";
             panel22.Size = new Size(240, 50);
             panel22.TabIndex = 7;
+            // 
+            // panel6
+            // 
+            panel6.BackColor = Color.White;
+            panel6.Location = new Point(-1, 0);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(4, 50);
+            panel6.TabIndex = 7;
             // 
             // label13
             // 
@@ -394,14 +402,6 @@
             label1.TabIndex = 0;
             label1.Text = "RUSAKITA";
             label1.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // panel6
-            // 
-            panel6.BackColor = Color.White;
-            panel6.Location = new Point(-1, 0);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(4, 50);
-            panel6.TabIndex = 7;
             // 
             // Tatatertib_Umum
             // 

@@ -35,6 +35,7 @@
             button5 = new Button();
             panel1 = new Panel();
             panel29 = new Panel();
+            panel6 = new Panel();
             label26 = new Label();
             pictureBox16 = new PictureBox();
             panel22 = new Panel();
@@ -57,8 +58,20 @@
             label2 = new Label();
             pictureBox3 = new PictureBox();
             label1 = new Label();
-            panel6 = new Panel();
+            panel10 = new Panel();
+            panel12 = new Panel();
+            panel13 = new Panel();
+            panel15 = new Panel();
+            pictureBox6 = new PictureBox();
+            pictureBox7 = new PictureBox();
+            label7 = new Label();
+            label8 = new Label();
+            label21 = new Label();
+            label9 = new Label();
+            linkLabel1 = new LinkLabel();
+            linkLabel2 = new LinkLabel();
             panel8.SuspendLayout();
+            panel9.SuspendLayout();
             panel7.SuspendLayout();
             panel1.SuspendLayout();
             panel29.SuspendLayout();
@@ -76,6 +89,10 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            panel10.SuspendLayout();
+            panel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             SuspendLayout();
             // 
             // panel8
@@ -91,10 +108,14 @@
             // panel9
             // 
             panel9.BackColor = Color.FromArgb(37, 39, 48);
+            panel9.Controls.Add(panel10);
+            panel9.Controls.Add(panel12);
+            panel9.Controls.Add(panel13);
+            panel9.Controls.Add(panel15);
             panel9.Location = new Point(5, 54);
             panel9.Name = "panel9";
             panel9.Padding = new Padding(50);
-            panel9.Size = new Size(1165, 635);
+            panel9.Size = new Size(1165, 662);
             panel9.TabIndex = 5;
             // 
             // label6
@@ -160,6 +181,14 @@
             panel29.Name = "panel29";
             panel29.Size = new Size(240, 50);
             panel29.TabIndex = 8;
+            // 
+            // panel6
+            // 
+            panel6.BackColor = Color.White;
+            panel6.Location = new Point(-1, 0);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(4, 50);
+            panel6.TabIndex = 7;
             // 
             // label26
             // 
@@ -395,13 +424,140 @@
             label1.Text = "RUSAKITA";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // panel6
+            // panel10
             // 
-            panel6.BackColor = Color.White;
-            panel6.Location = new Point(-1, 0);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(4, 50);
-            panel6.TabIndex = 7;
+            panel10.BackColor = Color.FromArgb(23, 24, 30);
+            panel10.Controls.Add(linkLabel1);
+            panel10.Controls.Add(label21);
+            panel10.Controls.Add(label7);
+            panel10.Controls.Add(pictureBox6);
+            panel10.Location = new Point(10, 350);
+            panel10.Name = "panel10";
+            panel10.Size = new Size(548, 300);
+            panel10.TabIndex = 10;
+            // 
+            // panel12
+            // 
+            panel12.BackColor = Color.FromArgb(23, 24, 30);
+            panel12.Location = new Point(607, 12);
+            panel12.Name = "panel12";
+            panel12.Size = new Size(548, 300);
+            panel12.TabIndex = 11;
+            // 
+            // panel13
+            // 
+            panel13.BackColor = Color.FromArgb(23, 24, 30);
+            panel13.Controls.Add(linkLabel2);
+            panel13.Controls.Add(label9);
+            panel13.Controls.Add(label8);
+            panel13.Controls.Add(pictureBox7);
+            panel13.Location = new Point(607, 350);
+            panel13.Name = "panel13";
+            panel13.Size = new Size(548, 300);
+            panel13.TabIndex = 9;
+            panel13.Paint += panel13_Paint;
+            // 
+            // panel15
+            // 
+            panel15.BackColor = Color.FromArgb(23, 24, 30);
+            panel15.Location = new Point(10, 12);
+            panel15.Name = "panel15";
+            panel15.Size = new Size(548, 300);
+            panel15.TabIndex = 12;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Image = Properties.Resources.Rusunawa_Putra;
+            pictureBox6.Location = new Point(17, 16);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(513, 210);
+            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox6.TabIndex = 6;
+            pictureBox6.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.Image = Properties.Resources.Rusun_Putri;
+            pictureBox7.Location = new Point(17, 16);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(513, 210);
+            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox7.TabIndex = 7;
+            pictureBox7.TabStop = false;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Inter", 10F, FontStyle.Bold);
+            label7.ForeColor = Color.White;
+            label7.Location = new Point(13, 236);
+            label7.Name = "label7";
+            label7.Size = new Size(151, 24);
+            label7.TabIndex = 7;
+            label7.Text = "Rusunawa  Putra";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Inter", 10F, FontStyle.Bold);
+            label8.ForeColor = Color.White;
+            label8.Location = new Point(13, 236);
+            label8.Name = "label8";
+            label8.Size = new Size(146, 24);
+            label8.TabIndex = 8;
+            label8.Text = "Rusunawa  Putri";
+            // 
+            // label21
+            // 
+            label21.AutoSize = true;
+            label21.BackColor = Color.Transparent;
+            label21.Font = new Font("Inter", 7.8F);
+            label21.ForeColor = Color.FromArgb(139, 140, 142);
+            label21.Location = new Point(13, 265);
+            label21.Name = "label21";
+            label21.Size = new Size(41, 18);
+            label21.TabIndex = 8;
+            label21.Text = "Link :";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.BackColor = Color.Transparent;
+            label9.Font = new Font("Inter", 7.8F);
+            label9.ForeColor = Color.FromArgb(139, 140, 142);
+            label9.Location = new Point(13, 265);
+            label9.Name = "label9";
+            label9.Size = new Size(45, 18);
+            label9.TabIndex = 9;
+            label9.Text = "Link : ";
+            // 
+            // linkLabel1
+            // 
+            linkLabel1.AutoSize = true;
+            linkLabel1.Font = new Font("Inter", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            linkLabel1.LinkArea = new LinkArea(0, 60);
+            linkLabel1.LinkColor = Color.FromArgb(60, 138, 255);
+            linkLabel1.Location = new Point(53, 265);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(309, 21);
+            linkLabel1.TabIndex = 9;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "https://maps.app.goo.gl/6akmR9Z8Py6W31Bm9";
+            linkLabel1.UseCompatibleTextRendering = true;
+            // 
+            // linkLabel2
+            // 
+            linkLabel2.AutoSize = true;
+            linkLabel2.Font = new Font("Inter", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            linkLabel2.LinkArea = new LinkArea(0, 60);
+            linkLabel2.LinkColor = Color.FromArgb(60, 138, 255);
+            linkLabel2.Location = new Point(53, 265);
+            linkLabel2.Name = "linkLabel2";
+            linkLabel2.Size = new Size(286, 21);
+            linkLabel2.TabIndex = 10;
+            linkLabel2.TabStop = true;
+            linkLabel2.Text = "https://maps.app.goo.gl/jQqwu4GraZ1rqFuj8";
+            linkLabel2.UseCompatibleTextRendering = true;
             // 
             // Kontaklokasi_Umum
             // 
@@ -417,6 +573,7 @@
             Text = "Kontaklokasi_Umum";
             panel8.ResumeLayout(false);
             panel8.PerformLayout();
+            panel9.ResumeLayout(false);
             panel7.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -442,6 +599,12 @@
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            panel10.ResumeLayout(false);
+            panel10.PerformLayout();
+            panel13.ResumeLayout(false);
+            panel13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ResumeLayout(false);
         }
 
@@ -477,5 +640,17 @@
         private PictureBox pictureBox3;
         private Label label1;
         private Panel panel6;
+        private Panel panel10;
+        private PictureBox pictureBox6;
+        private Panel panel12;
+        private Panel panel13;
+        private PictureBox pictureBox7;
+        private Panel panel15;
+        private Label label7;
+        private Label label8;
+        private LinkLabel linkLabel1;
+        private Label label21;
+        private Label label9;
+        private LinkLabel linkLabel2;
     }
 }

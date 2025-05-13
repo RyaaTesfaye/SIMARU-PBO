@@ -32,9 +32,9 @@ namespace RUSUNAWAAA.View.Umum
             UIhelper.MakePanelRound(panel25, 3);
             UIhelper.MakePanelRound(panel26, 3);
             UIhelper.MakeRoundedButton(button1, 3);
-            UIhelper.MakeRoundedButton(button5, 30);
-            UIhelper.MakeRoundedButton(button4, 30);
-            UIhelper.MakeRoundedButton(button3, 30);
+            UIhelper.MakeRoundedButton(button5, 3);
+            UIhelper.MakeRoundedButton(button4, 3);
+            UIhelper.MakeRoundedButton(button3, 3);
         }
 
         private void button3_Click(object sender, EventArgs e)
