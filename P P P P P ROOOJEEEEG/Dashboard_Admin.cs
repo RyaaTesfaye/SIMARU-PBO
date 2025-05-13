@@ -1,4 +1,5 @@
 using System.Drawing.Drawing2D;
+using System.Windows.Forms;
 using RUSUNAWAAA.Utils;
 
 namespace RUSUNAWAAA
@@ -21,6 +22,10 @@ namespace RUSUNAWAAA
             UIhelper.MakePanelRound(panel18, 20);
             UIhelper.MakePanelRound(panel19, 20);
             UIhelper.MakePanelRound(panel20, 20);
+            UIhelper.MakePanelRound(panel24, 20);
+            UIhelper.MakePanelRound(panel25, 3);
+            UIhelper.MakePanelRound(panel26, 3);
+            UIhelper.MakePanelRound(panel27, 3);
             UIhelper.MakeRoundedButton(button1, 3);
             UIhelper.MakeRoundedButton(button2, 3);
         }

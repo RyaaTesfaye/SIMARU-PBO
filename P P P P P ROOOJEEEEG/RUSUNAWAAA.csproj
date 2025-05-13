@@ -29,4 +29,11 @@
     </EmbeddedResource>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="View\Admin\" />
+    <Folder Include="View\Penyewa\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="View\Umum\" />
+  </ItemGroup>
+
 </Project>
