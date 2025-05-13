@@ -2,7 +2,7 @@ using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 using RUSUNAWAAA.Utils;
 
-namespace RUSUNAWAAA
+namespace RUSUNAWAAA.View.Admin
 {
     public partial class Dashboard_Admin : Form
     {

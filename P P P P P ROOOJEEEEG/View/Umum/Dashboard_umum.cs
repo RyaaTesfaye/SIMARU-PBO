@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace RUSUNAWAAA
+namespace RUSUNAWAAA.View.Umum
 {
     public partial class Dashboard_umum : Form
     {

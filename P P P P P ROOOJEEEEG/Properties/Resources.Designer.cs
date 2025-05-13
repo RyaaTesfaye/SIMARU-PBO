@@ -143,6 +143,16 @@ namespace RUSUNAWAAA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Nitro_Wallpaper_01_3840x2400 {
+            get {
+                object obj = ResourceManager.GetObject("Nitro_Wallpaper_01_3840x2400", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap notification {
             get {
                 object obj = ResourceManager.GetObject("notification", resourceCulture);
@@ -216,6 +226,16 @@ namespace RUSUNAWAAA.Properties {
         internal static System.Drawing.Bitmap user_cirlce_add {
             get {
                 object obj = ResourceManager.GetObject("user-cirlce-add", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_cirlce_add1 {
+            get {
+                object obj = ResourceManager.GetObject("user-cirlce-add1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
