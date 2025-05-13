@@ -1,6 +1,6 @@
 ﻿namespace RUSUNAWAAA.View.Umum
 {
-    partial class SkorUlasan_Umum
+    partial class PengajuanSewa_Umum
     {
         /// <summary>
         /// Required designer variable.
@@ -30,6 +30,7 @@
         {
             panel8 = new Panel();
             panel9 = new Panel();
+            panel10 = new Panel();
             label6 = new Label();
             panel7 = new Panel();
             button5 = new Button();
@@ -58,7 +59,6 @@
             label2 = new Label();
             pictureBox3 = new PictureBox();
             label1 = new Label();
-            panel10 = new Panel();
             panel8.SuspendLayout();
             panel9.SuspendLayout();
             panel7.SuspendLayout();
@@ -99,6 +99,15 @@
             panel9.Padding = new Padding(50);
             panel9.Size = new Size(1165, 662);
             panel9.TabIndex = 5;
+            // 
+            // panel10
+            // 
+            panel10.BackColor = Color.FromArgb(23, 24, 29);
+            panel10.Cursor = Cursors.Hand;
+            panel10.Location = new Point(53, 13);
+            panel10.Name = "panel10";
+            panel10.Size = new Size(1059, 627);
+            panel10.TabIndex = 8;
             // 
             // label6
             // 
@@ -406,16 +415,7 @@
             label1.Text = "RUSAKITA";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // panel10
-            // 
-            panel10.BackColor = Color.FromArgb(23, 24, 29);
-            panel10.Cursor = Cursors.Hand;
-            panel10.Location = new Point(53, 13);
-            panel10.Name = "panel10";
-            panel10.Size = new Size(1059, 627);
-            panel10.TabIndex = 8;
-            // 
-            // SkorUlasan_Umum
+            // PengajuanSewa_Umum
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -424,7 +424,7 @@
             Controls.Add(panel8);
             Controls.Add(panel7);
             Controls.Add(panel1);
-            Name = "SkorUlasan_Umum";
+            Name = "PengajuanSewa_Umum";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "PengajuanSewa_Umum";
             panel8.ResumeLayout(false);

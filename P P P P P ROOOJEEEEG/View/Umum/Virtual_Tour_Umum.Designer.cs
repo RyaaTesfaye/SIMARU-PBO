@@ -493,7 +493,7 @@
             // 
             // pictureBox11
             // 
-            pictureBox11.Image = Properties.Resources.Icon;
+            pictureBox11.Image = Properties.Resources.Kiri;
             pictureBox11.Location = new Point(48, 281);
             pictureBox11.Name = "pictureBox11";
             pictureBox11.Size = new Size(50, 50);
@@ -503,8 +503,8 @@
             // 
             // pictureBox12
             // 
-            pictureBox12.Image = Properties.Resources.Icon;
-            pictureBox12.Location = new Point(1074, 281);
+            pictureBox12.Image = Properties.Resources.Kanan;
+            pictureBox12.Location = new Point(1079, 281);
             pictureBox12.Name = "pictureBox12";
             pictureBox12.Size = new Size(50, 50);
             pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;

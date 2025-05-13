@@ -123,6 +123,26 @@ namespace RUSUNAWAAA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Kanan {
+            get {
+                object obj = ResourceManager.GetObject("Kanan", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Kiri {
+            get {
+                object obj = ResourceManager.GetObject("Kiri", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap kontak {
             get {
                 object obj = ResourceManager.GetObject("kontak", resourceCulture);

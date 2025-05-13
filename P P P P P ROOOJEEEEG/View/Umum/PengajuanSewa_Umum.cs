@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace RUSUNAWAAA.View.Umum
 {
-    public partial class SkorUlasan_Umum: Form
+    public partial class PengajuanSewa_Umum: Form
     {
-        public SkorUlasan_Umum()
+        public PengajuanSewa_Umum()
         {
             InitializeComponent();
         }

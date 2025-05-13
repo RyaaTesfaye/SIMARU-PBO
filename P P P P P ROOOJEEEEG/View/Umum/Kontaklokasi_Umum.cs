@@ -21,5 +21,10 @@ namespace RUSUNAWAAA.View.Umum
         {
 
         }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }

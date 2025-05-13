@@ -121,6 +121,9 @@
   <data name="kontak" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kontak1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="XMLID 223" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\XMLID 223.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="listharga" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\listharga.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -144,9 +147,6 @@
   </data>
   <data name="profile-2user" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\profile-2user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="laporan" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\laporan1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Rusun_Putri" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rusun_Putri.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,11 +175,14 @@
   <data name="user-cirlce-add" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user-cirlce-add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="WhatsApp Image 2025-05-13 at 23.25.21_8b528e3b 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WhatsApp Image 2025-05-13 at 23.25.21_8b528e3b 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="star" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\star.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="XMLID 223" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\XMLID 223.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="laporan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\laporan1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Nitro_Wallpaper_01_3840x2400" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Nitro_Wallpaper_01_3840x2400.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -193,7 +196,10 @@
   <data name="Kaming_sun" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Kaming_sun.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="WhatsApp Image 2025-05-13 at 23.25.21_8b528e3b 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\WhatsApp Image 2025-05-13 at 23.25.21_8b528e3b 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Kanan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kanan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kiri" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kiri.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
