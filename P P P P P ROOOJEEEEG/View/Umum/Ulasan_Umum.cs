@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace RUSUNAWAAA.View.Umum
 {
-    public partial class Ulasan_Umum: Form
+    public partial class Ulasan_Umum : Form
     {
         public Ulasan_Umum()
         {
             InitializeComponent();
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel12_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

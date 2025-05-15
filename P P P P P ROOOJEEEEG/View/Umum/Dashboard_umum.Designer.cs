@@ -802,9 +802,9 @@
             label20.BackColor = Color.Transparent;
             label20.Font = new Font("Inter", 7.8F);
             label20.ForeColor = Color.FromArgb(139, 140, 142);
-            label20.Location = new Point(24, 140);
+            label20.Location = new Point(14, 135);
             label20.Name = "label20";
-            label20.Size = new Size(218, 95);
+            label20.Size = new Size(231, 95);
             label20.TabIndex = 7;
             label20.Text = "Rating total di aplikasi Rusunawa menunjukkan rata-rata penilaian penghuni terhadap fasilitas dan layanan dalam bentuk bintang (1–5).";
             // 
@@ -832,11 +832,11 @@
             // 
             label17.AutoSize = true;
             label17.BackColor = Color.Transparent;
-            label17.Font = new Font("Inter", 21F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label17.Font = new Font("Inter", 18F, FontStyle.Bold);
             label17.ForeColor = Color.White;
-            label17.Location = new Point(3, 7);
+            label17.Location = new Point(6, 13);
             label17.Name = "label17";
-            label17.Size = new Size(68, 50);
+            label17.Size = new Size(58, 43);
             label17.TabIndex = 6;
             label17.Text = "50";
             label17.TextAlign = ContentAlignment.MiddleCenter;
@@ -888,11 +888,11 @@
             // 
             label18.AutoSize = true;
             label18.BackColor = Color.Transparent;
-            label18.Font = new Font("Inter", 21F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label18.Font = new Font("Inter", 18F, FontStyle.Bold);
             label18.ForeColor = Color.White;
-            label18.Location = new Point(3, 7);
+            label18.Location = new Point(6, 13);
             label18.Name = "label18";
-            label18.Size = new Size(68, 50);
+            label18.Size = new Size(58, 43);
             label18.TabIndex = 6;
             label18.Text = "50";
             label18.TextAlign = ContentAlignment.MiddleCenter;
@@ -944,11 +944,11 @@
             // 
             label16.AutoSize = true;
             label16.BackColor = Color.Transparent;
-            label16.Font = new Font("Inter", 21F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label16.Font = new Font("Inter", 18F, FontStyle.Bold);
             label16.ForeColor = Color.White;
-            label16.Location = new Point(3, 7);
+            label16.Location = new Point(6, 13);
             label16.Name = "label16";
-            label16.Size = new Size(68, 50);
+            label16.Size = new Size(58, 43);
             label16.TabIndex = 6;
             label16.Text = "50";
             label16.TextAlign = ContentAlignment.MiddleCenter;
@@ -1000,11 +1000,11 @@
             // 
             label14.AutoSize = true;
             label14.BackColor = Color.Transparent;
-            label14.Font = new Font("Inter", 21F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label14.Font = new Font("Inter", 18F, FontStyle.Bold);
             label14.ForeColor = Color.White;
-            label14.Location = new Point(3, 7);
+            label14.Location = new Point(6, 13);
             label14.Name = "label14";
-            label14.Size = new Size(68, 50);
+            label14.Size = new Size(58, 43);
             label14.TabIndex = 5;
             label14.Text = "50";
             label14.TextAlign = ContentAlignment.MiddleCenter;

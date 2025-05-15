@@ -28,22 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Kontaklokasi_Umum));
             panel8 = new Panel();
             panel9 = new Panel();
+            panel12 = new Panel();
+            panel13 = new Panel();
+            panel14 = new Panel();
+            pictureBox7 = new PictureBox();
+            panel17 = new Panel();
+            pictureBox12 = new PictureBox();
+            label8 = new Label();
+            label9 = new Label();
+            label19 = new Label();
+            label21 = new Label();
+            label22 = new Label();
+            label23 = new Label();
+            label24 = new Label();
+            linkLabel1 = new LinkLabel();
+            label25 = new Label();
+            label27 = new Label();
+            pictureBox13 = new PictureBox();
             panel10 = new Panel();
             panel11 = new Panel();
+            panel16 = new Panel();
+            pictureBox11 = new PictureBox();
+            panel15 = new Panel();
+            pictureBox8 = new PictureBox();
+            label18 = new Label();
+            label17 = new Label();
+            label16 = new Label();
+            label15 = new Label();
+            label14 = new Label();
+            label7 = new Label();
+            label20 = new Label();
             linkLabel3 = new LinkLabel();
             label11 = new Label();
             label10 = new Label();
             pictureBox6 = new PictureBox();
-            panel12 = new Panel();
-            panel13 = new Panel();
-            panel14 = new Panel();
-            linkLabel2 = new LinkLabel();
-            label8 = new Label();
-            label9 = new Label();
-            pictureBox7 = new PictureBox();
-            panel15 = new Panel();
             label6 = new Label();
             panel7 = new Panel();
             button5 = new Button();
@@ -74,12 +95,20 @@
             label1 = new Label();
             panel8.SuspendLayout();
             panel9.SuspendLayout();
-            panel10.SuspendLayout();
-            panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            panel12.SuspendLayout();
             panel13.SuspendLayout();
             panel14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            panel17.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
+            panel10.SuspendLayout();
+            panel11.SuspendLayout();
+            panel16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
+            panel15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel7.SuspendLayout();
             panel1.SuspendLayout();
             panel29.SuspendLayout();
@@ -112,36 +141,354 @@
             // panel9
             // 
             panel9.BackColor = Color.FromArgb(37, 39, 48);
-            panel9.Controls.Add(panel10);
             panel9.Controls.Add(panel12);
-            panel9.Controls.Add(panel13);
-            panel9.Controls.Add(panel15);
+            panel9.Controls.Add(panel10);
             panel9.Location = new Point(5, 54);
             panel9.Name = "panel9";
             panel9.Padding = new Padding(50);
             panel9.Size = new Size(1165, 662);
             panel9.TabIndex = 5;
             // 
+            // panel12
+            // 
+            panel12.BackColor = Color.FromArgb(23, 24, 30);
+            panel12.Controls.Add(panel13);
+            panel12.Controls.Add(pictureBox13);
+            panel12.Location = new Point(607, 13);
+            panel12.Name = "panel12";
+            panel12.Size = new Size(548, 641);
+            panel12.TabIndex = 11;
+            // 
+            // panel13
+            // 
+            panel13.BackColor = Color.Transparent;
+            panel13.Controls.Add(panel14);
+            panel13.Controls.Add(panel17);
+            panel13.Controls.Add(label8);
+            panel13.Controls.Add(label9);
+            panel13.Controls.Add(label19);
+            panel13.Controls.Add(label21);
+            panel13.Controls.Add(label22);
+            panel13.Controls.Add(label23);
+            panel13.Controls.Add(label24);
+            panel13.Controls.Add(linkLabel1);
+            panel13.Controls.Add(label25);
+            panel13.Controls.Add(label27);
+            panel13.Location = new Point(23, 216);
+            panel13.Name = "panel13";
+            panel13.Size = new Size(502, 399);
+            panel13.TabIndex = 7;
+            // 
+            // panel14
+            // 
+            panel14.BackColor = Color.FromArgb(23, 24, 30);
+            panel14.Controls.Add(pictureBox7);
+            panel14.Location = new Point(1, 325);
+            panel14.Name = "panel14";
+            panel14.Size = new Size(20, 20);
+            panel14.TabIndex = 21;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.Image = Properties.Resources.LOKASI;
+            pictureBox7.Location = new Point(0, -1);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(20, 20);
+            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox7.TabIndex = 3;
+            pictureBox7.TabStop = false;
+            // 
+            // panel17
+            // 
+            panel17.BackColor = Color.FromArgb(23, 24, 30);
+            panel17.Controls.Add(pictureBox12);
+            panel17.Location = new Point(1, 235);
+            panel17.Name = "panel17";
+            panel17.Size = new Size(20, 20);
+            panel17.TabIndex = 20;
+            // 
+            // pictureBox12
+            // 
+            pictureBox12.Image = Properties.Resources.NARAHUBUNG;
+            pictureBox12.Location = new Point(0, -1);
+            pictureBox12.Name = "pictureBox12";
+            pictureBox12.Size = new Size(20, 20);
+            pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox12.TabIndex = 3;
+            pictureBox12.TabStop = false;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Inter", 10F, FontStyle.Bold);
+            label8.ForeColor = Color.White;
+            label8.Location = new Point(20, 321);
+            label8.Name = "label8";
+            label8.Size = new Size(65, 24);
+            label8.TabIndex = 19;
+            label8.Text = "Lokasi";
+            // 
+            // label9
+            // 
+            label9.BackColor = Color.Transparent;
+            label9.Font = new Font("Inter", 9F);
+            label9.ForeColor = Color.White;
+            label9.Location = new Point(93, 284);
+            label9.Name = "label9";
+            label9.Size = new Size(149, 21);
+            label9.TabIndex = 18;
+            label9.Text = "081456789877";
+            // 
+            // label19
+            // 
+            label19.BackColor = Color.Transparent;
+            label19.Font = new Font("Inter", 9F);
+            label19.ForeColor = Color.White;
+            label19.Location = new Point(93, 260);
+            label19.Name = "label19";
+            label19.Size = new Size(149, 21);
+            label19.TabIndex = 17;
+            label19.Text = "Almadita Dwi";
+            // 
+            // label21
+            // 
+            label21.BackColor = Color.Transparent;
+            label21.Font = new Font("Inter", 9F);
+            label21.ForeColor = Color.White;
+            label21.Location = new Point(20, 283);
+            label21.Name = "label21";
+            label21.Size = new Size(79, 21);
+            label21.TabIndex = 16;
+            label21.Text = "Nomor   :";
+            // 
+            // label22
+            // 
+            label22.BackColor = Color.Transparent;
+            label22.Font = new Font("Inter", 9F);
+            label22.ForeColor = Color.White;
+            label22.Location = new Point(20, 259);
+            label22.Name = "label22";
+            label22.Size = new Size(79, 25);
+            label22.TabIndex = 15;
+            label22.Text = "Nama     :";
+            // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Font = new Font("Inter", 10F, FontStyle.Bold);
+            label23.ForeColor = Color.White;
+            label23.Location = new Point(20, 230);
+            label23.Name = "label23";
+            label23.Size = new Size(116, 24);
+            label23.TabIndex = 14;
+            label23.Text = "Narahubung";
+            // 
+            // label24
+            // 
+            label24.BackColor = Color.Transparent;
+            label24.Font = new Font("Inter", 9F);
+            label24.ForeColor = Color.White;
+            label24.Location = new Point(1, 39);
+            label24.Name = "label24";
+            label24.Size = new Size(458, 188);
+            label24.TabIndex = 13;
+            label24.Text = resources.GetString("label24.Text");
+            label24.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // linkLabel1
+            // 
+            linkLabel1.ActiveLinkColor = Color.DarkOrchid;
+            linkLabel1.AutoSize = true;
+            linkLabel1.Font = new Font("Inter", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            linkLabel1.LinkArea = new LinkArea(0, 60);
+            linkLabel1.LinkColor = Color.FromArgb(60, 138, 255);
+            linkLabel1.Location = new Point(60, 352);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(310, 21);
+            linkLabel1.TabIndex = 12;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "https://maps.app.goo.gl/W9zGeU45b4ZdYpzQ6";
+            linkLabel1.UseCompatibleTextRendering = true;
+            // 
+            // label25
+            // 
+            label25.AutoSize = true;
+            label25.Font = new Font("Inter", 10F, FontStyle.Bold);
+            label25.ForeColor = Color.White;
+            label25.Location = new Point(1, 12);
+            label25.Name = "label25";
+            label25.Size = new Size(142, 24);
+            label25.TabIndex = 10;
+            label25.Text = "Rusunawa Putri";
+            // 
+            // label27
+            // 
+            label27.AutoSize = true;
+            label27.BackColor = Color.Transparent;
+            label27.Font = new Font("Inter", 7.8F);
+            label27.ForeColor = Color.White;
+            label27.Location = new Point(20, 352);
+            label27.Name = "label27";
+            label27.Size = new Size(41, 18);
+            label27.TabIndex = 11;
+            label27.Text = "Link :";
+            // 
+            // pictureBox13
+            // 
+            pictureBox13.Image = Properties.Resources.Rusun_Putri;
+            pictureBox13.Location = new Point(23, 16);
+            pictureBox13.Name = "pictureBox13";
+            pictureBox13.Size = new Size(502, 271);
+            pictureBox13.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox13.TabIndex = 6;
+            pictureBox13.TabStop = false;
+            // 
             // panel10
             // 
             panel10.BackColor = Color.FromArgb(23, 24, 30);
             panel10.Controls.Add(panel11);
             panel10.Controls.Add(pictureBox6);
-            panel10.Location = new Point(10, 341);
+            panel10.Location = new Point(7, 13);
             panel10.Name = "panel10";
-            panel10.Size = new Size(548, 313);
+            panel10.Size = new Size(548, 641);
             panel10.TabIndex = 10;
             // 
             // panel11
             // 
             panel11.BackColor = Color.Transparent;
+            panel11.Controls.Add(panel16);
+            panel11.Controls.Add(panel15);
+            panel11.Controls.Add(label18);
+            panel11.Controls.Add(label17);
+            panel11.Controls.Add(label16);
+            panel11.Controls.Add(label15);
+            panel11.Controls.Add(label14);
+            panel11.Controls.Add(label7);
+            panel11.Controls.Add(label20);
             panel11.Controls.Add(linkLabel3);
             panel11.Controls.Add(label11);
             panel11.Controls.Add(label10);
             panel11.Location = new Point(23, 216);
             panel11.Name = "panel11";
-            panel11.Size = new Size(502, 70);
+            panel11.Size = new Size(502, 399);
             panel11.TabIndex = 7;
+            // 
+            // panel16
+            // 
+            panel16.BackColor = Color.FromArgb(23, 24, 30);
+            panel16.Controls.Add(pictureBox11);
+            panel16.Location = new Point(1, 325);
+            panel16.Name = "panel16";
+            panel16.Size = new Size(20, 20);
+            panel16.TabIndex = 21;
+            // 
+            // pictureBox11
+            // 
+            pictureBox11.Image = Properties.Resources.LOKASI;
+            pictureBox11.Location = new Point(0, -1);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(20, 20);
+            pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox11.TabIndex = 3;
+            pictureBox11.TabStop = false;
+            // 
+            // panel15
+            // 
+            panel15.BackColor = Color.FromArgb(23, 24, 30);
+            panel15.Controls.Add(pictureBox8);
+            panel15.Location = new Point(1, 235);
+            panel15.Name = "panel15";
+            panel15.Size = new Size(20, 20);
+            panel15.TabIndex = 20;
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.Image = Properties.Resources.NARAHUBUNG;
+            pictureBox8.Location = new Point(0, -1);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(20, 20);
+            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox8.TabIndex = 3;
+            pictureBox8.TabStop = false;
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Font = new Font("Inter", 10F, FontStyle.Bold);
+            label18.ForeColor = Color.White;
+            label18.Location = new Point(20, 321);
+            label18.Name = "label18";
+            label18.Size = new Size(65, 24);
+            label18.TabIndex = 19;
+            label18.Text = "Lokasi";
+            // 
+            // label17
+            // 
+            label17.BackColor = Color.Transparent;
+            label17.Font = new Font("Inter", 9F);
+            label17.ForeColor = Color.White;
+            label17.Location = new Point(93, 284);
+            label17.Name = "label17";
+            label17.Size = new Size(149, 21);
+            label17.TabIndex = 18;
+            label17.Text = "081456789877";
+            // 
+            // label16
+            // 
+            label16.BackColor = Color.Transparent;
+            label16.Font = new Font("Inter", 9F);
+            label16.ForeColor = Color.White;
+            label16.Location = new Point(93, 260);
+            label16.Name = "label16";
+            label16.Size = new Size(149, 21);
+            label16.TabIndex = 17;
+            label16.Text = "Wilsen Pranowo";
+            // 
+            // label15
+            // 
+            label15.BackColor = Color.Transparent;
+            label15.Font = new Font("Inter", 9F);
+            label15.ForeColor = Color.White;
+            label15.Location = new Point(20, 283);
+            label15.Name = "label15";
+            label15.Size = new Size(79, 21);
+            label15.TabIndex = 16;
+            label15.Text = "Nomor   :";
+            // 
+            // label14
+            // 
+            label14.BackColor = Color.Transparent;
+            label14.Font = new Font("Inter", 9F);
+            label14.ForeColor = Color.White;
+            label14.Location = new Point(20, 259);
+            label14.Name = "label14";
+            label14.Size = new Size(79, 25);
+            label14.TabIndex = 15;
+            label14.Text = "Nama     :";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Inter", 10F, FontStyle.Bold);
+            label7.ForeColor = Color.White;
+            label7.Location = new Point(20, 230);
+            label7.Name = "label7";
+            label7.Size = new Size(116, 24);
+            label7.TabIndex = 14;
+            label7.Text = "Narahubung";
+            // 
+            // label20
+            // 
+            label20.BackColor = Color.Transparent;
+            label20.Font = new Font("Inter", 9F);
+            label20.ForeColor = Color.White;
+            label20.Location = new Point(1, 39);
+            label20.Name = "label20";
+            label20.Size = new Size(458, 188);
+            label20.TabIndex = 13;
+            label20.Text = resources.GetString("label20.Text");
+            label20.TextAlign = ContentAlignment.MiddleLeft;
+            label20.Click += label20_Click;
             // 
             // linkLabel3
             // 
@@ -150,7 +497,7 @@
             linkLabel3.Font = new Font("Inter", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             linkLabel3.LinkArea = new LinkArea(0, 60);
             linkLabel3.LinkColor = Color.FromArgb(60, 138, 255);
-            linkLabel3.Location = new Point(44, 49);
+            linkLabel3.Location = new Point(60, 352);
             linkLabel3.Name = "linkLabel3";
             linkLabel3.Size = new Size(309, 21);
             linkLabel3.TabIndex = 12;
@@ -164,7 +511,7 @@
             label11.AutoSize = true;
             label11.Font = new Font("Inter", 10F, FontStyle.Bold);
             label11.ForeColor = Color.White;
-            label11.Location = new Point(4, 20);
+            label11.Location = new Point(1, 12);
             label11.Name = "label11";
             label11.Size = new Size(151, 24);
             label11.TabIndex = 10;
@@ -175,8 +522,8 @@
             label10.AutoSize = true;
             label10.BackColor = Color.Transparent;
             label10.Font = new Font("Inter", 7.8F);
-            label10.ForeColor = Color.FromArgb(139, 140, 142);
-            label10.Location = new Point(4, 49);
+            label10.ForeColor = Color.White;
+            label10.Location = new Point(20, 352);
             label10.Name = "label10";
             label10.Size = new Size(41, 18);
             label10.TabIndex = 11;
@@ -191,92 +538,6 @@
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox6.TabIndex = 6;
             pictureBox6.TabStop = false;
-            // 
-            // panel12
-            // 
-            panel12.BackColor = Color.FromArgb(23, 24, 30);
-            panel12.Location = new Point(607, 12);
-            panel12.Name = "panel12";
-            panel12.Size = new Size(548, 313);
-            panel12.TabIndex = 11;
-            // 
-            // panel13
-            // 
-            panel13.BackColor = Color.FromArgb(23, 24, 30);
-            panel13.Controls.Add(panel14);
-            panel13.Controls.Add(pictureBox7);
-            panel13.Location = new Point(607, 341);
-            panel13.Name = "panel13";
-            panel13.Size = new Size(548, 313);
-            panel13.TabIndex = 9;
-            panel13.Paint += panel13_Paint;
-            // 
-            // panel14
-            // 
-            panel14.BackColor = Color.Transparent;
-            panel14.Controls.Add(linkLabel2);
-            panel14.Controls.Add(label8);
-            panel14.Controls.Add(label9);
-            panel14.Location = new Point(23, 217);
-            panel14.Name = "panel14";
-            panel14.Size = new Size(502, 70);
-            panel14.TabIndex = 8;
-            // 
-            // linkLabel2
-            // 
-            linkLabel2.ActiveLinkColor = Color.DarkOrchid;
-            linkLabel2.AutoSize = true;
-            linkLabel2.Font = new Font("Inter", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            linkLabel2.LinkArea = new LinkArea(0, 60);
-            linkLabel2.LinkColor = Color.FromArgb(60, 138, 255);
-            linkLabel2.Location = new Point(44, 49);
-            linkLabel2.Name = "linkLabel2";
-            linkLabel2.Size = new Size(286, 21);
-            linkLabel2.TabIndex = 12;
-            linkLabel2.TabStop = true;
-            linkLabel2.Text = "https://maps.app.goo.gl/jQqwu4GraZ1rqFuj8";
-            linkLabel2.UseCompatibleTextRendering = true;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Inter", 10F, FontStyle.Bold);
-            label8.ForeColor = Color.White;
-            label8.Location = new Point(4, 20);
-            label8.Name = "label8";
-            label8.Size = new Size(146, 24);
-            label8.TabIndex = 10;
-            label8.Text = "Rusunawa  Putri";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.BackColor = Color.Transparent;
-            label9.Font = new Font("Inter", 7.8F);
-            label9.ForeColor = Color.FromArgb(139, 140, 142);
-            label9.Location = new Point(4, 49);
-            label9.Name = "label9";
-            label9.Size = new Size(41, 18);
-            label9.TabIndex = 11;
-            label9.Text = "Link :";
-            // 
-            // pictureBox7
-            // 
-            pictureBox7.Image = Properties.Resources.Rusun_Putri;
-            pictureBox7.Location = new Point(23, 16);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(502, 271);
-            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox7.TabIndex = 7;
-            pictureBox7.TabStop = false;
-            // 
-            // panel15
-            // 
-            panel15.BackColor = Color.FromArgb(23, 24, 30);
-            panel15.Location = new Point(10, 12);
-            panel15.Name = "panel15";
-            panel15.Size = new Size(548, 313);
-            panel15.TabIndex = 12;
             // 
             // label6
             // 
@@ -599,14 +860,22 @@
             panel8.ResumeLayout(false);
             panel8.PerformLayout();
             panel9.ResumeLayout(false);
+            panel12.ResumeLayout(false);
+            panel13.ResumeLayout(false);
+            panel13.PerformLayout();
+            panel14.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            panel17.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
             panel10.ResumeLayout(false);
             panel11.ResumeLayout(false);
             panel11.PerformLayout();
+            panel16.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
+            panel15.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            panel13.ResumeLayout(false);
-            panel14.ResumeLayout(false);
-            panel14.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             panel7.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -669,17 +938,37 @@
         private Panel panel6;
         private Panel panel10;
         private PictureBox pictureBox6;
-        private Panel panel12;
-        private Panel panel13;
-        private PictureBox pictureBox7;
-        private Panel panel15;
         private Panel panel11;
         private LinkLabel linkLabel3;
         private Label label11;
         private Label label10;
+        private Label label20;
+        private Label label7;
+        private Label label17;
+        private Label label16;
+        private Label label15;
+        private Label label14;
+        private Label label18;
+        private Panel panel15;
+        private PictureBox pictureBox8;
+        private Panel panel16;
+        private PictureBox pictureBox11;
+        private Panel panel12;
+        private Panel panel13;
         private Panel panel14;
-        private LinkLabel linkLabel2;
+        private PictureBox pictureBox7;
+        private Panel panel17;
+        private PictureBox pictureBox12;
         private Label label8;
         private Label label9;
+        private Label label19;
+        private Label label21;
+        private Label label22;
+        private Label label23;
+        private Label label24;
+        private LinkLabel linkLabel1;
+        private Label label25;
+        private Label label27;
+        private PictureBox pictureBox13;
     }
 }

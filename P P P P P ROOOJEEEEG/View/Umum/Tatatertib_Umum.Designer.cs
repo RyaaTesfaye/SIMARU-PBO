@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tatatertib_Umum));
             panel8 = new Panel();
             panel9 = new Panel();
+            label7 = new Label();
             label6 = new Label();
             panel7 = new Panel();
             button5 = new Button();
@@ -59,6 +61,7 @@
             pictureBox3 = new PictureBox();
             label1 = new Label();
             panel8.SuspendLayout();
+            panel9.SuspendLayout();
             panel7.SuspendLayout();
             panel1.SuspendLayout();
             panel29.SuspendLayout();
@@ -90,12 +93,26 @@
             // 
             // panel9
             // 
+            panel9.AutoScroll = true;
             panel9.BackColor = Color.FromArgb(37, 39, 48);
+            panel9.Controls.Add(label7);
             panel9.Location = new Point(5, 54);
             panel9.Name = "panel9";
             panel9.Padding = new Padding(50);
             panel9.Size = new Size(1165, 662);
             panel9.TabIndex = 5;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Inter", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.ForeColor = Color.White;
+            label7.Location = new Point(26, 10);
+            label7.MaximumSize = new Size(1110, 0);
+            label7.Name = "label7";
+            label7.Size = new Size(1106, 1548);
+            label7.TabIndex = 5;
+            label7.Text = resources.GetString("label7.Text");
             // 
             // label6
             // 
@@ -417,6 +434,8 @@
             Text = "Tatatertib_Umum";
             panel8.ResumeLayout(false);
             panel8.PerformLayout();
+            panel9.ResumeLayout(false);
+            panel9.PerformLayout();
             panel7.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -477,5 +496,6 @@
         private PictureBox pictureBox3;
         private Label label1;
         private Panel panel6;
+        private Label label7;
     }
 }
