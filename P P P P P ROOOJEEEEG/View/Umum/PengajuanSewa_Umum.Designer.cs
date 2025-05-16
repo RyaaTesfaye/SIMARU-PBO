@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PengajuanSewa_Umum));
             panel8 = new Panel();
             panel9 = new Panel();
             panel10 = new Panel();
@@ -59,8 +60,29 @@
             label2 = new Label();
             pictureBox3 = new PictureBox();
             label1 = new Label();
+            panel11 = new Panel();
+            pictureBox6 = new PictureBox();
+            label7 = new Label();
+            label22 = new Label();
+            linkLabel3 = new LinkLabel();
+            pictureBox7 = new PictureBox();
+            panel12 = new Panel();
+            label8 = new Label();
+            label9 = new Label();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            label10 = new Label();
+            textBox3 = new TextBox();
+            label11 = new Label();
+            textBox4 = new TextBox();
+            label14 = new Label();
+            radioButton1 = new RadioButton();
+            radioButton2 = new RadioButton();
+            panel13 = new Panel();
+            button4 = new Button();
             panel8.SuspendLayout();
             panel9.SuspendLayout();
+            panel10.SuspendLayout();
             panel7.SuspendLayout();
             panel1.SuspendLayout();
             panel29.SuspendLayout();
@@ -78,6 +100,11 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            panel12.SuspendLayout();
+            panel13.SuspendLayout();
             SuspendLayout();
             // 
             // panel8
@@ -103,10 +130,12 @@
             // panel10
             // 
             panel10.BackColor = Color.FromArgb(23, 24, 29);
+            panel10.Controls.Add(panel12);
+            panel10.Controls.Add(panel11);
             panel10.Cursor = Cursors.Hand;
             panel10.Location = new Point(53, 13);
             panel10.Name = "panel10";
-            panel10.Size = new Size(1059, 627);
+            panel10.Size = new Size(1043, 632);
             panel10.TabIndex = 8;
             // 
             // label6
@@ -415,6 +444,237 @@
             label1.Text = "RUSAKITA";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // panel11
+            // 
+            panel11.BackColor = Color.FromArgb(37, 39, 48);
+            panel11.Controls.Add(pictureBox7);
+            panel11.Controls.Add(linkLabel3);
+            panel11.Controls.Add(label22);
+            panel11.Controls.Add(label7);
+            panel11.Controls.Add(pictureBox6);
+            panel11.Location = new Point(20, 18);
+            panel11.Name = "panel11";
+            panel11.Size = new Size(464, 597);
+            panel11.TabIndex = 0;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Image = Properties.Resources.listharga;
+            pictureBox6.Location = new Point(20, 43);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(423, 197);
+            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox6.TabIndex = 0;
+            pictureBox6.TabStop = false;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Inter", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.ForeColor = Color.White;
+            label7.Location = new Point(20, 245);
+            label7.Name = "label7";
+            label7.Size = new Size(220, 36);
+            label7.TabIndex = 5;
+            label7.Text = "Pengajuan Sewa";
+            // 
+            // label22
+            // 
+            label22.BackColor = Color.Transparent;
+            label22.Font = new Font("Inter", 8F);
+            label22.ForeColor = Color.White;
+            label22.Location = new Point(20, 300);
+            label22.Name = "label22";
+            label22.Size = new Size(423, 233);
+            label22.TabIndex = 15;
+            label22.Text = resources.GetString("label22.Text");
+            // 
+            // linkLabel3
+            // 
+            linkLabel3.ActiveLinkColor = Color.DarkOrchid;
+            linkLabel3.AutoSize = true;
+            linkLabel3.Font = new Font("Inter", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            linkLabel3.LinkArea = new LinkArea(0, 60);
+            linkLabel3.LinkColor = Color.FromArgb(60, 138, 255);
+            linkLabel3.Location = new Point(48, 548);
+            linkLabel3.Name = "linkLabel3";
+            linkLabel3.Size = new Size(357, 24);
+            linkLabel3.TabIndex = 16;
+            linkLabel3.TabStop = true;
+            linkLabel3.Text = "https://maps.app.goo.gl/6akmR9Z8Py6W31Bm9";
+            linkLabel3.UseCompatibleTextRendering = true;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.Image = Properties.Resources.link;
+            pictureBox7.Location = new Point(20, 551);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(25, 25);
+            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox7.TabIndex = 17;
+            pictureBox7.TabStop = false;
+            // 
+            // panel12
+            // 
+            panel12.BackColor = Color.Transparent;
+            panel12.Controls.Add(panel13);
+            panel12.Controls.Add(radioButton2);
+            panel12.Controls.Add(radioButton1);
+            panel12.Controls.Add(textBox4);
+            panel12.Controls.Add(label14);
+            panel12.Controls.Add(textBox3);
+            panel12.Controls.Add(label11);
+            panel12.Controls.Add(textBox2);
+            panel12.Controls.Add(label10);
+            panel12.Controls.Add(textBox1);
+            panel12.Controls.Add(label9);
+            panel12.Controls.Add(label8);
+            panel12.Location = new Point(550, 18);
+            panel12.Name = "panel12";
+            panel12.Size = new Size(464, 597);
+            panel12.TabIndex = 1;
+            panel12.Paint += panel12_Paint;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Inter", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.ForeColor = Color.White;
+            label8.Location = new Point(100, 24);
+            label8.Name = "label8";
+            label8.Size = new Size(286, 36);
+            label8.TabIndex = 6;
+            label8.Text = "Form Pengajuan sewa";
+            // 
+            // label9
+            // 
+            label9.BackColor = Color.Transparent;
+            label9.Font = new Font("Inter", 8F);
+            label9.ForeColor = Color.White;
+            label9.Location = new Point(70, 97);
+            label9.Name = "label9";
+            label9.Size = new Size(135, 24);
+            label9.TabIndex = 16;
+            label9.Text = "Masukkan Nama";
+            // 
+            // textBox1
+            // 
+            textBox1.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox1.Location = new Point(70, 125);
+            textBox1.Name = "textBox1";
+            textBox1.PlaceholderText = "Nama";
+            textBox1.Size = new Size(316, 32);
+            textBox1.TabIndex = 17;
+            // 
+            // textBox2
+            // 
+            textBox2.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox2.Location = new Point(70, 230);
+            textBox2.Name = "textBox2";
+            textBox2.PlaceholderText = "Alamat";
+            textBox2.Size = new Size(316, 32);
+            textBox2.TabIndex = 19;
+            // 
+            // label10
+            // 
+            label10.BackColor = Color.Transparent;
+            label10.Font = new Font("Inter", 8F);
+            label10.ForeColor = Color.White;
+            label10.Location = new Point(70, 202);
+            label10.Name = "label10";
+            label10.Size = new Size(135, 24);
+            label10.TabIndex = 18;
+            label10.Text = "Masukkan Alamat";
+            // 
+            // textBox3
+            // 
+            textBox3.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox3.Location = new Point(70, 328);
+            textBox3.Name = "textBox3";
+            textBox3.PlaceholderText = "Asal kota";
+            textBox3.Size = new Size(316, 32);
+            textBox3.TabIndex = 21;
+            // 
+            // label11
+            // 
+            label11.BackColor = Color.Transparent;
+            label11.Font = new Font("Inter", 8F);
+            label11.ForeColor = Color.White;
+            label11.Location = new Point(70, 301);
+            label11.Name = "label11";
+            label11.Size = new Size(153, 24);
+            label11.TabIndex = 20;
+            label11.Text = "Masukkan Asal Kota";
+            // 
+            // textBox4
+            // 
+            textBox4.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox4.Location = new Point(70, 417);
+            textBox4.Name = "textBox4";
+            textBox4.PlaceholderText = "Nomor HP";
+            textBox4.Size = new Size(316, 32);
+            textBox4.TabIndex = 23;
+            // 
+            // label14
+            // 
+            label14.BackColor = Color.Transparent;
+            label14.Font = new Font("Inter", 8F);
+            label14.ForeColor = Color.White;
+            label14.Location = new Point(70, 389);
+            label14.Name = "label14";
+            label14.Size = new Size(153, 24);
+            label14.TabIndex = 22;
+            label14.Text = "Masukkan Nomor HP";
+            // 
+            // radioButton1
+            // 
+            radioButton1.AutoSize = true;
+            radioButton1.Font = new Font("Inter", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            radioButton1.ForeColor = Color.White;
+            radioButton1.Location = new Point(70, 463);
+            radioButton1.Name = "radioButton1";
+            radioButton1.Size = new Size(90, 26);
+            radioButton1.TabIndex = 24;
+            radioButton1.TabStop = true;
+            radioButton1.Text = "Laki-laki";
+            radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            radioButton2.AutoSize = true;
+            radioButton2.Font = new Font("Inter", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            radioButton2.ForeColor = Color.White;
+            radioButton2.Location = new Point(170, 464);
+            radioButton2.Name = "radioButton2";
+            radioButton2.Size = new Size(113, 26);
+            radioButton2.TabIndex = 25;
+            radioButton2.TabStop = true;
+            radioButton2.Text = "Perempuan";
+            radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // panel13
+            // 
+            panel13.Controls.Add(button4);
+            panel13.Location = new Point(0, 515);
+            panel13.Name = "panel13";
+            panel13.Size = new Size(461, 57);
+            panel13.TabIndex = 26;
+            // 
+            // button4
+            // 
+            button4.BackColor = Color.FromArgb(10, 100, 236);
+            button4.Cursor = Cursors.Hand;
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Font = new Font("Inter", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button4.ForeColor = Color.White;
+            button4.Location = new Point(48, 0);
+            button4.Name = "button4";
+            button4.Size = new Size(368, 57);
+            button4.TabIndex = 1;
+            button4.Text = "Ajukan Sewa";
+            button4.UseVisualStyleBackColor = false;
+            // 
             // PengajuanSewa_Umum
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -430,6 +690,7 @@
             panel8.ResumeLayout(false);
             panel8.PerformLayout();
             panel9.ResumeLayout(false);
+            panel10.ResumeLayout(false);
             panel7.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -455,6 +716,13 @@
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            panel11.ResumeLayout(false);
+            panel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            panel12.ResumeLayout(false);
+            panel12.PerformLayout();
+            panel13.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -491,5 +759,25 @@
         private Label label1;
         private Panel panel6;
         private Panel panel10;
+        private Panel panel11;
+        private PictureBox pictureBox6;
+        private Label label7;
+        private Label label22;
+        private PictureBox pictureBox7;
+        private LinkLabel linkLabel3;
+        private Panel panel12;
+        private TextBox textBox1;
+        private Label label9;
+        private Label label8;
+        private Panel panel13;
+        private RadioButton radioButton2;
+        private RadioButton radioButton1;
+        private TextBox textBox4;
+        private Label label14;
+        private TextBox textBox3;
+        private Label label11;
+        private TextBox textBox2;
+        private Label label10;
+        private Button button4;
     }
 }

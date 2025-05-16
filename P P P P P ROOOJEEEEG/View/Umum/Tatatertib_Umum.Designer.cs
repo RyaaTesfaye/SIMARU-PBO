@@ -28,10 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tatatertib_Umum));
             panel8 = new Panel();
             panel9 = new Panel();
-            label7 = new Label();
             label6 = new Label();
             panel7 = new Panel();
             button5 = new Button();
@@ -60,6 +58,7 @@
             label2 = new Label();
             pictureBox3 = new PictureBox();
             label1 = new Label();
+            dataGridView1 = new DataGridView();
             panel8.SuspendLayout();
             panel9.SuspendLayout();
             panel7.SuspendLayout();
@@ -79,6 +78,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // panel8
@@ -95,24 +95,12 @@
             // 
             panel9.AutoScroll = true;
             panel9.BackColor = Color.FromArgb(37, 39, 48);
-            panel9.Controls.Add(label7);
+            panel9.Controls.Add(dataGridView1);
             panel9.Location = new Point(5, 54);
             panel9.Name = "panel9";
             panel9.Padding = new Padding(50);
             panel9.Size = new Size(1165, 662);
             panel9.TabIndex = 5;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Inter", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.ForeColor = Color.White;
-            label7.Location = new Point(26, 10);
-            label7.MaximumSize = new Size(1110, 0);
-            label7.Name = "label7";
-            label7.Size = new Size(1106, 1548);
-            label7.TabIndex = 5;
-            label7.Text = resources.GetString("label7.Text");
             // 
             // label6
             // 
@@ -420,6 +408,15 @@
             label1.Text = "RUSAKITA";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(1, 1);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(1164, 661);
+            dataGridView1.TabIndex = 0;
+            // 
             // Tatatertib_Umum
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -435,7 +432,6 @@
             panel8.ResumeLayout(false);
             panel8.PerformLayout();
             panel9.ResumeLayout(false);
-            panel9.PerformLayout();
             panel7.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -461,6 +457,7 @@
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
@@ -496,6 +493,6 @@
         private PictureBox pictureBox3;
         private Label label1;
         private Panel panel6;
-        private Label label7;
+        private DataGridView dataGridView1;
     }
 }

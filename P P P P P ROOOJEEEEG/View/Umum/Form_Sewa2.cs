@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace RUSUNAWAAA.View.Umum
 {
-    public partial class PengajuanSewa_Umum : Form
+    public partial class Form_Sewa2: UserControl
     {
-        public PengajuanSewa_Umum()
+        public Form_Sewa2()
         {
             InitializeComponent();
-        }
-
-        private void panel12_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
