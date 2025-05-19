@@ -29,20 +29,22 @@
         private void InitializeComponent()
         {
             panel12 = new Panel();
-            button3 = new Button();
-            textBox3 = new TextBox();
-            label2 = new Label();
-            button2 = new Button();
-            textBox1 = new TextBox();
-            label1 = new Label();
-            button1 = new Button();
-            comboBox1 = new ComboBox();
             panel13 = new Panel();
             button4 = new Button();
-            textBox2 = new TextBox();
-            label10 = new Label();
             label9 = new Label();
             label8 = new Label();
+            label17 = new Label();
+            label16 = new Label();
+            label15 = new Label();
+            label14 = new Label();
+            label13 = new Label();
+            label12 = new Label();
+            label11 = new Label();
+            label7 = new Label();
+            label3 = new Label();
+            label1 = new Label();
+            label2 = new Label();
+            textBox2 = new TextBox();
             panel12.SuspendLayout();
             panel13.SuspendLayout();
             SuspendLayout();
@@ -50,120 +52,25 @@
             // panel12
             // 
             panel12.BackColor = Color.FromArgb(23, 24, 29);
-            panel12.Controls.Add(button3);
-            panel12.Controls.Add(textBox3);
-            panel12.Controls.Add(label2);
-            panel12.Controls.Add(button2);
-            panel12.Controls.Add(textBox1);
-            panel12.Controls.Add(label1);
-            panel12.Controls.Add(button1);
-            panel12.Controls.Add(comboBox1);
-            panel12.Controls.Add(panel13);
             panel12.Controls.Add(textBox2);
-            panel12.Controls.Add(label10);
+            panel12.Controls.Add(label2);
+            panel12.Controls.Add(label17);
+            panel12.Controls.Add(label16);
+            panel12.Controls.Add(label15);
+            panel12.Controls.Add(label14);
+            panel12.Controls.Add(label13);
+            panel12.Controls.Add(label12);
+            panel12.Controls.Add(label11);
+            panel12.Controls.Add(label7);
+            panel12.Controls.Add(label3);
+            panel12.Controls.Add(label1);
+            panel12.Controls.Add(panel13);
             panel12.Controls.Add(label9);
             panel12.Controls.Add(label8);
             panel12.Location = new Point(0, 0);
             panel12.Name = "panel12";
             panel12.Size = new Size(464, 597);
             panel12.TabIndex = 4;
-            // 
-            // button3
-            // 
-            button3.BackColor = Color.LightGray;
-            button3.Cursor = Cursors.Hand;
-            button3.FlatAppearance.BorderSize = 2;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Inter", 6F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.ForeColor = Color.Black;
-            button3.Location = new Point(74, 410);
-            button3.Name = "button3";
-            button3.Size = new Size(61, 32);
-            button3.TabIndex = 34;
-            button3.Text = "Pilih File";
-            button3.UseVisualStyleBackColor = false;
-            // 
-            // textBox3
-            // 
-            textBox3.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox3.Location = new Point(150, 410);
-            textBox3.Name = "textBox3";
-            textBox3.ReadOnly = true;
-            textBox3.Size = new Size(239, 32);
-            textBox3.TabIndex = 33;
-            // 
-            // label2
-            // 
-            label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Inter", 8F);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(70, 383);
-            label2.Name = "label2";
-            label2.Size = new Size(127, 24);
-            label2.TabIndex = 32;
-            label2.Text = "Unggah Foto Ktp";
-            // 
-            // button2
-            // 
-            button2.BackColor = Color.LightGray;
-            button2.Cursor = Cursors.Hand;
-            button2.FlatAppearance.BorderSize = 2;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Inter", 6F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.Black;
-            button2.Location = new Point(74, 322);
-            button2.Name = "button2";
-            button2.Size = new Size(61, 32);
-            button2.TabIndex = 31;
-            button2.Text = "Pilih File";
-            button2.UseVisualStyleBackColor = false;
-            // 
-            // textBox1
-            // 
-            textBox1.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(150, 322);
-            textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
-            textBox1.Size = new Size(239, 32);
-            textBox1.TabIndex = 30;
-            // 
-            // label1
-            // 
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Inter", 8F);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(70, 295);
-            label1.Name = "label1";
-            label1.Size = new Size(127, 24);
-            label1.TabIndex = 29;
-            label1.Text = "Unggah Foto Ktp";
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.LightGray;
-            button1.Cursor = Cursors.Hand;
-            button1.FlatAppearance.BorderSize = 2;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Inter", 6F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.Black;
-            button1.Location = new Point(74, 229);
-            button1.Name = "button1";
-            button1.Size = new Size(61, 32);
-            button1.TabIndex = 28;
-            button1.Text = "Pilih File";
-            button1.UseVisualStyleBackColor = false;
-            // 
-            // comboBox1
-            // 
-            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox1.DropDownWidth = 200;
-            comboBox1.Font = new Font("Inter", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "3 Bulan", "6 Bulan", "9 Bulan", "12 Bulan" });
-            comboBox1.Location = new Point(70, 125);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(316, 32);
-            comboBox1.TabIndex = 27;
             // 
             // panel13
             // 
@@ -185,39 +92,19 @@
             button4.Name = "button4";
             button4.Size = new Size(368, 57);
             button4.TabIndex = 1;
-            button4.Text = "Lanjut";
+            button4.Text = "Konfirmasi Pembayaran";
             button4.UseVisualStyleBackColor = false;
-            // 
-            // textBox2
-            // 
-            textBox2.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(150, 229);
-            textBox2.Name = "textBox2";
-            textBox2.ReadOnly = true;
-            textBox2.Size = new Size(239, 32);
-            textBox2.TabIndex = 19;
-            // 
-            // label10
-            // 
-            label10.BackColor = Color.Transparent;
-            label10.Font = new Font("Inter", 8F);
-            label10.ForeColor = Color.White;
-            label10.Location = new Point(70, 202);
-            label10.Name = "label10";
-            label10.Size = new Size(127, 24);
-            label10.TabIndex = 18;
-            label10.Text = "Unggah Foto Ktp";
             // 
             // label9
             // 
             label9.BackColor = Color.Transparent;
             label9.Font = new Font("Inter", 8F);
             label9.ForeColor = Color.White;
-            label9.Location = new Point(70, 97);
+            label9.Location = new Point(27, 98);
             label9.Name = "label9";
             label9.Size = new Size(199, 24);
             label9.TabIndex = 16;
-            label9.Text = "Pilih Durasi Penyewaan";
+            label9.Text = "Estimasi Biaya untuk X Bulan Sewa";
             // 
             // label8
             // 
@@ -229,6 +116,136 @@
             label8.Size = new Size(286, 36);
             label8.TabIndex = 6;
             label8.Text = "Form Pengajuan sewa";
+            // 
+            // label17
+            // 
+            label17.BackColor = Color.Transparent;
+            label17.Font = new Font("Inter", 8F);
+            label17.ForeColor = Color.White;
+            label17.Location = new Point(196, 234);
+            label17.Name = "label17";
+            label17.Size = new Size(239, 24);
+            label17.TabIndex = 54;
+            label17.Text = "BRI";
+            // 
+            // label16
+            // 
+            label16.BackColor = Color.Transparent;
+            label16.Font = new Font("Inter", 8F);
+            label16.ForeColor = Color.White;
+            label16.Location = new Point(196, 284);
+            label16.Name = "label16";
+            label16.Size = new Size(239, 24);
+            label16.TabIndex = 53;
+            label16.Text = "351xxxxxxxxxxxx";
+            // 
+            // label15
+            // 
+            label15.BackColor = Color.Transparent;
+            label15.Font = new Font("Inter", 8F);
+            label15.ForeColor = Color.White;
+            label15.Location = new Point(196, 334);
+            label15.Name = "label15";
+            label15.Size = new Size(239, 24);
+            label15.TabIndex = 52;
+            label15.Text = "Ahmad Fajarudin DZOX";
+            // 
+            // label14
+            // 
+            label14.BackColor = Color.Transparent;
+            label14.Font = new Font("Inter", 8F);
+            label14.ForeColor = Color.White;
+            label14.Location = new Point(196, 384);
+            label14.Name = "label14";
+            label14.Size = new Size(239, 24);
+            label14.TabIndex = 51;
+            label14.Text = "otomatis tergantung pilihan";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Font = new Font("Inter", 9F);
+            label13.ForeColor = Color.White;
+            label13.Location = new Point(27, 284);
+            label13.Name = "label13";
+            label13.Size = new Size(169, 22);
+            label13.TabIndex = 50;
+            label13.Text = "No. Rekening               :";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Font = new Font("Inter", 9F);
+            label12.ForeColor = Color.White;
+            label12.Location = new Point(27, 384);
+            label12.Name = "label12";
+            label12.Size = new Size(172, 22);
+            label12.TabIndex = 49;
+            label12.Text = "Jumlah Nominal           :";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Inter", 9F);
+            label11.ForeColor = Color.White;
+            label11.Location = new Point(27, 334);
+            label11.Name = "label11";
+            label11.Size = new Size(169, 22);
+            label11.TabIndex = 48;
+            label11.Text = "Atas Nama                    :";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Inter", 9F);
+            label7.ForeColor = Color.White;
+            label7.Location = new Point(27, 434);
+            label7.Name = "label7";
+            label7.Size = new Size(172, 22);
+            label7.TabIndex = 47;
+            label7.Text = "Keterangan Transfer   :";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Inter", 9F);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(27, 234);
+            label3.Name = "label3";
+            label3.Size = new Size(169, 22);
+            label3.TabIndex = 46;
+            label3.Text = "Bank                              :";
+            // 
+            // label1
+            // 
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Inter", 8F);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(196, 434);
+            label1.Name = "label1";
+            label1.Size = new Size(239, 24);
+            label1.TabIndex = 45;
+            label1.Text = "Sertakan nama dan nomor HP ";
+            // 
+            // label2
+            // 
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Inter", 8F);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(27, 200);
+            label2.Name = "label2";
+            label2.Size = new Size(359, 24);
+            label2.TabIndex = 55;
+            label2.Text = "Silahkan Transfer ke Rekening Berikut:";
+            // 
+            // textBox2
+            // 
+            textBox2.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox2.Location = new Point(27, 125);
+            textBox2.Name = "textBox2";
+            textBox2.ReadOnly = true;
+            textBox2.Size = new Size(325, 32);
+            textBox2.TabIndex = 56;
             // 
             // Form_Sewa5
             // 
@@ -246,19 +263,21 @@
         #endregion
 
         private Panel panel12;
-        private Button button3;
-        private TextBox textBox3;
-        private Label label2;
-        private Button button2;
-        private TextBox textBox1;
-        private Label label1;
-        private Button button1;
-        private ComboBox comboBox1;
         private Panel panel13;
         private Button button4;
-        private TextBox textBox2;
-        private Label label10;
         private Label label9;
         private Label label8;
+        private Label label17;
+        private Label label16;
+        private Label label15;
+        private Label label14;
+        private Label label13;
+        private Label label12;
+        private Label label11;
+        private Label label7;
+        private Label label3;
+        private Label label1;
+        private Label label2;
+        private TextBox textBox2;
     }
 }

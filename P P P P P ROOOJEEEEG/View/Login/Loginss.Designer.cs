@@ -30,28 +30,30 @@
         {
             panel15 = new Panel();
             linkLabel3 = new LinkLabel();
-            panel3 = new Panel();
-            panel5 = new Panel();
-            textBox1 = new TextBox();
-            label1 = new Label();
-            panel2 = new Panel();
-            textBox2 = new TextBox();
-            label2 = new Label();
             panel1 = new Panel();
             button4 = new Button();
+            label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            textBox1 = new TextBox();
+            label1 = new Label();
+            textBox2 = new TextBox();
             panel15.SuspendLayout();
-            panel3.SuspendLayout();
-            panel5.SuspendLayout();
-            panel2.SuspendLayout();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel15
             // 
             panel15.BackColor = Color.White;
+            panel15.Controls.Add(textBox2);
+            panel15.Controls.Add(label1);
+            panel15.Controls.Add(textBox1);
+            panel15.Controls.Add(label6);
+            panel15.Controls.Add(label5);
+            panel15.Controls.Add(label4);
+            panel15.Controls.Add(label3);
             panel15.Controls.Add(linkLabel3);
-            panel15.Controls.Add(panel3);
-            panel15.Controls.Add(panel2);
             panel15.Controls.Add(panel1);
             panel15.Location = new Point(813, 107);
             panel15.Name = "panel15";
@@ -73,78 +75,10 @@
             linkLabel3.Text = "Lupa Sandi?";
             linkLabel3.UseCompatibleTextRendering = true;
             // 
-            // panel3
-            // 
-            panel3.Controls.Add(panel5);
-            panel3.Controls.Add(label1);
-            panel3.Location = new Point(46, 207);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(451, 71);
-            panel3.TabIndex = 1;
-            // 
-            // panel5
-            // 
-            panel5.BackColor = Color.FromArgb(66, 133, 244);
-            panel5.Controls.Add(textBox1);
-            panel5.Location = new Point(1, 37);
-            panel5.Name = "panel5";
-            panel5.Padding = new Padding(1);
-            panel5.Size = new Size(449, 31);
-            panel5.TabIndex = 17;
-            // 
-            // textBox1
-            // 
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Inter", 13.2000008F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(2, 2);
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "Password";
-            textBox1.Size = new Size(445, 27);
-            textBox1.TabIndex = 4;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Inter", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(3, 2);
-            label1.Name = "label1";
-            label1.Size = new Size(203, 22);
-            label1.TabIndex = 0;
-            label1.Text = "Masukkan Username Anda:";
-            // 
-            // panel2
-            // 
-            panel2.Controls.Add(textBox2);
-            panel2.Controls.Add(label2);
-            panel2.Location = new Point(46, 313);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(451, 71);
-            panel2.TabIndex = 1;
-            // 
-            // textBox2
-            // 
-            textBox2.BorderStyle = BorderStyle.None;
-            textBox2.Font = new Font("Segoe UI", 10F);
-            textBox2.Location = new Point(7, 38);
-            textBox2.Name = "textBox2";
-            textBox2.PlaceholderText = "Password";
-            textBox2.Size = new Size(445, 23);
-            textBox2.TabIndex = 3;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Inter", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(3, 2);
-            label2.Name = "label2";
-            label2.Size = new Size(200, 22);
-            label2.TabIndex = 2;
-            label2.Text = "Masukkan Password Anda:";
-            // 
             // panel1
             // 
             panel1.Controls.Add(button4);
-            panel1.Location = new Point(0, 502);
+            panel1.Location = new Point(0, 498);
             panel1.Name = "panel1";
             panel1.Size = new Size(539, 54);
             panel1.TabIndex = 0;
@@ -164,6 +98,76 @@
             button4.Text = "Masuk";
             button4.UseVisualStyleBackColor = false;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Inter", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Location = new Point(53, 26);
+            label3.Name = "label3";
+            label3.Size = new Size(180, 27);
+            label3.TabIndex = 14;
+            label3.Text = "Selamat datang di ";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Inter", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Location = new Point(220, 26);
+            label4.Name = "label4";
+            label4.Size = new Size(87, 27);
+            label4.TabIndex = 15;
+            label4.Text = "SIMARU";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Inter", 25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(53, 53);
+            label5.Name = "label5";
+            label5.Size = new Size(185, 61);
+            label5.TabIndex = 16;
+            label5.Text = "MASUK";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Inter", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label6.Location = new Point(53, 282);
+            label6.Name = "label6";
+            label6.Size = new Size(203, 22);
+            label6.TabIndex = 17;
+            label6.Text = "Masukkan Username Anda:";
+            // 
+            // textBox1
+            // 
+            textBox1.BorderStyle = BorderStyle.FixedSingle;
+            textBox1.Font = new Font("Segoe UI", 10F);
+            textBox1.Location = new Point(53, 327);
+            textBox1.Name = "textBox1";
+            textBox1.PlaceholderText = "Password";
+            textBox1.Size = new Size(445, 30);
+            textBox1.TabIndex = 18;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Inter", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(53, 183);
+            label1.Name = "label1";
+            label1.Size = new Size(200, 22);
+            label1.TabIndex = 19;
+            label1.Text = "Masukkan Password Anda:";
+            // 
+            // textBox2
+            // 
+            textBox2.BorderStyle = BorderStyle.FixedSingle;
+            textBox2.Font = new Font("Segoe UI", 10F);
+            textBox2.Location = new Point(53, 221);
+            textBox2.Name = "textBox2";
+            textBox2.PlaceholderText = "Username";
+            textBox2.Size = new Size(445, 30);
+            textBox2.TabIndex = 20;
+            // 
             // Loginss
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -173,17 +177,12 @@
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1422, 803);
             Controls.Add(panel15);
+            DoubleBuffered = true;
             Name = "Loginss";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Loginss";
             panel15.ResumeLayout(false);
             panel15.PerformLayout();
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
-            panel5.ResumeLayout(false);
-            panel5.PerformLayout();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
             panel1.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -191,15 +190,15 @@
         #endregion
 
         private Panel panel15;
-        private Panel panel3;
-        private Panel panel2;
         private Panel panel1;
         private Button button4;
         private LinkLabel linkLabel3;
-        private Label label1;
+        private Label label5;
+        private Label label4;
+        private Label label3;
         private TextBox textBox2;
-        private Label label2;
-        private Panel panel5;
+        private Label label1;
         private TextBox textBox1;
+        private Label label6;
     }
 }
