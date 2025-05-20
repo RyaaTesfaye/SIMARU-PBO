@@ -33,11 +33,12 @@
             label1 = new Label();
             textBox1 = new TextBox();
             label6 = new Label();
-            label4 = new Label();
-            label3 = new Label();
             linkLabel3 = new LinkLabel();
             panel1 = new Panel();
             button4 = new Button();
+            label2 = new Label();
+            label5 = new Label();
+            label3 = new Label();
             panel15.SuspendLayout();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -45,12 +46,13 @@
             // panel15
             // 
             panel15.BackColor = Color.White;
+            panel15.Controls.Add(label3);
+            panel15.Controls.Add(label2);
+            panel15.Controls.Add(label5);
             panel15.Controls.Add(textBox2);
             panel15.Controls.Add(label1);
             panel15.Controls.Add(textBox1);
             panel15.Controls.Add(label6);
-            panel15.Controls.Add(label4);
-            panel15.Controls.Add(label3);
             panel15.Controls.Add(linkLabel3);
             panel15.Controls.Add(panel1);
             panel15.Location = new Point(0, 0);
@@ -64,7 +66,7 @@
             textBox2.Font = new Font("Segoe UI", 10F);
             textBox2.Location = new Point(53, 221);
             textBox2.Name = "textBox2";
-            textBox2.PlaceholderText = "Username";
+            textBox2.PlaceholderText = "Kata Sandi";
             textBox2.Size = new Size(445, 30);
             textBox2.TabIndex = 20;
             // 
@@ -74,9 +76,9 @@
             label1.Font = new Font("Inter", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.Location = new Point(53, 183);
             label1.Name = "label1";
-            label1.Size = new Size(200, 22);
+            label1.Size = new Size(162, 22);
             label1.TabIndex = 19;
-            label1.Text = "Masukkan Password Anda:";
+            label1.Text = "Masukkan sandi anda";
             // 
             // textBox1
             // 
@@ -84,7 +86,7 @@
             textBox1.Font = new Font("Segoe UI", 10F);
             textBox1.Location = new Point(53, 327);
             textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "Password";
+            textBox1.PlaceholderText = "Kata Sandi";
             textBox1.Size = new Size(445, 30);
             textBox1.TabIndex = 18;
             // 
@@ -92,31 +94,11 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Inter", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.Location = new Point(53, 282);
+            label6.Location = new Point(53, 290);
             label6.Name = "label6";
-            label6.Size = new Size(203, 22);
+            label6.Size = new Size(205, 22);
             label6.TabIndex = 17;
-            label6.Text = "Masukkan Username Anda:";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Inter", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(220, 26);
-            label4.Name = "label4";
-            label4.Size = new Size(87, 27);
-            label4.TabIndex = 15;
-            label4.Text = "SIMARU";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Inter", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(53, 26);
-            label3.Name = "label3";
-            label3.Size = new Size(180, 27);
-            label3.TabIndex = 14;
-            label3.Text = "Selamat datang di ";
+            label6.Text = "Masukkan ulang sandi anda";
             // 
             // linkLabel3
             // 
@@ -125,12 +107,12 @@
             linkLabel3.Font = new Font("Inter", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             linkLabel3.LinkArea = new LinkArea(0, 60);
             linkLabel3.LinkColor = Color.FromArgb(60, 138, 255);
-            linkLabel3.Location = new Point(77, 570);
+            linkLabel3.Location = new Point(130, 571);
             linkLabel3.Name = "linkLabel3";
-            linkLabel3.Size = new Size(82, 21);
+            linkLabel3.Size = new Size(40, 21);
             linkLabel3.TabIndex = 13;
             linkLabel3.TabStop = true;
-            linkLabel3.Text = "Lupa Sandi?";
+            linkLabel3.Text = "Login";
             linkLabel3.UseCompatibleTextRendering = true;
             // 
             // panel1
@@ -153,8 +135,38 @@
             button4.Name = "button4";
             button4.Size = new Size(451, 54);
             button4.TabIndex = 1;
-            button4.Text = "Masuk";
+            button4.Text = "Konfirmasi";
             button4.UseVisualStyleBackColor = false;
+            // 
+            // label2
+            // 
+            label2.Font = new Font("Inter", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Location = new Point(53, 86);
+            label2.Name = "label2";
+            label2.Size = new Size(383, 49);
+            label2.TabIndex = 22;
+            label2.Text = "Pastikan kata sandi mengandung huruf besar, huruf kecil, angka, dan karakter khusus";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Inter", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(180, 24);
+            label5.Name = "label5";
+            label5.Size = new Size(167, 27);
+            label5.TabIndex = 21;
+            label5.Text = "Reset Kata Sandi";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Inter", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Location = new Point(3, 570);
+            label3.Name = "label3";
+            label3.Size = new Size(130, 18);
+            label3.TabIndex = 23;
+            label3.Text = "Kembali ke halaman";
             // 
             // Logins_3
             // 
@@ -176,10 +188,11 @@
         private Label label1;
         private TextBox textBox1;
         private Label label6;
-        private Label label4;
-        private Label label3;
         private LinkLabel linkLabel3;
         private Panel panel1;
         private Button button4;
+        private Label label2;
+        private Label label5;
+        private Label label3;
     }
 }

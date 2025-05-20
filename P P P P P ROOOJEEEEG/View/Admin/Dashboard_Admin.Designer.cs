@@ -33,6 +33,9 @@ namespace RUSUNAWAAA.View.Admin
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard_Admin));
             panel1 = new Panel();
             panel29 = new Panel();
+            panel30 = new Panel();
+            label31 = new Label();
+            pictureBox17 = new PictureBox();
             label30 = new Label();
             pictureBox16 = new PictureBox();
             panel22 = new Panel();
@@ -108,11 +111,22 @@ namespace RUSUNAWAAA.View.Admin
             label26 = new Label();
             label14 = new Label();
             label6 = new Label();
-            panel30 = new Panel();
-            label31 = new Label();
-            pictureBox17 = new PictureBox();
+            panel31 = new Panel();
+            panel32 = new Panel();
+            label32 = new Label();
+            pictureBox18 = new PictureBox();
+            label33 = new Label();
+            pictureBox19 = new PictureBox();
+            panel33 = new Panel();
+            panel34 = new Panel();
+            label34 = new Label();
+            pictureBox20 = new PictureBox();
+            label35 = new Label();
+            pictureBox21 = new PictureBox();
             panel1.SuspendLayout();
             panel29.SuspendLayout();
+            panel30.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox17).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
             panel22.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
@@ -154,12 +168,20 @@ namespace RUSUNAWAAA.View.Admin
             panel18.SuspendLayout();
             panel11.SuspendLayout();
             panel17.SuspendLayout();
-            panel30.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox17).BeginInit();
+            panel31.SuspendLayout();
+            panel32.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox19).BeginInit();
+            panel33.SuspendLayout();
+            panel34.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox20).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox21).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
+            panel1.Controls.Add(panel33);
+            panel1.Controls.Add(panel31);
             panel1.Controls.Add(panel29);
             panel1.Controls.Add(panel22);
             panel1.Controls.Add(panel21);
@@ -188,6 +210,38 @@ namespace RUSUNAWAAA.View.Admin
             panel29.Name = "panel29";
             panel29.Size = new Size(240, 50);
             panel29.TabIndex = 8;
+            // 
+            // panel30
+            // 
+            panel30.BackColor = Color.Transparent;
+            panel30.Controls.Add(label31);
+            panel30.Controls.Add(pictureBox17);
+            panel30.Cursor = Cursors.Hand;
+            panel30.Location = new Point(0, 510);
+            panel30.Name = "panel30";
+            panel30.Size = new Size(240, 50);
+            panel30.TabIndex = 9;
+            // 
+            // label31
+            // 
+            label31.AutoSize = true;
+            label31.Font = new Font("Inter", 10F, FontStyle.Bold);
+            label31.ForeColor = Color.White;
+            label31.Location = new Point(45, 12);
+            label31.Name = "label31";
+            label31.Size = new Size(99, 24);
+            label31.TabIndex = 4;
+            label31.Text = "Tata Tertib";
+            // 
+            // pictureBox17
+            // 
+            pictureBox17.Image = Properties.Resources.refresh;
+            pictureBox17.Location = new Point(10, 10);
+            pictureBox17.Name = "pictureBox17";
+            pictureBox17.Size = new Size(25, 25);
+            pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox17.TabIndex = 2;
+            pictureBox17.TabStop = false;
             // 
             // label30
             // 
@@ -228,9 +282,9 @@ namespace RUSUNAWAAA.View.Admin
             label13.ForeColor = Color.White;
             label13.Location = new Point(45, 12);
             label13.Name = "label13";
-            label13.Size = new Size(171, 24);
+            label13.Size = new Size(123, 24);
             label13.TabIndex = 4;
-            label13.Text = "Manajemen Ulasan";
+            label13.Text = "Kelola Aturan";
             label13.Click += label13_Click;
             // 
             // pictureBox10
@@ -261,9 +315,9 @@ namespace RUSUNAWAAA.View.Admin
             label12.ForeColor = Color.White;
             label12.Location = new Point(45, 12);
             label12.Name = "label12";
-            label12.Size = new Size(182, 24);
+            label12.Size = new Size(125, 24);
             label12.TabIndex = 4;
-            label12.Text = "Manajemen Keluhan";
+            label12.Text = "Tinjau Ulasan";
             // 
             // pictureBox1
             // 
@@ -327,9 +381,9 @@ namespace RUSUNAWAAA.View.Admin
             label5.ForeColor = Color.White;
             label5.Location = new Point(45, 12);
             label5.Name = "label5";
-            label5.Size = new Size(109, 24);
+            label5.Size = new Size(134, 24);
             label5.TabIndex = 4;
-            label5.Text = "Virtual Tour";
+            label5.Text = "Daftar Keluhan";
             // 
             // pictureBox5
             // 
@@ -359,9 +413,9 @@ namespace RUSUNAWAAA.View.Admin
             label4.ForeColor = Color.White;
             label4.Location = new Point(45, 12);
             label4.Name = "label4";
-            label4.Size = new Size(174, 24);
+            label4.Size = new Size(126, 24);
             label4.TabIndex = 4;
-            label4.Text = "Manajemen Hunian";
+            label4.Text = "Kelola Hunian";
             // 
             // pictureBox4
             // 
@@ -1028,37 +1082,136 @@ namespace RUSUNAWAAA.View.Admin
             label6.TabIndex = 4;
             label6.Text = "Beranda Admin";
             // 
-            // panel30
+            // panel31
             // 
-            panel30.BackColor = Color.Transparent;
-            panel30.Controls.Add(label31);
-            panel30.Controls.Add(pictureBox17);
-            panel30.Cursor = Cursors.Hand;
-            panel30.Location = new Point(0, 510);
-            panel30.Name = "panel30";
-            panel30.Size = new Size(240, 50);
-            panel30.TabIndex = 9;
+            panel31.BackColor = Color.Transparent;
+            panel31.Controls.Add(panel32);
+            panel31.Controls.Add(label33);
+            panel31.Controls.Add(pictureBox19);
+            panel31.Cursor = Cursors.Hand;
+            panel31.Location = new Point(0, 510);
+            panel31.Name = "panel31";
+            panel31.Size = new Size(240, 50);
+            panel31.TabIndex = 9;
             // 
-            // label31
+            // panel32
             // 
-            label31.AutoSize = true;
-            label31.Font = new Font("Inter", 10F, FontStyle.Bold);
-            label31.ForeColor = Color.White;
-            label31.Location = new Point(45, 12);
-            label31.Name = "label31";
-            label31.Size = new Size(99, 24);
-            label31.TabIndex = 4;
-            label31.Text = "Tata Tertib";
+            panel32.BackColor = Color.Transparent;
+            panel32.Controls.Add(label32);
+            panel32.Controls.Add(pictureBox18);
+            panel32.Cursor = Cursors.Hand;
+            panel32.Location = new Point(0, 510);
+            panel32.Name = "panel32";
+            panel32.Size = new Size(240, 50);
+            panel32.TabIndex = 9;
             // 
-            // pictureBox17
+            // label32
             // 
-            pictureBox17.Image = Properties.Resources.refresh;
-            pictureBox17.Location = new Point(10, 10);
-            pictureBox17.Name = "pictureBox17";
-            pictureBox17.Size = new Size(25, 25);
-            pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox17.TabIndex = 2;
-            pictureBox17.TabStop = false;
+            label32.AutoSize = true;
+            label32.Font = new Font("Inter", 10F, FontStyle.Bold);
+            label32.ForeColor = Color.White;
+            label32.Location = new Point(45, 12);
+            label32.Name = "label32";
+            label32.Size = new Size(99, 24);
+            label32.TabIndex = 4;
+            label32.Text = "Tata Tertib";
+            // 
+            // pictureBox18
+            // 
+            pictureBox18.Image = Properties.Resources.refresh;
+            pictureBox18.Location = new Point(10, 10);
+            pictureBox18.Name = "pictureBox18";
+            pictureBox18.Size = new Size(25, 25);
+            pictureBox18.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox18.TabIndex = 2;
+            pictureBox18.TabStop = false;
+            // 
+            // label33
+            // 
+            label33.AutoSize = true;
+            label33.Font = new Font("Inter", 10F, FontStyle.Bold);
+            label33.ForeColor = Color.White;
+            label33.Location = new Point(45, 12);
+            label33.Name = "label33";
+            label33.Size = new Size(145, 24);
+            label33.TabIndex = 4;
+            label33.Text = "Edit Virtual Tour";
+            // 
+            // pictureBox19
+            // 
+            pictureBox19.Image = Properties.Resources.refresh;
+            pictureBox19.Location = new Point(10, 10);
+            pictureBox19.Name = "pictureBox19";
+            pictureBox19.Size = new Size(25, 25);
+            pictureBox19.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox19.TabIndex = 2;
+            pictureBox19.TabStop = false;
+            // 
+            // panel33
+            // 
+            panel33.BackColor = Color.Transparent;
+            panel33.Controls.Add(panel34);
+            panel33.Controls.Add(label35);
+            panel33.Controls.Add(pictureBox21);
+            panel33.Cursor = Cursors.Hand;
+            panel33.Location = new Point(0, 565);
+            panel33.Name = "panel33";
+            panel33.Size = new Size(240, 50);
+            panel33.TabIndex = 10;
+            panel33.Paint += panel33_Paint;
+            // 
+            // panel34
+            // 
+            panel34.BackColor = Color.Transparent;
+            panel34.Controls.Add(label34);
+            panel34.Controls.Add(pictureBox20);
+            panel34.Cursor = Cursors.Hand;
+            panel34.Location = new Point(0, 510);
+            panel34.Name = "panel34";
+            panel34.Size = new Size(240, 50);
+            panel34.TabIndex = 9;
+            // 
+            // label34
+            // 
+            label34.AutoSize = true;
+            label34.Font = new Font("Inter", 10F, FontStyle.Bold);
+            label34.ForeColor = Color.White;
+            label34.Location = new Point(45, 12);
+            label34.Name = "label34";
+            label34.Size = new Size(99, 24);
+            label34.TabIndex = 4;
+            label34.Text = "Tata Tertib";
+            // 
+            // pictureBox20
+            // 
+            pictureBox20.Image = Properties.Resources.refresh;
+            pictureBox20.Location = new Point(10, 10);
+            pictureBox20.Name = "pictureBox20";
+            pictureBox20.Size = new Size(25, 25);
+            pictureBox20.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox20.TabIndex = 2;
+            pictureBox20.TabStop = false;
+            // 
+            // label35
+            // 
+            label35.AutoSize = true;
+            label35.Font = new Font("Inter", 10F, FontStyle.Bold);
+            label35.ForeColor = Color.White;
+            label35.Location = new Point(45, 12);
+            label35.Name = "label35";
+            label35.Size = new Size(64, 24);
+            label35.TabIndex = 4;
+            label35.Text = "Siaran";
+            // 
+            // pictureBox21
+            // 
+            pictureBox21.Image = Properties.Resources.refresh;
+            pictureBox21.Location = new Point(10, 10);
+            pictureBox21.Name = "pictureBox21";
+            pictureBox21.Size = new Size(25, 25);
+            pictureBox21.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox21.TabIndex = 2;
+            pictureBox21.TabStop = false;
             // 
             // Dashboard_Admin
             // 
@@ -1078,6 +1231,9 @@ namespace RUSUNAWAAA.View.Admin
             panel1.PerformLayout();
             panel29.ResumeLayout(false);
             panel29.PerformLayout();
+            panel30.ResumeLayout(false);
+            panel30.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox17).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox16).EndInit();
             panel22.ResumeLayout(false);
             panel22.PerformLayout();
@@ -1137,9 +1293,18 @@ namespace RUSUNAWAAA.View.Admin
             panel11.PerformLayout();
             panel17.ResumeLayout(false);
             panel17.PerformLayout();
-            panel30.ResumeLayout(false);
-            panel30.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox17).EndInit();
+            panel31.ResumeLayout(false);
+            panel31.PerformLayout();
+            panel32.ResumeLayout(false);
+            panel32.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox18).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox19).EndInit();
+            panel33.ResumeLayout(false);
+            panel33.PerformLayout();
+            panel34.ResumeLayout(false);
+            panel34.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox20).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox21).EndInit();
             ResumeLayout(false);
         }
 
@@ -1225,5 +1390,17 @@ namespace RUSUNAWAAA.View.Admin
         private Panel panel30;
         private Label label31;
         private PictureBox pictureBox17;
+        private Panel panel33;
+        private Panel panel34;
+        private Label label34;
+        private PictureBox pictureBox20;
+        private Label label35;
+        private PictureBox pictureBox21;
+        private Panel panel31;
+        private Panel panel32;
+        private Label label32;
+        private PictureBox pictureBox18;
+        private Label label33;
+        private PictureBox pictureBox19;
     }
 }

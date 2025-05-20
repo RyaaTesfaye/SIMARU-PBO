@@ -59,5 +59,10 @@ namespace RUSUNAWAAA.View.Admin
         {
 
         }
+
+        private void panel33_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using RUSUNAWAAA.View.Umum;
+using RUSUNAWAAA.View.Login;
 
 namespace RUSUNAWAAA
 {
@@ -20,7 +20,7 @@ namespace RUSUNAWAAA
         private void LoadFormPengajuanSewa()
         {
             panel1.Controls.Clear(); // Hapus konten lama kalau ada
-            Form_Sewa3 formSewa = new Form_Sewa3();
+            Logins_2 formSewa = new Logins_2();
             formSewa.Dock = DockStyle.Fill;
             panel1.Controls.Add(formSewa);
         }
