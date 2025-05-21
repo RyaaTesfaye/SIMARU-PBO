@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DaftarUnit_Umum));
             panel1 = new Panel();
             panel29 = new Panel();
             label26 = new Label();
@@ -59,6 +60,14 @@
             panel9 = new Panel();
             panel6 = new Panel();
             panel15 = new Panel();
+            label102 = new Label();
+            label103 = new Label();
+            label104 = new Label();
+            label105 = new Label();
+            label106 = new Label();
+            label107 = new Label();
+            label108 = new Label();
+            label109 = new Label();
             pictureBox29 = new PictureBox();
             pictureBox30 = new PictureBox();
             pictureBox31 = new PictureBox();
@@ -78,6 +87,14 @@
             label69 = new Label();
             panel14 = new Panel();
             panel13 = new Panel();
+            label94 = new Label();
+            label95 = new Label();
+            label96 = new Label();
+            label97 = new Label();
+            label98 = new Label();
+            label99 = new Label();
+            label100 = new Label();
+            label101 = new Label();
             pictureBox24 = new PictureBox();
             pictureBox25 = new PictureBox();
             pictureBox26 = new PictureBox();
@@ -96,6 +113,15 @@
             label56 = new Label();
             label57 = new Label();
             panel12 = new Panel();
+            label43 = new Label();
+            label86 = new Label();
+            label87 = new Label();
+            label88 = new Label();
+            label89 = new Label();
+            label90 = new Label();
+            label91 = new Label();
+            label92 = new Label();
+            label93 = new Label();
             pictureBox19 = new PictureBox();
             pictureBox20 = new PictureBox();
             pictureBox21 = new PictureBox();
@@ -165,31 +191,6 @@
             label18 = new Label();
             label7 = new Label();
             label6 = new Label();
-            label43 = new Label();
-            label86 = new Label();
-            label87 = new Label();
-            label88 = new Label();
-            label89 = new Label();
-            label90 = new Label();
-            label91 = new Label();
-            label92 = new Label();
-            label93 = new Label();
-            label94 = new Label();
-            label95 = new Label();
-            label96 = new Label();
-            label97 = new Label();
-            label98 = new Label();
-            label99 = new Label();
-            label100 = new Label();
-            label101 = new Label();
-            label102 = new Label();
-            label103 = new Label();
-            label104 = new Label();
-            label105 = new Label();
-            label106 = new Label();
-            label107 = new Label();
-            label108 = new Label();
-            label109 = new Label();
             panel1.SuspendLayout();
             panel29.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
@@ -357,7 +358,7 @@
             // 
             // pictureBox9
             // 
-            pictureBox9.Image = Properties.Resources.Icon;
+            pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
             pictureBox9.Location = new Point(10, 8);
             pictureBox9.Name = "pictureBox9";
             pictureBox9.Size = new Size(35, 35);
@@ -508,10 +509,11 @@
             label1.ForeColor = Color.White;
             label1.Location = new Point(43, 6);
             label1.Name = "label1";
-            label1.Size = new Size(172, 43);
+            label1.Size = new Size(139, 43);
             label1.TabIndex = 0;
-            label1.Text = "RUSAKITA";
+            label1.Text = "SIMARU";
             label1.TextAlign = ContentAlignment.MiddleCenter;
+            label1.Click += label1_Click;
             // 
             // panel7
             // 
@@ -605,6 +607,94 @@
             panel15.Name = "panel15";
             panel15.Size = new Size(353, 574);
             panel15.TabIndex = 6;
+            // 
+            // label102
+            // 
+            label102.BackColor = Color.Transparent;
+            label102.Font = new Font("Inter", 8F);
+            label102.ForeColor = Color.White;
+            label102.Location = new Point(62, 538);
+            label102.Name = "label102";
+            label102.Size = new Size(156, 24);
+            label102.TabIndex = 135;
+            label102.Text = "-Jemuran";
+            // 
+            // label103
+            // 
+            label103.BackColor = Color.Transparent;
+            label103.Font = new Font("Inter", 8F);
+            label103.ForeColor = Color.White;
+            label103.Location = new Point(62, 514);
+            label103.Name = "label103";
+            label103.Size = new Size(186, 24);
+            label103.TabIndex = 134;
+            label103.Text = "-3 set Bantal dan Guling";
+            // 
+            // label104
+            // 
+            label104.BackColor = Color.Transparent;
+            label104.Font = new Font("Inter", 8F);
+            label104.ForeColor = Color.White;
+            label104.Location = new Point(62, 490);
+            label104.Name = "label104";
+            label104.Size = new Size(156, 24);
+            label104.TabIndex = 133;
+            label104.Text = "-3 Kursi";
+            // 
+            // label105
+            // 
+            label105.BackColor = Color.Transparent;
+            label105.Font = new Font("Inter", 8F);
+            label105.ForeColor = Color.White;
+            label105.Location = new Point(62, 466);
+            label105.Name = "label105";
+            label105.Size = new Size(156, 24);
+            label105.TabIndex = 132;
+            label105.Text = "-Lemari 3 Pintu";
+            // 
+            // label106
+            // 
+            label106.BackColor = Color.Transparent;
+            label106.Font = new Font("Inter", 8F);
+            label106.ForeColor = Color.White;
+            label106.Location = new Point(62, 442);
+            label106.Name = "label106";
+            label106.Size = new Size(156, 24);
+            label106.TabIndex = 131;
+            label106.Text = "-3 Ranjang";
+            // 
+            // label107
+            // 
+            label107.BackColor = Color.Transparent;
+            label107.Font = new Font("Inter", 8F);
+            label107.ForeColor = Color.White;
+            label107.Location = new Point(62, 418);
+            label107.Name = "label107";
+            label107.Size = new Size(156, 24);
+            label107.TabIndex = 130;
+            label107.Text = "-3 Kasur";
+            // 
+            // label108
+            // 
+            label108.BackColor = Color.Transparent;
+            label108.Font = new Font("Inter", 8F);
+            label108.ForeColor = Color.White;
+            label108.Location = new Point(62, 394);
+            label108.Name = "label108";
+            label108.Size = new Size(156, 24);
+            label108.TabIndex = 129;
+            label108.Text = "-3 Meja Belajar";
+            // 
+            // label109
+            // 
+            label109.BackColor = Color.Transparent;
+            label109.Font = new Font("Inter", 8F);
+            label109.ForeColor = Color.White;
+            label109.Location = new Point(62, 370);
+            label109.Name = "label109";
+            label109.Size = new Size(156, 24);
+            label109.TabIndex = 128;
+            label109.Text = "-Balkon Pribadi";
             // 
             // pictureBox29
             // 
@@ -831,6 +921,94 @@
             panel13.Size = new Size(320, 574);
             panel13.TabIndex = 3;
             // 
+            // label94
+            // 
+            label94.BackColor = Color.Transparent;
+            label94.Font = new Font("Inter", 8F);
+            label94.ForeColor = Color.White;
+            label94.Location = new Point(62, 538);
+            label94.Name = "label94";
+            label94.Size = new Size(156, 24);
+            label94.TabIndex = 118;
+            label94.Text = "-Jemuran";
+            // 
+            // label95
+            // 
+            label95.BackColor = Color.Transparent;
+            label95.Font = new Font("Inter", 8F);
+            label95.ForeColor = Color.White;
+            label95.Location = new Point(62, 514);
+            label95.Name = "label95";
+            label95.Size = new Size(186, 24);
+            label95.TabIndex = 117;
+            label95.Text = "-3 set Bantal dan Guling";
+            // 
+            // label96
+            // 
+            label96.BackColor = Color.Transparent;
+            label96.Font = new Font("Inter", 8F);
+            label96.ForeColor = Color.White;
+            label96.Location = new Point(62, 490);
+            label96.Name = "label96";
+            label96.Size = new Size(156, 24);
+            label96.TabIndex = 116;
+            label96.Text = "-3 Kursi";
+            // 
+            // label97
+            // 
+            label97.BackColor = Color.Transparent;
+            label97.Font = new Font("Inter", 8F);
+            label97.ForeColor = Color.White;
+            label97.Location = new Point(62, 466);
+            label97.Name = "label97";
+            label97.Size = new Size(156, 24);
+            label97.TabIndex = 115;
+            label97.Text = "-Lemari 3 Pintu";
+            // 
+            // label98
+            // 
+            label98.BackColor = Color.Transparent;
+            label98.Font = new Font("Inter", 8F);
+            label98.ForeColor = Color.White;
+            label98.Location = new Point(62, 442);
+            label98.Name = "label98";
+            label98.Size = new Size(156, 24);
+            label98.TabIndex = 114;
+            label98.Text = "-3 Ranjang";
+            // 
+            // label99
+            // 
+            label99.BackColor = Color.Transparent;
+            label99.Font = new Font("Inter", 8F);
+            label99.ForeColor = Color.White;
+            label99.Location = new Point(62, 418);
+            label99.Name = "label99";
+            label99.Size = new Size(156, 24);
+            label99.TabIndex = 113;
+            label99.Text = "-3 Kasur";
+            // 
+            // label100
+            // 
+            label100.BackColor = Color.Transparent;
+            label100.Font = new Font("Inter", 8F);
+            label100.ForeColor = Color.White;
+            label100.Location = new Point(62, 394);
+            label100.Name = "label100";
+            label100.Size = new Size(156, 24);
+            label100.TabIndex = 112;
+            label100.Text = "-3 Meja Belajar";
+            // 
+            // label101
+            // 
+            label101.BackColor = Color.Transparent;
+            label101.Font = new Font("Inter", 8F);
+            label101.ForeColor = Color.White;
+            label101.Location = new Point(62, 370);
+            label101.Name = "label101";
+            label101.Size = new Size(156, 24);
+            label101.TabIndex = 111;
+            label101.Text = "-Balkon Pribadi";
+            // 
             // pictureBox24
             // 
             pictureBox24.ErrorImage = null;
@@ -1046,6 +1224,105 @@
             panel12.Name = "panel12";
             panel12.Size = new Size(320, 574);
             panel12.TabIndex = 2;
+            // 
+            // label43
+            // 
+            label43.BackColor = Color.Transparent;
+            label43.Font = new Font("Inter", 8F);
+            label43.ForeColor = Color.White;
+            label43.Location = new Point(62, 538);
+            label43.Name = "label43";
+            label43.Size = new Size(156, 24);
+            label43.TabIndex = 102;
+            label43.Text = "-Jemuran";
+            // 
+            // label86
+            // 
+            label86.BackColor = Color.Transparent;
+            label86.Font = new Font("Inter", 8F);
+            label86.ForeColor = Color.White;
+            label86.Location = new Point(62, 514);
+            label86.Name = "label86";
+            label86.Size = new Size(186, 24);
+            label86.TabIndex = 101;
+            label86.Text = "-3 set Bantal dan Guling";
+            // 
+            // label87
+            // 
+            label87.BackColor = Color.Transparent;
+            label87.Font = new Font("Inter", 8F);
+            label87.ForeColor = Color.White;
+            label87.Location = new Point(62, 490);
+            label87.Name = "label87";
+            label87.Size = new Size(156, 24);
+            label87.TabIndex = 100;
+            label87.Text = "-3 Kursi";
+            // 
+            // label88
+            // 
+            label88.BackColor = Color.Transparent;
+            label88.Font = new Font("Inter", 8F);
+            label88.ForeColor = Color.White;
+            label88.Location = new Point(62, 466);
+            label88.Name = "label88";
+            label88.Size = new Size(156, 24);
+            label88.TabIndex = 99;
+            label88.Text = "-Lemari 3 Pintu";
+            // 
+            // label89
+            // 
+            label89.BackColor = Color.Transparent;
+            label89.Font = new Font("Inter", 8F);
+            label89.ForeColor = Color.White;
+            label89.Location = new Point(62, 442);
+            label89.Name = "label89";
+            label89.Size = new Size(156, 24);
+            label89.TabIndex = 98;
+            label89.Text = "-3 Ranjang";
+            // 
+            // label90
+            // 
+            label90.BackColor = Color.Transparent;
+            label90.Font = new Font("Inter", 8F);
+            label90.ForeColor = Color.White;
+            label90.Location = new Point(62, 418);
+            label90.Name = "label90";
+            label90.Size = new Size(156, 24);
+            label90.TabIndex = 97;
+            label90.Text = "-3 Kasur";
+            // 
+            // label91
+            // 
+            label91.BackColor = Color.Transparent;
+            label91.Font = new Font("Inter", 8F);
+            label91.ForeColor = Color.White;
+            label91.Location = new Point(62, 394);
+            label91.Name = "label91";
+            label91.Size = new Size(156, 24);
+            label91.TabIndex = 96;
+            label91.Text = "-3 Meja Belajar";
+            // 
+            // label92
+            // 
+            label92.BackColor = Color.Transparent;
+            label92.Font = new Font("Inter", 8F);
+            label92.ForeColor = Color.White;
+            label92.Location = new Point(62, 370);
+            label92.Name = "label92";
+            label92.Size = new Size(156, 24);
+            label92.TabIndex = 95;
+            label92.Text = "-Balkon Pribadi";
+            // 
+            // label93
+            // 
+            label93.BackColor = Color.Transparent;
+            label93.Font = new Font("Inter", 8F);
+            label93.ForeColor = Color.White;
+            label93.Location = new Point(62, 346);
+            label93.Name = "label93";
+            label93.Size = new Size(156, 24);
+            label93.TabIndex = 94;
+            label93.Text = "-Kamar Mandi Dalam";
             // 
             // pictureBox19
             // 
@@ -1839,281 +2116,6 @@
             label6.Size = new Size(327, 45);
             label6.TabIndex = 4;
             label6.Text = "Daftar Unit tersedia";
-            // 
-            // label43
-            // 
-            label43.BackColor = Color.Transparent;
-            label43.Font = new Font("Inter", 8F);
-            label43.ForeColor = Color.White;
-            label43.Location = new Point(62, 538);
-            label43.Name = "label43";
-            label43.Size = new Size(156, 24);
-            label43.TabIndex = 102;
-            label43.Text = "-Jemuran";
-            // 
-            // label86
-            // 
-            label86.BackColor = Color.Transparent;
-            label86.Font = new Font("Inter", 8F);
-            label86.ForeColor = Color.White;
-            label86.Location = new Point(62, 514);
-            label86.Name = "label86";
-            label86.Size = new Size(186, 24);
-            label86.TabIndex = 101;
-            label86.Text = "-3 set Bantal dan Guling";
-            // 
-            // label87
-            // 
-            label87.BackColor = Color.Transparent;
-            label87.Font = new Font("Inter", 8F);
-            label87.ForeColor = Color.White;
-            label87.Location = new Point(62, 490);
-            label87.Name = "label87";
-            label87.Size = new Size(156, 24);
-            label87.TabIndex = 100;
-            label87.Text = "-3 Kursi";
-            // 
-            // label88
-            // 
-            label88.BackColor = Color.Transparent;
-            label88.Font = new Font("Inter", 8F);
-            label88.ForeColor = Color.White;
-            label88.Location = new Point(62, 466);
-            label88.Name = "label88";
-            label88.Size = new Size(156, 24);
-            label88.TabIndex = 99;
-            label88.Text = "-Lemari 3 Pintu";
-            // 
-            // label89
-            // 
-            label89.BackColor = Color.Transparent;
-            label89.Font = new Font("Inter", 8F);
-            label89.ForeColor = Color.White;
-            label89.Location = new Point(62, 442);
-            label89.Name = "label89";
-            label89.Size = new Size(156, 24);
-            label89.TabIndex = 98;
-            label89.Text = "-3 Ranjang";
-            // 
-            // label90
-            // 
-            label90.BackColor = Color.Transparent;
-            label90.Font = new Font("Inter", 8F);
-            label90.ForeColor = Color.White;
-            label90.Location = new Point(62, 418);
-            label90.Name = "label90";
-            label90.Size = new Size(156, 24);
-            label90.TabIndex = 97;
-            label90.Text = "-3 Kasur";
-            // 
-            // label91
-            // 
-            label91.BackColor = Color.Transparent;
-            label91.Font = new Font("Inter", 8F);
-            label91.ForeColor = Color.White;
-            label91.Location = new Point(62, 394);
-            label91.Name = "label91";
-            label91.Size = new Size(156, 24);
-            label91.TabIndex = 96;
-            label91.Text = "-3 Meja Belajar";
-            // 
-            // label92
-            // 
-            label92.BackColor = Color.Transparent;
-            label92.Font = new Font("Inter", 8F);
-            label92.ForeColor = Color.White;
-            label92.Location = new Point(62, 370);
-            label92.Name = "label92";
-            label92.Size = new Size(156, 24);
-            label92.TabIndex = 95;
-            label92.Text = "-Balkon Pribadi";
-            // 
-            // label93
-            // 
-            label93.BackColor = Color.Transparent;
-            label93.Font = new Font("Inter", 8F);
-            label93.ForeColor = Color.White;
-            label93.Location = new Point(62, 346);
-            label93.Name = "label93";
-            label93.Size = new Size(156, 24);
-            label93.TabIndex = 94;
-            label93.Text = "-Kamar Mandi Dalam";
-            // 
-            // label94
-            // 
-            label94.BackColor = Color.Transparent;
-            label94.Font = new Font("Inter", 8F);
-            label94.ForeColor = Color.White;
-            label94.Location = new Point(62, 538);
-            label94.Name = "label94";
-            label94.Size = new Size(156, 24);
-            label94.TabIndex = 118;
-            label94.Text = "-Jemuran";
-            // 
-            // label95
-            // 
-            label95.BackColor = Color.Transparent;
-            label95.Font = new Font("Inter", 8F);
-            label95.ForeColor = Color.White;
-            label95.Location = new Point(62, 514);
-            label95.Name = "label95";
-            label95.Size = new Size(186, 24);
-            label95.TabIndex = 117;
-            label95.Text = "-3 set Bantal dan Guling";
-            // 
-            // label96
-            // 
-            label96.BackColor = Color.Transparent;
-            label96.Font = new Font("Inter", 8F);
-            label96.ForeColor = Color.White;
-            label96.Location = new Point(62, 490);
-            label96.Name = "label96";
-            label96.Size = new Size(156, 24);
-            label96.TabIndex = 116;
-            label96.Text = "-3 Kursi";
-            // 
-            // label97
-            // 
-            label97.BackColor = Color.Transparent;
-            label97.Font = new Font("Inter", 8F);
-            label97.ForeColor = Color.White;
-            label97.Location = new Point(62, 466);
-            label97.Name = "label97";
-            label97.Size = new Size(156, 24);
-            label97.TabIndex = 115;
-            label97.Text = "-Lemari 3 Pintu";
-            // 
-            // label98
-            // 
-            label98.BackColor = Color.Transparent;
-            label98.Font = new Font("Inter", 8F);
-            label98.ForeColor = Color.White;
-            label98.Location = new Point(62, 442);
-            label98.Name = "label98";
-            label98.Size = new Size(156, 24);
-            label98.TabIndex = 114;
-            label98.Text = "-3 Ranjang";
-            // 
-            // label99
-            // 
-            label99.BackColor = Color.Transparent;
-            label99.Font = new Font("Inter", 8F);
-            label99.ForeColor = Color.White;
-            label99.Location = new Point(62, 418);
-            label99.Name = "label99";
-            label99.Size = new Size(156, 24);
-            label99.TabIndex = 113;
-            label99.Text = "-3 Kasur";
-            // 
-            // label100
-            // 
-            label100.BackColor = Color.Transparent;
-            label100.Font = new Font("Inter", 8F);
-            label100.ForeColor = Color.White;
-            label100.Location = new Point(62, 394);
-            label100.Name = "label100";
-            label100.Size = new Size(156, 24);
-            label100.TabIndex = 112;
-            label100.Text = "-3 Meja Belajar";
-            // 
-            // label101
-            // 
-            label101.BackColor = Color.Transparent;
-            label101.Font = new Font("Inter", 8F);
-            label101.ForeColor = Color.White;
-            label101.Location = new Point(62, 370);
-            label101.Name = "label101";
-            label101.Size = new Size(156, 24);
-            label101.TabIndex = 111;
-            label101.Text = "-Balkon Pribadi";
-            // 
-            // label102
-            // 
-            label102.BackColor = Color.Transparent;
-            label102.Font = new Font("Inter", 8F);
-            label102.ForeColor = Color.White;
-            label102.Location = new Point(62, 538);
-            label102.Name = "label102";
-            label102.Size = new Size(156, 24);
-            label102.TabIndex = 135;
-            label102.Text = "-Jemuran";
-            // 
-            // label103
-            // 
-            label103.BackColor = Color.Transparent;
-            label103.Font = new Font("Inter", 8F);
-            label103.ForeColor = Color.White;
-            label103.Location = new Point(62, 514);
-            label103.Name = "label103";
-            label103.Size = new Size(186, 24);
-            label103.TabIndex = 134;
-            label103.Text = "-3 set Bantal dan Guling";
-            // 
-            // label104
-            // 
-            label104.BackColor = Color.Transparent;
-            label104.Font = new Font("Inter", 8F);
-            label104.ForeColor = Color.White;
-            label104.Location = new Point(62, 490);
-            label104.Name = "label104";
-            label104.Size = new Size(156, 24);
-            label104.TabIndex = 133;
-            label104.Text = "-3 Kursi";
-            // 
-            // label105
-            // 
-            label105.BackColor = Color.Transparent;
-            label105.Font = new Font("Inter", 8F);
-            label105.ForeColor = Color.White;
-            label105.Location = new Point(62, 466);
-            label105.Name = "label105";
-            label105.Size = new Size(156, 24);
-            label105.TabIndex = 132;
-            label105.Text = "-Lemari 3 Pintu";
-            // 
-            // label106
-            // 
-            label106.BackColor = Color.Transparent;
-            label106.Font = new Font("Inter", 8F);
-            label106.ForeColor = Color.White;
-            label106.Location = new Point(62, 442);
-            label106.Name = "label106";
-            label106.Size = new Size(156, 24);
-            label106.TabIndex = 131;
-            label106.Text = "-3 Ranjang";
-            // 
-            // label107
-            // 
-            label107.BackColor = Color.Transparent;
-            label107.Font = new Font("Inter", 8F);
-            label107.ForeColor = Color.White;
-            label107.Location = new Point(62, 418);
-            label107.Name = "label107";
-            label107.Size = new Size(156, 24);
-            label107.TabIndex = 130;
-            label107.Text = "-3 Kasur";
-            // 
-            // label108
-            // 
-            label108.BackColor = Color.Transparent;
-            label108.Font = new Font("Inter", 8F);
-            label108.ForeColor = Color.White;
-            label108.Location = new Point(62, 394);
-            label108.Name = "label108";
-            label108.Size = new Size(156, 24);
-            label108.TabIndex = 129;
-            label108.Text = "-3 Meja Belajar";
-            // 
-            // label109
-            // 
-            label109.BackColor = Color.Transparent;
-            label109.Font = new Font("Inter", 8F);
-            label109.ForeColor = Color.White;
-            label109.Location = new Point(62, 370);
-            label109.Name = "label109";
-            label109.Size = new Size(156, 24);
-            label109.TabIndex = 128;
-            label109.Text = "-Balkon Pribadi";
             // 
             // DaftarUnit_Umum
             // 

@@ -65,6 +65,26 @@
             label10 = new Label();
             label7 = new Label();
             panel11 = new Panel();
+            label31 = new Label();
+            label32 = new Label();
+            label33 = new Label();
+            label34 = new Label();
+            label35 = new Label();
+            label30 = new Label();
+            label29 = new Label();
+            label28 = new Label();
+            label27 = new Label();
+            label25 = new Label();
+            panel25 = new Panel();
+            panel26 = new Panel();
+            panel23 = new Panel();
+            panel24 = new Panel();
+            panel19 = new Panel();
+            panel20 = new Panel();
+            panel17 = new Panel();
+            panel18 = new Panel();
+            panel14 = new Panel();
+            progressbar1 = new Panel();
             label16 = new Label();
             label14 = new Label();
             label6 = new Label();
@@ -95,26 +115,6 @@
             label2 = new Label();
             pictureBox3 = new PictureBox();
             label1 = new Label();
-            panel14 = new Panel();
-            progressbar1 = new Panel();
-            panel17 = new Panel();
-            panel18 = new Panel();
-            panel19 = new Panel();
-            panel20 = new Panel();
-            panel23 = new Panel();
-            panel24 = new Panel();
-            panel25 = new Panel();
-            panel26 = new Panel();
-            label25 = new Label();
-            label27 = new Label();
-            label28 = new Label();
-            label29 = new Label();
-            label30 = new Label();
-            label31 = new Label();
-            label32 = new Label();
-            label33 = new Label();
-            label34 = new Label();
-            label35 = new Label();
             panel8.SuspendLayout();
             panel9.SuspendLayout();
             panel6.SuspendLayout();
@@ -137,6 +137,11 @@
             panel16.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel11.SuspendLayout();
+            panel25.SuspendLayout();
+            panel23.SuspendLayout();
+            panel19.SuspendLayout();
+            panel17.SuspendLayout();
+            panel14.SuspendLayout();
             panel7.SuspendLayout();
             panel1.SuspendLayout();
             panel29.SuspendLayout();
@@ -154,11 +159,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            panel14.SuspendLayout();
-            panel17.SuspendLayout();
-            panel19.SuspendLayout();
-            panel23.SuspendLayout();
-            panel25.SuspendLayout();
             SuspendLayout();
             // 
             // panel8
@@ -582,6 +582,211 @@
             panel11.Size = new Size(454, 347);
             panel11.TabIndex = 12;
             // 
+            // label31
+            // 
+            label31.AutoSize = true;
+            label31.Font = new Font("Inter", 10F, FontStyle.Bold | FontStyle.Italic);
+            label31.ForeColor = Color.White;
+            label31.Location = new Point(397, 108);
+            label31.Name = "label31";
+            label31.Size = new Size(43, 24);
+            label31.TabIndex = 36;
+            label31.Text = "999";
+            // 
+            // label32
+            // 
+            label32.AutoSize = true;
+            label32.Font = new Font("Inter", 10F, FontStyle.Bold | FontStyle.Italic);
+            label32.ForeColor = Color.White;
+            label32.Location = new Point(397, 139);
+            label32.Name = "label32";
+            label32.Size = new Size(43, 24);
+            label32.TabIndex = 35;
+            label32.Text = "999";
+            // 
+            // label33
+            // 
+            label33.AutoSize = true;
+            label33.Font = new Font("Inter", 10F, FontStyle.Bold | FontStyle.Italic);
+            label33.ForeColor = Color.White;
+            label33.Location = new Point(397, 170);
+            label33.Name = "label33";
+            label33.Size = new Size(43, 24);
+            label33.TabIndex = 34;
+            label33.Text = "999";
+            // 
+            // label34
+            // 
+            label34.AutoSize = true;
+            label34.Font = new Font("Inter", 10F, FontStyle.Bold | FontStyle.Italic);
+            label34.ForeColor = Color.White;
+            label34.Location = new Point(397, 77);
+            label34.Name = "label34";
+            label34.Size = new Size(43, 24);
+            label34.TabIndex = 33;
+            label34.Text = "999";
+            // 
+            // label35
+            // 
+            label35.AutoSize = true;
+            label35.Font = new Font("Inter", 10F, FontStyle.Bold | FontStyle.Italic);
+            label35.ForeColor = Color.White;
+            label35.Location = new Point(397, 46);
+            label35.Name = "label35";
+            label35.Size = new Size(43, 24);
+            label35.TabIndex = 32;
+            label35.Text = "999";
+            // 
+            // label30
+            // 
+            label30.AutoSize = true;
+            label30.Font = new Font("Inter", 10F, FontStyle.Bold | FontStyle.Italic);
+            label30.ForeColor = Color.White;
+            label30.Location = new Point(11, 108);
+            label30.Name = "label30";
+            label30.Size = new Size(21, 24);
+            label30.TabIndex = 31;
+            label30.Text = "3";
+            // 
+            // label29
+            // 
+            label29.AutoSize = true;
+            label29.Font = new Font("Inter", 10F, FontStyle.Bold | FontStyle.Italic);
+            label29.ForeColor = Color.White;
+            label29.Location = new Point(11, 139);
+            label29.Name = "label29";
+            label29.Size = new Size(21, 24);
+            label29.TabIndex = 30;
+            label29.Text = "2";
+            // 
+            // label28
+            // 
+            label28.AutoSize = true;
+            label28.Font = new Font("Inter", 10F, FontStyle.Bold | FontStyle.Italic);
+            label28.ForeColor = Color.White;
+            label28.Location = new Point(11, 170);
+            label28.Name = "label28";
+            label28.Size = new Size(17, 24);
+            label28.TabIndex = 29;
+            label28.Text = "1";
+            // 
+            // label27
+            // 
+            label27.AutoSize = true;
+            label27.Font = new Font("Inter", 10F, FontStyle.Bold | FontStyle.Italic);
+            label27.ForeColor = Color.White;
+            label27.Location = new Point(11, 77);
+            label27.Name = "label27";
+            label27.Size = new Size(22, 24);
+            label27.TabIndex = 28;
+            label27.Text = "4";
+            // 
+            // label25
+            // 
+            label25.AutoSize = true;
+            label25.Font = new Font("Inter", 10F, FontStyle.Bold | FontStyle.Italic);
+            label25.ForeColor = Color.White;
+            label25.Location = new Point(11, 46);
+            label25.Name = "label25";
+            label25.Size = new Size(21, 24);
+            label25.TabIndex = 27;
+            label25.Text = "5";
+            // 
+            // panel25
+            // 
+            panel25.BackColor = Color.FromArgb(139, 140, 142);
+            panel25.Controls.Add(panel26);
+            panel25.Location = new Point(35, 113);
+            panel25.Name = "panel25";
+            panel25.Size = new Size(356, 15);
+            panel25.TabIndex = 26;
+            // 
+            // panel26
+            // 
+            panel26.BackColor = Color.FromArgb(251, 255, 0);
+            panel26.Dock = DockStyle.Left;
+            panel26.Location = new Point(0, 0);
+            panel26.MaximumSize = new Size(356, 15);
+            panel26.Name = "panel26";
+            panel26.Size = new Size(20, 15);
+            panel26.TabIndex = 0;
+            // 
+            // panel23
+            // 
+            panel23.BackColor = Color.FromArgb(139, 140, 142);
+            panel23.Controls.Add(panel24);
+            panel23.Location = new Point(36, 175);
+            panel23.Name = "panel23";
+            panel23.Size = new Size(356, 15);
+            panel23.TabIndex = 25;
+            // 
+            // panel24
+            // 
+            panel24.BackColor = Color.FromArgb(251, 255, 0);
+            panel24.Dock = DockStyle.Left;
+            panel24.Location = new Point(0, 0);
+            panel24.MaximumSize = new Size(356, 15);
+            panel24.Name = "panel24";
+            panel24.Size = new Size(20, 15);
+            panel24.TabIndex = 0;
+            // 
+            // panel19
+            // 
+            panel19.BackColor = Color.FromArgb(139, 140, 142);
+            panel19.Controls.Add(panel20);
+            panel19.Location = new Point(36, 144);
+            panel19.Name = "panel19";
+            panel19.Size = new Size(356, 15);
+            panel19.TabIndex = 24;
+            // 
+            // panel20
+            // 
+            panel20.BackColor = Color.FromArgb(251, 255, 0);
+            panel20.Dock = DockStyle.Left;
+            panel20.Location = new Point(0, 0);
+            panel20.MaximumSize = new Size(356, 15);
+            panel20.Name = "panel20";
+            panel20.Size = new Size(20, 15);
+            panel20.TabIndex = 0;
+            // 
+            // panel17
+            // 
+            panel17.BackColor = Color.FromArgb(139, 140, 142);
+            panel17.Controls.Add(panel18);
+            panel17.Location = new Point(35, 82);
+            panel17.Name = "panel17";
+            panel17.Size = new Size(356, 15);
+            panel17.TabIndex = 23;
+            // 
+            // panel18
+            // 
+            panel18.BackColor = Color.FromArgb(251, 255, 0);
+            panel18.Dock = DockStyle.Left;
+            panel18.Location = new Point(0, 0);
+            panel18.MaximumSize = new Size(356, 15);
+            panel18.Name = "panel18";
+            panel18.Size = new Size(20, 15);
+            panel18.TabIndex = 0;
+            // 
+            // panel14
+            // 
+            panel14.BackColor = Color.FromArgb(139, 140, 142);
+            panel14.Controls.Add(progressbar1);
+            panel14.Location = new Point(35, 51);
+            panel14.Name = "panel14";
+            panel14.Size = new Size(356, 15);
+            panel14.TabIndex = 22;
+            // 
+            // progressbar1
+            // 
+            progressbar1.BackColor = Color.FromArgb(251, 255, 0);
+            progressbar1.Dock = DockStyle.Left;
+            progressbar1.Location = new Point(0, 0);
+            progressbar1.MaximumSize = new Size(356, 15);
+            progressbar1.Name = "progressbar1";
+            progressbar1.Size = new Size(20, 15);
+            progressbar1.TabIndex = 0;
+            // 
             // label16
             // 
             label16.BackColor = Color.Transparent;
@@ -757,7 +962,7 @@
             // 
             // pictureBox9
             // 
-            pictureBox9.Image = Properties.Resources.Icon;
+            pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
             pictureBox9.Location = new Point(10, 8);
             pictureBox9.Name = "pictureBox9";
             pictureBox9.Size = new Size(35, 35);
@@ -908,215 +1113,10 @@
             label1.ForeColor = Color.White;
             label1.Location = new Point(43, 6);
             label1.Name = "label1";
-            label1.Size = new Size(172, 43);
+            label1.Size = new Size(139, 43);
             label1.TabIndex = 0;
-            label1.Text = "RUSAKITA";
+            label1.Text = "SIMARU";
             label1.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // panel14
-            // 
-            panel14.BackColor = Color.FromArgb(139, 140, 142);
-            panel14.Controls.Add(progressbar1);
-            panel14.Location = new Point(35, 51);
-            panel14.Name = "panel14";
-            panel14.Size = new Size(356, 15);
-            panel14.TabIndex = 22;
-            // 
-            // progressbar1
-            // 
-            progressbar1.BackColor = Color.FromArgb(251, 255, 0);
-            progressbar1.Dock = DockStyle.Left;
-            progressbar1.Location = new Point(0, 0);
-            progressbar1.MaximumSize = new Size(356, 15);
-            progressbar1.Name = "progressbar1";
-            progressbar1.Size = new Size(20, 15);
-            progressbar1.TabIndex = 0;
-            // 
-            // panel17
-            // 
-            panel17.BackColor = Color.FromArgb(139, 140, 142);
-            panel17.Controls.Add(panel18);
-            panel17.Location = new Point(35, 82);
-            panel17.Name = "panel17";
-            panel17.Size = new Size(356, 15);
-            panel17.TabIndex = 23;
-            // 
-            // panel18
-            // 
-            panel18.BackColor = Color.FromArgb(251, 255, 0);
-            panel18.Dock = DockStyle.Left;
-            panel18.Location = new Point(0, 0);
-            panel18.MaximumSize = new Size(356, 15);
-            panel18.Name = "panel18";
-            panel18.Size = new Size(20, 15);
-            panel18.TabIndex = 0;
-            // 
-            // panel19
-            // 
-            panel19.BackColor = Color.FromArgb(139, 140, 142);
-            panel19.Controls.Add(panel20);
-            panel19.Location = new Point(36, 144);
-            panel19.Name = "panel19";
-            panel19.Size = new Size(356, 15);
-            panel19.TabIndex = 24;
-            // 
-            // panel20
-            // 
-            panel20.BackColor = Color.FromArgb(251, 255, 0);
-            panel20.Dock = DockStyle.Left;
-            panel20.Location = new Point(0, 0);
-            panel20.MaximumSize = new Size(356, 15);
-            panel20.Name = "panel20";
-            panel20.Size = new Size(20, 15);
-            panel20.TabIndex = 0;
-            // 
-            // panel23
-            // 
-            panel23.BackColor = Color.FromArgb(139, 140, 142);
-            panel23.Controls.Add(panel24);
-            panel23.Location = new Point(36, 175);
-            panel23.Name = "panel23";
-            panel23.Size = new Size(356, 15);
-            panel23.TabIndex = 25;
-            // 
-            // panel24
-            // 
-            panel24.BackColor = Color.FromArgb(251, 255, 0);
-            panel24.Dock = DockStyle.Left;
-            panel24.Location = new Point(0, 0);
-            panel24.MaximumSize = new Size(356, 15);
-            panel24.Name = "panel24";
-            panel24.Size = new Size(20, 15);
-            panel24.TabIndex = 0;
-            // 
-            // panel25
-            // 
-            panel25.BackColor = Color.FromArgb(139, 140, 142);
-            panel25.Controls.Add(panel26);
-            panel25.Location = new Point(35, 113);
-            panel25.Name = "panel25";
-            panel25.Size = new Size(356, 15);
-            panel25.TabIndex = 26;
-            // 
-            // panel26
-            // 
-            panel26.BackColor = Color.FromArgb(251, 255, 0);
-            panel26.Dock = DockStyle.Left;
-            panel26.Location = new Point(0, 0);
-            panel26.MaximumSize = new Size(356, 15);
-            panel26.Name = "panel26";
-            panel26.Size = new Size(20, 15);
-            panel26.TabIndex = 0;
-            // 
-            // label25
-            // 
-            label25.AutoSize = true;
-            label25.Font = new Font("Inter", 10F, FontStyle.Bold | FontStyle.Italic);
-            label25.ForeColor = Color.White;
-            label25.Location = new Point(11, 46);
-            label25.Name = "label25";
-            label25.Size = new Size(21, 24);
-            label25.TabIndex = 27;
-            label25.Text = "5";
-            // 
-            // label27
-            // 
-            label27.AutoSize = true;
-            label27.Font = new Font("Inter", 10F, FontStyle.Bold | FontStyle.Italic);
-            label27.ForeColor = Color.White;
-            label27.Location = new Point(11, 77);
-            label27.Name = "label27";
-            label27.Size = new Size(22, 24);
-            label27.TabIndex = 28;
-            label27.Text = "4";
-            // 
-            // label28
-            // 
-            label28.AutoSize = true;
-            label28.Font = new Font("Inter", 10F, FontStyle.Bold | FontStyle.Italic);
-            label28.ForeColor = Color.White;
-            label28.Location = new Point(11, 170);
-            label28.Name = "label28";
-            label28.Size = new Size(17, 24);
-            label28.TabIndex = 29;
-            label28.Text = "1";
-            // 
-            // label29
-            // 
-            label29.AutoSize = true;
-            label29.Font = new Font("Inter", 10F, FontStyle.Bold | FontStyle.Italic);
-            label29.ForeColor = Color.White;
-            label29.Location = new Point(11, 139);
-            label29.Name = "label29";
-            label29.Size = new Size(21, 24);
-            label29.TabIndex = 30;
-            label29.Text = "2";
-            // 
-            // label30
-            // 
-            label30.AutoSize = true;
-            label30.Font = new Font("Inter", 10F, FontStyle.Bold | FontStyle.Italic);
-            label30.ForeColor = Color.White;
-            label30.Location = new Point(11, 108);
-            label30.Name = "label30";
-            label30.Size = new Size(21, 24);
-            label30.TabIndex = 31;
-            label30.Text = "3";
-            // 
-            // label31
-            // 
-            label31.AutoSize = true;
-            label31.Font = new Font("Inter", 10F, FontStyle.Bold | FontStyle.Italic);
-            label31.ForeColor = Color.White;
-            label31.Location = new Point(397, 108);
-            label31.Name = "label31";
-            label31.Size = new Size(43, 24);
-            label31.TabIndex = 36;
-            label31.Text = "999";
-            // 
-            // label32
-            // 
-            label32.AutoSize = true;
-            label32.Font = new Font("Inter", 10F, FontStyle.Bold | FontStyle.Italic);
-            label32.ForeColor = Color.White;
-            label32.Location = new Point(397, 139);
-            label32.Name = "label32";
-            label32.Size = new Size(43, 24);
-            label32.TabIndex = 35;
-            label32.Text = "999";
-            // 
-            // label33
-            // 
-            label33.AutoSize = true;
-            label33.Font = new Font("Inter", 10F, FontStyle.Bold | FontStyle.Italic);
-            label33.ForeColor = Color.White;
-            label33.Location = new Point(397, 170);
-            label33.Name = "label33";
-            label33.Size = new Size(43, 24);
-            label33.TabIndex = 34;
-            label33.Text = "999";
-            // 
-            // label34
-            // 
-            label34.AutoSize = true;
-            label34.Font = new Font("Inter", 10F, FontStyle.Bold | FontStyle.Italic);
-            label34.ForeColor = Color.White;
-            label34.Location = new Point(397, 77);
-            label34.Name = "label34";
-            label34.Size = new Size(43, 24);
-            label34.TabIndex = 33;
-            label34.Text = "999";
-            // 
-            // label35
-            // 
-            label35.AutoSize = true;
-            label35.Font = new Font("Inter", 10F, FontStyle.Bold | FontStyle.Italic);
-            label35.ForeColor = Color.White;
-            label35.Location = new Point(397, 46);
-            label35.Name = "label35";
-            label35.Size = new Size(43, 24);
-            label35.TabIndex = 32;
-            label35.Text = "999";
             // 
             // Ulasan_Umum
             // 
@@ -1157,6 +1157,11 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             panel11.ResumeLayout(false);
             panel11.PerformLayout();
+            panel25.ResumeLayout(false);
+            panel23.ResumeLayout(false);
+            panel19.ResumeLayout(false);
+            panel17.ResumeLayout(false);
+            panel14.ResumeLayout(false);
             panel7.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -1182,11 +1187,6 @@
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            panel14.ResumeLayout(false);
-            panel17.ResumeLayout(false);
-            panel19.ResumeLayout(false);
-            panel23.ResumeLayout(false);
-            panel25.ResumeLayout(false);
             ResumeLayout(false);
         }
 

@@ -698,7 +698,7 @@
             // 
             // pictureBox9
             // 
-            pictureBox9.Image = Properties.Resources.Icon;
+            pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
             pictureBox9.Location = new Point(10, 8);
             pictureBox9.Name = "pictureBox9";
             pictureBox9.Size = new Size(35, 35);
@@ -840,10 +840,11 @@
             label1.ForeColor = Color.White;
             label1.Location = new Point(43, 6);
             label1.Name = "label1";
-            label1.Size = new Size(172, 43);
+            label1.Size = new Size(139, 43);
             label1.TabIndex = 0;
-            label1.Text = "RUSAKITA";
+            label1.Text = "SIMARU";
             label1.TextAlign = ContentAlignment.MiddleCenter;
+            label1.Click += label1_Click;
             // 
             // Kontaklokasi_Umum
             // 

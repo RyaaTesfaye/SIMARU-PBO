@@ -28,8 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Virtual_Tour_Umum));
             panel8 = new Panel();
             panel9 = new Panel();
+            pictureBox12 = new PictureBox();
+            pictureBox11 = new PictureBox();
+            label8 = new Label();
+            label7 = new Label();
+            label9 = new Label();
+            pictureBox8 = new PictureBox();
+            pictureBox7 = new PictureBox();
+            pictureBox6 = new PictureBox();
             label6 = new Label();
             panel7 = new Panel();
             button5 = new Button();
@@ -58,16 +67,13 @@
             label2 = new Label();
             pictureBox3 = new PictureBox();
             label1 = new Label();
-            pictureBox6 = new PictureBox();
-            pictureBox7 = new PictureBox();
-            pictureBox8 = new PictureBox();
-            label9 = new Label();
-            label7 = new Label();
-            label8 = new Label();
-            pictureBox11 = new PictureBox();
-            pictureBox12 = new PictureBox();
             panel8.SuspendLayout();
             panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel7.SuspendLayout();
             panel1.SuspendLayout();
             panel29.SuspendLayout();
@@ -85,11 +91,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             SuspendLayout();
             // 
             // panel8
@@ -118,6 +119,92 @@
             panel9.Padding = new Padding(50);
             panel9.Size = new Size(1165, 662);
             panel9.TabIndex = 5;
+            // 
+            // pictureBox12
+            // 
+            pictureBox12.Image = Properties.Resources.Kanan;
+            pictureBox12.Location = new Point(1079, 281);
+            pictureBox12.Name = "pictureBox12";
+            pictureBox12.Size = new Size(50, 50);
+            pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox12.TabIndex = 15;
+            pictureBox12.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            pictureBox11.Image = Properties.Resources.Kiri;
+            pictureBox11.Location = new Point(48, 281);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(50, 50);
+            pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox11.TabIndex = 14;
+            pictureBox11.TabStop = false;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Inter", 19F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.ForeColor = Color.White;
+            label8.Location = new Point(849, 565);
+            label8.Name = "label8";
+            label8.Size = new Size(117, 45);
+            label8.TabIndex = 13;
+            label8.Text = "Lantai";
+            label8.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Inter", 19F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.ForeColor = Color.White;
+            label7.Location = new Point(531, 565);
+            label7.Name = "label7";
+            label7.Size = new Size(117, 45);
+            label7.TabIndex = 12;
+            label7.Text = "Lantai";
+            label7.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Inter", 19F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.ForeColor = Color.White;
+            label9.Location = new Point(206, 565);
+            label9.Name = "label9";
+            label9.Size = new Size(117, 45);
+            label9.TabIndex = 11;
+            label9.Text = "Lantai";
+            label9.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.Image = Properties.Resources.WhatsApp_Image_2025_05_13_at_23_25_21_8b528e3b_3;
+            pictureBox8.Location = new Point(770, 62);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(281, 500);
+            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox8.TabIndex = 8;
+            pictureBox8.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.Image = Properties.Resources.WhatsApp_Image_2025_05_13_at_23_25_21_8b528e3b_3;
+            pictureBox7.Location = new Point(448, 62);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(281, 500);
+            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox7.TabIndex = 7;
+            pictureBox7.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Image = Properties.Resources.WhatsApp_Image_2025_05_13_at_23_25_21_8b528e3b_3;
+            pictureBox6.Location = new Point(126, 62);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(281, 500);
+            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox6.TabIndex = 6;
+            pictureBox6.TabStop = false;
             // 
             // label6
             // 
@@ -278,7 +365,7 @@
             // 
             // pictureBox9
             // 
-            pictureBox9.Image = Properties.Resources.Icon;
+            pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
             pictureBox9.Location = new Point(10, 8);
             pictureBox9.Name = "pictureBox9";
             pictureBox9.Size = new Size(35, 35);
@@ -420,96 +507,10 @@
             label1.ForeColor = Color.White;
             label1.Location = new Point(43, 6);
             label1.Name = "label1";
-            label1.Size = new Size(172, 43);
+            label1.Size = new Size(139, 43);
             label1.TabIndex = 0;
-            label1.Text = "RUSAKITA";
+            label1.Text = "SIMARU";
             label1.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox6
-            // 
-            pictureBox6.Image = Properties.Resources.WhatsApp_Image_2025_05_13_at_23_25_21_8b528e3b_3;
-            pictureBox6.Location = new Point(126, 62);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(281, 500);
-            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox6.TabIndex = 6;
-            pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            pictureBox7.Image = Properties.Resources.WhatsApp_Image_2025_05_13_at_23_25_21_8b528e3b_3;
-            pictureBox7.Location = new Point(448, 62);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(281, 500);
-            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox7.TabIndex = 7;
-            pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            pictureBox8.Image = Properties.Resources.WhatsApp_Image_2025_05_13_at_23_25_21_8b528e3b_3;
-            pictureBox8.Location = new Point(770, 62);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(281, 500);
-            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox8.TabIndex = 8;
-            pictureBox8.TabStop = false;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Inter", 19F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.ForeColor = Color.White;
-            label9.Location = new Point(206, 565);
-            label9.Name = "label9";
-            label9.Size = new Size(117, 45);
-            label9.TabIndex = 11;
-            label9.Text = "Lantai";
-            label9.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Inter", 19F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.ForeColor = Color.White;
-            label7.Location = new Point(531, 565);
-            label7.Name = "label7";
-            label7.Size = new Size(117, 45);
-            label7.TabIndex = 12;
-            label7.Text = "Lantai";
-            label7.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Inter", 19F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.ForeColor = Color.White;
-            label8.Location = new Point(849, 565);
-            label8.Name = "label8";
-            label8.Size = new Size(117, 45);
-            label8.TabIndex = 13;
-            label8.Text = "Lantai";
-            label8.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox11
-            // 
-            pictureBox11.Image = Properties.Resources.Kiri;
-            pictureBox11.Location = new Point(48, 281);
-            pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(50, 50);
-            pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox11.TabIndex = 14;
-            pictureBox11.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            pictureBox12.Image = Properties.Resources.Kanan;
-            pictureBox12.Location = new Point(1079, 281);
-            pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(50, 50);
-            pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox12.TabIndex = 15;
-            pictureBox12.TabStop = false;
             // 
             // Virtual_Tour_Umum
             // 
@@ -527,6 +528,11 @@
             panel8.PerformLayout();
             panel9.ResumeLayout(false);
             panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             panel7.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -552,11 +558,6 @@
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             ResumeLayout(false);
         }
 
