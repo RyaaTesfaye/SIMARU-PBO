@@ -37,6 +37,7 @@
             label35 = new Label();
             pictureBox21 = new PictureBox();
             panel31 = new Panel();
+            panel28 = new Panel();
             panel32 = new Panel();
             label32 = new Label();
             pictureBox18 = new PictureBox();
@@ -77,7 +78,6 @@
             panel8 = new Panel();
             panel9 = new Panel();
             label6 = new Label();
-            panel28 = new Panel();
             panel1.SuspendLayout();
             panel33.SuspendLayout();
             panel34.SuspendLayout();
@@ -143,6 +143,7 @@
             panel33.Name = "panel33";
             panel33.Size = new Size(240, 50);
             panel33.TabIndex = 10;
+            panel33.Click += ToSiaran_AD;
             // 
             // panel34
             // 
@@ -186,6 +187,7 @@
             label35.Size = new Size(64, 24);
             label35.TabIndex = 4;
             label35.Text = "Siaran";
+            label35.Click += ToSiaran_AD;
             // 
             // pictureBox21
             // 
@@ -196,6 +198,7 @@
             pictureBox21.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox21.TabIndex = 2;
             pictureBox21.TabStop = false;
+            pictureBox21.Click += ToSiaran_AD;
             // 
             // panel31
             // 
@@ -209,6 +212,14 @@
             panel31.Name = "panel31";
             panel31.Size = new Size(240, 50);
             panel31.TabIndex = 9;
+            // 
+            // panel28
+            // 
+            panel28.BackColor = Color.White;
+            panel28.Location = new Point(-1, 0);
+            panel28.Name = "panel28";
+            panel28.Size = new Size(4, 50);
+            panel28.TabIndex = 10;
             // 
             // panel32
             // 
@@ -274,6 +285,7 @@
             panel29.Name = "panel29";
             panel29.Size = new Size(240, 50);
             panel29.TabIndex = 8;
+            panel29.Click += ToManajemenSewa_AD;
             // 
             // panel30
             // 
@@ -317,6 +329,7 @@
             label30.Size = new Size(158, 24);
             label30.TabIndex = 4;
             label30.Text = "Manajemen Sewa";
+            label30.Click += ToManajemenSewa_AD;
             // 
             // pictureBox16
             // 
@@ -327,6 +340,7 @@
             pictureBox16.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox16.TabIndex = 2;
             pictureBox16.TabStop = false;
+            pictureBox16.Click += ToManajemenSewa_AD;
             // 
             // panel22
             // 
@@ -338,6 +352,7 @@
             panel22.Name = "panel22";
             panel22.Size = new Size(240, 50);
             panel22.TabIndex = 7;
+            panel22.Click += ToKelolaAturan_AD;
             // 
             // label13
             // 
@@ -349,6 +364,7 @@
             label13.Size = new Size(123, 24);
             label13.TabIndex = 4;
             label13.Text = "Kelola Aturan";
+            label13.Click += ToKelolaAturan_AD;
             // 
             // pictureBox10
             // 
@@ -359,6 +375,7 @@
             pictureBox10.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox10.TabIndex = 2;
             pictureBox10.TabStop = false;
+            pictureBox10.Click += ToKelolaAturan_AD;
             // 
             // panel21
             // 
@@ -370,6 +387,7 @@
             panel21.Name = "panel21";
             panel21.Size = new Size(240, 50);
             panel21.TabIndex = 6;
+            panel21.Click += ToTinjauUlasan_AD;
             // 
             // label12
             // 
@@ -381,6 +399,7 @@
             label12.Size = new Size(125, 24);
             label12.TabIndex = 4;
             label12.Text = "Tinjau Ulasan";
+            label12.Click += ToTinjauUlasan_AD;
             // 
             // pictureBox1
             // 
@@ -391,16 +410,18 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += ToTinjauUlasan_AD;
             // 
             // pictureBox9
             // 
-            pictureBox9.Image = Properties.Resources.Icon;
+            pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
             pictureBox9.Location = new Point(10, 8);
             pictureBox9.Name = "pictureBox9";
             pictureBox9.Size = new Size(35, 35);
             pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox9.TabIndex = 5;
             pictureBox9.TabStop = false;
+            pictureBox9.Click += ToDashboard_AD;
             // 
             // panel6
             // 
@@ -436,6 +457,7 @@
             panel5.Name = "panel5";
             panel5.Size = new Size(240, 50);
             panel5.TabIndex = 3;
+            panel5.Click += ToDaftarKeluhan_AD;
             // 
             // label5
             // 
@@ -447,6 +469,7 @@
             label5.Size = new Size(134, 24);
             label5.TabIndex = 4;
             label5.Text = "Daftar Keluhan";
+            label5.Click += ToDaftarKeluhan_AD;
             // 
             // pictureBox5
             // 
@@ -457,6 +480,7 @@
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox5.TabIndex = 2;
             pictureBox5.TabStop = false;
+            pictureBox5.Click += ToDaftarKeluhan_AD;
             // 
             // panel4
             // 
@@ -468,6 +492,7 @@
             panel4.Name = "panel4";
             panel4.Size = new Size(240, 50);
             panel4.TabIndex = 3;
+            panel4.Click += ToKelolaHunian_AD;
             // 
             // label4
             // 
@@ -479,6 +504,7 @@
             label4.Size = new Size(126, 24);
             label4.TabIndex = 4;
             label4.Text = "Kelola Hunian";
+            label4.Click += ToKelolaHunian_AD;
             // 
             // pictureBox4
             // 
@@ -489,6 +515,7 @@
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 2;
             pictureBox4.TabStop = false;
+            pictureBox4.Click += ToKelolaHunian_AD;
             // 
             // panel3
             // 
@@ -500,6 +527,7 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(240, 50);
             panel3.TabIndex = 3;
+            panel3.Click += ToPengelolaAkun_AD;
             // 
             // label3
             // 
@@ -511,6 +539,7 @@
             label3.Size = new Size(163, 24);
             label3.TabIndex = 4;
             label3.Text = "Pengelolaan Akun";
+            label3.Click += ToPengelolaAkun_AD;
             // 
             // pictureBox2
             // 
@@ -521,6 +550,7 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += ToPengelolaAkun_AD;
             // 
             // panel2
             // 
@@ -531,6 +561,7 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(240, 50);
             panel2.TabIndex = 2;
+            panel2.Click += ToDashboard_AD;
             // 
             // label2
             // 
@@ -542,6 +573,7 @@
             label2.Size = new Size(99, 24);
             label2.TabIndex = 3;
             label2.Text = "Ringkasan";
+            label2.Click += ToDashboard_AD;
             // 
             // pictureBox3
             // 
@@ -552,6 +584,7 @@
             pictureBox3.Size = new Size(25, 25);
             pictureBox3.TabIndex = 2;
             pictureBox3.TabStop = false;
+            pictureBox3.Click += ToDashboard_AD;
             // 
             // label1
             // 
@@ -560,10 +593,11 @@
             label1.ForeColor = Color.White;
             label1.Location = new Point(43, 6);
             label1.Name = "label1";
-            label1.Size = new Size(172, 43);
+            label1.Size = new Size(139, 43);
             label1.TabIndex = 0;
-            label1.Text = "RUSAKITA";
+            label1.Text = "SIMARU";
             label1.TextAlign = ContentAlignment.MiddleCenter;
+            label1.Click += ToDashboard_AD;
             // 
             // panel7
             // 
@@ -641,14 +675,6 @@
             label6.TabIndex = 4;
             label6.Text = "Pengelolaan Akun";
             // 
-            // panel28
-            // 
-            panel28.BackColor = Color.White;
-            panel28.Location = new Point(-1, 0);
-            panel28.Name = "panel28";
-            panel28.Size = new Size(4, 50);
-            panel28.TabIndex = 10;
-            // 
             // Edit_Virtual_Tour_Admin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -659,6 +685,7 @@
             Controls.Add(panel7);
             Controls.Add(panel1);
             Name = "Edit_Virtual_Tour_Admin";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Edit_Virtual_Tour_Admin";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
