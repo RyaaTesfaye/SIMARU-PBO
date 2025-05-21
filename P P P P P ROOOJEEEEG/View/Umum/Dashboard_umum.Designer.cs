@@ -175,6 +175,7 @@
             panel29.Name = "panel29";
             panel29.Size = new Size(240, 50);
             panel29.TabIndex = 8;
+            panel29.Click += ToKontakLokasi_UM;
             // 
             // label26
             // 
@@ -186,6 +187,7 @@
             label26.Size = new Size(163, 24);
             label26.TabIndex = 4;
             label26.Text = "Kontak dan Lokasi";
+            label26.Click += ToKontakLokasi_UM;
             // 
             // pictureBox16
             // 
@@ -196,6 +198,7 @@
             pictureBox16.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox16.TabIndex = 2;
             pictureBox16.TabStop = false;
+            pictureBox16.Click += ToKontakLokasi_UM;
             // 
             // panel22
             // 
@@ -207,6 +210,7 @@
             panel22.Name = "panel22";
             panel22.Size = new Size(240, 50);
             panel22.TabIndex = 7;
+            panel22.Click += ToTataTertib_UM;
             // 
             // label13
             // 
@@ -218,6 +222,7 @@
             label13.Size = new Size(99, 24);
             label13.TabIndex = 4;
             label13.Text = "Tata Tertib";
+            label13.Click += ToTataTertib_UM;
             // 
             // pictureBox10
             // 
@@ -228,6 +233,7 @@
             pictureBox10.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox10.TabIndex = 2;
             pictureBox10.TabStop = false;
+            pictureBox10.Click += ToTataTertib_UM;
             // 
             // panel21
             // 
@@ -239,6 +245,7 @@
             panel21.Name = "panel21";
             panel21.Size = new Size(240, 50);
             panel21.TabIndex = 6;
+            panel21.Click += ToVirtualTour_UM;
             // 
             // label12
             // 
@@ -250,6 +257,7 @@
             label12.Size = new Size(201, 24);
             label12.TabIndex = 4;
             label12.Text = "Virtual Tour Rusunawa";
+            label12.Click += ToVirtualTour_UM;
             // 
             // pictureBox1
             // 
@@ -260,6 +268,7 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += ToVirtualTour_UM;
             // 
             // pictureBox9
             // 
@@ -281,6 +290,7 @@
             panel5.Name = "panel5";
             panel5.Size = new Size(240, 50);
             panel5.TabIndex = 3;
+            panel5.Click += ToUlasan_UM;
             // 
             // label5
             // 
@@ -292,6 +302,7 @@
             label5.Size = new Size(146, 24);
             label5.TabIndex = 4;
             label5.Text = "Skor dan Ulasan";
+            label5.Click += ToUlasan_UM;
             // 
             // pictureBox5
             // 
@@ -302,6 +313,7 @@
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox5.TabIndex = 2;
             pictureBox5.TabStop = false;
+            pictureBox5.Click += ToUlasan_UM;
             // 
             // panel4
             // 
@@ -1039,7 +1051,6 @@
             Name = "Dashboard_umum";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Dashboard Umum";
-            Click += ToDaftarUnit;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel29.ResumeLayout(false);

@@ -874,6 +874,7 @@
             panel29.Name = "panel29";
             panel29.Size = new Size(240, 50);
             panel29.TabIndex = 8;
+            panel29.Click += ToKontakLokasi_UM;
             // 
             // label26
             // 
@@ -885,6 +886,7 @@
             label26.Size = new Size(163, 24);
             label26.TabIndex = 4;
             label26.Text = "Kontak dan Lokasi";
+            label26.Click += ToKontakLokasi_UM;
             // 
             // pictureBox16
             // 
@@ -895,6 +897,7 @@
             pictureBox16.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox16.TabIndex = 2;
             pictureBox16.TabStop = false;
+            pictureBox16.Click += ToKontakLokasi_UM;
             // 
             // panel22
             // 
@@ -906,6 +909,7 @@
             panel22.Name = "panel22";
             panel22.Size = new Size(240, 50);
             panel22.TabIndex = 7;
+            panel22.Click += ToTataTertib_UM;
             // 
             // label13
             // 
@@ -917,6 +921,7 @@
             label13.Size = new Size(99, 24);
             label13.TabIndex = 4;
             label13.Text = "Tata Tertib";
+            label13.Click += ToTataTertib_UM;
             // 
             // pictureBox10
             // 
@@ -927,6 +932,7 @@
             pictureBox10.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox10.TabIndex = 2;
             pictureBox10.TabStop = false;
+            pictureBox10.Click += ToTataTertib_UM;
             // 
             // panel21
             // 
@@ -938,6 +944,7 @@
             panel21.Name = "panel21";
             panel21.Size = new Size(240, 50);
             panel21.TabIndex = 6;
+            panel21.Click += ToVirtualTour_UM;
             // 
             // label12
             // 
@@ -949,6 +956,7 @@
             label12.Size = new Size(201, 24);
             label12.TabIndex = 4;
             label12.Text = "Virtual Tour Rusunawa";
+            label12.Click += ToVirtualTour_UM;
             // 
             // pictureBox1
             // 
@@ -959,6 +967,7 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += ToVirtualTour_UM;
             // 
             // pictureBox9
             // 
@@ -1021,6 +1030,7 @@
             panel4.Name = "panel4";
             panel4.Size = new Size(240, 50);
             panel4.TabIndex = 3;
+            panel4.Click += ToPengajuanSewa_UM;
             // 
             // label4
             // 
@@ -1032,6 +1042,7 @@
             label4.Size = new Size(149, 24);
             label4.TabIndex = 4;
             label4.Text = "Pengajuan Sewa";
+            label4.Click += ToPengajuanSewa_UM;
             // 
             // pictureBox4
             // 
@@ -1042,6 +1053,7 @@
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 2;
             pictureBox4.TabStop = false;
+            pictureBox4.Click += ToPengajuanSewa_UM;
             // 
             // panel3
             // 

@@ -32,5 +32,37 @@ namespace RUSUNAWAAA.View.Umum
             dashboardum.ShowDialog();
             this.Show();
         }
+
+        private void ToPengajuanSewa_UM(object sender, EventArgs e)
+        {
+            this.Hide();
+            PengajuanSewa_Umum pengajuansewaum = new PengajuanSewa_Umum();
+            pengajuansewaum.ShowDialog();
+            this.Show();
+        }
+
+        private void ToUlasan_UM(object sender, EventArgs e)
+        {
+            this.Hide();
+            Ulasan_Umum ulasanum = new Ulasan_Umum();
+            ulasanum.ShowDialog();
+            this.Show();
+        }
+
+        private void ToTataTertib_UM(object sender, EventArgs e)
+        {
+            this.Hide();
+            Tatatertib_Umum tatatertibum = new Tatatertib_Umum();
+            tatatertibum.ShowDialog();
+            this.Show();
+        }
+
+        private void ToKontakLokasi_UM(object sender, EventArgs e)
+        {
+            this.Hide();
+            Kontaklokasi_Umum kontaklokasium = new Kontaklokasi_Umum();
+            kontaklokasium.ShowDialog();
+            this.Show();
+        }
     }
 }
