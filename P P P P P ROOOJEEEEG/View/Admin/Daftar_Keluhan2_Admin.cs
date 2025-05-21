@@ -1,28 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace RUSUNAWAAA.View.Umum
+namespace RUSUNAWAAA.View.Admin
 {
-    public partial class DaftarUnit_Umum : Form
+    public partial class Daftar_Keluhan2_Admin : UserControl
     {
-        public DaftarUnit_Umum()
+        public Daftar_Keluhan2_Admin()
         {
             InitializeComponent();
         }
 
-        private void label20_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel10_Paint(object sender, PaintEventArgs e)
+        private void panel15_Paint(object sender, PaintEventArgs e)
         {
 
         }

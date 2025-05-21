@@ -58,6 +58,7 @@
             panel6 = new Panel();
             button2 = new Button();
             panel5 = new Panel();
+            panel28 = new Panel();
             label5 = new Label();
             pictureBox5 = new PictureBox();
             panel4 = new Panel();
@@ -75,9 +76,13 @@
             pictureBox7 = new PictureBox();
             pictureBox6 = new PictureBox();
             panel8 = new Panel();
+            panel10 = new Panel();
+            label7 = new Label();
+            comboBox1 = new ComboBox();
             panel9 = new Panel();
             label6 = new Label();
-            panel28 = new Panel();
+            pictureBox11 = new PictureBox();
+            pictureBox12 = new PictureBox();
             panel1.SuspendLayout();
             panel33.SuspendLayout();
             panel34.SuspendLayout();
@@ -110,6 +115,9 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel8.SuspendLayout();
+            panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -437,6 +445,14 @@
             panel5.Size = new Size(240, 50);
             panel5.TabIndex = 3;
             // 
+            // panel28
+            // 
+            panel28.BackColor = Color.White;
+            panel28.Location = new Point(-1, 0);
+            panel28.Name = "panel28";
+            panel28.Size = new Size(4, 50);
+            panel28.TabIndex = 5;
+            // 
             // label5
             // 
             label5.AutoSize = true;
@@ -613,6 +629,10 @@
             // 
             // panel8
             // 
+            panel8.Controls.Add(pictureBox12);
+            panel8.Controls.Add(pictureBox11);
+            panel8.Controls.Add(panel10);
+            panel8.Controls.Add(comboBox1);
             panel8.Controls.Add(panel9);
             panel8.Controls.Add(label6);
             panel8.Dock = DockStyle.Fill;
@@ -620,6 +640,39 @@
             panel8.Name = "panel8";
             panel8.Size = new Size(1182, 733);
             panel8.TabIndex = 12;
+            // 
+            // panel10
+            // 
+            panel10.BackColor = Color.White;
+            panel10.Controls.Add(label7);
+            panel10.Location = new Point(950, 9);
+            panel10.Name = "panel10";
+            panel10.Size = new Size(89, 32);
+            panel10.TabIndex = 29;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Inter", 10F);
+            label7.ForeColor = Color.Black;
+            label7.Location = new Point(3, 3);
+            label7.Name = "label7";
+            label7.Size = new Size(84, 24);
+            label7.TabIndex = 5;
+            label7.Text = "Urutkan :";
+            label7.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // comboBox1
+            // 
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox1.DropDownWidth = 200;
+            comboBox1.Font = new Font("Inter", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Terlama", "Terbaru" });
+            comboBox1.Location = new Point(1035, 9);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(135, 32);
+            comboBox1.TabIndex = 28;
             // 
             // panel9
             // 
@@ -637,17 +690,29 @@
             label6.ForeColor = Color.White;
             label6.Location = new Point(0, 3);
             label6.Name = "label6";
-            label6.Size = new Size(306, 45);
+            label6.Size = new Size(255, 45);
             label6.TabIndex = 4;
-            label6.Text = "Pengelolaan Akun";
+            label6.Text = "Daftar Keluhan";
             // 
-            // panel28
+            // pictureBox11
             // 
-            panel28.BackColor = Color.White;
-            panel28.Location = new Point(-1, 0);
-            panel28.Name = "panel28";
-            panel28.Size = new Size(4, 50);
-            panel28.TabIndex = 5;
+            pictureBox11.ErrorImage = null;
+            pictureBox11.Image = Properties.Resources.category;
+            pictureBox11.Location = new Point(833, 9);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(32, 32);
+            pictureBox11.TabIndex = 30;
+            pictureBox11.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            pictureBox12.ErrorImage = null;
+            pictureBox12.Image = Properties.Resources.category;
+            pictureBox12.Location = new Point(881, 9);
+            pictureBox12.Name = "pictureBox12";
+            pictureBox12.Size = new Size(32, 32);
+            pictureBox12.TabIndex = 31;
+            pictureBox12.TabStop = false;
             // 
             // Daftar_Keluhan_Admin
             // 
@@ -706,6 +771,10 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             panel8.ResumeLayout(false);
             panel8.PerformLayout();
+            panel10.ResumeLayout(false);
+            panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             ResumeLayout(false);
         }
 
@@ -760,5 +829,10 @@
         private Panel panel9;
         private Label label6;
         private Panel panel28;
+        private ComboBox comboBox1;
+        private Panel panel10;
+        private Label label7;
+        private PictureBox pictureBox12;
+        private PictureBox pictureBox11;
     }
 }
