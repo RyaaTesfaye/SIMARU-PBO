@@ -64,6 +64,7 @@
             label4 = new Label();
             pictureBox4 = new PictureBox();
             panel3 = new Panel();
+            panel28 = new Panel();
             label3 = new Label();
             pictureBox2 = new PictureBox();
             panel2 = new Panel();
@@ -77,7 +78,27 @@
             panel8 = new Panel();
             panel9 = new Panel();
             label6 = new Label();
-            panel28 = new Panel();
+            panel10 = new Panel();
+            checkBox1 = new CheckBox();
+            checkBox2 = new CheckBox();
+            checkBox3 = new CheckBox();
+            checkBox4 = new CheckBox();
+            checkBox5 = new CheckBox();
+            checkBox6 = new CheckBox();
+            checkBox7 = new CheckBox();
+            checkBox8 = new CheckBox();
+            checkBox9 = new CheckBox();
+            checkBox10 = new CheckBox();
+            checkBox11 = new CheckBox();
+            checkBox12 = new CheckBox();
+            label7 = new Label();
+            label24 = new Label();
+            label8 = new Label();
+            label9 = new Label();
+            label10 = new Label();
+            label11 = new Label();
+            label14 = new Label();
+            label15 = new Label();
             panel1.SuspendLayout();
             panel33.SuspendLayout();
             panel34.SuspendLayout();
@@ -110,6 +131,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel8.SuspendLayout();
+            panel9.SuspendLayout();
+            panel10.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -501,6 +524,14 @@
             panel3.Size = new Size(240, 50);
             panel3.TabIndex = 3;
             // 
+            // panel28
+            // 
+            panel28.BackColor = Color.White;
+            panel28.Location = new Point(-1, 0);
+            panel28.Name = "panel28";
+            panel28.Size = new Size(4, 50);
+            panel28.TabIndex = 5;
+            // 
             // label3
             // 
             label3.AutoSize = true;
@@ -624,6 +655,9 @@
             // panel9
             // 
             panel9.BackColor = Color.FromArgb(37, 39, 48);
+            panel9.Controls.Add(label24);
+            panel9.Controls.Add(label7);
+            panel9.Controls.Add(panel10);
             panel9.Location = new Point(5, 54);
             panel9.Name = "panel9";
             panel9.Padding = new Padding(50);
@@ -641,13 +675,252 @@
             label6.TabIndex = 4;
             label6.Text = "Pengelolaan Akun";
             // 
-            // panel28
+            // panel10
             // 
-            panel28.BackColor = Color.White;
-            panel28.Location = new Point(-1, 0);
-            panel28.Name = "panel28";
-            panel28.Size = new Size(4, 50);
-            panel28.TabIndex = 5;
+            panel10.BackColor = Color.FromArgb(23, 24, 30);
+            panel10.Controls.Add(label15);
+            panel10.Controls.Add(label14);
+            panel10.Controls.Add(label11);
+            panel10.Controls.Add(label10);
+            panel10.Controls.Add(label9);
+            panel10.Controls.Add(label8);
+            panel10.Controls.Add(checkBox12);
+            panel10.Controls.Add(checkBox11);
+            panel10.Controls.Add(checkBox10);
+            panel10.Controls.Add(checkBox9);
+            panel10.Controls.Add(checkBox8);
+            panel10.Controls.Add(checkBox7);
+            panel10.Controls.Add(checkBox6);
+            panel10.Controls.Add(checkBox5);
+            panel10.Controls.Add(checkBox4);
+            panel10.Controls.Add(checkBox3);
+            panel10.Controls.Add(checkBox2);
+            panel10.Controls.Add(checkBox1);
+            panel10.Location = new Point(6, 56);
+            panel10.Name = "panel10";
+            panel10.Padding = new Padding(50);
+            panel10.Size = new Size(1149, 589);
+            panel10.TabIndex = 6;
+            // 
+            // checkBox1
+            // 
+            checkBox1.BackColor = Color.Transparent;
+            checkBox1.ForeColor = SystemColors.ButtonHighlight;
+            checkBox1.Location = new Point(47, 10);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(23, 24);
+            checkBox1.TabIndex = 0;
+            checkBox1.Text = "checkBox1";
+            checkBox1.UseVisualStyleBackColor = false;
+            // 
+            // checkBox2
+            // 
+            checkBox2.BackColor = Color.Transparent;
+            checkBox2.ForeColor = SystemColors.ButtonHighlight;
+            checkBox2.Location = new Point(47, 68);
+            checkBox2.Name = "checkBox2";
+            checkBox2.Size = new Size(23, 24);
+            checkBox2.TabIndex = 1;
+            checkBox2.Text = "checkBox2";
+            checkBox2.UseVisualStyleBackColor = false;
+            // 
+            // checkBox3
+            // 
+            checkBox3.BackColor = Color.Transparent;
+            checkBox3.ForeColor = SystemColors.ButtonHighlight;
+            checkBox3.Location = new Point(47, 513);
+            checkBox3.Name = "checkBox3";
+            checkBox3.Size = new Size(23, 24);
+            checkBox3.TabIndex = 2;
+            checkBox3.Text = "checkBox3";
+            checkBox3.UseVisualStyleBackColor = false;
+            // 
+            // checkBox4
+            // 
+            checkBox4.BackColor = Color.Transparent;
+            checkBox4.ForeColor = SystemColors.ButtonHighlight;
+            checkBox4.Location = new Point(47, 464);
+            checkBox4.Name = "checkBox4";
+            checkBox4.Size = new Size(23, 24);
+            checkBox4.TabIndex = 3;
+            checkBox4.Text = "checkBox4";
+            checkBox4.UseVisualStyleBackColor = false;
+            // 
+            // checkBox5
+            // 
+            checkBox5.BackColor = Color.Transparent;
+            checkBox5.ForeColor = SystemColors.ButtonHighlight;
+            checkBox5.Location = new Point(47, 424);
+            checkBox5.Name = "checkBox5";
+            checkBox5.Size = new Size(23, 24);
+            checkBox5.TabIndex = 4;
+            checkBox5.Text = "checkBox5";
+            checkBox5.UseVisualStyleBackColor = false;
+            // 
+            // checkBox6
+            // 
+            checkBox6.BackColor = Color.Transparent;
+            checkBox6.ForeColor = SystemColors.ButtonHighlight;
+            checkBox6.Location = new Point(47, 331);
+            checkBox6.Name = "checkBox6";
+            checkBox6.Size = new Size(23, 24);
+            checkBox6.TabIndex = 5;
+            checkBox6.Text = "checkBox6";
+            checkBox6.UseVisualStyleBackColor = false;
+            // 
+            // checkBox7
+            // 
+            checkBox7.BackColor = Color.Transparent;
+            checkBox7.ForeColor = SystemColors.ButtonHighlight;
+            checkBox7.Location = new Point(47, 379);
+            checkBox7.Name = "checkBox7";
+            checkBox7.Size = new Size(23, 24);
+            checkBox7.TabIndex = 6;
+            checkBox7.Text = "checkBox7";
+            checkBox7.UseVisualStyleBackColor = false;
+            // 
+            // checkBox8
+            // 
+            checkBox8.BackColor = Color.Transparent;
+            checkBox8.ForeColor = SystemColors.ButtonHighlight;
+            checkBox8.Location = new Point(47, 288);
+            checkBox8.Name = "checkBox8";
+            checkBox8.Size = new Size(23, 24);
+            checkBox8.TabIndex = 7;
+            checkBox8.Text = "checkBox8";
+            checkBox8.UseVisualStyleBackColor = false;
+            // 
+            // checkBox9
+            // 
+            checkBox9.BackColor = Color.Transparent;
+            checkBox9.ForeColor = SystemColors.ButtonHighlight;
+            checkBox9.Location = new Point(47, 233);
+            checkBox9.Name = "checkBox9";
+            checkBox9.Size = new Size(23, 24);
+            checkBox9.TabIndex = 8;
+            checkBox9.Text = "checkBox9";
+            checkBox9.UseVisualStyleBackColor = false;
+            // 
+            // checkBox10
+            // 
+            checkBox10.BackColor = Color.Transparent;
+            checkBox10.ForeColor = SystemColors.ButtonHighlight;
+            checkBox10.Location = new Point(47, 188);
+            checkBox10.Name = "checkBox10";
+            checkBox10.Size = new Size(23, 24);
+            checkBox10.TabIndex = 9;
+            checkBox10.Text = "checkBox10";
+            checkBox10.UseVisualStyleBackColor = false;
+            // 
+            // checkBox11
+            // 
+            checkBox11.BackColor = Color.Transparent;
+            checkBox11.ForeColor = SystemColors.ButtonHighlight;
+            checkBox11.Location = new Point(47, 149);
+            checkBox11.Name = "checkBox11";
+            checkBox11.Size = new Size(23, 24);
+            checkBox11.TabIndex = 10;
+            checkBox11.Text = "checkBox11";
+            checkBox11.UseVisualStyleBackColor = false;
+            // 
+            // checkBox12
+            // 
+            checkBox12.BackColor = Color.Transparent;
+            checkBox12.ForeColor = SystemColors.ButtonHighlight;
+            checkBox12.Location = new Point(47, 108);
+            checkBox12.Name = "checkBox12";
+            checkBox12.Size = new Size(23, 24);
+            checkBox12.TabIndex = 11;
+            checkBox12.Text = "checkBox12";
+            checkBox12.UseVisualStyleBackColor = false;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Inter", 10F, FontStyle.Bold);
+            label7.ForeColor = Color.White;
+            label7.Location = new Point(29, 1);
+            label7.Name = "label7";
+            label7.Size = new Size(125, 24);
+            label7.TabIndex = 7;
+            label7.Text = "Total Penguhi";
+            // 
+            // label24
+            // 
+            label24.AutoSize = true;
+            label24.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label24.ForeColor = Color.FromArgb(139, 140, 142);
+            label24.Location = new Point(29, 27);
+            label24.Name = "label24";
+            label24.Size = new Size(121, 24);
+            label24.TabIndex = 10;
+            label24.Text = "28 April 2025";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.ForeColor = Color.FromArgb(139, 140, 142);
+            label8.Location = new Point(114, 12);
+            label8.Name = "label8";
+            label8.Size = new Size(121, 24);
+            label8.TabIndex = 12;
+            label8.Text = "28 April 2025";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.ForeColor = Color.FromArgb(139, 140, 142);
+            label9.Location = new Point(279, 10);
+            label9.Name = "label9";
+            label9.Size = new Size(121, 24);
+            label9.TabIndex = 13;
+            label9.Text = "28 April 2025";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label10.ForeColor = Color.FromArgb(139, 140, 142);
+            label10.Location = new Point(424, 12);
+            label10.Name = "label10";
+            label10.Size = new Size(121, 24);
+            label10.TabIndex = 14;
+            label10.Text = "28 April 2025";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label11.ForeColor = Color.FromArgb(139, 140, 142);
+            label11.Location = new Point(561, 8);
+            label11.Name = "label11";
+            label11.Size = new Size(121, 24);
+            label11.TabIndex = 15;
+            label11.Text = "28 April 2025";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label14.ForeColor = Color.FromArgb(139, 140, 142);
+            label14.Location = new Point(698, 8);
+            label14.Name = "label14";
+            label14.Size = new Size(121, 24);
+            label14.TabIndex = 16;
+            label14.Text = "28 April 2025";
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label15.ForeColor = Color.FromArgb(139, 140, 142);
+            label15.Location = new Point(856, 12);
+            label15.Name = "label15";
+            label15.Size = new Size(121, 24);
+            label15.TabIndex = 17;
+            label15.Text = "28 April 2025";
             // 
             // Pengelolaan_Akun_Admin
             // 
@@ -706,6 +979,10 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             panel8.ResumeLayout(false);
             panel8.PerformLayout();
+            panel9.ResumeLayout(false);
+            panel9.PerformLayout();
+            panel10.ResumeLayout(false);
+            panel10.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -760,5 +1037,26 @@
         private Panel panel9;
         private Label label6;
         private Panel panel28;
+        private Panel panel10;
+        private CheckBox checkBox1;
+        private Label label7;
+        private CheckBox checkBox12;
+        private CheckBox checkBox11;
+        private CheckBox checkBox10;
+        private CheckBox checkBox9;
+        private CheckBox checkBox8;
+        private CheckBox checkBox7;
+        private CheckBox checkBox6;
+        private CheckBox checkBox5;
+        private CheckBox checkBox4;
+        private CheckBox checkBox3;
+        private CheckBox checkBox2;
+        private Label label24;
+        private Label label15;
+        private Label label14;
+        private Label label11;
+        private Label label10;
+        private Label label9;
+        private Label label8;
     }
 }
