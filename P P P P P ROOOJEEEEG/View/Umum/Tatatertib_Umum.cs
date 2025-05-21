@@ -10,11 +10,27 @@ using System.Windows.Forms;
 
 namespace RUSUNAWAAA.View.Umum
 {
-    public partial class Tatatertib_Umum: Form
+    public partial class Tatatertib_Umum : Form
     {
         public Tatatertib_Umum()
         {
             InitializeComponent();
+        }
+
+        private void ToDaftarUnit_UM(object sender, EventArgs e)
+        {
+            this.Hide();
+            DaftarUnit_Umum daftarunit = new DaftarUnit_Umum();
+            daftarunit.ShowDialog();
+            this.Show();
+        }
+
+        private void ToDashboard_UM(object sender, EventArgs e)
+        {
+            this.Hide();
+            Dashboard_umum dashboardum = new Dashboard_umum();
+            dashboardum.ShowDialog();
+            this.Show();
         }
     }
 }

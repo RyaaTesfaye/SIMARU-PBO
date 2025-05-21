@@ -1,4 +1,5 @@
-﻿using RUSUNAWAAA.Utils;
+﻿using Microsoft.Win32;
+using RUSUNAWAAA.Utils;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -40,6 +41,37 @@ namespace RUSUNAWAAA.View.Umum
         private void button3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void ToDaftarUnit(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ToDaftarUnit_UM(object sender, EventArgs e)
+        {
+            this.Hide();
+            DaftarUnit_Umum daftarunit = new DaftarUnit_Umum();
+            daftarunit.ShowDialog();
+            this.Show();
+        }
+
+        private void ToPengajuanSewa_UM(object sender, EventArgs e)
+        {
+            this.Hide();
+            PengajuanSewa_Umum pengajuansewaum = new PengajuanSewa_Umum();
+            pengajuansewaum.ShowDialog();
+            this.Show();
         }
     }
 }
