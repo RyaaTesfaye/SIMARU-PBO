@@ -313,6 +313,7 @@
             panel4.Name = "panel4";
             panel4.Size = new Size(240, 50);
             panel4.TabIndex = 3;
+            panel4.Click += ToPengajuanSewa_UM;
             // 
             // label4
             // 
@@ -324,6 +325,7 @@
             label4.Size = new Size(149, 24);
             label4.TabIndex = 4;
             label4.Text = "Pengajuan Sewa";
+            label4.Click += ToPengajuanSewa_UM;
             // 
             // pictureBox4
             // 
@@ -334,6 +336,7 @@
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 2;
             pictureBox4.TabStop = false;
+            pictureBox4.Click += ToPengajuanSewa_UM;
             // 
             // panel3
             // 
@@ -345,6 +348,8 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(240, 50);
             panel3.TabIndex = 3;
+            panel3.Click += ToDaftarUnit_UM;
+            panel3.Paint += panel3_Paint;
             // 
             // label3
             // 
@@ -356,6 +361,7 @@
             label3.Size = new Size(176, 24);
             label3.TabIndex = 4;
             label3.Text = "Daftar Unit Tersedia";
+            label3.Click += ToDaftarUnit_UM;
             // 
             // pictureBox2
             // 
@@ -366,6 +372,7 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += ToDaftarUnit_UM;
             // 
             // panel2
             // 
@@ -1032,6 +1039,7 @@
             Name = "Dashboard_umum";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Dashboard Umum";
+            Click += ToDaftarUnit;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel29.ResumeLayout(false);

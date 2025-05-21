@@ -447,6 +447,7 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(240, 50);
             panel3.TabIndex = 3;
+            panel3.Click += ToDaftarUnit_UM;
             // 
             // label3
             // 
@@ -458,6 +459,7 @@
             label3.Size = new Size(176, 24);
             label3.TabIndex = 4;
             label3.Text = "Daftar Unit Tersedia";
+            label3.Click += ToDaftarUnit_UM;
             // 
             // pictureBox2
             // 
@@ -468,6 +470,7 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += ToDaftarUnit_UM;
             // 
             // panel2
             // 
@@ -478,6 +481,7 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(240, 50);
             panel2.TabIndex = 2;
+            panel2.Click += ToDashboard_UM;
             // 
             // label2
             // 
@@ -489,6 +493,7 @@
             label2.Size = new Size(99, 24);
             label2.TabIndex = 3;
             label2.Text = "Ringkasan";
+            label2.Click += ToDashboard_UM;
             // 
             // pictureBox3
             // 
@@ -499,6 +504,7 @@
             pictureBox3.Size = new Size(25, 25);
             pictureBox3.TabIndex = 2;
             pictureBox3.TabStop = false;
+            pictureBox3.Click += ToDashboard_UM;
             // 
             // label1
             // 

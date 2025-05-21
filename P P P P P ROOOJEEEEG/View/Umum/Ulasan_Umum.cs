@@ -26,5 +26,21 @@ namespace RUSUNAWAAA.View.Umum
         {
 
         }
+
+        private void ToDaftarUnit_UM(object sender, EventArgs e)
+        {
+            this.Hide();
+            DaftarUnit_Umum daftarunit = new DaftarUnit_Umum();
+            daftarunit.ShowDialog();
+            this.Show();
+        }
+
+        private void ToDashboard_UM(object sender, EventArgs e)
+        {
+            this.Hide();
+            Dashboard_umum dashboardum = new Dashboard_umum();
+            dashboardum.ShowDialog();
+            this.Show();
+        }
     }
 }

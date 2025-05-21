@@ -31,5 +31,21 @@ namespace RUSUNAWAAA.View.Umum
         {
 
         }
+
+        private void ToDashboard_UM(object sender, EventArgs e)
+        {
+            this.Hide();
+            Dashboard_umum dashboardum = new Dashboard_umum();
+            dashboardum.ShowDialog();
+            this.Show();
+        }
+
+        private void ToPengajuanSewa_UM(object sender, EventArgs e)
+        {
+            this.Hide();
+            PengajuanSewa_Umum pengajuansewaum = new PengajuanSewa_Umum();
+            pengajuansewaum.ShowDialog();
+            this.Show();
+        }
     }
 }

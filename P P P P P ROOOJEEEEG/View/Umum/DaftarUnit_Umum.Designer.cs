@@ -408,6 +408,7 @@
             panel4.Name = "panel4";
             panel4.Size = new Size(240, 50);
             panel4.TabIndex = 3;
+            panel4.Click += ToPengajuanSewa_UM;
             // 
             // label4
             // 
@@ -419,6 +420,7 @@
             label4.Size = new Size(149, 24);
             label4.TabIndex = 4;
             label4.Text = "Pengajuan Sewa";
+            label4.Click += ToPengajuanSewa_UM;
             // 
             // pictureBox4
             // 
@@ -429,6 +431,7 @@
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 2;
             pictureBox4.TabStop = false;
+            pictureBox4.Click += ToPengajuanSewa_UM;
             // 
             // panel3
             // 
@@ -480,6 +483,7 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(240, 50);
             panel2.TabIndex = 2;
+            panel2.Click += ToDashboard_UM;
             // 
             // label2
             // 
@@ -491,6 +495,7 @@
             label2.Size = new Size(99, 24);
             label2.TabIndex = 3;
             label2.Text = "Ringkasan";
+            label2.Click += ToDashboard_UM;
             // 
             // pictureBox3
             // 
@@ -501,6 +506,7 @@
             pictureBox3.Size = new Size(25, 25);
             pictureBox3.TabIndex = 2;
             pictureBox3.TabStop = false;
+            pictureBox3.Click += ToDashboard_UM;
             // 
             // label1
             // 
