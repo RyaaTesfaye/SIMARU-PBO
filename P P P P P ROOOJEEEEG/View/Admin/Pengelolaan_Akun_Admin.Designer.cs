@@ -99,6 +99,17 @@
             label11 = new Label();
             label14 = new Label();
             label15 = new Label();
+            panel11 = new Panel();
+            label16 = new Label();
+            label17 = new Label();
+            label18 = new Label();
+            label19 = new Label();
+            label20 = new Label();
+            label21 = new Label();
+            pictureBox11 = new PictureBox();
+            pictureBox12 = new PictureBox();
+            panel12 = new Panel();
+            label22 = new Label();
             panel1.SuspendLayout();
             panel33.SuspendLayout();
             panel34.SuspendLayout();
@@ -133,6 +144,8 @@
             panel8.SuspendLayout();
             panel9.SuspendLayout();
             panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -655,6 +668,7 @@
             // panel9
             // 
             panel9.BackColor = Color.FromArgb(37, 39, 48);
+            panel9.Controls.Add(pictureBox12);
             panel9.Controls.Add(label24);
             panel9.Controls.Add(label7);
             panel9.Controls.Add(panel10);
@@ -678,6 +692,16 @@
             // panel10
             // 
             panel10.BackColor = Color.FromArgb(23, 24, 30);
+            panel10.Controls.Add(label22);
+            panel10.Controls.Add(panel12);
+            panel10.Controls.Add(pictureBox11);
+            panel10.Controls.Add(label21);
+            panel10.Controls.Add(label20);
+            panel10.Controls.Add(label19);
+            panel10.Controls.Add(label18);
+            panel10.Controls.Add(label17);
+            panel10.Controls.Add(label16);
+            panel10.Controls.Add(panel11);
             panel10.Controls.Add(label15);
             panel10.Controls.Add(label14);
             panel10.Controls.Add(label11);
@@ -728,7 +752,7 @@
             // 
             checkBox3.BackColor = Color.Transparent;
             checkBox3.ForeColor = SystemColors.ButtonHighlight;
-            checkBox3.Location = new Point(47, 513);
+            checkBox3.Location = new Point(47, 502);
             checkBox3.Name = "checkBox3";
             checkBox3.Size = new Size(23, 24);
             checkBox3.TabIndex = 2;
@@ -861,66 +885,179 @@
             label8.AutoSize = true;
             label8.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label8.ForeColor = Color.FromArgb(139, 140, 142);
-            label8.Location = new Point(114, 12);
+            label8.Location = new Point(87, 8);
             label8.Name = "label8";
-            label8.Size = new Size(121, 24);
+            label8.Size = new Size(82, 24);
             label8.TabIndex = 12;
-            label8.Text = "28 April 2025";
+            label8.Text = "ID Orang";
             // 
             // label9
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label9.ForeColor = Color.FromArgb(139, 140, 142);
-            label9.Location = new Point(279, 10);
+            label9.Location = new Point(202, 8);
             label9.Name = "label9";
-            label9.Size = new Size(121, 24);
+            label9.Size = new Size(134, 24);
             label9.TabIndex = 13;
-            label9.Text = "28 April 2025";
+            label9.Text = "Nama Lengkap";
             // 
             // label10
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label10.ForeColor = Color.FromArgb(139, 140, 142);
-            label10.Location = new Point(424, 12);
+            label10.Location = new Point(425, 8);
             label10.Name = "label10";
-            label10.Size = new Size(121, 24);
+            label10.Size = new Size(93, 24);
             label10.TabIndex = 14;
-            label10.Text = "28 April 2025";
+            label10.Text = "Nomor HP";
             // 
             // label11
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label11.ForeColor = Color.FromArgb(139, 140, 142);
-            label11.Location = new Point(561, 8);
+            label11.Location = new Point(607, 8);
             label11.Name = "label11";
-            label11.Size = new Size(121, 24);
+            label11.Size = new Size(79, 24);
             label11.TabIndex = 15;
-            label11.Text = "28 April 2025";
+            label11.Text = "Fakultas";
             // 
             // label14
             // 
             label14.AutoSize = true;
             label14.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label14.ForeColor = Color.FromArgb(139, 140, 142);
-            label14.Location = new Point(698, 8);
+            label14.Location = new Point(798, 10);
             label14.Name = "label14";
-            label14.Size = new Size(121, 24);
+            label14.Size = new Size(44, 24);
             label14.TabIndex = 16;
-            label14.Text = "28 April 2025";
+            label14.Text = "NIM";
             // 
             // label15
             // 
             label15.AutoSize = true;
             label15.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label15.ForeColor = Color.FromArgb(139, 140, 142);
-            label15.Location = new Point(856, 12);
+            label15.Location = new Point(941, 8);
             label15.Name = "label15";
-            label15.Size = new Size(121, 24);
+            label15.Size = new Size(123, 24);
             label15.TabIndex = 17;
-            label15.Text = "28 April 2025";
+            label15.Text = "Status Hunian";
+            // 
+            // panel11
+            // 
+            panel11.BackColor = Color.FromArgb(139, 140, 142);
+            panel11.Location = new Point(0, 40);
+            panel11.Name = "panel11";
+            panel11.Size = new Size(1149, 3);
+            panel11.TabIndex = 18;
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label16.ForeColor = Color.FromArgb(139, 140, 142);
+            label16.Location = new Point(104, 68);
+            label16.Name = "label16";
+            label16.Size = new Size(39, 24);
+            label16.TabIndex = 19;
+            label16.Text = "001";
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label17.ForeColor = Color.FromArgb(139, 140, 142);
+            label17.Location = new Point(179, 68);
+            label17.Name = "label17";
+            label17.Size = new Size(198, 24);
+            label17.TabIndex = 20;
+            label17.Text = "Aditiya Rifki Arya Putra";
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label18.ForeColor = Color.FromArgb(139, 140, 142);
+            label18.Location = new Point(401, 68);
+            label18.Name = "label18";
+            label18.Size = new Size(134, 24);
+            label18.TabIndex = 21;
+            label18.Text = "082141404209";
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label19.ForeColor = Color.FromArgb(139, 140, 142);
+            label19.Location = new Point(1083, 68);
+            label19.Name = "label19";
+            label19.Size = new Size(56, 24);
+            label19.TabIndex = 22;
+            label19.Text = "Detail";
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label20.ForeColor = Color.FromArgb(139, 140, 142);
+            label20.Location = new Point(753, 68);
+            label20.Name = "label20";
+            label20.Size = new Size(134, 24);
+            label20.TabIndex = 23;
+            label20.Text = "242410103082";
+            // 
+            // label21
+            // 
+            label21.AutoSize = true;
+            label21.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label21.ForeColor = Color.FromArgb(139, 140, 142);
+            label21.Location = new Point(584, 68);
+            label21.Name = "label21";
+            label21.Size = new Size(128, 24);
+            label21.TabIndex = 24;
+            label21.Text = "Ilmu Komputer";
+            // 
+            // pictureBox11
+            // 
+            pictureBox11.ErrorImage = null;
+            pictureBox11.Image = Properties.Resources.category;
+            pictureBox11.Location = new Point(941, 68);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(123, 25);
+            pictureBox11.TabIndex = 25;
+            pictureBox11.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            pictureBox12.ErrorImage = null;
+            pictureBox12.Image = Properties.Resources.category;
+            pictureBox12.Location = new Point(1030, 13);
+            pictureBox12.Name = "pictureBox12";
+            pictureBox12.Size = new Size(123, 25);
+            pictureBox12.TabIndex = 26;
+            pictureBox12.TabStop = false;
+            // 
+            // panel12
+            // 
+            panel12.BackColor = Color.FromArgb(139, 140, 142);
+            panel12.Location = new Point(0, 533);
+            panel12.Name = "panel12";
+            panel12.Size = new Size(1149, 3);
+            panel12.TabIndex = 26;
+            // 
+            // label22
+            // 
+            label22.AutoSize = true;
+            label22.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label22.ForeColor = Color.White;
+            label22.Location = new Point(23, 552);
+            label22.Name = "label22";
+            label22.Size = new Size(248, 24);
+            label22.TabIndex = 27;
+            label22.Text = "Melihat Data 1 Dari 8 halaman";
             // 
             // Pengelolaan_Akun_Admin
             // 
@@ -983,6 +1120,8 @@
             panel9.PerformLayout();
             panel10.ResumeLayout(false);
             panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             ResumeLayout(false);
         }
 
@@ -1058,5 +1197,16 @@
         private Label label10;
         private Label label9;
         private Label label8;
+        private Panel panel11;
+        private Label label21;
+        private Label label20;
+        private Label label19;
+        private Label label18;
+        private Label label17;
+        private Label label16;
+        private PictureBox pictureBox12;
+        private Label label22;
+        private Panel panel12;
+        private PictureBox pictureBox11;
     }
 }
