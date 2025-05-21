@@ -27,17 +27,12 @@ namespace RUSUNAWAAA.View.Umum
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void ToDashboard_UM(object sender, EventArgs e)
         {
             this.Hide();
             Dashboard_umum dashboardum = new Dashboard_umum();
             dashboardum.ShowDialog();
-            this.Show();
+            this.Close();
         }
 
         private void ToPengajuanSewa_UM(object sender, EventArgs e)
@@ -45,7 +40,7 @@ namespace RUSUNAWAAA.View.Umum
             this.Hide();
             PengajuanSewa_Umum pengajuansewaum = new PengajuanSewa_Umum();
             pengajuansewaum.ShowDialog();
-            this.Show();
+            this.Close();
         }
 
         private void ToUlasan_UM(object sender, EventArgs e)
@@ -53,7 +48,7 @@ namespace RUSUNAWAAA.View.Umum
             this.Hide();
             Ulasan_Umum ulasanum = new Ulasan_Umum();
             ulasanum.ShowDialog();
-            this.Show();
+            this.Close();
         }
 
         private void ToVirtualTour_UM(object sender, EventArgs e)
@@ -61,7 +56,7 @@ namespace RUSUNAWAAA.View.Umum
             this.Hide();
             Virtual_Tour_Umum virtualtourum = new Virtual_Tour_Umum();
             virtualtourum.ShowDialog();
-            this.Show();
+            this.Close();
         }
 
         private void ToTataTertib_UM(object sender, EventArgs e)
@@ -69,7 +64,7 @@ namespace RUSUNAWAAA.View.Umum
             this.Hide();
             Tatatertib_Umum tatatertibum = new Tatatertib_Umum();
             tatatertibum.ShowDialog();
-            this.Show();
+            this.Close();
         }
 
         private void ToKontakLokasi_UM(object sender, EventArgs e)
@@ -77,7 +72,7 @@ namespace RUSUNAWAAA.View.Umum
             this.Hide();
             Kontaklokasi_Umum kontaklokasium = new Kontaklokasi_Umum();
             kontaklokasium.ShowDialog();
-            this.Show();
+            this.Close();
         }
     }
 }

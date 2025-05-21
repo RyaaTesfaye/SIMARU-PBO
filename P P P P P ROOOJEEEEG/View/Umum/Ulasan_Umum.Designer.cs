@@ -978,6 +978,7 @@
             pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox9.TabIndex = 5;
             pictureBox9.TabStop = false;
+            pictureBox9.Click += ToDashboard_UM;
             // 
             // panel5
             // 
@@ -1135,6 +1136,7 @@
             label1.TabIndex = 0;
             label1.Text = "SIMARU";
             label1.TextAlign = ContentAlignment.MiddleCenter;
+            label1.Click += ToDashboard_UM;
             // 
             // Ulasan_Umum
             // 
