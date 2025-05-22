@@ -97,19 +97,18 @@
             label10 = new Label();
             label9 = new Label();
             label8 = new Label();
-            checkBox12 = new CheckBox();
-            checkBox11 = new CheckBox();
-            checkBox10 = new CheckBox();
-            checkBox9 = new CheckBox();
-            checkBox8 = new CheckBox();
-            checkBox7 = new CheckBox();
-            checkBox6 = new CheckBox();
-            checkBox5 = new CheckBox();
-            checkBox4 = new CheckBox();
-            checkBox3 = new CheckBox();
-            checkBox2 = new CheckBox();
             checkBox1 = new CheckBox();
             label6 = new Label();
+            checkBox13 = new CheckBox();
+            checkBox14 = new CheckBox();
+            checkBox15 = new CheckBox();
+            checkBox16 = new CheckBox();
+            checkBox17 = new CheckBox();
+            checkBox18 = new CheckBox();
+            checkBox19 = new CheckBox();
+            checkBox20 = new CheckBox();
+            checkBox21 = new CheckBox();
+            checkBox22 = new CheckBox();
             panel1.SuspendLayout();
             panel33.SuspendLayout();
             panel34.SuspendLayout();
@@ -717,11 +716,11 @@
             // label24
             // 
             label24.AutoSize = true;
-            label24.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label24.Font = new Font("Inter SemiBold", 7F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label24.ForeColor = Color.FromArgb(139, 140, 142);
-            label24.Location = new Point(29, 27);
+            label24.Location = new Point(29, 25);
             label24.Name = "label24";
-            label24.Size = new Size(121, 24);
+            label24.Size = new Size(85, 17);
             label24.TabIndex = 10;
             label24.Text = "28 April 2025";
             // 
@@ -739,6 +738,16 @@
             // panel10
             // 
             panel10.BackColor = Color.FromArgb(23, 24, 30);
+            panel10.Controls.Add(checkBox13);
+            panel10.Controls.Add(checkBox14);
+            panel10.Controls.Add(checkBox15);
+            panel10.Controls.Add(checkBox16);
+            panel10.Controls.Add(checkBox17);
+            panel10.Controls.Add(checkBox18);
+            panel10.Controls.Add(checkBox19);
+            panel10.Controls.Add(checkBox20);
+            panel10.Controls.Add(checkBox21);
+            panel10.Controls.Add(checkBox22);
             panel10.Controls.Add(label22);
             panel10.Controls.Add(panel12);
             panel10.Controls.Add(pictureBox11);
@@ -755,17 +764,6 @@
             panel10.Controls.Add(label10);
             panel10.Controls.Add(label9);
             panel10.Controls.Add(label8);
-            panel10.Controls.Add(checkBox12);
-            panel10.Controls.Add(checkBox11);
-            panel10.Controls.Add(checkBox10);
-            panel10.Controls.Add(checkBox9);
-            panel10.Controls.Add(checkBox8);
-            panel10.Controls.Add(checkBox7);
-            panel10.Controls.Add(checkBox6);
-            panel10.Controls.Add(checkBox5);
-            panel10.Controls.Add(checkBox4);
-            panel10.Controls.Add(checkBox3);
-            panel10.Controls.Add(checkBox2);
             panel10.Controls.Add(checkBox1);
             panel10.Location = new Point(6, 56);
             panel10.Name = "panel10";
@@ -942,127 +940,6 @@
             label8.TabIndex = 12;
             label8.Text = "ID Orang";
             // 
-            // checkBox12
-            // 
-            checkBox12.BackColor = Color.Transparent;
-            checkBox12.ForeColor = SystemColors.ButtonHighlight;
-            checkBox12.Location = new Point(47, 108);
-            checkBox12.Name = "checkBox12";
-            checkBox12.Size = new Size(23, 24);
-            checkBox12.TabIndex = 11;
-            checkBox12.Text = "checkBox12";
-            checkBox12.UseVisualStyleBackColor = false;
-            // 
-            // checkBox11
-            // 
-            checkBox11.BackColor = Color.Transparent;
-            checkBox11.ForeColor = SystemColors.ButtonHighlight;
-            checkBox11.Location = new Point(47, 149);
-            checkBox11.Name = "checkBox11";
-            checkBox11.Size = new Size(23, 24);
-            checkBox11.TabIndex = 10;
-            checkBox11.Text = "checkBox11";
-            checkBox11.UseVisualStyleBackColor = false;
-            // 
-            // checkBox10
-            // 
-            checkBox10.BackColor = Color.Transparent;
-            checkBox10.ForeColor = SystemColors.ButtonHighlight;
-            checkBox10.Location = new Point(47, 188);
-            checkBox10.Name = "checkBox10";
-            checkBox10.Size = new Size(23, 24);
-            checkBox10.TabIndex = 9;
-            checkBox10.Text = "checkBox10";
-            checkBox10.UseVisualStyleBackColor = false;
-            // 
-            // checkBox9
-            // 
-            checkBox9.BackColor = Color.Transparent;
-            checkBox9.ForeColor = SystemColors.ButtonHighlight;
-            checkBox9.Location = new Point(47, 233);
-            checkBox9.Name = "checkBox9";
-            checkBox9.Size = new Size(23, 24);
-            checkBox9.TabIndex = 8;
-            checkBox9.Text = "checkBox9";
-            checkBox9.UseVisualStyleBackColor = false;
-            // 
-            // checkBox8
-            // 
-            checkBox8.BackColor = Color.Transparent;
-            checkBox8.ForeColor = SystemColors.ButtonHighlight;
-            checkBox8.Location = new Point(47, 288);
-            checkBox8.Name = "checkBox8";
-            checkBox8.Size = new Size(23, 24);
-            checkBox8.TabIndex = 7;
-            checkBox8.Text = "checkBox8";
-            checkBox8.UseVisualStyleBackColor = false;
-            // 
-            // checkBox7
-            // 
-            checkBox7.BackColor = Color.Transparent;
-            checkBox7.ForeColor = SystemColors.ButtonHighlight;
-            checkBox7.Location = new Point(47, 379);
-            checkBox7.Name = "checkBox7";
-            checkBox7.Size = new Size(23, 24);
-            checkBox7.TabIndex = 6;
-            checkBox7.Text = "checkBox7";
-            checkBox7.UseVisualStyleBackColor = false;
-            // 
-            // checkBox6
-            // 
-            checkBox6.BackColor = Color.Transparent;
-            checkBox6.ForeColor = SystemColors.ButtonHighlight;
-            checkBox6.Location = new Point(47, 331);
-            checkBox6.Name = "checkBox6";
-            checkBox6.Size = new Size(23, 24);
-            checkBox6.TabIndex = 5;
-            checkBox6.Text = "checkBox6";
-            checkBox6.UseVisualStyleBackColor = false;
-            // 
-            // checkBox5
-            // 
-            checkBox5.BackColor = Color.Transparent;
-            checkBox5.ForeColor = SystemColors.ButtonHighlight;
-            checkBox5.Location = new Point(47, 424);
-            checkBox5.Name = "checkBox5";
-            checkBox5.Size = new Size(23, 24);
-            checkBox5.TabIndex = 4;
-            checkBox5.Text = "checkBox5";
-            checkBox5.UseVisualStyleBackColor = false;
-            // 
-            // checkBox4
-            // 
-            checkBox4.BackColor = Color.Transparent;
-            checkBox4.ForeColor = SystemColors.ButtonHighlight;
-            checkBox4.Location = new Point(47, 464);
-            checkBox4.Name = "checkBox4";
-            checkBox4.Size = new Size(23, 24);
-            checkBox4.TabIndex = 3;
-            checkBox4.Text = "checkBox4";
-            checkBox4.UseVisualStyleBackColor = false;
-            // 
-            // checkBox3
-            // 
-            checkBox3.BackColor = Color.Transparent;
-            checkBox3.ForeColor = SystemColors.ButtonHighlight;
-            checkBox3.Location = new Point(47, 502);
-            checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(23, 24);
-            checkBox3.TabIndex = 2;
-            checkBox3.Text = "checkBox3";
-            checkBox3.UseVisualStyleBackColor = false;
-            // 
-            // checkBox2
-            // 
-            checkBox2.BackColor = Color.Transparent;
-            checkBox2.ForeColor = SystemColors.ButtonHighlight;
-            checkBox2.Location = new Point(47, 68);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(23, 24);
-            checkBox2.TabIndex = 1;
-            checkBox2.Text = "checkBox2";
-            checkBox2.UseVisualStyleBackColor = false;
-            // 
             // checkBox1
             // 
             checkBox1.BackColor = Color.Transparent;
@@ -1084,6 +961,116 @@
             label6.Size = new Size(306, 45);
             label6.TabIndex = 4;
             label6.Text = "Pengelolaan Akun";
+            // 
+            // checkBox13
+            // 
+            checkBox13.BackColor = Color.Transparent;
+            checkBox13.ForeColor = SystemColors.ButtonHighlight;
+            checkBox13.Location = new Point(46, 509);
+            checkBox13.Name = "checkBox13";
+            checkBox13.Size = new Size(23, 24);
+            checkBox13.TabIndex = 39;
+            checkBox13.Text = "checkBox13";
+            checkBox13.UseVisualStyleBackColor = false;
+            // 
+            // checkBox14
+            // 
+            checkBox14.BackColor = Color.Transparent;
+            checkBox14.ForeColor = SystemColors.ButtonHighlight;
+            checkBox14.Location = new Point(47, 118);
+            checkBox14.Name = "checkBox14";
+            checkBox14.Size = new Size(23, 24);
+            checkBox14.TabIndex = 38;
+            checkBox14.Text = "checkBox14";
+            checkBox14.UseVisualStyleBackColor = false;
+            // 
+            // checkBox15
+            // 
+            checkBox15.BackColor = Color.Transparent;
+            checkBox15.ForeColor = SystemColors.ButtonHighlight;
+            checkBox15.Location = new Point(47, 168);
+            checkBox15.Name = "checkBox15";
+            checkBox15.Size = new Size(23, 24);
+            checkBox15.TabIndex = 37;
+            checkBox15.Text = "checkBox15";
+            checkBox15.UseVisualStyleBackColor = false;
+            // 
+            // checkBox16
+            // 
+            checkBox16.BackColor = Color.Transparent;
+            checkBox16.ForeColor = SystemColors.ButtonHighlight;
+            checkBox16.Location = new Point(47, 218);
+            checkBox16.Name = "checkBox16";
+            checkBox16.Size = new Size(23, 24);
+            checkBox16.TabIndex = 36;
+            checkBox16.Text = "checkBox16";
+            checkBox16.UseVisualStyleBackColor = false;
+            // 
+            // checkBox17
+            // 
+            checkBox17.BackColor = Color.Transparent;
+            checkBox17.ForeColor = SystemColors.ButtonHighlight;
+            checkBox17.Location = new Point(47, 268);
+            checkBox17.Name = "checkBox17";
+            checkBox17.Size = new Size(23, 24);
+            checkBox17.TabIndex = 35;
+            checkBox17.Text = "checkBox17";
+            checkBox17.UseVisualStyleBackColor = false;
+            // 
+            // checkBox18
+            // 
+            checkBox18.BackColor = Color.Transparent;
+            checkBox18.ForeColor = SystemColors.ButtonHighlight;
+            checkBox18.Location = new Point(47, 318);
+            checkBox18.Name = "checkBox18";
+            checkBox18.Size = new Size(23, 24);
+            checkBox18.TabIndex = 34;
+            checkBox18.Text = "checkBox18";
+            checkBox18.UseVisualStyleBackColor = false;
+            // 
+            // checkBox19
+            // 
+            checkBox19.BackColor = Color.Transparent;
+            checkBox19.ForeColor = SystemColors.ButtonHighlight;
+            checkBox19.Location = new Point(46, 418);
+            checkBox19.Name = "checkBox19";
+            checkBox19.Size = new Size(23, 24);
+            checkBox19.TabIndex = 33;
+            checkBox19.Text = "checkBox19";
+            checkBox19.UseVisualStyleBackColor = false;
+            // 
+            // checkBox20
+            // 
+            checkBox20.BackColor = Color.Transparent;
+            checkBox20.ForeColor = SystemColors.ButtonHighlight;
+            checkBox20.Location = new Point(46, 368);
+            checkBox20.Name = "checkBox20";
+            checkBox20.Size = new Size(23, 24);
+            checkBox20.TabIndex = 32;
+            checkBox20.Text = "checkBox20";
+            checkBox20.UseVisualStyleBackColor = false;
+            // 
+            // checkBox21
+            // 
+            checkBox21.BackColor = Color.Transparent;
+            checkBox21.ForeColor = SystemColors.ButtonHighlight;
+            checkBox21.Location = new Point(47, 468);
+            checkBox21.Name = "checkBox21";
+            checkBox21.Size = new Size(23, 24);
+            checkBox21.TabIndex = 31;
+            checkBox21.Text = "checkBox21";
+            checkBox21.UseVisualStyleBackColor = false;
+            // 
+            // checkBox22
+            // 
+            checkBox22.BackColor = Color.Transparent;
+            checkBox22.ForeColor = SystemColors.ButtonHighlight;
+            checkBox22.Location = new Point(47, 68);
+            checkBox22.Name = "checkBox22";
+            checkBox22.Size = new Size(23, 24);
+            checkBox22.TabIndex = 30;
+            checkBox22.Text = "checkBox22";
+            checkBox22.UseVisualStyleBackColor = false;
             // 
             // Pengelolaan_Akun_Admin
             // 
@@ -1206,17 +1193,6 @@
         private Panel panel10;
         private CheckBox checkBox1;
         private Label label7;
-        private CheckBox checkBox12;
-        private CheckBox checkBox11;
-        private CheckBox checkBox10;
-        private CheckBox checkBox9;
-        private CheckBox checkBox8;
-        private CheckBox checkBox7;
-        private CheckBox checkBox6;
-        private CheckBox checkBox5;
-        private CheckBox checkBox4;
-        private CheckBox checkBox3;
-        private CheckBox checkBox2;
         private Label label24;
         private Label label15;
         private Label label14;
@@ -1235,5 +1211,15 @@
         private Label label22;
         private Panel panel12;
         private PictureBox pictureBox11;
+        private CheckBox checkBox13;
+        private CheckBox checkBox14;
+        private CheckBox checkBox15;
+        private CheckBox checkBox16;
+        private CheckBox checkBox17;
+        private CheckBox checkBox18;
+        private CheckBox checkBox19;
+        private CheckBox checkBox20;
+        private CheckBox checkBox21;
+        private CheckBox checkBox22;
     }
 }
