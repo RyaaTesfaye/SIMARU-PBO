@@ -424,6 +424,7 @@
             label12.Size = new Size(125, 24);
             label12.TabIndex = 4;
             label12.Text = "Tinjau Ulasan";
+            label12.Click += ToTinjauUlasan_AD;
             // 
             // pictureBox1
             // 
@@ -434,6 +435,7 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += ToTinjauUlasan_AD;
             // 
             // pictureBox9
             // 
