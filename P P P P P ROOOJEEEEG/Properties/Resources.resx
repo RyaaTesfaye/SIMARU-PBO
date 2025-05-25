@@ -121,14 +121,14 @@
   <data name="user-cirlce-add1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user-cirlce-add1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="brodcast (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\brodcast (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="NARAHUBUNG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NARAHUBUNG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="listharga" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\listharga.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="home-trend-up" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\home-trend-up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,6 +187,9 @@
   <data name="setting-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\setting-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="IKON TOL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IKON TOL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="close.alert.icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\close.alert.icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -199,8 +202,8 @@
   <data name="Kanan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Kanan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IKON TOL" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\IKON TOL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="home-trend-up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home-trend-up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="WhatsApp Image 2025-05-13 at 23.25.21_8b528e3b 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WhatsApp Image 2025-05-13 at 23.25.21_8b528e3b 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -210,6 +213,9 @@
   </data>
   <data name="tata_tertib" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tata_tertib1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hapus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hapus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="money-recive" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\money-recive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -235,7 +241,16 @@
   <data name="LOGIN2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LOGIN2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="brodcast (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\brodcast (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Lk hidup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lk hidup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LK Mati" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LK Mati.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PR HIDUP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PR HIDUP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PR Mati" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PR Mati.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

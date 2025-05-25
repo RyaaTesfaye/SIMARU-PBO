@@ -80,5 +80,15 @@ namespace RUSUNAWAAA.View.Admin
             siaranad.ShowDialog();
             this.Close();
         }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel17_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

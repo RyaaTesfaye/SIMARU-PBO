@@ -81,12 +81,20 @@
             label24 = new Label();
             label7 = new Label();
             panel10 = new Panel();
+            checkBox13 = new CheckBox();
+            checkBox14 = new CheckBox();
+            checkBox15 = new CheckBox();
+            checkBox16 = new CheckBox();
+            checkBox17 = new CheckBox();
+            checkBox18 = new CheckBox();
+            checkBox19 = new CheckBox();
+            checkBox20 = new CheckBox();
+            checkBox21 = new CheckBox();
+            checkBox22 = new CheckBox();
             label22 = new Label();
             panel12 = new Panel();
-            pictureBox11 = new PictureBox();
             label21 = new Label();
             label20 = new Label();
-            label19 = new Label();
             label18 = new Label();
             label17 = new Label();
             label16 = new Label();
@@ -99,16 +107,10 @@
             label8 = new Label();
             checkBox1 = new CheckBox();
             label6 = new Label();
-            checkBox13 = new CheckBox();
-            checkBox14 = new CheckBox();
-            checkBox15 = new CheckBox();
-            checkBox16 = new CheckBox();
-            checkBox17 = new CheckBox();
-            checkBox18 = new CheckBox();
-            checkBox19 = new CheckBox();
-            checkBox20 = new CheckBox();
-            checkBox21 = new CheckBox();
-            checkBox22 = new CheckBox();
+            label23 = new Label();
+            button1 = new Button();
+            pictureBox11 = new PictureBox();
+            pictureBox13 = new PictureBox();
             panel1.SuspendLayout();
             panel33.SuspendLayout();
             panel34.SuspendLayout();
@@ -145,6 +147,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -693,6 +696,8 @@
             // panel9
             // 
             panel9.BackColor = Color.FromArgb(37, 39, 48);
+            panel9.Controls.Add(pictureBox13);
+            panel9.Controls.Add(pictureBox11);
             panel9.Controls.Add(pictureBox12);
             panel9.Controls.Add(label24);
             panel9.Controls.Add(label7);
@@ -705,11 +710,13 @@
             // 
             // pictureBox12
             // 
+            pictureBox12.Cursor = Cursors.Hand;
             pictureBox12.ErrorImage = null;
-            pictureBox12.Image = Properties.Resources.category;
-            pictureBox12.Location = new Point(1030, 13);
+            pictureBox12.Image = Properties.Resources.Hapus;
+            pictureBox12.Location = new Point(1055, 1);
             pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(123, 25);
+            pictureBox12.Size = new Size(100, 55);
+            pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox12.TabIndex = 26;
             pictureBox12.TabStop = false;
             // 
@@ -738,6 +745,8 @@
             // panel10
             // 
             panel10.BackColor = Color.FromArgb(23, 24, 30);
+            panel10.Controls.Add(button1);
+            panel10.Controls.Add(label23);
             panel10.Controls.Add(checkBox13);
             panel10.Controls.Add(checkBox14);
             panel10.Controls.Add(checkBox15);
@@ -750,10 +759,8 @@
             panel10.Controls.Add(checkBox22);
             panel10.Controls.Add(label22);
             panel10.Controls.Add(panel12);
-            panel10.Controls.Add(pictureBox11);
             panel10.Controls.Add(label21);
             panel10.Controls.Add(label20);
-            panel10.Controls.Add(label19);
             panel10.Controls.Add(label18);
             panel10.Controls.Add(label17);
             panel10.Controls.Add(label16);
@@ -770,6 +777,117 @@
             panel10.Padding = new Padding(50);
             panel10.Size = new Size(1149, 589);
             panel10.TabIndex = 6;
+            panel10.Paint += panel10_Paint;
+            // 
+            // checkBox13
+            // 
+            checkBox13.BackColor = Color.Transparent;
+            checkBox13.ForeColor = SystemColors.ButtonHighlight;
+            checkBox13.Location = new Point(23, 509);
+            checkBox13.Name = "checkBox13";
+            checkBox13.Size = new Size(23, 24);
+            checkBox13.TabIndex = 39;
+            checkBox13.Text = "checkBox13";
+            checkBox13.UseVisualStyleBackColor = false;
+            // 
+            // checkBox14
+            // 
+            checkBox14.BackColor = Color.Transparent;
+            checkBox14.ForeColor = SystemColors.ButtonHighlight;
+            checkBox14.Location = new Point(24, 118);
+            checkBox14.Name = "checkBox14";
+            checkBox14.Size = new Size(23, 24);
+            checkBox14.TabIndex = 38;
+            checkBox14.Text = "checkBox14";
+            checkBox14.UseVisualStyleBackColor = false;
+            // 
+            // checkBox15
+            // 
+            checkBox15.BackColor = Color.Transparent;
+            checkBox15.ForeColor = SystemColors.ButtonHighlight;
+            checkBox15.Location = new Point(24, 168);
+            checkBox15.Name = "checkBox15";
+            checkBox15.Size = new Size(23, 24);
+            checkBox15.TabIndex = 37;
+            checkBox15.Text = "checkBox15";
+            checkBox15.UseVisualStyleBackColor = false;
+            // 
+            // checkBox16
+            // 
+            checkBox16.BackColor = Color.Transparent;
+            checkBox16.ForeColor = SystemColors.ButtonHighlight;
+            checkBox16.Location = new Point(24, 218);
+            checkBox16.Name = "checkBox16";
+            checkBox16.Size = new Size(23, 24);
+            checkBox16.TabIndex = 36;
+            checkBox16.Text = "checkBox16";
+            checkBox16.UseVisualStyleBackColor = false;
+            // 
+            // checkBox17
+            // 
+            checkBox17.BackColor = Color.Transparent;
+            checkBox17.ForeColor = SystemColors.ButtonHighlight;
+            checkBox17.Location = new Point(24, 268);
+            checkBox17.Name = "checkBox17";
+            checkBox17.Size = new Size(23, 24);
+            checkBox17.TabIndex = 35;
+            checkBox17.Text = "checkBox17";
+            checkBox17.UseVisualStyleBackColor = false;
+            // 
+            // checkBox18
+            // 
+            checkBox18.BackColor = Color.Transparent;
+            checkBox18.ForeColor = SystemColors.ButtonHighlight;
+            checkBox18.Location = new Point(24, 318);
+            checkBox18.Name = "checkBox18";
+            checkBox18.Size = new Size(23, 24);
+            checkBox18.TabIndex = 34;
+            checkBox18.Text = "checkBox18";
+            checkBox18.UseVisualStyleBackColor = false;
+            // 
+            // checkBox19
+            // 
+            checkBox19.BackColor = Color.Transparent;
+            checkBox19.ForeColor = SystemColors.ButtonHighlight;
+            checkBox19.Location = new Point(23, 418);
+            checkBox19.Name = "checkBox19";
+            checkBox19.Size = new Size(23, 24);
+            checkBox19.TabIndex = 33;
+            checkBox19.Text = "checkBox19";
+            checkBox19.UseVisualStyleBackColor = false;
+            // 
+            // checkBox20
+            // 
+            checkBox20.BackColor = Color.Transparent;
+            checkBox20.ForeColor = SystemColors.ButtonHighlight;
+            checkBox20.Location = new Point(23, 368);
+            checkBox20.Name = "checkBox20";
+            checkBox20.Size = new Size(23, 24);
+            checkBox20.TabIndex = 32;
+            checkBox20.Text = "checkBox20";
+            checkBox20.UseVisualStyleBackColor = false;
+            // 
+            // checkBox21
+            // 
+            checkBox21.BackColor = Color.Transparent;
+            checkBox21.ForeColor = SystemColors.ButtonHighlight;
+            checkBox21.Location = new Point(24, 468);
+            checkBox21.Name = "checkBox21";
+            checkBox21.Size = new Size(23, 24);
+            checkBox21.TabIndex = 31;
+            checkBox21.Text = "checkBox21";
+            checkBox21.UseVisualStyleBackColor = false;
+            // 
+            // checkBox22
+            // 
+            checkBox22.BackColor = Color.Transparent;
+            checkBox22.ForeColor = SystemColors.ButtonHighlight;
+            checkBox22.Location = new Point(24, 68);
+            checkBox22.Name = "checkBox22";
+            checkBox22.Size = new Size(23, 24);
+            checkBox22.TabIndex = 30;
+            checkBox22.Text = "checkBox22";
+            checkBox22.UseVisualStyleBackColor = false;
             // 
             // label22
             // 
@@ -790,22 +908,12 @@
             panel12.Size = new Size(1149, 3);
             panel12.TabIndex = 26;
             // 
-            // pictureBox11
-            // 
-            pictureBox11.ErrorImage = null;
-            pictureBox11.Image = Properties.Resources.category;
-            pictureBox11.Location = new Point(941, 68);
-            pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(123, 25);
-            pictureBox11.TabIndex = 25;
-            pictureBox11.TabStop = false;
-            // 
             // label21
             // 
             label21.AutoSize = true;
             label21.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label21.ForeColor = Color.FromArgb(139, 140, 142);
-            label21.Location = new Point(584, 68);
+            label21.Location = new Point(550, 68);
             label21.Name = "label21";
             label21.Size = new Size(128, 24);
             label21.TabIndex = 24;
@@ -816,29 +924,18 @@
             label20.AutoSize = true;
             label20.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label20.ForeColor = Color.FromArgb(139, 140, 142);
-            label20.Location = new Point(753, 68);
+            label20.Location = new Point(719, 68);
             label20.Name = "label20";
             label20.Size = new Size(134, 24);
             label20.TabIndex = 23;
             label20.Text = "242410103082";
-            // 
-            // label19
-            // 
-            label19.AutoSize = true;
-            label19.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label19.ForeColor = Color.FromArgb(139, 140, 142);
-            label19.Location = new Point(1083, 68);
-            label19.Name = "label19";
-            label19.Size = new Size(56, 24);
-            label19.TabIndex = 22;
-            label19.Text = "Detail";
             // 
             // label18
             // 
             label18.AutoSize = true;
             label18.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label18.ForeColor = Color.FromArgb(139, 140, 142);
-            label18.Location = new Point(401, 68);
+            label18.Location = new Point(379, 68);
             label18.Name = "label18";
             label18.Size = new Size(134, 24);
             label18.TabIndex = 21;
@@ -849,7 +946,7 @@
             label17.AutoSize = true;
             label17.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label17.ForeColor = Color.FromArgb(139, 140, 142);
-            label17.Location = new Point(179, 68);
+            label17.Location = new Point(161, 68);
             label17.Name = "label17";
             label17.Size = new Size(198, 24);
             label17.TabIndex = 20;
@@ -860,7 +957,7 @@
             label16.AutoSize = true;
             label16.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label16.ForeColor = Color.FromArgb(139, 140, 142);
-            label16.Location = new Point(104, 68);
+            label16.Location = new Point(53, 65);
             label16.Name = "label16";
             label16.Size = new Size(39, 24);
             label16.TabIndex = 19;
@@ -879,18 +976,18 @@
             label15.AutoSize = true;
             label15.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label15.ForeColor = Color.FromArgb(139, 140, 142);
-            label15.Location = new Point(941, 8);
+            label15.Location = new Point(884, 10);
             label15.Name = "label15";
-            label15.Size = new Size(123, 24);
+            label15.Size = new Size(111, 24);
             label15.TabIndex = 17;
-            label15.Text = "Status Hunian";
+            label15.Text = "Waktu Sewa";
             // 
             // label14
             // 
             label14.AutoSize = true;
             label14.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label14.ForeColor = Color.FromArgb(139, 140, 142);
-            label14.Location = new Point(798, 10);
+            label14.Location = new Point(719, 8);
             label14.Name = "label14";
             label14.Size = new Size(44, 24);
             label14.TabIndex = 16;
@@ -901,7 +998,7 @@
             label11.AutoSize = true;
             label11.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label11.ForeColor = Color.FromArgb(139, 140, 142);
-            label11.Location = new Point(607, 8);
+            label11.Location = new Point(550, 8);
             label11.Name = "label11";
             label11.Size = new Size(79, 24);
             label11.TabIndex = 15;
@@ -912,7 +1009,7 @@
             label10.AutoSize = true;
             label10.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label10.ForeColor = Color.FromArgb(139, 140, 142);
-            label10.Location = new Point(425, 8);
+            label10.Location = new Point(379, 8);
             label10.Name = "label10";
             label10.Size = new Size(93, 24);
             label10.TabIndex = 14;
@@ -923,7 +1020,7 @@
             label9.AutoSize = true;
             label9.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label9.ForeColor = Color.FromArgb(139, 140, 142);
-            label9.Location = new Point(202, 8);
+            label9.Location = new Point(161, 8);
             label9.Name = "label9";
             label9.Size = new Size(134, 24);
             label9.TabIndex = 13;
@@ -934,17 +1031,17 @@
             label8.AutoSize = true;
             label8.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label8.ForeColor = Color.FromArgb(139, 140, 142);
-            label8.Location = new Point(87, 8);
+            label8.Location = new Point(53, 8);
             label8.Name = "label8";
-            label8.Size = new Size(82, 24);
+            label8.Size = new Size(106, 24);
             label8.TabIndex = 12;
-            label8.Text = "ID Orang";
+            label8.Text = "ID Penyewa";
             // 
             // checkBox1
             // 
             checkBox1.BackColor = Color.Transparent;
             checkBox1.ForeColor = SystemColors.ButtonHighlight;
-            checkBox1.Location = new Point(47, 10);
+            checkBox1.Location = new Point(24, 10);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(23, 24);
             checkBox1.TabIndex = 0;
@@ -962,115 +1059,56 @@
             label6.TabIndex = 4;
             label6.Text = "Pengelolaan Akun";
             // 
-            // checkBox13
+            // label23
             // 
-            checkBox13.BackColor = Color.Transparent;
-            checkBox13.ForeColor = SystemColors.ButtonHighlight;
-            checkBox13.Location = new Point(46, 509);
-            checkBox13.Name = "checkBox13";
-            checkBox13.Size = new Size(23, 24);
-            checkBox13.TabIndex = 39;
-            checkBox13.Text = "checkBox13";
-            checkBox13.UseVisualStyleBackColor = false;
+            label23.AutoSize = true;
+            label23.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label23.ForeColor = Color.FromArgb(139, 140, 142);
+            label23.Location = new Point(884, 68);
+            label23.Name = "label23";
+            label23.Size = new Size(70, 24);
+            label23.TabIndex = 40;
+            label23.Text = "99 Hari";
             // 
-            // checkBox14
+            // button1
             // 
-            checkBox14.BackColor = Color.Transparent;
-            checkBox14.ForeColor = SystemColors.ButtonHighlight;
-            checkBox14.Location = new Point(47, 118);
-            checkBox14.Name = "checkBox14";
-            checkBox14.Size = new Size(23, 24);
-            checkBox14.TabIndex = 38;
-            checkBox14.Text = "checkBox14";
-            checkBox14.UseVisualStyleBackColor = false;
+            button1.BackColor = Color.FromArgb(10, 100, 236);
+            button1.Cursor = Cursors.Hand;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(1024, 59);
+            button1.Name = "button1";
+            button1.Size = new Size(90, 30);
+            button1.TabIndex = 41;
+            button1.Text = "Detail";
+            button1.UseVisualStyleBackColor = false;
             // 
-            // checkBox15
+            // pictureBox11
             // 
-            checkBox15.BackColor = Color.Transparent;
-            checkBox15.ForeColor = SystemColors.ButtonHighlight;
-            checkBox15.Location = new Point(47, 168);
-            checkBox15.Name = "checkBox15";
-            checkBox15.Size = new Size(23, 24);
-            checkBox15.TabIndex = 37;
-            checkBox15.Text = "checkBox15";
-            checkBox15.UseVisualStyleBackColor = false;
+            pictureBox11.BackColor = Color.Transparent;
+            pictureBox11.Cursor = Cursors.Hand;
+            pictureBox11.ErrorImage = null;
+            pictureBox11.Image = Properties.Resources.PR_HIDUP;
+            pictureBox11.Location = new Point(855, -9);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(65, 65);
+            pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox11.TabIndex = 27;
+            pictureBox11.TabStop = false;
             // 
-            // checkBox16
+            // pictureBox13
             // 
-            checkBox16.BackColor = Color.Transparent;
-            checkBox16.ForeColor = SystemColors.ButtonHighlight;
-            checkBox16.Location = new Point(47, 218);
-            checkBox16.Name = "checkBox16";
-            checkBox16.Size = new Size(23, 24);
-            checkBox16.TabIndex = 36;
-            checkBox16.Text = "checkBox16";
-            checkBox16.UseVisualStyleBackColor = false;
-            // 
-            // checkBox17
-            // 
-            checkBox17.BackColor = Color.Transparent;
-            checkBox17.ForeColor = SystemColors.ButtonHighlight;
-            checkBox17.Location = new Point(47, 268);
-            checkBox17.Name = "checkBox17";
-            checkBox17.Size = new Size(23, 24);
-            checkBox17.TabIndex = 35;
-            checkBox17.Text = "checkBox17";
-            checkBox17.UseVisualStyleBackColor = false;
-            // 
-            // checkBox18
-            // 
-            checkBox18.BackColor = Color.Transparent;
-            checkBox18.ForeColor = SystemColors.ButtonHighlight;
-            checkBox18.Location = new Point(47, 318);
-            checkBox18.Name = "checkBox18";
-            checkBox18.Size = new Size(23, 24);
-            checkBox18.TabIndex = 34;
-            checkBox18.Text = "checkBox18";
-            checkBox18.UseVisualStyleBackColor = false;
-            // 
-            // checkBox19
-            // 
-            checkBox19.BackColor = Color.Transparent;
-            checkBox19.ForeColor = SystemColors.ButtonHighlight;
-            checkBox19.Location = new Point(46, 418);
-            checkBox19.Name = "checkBox19";
-            checkBox19.Size = new Size(23, 24);
-            checkBox19.TabIndex = 33;
-            checkBox19.Text = "checkBox19";
-            checkBox19.UseVisualStyleBackColor = false;
-            // 
-            // checkBox20
-            // 
-            checkBox20.BackColor = Color.Transparent;
-            checkBox20.ForeColor = SystemColors.ButtonHighlight;
-            checkBox20.Location = new Point(46, 368);
-            checkBox20.Name = "checkBox20";
-            checkBox20.Size = new Size(23, 24);
-            checkBox20.TabIndex = 32;
-            checkBox20.Text = "checkBox20";
-            checkBox20.UseVisualStyleBackColor = false;
-            // 
-            // checkBox21
-            // 
-            checkBox21.BackColor = Color.Transparent;
-            checkBox21.ForeColor = SystemColors.ButtonHighlight;
-            checkBox21.Location = new Point(47, 468);
-            checkBox21.Name = "checkBox21";
-            checkBox21.Size = new Size(23, 24);
-            checkBox21.TabIndex = 31;
-            checkBox21.Text = "checkBox21";
-            checkBox21.UseVisualStyleBackColor = false;
-            // 
-            // checkBox22
-            // 
-            checkBox22.BackColor = Color.Transparent;
-            checkBox22.ForeColor = SystemColors.ButtonHighlight;
-            checkBox22.Location = new Point(47, 68);
-            checkBox22.Name = "checkBox22";
-            checkBox22.Size = new Size(23, 24);
-            checkBox22.TabIndex = 30;
-            checkBox22.Text = "checkBox22";
-            checkBox22.UseVisualStyleBackColor = false;
+            pictureBox13.Cursor = Cursors.Hand;
+            pictureBox13.ErrorImage = null;
+            pictureBox13.Image = Properties.Resources.Hapus;
+            pictureBox13.Location = new Point(926, 1);
+            pictureBox13.Name = "pictureBox13";
+            pictureBox13.Size = new Size(100, 55);
+            pictureBox13.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox13.TabIndex = 28;
+            pictureBox13.TabStop = false;
             // 
             // Pengelolaan_Akun_Admin
             // 
@@ -1136,6 +1174,7 @@
             panel10.ResumeLayout(false);
             panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
             ResumeLayout(false);
         }
 
@@ -1203,14 +1242,12 @@
         private Panel panel11;
         private Label label21;
         private Label label20;
-        private Label label19;
         private Label label18;
         private Label label17;
         private Label label16;
         private PictureBox pictureBox12;
         private Label label22;
         private Panel panel12;
-        private PictureBox pictureBox11;
         private CheckBox checkBox13;
         private CheckBox checkBox14;
         private CheckBox checkBox15;
@@ -1221,5 +1258,9 @@
         private CheckBox checkBox20;
         private CheckBox checkBox21;
         private CheckBox checkBox22;
+        private Button button1;
+        private Label label23;
+        private PictureBox pictureBox13;
+        private PictureBox pictureBox11;
     }
 }

@@ -78,6 +78,25 @@
             panel8 = new Panel();
             panel9 = new Panel();
             label6 = new Label();
+            panel10 = new Panel();
+            pictureBox12 = new PictureBox();
+            pictureBox11 = new PictureBox();
+            panel12 = new Panel();
+            panel13 = new Panel();
+            label24 = new Label();
+            label8 = new Label();
+            panel14 = new Panel();
+            label25 = new Label();
+            label22 = new Label();
+            panel15 = new Panel();
+            label17 = new Label();
+            label16 = new Label();
+            panel16 = new Panel();
+            label9 = new Label();
+            label23 = new Label();
+            label14 = new Label();
+            panel17 = new Panel();
+            button1 = new Button();
             panel1.SuspendLayout();
             panel33.SuspendLayout();
             panel34.SuspendLayout();
@@ -110,6 +129,13 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel8.SuspendLayout();
+            panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
+            panel12.SuspendLayout();
+            panel13.SuspendLayout();
+            panel14.SuspendLayout();
+            panel17.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -647,6 +673,7 @@
             // 
             // panel8
             // 
+            panel8.Controls.Add(panel10);
             panel8.Controls.Add(panel9);
             panel8.Controls.Add(label6);
             panel8.Dock = DockStyle.Fill;
@@ -674,6 +701,218 @@
             label6.Size = new Size(306, 45);
             label6.TabIndex = 4;
             label6.Text = "Pengelolaan Akun";
+            // 
+            // panel10
+            // 
+            panel10.Controls.Add(panel12);
+            panel10.Controls.Add(label14);
+            panel10.Dock = DockStyle.Fill;
+            panel10.Location = new Point(0, 0);
+            panel10.Name = "panel10";
+            panel10.Size = new Size(1182, 733);
+            panel10.TabIndex = 13;
+            // 
+            // pictureBox12
+            // 
+            pictureBox12.ErrorImage = null;
+            pictureBox12.Image = Properties.Resources.category;
+            pictureBox12.Location = new Point(1029, 13);
+            pictureBox12.Name = "pictureBox12";
+            pictureBox12.Size = new Size(32, 32);
+            pictureBox12.TabIndex = 31;
+            pictureBox12.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            pictureBox11.ErrorImage = null;
+            pictureBox11.Image = Properties.Resources.category;
+            pictureBox11.Location = new Point(981, 13);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(32, 32);
+            pictureBox11.TabIndex = 30;
+            pictureBox11.TabStop = false;
+            // 
+            // panel12
+            // 
+            panel12.BackColor = Color.FromArgb(37, 39, 48);
+            panel12.Controls.Add(panel13);
+            panel12.Location = new Point(5, 54);
+            panel12.Name = "panel12";
+            panel12.Padding = new Padding(50);
+            panel12.Size = new Size(1165, 662);
+            panel12.TabIndex = 5;
+            // 
+            // panel13
+            // 
+            panel13.BackColor = Color.FromArgb(37, 39, 48);
+            panel13.Controls.Add(pictureBox12);
+            panel13.Controls.Add(pictureBox11);
+            panel13.Controls.Add(label24);
+            panel13.Controls.Add(label8);
+            panel13.Controls.Add(panel14);
+            panel13.Location = new Point(1, 0);
+            panel13.Name = "panel13";
+            panel13.Padding = new Padding(50);
+            panel13.Size = new Size(1165, 662);
+            panel13.TabIndex = 6;
+            // 
+            // label24
+            // 
+            label24.AutoSize = true;
+            label24.Font = new Font("Inter SemiBold", 7F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label24.ForeColor = Color.FromArgb(139, 140, 142);
+            label24.Location = new Point(53, 25);
+            label24.Name = "label24";
+            label24.Size = new Size(91, 17);
+            label24.TabIndex = 10;
+            label24.Text = "Ada 50 Aturan";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Inter", 10F, FontStyle.Bold);
+            label8.ForeColor = Color.White;
+            label8.Location = new Point(52, 1);
+            label8.Name = "label8";
+            label8.Size = new Size(114, 24);
+            label8.TabIndex = 7;
+            label8.Text = "List Laporan";
+            // 
+            // panel14
+            // 
+            panel14.BackColor = Color.FromArgb(23, 24, 30);
+            panel14.Controls.Add(panel17);
+            panel14.Controls.Add(label25);
+            panel14.Controls.Add(label22);
+            panel14.Controls.Add(panel15);
+            panel14.Controls.Add(label17);
+            panel14.Controls.Add(label16);
+            panel14.Controls.Add(panel16);
+            panel14.Controls.Add(label9);
+            panel14.Controls.Add(label23);
+            panel14.Location = new Point(6, 56);
+            panel14.Name = "panel14";
+            panel14.Padding = new Padding(50);
+            panel14.Size = new Size(1149, 589);
+            panel14.TabIndex = 6;
+            // 
+            // label25
+            // 
+            label25.AutoSize = true;
+            label25.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label25.ForeColor = Color.White;
+            label25.Location = new Point(84, 602);
+            label25.Name = "label25";
+            label25.Size = new Size(248, 24);
+            label25.TabIndex = 28;
+            label25.Text = "Melihat Data 1 Dari 8 halaman";
+            // 
+            // label22
+            // 
+            label22.AutoSize = true;
+            label22.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label22.ForeColor = Color.White;
+            label22.Location = new Point(123, 652);
+            label22.Name = "label22";
+            label22.Size = new Size(248, 24);
+            label22.TabIndex = 27;
+            label22.Text = "Melihat Data 1 Dari 8 halaman";
+            // 
+            // panel15
+            // 
+            panel15.BackColor = Color.FromArgb(139, 140, 142);
+            panel15.Location = new Point(0, 533);
+            panel15.Name = "panel15";
+            panel15.Size = new Size(1149, 3);
+            panel15.TabIndex = 26;
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label17.ForeColor = Color.FromArgb(139, 140, 142);
+            label17.Location = new Point(134, 65);
+            label17.Name = "label17";
+            label17.Size = new Size(198, 24);
+            label17.TabIndex = 20;
+            label17.Text = "Aditiya Rifki Arya Putra";
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label16.ForeColor = Color.FromArgb(139, 140, 142);
+            label16.Location = new Point(18, 65);
+            label16.Name = "label16";
+            label16.Size = new Size(39, 24);
+            label16.TabIndex = 19;
+            label16.Text = "001";
+            // 
+            // panel16
+            // 
+            panel16.BackColor = Color.FromArgb(139, 140, 142);
+            panel16.Location = new Point(0, 40);
+            panel16.Name = "panel16";
+            panel16.Size = new Size(1149, 3);
+            panel16.TabIndex = 18;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.ForeColor = Color.FromArgb(139, 140, 142);
+            label9.Location = new Point(150, 10);
+            label9.Name = "label9";
+            label9.Size = new Size(130, 24);
+            label9.TabIndex = 13;
+            label9.Text = "Nama Laporan";
+            // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label23.ForeColor = Color.FromArgb(139, 140, 142);
+            label23.Location = new Point(18, 10);
+            label23.Name = "label23";
+            label23.Size = new Size(82, 24);
+            label23.TabIndex = 12;
+            label23.Text = "ID Orang";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Font = new Font("Inter", 19F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label14.ForeColor = Color.White;
+            label14.Location = new Point(0, 3);
+            label14.Name = "label14";
+            label14.Size = new Size(233, 45);
+            label14.TabIndex = 4;
+            label14.Text = "Kelola Aturan";
+            // 
+            // panel17
+            // 
+            panel17.BackColor = Color.Transparent;
+            panel17.Controls.Add(button1);
+            panel17.Location = new Point(996, 67);
+            panel17.Name = "panel17";
+            panel17.Size = new Size(129, 45);
+            panel17.TabIndex = 29;
+            panel17.Paint += panel17_Paint;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.Red;
+            button1.Cursor = Cursors.Hand;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(14, 3);
+            button1.Name = "button1";
+            button1.Size = new Size(104, 39);
+            button1.TabIndex = 1;
+            button1.Text = "Keluar";
+            button1.UseVisualStyleBackColor = false;
             // 
             // Kelola_Aturan_Admin
             // 
@@ -733,6 +972,16 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             panel8.ResumeLayout(false);
             panel8.PerformLayout();
+            panel10.ResumeLayout(false);
+            panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
+            panel12.ResumeLayout(false);
+            panel13.ResumeLayout(false);
+            panel13.PerformLayout();
+            panel14.ResumeLayout(false);
+            panel14.PerformLayout();
+            panel17.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -787,5 +1036,24 @@
         private Panel panel9;
         private Label label6;
         private Panel panel28;
+        private Panel panel10;
+        private PictureBox pictureBox12;
+        private PictureBox pictureBox11;
+        private Panel panel12;
+        private Panel panel13;
+        private Label label24;
+        private Label label8;
+        private Panel panel14;
+        private Label label25;
+        private Label label22;
+        private Panel panel15;
+        private Label label17;
+        private Label label16;
+        private Panel panel16;
+        private Label label9;
+        private Label label23;
+        private Label label14;
+        private Panel panel17;
+        private Button button1;
     }
 }

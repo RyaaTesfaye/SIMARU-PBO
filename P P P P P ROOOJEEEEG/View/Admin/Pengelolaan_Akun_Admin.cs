@@ -80,5 +80,10 @@ namespace RUSUNAWAAA.View.Admin
             siaranad.ShowDialog();
             this.Close();
         }
+
+        private void panel10_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -113,6 +113,16 @@ namespace RUSUNAWAAA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Hapus {
+            get {
+                object obj = ResourceManager.GetObject("Hapus", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap home_trend_up {
             get {
                 object obj = ResourceManager.GetObject("home-trend-up", resourceCulture);
@@ -223,6 +233,26 @@ namespace RUSUNAWAAA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Lk_hidup {
+            get {
+                object obj = ResourceManager.GetObject("Lk hidup", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LK_Mati {
+            get {
+                object obj = ResourceManager.GetObject("LK Mati", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LOGIN2 {
             get {
                 object obj = ResourceManager.GetObject("LOGIN2", resourceCulture);
@@ -296,6 +326,26 @@ namespace RUSUNAWAAA.Properties {
         internal static System.Drawing.Bitmap notification {
             get {
                 object obj = ResourceManager.GetObject("notification", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PR_HIDUP {
+            get {
+                object obj = ResourceManager.GetObject("PR HIDUP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PR_Mati {
+            get {
+                object obj = ResourceManager.GetObject("PR Mati", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
