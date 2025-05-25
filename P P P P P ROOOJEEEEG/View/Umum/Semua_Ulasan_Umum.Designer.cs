@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Semua_Ulasan_Umum));
             panel9 = new Panel();
+            pictureBox45 = new PictureBox();
+            label4 = new Label();
             label6 = new Label();
             panel10 = new Panel();
             pictureBox11 = new PictureBox();
@@ -47,10 +49,10 @@
             pictureBox9 = new PictureBox();
             label1 = new Label();
             label20 = new Label();
-            label4 = new Label();
             pictureBox28 = new PictureBox();
-            pictureBox45 = new PictureBox();
+            pictureBox12 = new PictureBox();
             panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox45).BeginInit();
             panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
@@ -64,12 +66,13 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox28).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox45).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             SuspendLayout();
             // 
             // panel9
             // 
             panel9.BackColor = Color.FromArgb(37, 39, 48);
+            panel9.Controls.Add(pictureBox12);
             panel9.Controls.Add(pictureBox45);
             panel9.Controls.Add(label4);
             panel9.Controls.Add(label6);
@@ -80,6 +83,30 @@
             panel9.Padding = new Padding(50);
             panel9.Size = new Size(1165, 662);
             panel9.TabIndex = 6;
+            // 
+            // pictureBox45
+            // 
+            pictureBox45.BackColor = Color.Transparent;
+            pictureBox45.Cursor = Cursors.Hand;
+            pictureBox45.Image = (Image)resources.GetObject("pictureBox45.Image");
+            pictureBox45.Location = new Point(649, 630);
+            pictureBox45.Name = "pictureBox45";
+            pictureBox45.Size = new Size(52, 22);
+            pictureBox45.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox45.TabIndex = 28;
+            pictureBox45.TabStop = false;
+            // 
+            // label4
+            // 
+            label4.BackColor = Color.Transparent;
+            label4.Font = new Font("Inter", 8.3F, FontStyle.Bold);
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(522, 630);
+            label4.Name = "label4";
+            label4.Size = new Size(121, 22);
+            label4.TabIndex = 24;
+            label4.Text = "Halaman 1 dari 1";
+            label4.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label6
             // 
@@ -272,23 +299,11 @@
             label20.Text = resources.GetString("label20.Text");
             label20.Click += label20_Click;
             // 
-            // label4
-            // 
-            label4.BackColor = Color.Transparent;
-            label4.Font = new Font("Inter", 8.3F, FontStyle.Bold);
-            label4.ForeColor = Color.White;
-            label4.Location = new Point(522, 630);
-            label4.Name = "label4";
-            label4.Size = new Size(121, 22);
-            label4.TabIndex = 24;
-            label4.Text = "Halaman 1 dari 1";
-            label4.TextAlign = ContentAlignment.MiddleCenter;
-            // 
             // pictureBox28
             // 
             pictureBox28.BackColor = Color.Transparent;
             pictureBox28.Cursor = Cursors.Hand;
-            pictureBox28.Image = Properties.Resources.IKON_TOL;
+            pictureBox28.Image = (Image)resources.GetObject("pictureBox28.Image");
             pictureBox28.Location = new Point(466, 630);
             pictureBox28.Name = "pictureBox28";
             pictureBox28.Size = new Size(52, 22);
@@ -296,17 +311,17 @@
             pictureBox28.TabIndex = 21;
             pictureBox28.TabStop = false;
             // 
-            // pictureBox45
+            // pictureBox12
             // 
-            pictureBox45.BackColor = Color.Transparent;
-            pictureBox45.Cursor = Cursors.Hand;
-            pictureBox45.Image = Properties.Resources.IKON_TOL;
-            pictureBox45.Location = new Point(649, 630);
-            pictureBox45.Name = "pictureBox45";
-            pictureBox45.Size = new Size(52, 22);
-            pictureBox45.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox45.TabIndex = 28;
-            pictureBox45.TabStop = false;
+            pictureBox12.BackColor = Color.Transparent;
+            pictureBox12.Cursor = Cursors.Hand;
+            pictureBox12.Image = (Image)resources.GetObject("pictureBox12.Image");
+            pictureBox12.Location = new Point(14, 12);
+            pictureBox12.Name = "pictureBox12";
+            pictureBox12.Size = new Size(52, 22);
+            pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox12.TabIndex = 29;
+            pictureBox12.TabStop = false;
             // 
             // Semua_Ulasan_Umum
             // 
@@ -317,6 +332,7 @@
             Size = new Size(1165, 662);
             panel9.ResumeLayout(false);
             panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox45).EndInit();
             panel10.ResumeLayout(false);
             panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
@@ -331,7 +347,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox28).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox45).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             ResumeLayout(false);
         }
 
@@ -358,5 +374,6 @@
         private PictureBox pictureBox28;
         private Label label4;
         private PictureBox pictureBox45;
+        private PictureBox pictureBox12;
     }
 }
