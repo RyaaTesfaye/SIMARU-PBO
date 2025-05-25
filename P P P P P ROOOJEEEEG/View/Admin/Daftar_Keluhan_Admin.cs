@@ -81,5 +81,10 @@ namespace RUSUNAWAAA.View.Admin
             siaranad.ShowDialog();
             this.Close();
         }
+
+        private void checkBox8_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

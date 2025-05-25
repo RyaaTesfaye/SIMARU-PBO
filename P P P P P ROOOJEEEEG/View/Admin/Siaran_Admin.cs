@@ -80,5 +80,10 @@ namespace RUSUNAWAAA.View.Admin
             editvirtualtourad.ShowDialog();
             this.Close();
         }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
