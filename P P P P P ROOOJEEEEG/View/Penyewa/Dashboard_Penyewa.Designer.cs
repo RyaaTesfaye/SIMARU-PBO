@@ -54,8 +54,6 @@
             label2 = new Label();
             pictureBox3 = new PictureBox();
             label1 = new Label();
-            panel7 = new Panel();
-            button5 = new Button();
             panel8 = new Panel();
             panel10 = new Panel();
             panel6 = new Panel();
@@ -107,6 +105,10 @@
             panel17 = new Panel();
             label14 = new Label();
             label6 = new Label();
+            panel7 = new Panel();
+            pictureBox8 = new PictureBox();
+            pictureBox7 = new PictureBox();
+            pictureBox14 = new PictureBox();
             panel1.SuspendLayout();
             panel29.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
@@ -123,7 +125,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            panel7.SuspendLayout();
             panel8.SuspendLayout();
             panel10.SuspendLayout();
             panel6.SuspendLayout();
@@ -146,6 +147,10 @@
             panel18.SuspendLayout();
             panel11.SuspendLayout();
             panel17.SuspendLayout();
+            panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -183,9 +188,9 @@
             label26.ForeColor = Color.White;
             label26.Location = new Point(45, 12);
             label26.Name = "label26";
-            label26.Size = new Size(163, 24);
+            label26.Size = new Size(177, 24);
             label26.TabIndex = 4;
-            label26.Text = "Kontak dan Lokasi";
+            label26.Text = "Perpanjangan Sewa";
             // 
             // pictureBox16
             // 
@@ -215,9 +220,9 @@
             label13.ForeColor = Color.White;
             label13.Location = new Point(45, 12);
             label13.Name = "label13";
-            label13.Size = new Size(99, 24);
+            label13.Size = new Size(186, 24);
             label13.TabIndex = 4;
-            label13.Text = "Tata Tertib";
+            label13.Text = "Riwayat Pembayaran";
             // 
             // pictureBox10
             // 
@@ -247,9 +252,9 @@
             label12.ForeColor = Color.White;
             label12.Location = new Point(45, 12);
             label12.Name = "label12";
-            label12.Size = new Size(201, 24);
+            label12.Size = new Size(149, 24);
             label12.TabIndex = 4;
-            label12.Text = "Virtual Tour Rusunawa";
+            label12.Text = "Riwayat Laporan";
             // 
             // pictureBox1
             // 
@@ -289,9 +294,9 @@
             label5.ForeColor = Color.White;
             label5.Location = new Point(45, 12);
             label5.Name = "label5";
-            label5.Size = new Size(146, 24);
+            label5.Size = new Size(134, 24);
             label5.TabIndex = 4;
-            label5.Text = "Skor dan Ulasan";
+            label5.Text = "Lapor Masalah";
             // 
             // pictureBox5
             // 
@@ -321,9 +326,9 @@
             label4.ForeColor = Color.White;
             label4.Location = new Point(45, 12);
             label4.Name = "label4";
-            label4.Size = new Size(149, 24);
+            label4.Size = new Size(191, 24);
             label4.TabIndex = 4;
-            label4.Text = "Pengajuan Sewa";
+            label4.Text = "Tata Tertib Rusunawa";
             // 
             // pictureBox4
             // 
@@ -353,9 +358,9 @@
             label3.ForeColor = Color.White;
             label3.Location = new Point(45, 12);
             label3.Name = "label3";
-            label3.Size = new Size(176, 24);
+            label3.Size = new Size(105, 24);
             label3.TabIndex = 4;
-            label3.Text = "Daftar Unit Tersedia";
+            label3.Text = "Beri Ulasan";
             // 
             // pictureBox2
             // 
@@ -418,30 +423,6 @@
             label1.TabIndex = 0;
             label1.Text = "RUSAKITA";
             label1.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // panel7
-            // 
-            panel7.Controls.Add(button5);
-            panel7.Dock = DockStyle.Top;
-            panel7.Location = new Point(240, 0);
-            panel7.Name = "panel7";
-            panel7.Size = new Size(1182, 70);
-            panel7.TabIndex = 3;
-            // 
-            // button5
-            // 
-            button5.BackColor = Color.White;
-            button5.Cursor = Cursors.Hand;
-            button5.FlatAppearance.BorderSize = 0;
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button5.ForeColor = Color.Black;
-            button5.Location = new Point(1066, 14);
-            button5.Name = "button5";
-            button5.Size = new Size(91, 29);
-            button5.TabIndex = 2;
-            button5.Text = "Masuk";
-            button5.UseVisualStyleBackColor = false;
             // 
             // panel8
             // 
@@ -1019,6 +1000,52 @@
             label6.TabIndex = 4;
             label6.Text = "Beranda Penyewa";
             // 
+            // panel7
+            // 
+            panel7.Controls.Add(pictureBox8);
+            panel7.Controls.Add(pictureBox7);
+            panel7.Controls.Add(pictureBox14);
+            panel7.Dock = DockStyle.Top;
+            panel7.Location = new Point(240, 0);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(1182, 70);
+            panel7.TabIndex = 3;
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.BackColor = Color.Transparent;
+            pictureBox8.Cursor = Cursors.Hand;
+            pictureBox8.Image = Properties.Resources.setting_2;
+            pictureBox8.Location = new Point(1085, 25);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(24, 24);
+            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox8.TabIndex = 7;
+            pictureBox8.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.BackColor = Color.Transparent;
+            pictureBox7.Cursor = Cursors.Hand;
+            pictureBox7.Image = Properties.Resources.notification;
+            pictureBox7.Location = new Point(1035, 25);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(24, 24);
+            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox7.TabIndex = 6;
+            pictureBox7.TabStop = false;
+            // 
+            // pictureBox14
+            // 
+            pictureBox14.Cursor = Cursors.Hand;
+            pictureBox14.Image = (Image)resources.GetObject("pictureBox14.Image");
+            pictureBox14.Location = new Point(1122, 14);
+            pictureBox14.Name = "pictureBox14";
+            pictureBox14.Size = new Size(48, 48);
+            pictureBox14.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox14.TabIndex = 5;
+            pictureBox14.TabStop = false;
+            // 
             // Dashboard_Penyewa
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -1054,7 +1081,6 @@
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            panel7.ResumeLayout(false);
             panel8.ResumeLayout(false);
             panel8.PerformLayout();
             panel10.ResumeLayout(false);
@@ -1091,6 +1117,10 @@
             panel11.PerformLayout();
             panel17.ResumeLayout(false);
             panel17.PerformLayout();
+            panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
             ResumeLayout(false);
         }
 
@@ -1121,8 +1151,6 @@
         private Label label2;
         private PictureBox pictureBox3;
         private Label label1;
-        private Panel panel7;
-        private Button button5;
         private Panel panel8;
         private Panel panel10;
         private Panel panel6;
@@ -1174,5 +1202,9 @@
         private Panel panel17;
         private Label label14;
         private Label label6;
+        private Panel panel7;
+        private PictureBox pictureBox8;
+        private PictureBox pictureBox7;
+        private PictureBox pictureBox14;
     }
 }

@@ -77,10 +77,13 @@
             pictureBox6 = new PictureBox();
             panel8 = new Panel();
             panel9 = new Panel();
+            pictureBox11 = new PictureBox();
             pictureBox12 = new PictureBox();
             label24 = new Label();
             label7 = new Label();
             panel10 = new Panel();
+            button1 = new Button();
+            label23 = new Label();
             checkBox13 = new CheckBox();
             checkBox14 = new CheckBox();
             checkBox15 = new CheckBox();
@@ -107,9 +110,6 @@
             label8 = new Label();
             checkBox1 = new CheckBox();
             label6 = new Label();
-            label23 = new Label();
-            button1 = new Button();
-            pictureBox11 = new PictureBox();
             pictureBox13 = new PictureBox();
             panel1.SuspendLayout();
             panel33.SuspendLayout();
@@ -144,9 +144,9 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel8.SuspendLayout();
             panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
             SuspendLayout();
             // 
@@ -707,6 +707,20 @@
             panel9.Padding = new Padding(50);
             panel9.Size = new Size(1165, 662);
             panel9.TabIndex = 5;
+            panel9.Paint += panel9_Paint;
+            // 
+            // pictureBox11
+            // 
+            pictureBox11.BackColor = Color.Transparent;
+            pictureBox11.Cursor = Cursors.Hand;
+            pictureBox11.ErrorImage = null;
+            pictureBox11.Image = Properties.Resources.PR_HIDUP;
+            pictureBox11.Location = new Point(895, -9);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(65, 65);
+            pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox11.TabIndex = 27;
+            pictureBox11.TabStop = false;
             // 
             // pictureBox12
             // 
@@ -719,6 +733,7 @@
             pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox12.TabIndex = 26;
             pictureBox12.TabStop = false;
+            pictureBox12.Click += ToHapusAkun_AD;
             // 
             // label24
             // 
@@ -778,6 +793,32 @@
             panel10.Size = new Size(1149, 589);
             panel10.TabIndex = 6;
             panel10.Paint += panel10_Paint;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(10, 100, 236);
+            button1.Cursor = Cursors.Hand;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(1024, 59);
+            button1.Name = "button1";
+            button1.Size = new Size(90, 30);
+            button1.TabIndex = 41;
+            button1.Text = "Detail";
+            button1.UseVisualStyleBackColor = false;
+            // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label23.ForeColor = Color.FromArgb(139, 140, 142);
+            label23.Location = new Point(884, 68);
+            label23.Name = "label23";
+            label23.Size = new Size(70, 24);
+            label23.TabIndex = 40;
+            label23.Text = "99 Hari";
             // 
             // checkBox13
             // 
@@ -1059,53 +1100,15 @@
             label6.TabIndex = 4;
             label6.Text = "Pengelolaan Akun";
             // 
-            // label23
-            // 
-            label23.AutoSize = true;
-            label23.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label23.ForeColor = Color.FromArgb(139, 140, 142);
-            label23.Location = new Point(884, 68);
-            label23.Name = "label23";
-            label23.Size = new Size(70, 24);
-            label23.TabIndex = 40;
-            label23.Text = "99 Hari";
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.FromArgb(10, 100, 236);
-            button1.Cursor = Cursors.Hand;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(1024, 59);
-            button1.Name = "button1";
-            button1.Size = new Size(90, 30);
-            button1.TabIndex = 41;
-            button1.Text = "Detail";
-            button1.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox11
-            // 
-            pictureBox11.BackColor = Color.Transparent;
-            pictureBox11.Cursor = Cursors.Hand;
-            pictureBox11.ErrorImage = null;
-            pictureBox11.Image = Properties.Resources.PR_HIDUP;
-            pictureBox11.Location = new Point(855, -9);
-            pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(65, 65);
-            pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox11.TabIndex = 27;
-            pictureBox11.TabStop = false;
-            // 
             // pictureBox13
             // 
+            pictureBox13.BackColor = Color.Transparent;
             pictureBox13.Cursor = Cursors.Hand;
             pictureBox13.ErrorImage = null;
-            pictureBox13.Image = Properties.Resources.Hapus;
-            pictureBox13.Location = new Point(926, 1);
+            pictureBox13.Image = Properties.Resources.LK_Mati;
+            pictureBox13.Location = new Point(965, 0);
             pictureBox13.Name = "pictureBox13";
-            pictureBox13.Size = new Size(100, 55);
+            pictureBox13.Size = new Size(55, 55);
             pictureBox13.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox13.TabIndex = 28;
             pictureBox13.TabStop = false;
@@ -1170,10 +1173,10 @@
             panel8.PerformLayout();
             panel9.ResumeLayout(false);
             panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             panel10.ResumeLayout(false);
             panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
             ResumeLayout(false);
         }
@@ -1260,7 +1263,7 @@
         private CheckBox checkBox22;
         private Button button1;
         private Label label23;
-        private PictureBox pictureBox13;
         private PictureBox pictureBox11;
+        private PictureBox pictureBox13;
     }
 }

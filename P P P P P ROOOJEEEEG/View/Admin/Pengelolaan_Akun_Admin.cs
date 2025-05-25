@@ -85,5 +85,19 @@ namespace RUSUNAWAAA.View.Admin
         {
 
         }
+
+        private void panel9_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void ToHapusAkun_AD(object sender, EventArgs e)
+        {
+            Hapus_Akun_Admin modal = new Hapus_Akun_Admin();
+            modal.Size = this.ClientSize;
+            modal.Location = new Point(0, 0);
+            this.Controls.Add(modal);
+            modal.BringToFront();
+        }
     }
 }
