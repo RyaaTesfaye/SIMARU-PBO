@@ -445,7 +445,7 @@
             label17.TabIndex = 23;
             label17.Text = "Lihat Semua Ulasan >";
             label17.TextAlign = ContentAlignment.MiddleCenter;
-            label17.Click += label17_Click;
+            label17.Click += ToSemuaUlasan_UM;
             // 
             // label9
             // 

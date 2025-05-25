@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RUSUNAWAAA.View.Login;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,11 +16,6 @@ namespace RUSUNAWAAA.View.Umum
         public Ulasan_Umum()
         {
             InitializeComponent();
-        }
-
-        private void label17_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void panel12_Paint(object sender, PaintEventArgs e)
@@ -73,6 +69,18 @@ namespace RUSUNAWAAA.View.Umum
             Kontaklokasi_Umum kontaklokasium = new Kontaklokasi_Umum();
             kontaklokasium.ShowDialog();
             this.Close();
+        }
+        private void LoadFormSemuaUlasan()
+        {
+            panel9.Controls.Clear(); // Hapus konten lama kalau ada
+            Semua_Ulasan_Umum formUlasan = new Semua_Ulasan_Umum();
+            formUlasan.Dock = DockStyle.Fill;
+            panel9.Controls.Add(formUlasan);
+        }
+
+        private void ToSemuaUlasan_UM(object sender, EventArgs e)
+        {
+            LoadFormSemuaUlasan();
         }
     }
 }
