@@ -77,7 +77,24 @@
             pictureBox6 = new PictureBox();
             panel8 = new Panel();
             panel9 = new Panel();
+            panel13 = new Panel();
+            panel10 = new Panel();
+            label9 = new Label();
+            label23 = new Label();
+            panel14 = new Panel();
+            label17 = new Label();
+            label16 = new Label();
+            panel16 = new Panel();
             label6 = new Label();
+            pictureBox22 = new PictureBox();
+            label24 = new Label();
+            label7 = new Label();
+            pictureBox13 = new PictureBox();
+            pictureBox11 = new PictureBox();
+            label8 = new Label();
+            label10 = new Label();
+            label11 = new Label();
+            button1 = new Button();
             panel1.SuspendLayout();
             panel33.SuspendLayout();
             panel34.SuspendLayout();
@@ -110,6 +127,13 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel8.SuspendLayout();
+            panel9.SuspendLayout();
+            panel13.SuspendLayout();
+            panel10.SuspendLayout();
+            panel14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox22).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -658,11 +682,107 @@
             // panel9
             // 
             panel9.BackColor = Color.FromArgb(37, 39, 48);
+            panel9.Controls.Add(panel13);
             panel9.Location = new Point(5, 54);
             panel9.Name = "panel9";
             panel9.Padding = new Padding(50);
             panel9.Size = new Size(1165, 662);
             panel9.TabIndex = 5;
+            // 
+            // panel13
+            // 
+            panel13.BackColor = Color.FromArgb(37, 39, 48);
+            panel13.Controls.Add(pictureBox13);
+            panel13.Controls.Add(pictureBox11);
+            panel13.Controls.Add(pictureBox22);
+            panel13.Controls.Add(panel10);
+            panel13.Controls.Add(label24);
+            panel13.Controls.Add(label7);
+            panel13.Controls.Add(panel14);
+            panel13.Location = new Point(1, 1);
+            panel13.Name = "panel13";
+            panel13.Padding = new Padding(50);
+            panel13.Size = new Size(1165, 662);
+            panel13.TabIndex = 7;
+            // 
+            // panel10
+            // 
+            panel10.BackColor = Color.FromArgb(23, 24, 30);
+            panel10.Controls.Add(label11);
+            panel10.Controls.Add(label8);
+            panel10.Controls.Add(label9);
+            panel10.Controls.Add(label23);
+            panel10.Location = new Point(6, 58);
+            panel10.Name = "panel10";
+            panel10.Size = new Size(1149, 37);
+            panel10.TabIndex = 32;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.ForeColor = Color.FromArgb(139, 140, 142);
+            label9.Location = new Point(138, 8);
+            label9.Name = "label9";
+            label9.Size = new Size(60, 24);
+            label9.TabIndex = 13;
+            label9.Text = "Lantai";
+            // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label23.ForeColor = Color.FromArgb(139, 140, 142);
+            label23.Location = new Point(53, 8);
+            label23.Name = "label23";
+            label23.Size = new Size(27, 24);
+            label23.TabIndex = 12;
+            label23.Text = "ID";
+            // 
+            // panel14
+            // 
+            panel14.AutoScroll = true;
+            panel14.BackColor = Color.FromArgb(23, 24, 30);
+            panel14.Controls.Add(button1);
+            panel14.Controls.Add(label10);
+            panel14.Controls.Add(label17);
+            panel14.Controls.Add(label16);
+            panel14.Controls.Add(panel16);
+            panel14.Location = new Point(6, 95);
+            panel14.Name = "panel14";
+            panel14.Padding = new Padding(50);
+            panel14.Size = new Size(1149, 550);
+            panel14.TabIndex = 6;
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label17.ForeColor = Color.FromArgb(139, 140, 142);
+            label17.Location = new Point(138, 21);
+            label17.Name = "label17";
+            label17.Size = new Size(17, 24);
+            label17.TabIndex = 20;
+            label17.Text = "1";
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label16.ForeColor = Color.FromArgb(139, 140, 142);
+            label16.Location = new Point(53, 21);
+            label16.Name = "label16";
+            label16.Size = new Size(39, 24);
+            label16.TabIndex = 19;
+            label16.Text = "001";
+            // 
+            // panel16
+            // 
+            panel16.BackColor = Color.FromArgb(139, 140, 142);
+            panel16.Location = new Point(0, 0);
+            panel16.Name = "panel16";
+            panel16.Size = new Size(1149, 3);
+            panel16.TabIndex = 18;
             // 
             // label6
             // 
@@ -671,9 +791,115 @@
             label6.ForeColor = Color.White;
             label6.Location = new Point(0, 3);
             label6.Name = "label6";
-            label6.Size = new Size(306, 45);
+            label6.Size = new Size(238, 45);
             label6.TabIndex = 4;
-            label6.Text = "Pengelolaan Akun";
+            label6.Text = "Kelola Hunian";
+            // 
+            // pictureBox22
+            // 
+            pictureBox22.Image = Properties.Resources.Ijo_kecil;
+            pictureBox22.Location = new Point(16, 27);
+            pictureBox22.Name = "pictureBox22";
+            pictureBox22.Size = new Size(10, 10);
+            pictureBox22.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox22.TabIndex = 46;
+            pictureBox22.TabStop = false;
+            // 
+            // label24
+            // 
+            label24.AutoSize = true;
+            label24.Font = new Font("Inter SemiBold", 7F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label24.ForeColor = Color.FromArgb(139, 140, 142);
+            label24.Location = new Point(29, 24);
+            label24.Name = "label24";
+            label24.Size = new Size(127, 17);
+            label24.TabIndex = 45;
+            label24.Text = "Ada 100 kamar terisi";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Inter", 10F, FontStyle.Bold);
+            label7.ForeColor = Color.White;
+            label7.Location = new Point(6, -1);
+            label7.Name = "label7";
+            label7.Size = new Size(110, 24);
+            label7.TabIndex = 44;
+            label7.Text = "Total Kamar";
+            // 
+            // pictureBox13
+            // 
+            pictureBox13.BackColor = Color.Transparent;
+            pictureBox13.Cursor = Cursors.Hand;
+            pictureBox13.ErrorImage = null;
+            pictureBox13.Image = Properties.Resources.LK_Mati;
+            pictureBox13.Location = new Point(989, 6);
+            pictureBox13.Name = "pictureBox13";
+            pictureBox13.Size = new Size(50, 50);
+            pictureBox13.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox13.TabIndex = 48;
+            pictureBox13.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            pictureBox11.BackColor = Color.Transparent;
+            pictureBox11.Cursor = Cursors.Hand;
+            pictureBox11.ErrorImage = null;
+            pictureBox11.Image = Properties.Resources.PR_HIDUP;
+            pictureBox11.Location = new Point(933, 6);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(50, 50);
+            pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox11.TabIndex = 47;
+            pictureBox11.TabStop = false;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.ForeColor = Color.FromArgb(139, 140, 142);
+            label8.Location = new Point(248, 8);
+            label8.Name = "label8";
+            label8.Size = new Size(130, 24);
+            label8.TabIndex = 14;
+            label8.Text = "Total Penghuni";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label10.ForeColor = Color.FromArgb(139, 140, 142);
+            label10.Location = new Point(248, 21);
+            label10.Name = "label10";
+            label10.Size = new Size(38, 24);
+            label10.TabIndex = 21;
+            label10.Text = "2/3";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label11.ForeColor = Color.FromArgb(139, 140, 142);
+            label11.Location = new Point(892, 7);
+            label11.Name = "label11";
+            label11.Size = new Size(123, 24);
+            label11.TabIndex = 15;
+            label11.Text = "Status Hunian";
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(10, 100, 236);
+            button1.Cursor = Cursors.Hand;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(1048, 20);
+            button1.Name = "button1";
+            button1.Size = new Size(90, 28);
+            button1.TabIndex = 42;
+            button1.Text = "Detail";
+            button1.UseVisualStyleBackColor = false;
             // 
             // Kelola_Hunian_Admin
             // 
@@ -733,6 +959,16 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             panel8.ResumeLayout(false);
             panel8.PerformLayout();
+            panel9.ResumeLayout(false);
+            panel13.ResumeLayout(false);
+            panel13.PerformLayout();
+            panel10.ResumeLayout(false);
+            panel10.PerformLayout();
+            panel14.ResumeLayout(false);
+            panel14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox22).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             ResumeLayout(false);
         }
 
@@ -787,5 +1023,22 @@
         private Panel panel9;
         private Label label6;
         private Panel panel28;
+        private Panel panel13;
+        private Panel panel14;
+        private Label label17;
+        private Label label16;
+        private Panel panel16;
+        private Label label9;
+        private Label label23;
+        private Panel panel10;
+        private PictureBox pictureBox22;
+        private Label label24;
+        private Label label7;
+        private PictureBox pictureBox13;
+        private PictureBox pictureBox11;
+        private Label label11;
+        private Label label8;
+        private Label label10;
+        private Button button1;
     }
 }

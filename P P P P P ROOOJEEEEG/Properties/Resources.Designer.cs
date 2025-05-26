@@ -73,6 +73,16 @@ namespace RUSUNAWAAA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BelumDitangani {
+            get {
+                object obj = ResourceManager.GetObject("BelumDitangani", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap brodcast__1_ {
             get {
                 object obj = ResourceManager.GetObject("brodcast (1)", resourceCulture);
@@ -136,6 +146,16 @@ namespace RUSUNAWAAA.Properties {
         internal static System.Drawing.Bitmap Icon {
             get {
                 object obj = ResourceManager.GetObject("Icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ijo_kecil {
+            get {
+                object obj = ResourceManager.GetObject("Ijo_kecil", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -233,16 +253,6 @@ namespace RUSUNAWAAA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Lk_hidup {
-            get {
-                object obj = ResourceManager.GetObject("Lk hidup", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap LK_Mati {
             get {
                 object obj = ResourceManager.GetObject("LK Mati", resourceCulture);
@@ -326,6 +336,66 @@ namespace RUSUNAWAAA.Properties {
         internal static System.Drawing.Bitmap notification {
             get {
                 object obj = ResourceManager.GetObject("notification", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Overlay {
+            get {
+                object obj = ResourceManager.GetObject("Overlay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Overlay1 {
+            get {
+                object obj = ResourceManager.GetObject("Overlay1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Pengajuan_sewaOFF {
+            get {
+                object obj = ResourceManager.GetObject("Pengajuan_sewaOFF", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Pengajuan_sewaON {
+            get {
+                object obj = ResourceManager.GetObject("Pengajuan_sewaON", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PerpanjanganSewaOFF {
+            get {
+                object obj = ResourceManager.GetObject("PerpanjanganSewaOFF", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PerpanjanganSewaON {
+            get {
+                object obj = ResourceManager.GetObject("PerpanjanganSewaON", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -446,6 +516,16 @@ namespace RUSUNAWAAA.Properties {
         internal static System.Drawing.Bitmap star_ratngsolo {
             get {
                 object obj = ResourceManager.GetObject("star_ratngsolo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tambah_Glow {
+            get {
+                object obj = ResourceManager.GetObject("Tambah_Glow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

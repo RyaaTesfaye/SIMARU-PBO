@@ -118,17 +118,20 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="user-cirlce-add1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user-cirlce-add1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="brodcast (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\brodcast (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="PR Mati" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PR Mati.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="NARAHUBUNG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NARAHUBUNG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="listharga" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\listharga.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home-trend-up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home-trend-up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="star_kosong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\star_kosong.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,6 +151,9 @@
   <data name="notification" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\notification.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="BelumDitangani" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BelumDitangani.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="more" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\more.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -163,11 +169,14 @@
   <data name="profile-2user" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\profile-2user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Kiri" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kiri.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Overlay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Overlay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Coming soon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Coming soon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="laporan" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\laporan1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Rusun_Putri" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rusun_Putri.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,8 +196,8 @@
   <data name="setting-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\setting-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IKON TOL" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\IKON TOL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="brodcast (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\brodcast (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="close.alert.icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\close.alert.icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,17 +208,20 @@
   <data name="kontak" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kontak1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="LK Mati" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LK Mati.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Kanan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Kanan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="home-trend-up" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\home-trend-up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IKON TOL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IKON TOL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="WhatsApp Image 2025-05-13 at 23.25.21_8b528e3b 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\WhatsApp Image 2025-05-13 at 23.25.21_8b528e3b 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Ijo_kecil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ijo_kecil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="star_kosong" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\star_kosong.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="user-cirlce-add1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user-cirlce-add1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tata_tertib" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tata_tertib1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -220,17 +232,29 @@
   <data name="money-recive" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\money-recive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="WhatsApp Image 2025-05-13 at 23.25.21_8b528e3b 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WhatsApp Image 2025-05-13 at 23.25.21_8b528e3b 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="receipt-add" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\receipt-add1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Overlay1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Overlay1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Loginbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Loginbg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="PR HIDUP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PR HIDUP1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="star_ratngsolo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\star_ratngsolo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Kiri" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Kiri.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="laporan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\laporan1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tambah_Glow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tambah_Glow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Kaming_sun" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Kaming_sun.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -241,16 +265,16 @@
   <data name="LOGIN2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LOGIN2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Lk hidup" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Lk hidup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Pengajuan_sewaOFF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pengajuan_sewaOFF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LK Mati" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LK Mati.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Pengajuan_sewaON" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pengajuan_sewaON.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PR HIDUP" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PR HIDUP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="PerpanjanganSewaOFF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PerpanjanganSewaOFF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PR Mati" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PR Mati.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="PerpanjanganSewaON" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PerpanjanganSewaON.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

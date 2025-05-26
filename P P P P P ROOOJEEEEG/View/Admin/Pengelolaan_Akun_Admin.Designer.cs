@@ -77,11 +77,15 @@
             pictureBox6 = new PictureBox();
             panel8 = new Panel();
             panel9 = new Panel();
+            pictureBox22 = new PictureBox();
+            pictureBox13 = new PictureBox();
             pictureBox11 = new PictureBox();
             pictureBox12 = new PictureBox();
             label24 = new Label();
             label7 = new Label();
             panel10 = new Panel();
+            pictureBox15 = new PictureBox();
+            pictureBox14 = new PictureBox();
             button1 = new Button();
             label23 = new Label();
             checkBox13 = new CheckBox();
@@ -110,7 +114,6 @@
             label8 = new Label();
             checkBox1 = new CheckBox();
             label6 = new Label();
-            pictureBox13 = new PictureBox();
             panel1.SuspendLayout();
             panel33.SuspendLayout();
             panel34.SuspendLayout();
@@ -144,10 +147,13 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel8.SuspendLayout();
             panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox22).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox15).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -696,6 +702,7 @@
             // panel9
             // 
             panel9.BackColor = Color.FromArgb(37, 39, 48);
+            panel9.Controls.Add(pictureBox22);
             panel9.Controls.Add(pictureBox13);
             panel9.Controls.Add(pictureBox11);
             panel9.Controls.Add(pictureBox12);
@@ -709,15 +716,38 @@
             panel9.TabIndex = 5;
             panel9.Paint += panel9_Paint;
             // 
+            // pictureBox22
+            // 
+            pictureBox22.Image = Properties.Resources.Ijo_kecil;
+            pictureBox22.Location = new Point(16, 29);
+            pictureBox22.Name = "pictureBox22";
+            pictureBox22.Size = new Size(10, 10);
+            pictureBox22.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox22.TabIndex = 43;
+            pictureBox22.TabStop = false;
+            // 
+            // pictureBox13
+            // 
+            pictureBox13.BackColor = Color.Transparent;
+            pictureBox13.Cursor = Cursors.Hand;
+            pictureBox13.ErrorImage = null;
+            pictureBox13.Image = Properties.Resources.LK_Mati;
+            pictureBox13.Location = new Point(989, 6);
+            pictureBox13.Name = "pictureBox13";
+            pictureBox13.Size = new Size(50, 50);
+            pictureBox13.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox13.TabIndex = 28;
+            pictureBox13.TabStop = false;
+            // 
             // pictureBox11
             // 
             pictureBox11.BackColor = Color.Transparent;
             pictureBox11.Cursor = Cursors.Hand;
             pictureBox11.ErrorImage = null;
             pictureBox11.Image = Properties.Resources.PR_HIDUP;
-            pictureBox11.Location = new Point(895, -9);
+            pictureBox11.Location = new Point(933, 6);
             pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(65, 65);
+            pictureBox11.Size = new Size(50, 50);
             pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox11.TabIndex = 27;
             pictureBox11.TabStop = false;
@@ -740,18 +770,18 @@
             label24.AutoSize = true;
             label24.Font = new Font("Inter SemiBold", 7F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label24.ForeColor = Color.FromArgb(139, 140, 142);
-            label24.Location = new Point(29, 25);
+            label24.Location = new Point(29, 26);
             label24.Name = "label24";
-            label24.Size = new Size(85, 17);
+            label24.Size = new Size(86, 17);
             label24.TabIndex = 10;
-            label24.Text = "28 April 2025";
+            label24.Text = "Ada 100 akun";
             // 
             // label7
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Inter", 10F, FontStyle.Bold);
             label7.ForeColor = Color.White;
-            label7.Location = new Point(29, 1);
+            label7.Location = new Point(6, 1);
             label7.Name = "label7";
             label7.Size = new Size(125, 24);
             label7.TabIndex = 7;
@@ -760,6 +790,8 @@
             // panel10
             // 
             panel10.BackColor = Color.FromArgb(23, 24, 30);
+            panel10.Controls.Add(pictureBox15);
+            panel10.Controls.Add(pictureBox14);
             panel10.Controls.Add(button1);
             panel10.Controls.Add(label23);
             panel10.Controls.Add(checkBox13);
@@ -794,6 +826,26 @@
             panel10.TabIndex = 6;
             panel10.Paint += panel10_Paint;
             // 
+            // pictureBox15
+            // 
+            pictureBox15.Image = Properties.Resources.star;
+            pictureBox15.Location = new Point(1036, 551);
+            pictureBox15.Name = "pictureBox15";
+            pictureBox15.Size = new Size(25, 25);
+            pictureBox15.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox15.TabIndex = 43;
+            pictureBox15.TabStop = false;
+            // 
+            // pictureBox14
+            // 
+            pictureBox14.Image = Properties.Resources.star;
+            pictureBox14.Location = new Point(970, 551);
+            pictureBox14.Name = "pictureBox14";
+            pictureBox14.Size = new Size(25, 25);
+            pictureBox14.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox14.TabIndex = 42;
+            pictureBox14.TabStop = false;
+            // 
             // button1
             // 
             button1.BackColor = Color.FromArgb(10, 100, 236);
@@ -802,9 +854,9 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(1024, 59);
+            button1.Location = new Point(1036, 67);
             button1.Name = "button1";
-            button1.Size = new Size(90, 30);
+            button1.Size = new Size(90, 28);
             button1.TabIndex = 41;
             button1.Text = "Detail";
             button1.UseVisualStyleBackColor = false;
@@ -814,7 +866,7 @@
             label23.AutoSize = true;
             label23.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label23.ForeColor = Color.FromArgb(139, 140, 142);
-            label23.Location = new Point(884, 68);
+            label23.Location = new Point(861, 68);
             label23.Name = "label23";
             label23.Size = new Size(70, 24);
             label23.TabIndex = 40;
@@ -954,7 +1006,7 @@
             label21.AutoSize = true;
             label21.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label21.ForeColor = Color.FromArgb(139, 140, 142);
-            label21.Location = new Point(550, 68);
+            label21.Location = new Point(527, 68);
             label21.Name = "label21";
             label21.Size = new Size(128, 24);
             label21.TabIndex = 24;
@@ -965,7 +1017,7 @@
             label20.AutoSize = true;
             label20.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label20.ForeColor = Color.FromArgb(139, 140, 142);
-            label20.Location = new Point(719, 68);
+            label20.Location = new Point(696, 68);
             label20.Name = "label20";
             label20.Size = new Size(134, 24);
             label20.TabIndex = 23;
@@ -976,7 +1028,7 @@
             label18.AutoSize = true;
             label18.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label18.ForeColor = Color.FromArgb(139, 140, 142);
-            label18.Location = new Point(379, 68);
+            label18.Location = new Point(356, 68);
             label18.Name = "label18";
             label18.Size = new Size(134, 24);
             label18.TabIndex = 21;
@@ -987,7 +1039,7 @@
             label17.AutoSize = true;
             label17.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label17.ForeColor = Color.FromArgb(139, 140, 142);
-            label17.Location = new Point(161, 68);
+            label17.Location = new Point(138, 68);
             label17.Name = "label17";
             label17.Size = new Size(198, 24);
             label17.TabIndex = 20;
@@ -1017,7 +1069,7 @@
             label15.AutoSize = true;
             label15.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label15.ForeColor = Color.FromArgb(139, 140, 142);
-            label15.Location = new Point(884, 10);
+            label15.Location = new Point(861, 10);
             label15.Name = "label15";
             label15.Size = new Size(111, 24);
             label15.TabIndex = 17;
@@ -1028,7 +1080,7 @@
             label14.AutoSize = true;
             label14.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label14.ForeColor = Color.FromArgb(139, 140, 142);
-            label14.Location = new Point(719, 8);
+            label14.Location = new Point(696, 8);
             label14.Name = "label14";
             label14.Size = new Size(44, 24);
             label14.TabIndex = 16;
@@ -1039,7 +1091,7 @@
             label11.AutoSize = true;
             label11.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label11.ForeColor = Color.FromArgb(139, 140, 142);
-            label11.Location = new Point(550, 8);
+            label11.Location = new Point(527, 8);
             label11.Name = "label11";
             label11.Size = new Size(79, 24);
             label11.TabIndex = 15;
@@ -1050,7 +1102,7 @@
             label10.AutoSize = true;
             label10.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label10.ForeColor = Color.FromArgb(139, 140, 142);
-            label10.Location = new Point(379, 8);
+            label10.Location = new Point(356, 8);
             label10.Name = "label10";
             label10.Size = new Size(93, 24);
             label10.TabIndex = 14;
@@ -1061,7 +1113,7 @@
             label9.AutoSize = true;
             label9.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label9.ForeColor = Color.FromArgb(139, 140, 142);
-            label9.Location = new Point(161, 8);
+            label9.Location = new Point(138, 8);
             label9.Name = "label9";
             label9.Size = new Size(134, 24);
             label9.TabIndex = 13;
@@ -1074,9 +1126,9 @@
             label8.ForeColor = Color.FromArgb(139, 140, 142);
             label8.Location = new Point(53, 8);
             label8.Name = "label8";
-            label8.Size = new Size(106, 24);
+            label8.Size = new Size(27, 24);
             label8.TabIndex = 12;
-            label8.Text = "ID Penyewa";
+            label8.Text = "ID";
             // 
             // checkBox1
             // 
@@ -1099,19 +1151,6 @@
             label6.Size = new Size(306, 45);
             label6.TabIndex = 4;
             label6.Text = "Pengelolaan Akun";
-            // 
-            // pictureBox13
-            // 
-            pictureBox13.BackColor = Color.Transparent;
-            pictureBox13.Cursor = Cursors.Hand;
-            pictureBox13.ErrorImage = null;
-            pictureBox13.Image = Properties.Resources.LK_Mati;
-            pictureBox13.Location = new Point(965, 0);
-            pictureBox13.Name = "pictureBox13";
-            pictureBox13.Size = new Size(55, 55);
-            pictureBox13.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox13.TabIndex = 28;
-            pictureBox13.TabStop = false;
             // 
             // Pengelolaan_Akun_Admin
             // 
@@ -1173,11 +1212,14 @@
             panel8.PerformLayout();
             panel9.ResumeLayout(false);
             panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox22).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             panel10.ResumeLayout(false);
             panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox15).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
             ResumeLayout(false);
         }
 
@@ -1265,5 +1307,8 @@
         private Label label23;
         private PictureBox pictureBox11;
         private PictureBox pictureBox13;
+        private PictureBox pictureBox15;
+        private PictureBox pictureBox14;
+        private PictureBox pictureBox22;
     }
 }

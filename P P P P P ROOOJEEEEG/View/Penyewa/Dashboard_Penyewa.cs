@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace RUSUNAWAAA.View.Penyewa
 {
-    public partial class Dashboard_Penyewa: Form
+    public partial class Dashboard_Penyewa : Form
     {
         public Dashboard_Penyewa()
         {
             InitializeComponent();
+        }
+
+        private void label26_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

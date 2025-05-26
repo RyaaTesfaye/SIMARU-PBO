@@ -76,21 +76,17 @@
             pictureBox7 = new PictureBox();
             pictureBox6 = new PictureBox();
             panel8 = new Panel();
-            pictureBox12 = new PictureBox();
-            pictureBox11 = new PictureBox();
             panel10 = new Panel();
             label7 = new Label();
             comboBox1 = new ComboBox();
             panel9 = new Panel();
             panel11 = new Panel();
-            label24 = new Label();
-            label8 = new Label();
             panel12 = new Panel();
+            pictureBox13 = new PictureBox();
             label25 = new Label();
             label22 = new Label();
             panel13 = new Panel();
             label21 = new Label();
-            label19 = new Label();
             label18 = new Label();
             label17 = new Label();
             label16 = new Label();
@@ -101,7 +97,14 @@
             label9 = new Label();
             label23 = new Label();
             label6 = new Label();
-            pictureBox13 = new PictureBox();
+            pictureBox22 = new PictureBox();
+            label24 = new Label();
+            label8 = new Label();
+            pictureBox11 = new PictureBox();
+            pictureBox12 = new PictureBox();
+            pictureBox15 = new PictureBox();
+            pictureBox14 = new PictureBox();
+            button1 = new Button();
             panel1.SuspendLayout();
             panel33.SuspendLayout();
             panel34.SuspendLayout();
@@ -134,13 +137,16 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             panel10.SuspendLayout();
             panel9.SuspendLayout();
             panel11.SuspendLayout();
             panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox22).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox15).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -678,8 +684,6 @@
             // 
             // panel8
             // 
-            panel8.Controls.Add(pictureBox12);
-            panel8.Controls.Add(pictureBox11);
             panel8.Controls.Add(panel10);
             panel8.Controls.Add(comboBox1);
             panel8.Controls.Add(panel9);
@@ -690,31 +694,11 @@
             panel8.Size = new Size(1182, 733);
             panel8.TabIndex = 12;
             // 
-            // pictureBox12
-            // 
-            pictureBox12.ErrorImage = null;
-            pictureBox12.Image = Properties.Resources.category;
-            pictureBox12.Location = new Point(881, 9);
-            pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(32, 32);
-            pictureBox12.TabIndex = 31;
-            pictureBox12.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            pictureBox11.ErrorImage = null;
-            pictureBox11.Image = Properties.Resources.category;
-            pictureBox11.Location = new Point(833, 9);
-            pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(32, 32);
-            pictureBox11.TabIndex = 30;
-            pictureBox11.TabStop = false;
-            // 
             // panel10
             // 
             panel10.BackColor = Color.White;
             panel10.Controls.Add(label7);
-            panel10.Location = new Point(950, 9);
+            panel10.Location = new Point(940, 64);
             panel10.Name = "panel10";
             panel10.Size = new Size(89, 32);
             panel10.TabIndex = 29;
@@ -739,7 +723,7 @@
             comboBox1.Font = new Font("Inter", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Terlama", "Terbaru" });
-            comboBox1.Location = new Point(1035, 9);
+            comboBox1.Location = new Point(1025, 64);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(135, 32);
             comboBox1.TabIndex = 28;
@@ -757,6 +741,9 @@
             // panel11
             // 
             panel11.BackColor = Color.FromArgb(37, 39, 48);
+            panel11.Controls.Add(pictureBox11);
+            panel11.Controls.Add(pictureBox12);
+            panel11.Controls.Add(pictureBox22);
             panel11.Controls.Add(label24);
             panel11.Controls.Add(label8);
             panel11.Controls.Add(panel12);
@@ -765,38 +752,19 @@
             panel11.Padding = new Padding(50);
             panel11.Size = new Size(1165, 662);
             panel11.TabIndex = 6;
-            // 
-            // label24
-            // 
-            label24.AutoSize = true;
-            label24.Font = new Font("Inter SemiBold", 7F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label24.ForeColor = Color.FromArgb(139, 140, 142);
-            label24.Location = new Point(50, 29);
-            label24.Name = "label24";
-            label24.Size = new Size(177, 17);
-            label24.TabIndex = 10;
-            label24.Text = "30 Laporan Belum Di Tangani";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Inter", 10F, FontStyle.Bold);
-            label8.ForeColor = Color.White;
-            label8.Location = new Point(30, 0);
-            label8.Name = "label8";
-            label8.Size = new Size(114, 24);
-            label8.TabIndex = 7;
-            label8.Text = "List Laporan";
+            panel11.Paint += panel11_Paint;
             // 
             // panel12
             // 
             panel12.BackColor = Color.FromArgb(23, 24, 30);
+            panel12.Controls.Add(button1);
+            panel12.Controls.Add(pictureBox15);
+            panel12.Controls.Add(pictureBox14);
             panel12.Controls.Add(pictureBox13);
             panel12.Controls.Add(label25);
             panel12.Controls.Add(label22);
             panel12.Controls.Add(panel13);
             panel12.Controls.Add(label21);
-            panel12.Controls.Add(label19);
             panel12.Controls.Add(label18);
             panel12.Controls.Add(label17);
             panel12.Controls.Add(label16);
@@ -812,12 +780,23 @@
             panel12.Size = new Size(1149, 589);
             panel12.TabIndex = 6;
             // 
+            // pictureBox13
+            // 
+            pictureBox13.ErrorImage = null;
+            pictureBox13.Image = Properties.Resources.BelumDitangani;
+            pictureBox13.Location = new Point(905, 66);
+            pictureBox13.Name = "pictureBox13";
+            pictureBox13.Size = new Size(110, 25);
+            pictureBox13.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox13.TabIndex = 29;
+            pictureBox13.TabStop = false;
+            // 
             // label25
             // 
             label25.AutoSize = true;
             label25.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label25.ForeColor = Color.White;
-            label25.Location = new Point(34, 552);
+            label25.Location = new Point(34, 549);
             label25.Name = "label25";
             label25.Size = new Size(248, 24);
             label25.TabIndex = 28;
@@ -847,22 +826,11 @@
             label21.AutoSize = true;
             label21.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label21.ForeColor = Color.FromArgb(139, 140, 142);
-            label21.Location = new Point(686, 65);
+            label21.Location = new Point(725, 65);
             label21.Name = "label21";
             label21.Size = new Size(109, 24);
             label21.TabIndex = 24;
             label21.Text = "18 Mei 2025";
-            // 
-            // label19
-            // 
-            label19.AutoSize = true;
-            label19.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label19.ForeColor = Color.FromArgb(139, 140, 142);
-            label19.Location = new Point(1073, 67);
-            label19.Name = "label19";
-            label19.Size = new Size(56, 24);
-            label19.TabIndex = 22;
-            label19.Text = "Detail";
             // 
             // label18
             // 
@@ -920,7 +888,7 @@
             label11.AutoSize = true;
             label11.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label11.ForeColor = Color.FromArgb(139, 140, 142);
-            label11.Location = new Point(686, 10);
+            label11.Location = new Point(725, 10);
             label11.Name = "label11";
             label11.Size = new Size(136, 24);
             label11.TabIndex = 15;
@@ -970,15 +938,98 @@
             label6.TabIndex = 4;
             label6.Text = "Daftar Keluhan";
             // 
-            // pictureBox13
+            // pictureBox22
             // 
-            pictureBox13.ErrorImage = null;
-            pictureBox13.Image = Properties.Resources.category;
-            pictureBox13.Location = new Point(904, 67);
-            pictureBox13.Name = "pictureBox13";
-            pictureBox13.Size = new Size(123, 25);
-            pictureBox13.TabIndex = 29;
-            pictureBox13.TabStop = false;
+            pictureBox22.Image = Properties.Resources.Ijo_kecil;
+            pictureBox22.Location = new Point(16, 29);
+            pictureBox22.Name = "pictureBox22";
+            pictureBox22.Size = new Size(10, 10);
+            pictureBox22.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox22.TabIndex = 49;
+            pictureBox22.TabStop = false;
+            // 
+            // label24
+            // 
+            label24.AutoSize = true;
+            label24.Font = new Font("Inter SemiBold", 7F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label24.ForeColor = Color.FromArgb(139, 140, 142);
+            label24.Location = new Point(29, 26);
+            label24.Name = "label24";
+            label24.Size = new Size(177, 17);
+            label24.TabIndex = 48;
+            label24.Text = "30 Laporan Belum Di Tangani";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Inter", 10F, FontStyle.Bold);
+            label8.ForeColor = Color.White;
+            label8.Location = new Point(6, 1);
+            label8.Name = "label8";
+            label8.Size = new Size(114, 24);
+            label8.TabIndex = 47;
+            label8.Text = "List Laporan";
+            // 
+            // pictureBox11
+            // 
+            pictureBox11.BackColor = Color.Transparent;
+            pictureBox11.Cursor = Cursors.Hand;
+            pictureBox11.ErrorImage = null;
+            pictureBox11.Image = Properties.Resources.LK_Mati;
+            pictureBox11.Location = new Point(867, 6);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(50, 50);
+            pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox11.TabIndex = 51;
+            pictureBox11.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            pictureBox12.BackColor = Color.Transparent;
+            pictureBox12.Cursor = Cursors.Hand;
+            pictureBox12.ErrorImage = null;
+            pictureBox12.Image = Properties.Resources.PR_HIDUP;
+            pictureBox12.Location = new Point(811, 6);
+            pictureBox12.Name = "pictureBox12";
+            pictureBox12.Size = new Size(50, 50);
+            pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox12.TabIndex = 50;
+            pictureBox12.TabStop = false;
+            // 
+            // pictureBox15
+            // 
+            pictureBox15.Image = Properties.Resources.star;
+            pictureBox15.Location = new Point(1040, 548);
+            pictureBox15.Name = "pictureBox15";
+            pictureBox15.Size = new Size(25, 25);
+            pictureBox15.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox15.TabIndex = 45;
+            pictureBox15.TabStop = false;
+            // 
+            // pictureBox14
+            // 
+            pictureBox14.Image = Properties.Resources.star;
+            pictureBox14.Location = new Point(974, 548);
+            pictureBox14.Name = "pictureBox14";
+            pictureBox14.Size = new Size(25, 25);
+            pictureBox14.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox14.TabIndex = 44;
+            pictureBox14.TabStop = false;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(10, 100, 236);
+            button1.Cursor = Cursors.Hand;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(1040, 63);
+            button1.Name = "button1";
+            button1.Size = new Size(90, 28);
+            button1.TabIndex = 46;
+            button1.Text = "Detail";
+            button1.UseVisualStyleBackColor = false;
             // 
             // Daftar_Keluhan_Admin
             // 
@@ -1038,8 +1089,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             panel8.ResumeLayout(false);
             panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             panel10.ResumeLayout(false);
             panel10.PerformLayout();
             panel9.ResumeLayout(false);
@@ -1048,6 +1097,11 @@
             panel12.ResumeLayout(false);
             panel12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox22).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox15).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
             ResumeLayout(false);
         }
 
@@ -1105,16 +1159,11 @@
         private ComboBox comboBox1;
         private Panel panel10;
         private Label label7;
-        private PictureBox pictureBox12;
-        private PictureBox pictureBox11;
         private Panel panel11;
-        private Label label24;
-        private Label label8;
         private Panel panel12;
         private Label label22;
         private Panel panel13;
         private Label label21;
-        private Label label19;
         private Label label18;
         private Label label17;
         private Label label16;
@@ -1126,5 +1175,13 @@
         private Label label23;
         private Label label25;
         private PictureBox pictureBox13;
+        private PictureBox pictureBox22;
+        private Label label24;
+        private Label label8;
+        private PictureBox pictureBox11;
+        private PictureBox pictureBox12;
+        private PictureBox pictureBox15;
+        private PictureBox pictureBox14;
+        private Button button1;
     }
 }
