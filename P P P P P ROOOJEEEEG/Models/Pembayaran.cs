@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace RUSUNAWAAA.Models
 {
-    class Pembayaran
+    public class Pembayaran
     {
+        public int Id { get; set; }
+        public int PenyewaId { get; set; }
+        public DateTime Tanggal { get; set; }
+        public decimal Nominal { get; set; }
+        public string Status { get; set; }
     }
 }

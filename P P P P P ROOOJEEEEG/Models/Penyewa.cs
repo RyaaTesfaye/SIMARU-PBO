@@ -6,7 +6,28 @@ using System.Threading.Tasks;
 
 namespace RUSUNAWAAA.Models
 {
-    class Penyewa
+    public class Penyewa
     {
+        public string NomorKTP { get; set; }
+        public string AlamatAsal { get; set; }
+        public string NomorHP { get; set; }
+        public DateTime TanggalLahir { get; set; }
+        public string Fakultas { get; set; }
+        public string Prodi { get; set; }
+        public string AsalKota { get; set; }
+        public string JenisKelamin { get; set; }
+        public string NamaOrangTua { get; set; }
+
+        public Penyewa(string username, string password, string namaLengkap)
+            : base(username, password, namaLengkap)
+        {
+
+        }
     }
+
+
 }
+
+
+    
+

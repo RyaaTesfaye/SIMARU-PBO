@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace RUSUNAWAAA.Models
 {
-    public class Ulasan
+    public class Notifikasi
     {
         public int Id { get; set; }
-        public int PenyewaId { get; set; }
-        public int Rating { get; set; }
-        public string Komentar { get; set; }
+        public string Judul { get; set; }
+        public string Isi { get; set; }
         public DateTime Tanggal { get; set; }
-        public string PathGambar { get; set; }
+        public bool SudahDibaca { get; set; }
     }
 }
