@@ -5,7 +5,7 @@ namespace RusunawaApp.Data
 {
     public class ApplicationDbContext : DbContext
     {
-        public DbSet<Penghuni> Penghunis { get; set; }
+        public DbSet<User> users { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
