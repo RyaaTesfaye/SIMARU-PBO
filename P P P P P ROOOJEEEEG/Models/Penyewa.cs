@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,6 +9,7 @@ namespace RUSUNAWAAA.Models
 {
     public class Penyewa
     {
+        [Key]
         public string NomorKTP { get; set; }
         public string AlamatAsal { get; set; }
         public string NomorHP { get; set; }
