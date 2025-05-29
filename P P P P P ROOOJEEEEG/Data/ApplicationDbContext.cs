@@ -5,7 +5,19 @@ namespace RusunawaApp.Data
 {
     public class ApplicationDbContext : DbContext
     {
-        public DbSet<User> users { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Admin> Admins { get; set; }
+        public DbSet<Penyewa> Penyewas { get; set; }
+        public DbSet<Unit> Units { get; set; }
+        public DbSet<Pengajuan> PengajuanSewas { get; set; }
+        public DbSet<Pembayaran> Pembayarans { get; set; }
+        public DbSet<PerpanjanganSewa> PerpanjanganSewas { get; set; }
+        public DbSet<Laporan> Laporans { get; set; }
+        public DbSet<Notifikasi> Notifikasis { get; set; }
+        public DbSet<Ulasan> Ulasans { get; set; }
+        public DbSet<MediaVirtual> MediaVirtuals { get; set; }
+        public DbSet<TataTertib> TataTertibs { get; set; }
+        public DbSet<Kontak> Kontaks { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

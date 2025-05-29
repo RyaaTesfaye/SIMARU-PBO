@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RUSUNAWAAA.Models
 {
-    class Kontak 
+    public class Kontak 
     {
         [Key]
         public int Id { get; set; }

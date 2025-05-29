@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RUSUNAWAAA.Models
 {
-    class Unit
+    public class Unit
     {
         [Key]
         public int Id { get; set; }

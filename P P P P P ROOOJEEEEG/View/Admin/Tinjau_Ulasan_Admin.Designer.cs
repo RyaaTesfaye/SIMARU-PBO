@@ -77,7 +77,6 @@
             pictureBox6 = new PictureBox();
             panel8 = new Panel();
             panel9 = new Panel();
-            label6 = new Label();
             panel10 = new Panel();
             panel11 = new Panel();
             panel13 = new Panel();
@@ -135,6 +134,7 @@
             progressbar1 = new Panel();
             label39 = new Label();
             label40 = new Label();
+            label6 = new Label();
             panel1.SuspendLayout();
             panel33.SuspendLayout();
             panel34.SuspendLayout();
@@ -748,17 +748,6 @@
             panel9.Padding = new Padding(50);
             panel9.Size = new Size(1165, 662);
             panel9.TabIndex = 5;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Inter", 19F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.ForeColor = Color.White;
-            label6.Location = new Point(0, 3);
-            label6.Name = "label6";
-            label6.Size = new Size(234, 45);
-            label6.TabIndex = 4;
-            label6.Text = "Tinjau Ulasan";
             // 
             // panel10
             // 
@@ -1395,6 +1384,17 @@
             label40.Size = new Size(117, 28);
             label40.TabIndex = 20;
             label40.Text = "Detail Skor";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Inter", 19F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.White;
+            label6.Location = new Point(0, 3);
+            label6.Name = "label6";
+            label6.Size = new Size(234, 45);
+            label6.TabIndex = 4;
+            label6.Text = "Tinjau Ulasan";
             // 
             // Tinjau_Ulasan_Admin
             // 

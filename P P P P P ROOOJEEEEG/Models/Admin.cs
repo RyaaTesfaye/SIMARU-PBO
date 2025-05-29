@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RUSUNAWAAA.Models
 {
-    class Admin : User
+    public class Admin : User
     {
         public Admin(string username, string password, string namaLengkap, string Role) : base(username, password, namaLengkap, Role)
         {
