@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace RUSUNAWAAA.Models
 {
-    public class Laporan
+    public class PerpanjanganSewa
     {
         public int Id { get; set; }
         public int PenyewaId { get; set; }
-        public string Judul { get; set; }
-        public string Isi { get; set; }
-        public DateTime Tanggal { get; set; }
+        public DateTime TanggalPengajuan { get; set; }
+        public int LamaBulan { get; set; }
         public string Status { get; set; }
-        public string PathGambar { get; set; }
+        public decimal Nominal { get; set; }
+        public string PathBuktiPembayaran { get; set; }
     }
 }

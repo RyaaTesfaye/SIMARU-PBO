@@ -8,5 +8,10 @@ namespace RUSUNAWAAA.Models
 {
     class Unit
     {
+        public int Id { get; set; }
+        public int Lantai { get; set; }
+        public float Luas { get; set; }
+        public decimal HargaSewa { get; set; }
+        public string Status { get; set; }
     }
 }

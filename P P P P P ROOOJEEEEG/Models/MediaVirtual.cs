@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace RUSUNAWAAA.Models
 {
-    class MediaVirtual
+    public class MediaVirtual
     {
+        public int Id { get; set; }
+        public string NamaFile { get; set; }
+        public string PathMedia { get; set; }
+        public string Keterangan { get; set; }
     }
 }
