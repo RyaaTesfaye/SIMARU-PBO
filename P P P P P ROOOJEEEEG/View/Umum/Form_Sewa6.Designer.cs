@@ -29,24 +29,25 @@
         private void InitializeComponent()
         {
             panel12 = new Panel();
-            button1 = new Button();
+            gambar_bp = new PictureBox();
+            btn_fotobayar = new Button();
             panel13 = new Panel();
             button4 = new Button();
             textBox2 = new TextBox();
             label10 = new Label();
             label9 = new Label();
             label8 = new Label();
-            pictureBox1 = new PictureBox();
+            ofdPilihFile = new OpenFileDialog();
             panel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)gambar_bp).BeginInit();
             panel13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panel12
             // 
             panel12.BackColor = Color.FromArgb(23, 24, 29);
-            panel12.Controls.Add(pictureBox1);
-            panel12.Controls.Add(button1);
+            panel12.Controls.Add(gambar_bp);
+            panel12.Controls.Add(btn_fotobayar);
             panel12.Controls.Add(panel13);
             panel12.Controls.Add(textBox2);
             panel12.Controls.Add(label10);
@@ -57,20 +58,31 @@
             panel12.Size = new Size(464, 597);
             panel12.TabIndex = 4;
             // 
-            // button1
+            // gambar_bp
             // 
-            button1.BackColor = Color.LightGray;
-            button1.Cursor = Cursors.Hand;
-            button1.FlatAppearance.BorderSize = 2;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Inter", 6F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.Black;
-            button1.Location = new Point(70, 125);
-            button1.Name = "button1";
-            button1.Size = new Size(61, 32);
-            button1.TabIndex = 28;
-            button1.Text = "Pilih File";
-            button1.UseVisualStyleBackColor = false;
+            gambar_bp.Image = Properties.Resources.WhatsApp_Image_2025_05_13_at_23_25_21_8b528e3b_3;
+            gambar_bp.Location = new Point(150, 205);
+            gambar_bp.Name = "gambar_bp";
+            gambar_bp.Size = new Size(153, 272);
+            gambar_bp.SizeMode = PictureBoxSizeMode.StretchImage;
+            gambar_bp.TabIndex = 29;
+            gambar_bp.TabStop = false;
+            // 
+            // btn_fotobayar
+            // 
+            btn_fotobayar.BackColor = Color.LightGray;
+            btn_fotobayar.Cursor = Cursors.Hand;
+            btn_fotobayar.FlatAppearance.BorderSize = 2;
+            btn_fotobayar.FlatStyle = FlatStyle.Flat;
+            btn_fotobayar.Font = new Font("Inter", 6F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_fotobayar.ForeColor = Color.Black;
+            btn_fotobayar.Location = new Point(70, 125);
+            btn_fotobayar.Name = "btn_fotobayar";
+            btn_fotobayar.Size = new Size(61, 32);
+            btn_fotobayar.TabIndex = 28;
+            btn_fotobayar.Text = "Pilih File";
+            btn_fotobayar.UseVisualStyleBackColor = false;
+            btn_fotobayar.Click += btn_fotobayar_Click;
             // 
             // panel13
             // 
@@ -137,15 +149,9 @@
             label8.TabIndex = 6;
             label8.Text = "Form Pengajuan sewa";
             // 
-            // pictureBox1
+            // ofdPilihFile
             // 
-            pictureBox1.Image = Properties.Resources.WhatsApp_Image_2025_05_13_at_23_25_21_8b528e3b_3;
-            pictureBox1.Location = new Point(150, 205);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(153, 272);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 29;
-            pictureBox1.TabStop = false;
+            ofdPilihFile.FileName = "openFileDialog1";
             // 
             // Form_Sewa6
             // 
@@ -156,21 +162,22 @@
             Size = new Size(464, 597);
             panel12.ResumeLayout(false);
             panel12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)gambar_bp).EndInit();
             panel13.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
         private Panel panel12;
-        private Button button1;
+        private Button btn_fotobayar;
         private Panel panel13;
         private Button button4;
         private TextBox textBox2;
         private Label label10;
         private Label label9;
         private Label label8;
-        private PictureBox pictureBox1;
+        private PictureBox gambar_bp;
+        private OpenFileDialog ofdPilihFile;
     }
 }

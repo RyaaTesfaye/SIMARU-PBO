@@ -7,10 +7,9 @@ using System.Threading.Tasks;
 
 namespace RUSUNAWAAA.Models
 {
-    public class Penyewa
+    public class Penyewa : User
     {
-        [Key]
-        public string NomorKTP { get; set; }
+        
         public string AlamatAsal { get; set; }
         public string NomorHP { get; set; }
         public DateTime TanggalLahir { get; set; }
@@ -19,9 +18,9 @@ namespace RUSUNAWAAA.Models
         public string AsalKota { get; set; }
         public string JenisKelamin { get; set; }
         public string NamaOrangTua { get; set; }
-
-        public Penyewa(string username, string password, string namaLengkap)
-            : base(username, password, namaLengkap)
+        public Penyewa() { }
+        public Penyewa(string nomorktp,string username, string password, string namaLengkap,string role)
+            : base(nomorktp,username, password, namaLengkap,"Penyewa")
         {
 
         }

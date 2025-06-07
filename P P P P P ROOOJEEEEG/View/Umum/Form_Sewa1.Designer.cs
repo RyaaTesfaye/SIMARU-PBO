@@ -1,6 +1,6 @@
 ﻿namespace RUSUNAWAAA.View.Umum
 {
-    partial class Form_Sewa2
+    partial class Form_Sewa1
     {
         /// <summary> 
         /// Required designer variable.
@@ -31,6 +31,8 @@
             panel12 = new Panel();
             panel13 = new Panel();
             button4 = new Button();
+            radioButton2 = new RadioButton();
+            radioButton1 = new RadioButton();
             textBox4 = new TextBox();
             label14 = new Label();
             textBox3 = new TextBox();
@@ -46,8 +48,10 @@
             // 
             // panel12
             // 
-            panel12.BackColor = Color.FromArgb(23, 24, 29);
+            panel12.BackColor = Color.Transparent;
             panel12.Controls.Add(panel13);
+            panel12.Controls.Add(radioButton2);
+            panel12.Controls.Add(radioButton1);
             panel12.Controls.Add(textBox4);
             panel12.Controls.Add(label14);
             panel12.Controls.Add(textBox3);
@@ -82,16 +86,42 @@
             button4.Name = "button4";
             button4.Size = new Size(368, 57);
             button4.TabIndex = 1;
-            button4.Text = "Lanjut";
+            button4.Text = "Ajukan Sewa";
             button4.UseVisualStyleBackColor = false;
-            button4.Click += btnLanjut2_Click;
+            button4.Click += btnLanjut1_Click;
+            // 
+            // radioButton2
+            // 
+            radioButton2.AutoSize = true;
+            radioButton2.Font = new Font("Inter", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            radioButton2.ForeColor = Color.White;
+            radioButton2.Location = new Point(170, 464);
+            radioButton2.Name = "radioButton2";
+            radioButton2.Size = new Size(113, 26);
+            radioButton2.TabIndex = 25;
+            radioButton2.TabStop = true;
+            radioButton2.Text = "Perempuan";
+            radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            radioButton1.AutoSize = true;
+            radioButton1.Font = new Font("Inter", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            radioButton1.ForeColor = Color.White;
+            radioButton1.Location = new Point(70, 463);
+            radioButton1.Name = "radioButton1";
+            radioButton1.Size = new Size(90, 26);
+            radioButton1.TabIndex = 24;
+            radioButton1.TabStop = true;
+            radioButton1.Text = "Laki-laki";
+            radioButton1.UseVisualStyleBackColor = true;
             // 
             // textBox4
             // 
             textBox4.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBox4.Location = new Point(70, 417);
             textBox4.Name = "textBox4";
-            textBox4.PlaceholderText = "Prodi";
+            textBox4.PlaceholderText = "Nomor HP";
             textBox4.Size = new Size(316, 32);
             textBox4.TabIndex = 23;
             // 
@@ -104,14 +134,14 @@
             label14.Name = "label14";
             label14.Size = new Size(153, 24);
             label14.TabIndex = 22;
-            label14.Text = "Masukkan Prodi";
+            label14.Text = "Masukkan Nomor HP";
             // 
             // textBox3
             // 
             textBox3.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBox3.Location = new Point(70, 328);
             textBox3.Name = "textBox3";
-            textBox3.PlaceholderText = "Fakultas";
+            textBox3.PlaceholderText = "Asal kota";
             textBox3.Size = new Size(316, 32);
             textBox3.TabIndex = 21;
             // 
@@ -124,14 +154,14 @@
             label11.Name = "label11";
             label11.Size = new Size(153, 24);
             label11.TabIndex = 20;
-            label11.Text = "Masukkan Fakultas";
+            label11.Text = "Masukkan Asal Kota";
             // 
             // textBox2
             // 
             textBox2.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBox2.Location = new Point(70, 230);
             textBox2.Name = "textBox2";
-            textBox2.PlaceholderText = "NIM";
+            textBox2.PlaceholderText = "Alamat";
             textBox2.Size = new Size(316, 32);
             textBox2.TabIndex = 19;
             // 
@@ -142,16 +172,16 @@
             label10.ForeColor = Color.White;
             label10.Location = new Point(70, 202);
             label10.Name = "label10";
-            label10.Size = new Size(113, 24);
+            label10.Size = new Size(135, 24);
             label10.TabIndex = 18;
-            label10.Text = "Masukkan NIM";
+            label10.Text = "Masukkan Alamat";
             // 
             // textBox1
             // 
             textBox1.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBox1.Location = new Point(70, 125);
             textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "Orang Tua";
+            textBox1.PlaceholderText = "Nama";
             textBox1.Size = new Size(316, 32);
             textBox1.TabIndex = 17;
             // 
@@ -162,9 +192,9 @@
             label9.ForeColor = Color.White;
             label9.Location = new Point(70, 97);
             label9.Name = "label9";
-            label9.Size = new Size(199, 24);
+            label9.Size = new Size(135, 24);
             label9.TabIndex = 16;
-            label9.Text = "Masukkan Nama Orang Tua";
+            label9.Text = "Masukkan Nama";
             // 
             // label8
             // 
@@ -177,12 +207,13 @@
             label8.TabIndex = 6;
             label8.Text = "Form Pengajuan sewa";
             // 
-            // Form_Sewa2
+            // Form_Sewa1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(23, 24, 29);
             Controls.Add(panel12);
-            Name = "Form_Sewa2";
+            Name = "Form_Sewa1";
             Size = new Size(464, 597);
             panel12.ResumeLayout(false);
             panel12.PerformLayout();
@@ -195,6 +226,8 @@
         private Panel panel12;
         private Panel panel13;
         private Button button4;
+        private RadioButton radioButton2;
+        private RadioButton radioButton1;
         private TextBox textBox4;
         private Label label14;
         private TextBox textBox3;

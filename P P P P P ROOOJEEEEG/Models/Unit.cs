@@ -10,7 +10,7 @@ namespace RUSUNAWAAA.Models
     public class Unit
     {
         [Key]
-        public int Id { get; set; }
+        public int Id_Unit { get; set; }
         public int Lantai { get; set; }
         public float Luas { get; set; }
         public decimal HargaSewa { get; set; }

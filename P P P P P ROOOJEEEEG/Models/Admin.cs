@@ -9,8 +9,10 @@ namespace RUSUNAWAAA.Models
 {
     public class Admin : User
     {
-        public Admin(string username, string password, string namaLengkap, string Role) : base(username, password, namaLengkap, Role)
+        public Admin() { }
+        public Admin(string nomorktp, string username, string password, string namaLengkap, string Role) : base(nomorktp, username, password, namaLengkap, "Admin")
         {
+
         }
     }
 }

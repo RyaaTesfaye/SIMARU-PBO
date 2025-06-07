@@ -10,15 +10,15 @@ using System.Windows.Forms;
 
 namespace RUSUNAWAAA.View.Umum
 {
-    public partial class Form_Sewa5 : UserControl
+    public partial class Form_Sewa1 : UserControl
     {
         public event EventHandler GoToNextStep;
-        public Form_Sewa5()
+        public Form_Sewa1()
         {
             InitializeComponent();
         }
 
-        private void btnLanjut5_Click(object sender, EventArgs e)
+        private void btnLanjut1_Click(object sender, EventArgs e)
         {
             GoToNextStep?.Invoke(this, EventArgs.Empty);
         }

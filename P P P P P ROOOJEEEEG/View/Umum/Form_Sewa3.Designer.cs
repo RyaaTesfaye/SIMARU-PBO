@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             panel12 = new Panel();
+            btn_fotopas = new Button();
+            text_pathpasfoto = new TextBox();
+            label2 = new Label();
+            btn_fotosp = new Button();
+            text_pathsp = new TextBox();
+            label1 = new Label();
+            btn_fotoktp = new Button();
             comboBox1 = new ComboBox();
             panel13 = new Panel();
             button4 = new Button();
-            textBox2 = new TextBox();
+            text_pathktp = new TextBox();
             label10 = new Label();
             label9 = new Label();
             label8 = new Label();
-            openFileDialog1 = new OpenFileDialog();
-            button1 = new Button();
-            button2 = new Button();
-            textBox1 = new TextBox();
-            label1 = new Label();
-            button3 = new Button();
-            textBox3 = new TextBox();
-            label2 = new Label();
+            ofdPilihFile = new OpenFileDialog();
             panel12.SuspendLayout();
             panel13.SuspendLayout();
             SuspendLayout();
@@ -51,16 +51,16 @@
             // panel12
             // 
             panel12.BackColor = Color.FromArgb(23, 24, 29);
-            panel12.Controls.Add(button3);
-            panel12.Controls.Add(textBox3);
+            panel12.Controls.Add(btn_fotopas);
+            panel12.Controls.Add(text_pathpasfoto);
             panel12.Controls.Add(label2);
-            panel12.Controls.Add(button2);
-            panel12.Controls.Add(textBox1);
+            panel12.Controls.Add(btn_fotosp);
+            panel12.Controls.Add(text_pathsp);
             panel12.Controls.Add(label1);
-            panel12.Controls.Add(button1);
+            panel12.Controls.Add(btn_fotoktp);
             panel12.Controls.Add(comboBox1);
             panel12.Controls.Add(panel13);
-            panel12.Controls.Add(textBox2);
+            panel12.Controls.Add(text_pathktp);
             panel12.Controls.Add(label10);
             panel12.Controls.Add(label9);
             panel12.Controls.Add(label8);
@@ -68,6 +68,94 @@
             panel12.Name = "panel12";
             panel12.Size = new Size(464, 597);
             panel12.TabIndex = 3;
+            // 
+            // btn_fotopas
+            // 
+            btn_fotopas.BackColor = Color.LightGray;
+            btn_fotopas.Cursor = Cursors.Hand;
+            btn_fotopas.FlatAppearance.BorderSize = 2;
+            btn_fotopas.FlatStyle = FlatStyle.Flat;
+            btn_fotopas.Font = new Font("Inter", 6F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_fotopas.ForeColor = Color.Black;
+            btn_fotopas.Location = new Point(74, 410);
+            btn_fotopas.Name = "btn_fotopas";
+            btn_fotopas.Size = new Size(61, 32);
+            btn_fotopas.TabIndex = 34;
+            btn_fotopas.Text = "Pilih File";
+            btn_fotopas.UseVisualStyleBackColor = false;
+            btn_fotopas.Click += btn_fotopas_Click;
+            // 
+            // text_pathpasfoto
+            // 
+            text_pathpasfoto.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            text_pathpasfoto.Location = new Point(150, 410);
+            text_pathpasfoto.Name = "text_pathpasfoto";
+            text_pathpasfoto.ReadOnly = true;
+            text_pathpasfoto.Size = new Size(239, 32);
+            text_pathpasfoto.TabIndex = 33;
+            // 
+            // label2
+            // 
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Inter", 8F);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(70, 383);
+            label2.Name = "label2";
+            label2.Size = new Size(127, 24);
+            label2.TabIndex = 32;
+            label2.Text = "Unggah Pas Foto";
+            // 
+            // btn_fotosp
+            // 
+            btn_fotosp.BackColor = Color.LightGray;
+            btn_fotosp.Cursor = Cursors.Hand;
+            btn_fotosp.FlatAppearance.BorderSize = 2;
+            btn_fotosp.FlatStyle = FlatStyle.Flat;
+            btn_fotosp.Font = new Font("Inter", 6F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_fotosp.ForeColor = Color.Black;
+            btn_fotosp.Location = new Point(74, 322);
+            btn_fotosp.Name = "btn_fotosp";
+            btn_fotosp.Size = new Size(61, 32);
+            btn_fotosp.TabIndex = 31;
+            btn_fotosp.Text = "Pilih File";
+            btn_fotosp.UseVisualStyleBackColor = false;
+            btn_fotosp.Click += btn_fotosp_Click;
+            // 
+            // text_pathsp
+            // 
+            text_pathsp.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            text_pathsp.Location = new Point(150, 322);
+            text_pathsp.Name = "text_pathsp";
+            text_pathsp.ReadOnly = true;
+            text_pathsp.Size = new Size(239, 32);
+            text_pathsp.TabIndex = 30;
+            // 
+            // label1
+            // 
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Inter", 8F);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(70, 295);
+            label1.Name = "label1";
+            label1.Size = new Size(267, 24);
+            label1.TabIndex = 29;
+            label1.Text = "Unggah Surat Pernyataan (Wajib PDF)";
+            // 
+            // btn_fotoktp
+            // 
+            btn_fotoktp.BackColor = Color.LightGray;
+            btn_fotoktp.Cursor = Cursors.Hand;
+            btn_fotoktp.FlatAppearance.BorderSize = 2;
+            btn_fotoktp.FlatStyle = FlatStyle.Flat;
+            btn_fotoktp.Font = new Font("Inter", 6F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_fotoktp.ForeColor = Color.Black;
+            btn_fotoktp.Location = new Point(74, 229);
+            btn_fotoktp.Name = "btn_fotoktp";
+            btn_fotoktp.Size = new Size(61, 32);
+            btn_fotoktp.TabIndex = 28;
+            btn_fotoktp.Text = "Pilih File";
+            btn_fotoktp.UseVisualStyleBackColor = false;
+            btn_fotoktp.Click += btn_fotoktp_Click;
             // 
             // comboBox1
             // 
@@ -103,15 +191,16 @@
             button4.TabIndex = 1;
             button4.Text = "Lanjut";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += btnLanjut3_Click;
             // 
-            // textBox2
+            // text_pathktp
             // 
-            textBox2.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(150, 229);
-            textBox2.Name = "textBox2";
-            textBox2.ReadOnly = true;
-            textBox2.Size = new Size(239, 32);
-            textBox2.TabIndex = 19;
+            text_pathktp.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            text_pathktp.Location = new Point(150, 229);
+            text_pathktp.Name = "text_pathktp";
+            text_pathktp.ReadOnly = true;
+            text_pathktp.Size = new Size(239, 32);
+            text_pathktp.TabIndex = 19;
             // 
             // label10
             // 
@@ -146,94 +235,9 @@
             label8.TabIndex = 6;
             label8.Text = "Form Pengajuan sewa";
             // 
-            // openFileDialog1
+            // ofdPilihFile
             // 
-            openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.LightGray;
-            button1.Cursor = Cursors.Hand;
-            button1.FlatAppearance.BorderSize = 2;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Inter", 6F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.Black;
-            button1.Location = new Point(74, 229);
-            button1.Name = "button1";
-            button1.Size = new Size(61, 32);
-            button1.TabIndex = 28;
-            button1.Text = "Pilih File";
-            button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            button2.BackColor = Color.LightGray;
-            button2.Cursor = Cursors.Hand;
-            button2.FlatAppearance.BorderSize = 2;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Inter", 6F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.Black;
-            button2.Location = new Point(74, 322);
-            button2.Name = "button2";
-            button2.Size = new Size(61, 32);
-            button2.TabIndex = 31;
-            button2.Text = "Pilih File";
-            button2.UseVisualStyleBackColor = false;
-            // 
-            // textBox1
-            // 
-            textBox1.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(150, 322);
-            textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
-            textBox1.Size = new Size(239, 32);
-            textBox1.TabIndex = 30;
-            // 
-            // label1
-            // 
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Inter", 8F);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(70, 295);
-            label1.Name = "label1";
-            label1.Size = new Size(127, 24);
-            label1.TabIndex = 29;
-            label1.Text = "Unggah Foto Ktp";
-            // 
-            // button3
-            // 
-            button3.BackColor = Color.LightGray;
-            button3.Cursor = Cursors.Hand;
-            button3.FlatAppearance.BorderSize = 2;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Inter", 6F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.ForeColor = Color.Black;
-            button3.Location = new Point(74, 410);
-            button3.Name = "button3";
-            button3.Size = new Size(61, 32);
-            button3.TabIndex = 34;
-            button3.Text = "Pilih File";
-            button3.UseVisualStyleBackColor = false;
-            // 
-            // textBox3
-            // 
-            textBox3.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox3.Location = new Point(150, 410);
-            textBox3.Name = "textBox3";
-            textBox3.ReadOnly = true;
-            textBox3.Size = new Size(239, 32);
-            textBox3.TabIndex = 33;
-            // 
-            // label2
-            // 
-            label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Inter", 8F);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(70, 383);
-            label2.Name = "label2";
-            label2.Size = new Size(127, 24);
-            label2.TabIndex = 32;
-            label2.Text = "Unggah Foto Ktp";
+            ofdPilihFile.FileName = "openFileDialog1";
             // 
             // Form_Sewa3
             // 
@@ -254,17 +258,17 @@
         private ComboBox comboBox1;
         private Panel panel13;
         private Button button4;
-        private TextBox textBox2;
+        private TextBox text_pathktp;
         private Label label10;
         private Label label9;
         private Label label8;
-        private OpenFileDialog openFileDialog1;
-        private Button button1;
-        private Button button3;
-        private TextBox textBox3;
+        private Button btn_fotoktp;
+        private Button btn_fotopas;
+        private TextBox text_pathpasfoto;
         private Label label2;
-        private Button button2;
-        private TextBox textBox1;
+        private Button btn_fotosp;
+        private TextBox text_pathsp;
         private Label label1;
+        private OpenFileDialog ofdPilihFile;
     }
 }

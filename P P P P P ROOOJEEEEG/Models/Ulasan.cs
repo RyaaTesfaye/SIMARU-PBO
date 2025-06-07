@@ -10,8 +10,8 @@ namespace RUSUNAWAAA.Models
     public class Ulasan
     {
         [Key]
-        public int Id { get; set; }
-        public int PenyewaId { get; set; }
+        public int Id_Ulasan { get; set; }
+        public int NomorKTP { get; set; }
         public int Rating { get; set; }
         public string Komentar { get; set; }
         public DateTime Tanggal { get; set; }

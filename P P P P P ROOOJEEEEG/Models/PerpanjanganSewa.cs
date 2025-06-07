@@ -10,8 +10,8 @@ namespace RUSUNAWAAA.Models
     public class PerpanjanganSewa
     {
         [Key]
-        public int Id { get; set; }
-        public int PenyewaId { get; set; }
+        public int Id_Perpanjangan { get; set; }
+        public int NomorKTP { get; set; }
         public DateTime TanggalPengajuan { get; set; }
         public int LamaBulan { get; set; }
         public string Status { get; set; }

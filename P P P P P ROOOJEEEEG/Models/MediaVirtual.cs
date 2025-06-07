@@ -10,7 +10,7 @@ namespace RUSUNAWAAA.Models
     public class MediaVirtual
     {
         [Key]
-        public int Id { get; set; }
+        public int Id_Media { get; set; }
         public string NamaFile { get; set; }
         public string PathMedia { get; set; }
         public string Keterangan { get; set; }

@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace RUSUNAWAAA.View.Umum
 {
-    public partial class Form_Sewa2: UserControl
+    public partial class Form_Sewa2 : UserControl
     {
+        public event EventHandler GoToNextStep;
         public Form_Sewa2()
         {
             InitializeComponent();
+        }
+
+        private void btnLanjut2_Click(object sender, EventArgs e)
+        {
+            GoToNextStep?.Invoke(this, EventArgs.Empty);
         }
     }
 }

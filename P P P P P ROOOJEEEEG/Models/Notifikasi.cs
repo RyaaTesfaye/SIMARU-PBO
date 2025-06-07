@@ -10,7 +10,7 @@ namespace RUSUNAWAAA.Models
     public class Notifikasi
     {
         [Key]
-        public int Id { get; set; }
+        public int Id_Notifikasi { get; set; }
         public string Judul { get; set; }
         public string Isi { get; set; }
         public DateTime Tanggal { get; set; }

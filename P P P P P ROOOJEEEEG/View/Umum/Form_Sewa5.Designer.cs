@@ -29,10 +29,8 @@
         private void InitializeComponent()
         {
             panel12 = new Panel();
-            panel13 = new Panel();
-            button4 = new Button();
-            label9 = new Label();
-            label8 = new Label();
+            textBox2 = new TextBox();
+            label2 = new Label();
             label17 = new Label();
             label16 = new Label();
             label15 = new Label();
@@ -43,8 +41,10 @@
             label7 = new Label();
             label3 = new Label();
             label1 = new Label();
-            label2 = new Label();
-            textBox2 = new TextBox();
+            panel13 = new Panel();
+            button4 = new Button();
+            label9 = new Label();
+            label8 = new Label();
             panel12.SuspendLayout();
             panel13.SuspendLayout();
             SuspendLayout();
@@ -72,50 +72,25 @@
             panel12.Size = new Size(464, 597);
             panel12.TabIndex = 4;
             // 
-            // panel13
+            // textBox2
             // 
-            panel13.Controls.Add(button4);
-            panel13.Location = new Point(0, 515);
-            panel13.Name = "panel13";
-            panel13.Size = new Size(461, 57);
-            panel13.TabIndex = 26;
+            textBox2.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox2.Location = new Point(27, 125);
+            textBox2.Name = "textBox2";
+            textBox2.ReadOnly = true;
+            textBox2.Size = new Size(325, 32);
+            textBox2.TabIndex = 56;
             // 
-            // button4
+            // label2
             // 
-            button4.BackColor = Color.FromArgb(10, 100, 236);
-            button4.Cursor = Cursors.Hand;
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Inter", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button4.ForeColor = Color.White;
-            button4.Location = new Point(48, 0);
-            button4.Name = "button4";
-            button4.Size = new Size(368, 57);
-            button4.TabIndex = 1;
-            button4.Text = "Konfirmasi Pembayaran";
-            button4.UseVisualStyleBackColor = false;
-            // 
-            // label9
-            // 
-            label9.BackColor = Color.Transparent;
-            label9.Font = new Font("Inter", 8F);
-            label9.ForeColor = Color.White;
-            label9.Location = new Point(27, 98);
-            label9.Name = "label9";
-            label9.Size = new Size(199, 24);
-            label9.TabIndex = 16;
-            label9.Text = "Estimasi Biaya untuk X Bulan Sewa";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Inter", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.ForeColor = Color.White;
-            label8.Location = new Point(100, 24);
-            label8.Name = "label8";
-            label8.Size = new Size(286, 36);
-            label8.TabIndex = 6;
-            label8.Text = "Form Pengajuan sewa";
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Inter", 8F);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(27, 200);
+            label2.Name = "label2";
+            label2.Size = new Size(359, 24);
+            label2.TabIndex = 55;
+            label2.Text = "Silahkan Transfer ke Rekening Berikut:";
             // 
             // label17
             // 
@@ -227,25 +202,51 @@
             label1.TabIndex = 45;
             label1.Text = "Sertakan nama dan nomor HP ";
             // 
-            // label2
+            // panel13
             // 
-            label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Inter", 8F);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(27, 200);
-            label2.Name = "label2";
-            label2.Size = new Size(359, 24);
-            label2.TabIndex = 55;
-            label2.Text = "Silahkan Transfer ke Rekening Berikut:";
+            panel13.Controls.Add(button4);
+            panel13.Location = new Point(0, 515);
+            panel13.Name = "panel13";
+            panel13.Size = new Size(461, 57);
+            panel13.TabIndex = 26;
             // 
-            // textBox2
+            // button4
             // 
-            textBox2.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(27, 125);
-            textBox2.Name = "textBox2";
-            textBox2.ReadOnly = true;
-            textBox2.Size = new Size(325, 32);
-            textBox2.TabIndex = 56;
+            button4.BackColor = Color.FromArgb(10, 100, 236);
+            button4.Cursor = Cursors.Hand;
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Font = new Font("Inter", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button4.ForeColor = Color.White;
+            button4.Location = new Point(48, 0);
+            button4.Name = "button4";
+            button4.Size = new Size(368, 57);
+            button4.TabIndex = 1;
+            button4.Text = "Konfirmasi Pembayaran";
+            button4.UseVisualStyleBackColor = false;
+            button4.Click += btnLanjut5_Click;
+            // 
+            // label9
+            // 
+            label9.BackColor = Color.Transparent;
+            label9.Font = new Font("Inter", 8F);
+            label9.ForeColor = Color.White;
+            label9.Location = new Point(27, 98);
+            label9.Name = "label9";
+            label9.Size = new Size(199, 24);
+            label9.TabIndex = 16;
+            label9.Text = "Estimasi Biaya untuk X Bulan Sewa";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Inter", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.ForeColor = Color.White;
+            label8.Location = new Point(100, 24);
+            label8.Name = "label8";
+            label8.Size = new Size(286, 36);
+            label8.TabIndex = 6;
+            label8.Text = "Form Pengajuan sewa";
             // 
             // Form_Sewa5
             // 

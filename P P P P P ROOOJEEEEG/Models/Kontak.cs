@@ -10,7 +10,7 @@ namespace RUSUNAWAAA.Models
     public class Kontak 
     {
         [Key]
-        public int Id { get; set; }
+        public int Id_Kontak { get; set; }
         public string NamaKontak { get; set; }
         public string Telepon { get; set; }
         public string Lokasi { get; set; }

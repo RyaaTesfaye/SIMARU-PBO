@@ -10,9 +10,9 @@ namespace RUSUNAWAAA.Models
     public class Pengajuan
     {
         [Key]
-        public int Id { get; set; }
-        public int UnitId { get; set; }
-        public int PenyewaId { get; set; }
+        public int Id_Pengajuan { get; set; }
+        public int Id_Unit { get; set; }
+        public string NomorKTP { get; set; }
         public int DurasiSewa { get; set; }
         public decimal EstimasiBiaya { get; set; }
         public string Status { get; set; }

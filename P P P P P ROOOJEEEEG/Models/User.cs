@@ -10,13 +10,16 @@ namespace RUSUNAWAAA.Models
     public abstract class User
     {
         [Key]
+        public string NomorKTP { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
         public string NamaLengkap { get; set; }
         public string Role { get; set; }
 
-        public User(string username, string password, string namaLengkap, string role)
+        public User() { }
+        public User(string nomorktp,string username, string password, string namaLengkap, string role)
         {
+            NomorKTP = nomorktp;
             Username = username;
             Password = password;
             NamaLengkap = namaLengkap;
