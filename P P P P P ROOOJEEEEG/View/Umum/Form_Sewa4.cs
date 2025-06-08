@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using RUSUNAWAAA.Models;
 
 namespace RUSUNAWAAA.View.Umum
 {
@@ -16,6 +17,20 @@ namespace RUSUNAWAAA.View.Umum
         public Form_Sewa4()
         {
             InitializeComponent();
+        }
+
+        public void MuatData(Pengajuan data)
+        {
+
+            NamaIsi.Text =  data.NamaLengkap;
+            JenisKelaminIsi.Text =  data.JenisKelamin;
+            AlamatIsi.Text = data.AlamatAsal;
+            AsalKotaIsi.Text = data.AsalKota;
+            NomorHpIsi.Text = data.NomorHP;
+            NamaOrangTuaIsi.Text = data.NamaOrangTua;
+            NimIsi.Text = data.NIM; 
+            FakultasIsi.Text = data.Fakultas;
+            ProdiIsi.Text = data.Prodi;
         }
 
         private void btnLanjut4_Click(object sender, EventArgs e)

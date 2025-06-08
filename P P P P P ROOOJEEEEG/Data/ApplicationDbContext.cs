@@ -9,9 +9,9 @@ namespace RusunawaApp.Data
         public DbSet<Admin> Admins { get; set; }
         public DbSet<Penyewa> Penyewas { get; set; }
         public DbSet<Unit> Units { get; set; }
-        public DbSet<Pengajuan> PengajuanSewas { get; set; }
+        public DbSet<Pengajuan> Pengajuans { get; set; }
         public DbSet<Pembayaran> Pembayarans { get; set; }
-        public DbSet<PerpanjanganSewa> PerpanjanganSewas { get; set; }
+        public DbSet<PerpanjanganSewa> Perpanjangans { get; set; }
         public DbSet<Laporan> Laporans { get; set; }
         public DbSet<Notifikasi> Notifikasis { get; set; }
         public DbSet<Ulasan> Ulasans { get; set; }

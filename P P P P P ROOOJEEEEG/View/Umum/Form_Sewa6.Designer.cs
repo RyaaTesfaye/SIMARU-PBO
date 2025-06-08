@@ -33,7 +33,7 @@
             btn_fotobayar = new Button();
             panel13 = new Panel();
             button4 = new Button();
-            textBox2 = new TextBox();
+            txt_pathbp = new TextBox();
             label10 = new Label();
             label9 = new Label();
             label8 = new Label();
@@ -49,7 +49,7 @@
             panel12.Controls.Add(gambar_bp);
             panel12.Controls.Add(btn_fotobayar);
             panel12.Controls.Add(panel13);
-            panel12.Controls.Add(textBox2);
+            panel12.Controls.Add(txt_pathbp);
             panel12.Controls.Add(label10);
             panel12.Controls.Add(label9);
             panel12.Controls.Add(label8);
@@ -106,15 +106,16 @@
             button4.TabIndex = 1;
             button4.Text = "Kirim Pengajuan";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += btnSelesai_Click;
             // 
-            // textBox2
+            // txt_pathbp
             // 
-            textBox2.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(150, 125);
-            textBox2.Name = "textBox2";
-            textBox2.ReadOnly = true;
-            textBox2.Size = new Size(239, 32);
-            textBox2.TabIndex = 19;
+            txt_pathbp.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txt_pathbp.Location = new Point(150, 125);
+            txt_pathbp.Name = "txt_pathbp";
+            txt_pathbp.ReadOnly = true;
+            txt_pathbp.Size = new Size(239, 32);
+            txt_pathbp.TabIndex = 19;
             // 
             // label10
             // 
@@ -173,7 +174,7 @@
         private Button btn_fotobayar;
         private Panel panel13;
         private Button button4;
-        private TextBox textBox2;
+        private TextBox txt_pathbp;
         private Label label10;
         private Label label9;
         private Label label8;

@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using RusunawaApp.Data;
@@ -11,9 +12,11 @@ using RusunawaApp.Data;
 namespace RUSUNAWAAA.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250608181242_pembaruantabel")]
+    partial class pembaruantabel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -248,6 +251,8 @@ namespace RUSUNAWAAA.Migrations
 
                     b.HasKey("Id_Pengajuan");
 
+                    b.HasIndex("NomorKTP");
+
                     b.ToTable("Pengajuans");
                 });
 
@@ -472,6 +477,17 @@ namespace RUSUNAWAAA.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("RUSUNAWAAA.Models.Pengajuan", b =>
+                {
+                    b.HasOne("RUSUNAWAAA.Models.User", "User")
+                        .WithMany("Pengajuans")
+                        .HasForeignKey("NomorKTP")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("RUSUNAWAAA.Models.PerpanjanganSewa", b =>
                 {
                     b.HasOne("RUSUNAWAAA.Models.User", "User")
@@ -499,6 +515,8 @@ namespace RUSUNAWAAA.Migrations
                     b.Navigation("Laporans");
 
                     b.Navigation("Pembayarans");
+
+                    b.Navigation("Pengajuans");
 
                     b.Navigation("Perpanjangans");
 

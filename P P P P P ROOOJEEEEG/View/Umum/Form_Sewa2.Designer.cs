@@ -31,15 +31,17 @@
             panel12 = new Panel();
             panel13 = new Panel();
             button4 = new Button();
-            textBox4 = new TextBox();
+            txtProdi = new TextBox();
             label14 = new Label();
-            textBox3 = new TextBox();
+            txtFakultas = new TextBox();
             label11 = new Label();
-            textBox2 = new TextBox();
+            txtNIM = new TextBox();
             label10 = new Label();
-            textBox1 = new TextBox();
+            txtOrangTua = new TextBox();
             label9 = new Label();
             label8 = new Label();
+            txtNomorKTP = new TextBox();
+            label1 = new Label();
             panel12.SuspendLayout();
             panel13.SuspendLayout();
             SuspendLayout();
@@ -47,20 +49,23 @@
             // panel12
             // 
             panel12.BackColor = Color.FromArgb(23, 24, 29);
+            panel12.Controls.Add(txtNomorKTP);
+            panel12.Controls.Add(label1);
             panel12.Controls.Add(panel13);
-            panel12.Controls.Add(textBox4);
+            panel12.Controls.Add(txtProdi);
             panel12.Controls.Add(label14);
-            panel12.Controls.Add(textBox3);
+            panel12.Controls.Add(txtFakultas);
             panel12.Controls.Add(label11);
-            panel12.Controls.Add(textBox2);
+            panel12.Controls.Add(txtNIM);
             panel12.Controls.Add(label10);
-            panel12.Controls.Add(textBox1);
+            panel12.Controls.Add(txtOrangTua);
             panel12.Controls.Add(label9);
             panel12.Controls.Add(label8);
             panel12.Location = new Point(0, 0);
             panel12.Name = "panel12";
             panel12.Size = new Size(464, 597);
             panel12.TabIndex = 2;
+            panel12.Paint += panel12_Paint;
             // 
             // panel13
             // 
@@ -86,74 +91,74 @@
             button4.UseVisualStyleBackColor = false;
             button4.Click += btnLanjut2_Click;
             // 
-            // textBox4
+            // txtProdi
             // 
-            textBox4.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox4.Location = new Point(70, 417);
-            textBox4.Name = "textBox4";
-            textBox4.PlaceholderText = "Prodi";
-            textBox4.Size = new Size(316, 32);
-            textBox4.TabIndex = 23;
+            txtProdi.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtProdi.Location = new Point(70, 358);
+            txtProdi.Name = "txtProdi";
+            txtProdi.PlaceholderText = "Prodi";
+            txtProdi.Size = new Size(316, 32);
+            txtProdi.TabIndex = 23;
             // 
             // label14
             // 
             label14.BackColor = Color.Transparent;
             label14.Font = new Font("Inter", 8F);
             label14.ForeColor = Color.White;
-            label14.Location = new Point(70, 389);
+            label14.Location = new Point(70, 330);
             label14.Name = "label14";
             label14.Size = new Size(153, 24);
             label14.TabIndex = 22;
             label14.Text = "Masukkan Prodi";
             // 
-            // textBox3
+            // txtFakultas
             // 
-            textBox3.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox3.Location = new Point(70, 328);
-            textBox3.Name = "textBox3";
-            textBox3.PlaceholderText = "Fakultas";
-            textBox3.Size = new Size(316, 32);
-            textBox3.TabIndex = 21;
+            txtFakultas.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtFakultas.Location = new Point(70, 282);
+            txtFakultas.Name = "txtFakultas";
+            txtFakultas.PlaceholderText = "Fakultas";
+            txtFakultas.Size = new Size(316, 32);
+            txtFakultas.TabIndex = 21;
             // 
             // label11
             // 
             label11.BackColor = Color.Transparent;
             label11.Font = new Font("Inter", 8F);
             label11.ForeColor = Color.White;
-            label11.Location = new Point(70, 301);
+            label11.Location = new Point(70, 255);
             label11.Name = "label11";
             label11.Size = new Size(153, 24);
             label11.TabIndex = 20;
             label11.Text = "Masukkan Fakultas";
             // 
-            // textBox2
+            // txtNIM
             // 
-            textBox2.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(70, 230);
-            textBox2.Name = "textBox2";
-            textBox2.PlaceholderText = "NIM";
-            textBox2.Size = new Size(316, 32);
-            textBox2.TabIndex = 19;
+            txtNIM.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtNIM.Location = new Point(70, 210);
+            txtNIM.Name = "txtNIM";
+            txtNIM.PlaceholderText = "NIM";
+            txtNIM.Size = new Size(316, 32);
+            txtNIM.TabIndex = 19;
             // 
             // label10
             // 
             label10.BackColor = Color.Transparent;
             label10.Font = new Font("Inter", 8F);
             label10.ForeColor = Color.White;
-            label10.Location = new Point(70, 202);
+            label10.Location = new Point(70, 182);
             label10.Name = "label10";
             label10.Size = new Size(113, 24);
             label10.TabIndex = 18;
             label10.Text = "Masukkan NIM";
             // 
-            // textBox1
+            // txtOrangTua
             // 
-            textBox1.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(70, 125);
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "Orang Tua";
-            textBox1.Size = new Size(316, 32);
-            textBox1.TabIndex = 17;
+            txtOrangTua.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtOrangTua.Location = new Point(70, 125);
+            txtOrangTua.Name = "txtOrangTua";
+            txtOrangTua.PlaceholderText = "Orang Tua";
+            txtOrangTua.Size = new Size(316, 32);
+            txtOrangTua.TabIndex = 17;
             // 
             // label9
             // 
@@ -177,6 +182,26 @@
             label8.TabIndex = 6;
             label8.Text = "Form Pengajuan sewa";
             // 
+            // txtNomorKTP
+            // 
+            txtNomorKTP.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtNomorKTP.Location = new Point(70, 438);
+            txtNomorKTP.Name = "txtNomorKTP";
+            txtNomorKTP.PlaceholderText = "Nomor KTP";
+            txtNomorKTP.Size = new Size(316, 32);
+            txtNomorKTP.TabIndex = 28;
+            // 
+            // label1
+            // 
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Inter", 8F);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(70, 410);
+            label1.Name = "label1";
+            label1.Size = new Size(171, 24);
+            label1.TabIndex = 27;
+            label1.Text = "Masukkan Nomor KTP";
+            // 
             // Form_Sewa2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -195,14 +220,16 @@
         private Panel panel12;
         private Panel panel13;
         private Button button4;
-        private TextBox textBox4;
+        private TextBox txtProdi;
         private Label label14;
-        private TextBox textBox3;
+        private TextBox txtFakultas;
         private Label label11;
-        private TextBox textBox2;
+        private TextBox txtNIM;
         private Label label10;
-        private TextBox textBox1;
+        private TextBox txtOrangTua;
         private Label label9;
         private Label label8;
+        private TextBox txtNomorKTP;
+        private Label label1;
     }
 }

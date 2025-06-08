@@ -16,6 +16,10 @@ namespace RUSUNAWAAA.Models
         public string NamaLengkap { get; set; }
         public string Role { get; set; }
 
+        public virtual ICollection<Ulasan> Ulasans { get; set; }
+        public virtual ICollection<PerpanjanganSewa> Perpanjangans { get; set; }
+        public virtual ICollection<Pembayaran> Pembayarans { get; set; }
+        public virtual ICollection<Laporan> Laporans { get; set; }
         public User() { }
         public User(string nomorktp,string username, string password, string namaLengkap, string role)
         {

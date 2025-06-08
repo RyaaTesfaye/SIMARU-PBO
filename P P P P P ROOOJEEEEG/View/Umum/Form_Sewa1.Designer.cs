@@ -31,15 +31,15 @@
             panel12 = new Panel();
             panel13 = new Panel();
             button4 = new Button();
-            radioButton2 = new RadioButton();
-            radioButton1 = new RadioButton();
-            textBox4 = new TextBox();
+            radioPerempuan = new RadioButton();
+            radioLakiLaki = new RadioButton();
+            txtNomorHP = new TextBox();
             label14 = new Label();
-            textBox3 = new TextBox();
+            txtAsalKota = new TextBox();
             label11 = new Label();
-            textBox2 = new TextBox();
+            txtAlamat = new TextBox();
             label10 = new Label();
-            textBox1 = new TextBox();
+            txtNama = new TextBox();
             label9 = new Label();
             label8 = new Label();
             panel12.SuspendLayout();
@@ -50,15 +50,15 @@
             // 
             panel12.BackColor = Color.Transparent;
             panel12.Controls.Add(panel13);
-            panel12.Controls.Add(radioButton2);
-            panel12.Controls.Add(radioButton1);
-            panel12.Controls.Add(textBox4);
+            panel12.Controls.Add(radioPerempuan);
+            panel12.Controls.Add(radioLakiLaki);
+            panel12.Controls.Add(txtNomorHP);
             panel12.Controls.Add(label14);
-            panel12.Controls.Add(textBox3);
+            panel12.Controls.Add(txtAsalKota);
             panel12.Controls.Add(label11);
-            panel12.Controls.Add(textBox2);
+            panel12.Controls.Add(txtAlamat);
             panel12.Controls.Add(label10);
-            panel12.Controls.Add(textBox1);
+            panel12.Controls.Add(txtNama);
             panel12.Controls.Add(label9);
             panel12.Controls.Add(label8);
             panel12.Location = new Point(0, 0);
@@ -90,40 +90,40 @@
             button4.UseVisualStyleBackColor = false;
             button4.Click += btnLanjut1_Click;
             // 
-            // radioButton2
+            // radioPerempuan
             // 
-            radioButton2.AutoSize = true;
-            radioButton2.Font = new Font("Inter", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            radioButton2.ForeColor = Color.White;
-            radioButton2.Location = new Point(170, 464);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(113, 26);
-            radioButton2.TabIndex = 25;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "Perempuan";
-            radioButton2.UseVisualStyleBackColor = true;
+            radioPerempuan.AutoSize = true;
+            radioPerempuan.Font = new Font("Inter", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            radioPerempuan.ForeColor = Color.White;
+            radioPerempuan.Location = new Point(170, 464);
+            radioPerempuan.Name = "radioPerempuan";
+            radioPerempuan.Size = new Size(113, 26);
+            radioPerempuan.TabIndex = 25;
+            radioPerempuan.TabStop = true;
+            radioPerempuan.Text = "Perempuan";
+            radioPerempuan.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // radioLakiLaki
             // 
-            radioButton1.AutoSize = true;
-            radioButton1.Font = new Font("Inter", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            radioButton1.ForeColor = Color.White;
-            radioButton1.Location = new Point(70, 463);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(90, 26);
-            radioButton1.TabIndex = 24;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "Laki-laki";
-            radioButton1.UseVisualStyleBackColor = true;
+            radioLakiLaki.AutoSize = true;
+            radioLakiLaki.Font = new Font("Inter", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            radioLakiLaki.ForeColor = Color.White;
+            radioLakiLaki.Location = new Point(70, 463);
+            radioLakiLaki.Name = "radioLakiLaki";
+            radioLakiLaki.Size = new Size(90, 26);
+            radioLakiLaki.TabIndex = 24;
+            radioLakiLaki.TabStop = true;
+            radioLakiLaki.Text = "Laki-laki";
+            radioLakiLaki.UseVisualStyleBackColor = true;
             // 
-            // textBox4
+            // txtNomorHP
             // 
-            textBox4.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox4.Location = new Point(70, 417);
-            textBox4.Name = "textBox4";
-            textBox4.PlaceholderText = "Nomor HP";
-            textBox4.Size = new Size(316, 32);
-            textBox4.TabIndex = 23;
+            txtNomorHP.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtNomorHP.Location = new Point(70, 417);
+            txtNomorHP.Name = "txtNomorHP";
+            txtNomorHP.PlaceholderText = "Nomor HP";
+            txtNomorHP.Size = new Size(316, 32);
+            txtNomorHP.TabIndex = 23;
             // 
             // label14
             // 
@@ -136,14 +136,14 @@
             label14.TabIndex = 22;
             label14.Text = "Masukkan Nomor HP";
             // 
-            // textBox3
+            // txtAsalKota
             // 
-            textBox3.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox3.Location = new Point(70, 328);
-            textBox3.Name = "textBox3";
-            textBox3.PlaceholderText = "Asal kota";
-            textBox3.Size = new Size(316, 32);
-            textBox3.TabIndex = 21;
+            txtAsalKota.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtAsalKota.Location = new Point(70, 328);
+            txtAsalKota.Name = "txtAsalKota";
+            txtAsalKota.PlaceholderText = "Asal kota";
+            txtAsalKota.Size = new Size(316, 32);
+            txtAsalKota.TabIndex = 21;
             // 
             // label11
             // 
@@ -156,14 +156,14 @@
             label11.TabIndex = 20;
             label11.Text = "Masukkan Asal Kota";
             // 
-            // textBox2
+            // txtAlamat
             // 
-            textBox2.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(70, 230);
-            textBox2.Name = "textBox2";
-            textBox2.PlaceholderText = "Alamat";
-            textBox2.Size = new Size(316, 32);
-            textBox2.TabIndex = 19;
+            txtAlamat.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtAlamat.Location = new Point(70, 230);
+            txtAlamat.Name = "txtAlamat";
+            txtAlamat.PlaceholderText = "Alamat";
+            txtAlamat.Size = new Size(316, 32);
+            txtAlamat.TabIndex = 19;
             // 
             // label10
             // 
@@ -176,14 +176,14 @@
             label10.TabIndex = 18;
             label10.Text = "Masukkan Alamat";
             // 
-            // textBox1
+            // txtNama
             // 
-            textBox1.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(70, 125);
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "Nama";
-            textBox1.Size = new Size(316, 32);
-            textBox1.TabIndex = 17;
+            txtNama.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtNama.Location = new Point(70, 125);
+            txtNama.Name = "txtNama";
+            txtNama.PlaceholderText = "Nama";
+            txtNama.Size = new Size(316, 32);
+            txtNama.TabIndex = 17;
             // 
             // label9
             // 
@@ -226,15 +226,15 @@
         private Panel panel12;
         private Panel panel13;
         private Button button4;
-        private RadioButton radioButton2;
-        private RadioButton radioButton1;
-        private TextBox textBox4;
+        private RadioButton radioPerempuan;
+        private RadioButton radioLakiLaki;
+        private TextBox txtNomorHP;
         private Label label14;
-        private TextBox textBox3;
+        private TextBox txtAsalKota;
         private Label label11;
-        private TextBox textBox2;
+        private TextBox txtAlamat;
         private Label label10;
-        private TextBox textBox1;
+        private TextBox txtNama;
         private Label label9;
         private Label label8;
     }

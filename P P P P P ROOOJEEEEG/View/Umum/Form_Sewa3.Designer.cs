@@ -36,7 +36,7 @@
             text_pathsp = new TextBox();
             label1 = new Label();
             btn_fotoktp = new Button();
-            comboBox1 = new ComboBox();
+            cmbDurasi = new ComboBox();
             panel13 = new Panel();
             button4 = new Button();
             text_pathktp = new TextBox();
@@ -58,7 +58,7 @@
             panel12.Controls.Add(text_pathsp);
             panel12.Controls.Add(label1);
             panel12.Controls.Add(btn_fotoktp);
-            panel12.Controls.Add(comboBox1);
+            panel12.Controls.Add(cmbDurasi);
             panel12.Controls.Add(panel13);
             panel12.Controls.Add(text_pathktp);
             panel12.Controls.Add(label10);
@@ -157,17 +157,17 @@
             btn_fotoktp.UseVisualStyleBackColor = false;
             btn_fotoktp.Click += btn_fotoktp_Click;
             // 
-            // comboBox1
+            // cmbDurasi
             // 
-            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox1.DropDownWidth = 200;
-            comboBox1.Font = new Font("Inter", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "3 Bulan", "6 Bulan", "9 Bulan", "12 Bulan" });
-            comboBox1.Location = new Point(70, 125);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(316, 32);
-            comboBox1.TabIndex = 27;
+            cmbDurasi.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbDurasi.DropDownWidth = 200;
+            cmbDurasi.Font = new Font("Inter", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cmbDurasi.FormattingEnabled = true;
+            cmbDurasi.Items.AddRange(new object[] { "3", "6", "9", "12" });
+            cmbDurasi.Location = new Point(70, 125);
+            cmbDurasi.Name = "cmbDurasi";
+            cmbDurasi.Size = new Size(316, 32);
+            cmbDurasi.TabIndex = 27;
             // 
             // panel13
             // 
@@ -255,7 +255,7 @@
         #endregion
 
         private Panel panel12;
-        private ComboBox comboBox1;
+        private ComboBox cmbDurasi;
         private Panel panel13;
         private Button button4;
         private TextBox text_pathktp;

@@ -18,6 +18,7 @@ namespace RUSUNAWAAA.Models
         public string AsalKota { get; set; }
         public string JenisKelamin { get; set; }
         public string NamaOrangTua { get; set; }
+        public string NIM { get; set; }
         public Penyewa() { }
         public Penyewa(string nomorktp,string username, string password, string namaLengkap,string role)
             : base(nomorktp,username, password, namaLengkap,"Penyewa")

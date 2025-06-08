@@ -61,7 +61,7 @@
             label14 = new Label();
             label7 = new Label();
             label20 = new Label();
-            linkLabel3 = new LinkLabel();
+            linkLokasiPutra = new LinkLabel();
             label11 = new Label();
             label10 = new Label();
             pictureBox6 = new PictureBox();
@@ -309,6 +309,7 @@
             linkLabel1.TabStop = true;
             linkLabel1.Text = "https://maps.app.goo.gl/W9zGeU45b4ZdYpzQ6";
             linkLabel1.UseCompatibleTextRendering = true;
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
             // label25
             // 
@@ -365,7 +366,7 @@
             panel11.Controls.Add(label14);
             panel11.Controls.Add(label7);
             panel11.Controls.Add(label20);
-            panel11.Controls.Add(linkLabel3);
+            panel11.Controls.Add(linkLokasiPutra);
             panel11.Controls.Add(label11);
             panel11.Controls.Add(label10);
             panel11.Location = new Point(23, 216);
@@ -490,21 +491,21 @@
             label20.TextAlign = ContentAlignment.MiddleLeft;
             label20.Click += label20_Click;
             // 
-            // linkLabel3
+            // linkLokasiPutra
             // 
-            linkLabel3.ActiveLinkColor = Color.DarkOrchid;
-            linkLabel3.AutoSize = true;
-            linkLabel3.Font = new Font("Inter", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            linkLabel3.LinkArea = new LinkArea(0, 60);
-            linkLabel3.LinkColor = Color.FromArgb(60, 138, 255);
-            linkLabel3.Location = new Point(60, 352);
-            linkLabel3.Name = "linkLabel3";
-            linkLabel3.Size = new Size(309, 21);
-            linkLabel3.TabIndex = 12;
-            linkLabel3.TabStop = true;
-            linkLabel3.Text = "https://maps.app.goo.gl/6akmR9Z8Py6W31Bm9";
-            linkLabel3.UseCompatibleTextRendering = true;
-            linkLabel3.LinkClicked += linkLabel3_LinkClicked;
+            linkLokasiPutra.ActiveLinkColor = Color.DarkOrchid;
+            linkLokasiPutra.AutoSize = true;
+            linkLokasiPutra.Font = new Font("Inter", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            linkLokasiPutra.LinkArea = new LinkArea(0, 60);
+            linkLokasiPutra.LinkColor = Color.FromArgb(60, 138, 255);
+            linkLokasiPutra.Location = new Point(60, 352);
+            linkLokasiPutra.Name = "linkLokasiPutra";
+            linkLokasiPutra.Size = new Size(309, 21);
+            linkLokasiPutra.TabIndex = 12;
+            linkLokasiPutra.TabStop = true;
+            linkLokasiPutra.Text = "https://maps.app.goo.gl/6akmR9Z8Py6W31Bm9";
+            linkLokasiPutra.UseCompatibleTextRendering = true;
+            linkLokasiPutra.LinkClicked += linkLabel3_LinkClicked;
             // 
             // label11
             // 
@@ -959,7 +960,7 @@
         private Panel panel10;
         private PictureBox pictureBox6;
         private Panel panel11;
-        private LinkLabel linkLabel3;
+        private LinkLabel linkLokasiPutra;
         private Label label11;
         private Label label10;
         private Label label20;

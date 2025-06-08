@@ -24,7 +24,22 @@ namespace RUSUNAWAAA.View.Umum
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            string url = (sender as LinkLabel).Text;
 
+            try
+            {
+                var processInfo = new System.Diagnostics.ProcessStartInfo
+                {
+                    FileName = url,
+                    UseShellExecute = true // Ini adalah kunci utamanya
+                };
+                System.Diagnostics.Process.Start(processInfo);
+            }
+            catch (Exception ex)
+            {
+                // Tampilkan pesan jika terjadi error
+                MessageBox.Show("Tidak dapat membuka link. Pastikan Anda terhubung ke internet. Error: " + ex.Message);
+            }
         }
 
         private void label20_Click(object sender, EventArgs e)
@@ -79,5 +94,26 @@ namespace RUSUNAWAAA.View.Umum
             tatatertibum.ShowDialog();
             this.Close();
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            string url = (sender as LinkLabel).Text;
+
+            try
+            {
+                var processInfo = new System.Diagnostics.ProcessStartInfo
+                {
+                    FileName = url,
+                    UseShellExecute = true // Ini adalah kunci utamanya
+                };
+                System.Diagnostics.Process.Start(processInfo);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Tidak dapat membuka link. Pastikan Anda terhubung ke internet. Error: " + ex.Message);
+            }
+        }
+        
     }
 }
+

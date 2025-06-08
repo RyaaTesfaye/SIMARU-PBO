@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             panel12 = new Panel();
-            textBox2 = new TextBox();
+            txtBiaya = new TextBox();
             label2 = new Label();
             label17 = new Label();
             label16 = new Label();
             label15 = new Label();
-            label14 = new Label();
+            NominalIsi = new Label();
             label13 = new Label();
             label12 = new Label();
             label11 = new Label();
@@ -43,7 +43,7 @@
             label1 = new Label();
             panel13 = new Panel();
             button4 = new Button();
-            label9 = new Label();
+            estimasibulan = new Label();
             label8 = new Label();
             panel12.SuspendLayout();
             panel13.SuspendLayout();
@@ -52,12 +52,12 @@
             // panel12
             // 
             panel12.BackColor = Color.FromArgb(23, 24, 29);
-            panel12.Controls.Add(textBox2);
+            panel12.Controls.Add(txtBiaya);
             panel12.Controls.Add(label2);
             panel12.Controls.Add(label17);
             panel12.Controls.Add(label16);
             panel12.Controls.Add(label15);
-            panel12.Controls.Add(label14);
+            panel12.Controls.Add(NominalIsi);
             panel12.Controls.Add(label13);
             panel12.Controls.Add(label12);
             panel12.Controls.Add(label11);
@@ -65,21 +65,21 @@
             panel12.Controls.Add(label3);
             panel12.Controls.Add(label1);
             panel12.Controls.Add(panel13);
-            panel12.Controls.Add(label9);
+            panel12.Controls.Add(estimasibulan);
             panel12.Controls.Add(label8);
             panel12.Location = new Point(0, 0);
             panel12.Name = "panel12";
             panel12.Size = new Size(464, 597);
             panel12.TabIndex = 4;
             // 
-            // textBox2
+            // txtBiaya
             // 
-            textBox2.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(27, 125);
-            textBox2.Name = "textBox2";
-            textBox2.ReadOnly = true;
-            textBox2.Size = new Size(325, 32);
-            textBox2.TabIndex = 56;
+            txtBiaya.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtBiaya.Location = new Point(27, 125);
+            txtBiaya.Name = "txtBiaya";
+            txtBiaya.ReadOnly = true;
+            txtBiaya.Size = new Size(359, 32);
+            txtBiaya.TabIndex = 56;
             // 
             // label2
             // 
@@ -125,16 +125,16 @@
             label15.TabIndex = 52;
             label15.Text = "Ahmad Fajarudin DZOX";
             // 
-            // label14
+            // NominalIsi
             // 
-            label14.BackColor = Color.Transparent;
-            label14.Font = new Font("Inter", 8F);
-            label14.ForeColor = Color.White;
-            label14.Location = new Point(196, 384);
-            label14.Name = "label14";
-            label14.Size = new Size(239, 24);
-            label14.TabIndex = 51;
-            label14.Text = "otomatis tergantung pilihan";
+            NominalIsi.BackColor = Color.Transparent;
+            NominalIsi.Font = new Font("Inter", 8F);
+            NominalIsi.ForeColor = Color.White;
+            NominalIsi.Location = new Point(196, 384);
+            NominalIsi.Name = "NominalIsi";
+            NominalIsi.Size = new Size(239, 24);
+            NominalIsi.TabIndex = 51;
+            NominalIsi.Text = "otomatis tergantung pilihan";
             // 
             // label13
             // 
@@ -226,16 +226,16 @@
             button4.UseVisualStyleBackColor = false;
             button4.Click += btnLanjut5_Click;
             // 
-            // label9
+            // estimasibulan
             // 
-            label9.BackColor = Color.Transparent;
-            label9.Font = new Font("Inter", 8F);
-            label9.ForeColor = Color.White;
-            label9.Location = new Point(27, 98);
-            label9.Name = "label9";
-            label9.Size = new Size(199, 24);
-            label9.TabIndex = 16;
-            label9.Text = "Estimasi Biaya untuk X Bulan Sewa";
+            estimasibulan.BackColor = Color.Transparent;
+            estimasibulan.Font = new Font("Inter", 8F);
+            estimasibulan.ForeColor = Color.White;
+            estimasibulan.Location = new Point(27, 98);
+            estimasibulan.Name = "estimasibulan";
+            estimasibulan.Size = new Size(315, 24);
+            estimasibulan.TabIndex = 16;
+            estimasibulan.Text = "Estimasi Biaya untuk X Bulan Sewa";
             // 
             // label8
             // 
@@ -266,12 +266,12 @@
         private Panel panel12;
         private Panel panel13;
         private Button button4;
-        private Label label9;
+        private Label estimasibulan;
         private Label label8;
         private Label label17;
         private Label label16;
         private Label label15;
-        private Label label14;
+        private Label NominalIsi;
         private Label label13;
         private Label label12;
         private Label label11;
@@ -279,6 +279,6 @@
         private Label label3;
         private Label label1;
         private Label label2;
-        private TextBox textBox2;
+        private TextBox txtBiaya;
     }
 }

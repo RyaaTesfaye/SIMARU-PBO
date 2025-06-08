@@ -29,69 +29,20 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Daftar_Keluhan2_Admin));
-            panel8 = new Panel();
-            panel9 = new Panel();
-            label6 = new Label();
-            label1 = new Label();
             panel15 = new Panel();
+            panel1 = new Panel();
+            button2 = new Button();
             pictureBox12 = new PictureBox();
             label25 = new Label();
             label24 = new Label();
             label23 = new Label();
             panel23 = new Panel();
             button1 = new Button();
-            panel1 = new Panel();
-            button2 = new Button();
-            panel8.SuspendLayout();
-            panel9.SuspendLayout();
             panel15.SuspendLayout();
+            panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             panel23.SuspendLayout();
-            panel1.SuspendLayout();
             SuspendLayout();
-            // 
-            // panel8
-            // 
-            panel8.Controls.Add(panel9);
-            panel8.Controls.Add(label6);
-            panel8.Dock = DockStyle.Fill;
-            panel8.Location = new Point(0, 0);
-            panel8.Name = "panel8";
-            panel8.Size = new Size(1182, 733);
-            panel8.TabIndex = 13;
-            // 
-            // panel9
-            // 
-            panel9.BackColor = Color.FromArgb(37, 39, 48);
-            panel9.Controls.Add(panel15);
-            panel9.Controls.Add(label1);
-            panel9.Location = new Point(5, 54);
-            panel9.Name = "panel9";
-            panel9.Padding = new Padding(50);
-            panel9.Size = new Size(1165, 662);
-            panel9.TabIndex = 5;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Inter", 19F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.ForeColor = Color.White;
-            label6.Location = new Point(0, 3);
-            label6.Name = "label6";
-            label6.Size = new Size(255, 45);
-            label6.TabIndex = 4;
-            label6.Text = "Daftar Keluhan";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Inter", 19F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(435, 12);
-            label1.Name = "label1";
-            label1.Size = new Size(248, 45);
-            label1.TabIndex = 5;
-            label1.Text = "Detail Keluhan";
             // 
             // panel15
             // 
@@ -102,11 +53,34 @@
             panel15.Controls.Add(label24);
             panel15.Controls.Add(label23);
             panel15.Controls.Add(panel23);
-            panel15.Location = new Point(316, 77);
+            panel15.Location = new Point(0, 0);
             panel15.Name = "panel15";
             panel15.Size = new Size(492, 556);
-            panel15.TabIndex = 6;
-            panel15.Paint += panel15_Paint;
+            panel15.TabIndex = 8;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.Transparent;
+            panel1.Controls.Add(button2);
+            panel1.Location = new Point(13, 492);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(220, 45);
+            panel1.TabIndex = 12;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.Red;
+            button2.Cursor = Cursors.Hand;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(25, 3);
+            button2.Name = "button2";
+            button2.Size = new Size(171, 39);
+            button2.TabIndex = 0;
+            button2.Text = "Tolak";
+            button2.UseVisualStyleBackColor = false;
             // 
             // pictureBox12
             // 
@@ -174,64 +148,32 @@
             button1.Text = "Tangani";
             button1.UseVisualStyleBackColor = false;
             // 
-            // panel1
-            // 
-            panel1.BackColor = Color.Transparent;
-            panel1.Controls.Add(button2);
-            panel1.Location = new Point(13, 492);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(220, 45);
-            panel1.TabIndex = 12;
-            // 
-            // button2
-            // 
-            button2.BackColor = Color.Red;
-            button2.Cursor = Cursors.Hand;
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(25, 3);
-            button2.Name = "button2";
-            button2.Size = new Size(171, 39);
-            button2.TabIndex = 0;
-            button2.Text = "Tolak";
-            button2.UseVisualStyleBackColor = false;
-            // 
             // Daftar_Keluhan2_Admin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(23, 24, 30);
-            Controls.Add(panel8);
+            Controls.Add(panel15);
             Name = "Daftar_Keluhan2_Admin";
-            Size = new Size(1182, 733);
-            panel8.ResumeLayout(false);
-            panel8.PerformLayout();
-            panel9.ResumeLayout(false);
-            panel9.PerformLayout();
+            Size = new Size(492, 556);
             panel15.ResumeLayout(false);
             panel15.PerformLayout();
+            panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             panel23.ResumeLayout(false);
-            panel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Panel panel8;
-        private Panel panel9;
-        private Label label6;
-        private Label label1;
         private Panel panel15;
+        private Panel panel1;
+        private Button button2;
         private PictureBox pictureBox12;
         private Label label25;
         private Label label24;
         private Label label23;
         private Panel panel23;
         private Button button1;
-        private Panel panel1;
-        private Button button2;
     }
 }

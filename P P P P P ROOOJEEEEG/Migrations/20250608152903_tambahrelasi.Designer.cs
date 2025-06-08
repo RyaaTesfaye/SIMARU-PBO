@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using RusunawaApp.Data;
@@ -11,9 +12,11 @@ using RusunawaApp.Data;
 namespace RUSUNAWAAA.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250608152903_tambahrelasi")]
+    partial class tambahrelasi
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -63,9 +66,8 @@ namespace RUSUNAWAAA.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("NomorKTP")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<int>("NomorKTP")
+                        .HasColumnType("integer");
 
                     b.Property<string>("PathGambar")
                         .IsRequired()
@@ -79,8 +81,6 @@ namespace RUSUNAWAAA.Migrations
                         .HasColumnType("timestamp with time zone");
 
                     b.HasKey("Id_Laporan");
-
-                    b.HasIndex("NomorKTP");
 
                     b.ToTable("Laporans");
                 });
@@ -148,9 +148,8 @@ namespace RUSUNAWAAA.Migrations
                     b.Property<decimal>("Nominal")
                         .HasColumnType("numeric");
 
-                    b.Property<string>("NomorKTP")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<int>("NomorKTP")
+                        .HasColumnType("integer");
 
                     b.Property<string>("Status")
                         .IsRequired()
@@ -160,8 +159,6 @@ namespace RUSUNAWAAA.Migrations
                         .HasColumnType("timestamp with time zone");
 
                     b.HasKey("Id_Pembayaran");
-
-                    b.HasIndex("NomorKTP");
 
                     b.ToTable("Pembayarans");
                 });
@@ -174,46 +171,14 @@ namespace RUSUNAWAAA.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id_Pengajuan"));
 
-                    b.Property<string>("AlamatAsal")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("AsalKota")
-                        .IsRequired()
-                        .HasColumnType("text");
-
                     b.Property<int>("DurasiSewa")
                         .HasColumnType("integer");
 
                     b.Property<decimal>("EstimasiBiaya")
                         .HasColumnType("numeric");
 
-                    b.Property<string>("Fakultas")
-                        .IsRequired()
-                        .HasColumnType("text");
-
                     b.Property<int>("Id_Unit")
                         .HasColumnType("integer");
-
-                    b.Property<string>("JenisKelamin")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("NIM")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("NamaLengkap")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("NamaOrangTua")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("NomorHP")
-                        .IsRequired()
-                        .HasColumnType("text");
 
                     b.Property<string>("NomorKTP")
                         .IsRequired()
@@ -235,10 +200,6 @@ namespace RUSUNAWAAA.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("Prodi")
-                        .IsRequired()
-                        .HasColumnType("text");
-
                     b.Property<string>("Status")
                         .IsRequired()
                         .HasColumnType("text");
@@ -248,7 +209,7 @@ namespace RUSUNAWAAA.Migrations
 
                     b.HasKey("Id_Pengajuan");
 
-                    b.ToTable("Pengajuans");
+                    b.ToTable("PengajuanSewas");
                 });
 
             modelBuilder.Entity("RUSUNAWAAA.Models.PerpanjanganSewa", b =>
@@ -265,9 +226,8 @@ namespace RUSUNAWAAA.Migrations
                     b.Property<decimal>("Nominal")
                         .HasColumnType("numeric");
 
-                    b.Property<string>("NomorKTP")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<int>("NomorKTP")
+                        .HasColumnType("integer");
 
                     b.Property<string>("PathBuktiPembayaran")
                         .IsRequired()
@@ -282,9 +242,7 @@ namespace RUSUNAWAAA.Migrations
 
                     b.HasKey("Id_Perpanjangan");
 
-                    b.HasIndex("NomorKTP");
-
-                    b.ToTable("Perpanjangans");
+                    b.ToTable("PerpanjanganSewas");
                 });
 
             modelBuilder.Entity("RUSUNAWAAA.Models.TataTertib", b =>
@@ -319,9 +277,8 @@ namespace RUSUNAWAAA.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("NomorKTP")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<int>("NomorKTP")
+                        .HasColumnType("integer");
 
                     b.Property<string>("PathGambar")
                         .IsRequired()
@@ -334,8 +291,6 @@ namespace RUSUNAWAAA.Migrations
                         .HasColumnType("timestamp with time zone");
 
                     b.HasKey("Id_Ulasan");
-
-                    b.HasIndex("NomorKTP");
 
                     b.ToTable("Ulasans");
                 });
@@ -448,61 +403,6 @@ namespace RUSUNAWAAA.Migrations
                         .HasColumnType("timestamp with time zone");
 
                     b.HasDiscriminator().HasValue("Penyewa");
-                });
-
-            modelBuilder.Entity("RUSUNAWAAA.Models.Laporan", b =>
-                {
-                    b.HasOne("RUSUNAWAAA.Models.User", "User")
-                        .WithMany("Laporans")
-                        .HasForeignKey("NomorKTP")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("RUSUNAWAAA.Models.Pembayaran", b =>
-                {
-                    b.HasOne("RUSUNAWAAA.Models.User", "User")
-                        .WithMany("Pembayarans")
-                        .HasForeignKey("NomorKTP")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("RUSUNAWAAA.Models.PerpanjanganSewa", b =>
-                {
-                    b.HasOne("RUSUNAWAAA.Models.User", "User")
-                        .WithMany("Perpanjangans")
-                        .HasForeignKey("NomorKTP")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("RUSUNAWAAA.Models.Ulasan", b =>
-                {
-                    b.HasOne("RUSUNAWAAA.Models.User", "User")
-                        .WithMany("Ulasans")
-                        .HasForeignKey("NomorKTP")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("RUSUNAWAAA.Models.User", b =>
-                {
-                    b.Navigation("Laporans");
-
-                    b.Navigation("Pembayarans");
-
-                    b.Navigation("Perpanjangans");
-
-                    b.Navigation("Ulasans");
                 });
 #pragma warning restore 612, 618
         }

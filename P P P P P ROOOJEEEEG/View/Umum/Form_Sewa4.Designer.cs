@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             panel12 = new Panel();
-            label19 = new Label();
+            ProdiIsi = new Label();
             label18 = new Label();
-            label17 = new Label();
-            label16 = new Label();
-            label15 = new Label();
-            label14 = new Label();
+            NamaIsi = new Label();
+            JenisKelaminIsi = new Label();
+            AlamatIsi = new Label();
+            AsalKotaIsi = new Label();
             label13 = new Label();
             label12 = new Label();
             label11 = new Label();
@@ -43,12 +43,12 @@
             label5 = new Label();
             label4 = new Label();
             label3 = new Label();
-            label2 = new Label();
-            label1 = new Label();
+            FakultasIsi = new Label();
+            NimIsi = new Label();
             panel13 = new Panel();
             button4 = new Button();
-            label10 = new Label();
-            label9 = new Label();
+            NamaOrangTuaIsi = new Label();
+            NomorHpIsi = new Label();
             label8 = new Label();
             panel12.SuspendLayout();
             panel13.SuspendLayout();
@@ -57,12 +57,12 @@
             // panel12
             // 
             panel12.BackColor = Color.FromArgb(23, 24, 29);
-            panel12.Controls.Add(label19);
+            panel12.Controls.Add(ProdiIsi);
             panel12.Controls.Add(label18);
-            panel12.Controls.Add(label17);
-            panel12.Controls.Add(label16);
-            panel12.Controls.Add(label15);
-            panel12.Controls.Add(label14);
+            panel12.Controls.Add(NamaIsi);
+            panel12.Controls.Add(JenisKelaminIsi);
+            panel12.Controls.Add(AlamatIsi);
+            panel12.Controls.Add(AsalKotaIsi);
             panel12.Controls.Add(label13);
             panel12.Controls.Add(label12);
             panel12.Controls.Add(label11);
@@ -71,27 +71,27 @@
             panel12.Controls.Add(label5);
             panel12.Controls.Add(label4);
             panel12.Controls.Add(label3);
-            panel12.Controls.Add(label2);
-            panel12.Controls.Add(label1);
+            panel12.Controls.Add(FakultasIsi);
+            panel12.Controls.Add(NimIsi);
             panel12.Controls.Add(panel13);
-            panel12.Controls.Add(label10);
-            panel12.Controls.Add(label9);
+            panel12.Controls.Add(NamaOrangTuaIsi);
+            panel12.Controls.Add(NomorHpIsi);
             panel12.Controls.Add(label8);
             panel12.Location = new Point(0, 0);
             panel12.Name = "panel12";
             panel12.Size = new Size(464, 597);
             panel12.TabIndex = 4;
             // 
-            // label19
+            // ProdiIsi
             // 
-            label19.BackColor = Color.Transparent;
-            label19.Font = new Font("Inter", 8F);
-            label19.ForeColor = Color.White;
-            label19.Location = new Point(182, 488);
-            label19.Name = "label19";
-            label19.Size = new Size(279, 24);
-            label19.TabIndex = 46;
-            label19.Text = "Unggah Foto Ktp";
+            ProdiIsi.BackColor = Color.Transparent;
+            ProdiIsi.Font = new Font("Inter", 8F);
+            ProdiIsi.ForeColor = Color.White;
+            ProdiIsi.Location = new Point(182, 491);
+            ProdiIsi.Name = "ProdiIsi";
+            ProdiIsi.Size = new Size(279, 24);
+            ProdiIsi.TabIndex = 46;
+            ProdiIsi.Text = "Unggah Foto Ktp";
             // 
             // label18
             // 
@@ -104,49 +104,49 @@
             label18.TabIndex = 45;
             label18.Text = "Prodi                           :";
             // 
-            // label17
+            // NamaIsi
             // 
-            label17.BackColor = Color.Transparent;
-            label17.Font = new Font("Inter", 8F);
-            label17.ForeColor = Color.White;
-            label17.Location = new Point(182, 88);
-            label17.Name = "label17";
-            label17.Size = new Size(279, 24);
-            label17.TabIndex = 44;
-            label17.Text = "Pilih Durasi Penyewaan";
+            NamaIsi.BackColor = Color.Transparent;
+            NamaIsi.Font = new Font("Inter", 8F);
+            NamaIsi.ForeColor = Color.White;
+            NamaIsi.Location = new Point(182, 91);
+            NamaIsi.Name = "NamaIsi";
+            NamaIsi.Size = new Size(279, 24);
+            NamaIsi.TabIndex = 44;
+            NamaIsi.Text = "Pilih Durasi Penyewaan";
             // 
-            // label16
+            // JenisKelaminIsi
             // 
-            label16.BackColor = Color.Transparent;
-            label16.Font = new Font("Inter", 8F);
-            label16.ForeColor = Color.White;
-            label16.Location = new Point(182, 138);
-            label16.Name = "label16";
-            label16.Size = new Size(279, 24);
-            label16.TabIndex = 43;
-            label16.Text = "Pilih Durasi Penyewaan";
+            JenisKelaminIsi.BackColor = Color.Transparent;
+            JenisKelaminIsi.Font = new Font("Inter", 8F);
+            JenisKelaminIsi.ForeColor = Color.White;
+            JenisKelaminIsi.Location = new Point(182, 141);
+            JenisKelaminIsi.Name = "JenisKelaminIsi";
+            JenisKelaminIsi.Size = new Size(279, 24);
+            JenisKelaminIsi.TabIndex = 43;
+            JenisKelaminIsi.Text = "Pilih Durasi Penyewaan";
             // 
-            // label15
+            // AlamatIsi
             // 
-            label15.BackColor = Color.Transparent;
-            label15.Font = new Font("Inter", 8F);
-            label15.ForeColor = Color.White;
-            label15.Location = new Point(182, 188);
-            label15.Name = "label15";
-            label15.Size = new Size(279, 24);
-            label15.TabIndex = 42;
-            label15.Text = "Pilih Durasi Penyewaan";
+            AlamatIsi.BackColor = Color.Transparent;
+            AlamatIsi.Font = new Font("Inter", 8F);
+            AlamatIsi.ForeColor = Color.White;
+            AlamatIsi.Location = new Point(182, 191);
+            AlamatIsi.Name = "AlamatIsi";
+            AlamatIsi.Size = new Size(279, 24);
+            AlamatIsi.TabIndex = 42;
+            AlamatIsi.Text = "Pilih Durasi Penyewaan";
             // 
-            // label14
+            // AsalKotaIsi
             // 
-            label14.BackColor = Color.Transparent;
-            label14.Font = new Font("Inter", 8F);
-            label14.ForeColor = Color.White;
-            label14.Location = new Point(182, 238);
-            label14.Name = "label14";
-            label14.Size = new Size(279, 24);
-            label14.TabIndex = 41;
-            label14.Text = "Pilih Durasi Penyewaan";
+            AsalKotaIsi.BackColor = Color.Transparent;
+            AsalKotaIsi.Font = new Font("Inter", 8F);
+            AsalKotaIsi.ForeColor = Color.White;
+            AsalKotaIsi.Location = new Point(182, 241);
+            AsalKotaIsi.Name = "AsalKotaIsi";
+            AsalKotaIsi.Size = new Size(279, 24);
+            AsalKotaIsi.TabIndex = 41;
+            AsalKotaIsi.Text = "Pilih Durasi Penyewaan";
             // 
             // label13
             // 
@@ -236,27 +236,27 @@
             label3.TabIndex = 33;
             label3.Text = "Nama                         :";
             // 
-            // label2
+            // FakultasIsi
             // 
-            label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Inter", 8F);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(182, 443);
-            label2.Name = "label2";
-            label2.Size = new Size(279, 24);
-            label2.TabIndex = 32;
-            label2.Text = "Unggah Foto Ktp";
+            FakultasIsi.BackColor = Color.Transparent;
+            FakultasIsi.Font = new Font("Inter", 8F);
+            FakultasIsi.ForeColor = Color.White;
+            FakultasIsi.Location = new Point(182, 446);
+            FakultasIsi.Name = "FakultasIsi";
+            FakultasIsi.Size = new Size(279, 24);
+            FakultasIsi.TabIndex = 32;
+            FakultasIsi.Text = "Unggah Foto Ktp";
             // 
-            // label1
+            // NimIsi
             // 
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Inter", 8F);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(182, 388);
-            label1.Name = "label1";
-            label1.Size = new Size(279, 24);
-            label1.TabIndex = 29;
-            label1.Text = "Unggah Foto Ktp";
+            NimIsi.BackColor = Color.Transparent;
+            NimIsi.Font = new Font("Inter", 8F);
+            NimIsi.ForeColor = Color.White;
+            NimIsi.Location = new Point(182, 391);
+            NimIsi.Name = "NimIsi";
+            NimIsi.Size = new Size(279, 24);
+            NimIsi.TabIndex = 29;
+            NimIsi.Text = "Unggah Foto Ktp";
             // 
             // panel13
             // 
@@ -282,27 +282,27 @@
             button4.UseVisualStyleBackColor = false;
             button4.Click += btnLanjut4_Click;
             // 
-            // label10
+            // NamaOrangTuaIsi
             // 
-            label10.BackColor = Color.Transparent;
-            label10.Font = new Font("Inter", 8F);
-            label10.ForeColor = Color.White;
-            label10.Location = new Point(182, 338);
-            label10.Name = "label10";
-            label10.Size = new Size(279, 24);
-            label10.TabIndex = 18;
-            label10.Text = "Unggah Foto Ktp";
+            NamaOrangTuaIsi.BackColor = Color.Transparent;
+            NamaOrangTuaIsi.Font = new Font("Inter", 8F);
+            NamaOrangTuaIsi.ForeColor = Color.White;
+            NamaOrangTuaIsi.Location = new Point(182, 341);
+            NamaOrangTuaIsi.Name = "NamaOrangTuaIsi";
+            NamaOrangTuaIsi.Size = new Size(279, 24);
+            NamaOrangTuaIsi.TabIndex = 18;
+            NamaOrangTuaIsi.Text = "Unggah Foto Ktp";
             // 
-            // label9
+            // NomorHpIsi
             // 
-            label9.BackColor = Color.Transparent;
-            label9.Font = new Font("Inter", 8F);
-            label9.ForeColor = Color.White;
-            label9.Location = new Point(182, 288);
-            label9.Name = "label9";
-            label9.Size = new Size(279, 24);
-            label9.TabIndex = 16;
-            label9.Text = "Pilih Durasi Penyewaan";
+            NomorHpIsi.BackColor = Color.Transparent;
+            NomorHpIsi.Font = new Font("Inter", 8F);
+            NomorHpIsi.ForeColor = Color.White;
+            NomorHpIsi.Location = new Point(182, 291);
+            NomorHpIsi.Name = "NomorHpIsi";
+            NomorHpIsi.Size = new Size(279, 24);
+            NomorHpIsi.TabIndex = 16;
+            NomorHpIsi.Text = "Pilih Durasi Penyewaan";
             // 
             // label8
             // 
@@ -331,17 +331,17 @@
         #endregion
 
         private Panel panel12;
-        private Label label2;
-        private Label label1;
+        private Label FakultasIsi;
+        private Label NimIsi;
         private Panel panel13;
         private Button button4;
-        private Label label10;
-        private Label label9;
+        private Label NamaOrangTuaIsi;
+        private Label NomorHpIsi;
         private Label label8;
-        private Label label17;
-        private Label label16;
-        private Label label15;
-        private Label label14;
+        private Label NamaIsi;
+        private Label JenisKelaminIsi;
+        private Label AlamatIsi;
+        private Label AsalKotaIsi;
         private Label label13;
         private Label label12;
         private Label label11;
@@ -350,7 +350,7 @@
         private Label label5;
         private Label label4;
         private Label label3;
-        private Label label19;
+        private Label ProdiIsi;
         private Label label18;
     }
 }
