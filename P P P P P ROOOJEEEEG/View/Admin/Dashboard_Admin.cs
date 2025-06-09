@@ -99,10 +99,8 @@ namespace RUSUNAWAAA.View.Admin
 
         private void ToKelolaAturan_AD(object sender, EventArgs e)
         {
-            this.Hide();
-            Kelola_Aturan_Admin kelolaaturanad = new Kelola_Aturan_Admin();
-            kelolaaturanad.ShowDialog();
-            this.Close();
+            var command = new NavigateToFormCommand<Kelola_Aturan_Admin>(this);
+            command.Execute();
         }
 
         private void ToManajemenSewa_AD(object sender, EventArgs e)
