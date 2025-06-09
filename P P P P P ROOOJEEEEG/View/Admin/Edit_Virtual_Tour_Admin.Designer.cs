@@ -78,6 +78,24 @@
             panel8 = new Panel();
             panel9 = new Panel();
             label6 = new Label();
+            panel11 = new Panel();
+            flowLayoutPanelPengajuan = new FlowLayoutPanel();
+            btnNextPage = new PictureBox();
+            btnPrevPage = new PictureBox();
+            lblInfoHalaman = new Label();
+            panel12 = new Panel();
+            panel13 = new Panel();
+            label15 = new Label();
+            label14 = new Label();
+            label11 = new Label();
+            label10 = new Label();
+            label9 = new Label();
+            label8 = new Label();
+            label17 = new Label();
+            label18 = new Label();
+            label19 = new Label();
+            label20 = new Label();
+            btn_tambah = new PictureBox();
             panel1.SuspendLayout();
             panel33.SuspendLayout();
             panel34.SuspendLayout();
@@ -110,6 +128,11 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel8.SuspendLayout();
+            panel9.SuspendLayout();
+            panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)btnNextPage).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnPrevPage).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btn_tambah).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -658,6 +681,8 @@
             // panel9
             // 
             panel9.BackColor = Color.FromArgb(37, 39, 48);
+            panel9.Controls.Add(btn_tambah);
+            panel9.Controls.Add(panel11);
             panel9.Location = new Point(5, 54);
             panel9.Name = "panel9";
             panel9.Padding = new Padding(50);
@@ -671,9 +696,209 @@
             label6.ForeColor = Color.White;
             label6.Location = new Point(0, 3);
             label6.Name = "label6";
-            label6.Size = new Size(306, 45);
+            label6.Size = new Size(275, 45);
             label6.TabIndex = 4;
-            label6.Text = "Pengelolaan Akun";
+            label6.Text = "Edit Virtual Tour";
+            // 
+            // panel11
+            // 
+            panel11.BackColor = Color.FromArgb(23, 24, 30);
+            panel11.Controls.Add(label17);
+            panel11.Controls.Add(label18);
+            panel11.Controls.Add(label19);
+            panel11.Controls.Add(label20);
+            panel11.Controls.Add(flowLayoutPanelPengajuan);
+            panel11.Controls.Add(btnNextPage);
+            panel11.Controls.Add(btnPrevPage);
+            panel11.Controls.Add(lblInfoHalaman);
+            panel11.Controls.Add(panel12);
+            panel11.Controls.Add(panel13);
+            panel11.Controls.Add(label15);
+            panel11.Controls.Add(label14);
+            panel11.Controls.Add(label11);
+            panel11.Controls.Add(label10);
+            panel11.Controls.Add(label9);
+            panel11.Controls.Add(label8);
+            panel11.Location = new Point(1, 64);
+            panel11.Name = "panel11";
+            panel11.Padding = new Padding(50);
+            panel11.Size = new Size(1149, 589);
+            panel11.TabIndex = 7;
+            // 
+            // flowLayoutPanelPengajuan
+            // 
+            flowLayoutPanelPengajuan.Location = new Point(0, 43);
+            flowLayoutPanelPengajuan.Name = "flowLayoutPanelPengajuan";
+            flowLayoutPanelPengajuan.Size = new Size(1146, 490);
+            flowLayoutPanelPengajuan.TabIndex = 44;
+            // 
+            // btnNextPage
+            // 
+            btnNextPage.Image = Properties.Resources.star;
+            btnNextPage.Location = new Point(1089, 551);
+            btnNextPage.Name = "btnNextPage";
+            btnNextPage.Size = new Size(25, 25);
+            btnNextPage.SizeMode = PictureBoxSizeMode.StretchImage;
+            btnNextPage.TabIndex = 43;
+            btnNextPage.TabStop = false;
+            // 
+            // btnPrevPage
+            // 
+            btnPrevPage.Image = Properties.Resources.star;
+            btnPrevPage.Location = new Point(1023, 551);
+            btnPrevPage.Name = "btnPrevPage";
+            btnPrevPage.Size = new Size(25, 25);
+            btnPrevPage.SizeMode = PictureBoxSizeMode.StretchImage;
+            btnPrevPage.TabIndex = 42;
+            btnPrevPage.TabStop = false;
+            // 
+            // lblInfoHalaman
+            // 
+            lblInfoHalaman.AutoSize = true;
+            lblInfoHalaman.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblInfoHalaman.ForeColor = Color.White;
+            lblInfoHalaman.Location = new Point(73, 602);
+            lblInfoHalaman.Name = "lblInfoHalaman";
+            lblInfoHalaman.Size = new Size(146, 24);
+            lblInfoHalaman.TabIndex = 27;
+            lblInfoHalaman.Text = "Halaman 5 dari 7";
+            // 
+            // panel12
+            // 
+            panel12.BackColor = Color.FromArgb(139, 140, 142);
+            panel12.Location = new Point(0, 533);
+            panel12.Name = "panel12";
+            panel12.Size = new Size(1149, 3);
+            panel12.TabIndex = 26;
+            // 
+            // panel13
+            // 
+            panel13.BackColor = Color.FromArgb(139, 140, 142);
+            panel13.Location = new Point(0, 40);
+            panel13.Name = "panel13";
+            panel13.Size = new Size(1149, 3);
+            panel13.TabIndex = 18;
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label15.ForeColor = Color.FromArgb(139, 140, 142);
+            label15.Location = new Point(871, 58);
+            label15.Name = "label15";
+            label15.Size = new Size(166, 24);
+            label15.TabIndex = 17;
+            label15.Text = "Tanggal Pengajuan";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label14.ForeColor = Color.FromArgb(139, 140, 142);
+            label14.Location = new Point(716, 58);
+            label14.Name = "label14";
+            label14.Size = new Size(111, 24);
+            label14.TabIndex = 16;
+            label14.Text = "Durasi Sewa";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label11.ForeColor = Color.FromArgb(139, 140, 142);
+            label11.Location = new Point(547, 60);
+            label11.Name = "label11";
+            label11.Size = new Size(79, 24);
+            label11.TabIndex = 15;
+            label11.Text = "Fakultas";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label10.ForeColor = Color.FromArgb(139, 140, 142);
+            label10.Location = new Point(376, 60);
+            label10.Name = "label10";
+            label10.Size = new Size(93, 24);
+            label10.TabIndex = 14;
+            label10.Text = "Nomor HP";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.ForeColor = Color.FromArgb(139, 140, 142);
+            label9.Location = new Point(158, 60);
+            label9.Name = "label9";
+            label9.Size = new Size(134, 24);
+            label9.TabIndex = 13;
+            label9.Text = "Nama Lengkap";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.ForeColor = Color.FromArgb(139, 140, 142);
+            label8.Location = new Point(73, 60);
+            label8.Name = "label8";
+            label8.Size = new Size(27, 24);
+            label8.TabIndex = 12;
+            label8.Text = "ID";
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label17.ForeColor = Color.FromArgb(139, 140, 142);
+            label17.Location = new Point(754, 13);
+            label17.Name = "label17";
+            label17.Size = new Size(105, 24);
+            label17.TabIndex = 48;
+            label17.Text = "Keterangan";
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label18.ForeColor = Color.FromArgb(139, 140, 142);
+            label18.Location = new Point(443, 16);
+            label18.Name = "label18";
+            label18.Size = new Size(102, 24);
+            label18.TabIndex = 47;
+            label18.Text = "Path Media";
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label19.ForeColor = Color.FromArgb(139, 140, 142);
+            label19.Location = new Point(190, 13);
+            label19.Name = "label19";
+            label19.Size = new Size(90, 24);
+            label19.TabIndex = 46;
+            label19.Text = "Nama File";
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label20.ForeColor = Color.FromArgb(139, 140, 142);
+            label20.Location = new Point(96, 13);
+            label20.Name = "label20";
+            label20.Size = new Size(27, 24);
+            label20.TabIndex = 45;
+            label20.Text = "ID";
+            // 
+            // btn_tambah
+            // 
+            btn_tambah.Cursor = Cursors.Hand;
+            btn_tambah.Image = (Image)resources.GetObject("btn_tambah.Image");
+            btn_tambah.Location = new Point(1090, 11);
+            btn_tambah.Name = "btn_tambah";
+            btn_tambah.Size = new Size(48, 48);
+            btn_tambah.SizeMode = PictureBoxSizeMode.StretchImage;
+            btn_tambah.TabIndex = 8;
+            btn_tambah.TabStop = false;
             // 
             // Edit_Virtual_Tour_Admin
             // 
@@ -733,6 +958,12 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             panel8.ResumeLayout(false);
             panel8.PerformLayout();
+            panel9.ResumeLayout(false);
+            panel11.ResumeLayout(false);
+            panel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)btnNextPage).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnPrevPage).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btn_tambah).EndInit();
             ResumeLayout(false);
         }
 
@@ -787,5 +1018,23 @@
         private Panel panel9;
         private Label label6;
         private Panel panel28;
+        private Panel panel11;
+        private FlowLayoutPanel flowLayoutPanelPengajuan;
+        private PictureBox btnNextPage;
+        private PictureBox btnPrevPage;
+        private Label lblInfoHalaman;
+        private Panel panel12;
+        private Panel panel13;
+        private Label label15;
+        private Label label14;
+        private Label label11;
+        private Label label10;
+        private Label label9;
+        private Label label8;
+        private Label label17;
+        private Label label18;
+        private Label label19;
+        private Label label20;
+        private PictureBox btn_tambah;
     }
 }
