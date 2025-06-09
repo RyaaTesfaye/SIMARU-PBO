@@ -47,6 +47,7 @@
             label4 = new Label();
             pictureBox4 = new PictureBox();
             panel3 = new Panel();
+            panel6 = new Panel();
             label3 = new Label();
             pictureBox2 = new PictureBox();
             panel2 = new Panel();
@@ -59,8 +60,31 @@
             pictureBox6 = new PictureBox();
             panel8 = new Panel();
             panel9 = new Panel();
-            label6 = new Label();
-            panel6 = new Panel();
+            panel12 = new Panel();
+            panel13 = new Panel();
+            pictureBox15 = new PictureBox();
+            pictureBox17 = new PictureBox();
+            pictureBox18 = new PictureBox();
+            pictureBox19 = new PictureBox();
+            pictureBox20 = new PictureBox();
+            label20 = new Label();
+            pictureBox21 = new PictureBox();
+            label23 = new Label();
+            label24 = new Label();
+            panel27 = new Panel();
+            pictureBox12 = new PictureBox();
+            pictureBox13 = new PictureBox();
+            pictureBox14 = new PictureBox();
+            pictureBox22 = new PictureBox();
+            pictureBox23 = new PictureBox();
+            label19 = new Label();
+            pictureBox24 = new PictureBox();
+            label21 = new Label();
+            label22 = new Label();
+            label18 = new Label();
+            label17 = new Label();
+            label9 = new Label();
+            label8 = new Label();
             panel10 = new Panel();
             panel15 = new Panel();
             panel16 = new Panel();
@@ -92,31 +116,7 @@
             progressbar1 = new Panel();
             label16 = new Label();
             label14 = new Label();
-            panel12 = new Panel();
-            panel13 = new Panel();
-            pictureBox15 = new PictureBox();
-            pictureBox17 = new PictureBox();
-            pictureBox18 = new PictureBox();
-            pictureBox19 = new PictureBox();
-            pictureBox20 = new PictureBox();
-            label20 = new Label();
-            pictureBox21 = new PictureBox();
-            label23 = new Label();
-            label24 = new Label();
-            panel27 = new Panel();
-            pictureBox12 = new PictureBox();
-            pictureBox13 = new PictureBox();
-            pictureBox14 = new PictureBox();
-            pictureBox22 = new PictureBox();
-            pictureBox23 = new PictureBox();
-            label19 = new Label();
-            pictureBox24 = new PictureBox();
-            label21 = new Label();
-            label22 = new Label();
-            label18 = new Label();
-            label17 = new Label();
-            label9 = new Label();
-            label8 = new Label();
+            label6 = new Label();
             panel1.SuspendLayout();
             panel29.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
@@ -139,16 +139,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel8.SuspendLayout();
             panel9.SuspendLayout();
-            panel10.SuspendLayout();
-            panel15.SuspendLayout();
-            panel16.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
-            panel11.SuspendLayout();
-            panel25.SuspendLayout();
-            panel23.SuspendLayout();
-            panel19.SuspendLayout();
-            panel17.SuspendLayout();
-            panel14.SuspendLayout();
             panel12.SuspendLayout();
             panel13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox15).BeginInit();
@@ -164,6 +154,16 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox22).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox23).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox24).BeginInit();
+            panel10.SuspendLayout();
+            panel15.SuspendLayout();
+            panel16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
+            panel11.SuspendLayout();
+            panel25.SuspendLayout();
+            panel23.SuspendLayout();
+            panel19.SuspendLayout();
+            panel17.SuspendLayout();
+            panel14.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -193,6 +193,7 @@
             panel29.Name = "panel29";
             panel29.Size = new Size(240, 50);
             panel29.TabIndex = 8;
+            panel29.Click += ToPerpanjanganSewa_PE;
             // 
             // label26
             // 
@@ -204,6 +205,7 @@
             label26.Size = new Size(177, 24);
             label26.TabIndex = 4;
             label26.Text = "Perpanjangan Sewa";
+            label26.Click += ToPerpanjanganSewa_PE;
             // 
             // pictureBox16
             // 
@@ -214,6 +216,7 @@
             pictureBox16.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox16.TabIndex = 2;
             pictureBox16.TabStop = false;
+            pictureBox16.Click += ToPerpanjanganSewa_PE;
             // 
             // panel22
             // 
@@ -225,6 +228,7 @@
             panel22.Name = "panel22";
             panel22.Size = new Size(240, 50);
             panel22.TabIndex = 7;
+            panel22.Click += ToRiwayatLaporan_PE;
             // 
             // label13
             // 
@@ -236,6 +240,7 @@
             label13.Size = new Size(186, 24);
             label13.TabIndex = 4;
             label13.Text = "Riwayat Pembayaran";
+            label13.Click += ToRiwayatLaporan_PE;
             // 
             // pictureBox10
             // 
@@ -246,6 +251,7 @@
             pictureBox10.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox10.TabIndex = 2;
             pictureBox10.TabStop = false;
+            pictureBox10.Click += ToRiwayatLaporan_PE;
             // 
             // panel21
             // 
@@ -257,6 +263,7 @@
             panel21.Name = "panel21";
             panel21.Size = new Size(240, 50);
             panel21.TabIndex = 6;
+            panel21.Click += ToRiwayatLaporan_PE;
             // 
             // label12
             // 
@@ -268,6 +275,7 @@
             label12.Size = new Size(149, 24);
             label12.TabIndex = 4;
             label12.Text = "Riwayat Laporan";
+            label12.Click += ToRiwayatLaporan_PE;
             // 
             // pictureBox1
             // 
@@ -278,16 +286,18 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += ToRiwayatLaporan_PE;
             // 
             // pictureBox9
             // 
-            pictureBox9.Image = Properties.Resources.Icon;
+            pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
             pictureBox9.Location = new Point(10, 8);
             pictureBox9.Name = "pictureBox9";
             pictureBox9.Size = new Size(35, 35);
             pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox9.TabIndex = 5;
             pictureBox9.TabStop = false;
+            pictureBox9.Click += ToDashboard_PE;
             // 
             // panel5
             // 
@@ -299,6 +309,7 @@
             panel5.Name = "panel5";
             panel5.Size = new Size(240, 50);
             panel5.TabIndex = 3;
+            panel5.Click += ToLaporMasalah_PE;
             // 
             // label5
             // 
@@ -310,6 +321,7 @@
             label5.Size = new Size(134, 24);
             label5.TabIndex = 4;
             label5.Text = "Lapor Masalah";
+            label5.Click += ToLaporMasalah_PE;
             // 
             // pictureBox5
             // 
@@ -320,6 +332,7 @@
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox5.TabIndex = 2;
             pictureBox5.TabStop = false;
+            pictureBox5.Click += ToLaporMasalah_PE;
             // 
             // panel4
             // 
@@ -331,6 +344,7 @@
             panel4.Name = "panel4";
             panel4.Size = new Size(240, 50);
             panel4.TabIndex = 3;
+            panel4.Click += ToTataTertib_PE;
             // 
             // label4
             // 
@@ -342,6 +356,7 @@
             label4.Size = new Size(191, 24);
             label4.TabIndex = 4;
             label4.Text = "Tata Tertib Rusunawa";
+            label4.Click += ToTataTertib_PE;
             // 
             // pictureBox4
             // 
@@ -352,6 +367,7 @@
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 2;
             pictureBox4.TabStop = false;
+            pictureBox4.Click += ToTataTertib_PE;
             // 
             // panel3
             // 
@@ -364,6 +380,14 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(240, 50);
             panel3.TabIndex = 3;
+            // 
+            // panel6
+            // 
+            panel6.BackColor = Color.White;
+            panel6.Location = new Point(-1, 0);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(4, 50);
+            panel6.TabIndex = 5;
             // 
             // label3
             // 
@@ -395,6 +419,7 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(240, 50);
             panel2.TabIndex = 2;
+            panel2.Click += ToDashboard_PE;
             // 
             // label2
             // 
@@ -406,6 +431,7 @@
             label2.Size = new Size(99, 24);
             label2.TabIndex = 3;
             label2.Text = "Ringkasan";
+            label2.Click += ToDashboard_PE;
             // 
             // pictureBox3
             // 
@@ -416,6 +442,7 @@
             pictureBox3.Size = new Size(25, 25);
             pictureBox3.TabIndex = 2;
             pictureBox3.TabStop = false;
+            pictureBox3.Click += ToDashboard_PE;
             // 
             // label1
             // 
@@ -424,10 +451,11 @@
             label1.ForeColor = Color.White;
             label1.Location = new Point(43, 6);
             label1.Name = "label1";
-            label1.Size = new Size(172, 43);
+            label1.Size = new Size(139, 43);
             label1.TabIndex = 0;
-            label1.Text = "RUSAKITA";
+            label1.Text = "SIMARU";
             label1.TextAlign = ContentAlignment.MiddleCenter;
+            label1.Click += ToDashboard_PE;
             // 
             // panel7
             // 
@@ -496,24 +524,290 @@
             panel9.Size = new Size(1165, 662);
             panel9.TabIndex = 5;
             // 
-            // label6
+            // panel12
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Inter", 19F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.ForeColor = Color.White;
-            label6.Location = new Point(0, 3);
-            label6.Name = "label6";
-            label6.Size = new Size(198, 45);
-            label6.TabIndex = 4;
-            label6.Text = "Beri Ulasan";
+            panel12.BackColor = Color.FromArgb(23, 24, 30);
+            panel12.Controls.Add(panel13);
+            panel12.Controls.Add(panel27);
+            panel12.Controls.Add(label18);
+            panel12.Controls.Add(label17);
+            panel12.Controls.Add(label9);
+            panel12.Controls.Add(label8);
+            panel12.Location = new Point(593, 28);
+            panel12.Name = "panel12";
+            panel12.Size = new Size(548, 607);
+            panel12.TabIndex = 13;
             // 
-            // panel6
+            // panel13
             // 
-            panel6.BackColor = Color.White;
-            panel6.Location = new Point(-1, 0);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(4, 50);
-            panel6.TabIndex = 5;
+            panel13.BackColor = Color.FromArgb(37, 39, 48);
+            panel13.Controls.Add(pictureBox15);
+            panel13.Controls.Add(pictureBox17);
+            panel13.Controls.Add(pictureBox18);
+            panel13.Controls.Add(pictureBox19);
+            panel13.Controls.Add(pictureBox20);
+            panel13.Controls.Add(label20);
+            panel13.Controls.Add(pictureBox21);
+            panel13.Controls.Add(label23);
+            panel13.Controls.Add(label24);
+            panel13.Location = new Point(31, 426);
+            panel13.Name = "panel13";
+            panel13.Size = new Size(486, 160);
+            panel13.TabIndex = 26;
+            // 
+            // pictureBox15
+            // 
+            pictureBox15.Image = Properties.Resources.star_kosong1;
+            pictureBox15.Location = new Point(180, 44);
+            pictureBox15.Name = "pictureBox15";
+            pictureBox15.Size = new Size(20, 20);
+            pictureBox15.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox15.TabIndex = 28;
+            pictureBox15.TabStop = false;
+            // 
+            // pictureBox17
+            // 
+            pictureBox17.Image = Properties.Resources.star_kosong1;
+            pictureBox17.Location = new Point(155, 44);
+            pictureBox17.Name = "pictureBox17";
+            pictureBox17.Size = new Size(20, 20);
+            pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox17.TabIndex = 27;
+            pictureBox17.TabStop = false;
+            // 
+            // pictureBox18
+            // 
+            pictureBox18.Image = Properties.Resources.star_kosong1;
+            pictureBox18.Location = new Point(130, 44);
+            pictureBox18.Name = "pictureBox18";
+            pictureBox18.Size = new Size(20, 20);
+            pictureBox18.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox18.TabIndex = 26;
+            pictureBox18.TabStop = false;
+            // 
+            // pictureBox19
+            // 
+            pictureBox19.Image = Properties.Resources.star_kosong1;
+            pictureBox19.Location = new Point(105, 44);
+            pictureBox19.Name = "pictureBox19";
+            pictureBox19.Size = new Size(20, 20);
+            pictureBox19.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox19.TabIndex = 25;
+            pictureBox19.TabStop = false;
+            // 
+            // pictureBox20
+            // 
+            pictureBox20.Image = Properties.Resources.star_kosong1;
+            pictureBox20.Location = new Point(80, 44);
+            pictureBox20.Name = "pictureBox20";
+            pictureBox20.Size = new Size(20, 20);
+            pictureBox20.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox20.TabIndex = 24;
+            pictureBox20.TabStop = false;
+            // 
+            // label20
+            // 
+            label20.BackColor = Color.Transparent;
+            label20.Font = new Font("Inter", 7F);
+            label20.ForeColor = Color.White;
+            label20.Location = new Point(386, 15);
+            label20.Name = "label20";
+            label20.Size = new Size(97, 22);
+            label20.TabIndex = 23;
+            label20.Text = "10 Mei 2025";
+            label20.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox21
+            // 
+            pictureBox21.BackColor = Color.Transparent;
+            pictureBox21.Image = Properties.Resources.IKON_TOL;
+            pictureBox21.Location = new Point(24, 14);
+            pictureBox21.Name = "pictureBox21";
+            pictureBox21.Size = new Size(50, 50);
+            pictureBox21.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox21.TabIndex = 21;
+            pictureBox21.TabStop = false;
+            // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Font = new Font("Inter", 10F, FontStyle.Bold);
+            label23.ForeColor = Color.White;
+            label23.Location = new Point(75, 18);
+            label23.Name = "label23";
+            label23.Size = new Size(121, 24);
+            label23.TabIndex = 15;
+            label23.Text = "Khosyatullah";
+            // 
+            // label24
+            // 
+            label24.BackColor = Color.Transparent;
+            label24.Font = new Font("Inter", 7F);
+            label24.ForeColor = Color.White;
+            label24.Location = new Point(24, 68);
+            label24.Name = "label24";
+            label24.Size = new Size(455, 99);
+            label24.TabIndex = 14;
+            label24.Text = resources.GetString("label24.Text");
+            // 
+            // panel27
+            // 
+            panel27.BackColor = Color.FromArgb(37, 39, 48);
+            panel27.Controls.Add(pictureBox12);
+            panel27.Controls.Add(pictureBox13);
+            panel27.Controls.Add(pictureBox14);
+            panel27.Controls.Add(pictureBox22);
+            panel27.Controls.Add(pictureBox23);
+            panel27.Controls.Add(label19);
+            panel27.Controls.Add(pictureBox24);
+            panel27.Controls.Add(label21);
+            panel27.Controls.Add(label22);
+            panel27.Location = new Point(31, 239);
+            panel27.Name = "panel27";
+            panel27.Size = new Size(486, 160);
+            panel27.TabIndex = 25;
+            // 
+            // pictureBox12
+            // 
+            pictureBox12.Image = Properties.Resources.star_kosong1;
+            pictureBox12.Location = new Point(180, 44);
+            pictureBox12.Name = "pictureBox12";
+            pictureBox12.Size = new Size(20, 20);
+            pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox12.TabIndex = 28;
+            pictureBox12.TabStop = false;
+            // 
+            // pictureBox13
+            // 
+            pictureBox13.Image = Properties.Resources.star_kosong1;
+            pictureBox13.Location = new Point(155, 44);
+            pictureBox13.Name = "pictureBox13";
+            pictureBox13.Size = new Size(20, 20);
+            pictureBox13.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox13.TabIndex = 27;
+            pictureBox13.TabStop = false;
+            // 
+            // pictureBox14
+            // 
+            pictureBox14.Image = Properties.Resources.star_kosong1;
+            pictureBox14.Location = new Point(130, 44);
+            pictureBox14.Name = "pictureBox14";
+            pictureBox14.Size = new Size(20, 20);
+            pictureBox14.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox14.TabIndex = 26;
+            pictureBox14.TabStop = false;
+            // 
+            // pictureBox22
+            // 
+            pictureBox22.Image = Properties.Resources.star_kosong1;
+            pictureBox22.Location = new Point(105, 44);
+            pictureBox22.Name = "pictureBox22";
+            pictureBox22.Size = new Size(20, 20);
+            pictureBox22.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox22.TabIndex = 25;
+            pictureBox22.TabStop = false;
+            // 
+            // pictureBox23
+            // 
+            pictureBox23.Image = Properties.Resources.star_kosong1;
+            pictureBox23.Location = new Point(80, 44);
+            pictureBox23.Name = "pictureBox23";
+            pictureBox23.Size = new Size(20, 20);
+            pictureBox23.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox23.TabIndex = 24;
+            pictureBox23.TabStop = false;
+            // 
+            // label19
+            // 
+            label19.BackColor = Color.Transparent;
+            label19.Font = new Font("Inter", 7F);
+            label19.ForeColor = Color.White;
+            label19.Location = new Point(386, 15);
+            label19.Name = "label19";
+            label19.Size = new Size(97, 22);
+            label19.TabIndex = 23;
+            label19.Text = "10 Mei 2025";
+            label19.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox24
+            // 
+            pictureBox24.BackColor = Color.Transparent;
+            pictureBox24.Image = Properties.Resources.IKON_TOL;
+            pictureBox24.Location = new Point(24, 14);
+            pictureBox24.Name = "pictureBox24";
+            pictureBox24.Size = new Size(50, 50);
+            pictureBox24.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox24.TabIndex = 21;
+            pictureBox24.TabStop = false;
+            // 
+            // label21
+            // 
+            label21.AutoSize = true;
+            label21.Font = new Font("Inter", 10F, FontStyle.Bold);
+            label21.ForeColor = Color.White;
+            label21.Location = new Point(75, 18);
+            label21.Name = "label21";
+            label21.Size = new Size(121, 24);
+            label21.TabIndex = 15;
+            label21.Text = "Khosyatullah";
+            // 
+            // label22
+            // 
+            label22.BackColor = Color.Transparent;
+            label22.Font = new Font("Inter", 7F);
+            label22.ForeColor = Color.White;
+            label22.Location = new Point(24, 68);
+            label22.Name = "label22";
+            label22.Size = new Size(455, 99);
+            label22.TabIndex = 14;
+            label22.Text = resources.GetString("label22.Text");
+            // 
+            // label18
+            // 
+            label18.BackColor = Color.Transparent;
+            label18.Font = new Font("Inter", 9F);
+            label18.ForeColor = Color.White;
+            label18.Location = new Point(16, 180);
+            label18.Name = "label18";
+            label18.Size = new Size(231, 36);
+            label18.TabIndex = 24;
+            label18.Text = "2.000+ ulasan dari penghuni ";
+            label18.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label17
+            // 
+            label17.BackColor = Color.Transparent;
+            label17.Font = new Font("Inter", 9F);
+            label17.ForeColor = Color.White;
+            label17.Location = new Point(332, 186);
+            label17.Name = "label17";
+            label17.Size = new Size(163, 25);
+            label17.TabIndex = 23;
+            label17.Text = "Lihat Semua Ulasan >";
+            label17.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label9
+            // 
+            label9.BackColor = Color.Transparent;
+            label9.Font = new Font("Inter", 9F);
+            label9.ForeColor = Color.White;
+            label9.Location = new Point(31, 73);
+            label9.Name = "label9";
+            label9.Size = new Size(479, 77);
+            label9.TabIndex = 22;
+            label9.Text = "“Temukan pendapat asli para penghuni mengenai kenyamanan, fasilitas, dan layanan di Rusunawa Universitas Jember.”";
+            label9.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Inter", 19F, FontStyle.Bold);
+            label8.ForeColor = Color.White;
+            label8.Location = new Point(146, 17);
+            label8.Name = "label8";
+            label8.Size = new Size(260, 45);
+            label8.TabIndex = 16;
+            label8.Text = "Ulasan Terbaru";
             // 
             // panel10
             // 
@@ -855,290 +1149,16 @@
             label14.TabIndex = 20;
             label14.Text = "Detail Skor";
             // 
-            // panel12
+            // label6
             // 
-            panel12.BackColor = Color.FromArgb(23, 24, 30);
-            panel12.Controls.Add(panel13);
-            panel12.Controls.Add(panel27);
-            panel12.Controls.Add(label18);
-            panel12.Controls.Add(label17);
-            panel12.Controls.Add(label9);
-            panel12.Controls.Add(label8);
-            panel12.Location = new Point(593, 28);
-            panel12.Name = "panel12";
-            panel12.Size = new Size(548, 607);
-            panel12.TabIndex = 13;
-            // 
-            // panel13
-            // 
-            panel13.BackColor = Color.FromArgb(37, 39, 48);
-            panel13.Controls.Add(pictureBox15);
-            panel13.Controls.Add(pictureBox17);
-            panel13.Controls.Add(pictureBox18);
-            panel13.Controls.Add(pictureBox19);
-            panel13.Controls.Add(pictureBox20);
-            panel13.Controls.Add(label20);
-            panel13.Controls.Add(pictureBox21);
-            panel13.Controls.Add(label23);
-            panel13.Controls.Add(label24);
-            panel13.Location = new Point(31, 426);
-            panel13.Name = "panel13";
-            panel13.Size = new Size(486, 160);
-            panel13.TabIndex = 26;
-            // 
-            // pictureBox15
-            // 
-            pictureBox15.Image = Properties.Resources.star_kosong1;
-            pictureBox15.Location = new Point(180, 44);
-            pictureBox15.Name = "pictureBox15";
-            pictureBox15.Size = new Size(20, 20);
-            pictureBox15.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox15.TabIndex = 28;
-            pictureBox15.TabStop = false;
-            // 
-            // pictureBox17
-            // 
-            pictureBox17.Image = Properties.Resources.star_kosong1;
-            pictureBox17.Location = new Point(155, 44);
-            pictureBox17.Name = "pictureBox17";
-            pictureBox17.Size = new Size(20, 20);
-            pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox17.TabIndex = 27;
-            pictureBox17.TabStop = false;
-            // 
-            // pictureBox18
-            // 
-            pictureBox18.Image = Properties.Resources.star_kosong1;
-            pictureBox18.Location = new Point(130, 44);
-            pictureBox18.Name = "pictureBox18";
-            pictureBox18.Size = new Size(20, 20);
-            pictureBox18.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox18.TabIndex = 26;
-            pictureBox18.TabStop = false;
-            // 
-            // pictureBox19
-            // 
-            pictureBox19.Image = Properties.Resources.star_kosong1;
-            pictureBox19.Location = new Point(105, 44);
-            pictureBox19.Name = "pictureBox19";
-            pictureBox19.Size = new Size(20, 20);
-            pictureBox19.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox19.TabIndex = 25;
-            pictureBox19.TabStop = false;
-            // 
-            // pictureBox20
-            // 
-            pictureBox20.Image = Properties.Resources.star_kosong1;
-            pictureBox20.Location = new Point(80, 44);
-            pictureBox20.Name = "pictureBox20";
-            pictureBox20.Size = new Size(20, 20);
-            pictureBox20.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox20.TabIndex = 24;
-            pictureBox20.TabStop = false;
-            // 
-            // label20
-            // 
-            label20.BackColor = Color.Transparent;
-            label20.Font = new Font("Inter", 7F);
-            label20.ForeColor = Color.White;
-            label20.Location = new Point(386, 15);
-            label20.Name = "label20";
-            label20.Size = new Size(97, 22);
-            label20.TabIndex = 23;
-            label20.Text = "10 Mei 2025";
-            label20.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox21
-            // 
-            pictureBox21.BackColor = Color.Transparent;
-            pictureBox21.Image = Properties.Resources.IKON_TOL;
-            pictureBox21.Location = new Point(24, 14);
-            pictureBox21.Name = "pictureBox21";
-            pictureBox21.Size = new Size(50, 50);
-            pictureBox21.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox21.TabIndex = 21;
-            pictureBox21.TabStop = false;
-            // 
-            // label23
-            // 
-            label23.AutoSize = true;
-            label23.Font = new Font("Inter", 10F, FontStyle.Bold);
-            label23.ForeColor = Color.White;
-            label23.Location = new Point(75, 18);
-            label23.Name = "label23";
-            label23.Size = new Size(121, 24);
-            label23.TabIndex = 15;
-            label23.Text = "Khosyatullah";
-            // 
-            // label24
-            // 
-            label24.BackColor = Color.Transparent;
-            label24.Font = new Font("Inter", 7F);
-            label24.ForeColor = Color.White;
-            label24.Location = new Point(24, 68);
-            label24.Name = "label24";
-            label24.Size = new Size(455, 99);
-            label24.TabIndex = 14;
-            label24.Text = resources.GetString("label24.Text");
-            // 
-            // panel27
-            // 
-            panel27.BackColor = Color.FromArgb(37, 39, 48);
-            panel27.Controls.Add(pictureBox12);
-            panel27.Controls.Add(pictureBox13);
-            panel27.Controls.Add(pictureBox14);
-            panel27.Controls.Add(pictureBox22);
-            panel27.Controls.Add(pictureBox23);
-            panel27.Controls.Add(label19);
-            panel27.Controls.Add(pictureBox24);
-            panel27.Controls.Add(label21);
-            panel27.Controls.Add(label22);
-            panel27.Location = new Point(31, 239);
-            panel27.Name = "panel27";
-            panel27.Size = new Size(486, 160);
-            panel27.TabIndex = 25;
-            // 
-            // pictureBox12
-            // 
-            pictureBox12.Image = Properties.Resources.star_kosong1;
-            pictureBox12.Location = new Point(180, 44);
-            pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(20, 20);
-            pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox12.TabIndex = 28;
-            pictureBox12.TabStop = false;
-            // 
-            // pictureBox13
-            // 
-            pictureBox13.Image = Properties.Resources.star_kosong1;
-            pictureBox13.Location = new Point(155, 44);
-            pictureBox13.Name = "pictureBox13";
-            pictureBox13.Size = new Size(20, 20);
-            pictureBox13.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox13.TabIndex = 27;
-            pictureBox13.TabStop = false;
-            // 
-            // pictureBox14
-            // 
-            pictureBox14.Image = Properties.Resources.star_kosong1;
-            pictureBox14.Location = new Point(130, 44);
-            pictureBox14.Name = "pictureBox14";
-            pictureBox14.Size = new Size(20, 20);
-            pictureBox14.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox14.TabIndex = 26;
-            pictureBox14.TabStop = false;
-            // 
-            // pictureBox22
-            // 
-            pictureBox22.Image = Properties.Resources.star_kosong1;
-            pictureBox22.Location = new Point(105, 44);
-            pictureBox22.Name = "pictureBox22";
-            pictureBox22.Size = new Size(20, 20);
-            pictureBox22.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox22.TabIndex = 25;
-            pictureBox22.TabStop = false;
-            // 
-            // pictureBox23
-            // 
-            pictureBox23.Image = Properties.Resources.star_kosong1;
-            pictureBox23.Location = new Point(80, 44);
-            pictureBox23.Name = "pictureBox23";
-            pictureBox23.Size = new Size(20, 20);
-            pictureBox23.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox23.TabIndex = 24;
-            pictureBox23.TabStop = false;
-            // 
-            // label19
-            // 
-            label19.BackColor = Color.Transparent;
-            label19.Font = new Font("Inter", 7F);
-            label19.ForeColor = Color.White;
-            label19.Location = new Point(386, 15);
-            label19.Name = "label19";
-            label19.Size = new Size(97, 22);
-            label19.TabIndex = 23;
-            label19.Text = "10 Mei 2025";
-            label19.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox24
-            // 
-            pictureBox24.BackColor = Color.Transparent;
-            pictureBox24.Image = Properties.Resources.IKON_TOL;
-            pictureBox24.Location = new Point(24, 14);
-            pictureBox24.Name = "pictureBox24";
-            pictureBox24.Size = new Size(50, 50);
-            pictureBox24.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox24.TabIndex = 21;
-            pictureBox24.TabStop = false;
-            // 
-            // label21
-            // 
-            label21.AutoSize = true;
-            label21.Font = new Font("Inter", 10F, FontStyle.Bold);
-            label21.ForeColor = Color.White;
-            label21.Location = new Point(75, 18);
-            label21.Name = "label21";
-            label21.Size = new Size(121, 24);
-            label21.TabIndex = 15;
-            label21.Text = "Khosyatullah";
-            // 
-            // label22
-            // 
-            label22.BackColor = Color.Transparent;
-            label22.Font = new Font("Inter", 7F);
-            label22.ForeColor = Color.White;
-            label22.Location = new Point(24, 68);
-            label22.Name = "label22";
-            label22.Size = new Size(455, 99);
-            label22.TabIndex = 14;
-            label22.Text = resources.GetString("label22.Text");
-            // 
-            // label18
-            // 
-            label18.BackColor = Color.Transparent;
-            label18.Font = new Font("Inter", 9F);
-            label18.ForeColor = Color.White;
-            label18.Location = new Point(16, 180);
-            label18.Name = "label18";
-            label18.Size = new Size(231, 36);
-            label18.TabIndex = 24;
-            label18.Text = "2.000+ ulasan dari penghuni ";
-            label18.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label17
-            // 
-            label17.BackColor = Color.Transparent;
-            label17.Font = new Font("Inter", 9F);
-            label17.ForeColor = Color.White;
-            label17.Location = new Point(332, 186);
-            label17.Name = "label17";
-            label17.Size = new Size(163, 25);
-            label17.TabIndex = 23;
-            label17.Text = "Lihat Semua Ulasan >";
-            label17.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label9
-            // 
-            label9.BackColor = Color.Transparent;
-            label9.Font = new Font("Inter", 9F);
-            label9.ForeColor = Color.White;
-            label9.Location = new Point(31, 73);
-            label9.Name = "label9";
-            label9.Size = new Size(479, 77);
-            label9.TabIndex = 22;
-            label9.Text = "“Temukan pendapat asli para penghuni mengenai kenyamanan, fasilitas, dan layanan di Rusunawa Universitas Jember.”";
-            label9.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Inter", 19F, FontStyle.Bold);
-            label8.ForeColor = Color.White;
-            label8.Location = new Point(146, 17);
-            label8.Name = "label8";
-            label8.Size = new Size(260, 45);
-            label8.TabIndex = 16;
-            label8.Text = "Ulasan Terbaru";
+            label6.AutoSize = true;
+            label6.Font = new Font("Inter", 19F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.White;
+            label6.Location = new Point(0, 3);
+            label6.Name = "label6";
+            label6.Size = new Size(198, 45);
+            label6.TabIndex = 4;
+            label6.Text = "Beri Ulasan";
             // 
             // _1_Penyewa
             // 
@@ -1182,18 +1202,6 @@
             panel8.ResumeLayout(false);
             panel8.PerformLayout();
             panel9.ResumeLayout(false);
-            panel10.ResumeLayout(false);
-            panel15.ResumeLayout(false);
-            panel15.PerformLayout();
-            panel16.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
-            panel11.ResumeLayout(false);
-            panel11.PerformLayout();
-            panel25.ResumeLayout(false);
-            panel23.ResumeLayout(false);
-            panel19.ResumeLayout(false);
-            panel17.ResumeLayout(false);
-            panel14.ResumeLayout(false);
             panel12.ResumeLayout(false);
             panel12.PerformLayout();
             panel13.ResumeLayout(false);
@@ -1212,6 +1220,18 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox22).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox23).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox24).EndInit();
+            panel10.ResumeLayout(false);
+            panel15.ResumeLayout(false);
+            panel15.PerformLayout();
+            panel16.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
+            panel11.ResumeLayout(false);
+            panel11.PerformLayout();
+            panel25.ResumeLayout(false);
+            panel23.ResumeLayout(false);
+            panel19.ResumeLayout(false);
+            panel17.ResumeLayout(false);
+            panel14.ResumeLayout(false);
             ResumeLayout(false);
         }
 

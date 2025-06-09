@@ -1,4 +1,6 @@
-﻿using RUSUNAWAAA.View.Umum;
+﻿using RUSUNAWAAA.Utils;
+using RUSUNAWAAA.View.Penyewa;
+using RUSUNAWAAA.View.Umum;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,66 +22,50 @@ namespace RUSUNAWAAA.View.Admin
 
         private void ToDashboard_AD(object sender, EventArgs e)
         {
-            this.Hide();
-            Dashboard_Admin dashboardad = new Dashboard_Admin();
-            dashboardad.ShowDialog();
-            this.Close();
+            var command = new NavigateToFormCommand<Dashboard_Admin>(this);
+            command.Execute();
         }
 
         private void ToPengelolaAkun_AD(object sender, EventArgs e)
         {
-            this.Hide();
-            Pengelolaan_Akun_Admin kelolaakunad = new Pengelolaan_Akun_Admin();
-            kelolaakunad.ShowDialog();
-            this.Close();
+            var command = new NavigateToFormCommand<Pengelolaan_Akun_Admin>(this);
+            command.Execute();
         }
 
         private void ToKelolaHunian_AD(object sender, EventArgs e)
         {
-            this.Hide();
-            Kelola_Hunian_Admin kelolahunianad = new Kelola_Hunian_Admin();
-            kelolahunianad.ShowDialog();
-            this.Close();
+            var command = new NavigateToFormCommand<Kelola_Hunian_Admin>(this);
+            command.Execute();
         }
 
         private void ToTinjauUlasan_AD(object sender, EventArgs e)
         {
-            this.Hide();
-            Tinjau_Ulasan_Admin tinjauulasanad = new Tinjau_Ulasan_Admin();
-            tinjauulasanad.ShowDialog();
-            this.Close();
+            var command = new NavigateToFormCommand<Tinjau_Ulasan_Admin>(this);
+            command.Execute();
         }
 
         private void ToKelolaAturan_AD(object sender, EventArgs e)
         {
-            this.Hide();
-            Kelola_Aturan_Admin kelolaaturanad = new Kelola_Aturan_Admin();
-            kelolaaturanad.ShowDialog();
-            this.Close();
+            var command = new NavigateToFormCommand<Kelola_Aturan_Admin>(this);
+            command.Execute();
         }
 
         private void ToManajemenSewa_AD(object sender, EventArgs e)
         {
-            this.Hide();
-            Manajemen_Sewa_Admin manajemensewaad = new Manajemen_Sewa_Admin();
-            manajemensewaad.ShowDialog();
-            this.Close();
+            var command = new NavigateToFormCommand<Manajemen_Sewa_Admin>(this);
+            command.Execute();
         }
 
         private void ToEditVirtualTour_AD(object sender, EventArgs e)
         {
-            this.Hide();
-            Edit_Virtual_Tour_Admin editvirtualtourad = new Edit_Virtual_Tour_Admin();
-            editvirtualtourad.ShowDialog();
-            this.Close();
+            var command = new NavigateToFormCommand<Edit_Virtual_Tour_Admin>(this);
+            command.Execute();
         }
 
         private void ToSiaran_AD(object sender, EventArgs e)
         {
-            this.Hide();
-            Siaran_Admin siaranad = new Siaran_Admin();
-            siaranad.ShowDialog();
-            this.Close();
+            var command = new NavigateToFormCommand<Siaran_Admin>(this);
+            command.Execute();
         }
 
         private void checkBox8_CheckedChanged(object sender, EventArgs e)
