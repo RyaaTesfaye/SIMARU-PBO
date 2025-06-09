@@ -21,5 +21,12 @@ namespace RUSUNAWAAA.View.Umum
         {
 
         }
+
+        private void BackToUlasanUmum_UM(object sender, EventArgs e)
+        {
+            Ulasan_Umum ulasanUmum = new Ulasan_Umum();
+            ulasanUmum.Show();
+            this.Hide();
+        }
     }
 }

@@ -70,17 +70,19 @@ namespace RUSUNAWAAA.View.Umum
             kontaklokasium.ShowDialog();
             this.Close();
         }
-        private void LoadFormSemuaUlasan()
+
+        private void LoadFormSemuaUlasan_UM()
         {
             panel9.Controls.Clear(); // Hapus konten lama kalau ada
-            Semua_Ulasan_Umum formUlasan = new Semua_Ulasan_Umum();
-            formUlasan.Dock = DockStyle.Fill;
-            panel9.Controls.Add(formUlasan);
+            Semua_Ulasan_Umum semuaUlasanum = new Semua_Ulasan_Umum();
+            semuaUlasanum.Dock = DockStyle.Fill;
+            semuaUlasanum.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            panel9.Controls.Add(semuaUlasanum);
         }
 
         private void ToSemuaUlasan_UM(object sender, EventArgs e)
         {
-            LoadFormSemuaUlasan();
+            LoadFormSemuaUlasan_UM();
         }
     }
 }

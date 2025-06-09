@@ -121,7 +121,7 @@
   <data name="pictureBox6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAHgAAAB2iCAYAAACV1t40AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAEh
-        cQABIXEBOGz5cwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAP+NSURBVHhe7N17
+        bwABIW8B1fGlRwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAP+NSURBVHhe7N17
         rOZ3Yef39zlz9YWxPb5hG2MbY4wxvmBjfMlI2W7cdbZlokqNF2lVZtttMlU3XUbtpnarJutJlRIrXRqm
         kqNMu1TrqWiElW5VRtlEmCa7xCHAmkCgXMwlELCNL4HYBowvM/OrxjlR0t/zI/FlLs9zzuslvf+1zzyX
         3/P9/vUpAAAAAAAAAAAAAAAAAADgaLu1+tNqOEIdrPZWJ4//RwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -29244,5 +29244,17 @@
         /2b+2pZ/W+Pf3cV/g1+/+Pe69d/1E7f8+x8L0i/+nXj08o8KAAAAAAAAAAAAAAAAAMB99f8BOIMVCqan
         SAEAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="label17.Text" xml:space="preserve">
+    <value>Rusunawa Universitas Jember merupakan hunian yang sangat nyaman dan layak bagi para mahasiswa. Fasilitas yang disediakan cukup lengkap, mulai dari tempat tidur, lemari, meja belajar, hingga akses internet yang memadai. Lingkungannya bersih dan terawat, menciptakan suasana yang mendukung untuk belajar dan beristirahat. Keamanan juga terjaga dengan baik, sehingga penghuni merasa aman dan tenang selama tinggal di sana. Lokasinya strategis dan dekat dengan lingkungan kampus, membuat mobilitas menjadi lebih mudah. Pengelola rusunawa juga responsif terhadap kebutuhan dan keluhan penghuni. Secara keseluruhan, rusunawa ini sangat direkomendasikan bagi mahasiswa yang mencari tempat tinggal yang nyaman, aman, dan kondusif.</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>Rusunawa Universitas Jember merupakan hunian yang sangat nyaman dan layak bagi para mahasiswa. Fasilitas yang disediakan cukup lengkap, mulai dari tempat tidur, lemari, meja belajar, hingga akses internet yang memadai. Lingkungannya bersih dan terawat, menciptakan suasana yang mendukung untuk belajar dan beristirahat. Keamanan juga terjaga dengan baik, sehingga penghuni merasa aman dan tenang selama tinggal di sana. Lokasinya strategis dan dekat dengan lingkungan kampus, membuat mobilitas menjadi lebih mudah. Pengelola rusunawa juga responsif terhadap kebutuhan dan keluhan penghuni. Secara keseluruhan, rusunawa ini sangat direkomendasikan bagi mahasiswa yang mencari tempat tinggal yang nyaman, aman, dan kondusif.</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Rusunawa Universitas Jember merupakan hunian yang sangat nyaman dan layak bagi para mahasiswa. Fasilitas yang disediakan cukup lengkap, mulai dari tempat tidur, lemari, meja belajar, hingga akses internet yang memadai. Lingkungannya bersih dan terawat, menciptakan suasana yang mendukung untuk belajar dan beristirahat. Keamanan juga terjaga dengan baik, sehingga penghuni merasa aman dan tenang selama tinggal di sana. Lokasinya strategis dan dekat dengan lingkungan kampus, membuat mobilitas menjadi lebih mudah. Pengelola rusunawa juga responsif terhadap kebutuhan dan keluhan penghuni. Secara keseluruhan, rusunawa ini sangat direkomendasikan bagi mahasiswa yang mencari tempat tinggal yang nyaman, aman, dan kondusif.</value>
+  </data>
+  <data name="label22.Text" xml:space="preserve">
+    <value>Rusunawa Universitas Jember merupakan hunian yang sangat nyaman dan layak bagi para mahasiswa. Fasilitas yang disediakan cukup lengkap, mulai dari tempat tidur, lemari, meja belajar, hingga akses internet yang memadai. Lingkungannya bersih dan terawat, menciptakan suasana yang mendukung untuk belajar dan beristirahat. Keamanan juga terjaga dengan baik, sehingga penghuni merasa aman dan tenang selama tinggal di sana. Lokasinya strategis dan dekat dengan lingkungan kampus, membuat mobilitas menjadi lebih mudah. Pengelola rusunawa juga responsif terhadap kebutuhan dan keluhan penghuni. Secara keseluruhan, rusunawa ini sangat direkomendasikan bagi mahasiswa yang mencari tempat tinggal yang nyaman, aman, dan kondusif.</value>
   </data>
 </root>
