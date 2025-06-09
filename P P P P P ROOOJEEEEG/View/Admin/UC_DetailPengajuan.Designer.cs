@@ -68,8 +68,6 @@
             label38 = new Label();
             button2 = new Button();
             button1 = new Button();
-            pictureBox3 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // label24
@@ -480,6 +478,7 @@
             label37.Size = new Size(78, 24);
             label37.TabIndex = 64;
             label37.Text = "Kembali";
+            label37.Click += btnKembali_Click;
             // 
             // label38
             // 
@@ -506,6 +505,7 @@
             button2.TabIndex = 66;
             button2.Text = "Tolak";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += btnTolak_Click;
             // 
             // button1
             // 
@@ -521,23 +521,13 @@
             button1.TabIndex = 67;
             button1.Text = "Terima";
             button1.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.ErrorImage = null;
-            pictureBox3.Image = Properties.Resources.category;
-            pictureBox3.Location = new Point(33, 74);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(25, 25);
-            pictureBox3.TabIndex = 68;
-            pictureBox3.TabStop = false;
+            button1.Click += btnTerima_Click;
             // 
             // UC_DetailPengajuan
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(23, 24, 29);
-            Controls.Add(pictureBox3);
             Controls.Add(button1);
             Controls.Add(button2);
             Controls.Add(label38);
@@ -580,7 +570,6 @@
             Controls.Add(label24);
             Name = "UC_DetailPengajuan";
             Size = new Size(1149, 589);
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -627,6 +616,5 @@
         private Label label38;
         private Button button2;
         private Button button1;
-        private PictureBox pictureBox3;
     }
 }

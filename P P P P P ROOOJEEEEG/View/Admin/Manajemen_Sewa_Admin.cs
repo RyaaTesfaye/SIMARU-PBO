@@ -151,7 +151,7 @@ namespace RUSUNAWAAA.View.Admin
                     {
                         var itemUc = new UC_ItemPengajuan();
                         itemUc.SetData(pengajuan);
-                        itemUc.DetailButtonClicked += (s, id) => { /* Logika saat tombol detail diklik */ };
+                        itemUc.DetailButtonClicked += OnItemDetailClicked;
                         flowLayoutPanelPengajuan.Controls.Add(itemUc);
                     }
                     else if (itemData is PerpanjanganSewa perpanjangan)
