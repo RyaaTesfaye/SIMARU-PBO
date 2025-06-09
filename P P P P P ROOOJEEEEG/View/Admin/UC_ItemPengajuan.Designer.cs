@@ -42,7 +42,7 @@
             label_TanggalPengajuan.AutoSize = true;
             label_TanggalPengajuan.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label_TanggalPengajuan.ForeColor = Color.FromArgb(139, 140, 142);
-            label_TanggalPengajuan.Location = new Point(834, 11);
+            label_TanggalPengajuan.Location = new Point(828, 11);
             label_TanggalPengajuan.Name = "label_TanggalPengajuan";
             label_TanggalPengajuan.Size = new Size(109, 24);
             label_TanggalPengajuan.TabIndex = 53;
@@ -53,7 +53,7 @@
             label_Fakultas.AutoSize = true;
             label_Fakultas.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label_Fakultas.ForeColor = Color.FromArgb(139, 140, 142);
-            label_Fakultas.Location = new Point(500, 11);
+            label_Fakultas.Location = new Point(494, 11);
             label_Fakultas.Name = "label_Fakultas";
             label_Fakultas.Size = new Size(128, 24);
             label_Fakultas.TabIndex = 52;
@@ -64,7 +64,7 @@
             label_DurasiSewa.AutoSize = true;
             label_DurasiSewa.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label_DurasiSewa.ForeColor = Color.FromArgb(139, 140, 142);
-            label_DurasiSewa.Location = new Point(669, 11);
+            label_DurasiSewa.Location = new Point(663, 11);
             label_DurasiSewa.Name = "label_DurasiSewa";
             label_DurasiSewa.Size = new Size(70, 24);
             label_DurasiSewa.TabIndex = 51;
@@ -75,7 +75,7 @@
             label_NoHp.AutoSize = true;
             label_NoHp.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label_NoHp.ForeColor = Color.FromArgb(139, 140, 142);
-            label_NoHp.Location = new Point(329, 11);
+            label_NoHp.Location = new Point(323, 11);
             label_NoHp.Name = "label_NoHp";
             label_NoHp.Size = new Size(134, 24);
             label_NoHp.TabIndex = 50;
@@ -86,7 +86,7 @@
             label_Nama.AutoSize = true;
             label_Nama.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label_Nama.ForeColor = Color.FromArgb(139, 140, 142);
-            label_Nama.Location = new Point(111, 11);
+            label_Nama.Location = new Point(105, 11);
             label_Nama.Name = "label_Nama";
             label_Nama.Size = new Size(198, 24);
             label_Nama.TabIndex = 49;
@@ -97,7 +97,7 @@
             label_Id.AutoSize = true;
             label_Id.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label_Id.ForeColor = Color.FromArgb(139, 140, 142);
-            label_Id.Location = new Point(26, 11);
+            label_Id.Location = new Point(20, 11);
             label_Id.Name = "label_Id";
             label_Id.Size = new Size(39, 24);
             label_Id.TabIndex = 48;
@@ -111,7 +111,7 @@
             btn_detail.FlatStyle = FlatStyle.Flat;
             btn_detail.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_detail.ForeColor = Color.White;
-            btn_detail.Location = new Point(1024, 11);
+            btn_detail.Location = new Point(1022, 11);
             btn_detail.Name = "btn_detail";
             btn_detail.Size = new Size(90, 28);
             btn_detail.TabIndex = 54;
