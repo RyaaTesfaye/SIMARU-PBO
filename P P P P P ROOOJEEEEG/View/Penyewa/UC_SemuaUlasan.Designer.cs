@@ -1,6 +1,6 @@
-﻿namespace RUSUNAWAAA.View.Umum
+﻿namespace RUSUNAWAAA.View.Penyewa
 {
-    partial class Semua_Ulasan_Umum
+    partial class UC_SemuaUlasan
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Semua_Ulasan_Umum));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_SemuaUlasan));
             panel9 = new Panel();
             pictureBox12 = new PictureBox();
             pictureBox45 = new PictureBox();
@@ -82,7 +82,7 @@
             panel9.Name = "panel9";
             panel9.Padding = new Padding(50);
             panel9.Size = new Size(1165, 662);
-            panel9.TabIndex = 6;
+            panel9.TabIndex = 7;
             // 
             // pictureBox12
             // 
@@ -95,7 +95,6 @@
             pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox12.TabIndex = 29;
             pictureBox12.TabStop = false;
-            pictureBox12.Click += BackToUlasanUmum_UM;
             // 
             // pictureBox45
             // 
@@ -310,7 +309,6 @@
             label20.Size = new Size(499, 127);
             label20.TabIndex = 14;
             label20.Text = resources.GetString("label20.Text");
-            label20.Click += label20_Click;
             // 
             // pictureBox28
             // 
@@ -324,12 +322,12 @@
             pictureBox28.TabIndex = 21;
             pictureBox28.TabStop = false;
             // 
-            // Semua_Ulasan_Umum
+            // UC_SemuaUlasan
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(panel9);
-            Name = "Semua_Ulasan_Umum";
+            Name = "UC_SemuaUlasan";
             Size = new Size(1165, 662);
             panel9.ResumeLayout(false);
             panel9.PerformLayout();
@@ -355,26 +353,26 @@
         #endregion
 
         private Panel panel9;
-        private Panel panel10;
+        private PictureBox pictureBox12;
+        private PictureBox pictureBox45;
+        private Label label4;
         private Label label6;
-        private Label label20;
-        private Label label1;
-        private PictureBox pictureBox9;
+        private Panel panel10;
+        private PictureBox pictureBox11;
+        private PictureBox pictureBox10;
+        private PictureBox pictureBox8;
+        private PictureBox pictureBox7;
+        private PictureBox pictureBox6;
+        private Label label3;
+        private Label label2;
         private PictureBox pictureBox5;
         private PictureBox pictureBox4;
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
-        private Label label2;
-        private Label label3;
-        private PictureBox pictureBox7;
-        private PictureBox pictureBox6;
-        private PictureBox pictureBox11;
-        private PictureBox pictureBox10;
-        private PictureBox pictureBox8;
+        private PictureBox pictureBox9;
+        private Label label1;
+        private Label label20;
         private PictureBox pictureBox28;
-        private Label label4;
-        private PictureBox pictureBox45;
-        private PictureBox pictureBox12;
     }
 }

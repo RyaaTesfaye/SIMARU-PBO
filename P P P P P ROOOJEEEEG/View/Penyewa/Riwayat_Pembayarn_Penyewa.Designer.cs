@@ -50,7 +50,6 @@
             label3 = new Label();
             pictureBox2 = new PictureBox();
             panel2 = new Panel();
-            panel28 = new Panel();
             label2 = new Label();
             pictureBox3 = new PictureBox();
             label1 = new Label();
@@ -61,6 +60,7 @@
             panel8 = new Panel();
             panel9 = new Panel();
             label6 = new Label();
+            panel6 = new Panel();
             panel1.SuspendLayout();
             panel29.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
@@ -136,6 +136,7 @@
             // panel22
             // 
             panel22.BackColor = Color.Transparent;
+            panel22.Controls.Add(panel6);
             panel22.Controls.Add(label13);
             panel22.Controls.Add(pictureBox10);
             panel22.Cursor = Cursors.Hand;
@@ -306,21 +307,12 @@
             // panel2
             // 
             panel2.BackColor = Color.Transparent;
-            panel2.Controls.Add(panel28);
             panel2.Controls.Add(label2);
             panel2.Controls.Add(pictureBox3);
             panel2.Location = new Point(0, 125);
             panel2.Name = "panel2";
             panel2.Size = new Size(240, 50);
             panel2.TabIndex = 2;
-            // 
-            // panel28
-            // 
-            panel28.BackColor = Color.White;
-            panel28.Location = new Point(-1, 0);
-            panel28.Name = "panel28";
-            panel28.Size = new Size(4, 50);
-            panel28.TabIndex = 4;
             // 
             // label2
             // 
@@ -427,9 +419,17 @@
             label6.ForeColor = Color.White;
             label6.Location = new Point(0, 3);
             label6.Name = "label6";
-            label6.Size = new Size(306, 45);
+            label6.Size = new Size(352, 45);
             label6.TabIndex = 4;
-            label6.Text = "Pengelolaan Akun";
+            label6.Text = "Riwayat Pembayaran";
+            // 
+            // panel6
+            // 
+            panel6.BackColor = Color.White;
+            panel6.Location = new Point(-1, 0);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(4, 50);
+            panel6.TabIndex = 5;
             // 
             // _5_Penyewa
             // 
@@ -498,7 +498,6 @@
         private Label label3;
         private PictureBox pictureBox2;
         private Panel panel2;
-        private Panel panel28;
         private Label label2;
         private PictureBox pictureBox3;
         private Label label1;
@@ -509,5 +508,6 @@
         private Panel panel8;
         private Panel panel9;
         private Label label6;
+        private Panel panel6;
     }
 }

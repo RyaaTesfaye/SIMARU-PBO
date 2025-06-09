@@ -121,7 +121,7 @@
   <data name="pictureBox12.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABQAAAALQCAYAAADPfd1WAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAAJAFJREFUeF7t3F+opfV97/EyiAxSZJBiLqQMoRiKhIKEgoSQuQiBEJBAUAJBCCcI
+        vgAADr4B6kKxwAAAJAFJREFUeF7t3F+opfV97/EyiAxSZJBiLqQMoRiKhIKEgoSQuQiBEJBAUAJBCCcI
         QnIjJNCbBCqE0IuQi14IBfGiN0JvvCgc0obTejgHCr0QCkoQClpMj6d20qR1jOPMuD/lSfdu9Jv5s35r
         PWs9v996Xi94rpy991rP8/uwF29m/K3fAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADYWpLf
         TvJWkqfrfwMAAAAABpbkfJJ/za89Xv8MAAAAADCg0/g3/c2/DztJcqn+WQAAAABgILeIf2duJHm4fg0A
@@ -281,7 +281,7 @@
   <data name="pictureBox45.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFIAAAAkCAYAAAAaV21HAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAAAkFJREFUaEPtmoFRwzAMRTNCR2CEjsAIHYERugFsUDYoG3SEsgEjdARGEPdd/Zyi
+        DAAACwwBP0AiyAAAAkFJREFUaEPtmoFRwzAMRTNCR2CEjsAIHYERugFsUDYoG3SEsgEjdARGEPdd/Zyi
         S2jiKAGK3p0PYgXbvNpynGvTNE0jInsReclSVfZwSIkP5SKZDNwVmbDqg8k0isMUOZ8UGUSKDCJFBpEi
         g0iRQaTIq4StiJxFZONjY/n3IkVkJyKfcuWjVmaKFHlTiaRK5iSRInLUsu2JPWvseu78Q0TInCqSXHxH
         mmPAu62PQM+y6BNl5+MR9MhEX6PfP9SKBAcXW1okefLxKObInCMStLNjSKQm85MOCve0IlQQ6lAeTT3S
@@ -294,13 +294,10 @@
         AAAASUVORK5CYII=
 </value>
   </data>
-  <data name="label20.Text" xml:space="preserve">
-    <value>Rusunawa Universitas Jember merupakan hunian yang sangat nyaman dan layak bagi para mahasiswa. Fasilitas yang disediakan cukup lengkap, mulai dari tempat tidur, lemari, meja belajar, hingga akses internet yang memadai. Lingkungannya bersih dan terawat, menciptakan suasana yang mendukung untuk belajar dan beristirahat. Keamanan juga terjaga dengan baik, sehingga penghuni merasa aman dan tenang selama tinggal di sana. Lokasinya strategis dan dekat dengan lingkungan kampus, membuat mobilitas menjadi lebih mudah. Pengelola rusunawa juga responsif terhadap kebutuhan dan keluhan penghuni. Secara keseluruhan, rusunawa ini sangat direkomendasikan bagi mahasiswa yang mencari tempat tinggal yang nyaman, aman, dan kondusif.</value>
-  </data>
   <data name="pictureBox28.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFIAAAAkCAYAAAAaV21HAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAAApFJREFUaEPtmlt13EAMQBdCIBRCIZRBy6CBEAYpg5RBwiBlkDIohJRBIKjnzkqu
+        DAAACwwBP0AiyAAAApFJREFUaEPtmlt13EAMQBdCIBRCIZRBy6CBEAYpg5RBwiBlkDIohJRBIKjnzkqu
         rB0/xh7vz+qeMx/2yPbMtSw/dk+n0+kkIg8i8iPbpvaAQ5P4qSwkzeCuyMRq7EzaKA5T5H5SZCdSZCdS
         ZCdSZCd2ixSROxF5E5HPse+W2CVSJf6RMx8i8i3G3AqbRQaJxkuMuxU2iUyJlzSL1Neh96MkUh5E5LnS
         eKc95DVWRL6449zF/jU0iTxaIqiwObrXYRG5d/vfdLJWi7yGRHAiuXkxQRofVViG97jNXq4mckLizxjX
@@ -313,5 +310,8 @@
         pMwWdBwli2JfRONWxbayWSQEmfk9cqtIUJn5hXyvyORMiuxEiuxEiuxEiuxEiuxEiuyEicw/mu5A35ZG
         /9q1j53Z2lqR+A/WvzGrSlo0EwAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="label20.Text" xml:space="preserve">
+    <value>Rusunawa Universitas Jember merupakan hunian yang sangat nyaman dan layak bagi para mahasiswa. Fasilitas yang disediakan cukup lengkap, mulai dari tempat tidur, lemari, meja belajar, hingga akses internet yang memadai. Lingkungannya bersih dan terawat, menciptakan suasana yang mendukung untuk belajar dan beristirahat. Keamanan juga terjaga dengan baik, sehingga penghuni merasa aman dan tenang selama tinggal di sana. Lokasinya strategis dan dekat dengan lingkungan kampus, membuat mobilitas menjadi lebih mudah. Pengelola rusunawa juga responsif terhadap kebutuhan dan keluhan penghuni. Secara keseluruhan, rusunawa ini sangat direkomendasikan bagi mahasiswa yang mencari tempat tinggal yang nyaman, aman, dan kondusif.</value>
   </data>
 </root>
