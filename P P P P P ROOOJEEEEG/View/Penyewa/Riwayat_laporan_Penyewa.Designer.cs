@@ -65,16 +65,16 @@
             panel13 = new Panel();
             panel11 = new Panel();
             panel12 = new Panel();
+            label27 = new Label();
+            label25 = new Label();
+            label24 = new Label();
+            label23 = new Label();
+            label20 = new Label();
+            label18 = new Label();
             label19 = new Label();
             label21 = new Label();
             label22 = new Label();
             label6 = new Label();
-            label18 = new Label();
-            label20 = new Label();
-            label23 = new Label();
-            label24 = new Label();
-            label25 = new Label();
-            label27 = new Label();
             panel1.SuspendLayout();
             panel29.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
@@ -128,6 +128,7 @@
             panel29.Name = "panel29";
             panel29.Size = new Size(240, 50);
             panel29.TabIndex = 8;
+            panel29.Click += ToPerpanjanganSewa_PE;
             // 
             // label26
             // 
@@ -139,6 +140,7 @@
             label26.Size = new Size(177, 24);
             label26.TabIndex = 4;
             label26.Text = "Perpanjangan Sewa";
+            label26.Click += ToPerpanjanganSewa_PE;
             // 
             // pictureBox16
             // 
@@ -149,6 +151,7 @@
             pictureBox16.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox16.TabIndex = 2;
             pictureBox16.TabStop = false;
+            pictureBox16.Click += ToPerpanjanganSewa_PE;
             // 
             // panel22
             // 
@@ -160,6 +163,7 @@
             panel22.Name = "panel22";
             panel22.Size = new Size(240, 50);
             panel22.TabIndex = 7;
+            panel22.Click += ToRiwayatPembayaran_PE;
             // 
             // label13
             // 
@@ -171,6 +175,7 @@
             label13.Size = new Size(186, 24);
             label13.TabIndex = 4;
             label13.Text = "Riwayat Pembayaran";
+            label13.Click += ToRiwayatPembayaran_PE;
             // 
             // pictureBox10
             // 
@@ -181,6 +186,7 @@
             pictureBox10.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox10.TabIndex = 2;
             pictureBox10.TabStop = false;
+            pictureBox10.Click += ToRiwayatPembayaran_PE;
             // 
             // panel21
             // 
@@ -225,13 +231,14 @@
             // 
             // pictureBox9
             // 
-            pictureBox9.Image = Properties.Resources.Icon;
+            pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
             pictureBox9.Location = new Point(10, 8);
             pictureBox9.Name = "pictureBox9";
             pictureBox9.Size = new Size(35, 35);
             pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox9.TabIndex = 5;
             pictureBox9.TabStop = false;
+            pictureBox9.Click += ToDashboard_PE;
             // 
             // panel5
             // 
@@ -243,6 +250,7 @@
             panel5.Name = "panel5";
             panel5.Size = new Size(240, 50);
             panel5.TabIndex = 3;
+            panel5.Click += ToLaporMasalah_PE;
             // 
             // label5
             // 
@@ -254,6 +262,7 @@
             label5.Size = new Size(134, 24);
             label5.TabIndex = 4;
             label5.Text = "Lapor Masalah";
+            label5.Click += ToLaporMasalah_PE;
             // 
             // pictureBox5
             // 
@@ -264,6 +273,7 @@
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox5.TabIndex = 2;
             pictureBox5.TabStop = false;
+            pictureBox5.Click += ToLaporMasalah_PE;
             // 
             // panel4
             // 
@@ -275,6 +285,7 @@
             panel4.Name = "panel4";
             panel4.Size = new Size(240, 50);
             panel4.TabIndex = 3;
+            panel4.Click += ToTataTertib_PE;
             // 
             // label4
             // 
@@ -286,6 +297,7 @@
             label4.Size = new Size(191, 24);
             label4.TabIndex = 4;
             label4.Text = "Tata Tertib Rusunawa";
+            label4.Click += ToTataTertib_PE;
             // 
             // pictureBox4
             // 
@@ -296,6 +308,7 @@
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 2;
             pictureBox4.TabStop = false;
+            pictureBox4.Click += ToTataTertib_PE;
             // 
             // panel3
             // 
@@ -307,6 +320,7 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(240, 50);
             panel3.TabIndex = 3;
+            panel3.Click += ToBeriUlasan_PE;
             // 
             // label3
             // 
@@ -318,6 +332,7 @@
             label3.Size = new Size(105, 24);
             label3.TabIndex = 4;
             label3.Text = "Beri Ulasan";
+            label3.Click += ToBeriUlasan_PE;
             // 
             // pictureBox2
             // 
@@ -328,6 +343,7 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += ToBeriUlasan_PE;
             // 
             // panel2
             // 
@@ -338,6 +354,7 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(240, 50);
             panel2.TabIndex = 2;
+            panel2.Click += ToDashboard_PE;
             // 
             // label2
             // 
@@ -349,6 +366,7 @@
             label2.Size = new Size(99, 24);
             label2.TabIndex = 3;
             label2.Text = "Ringkasan";
+            label2.Click += ToDashboard_PE;
             // 
             // pictureBox3
             // 
@@ -359,6 +377,7 @@
             pictureBox3.Size = new Size(25, 25);
             pictureBox3.TabIndex = 2;
             pictureBox3.TabStop = false;
+            pictureBox3.Click += ToDashboard_PE;
             // 
             // label1
             // 
@@ -367,10 +386,11 @@
             label1.ForeColor = Color.White;
             label1.Location = new Point(43, 6);
             label1.Name = "label1";
-            label1.Size = new Size(172, 43);
+            label1.Size = new Size(139, 43);
             label1.TabIndex = 0;
-            label1.Text = "RUSAKITA";
+            label1.Text = "SIMARU";
             label1.TextAlign = ContentAlignment.MiddleCenter;
+            label1.Click += ToDashboard_PE;
             // 
             // panel7
             // 
@@ -491,6 +511,74 @@
             panel12.Size = new Size(521, 270);
             panel12.TabIndex = 26;
             // 
+            // label27
+            // 
+            label27.BackColor = Color.Transparent;
+            label27.Font = new Font("Inter", 7F);
+            label27.ForeColor = Color.White;
+            label27.Location = new Point(89, 159);
+            label27.Name = "label27";
+            label27.Size = new Size(179, 61);
+            label27.TabIndex = 29;
+            label27.Text = "Kemarin sudah di perbaiki sama mas Riski, katanya ada kebocoran di bagian...";
+            // 
+            // label25
+            // 
+            label25.BackColor = Color.Transparent;
+            label25.Font = new Font("Inter", 7F);
+            label25.ForeColor = Color.White;
+            label25.Location = new Point(130, 125);
+            label25.Name = "label25";
+            label25.Size = new Size(97, 22);
+            label25.TabIndex = 28;
+            label25.Text = "25 Maret 2025";
+            label25.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label24
+            // 
+            label24.BackColor = Color.Transparent;
+            label24.Font = new Font("Inter", 7F);
+            label24.ForeColor = Color.White;
+            label24.Location = new Point(75, 97);
+            label24.Name = "label24";
+            label24.Size = new Size(113, 22);
+            label24.TabIndex = 27;
+            label24.Text = "Sudah di Tangani";
+            label24.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label23
+            // 
+            label23.BackColor = Color.Transparent;
+            label23.Font = new Font("Inter", 7F);
+            label23.ForeColor = Color.White;
+            label23.Location = new Point(24, 159);
+            label23.Name = "label23";
+            label23.Size = new Size(181, 23);
+            label23.TabIndex = 26;
+            label23.Text = "Catatan:";
+            // 
+            // label20
+            // 
+            label20.BackColor = Color.Transparent;
+            label20.Font = new Font("Inter", 7F);
+            label20.ForeColor = Color.White;
+            label20.Location = new Point(24, 128);
+            label20.Name = "label20";
+            label20.Size = new Size(181, 23);
+            label20.TabIndex = 25;
+            label20.Text = "Diperbarui pada:";
+            // 
+            // label18
+            // 
+            label18.BackColor = Color.Transparent;
+            label18.Font = new Font("Inter", 7F);
+            label18.ForeColor = Color.White;
+            label18.Location = new Point(24, 100);
+            label18.Name = "label18";
+            label18.Size = new Size(181, 23);
+            label18.TabIndex = 24;
+            label18.Text = "Status:";
+            // 
             // label19
             // 
             label19.BackColor = Color.Transparent;
@@ -535,74 +623,6 @@
             label6.Size = new Size(283, 45);
             label6.TabIndex = 4;
             label6.Text = "Riwayat Laporan";
-            // 
-            // label18
-            // 
-            label18.BackColor = Color.Transparent;
-            label18.Font = new Font("Inter", 7F);
-            label18.ForeColor = Color.White;
-            label18.Location = new Point(24, 100);
-            label18.Name = "label18";
-            label18.Size = new Size(181, 23);
-            label18.TabIndex = 24;
-            label18.Text = "Status:";
-            // 
-            // label20
-            // 
-            label20.BackColor = Color.Transparent;
-            label20.Font = new Font("Inter", 7F);
-            label20.ForeColor = Color.White;
-            label20.Location = new Point(24, 128);
-            label20.Name = "label20";
-            label20.Size = new Size(181, 23);
-            label20.TabIndex = 25;
-            label20.Text = "Diperbarui pada:";
-            // 
-            // label23
-            // 
-            label23.BackColor = Color.Transparent;
-            label23.Font = new Font("Inter", 7F);
-            label23.ForeColor = Color.White;
-            label23.Location = new Point(24, 159);
-            label23.Name = "label23";
-            label23.Size = new Size(181, 23);
-            label23.TabIndex = 26;
-            label23.Text = "Catatan:";
-            // 
-            // label24
-            // 
-            label24.BackColor = Color.Transparent;
-            label24.Font = new Font("Inter", 7F);
-            label24.ForeColor = Color.White;
-            label24.Location = new Point(75, 97);
-            label24.Name = "label24";
-            label24.Size = new Size(113, 22);
-            label24.TabIndex = 27;
-            label24.Text = "Sudah di Tangani";
-            label24.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label25
-            // 
-            label25.BackColor = Color.Transparent;
-            label25.Font = new Font("Inter", 7F);
-            label25.ForeColor = Color.White;
-            label25.Location = new Point(130, 125);
-            label25.Name = "label25";
-            label25.Size = new Size(97, 22);
-            label25.TabIndex = 28;
-            label25.Text = "25 Maret 2025";
-            label25.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label27
-            // 
-            label27.BackColor = Color.Transparent;
-            label27.Font = new Font("Inter", 7F);
-            label27.ForeColor = Color.White;
-            label27.Location = new Point(89, 159);
-            label27.Name = "label27";
-            label27.Size = new Size(179, 61);
-            label27.TabIndex = 29;
-            label27.Text = "Kemarin sudah di perbaiki sama mas Riski, katanya ada kebocoran di bagian...";
             // 
             // _4_Penyewa
             // 

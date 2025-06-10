@@ -43,7 +43,6 @@ namespace RUSUNAWAAA.View.Admin
             label32 = new Label();
             pictureBox18 = new PictureBox();
             label33 = new Label();
-            pictureBox19 = new PictureBox();
             panel29 = new Panel();
             panel30 = new Panel();
             label31 = new Label();
@@ -123,6 +122,7 @@ namespace RUSUNAWAAA.View.Admin
             label26 = new Label();
             label14 = new Label();
             label6 = new Label();
+            pictureBox22 = new PictureBox();
             panel1.SuspendLayout();
             panel33.SuspendLayout();
             panel34.SuspendLayout();
@@ -131,7 +131,6 @@ namespace RUSUNAWAAA.View.Admin
             panel31.SuspendLayout();
             panel32.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox19).BeginInit();
             panel29.SuspendLayout();
             panel30.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox17).BeginInit();
@@ -176,6 +175,7 @@ namespace RUSUNAWAAA.View.Admin
             panel18.SuspendLayout();
             panel11.SuspendLayout();
             panel17.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox22).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -271,9 +271,9 @@ namespace RUSUNAWAAA.View.Admin
             // panel31
             // 
             panel31.BackColor = Color.Transparent;
+            panel31.Controls.Add(pictureBox22);
             panel31.Controls.Add(panel32);
             panel31.Controls.Add(label33);
-            panel31.Controls.Add(pictureBox19);
             panel31.Cursor = Cursors.Hand;
             panel31.Location = new Point(0, 510);
             panel31.Name = "panel31";
@@ -324,17 +324,6 @@ namespace RUSUNAWAAA.View.Admin
             label33.TabIndex = 4;
             label33.Text = "Edit Virtual Tour";
             label33.Click += ToEditVirtualTour_AD;
-            // 
-            // pictureBox19
-            // 
-            pictureBox19.Image = Properties.Resources.refresh;
-            pictureBox19.Location = new Point(10, 10);
-            pictureBox19.Name = "pictureBox19";
-            pictureBox19.Size = new Size(25, 25);
-            pictureBox19.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox19.TabIndex = 2;
-            pictureBox19.TabStop = false;
-            pictureBox19.Click += ToEditVirtualTour_AD;
             // 
             // panel29
             // 
@@ -1236,6 +1225,17 @@ namespace RUSUNAWAAA.View.Admin
             label6.TabIndex = 4;
             label6.Text = "Beranda Admin";
             // 
+            // pictureBox22
+            // 
+            pictureBox22.Image = Properties.Resources.Virtual_tour;
+            pictureBox22.Location = new Point(10, 10);
+            pictureBox22.Name = "pictureBox22";
+            pictureBox22.Size = new Size(25, 25);
+            pictureBox22.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox22.TabIndex = 10;
+            pictureBox22.TabStop = false;
+            pictureBox22.Click += ToEditVirtualTour_AD;
+            // 
             // Dashboard_Admin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -1263,7 +1263,6 @@ namespace RUSUNAWAAA.View.Admin
             panel32.ResumeLayout(false);
             panel32.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox19).EndInit();
             panel29.ResumeLayout(false);
             panel29.PerformLayout();
             panel30.ResumeLayout(false);
@@ -1328,6 +1327,7 @@ namespace RUSUNAWAAA.View.Admin
             panel11.PerformLayout();
             panel17.ResumeLayout(false);
             panel17.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox22).EndInit();
             ResumeLayout(false);
         }
 
@@ -1424,6 +1424,6 @@ namespace RUSUNAWAAA.View.Admin
         private Label label32;
         private PictureBox pictureBox18;
         private Label label33;
-        private PictureBox pictureBox19;
+        private PictureBox pictureBox22;
     }
 }

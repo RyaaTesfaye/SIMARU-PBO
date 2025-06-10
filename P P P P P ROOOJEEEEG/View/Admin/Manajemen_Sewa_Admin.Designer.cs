@@ -41,7 +41,6 @@
             label32 = new Label();
             pictureBox18 = new PictureBox();
             label33 = new Label();
-            pictureBox19 = new PictureBox();
             panel29 = new Panel();
             panel28 = new Panel();
             panel30 = new Panel();
@@ -99,6 +98,7 @@
             pictureBox7 = new PictureBox();
             pictureBox8 = new PictureBox();
             panel7 = new Panel();
+            pictureBox14 = new PictureBox();
             panel1.SuspendLayout();
             panel33.SuspendLayout();
             panel34.SuspendLayout();
@@ -107,7 +107,6 @@
             panel31.SuspendLayout();
             panel32.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox19).BeginInit();
             panel29.SuspendLayout();
             panel30.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox17).BeginInit();
@@ -141,6 +140,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -234,9 +234,9 @@
             // panel31
             // 
             panel31.BackColor = Color.Transparent;
+            panel31.Controls.Add(pictureBox14);
             panel31.Controls.Add(panel32);
             panel31.Controls.Add(label33);
-            panel31.Controls.Add(pictureBox19);
             panel31.Cursor = Cursors.Hand;
             panel31.Location = new Point(0, 510);
             panel31.Name = "panel31";
@@ -287,17 +287,6 @@
             label33.TabIndex = 4;
             label33.Text = "Edit Virtual Tour";
             label33.Click += ToEditVirtualTour_AD;
-            // 
-            // pictureBox19
-            // 
-            pictureBox19.Image = Properties.Resources.refresh;
-            pictureBox19.Location = new Point(10, 10);
-            pictureBox19.Name = "pictureBox19";
-            pictureBox19.Size = new Size(25, 25);
-            pictureBox19.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox19.TabIndex = 2;
-            pictureBox19.TabStop = false;
-            pictureBox19.Click += ToEditVirtualTour_AD;
             // 
             // panel29
             // 
@@ -954,6 +943,17 @@
             panel7.Size = new Size(1182, 70);
             panel7.TabIndex = 2;
             // 
+            // pictureBox14
+            // 
+            pictureBox14.Image = Properties.Resources.Virtual_tour;
+            pictureBox14.Location = new Point(10, 10);
+            pictureBox14.Name = "pictureBox14";
+            pictureBox14.Size = new Size(25, 25);
+            pictureBox14.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox14.TabIndex = 10;
+            pictureBox14.TabStop = false;
+            pictureBox14.Click += ToEditVirtualTour_AD;
+            // 
             // Manajemen_Sewa_Admin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -980,7 +980,6 @@
             panel32.ResumeLayout(false);
             panel32.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox19).EndInit();
             panel29.ResumeLayout(false);
             panel29.PerformLayout();
             panel30.ResumeLayout(false);
@@ -1025,6 +1024,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
             ResumeLayout(false);
         }
 
@@ -1042,7 +1042,6 @@
         private Label label32;
         private PictureBox pictureBox18;
         private Label label33;
-        private PictureBox pictureBox19;
         private Panel panel29;
         private Panel panel30;
         private Label label31;
@@ -1100,5 +1099,6 @@
         private PictureBox pictureBox7;
         private PictureBox pictureBox8;
         private Panel panel7;
+        private PictureBox pictureBox14;
     }
 }

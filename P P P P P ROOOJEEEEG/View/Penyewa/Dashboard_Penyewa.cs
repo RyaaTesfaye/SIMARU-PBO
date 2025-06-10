@@ -17,7 +17,32 @@ namespace RUSUNAWAAA.View.Penyewa
             InitializeComponent();
         }
 
-        private void label26_Click(object sender, EventArgs e)
+        private void ToBeriUlasan_PE(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ToTataTertib_PE(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ToLaporMasalah_PE(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ToRiwayatLaporan_PE(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ToRiwayatPembayaran_PE(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ToPerpanjanganSewa_UM(object sender, EventArgs e)
         {
 
         }

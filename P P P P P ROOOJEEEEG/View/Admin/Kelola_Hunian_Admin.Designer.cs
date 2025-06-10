@@ -41,7 +41,6 @@
             label32 = new Label();
             pictureBox18 = new PictureBox();
             label33 = new Label();
-            pictureBox19 = new PictureBox();
             panel29 = new Panel();
             panel30 = new Panel();
             label31 = new Label();
@@ -78,23 +77,24 @@
             panel8 = new Panel();
             panel9 = new Panel();
             panel13 = new Panel();
+            pictureBox13 = new PictureBox();
+            pictureBox11 = new PictureBox();
+            pictureBox22 = new PictureBox();
             panel10 = new Panel();
+            label11 = new Label();
+            label8 = new Label();
             label9 = new Label();
             label23 = new Label();
+            label24 = new Label();
+            label7 = new Label();
             panel14 = new Panel();
+            button1 = new Button();
+            label10 = new Label();
             label17 = new Label();
             label16 = new Label();
             panel16 = new Panel();
             label6 = new Label();
-            pictureBox22 = new PictureBox();
-            label24 = new Label();
-            label7 = new Label();
-            pictureBox13 = new PictureBox();
-            pictureBox11 = new PictureBox();
-            label8 = new Label();
-            label10 = new Label();
-            label11 = new Label();
-            button1 = new Button();
+            pictureBox12 = new PictureBox();
             panel1.SuspendLayout();
             panel33.SuspendLayout();
             panel34.SuspendLayout();
@@ -103,7 +103,6 @@
             panel31.SuspendLayout();
             panel32.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox19).BeginInit();
             panel29.SuspendLayout();
             panel30.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox17).BeginInit();
@@ -129,11 +128,12 @@
             panel8.SuspendLayout();
             panel9.SuspendLayout();
             panel13.SuspendLayout();
-            panel10.SuspendLayout();
-            panel14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox22).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox22).BeginInit();
+            panel10.SuspendLayout();
+            panel14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -227,9 +227,9 @@
             // panel31
             // 
             panel31.BackColor = Color.Transparent;
+            panel31.Controls.Add(pictureBox12);
             panel31.Controls.Add(panel32);
             panel31.Controls.Add(label33);
-            panel31.Controls.Add(pictureBox19);
             panel31.Cursor = Cursors.Hand;
             panel31.Location = new Point(0, 510);
             panel31.Name = "panel31";
@@ -280,17 +280,6 @@
             label33.TabIndex = 4;
             label33.Text = "Edit Virtual Tour";
             label33.Click += ToEditVirtualTour_AD;
-            // 
-            // pictureBox19
-            // 
-            pictureBox19.Image = Properties.Resources.refresh;
-            pictureBox19.Location = new Point(10, 10);
-            pictureBox19.Name = "pictureBox19";
-            pictureBox19.Size = new Size(25, 25);
-            pictureBox19.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox19.TabIndex = 2;
-            pictureBox19.TabStop = false;
-            pictureBox19.Click += ToEditVirtualTour_AD;
             // 
             // panel29
             // 
@@ -705,6 +694,42 @@
             panel13.Size = new Size(1165, 662);
             panel13.TabIndex = 7;
             // 
+            // pictureBox13
+            // 
+            pictureBox13.BackColor = Color.Transparent;
+            pictureBox13.Cursor = Cursors.Hand;
+            pictureBox13.ErrorImage = null;
+            pictureBox13.Image = Properties.Resources.LK_Mati;
+            pictureBox13.Location = new Point(989, 6);
+            pictureBox13.Name = "pictureBox13";
+            pictureBox13.Size = new Size(50, 50);
+            pictureBox13.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox13.TabIndex = 48;
+            pictureBox13.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            pictureBox11.BackColor = Color.Transparent;
+            pictureBox11.Cursor = Cursors.Hand;
+            pictureBox11.ErrorImage = null;
+            pictureBox11.Image = Properties.Resources.PR_HIDUP;
+            pictureBox11.Location = new Point(933, 6);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(50, 50);
+            pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox11.TabIndex = 47;
+            pictureBox11.TabStop = false;
+            // 
+            // pictureBox22
+            // 
+            pictureBox22.Image = Properties.Resources.Ijo_kecil;
+            pictureBox22.Location = new Point(16, 27);
+            pictureBox22.Name = "pictureBox22";
+            pictureBox22.Size = new Size(10, 10);
+            pictureBox22.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox22.TabIndex = 46;
+            pictureBox22.TabStop = false;
+            // 
             // panel10
             // 
             panel10.BackColor = Color.FromArgb(23, 24, 30);
@@ -716,6 +741,28 @@
             panel10.Name = "panel10";
             panel10.Size = new Size(1149, 37);
             panel10.TabIndex = 32;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label11.ForeColor = Color.FromArgb(139, 140, 142);
+            label11.Location = new Point(892, 7);
+            label11.Name = "label11";
+            label11.Size = new Size(123, 24);
+            label11.TabIndex = 15;
+            label11.Text = "Status Hunian";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.ForeColor = Color.FromArgb(139, 140, 142);
+            label8.Location = new Point(248, 8);
+            label8.Name = "label8";
+            label8.Size = new Size(130, 24);
+            label8.TabIndex = 14;
+            label8.Text = "Total Penghuni";
             // 
             // label9
             // 
@@ -739,6 +786,28 @@
             label23.TabIndex = 12;
             label23.Text = "ID";
             // 
+            // label24
+            // 
+            label24.AutoSize = true;
+            label24.Font = new Font("Inter SemiBold", 7F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label24.ForeColor = Color.FromArgb(139, 140, 142);
+            label24.Location = new Point(29, 24);
+            label24.Name = "label24";
+            label24.Size = new Size(127, 17);
+            label24.TabIndex = 45;
+            label24.Text = "Ada 100 kamar terisi";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Inter", 10F, FontStyle.Bold);
+            label7.ForeColor = Color.White;
+            label7.Location = new Point(6, -1);
+            label7.Name = "label7";
+            label7.Size = new Size(110, 24);
+            label7.TabIndex = 44;
+            label7.Text = "Total Kamar";
+            // 
             // panel14
             // 
             panel14.AutoScroll = true;
@@ -753,6 +822,32 @@
             panel14.Padding = new Padding(50);
             panel14.Size = new Size(1149, 550);
             panel14.TabIndex = 6;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(10, 100, 236);
+            button1.Cursor = Cursors.Hand;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(1048, 20);
+            button1.Name = "button1";
+            button1.Size = new Size(90, 28);
+            button1.TabIndex = 42;
+            button1.Text = "Detail";
+            button1.UseVisualStyleBackColor = false;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label10.ForeColor = Color.FromArgb(139, 140, 142);
+            label10.Location = new Point(248, 21);
+            label10.Name = "label10";
+            label10.Size = new Size(38, 24);
+            label10.TabIndex = 21;
+            label10.Text = "2/3";
             // 
             // label17
             // 
@@ -795,111 +890,16 @@
             label6.TabIndex = 4;
             label6.Text = "Kelola Hunian";
             // 
-            // pictureBox22
+            // pictureBox12
             // 
-            pictureBox22.Image = Properties.Resources.Ijo_kecil;
-            pictureBox22.Location = new Point(16, 27);
-            pictureBox22.Name = "pictureBox22";
-            pictureBox22.Size = new Size(10, 10);
-            pictureBox22.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox22.TabIndex = 46;
-            pictureBox22.TabStop = false;
-            // 
-            // label24
-            // 
-            label24.AutoSize = true;
-            label24.Font = new Font("Inter SemiBold", 7F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label24.ForeColor = Color.FromArgb(139, 140, 142);
-            label24.Location = new Point(29, 24);
-            label24.Name = "label24";
-            label24.Size = new Size(127, 17);
-            label24.TabIndex = 45;
-            label24.Text = "Ada 100 kamar terisi";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Inter", 10F, FontStyle.Bold);
-            label7.ForeColor = Color.White;
-            label7.Location = new Point(6, -1);
-            label7.Name = "label7";
-            label7.Size = new Size(110, 24);
-            label7.TabIndex = 44;
-            label7.Text = "Total Kamar";
-            // 
-            // pictureBox13
-            // 
-            pictureBox13.BackColor = Color.Transparent;
-            pictureBox13.Cursor = Cursors.Hand;
-            pictureBox13.ErrorImage = null;
-            pictureBox13.Image = Properties.Resources.LK_Mati;
-            pictureBox13.Location = new Point(989, 6);
-            pictureBox13.Name = "pictureBox13";
-            pictureBox13.Size = new Size(50, 50);
-            pictureBox13.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox13.TabIndex = 48;
-            pictureBox13.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            pictureBox11.BackColor = Color.Transparent;
-            pictureBox11.Cursor = Cursors.Hand;
-            pictureBox11.ErrorImage = null;
-            pictureBox11.Image = Properties.Resources.PR_HIDUP;
-            pictureBox11.Location = new Point(933, 6);
-            pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(50, 50);
-            pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox11.TabIndex = 47;
-            pictureBox11.TabStop = false;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.ForeColor = Color.FromArgb(139, 140, 142);
-            label8.Location = new Point(248, 8);
-            label8.Name = "label8";
-            label8.Size = new Size(130, 24);
-            label8.TabIndex = 14;
-            label8.Text = "Total Penghuni";
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label10.ForeColor = Color.FromArgb(139, 140, 142);
-            label10.Location = new Point(248, 21);
-            label10.Name = "label10";
-            label10.Size = new Size(38, 24);
-            label10.TabIndex = 21;
-            label10.Text = "2/3";
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.ForeColor = Color.FromArgb(139, 140, 142);
-            label11.Location = new Point(892, 7);
-            label11.Name = "label11";
-            label11.Size = new Size(123, 24);
-            label11.TabIndex = 15;
-            label11.Text = "Status Hunian";
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.FromArgb(10, 100, 236);
-            button1.Cursor = Cursors.Hand;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(1048, 20);
-            button1.Name = "button1";
-            button1.Size = new Size(90, 28);
-            button1.TabIndex = 42;
-            button1.Text = "Detail";
-            button1.UseVisualStyleBackColor = false;
+            pictureBox12.Image = Properties.Resources.Virtual_tour;
+            pictureBox12.Location = new Point(10, 10);
+            pictureBox12.Name = "pictureBox12";
+            pictureBox12.Size = new Size(25, 25);
+            pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox12.TabIndex = 10;
+            pictureBox12.TabStop = false;
+            pictureBox12.Click += ToEditVirtualTour_AD;
             // 
             // Kelola_Hunian_Admin
             // 
@@ -926,7 +926,6 @@
             panel32.ResumeLayout(false);
             panel32.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox19).EndInit();
             panel29.ResumeLayout(false);
             panel29.PerformLayout();
             panel30.ResumeLayout(false);
@@ -962,13 +961,14 @@
             panel9.ResumeLayout(false);
             panel13.ResumeLayout(false);
             panel13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox22).EndInit();
             panel10.ResumeLayout(false);
             panel10.PerformLayout();
             panel14.ResumeLayout(false);
             panel14.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox22).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             ResumeLayout(false);
         }
 
@@ -986,7 +986,6 @@
         private Label label32;
         private PictureBox pictureBox18;
         private Label label33;
-        private PictureBox pictureBox19;
         private Panel panel29;
         private Panel panel30;
         private Label label31;
@@ -1040,5 +1039,6 @@
         private Label label8;
         private Label label10;
         private Button button1;
+        private PictureBox pictureBox12;
     }
 }

@@ -41,7 +41,6 @@
             label32 = new Label();
             pictureBox18 = new PictureBox();
             label33 = new Label();
-            pictureBox19 = new PictureBox();
             panel29 = new Panel();
             panel30 = new Panel();
             label31 = new Label();
@@ -78,11 +77,8 @@
             panel8 = new Panel();
             panel10 = new Panel();
             panel12 = new Panel();
-            panel13 = new Panel();
-            label14 = new Label();
-            panel9 = new Panel();
-            label6 = new Label();
             panel11 = new Panel();
+            pictureBox12 = new PictureBox();
             pictureBox13 = new PictureBox();
             pictureBox11 = new PictureBox();
             pictureBox22 = new PictureBox();
@@ -96,7 +92,11 @@
             label17 = new Label();
             label16 = new Label();
             panel16 = new Panel();
-            pictureBox12 = new PictureBox();
+            panel13 = new Panel();
+            label14 = new Label();
+            panel9 = new Panel();
+            label6 = new Label();
+            pictureBox14 = new PictureBox();
             panel1.SuspendLayout();
             panel33.SuspendLayout();
             panel34.SuspendLayout();
@@ -105,7 +105,6 @@
             panel31.SuspendLayout();
             panel32.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox19).BeginInit();
             panel29.SuspendLayout();
             panel30.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox17).BeginInit();
@@ -132,12 +131,13 @@
             panel10.SuspendLayout();
             panel12.SuspendLayout();
             panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox22).BeginInit();
             panel14.SuspendLayout();
             panel15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -231,9 +231,9 @@
             // panel31
             // 
             panel31.BackColor = Color.Transparent;
+            panel31.Controls.Add(pictureBox14);
             panel31.Controls.Add(panel32);
             panel31.Controls.Add(label33);
-            panel31.Controls.Add(pictureBox19);
             panel31.Cursor = Cursors.Hand;
             panel31.Location = new Point(0, 510);
             panel31.Name = "panel31";
@@ -284,17 +284,6 @@
             label33.TabIndex = 4;
             label33.Text = "Edit Virtual Tour";
             label33.Click += ToEditVirtualTour_AD;
-            // 
-            // pictureBox19
-            // 
-            pictureBox19.Image = Properties.Resources.refresh;
-            pictureBox19.Location = new Point(10, 10);
-            pictureBox19.Name = "pictureBox19";
-            pictureBox19.Size = new Size(25, 25);
-            pictureBox19.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox19.TabIndex = 2;
-            pictureBox19.TabStop = false;
-            pictureBox19.Click += ToEditVirtualTour_AD;
             // 
             // panel29
             // 
@@ -705,46 +694,6 @@
             panel12.Size = new Size(1165, 662);
             panel12.TabIndex = 5;
             // 
-            // panel13
-            // 
-            panel13.BackColor = Color.FromArgb(37, 39, 48);
-            panel13.Location = new Point(1, 0);
-            panel13.Name = "panel13";
-            panel13.Padding = new Padding(50);
-            panel13.Size = new Size(1165, 662);
-            panel13.TabIndex = 6;
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Font = new Font("Inter", 19F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label14.ForeColor = Color.White;
-            label14.Location = new Point(0, 3);
-            label14.Name = "label14";
-            label14.Size = new Size(233, 45);
-            label14.TabIndex = 4;
-            label14.Text = "Kelola Aturan";
-            // 
-            // panel9
-            // 
-            panel9.BackColor = Color.FromArgb(37, 39, 48);
-            panel9.Location = new Point(5, 54);
-            panel9.Name = "panel9";
-            panel9.Padding = new Padding(50);
-            panel9.Size = new Size(1165, 662);
-            panel9.TabIndex = 5;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Inter", 19F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.ForeColor = Color.White;
-            label6.Location = new Point(0, 3);
-            label6.Name = "label6";
-            label6.Size = new Size(306, 45);
-            label6.TabIndex = 4;
-            label6.Text = "Pengelolaan Akun";
-            // 
             // panel11
             // 
             panel11.BackColor = Color.FromArgb(37, 39, 48);
@@ -762,6 +711,19 @@
             panel11.Size = new Size(1165, 662);
             panel11.TabIndex = 8;
             panel11.Paint += panel11_Paint;
+            // 
+            // pictureBox12
+            // 
+            pictureBox12.BackColor = Color.Transparent;
+            pictureBox12.Cursor = Cursors.Hand;
+            pictureBox12.ErrorImage = null;
+            pictureBox12.Image = Properties.Resources.Tambah_Glow;
+            pictureBox12.Location = new Point(1094, 8);
+            pictureBox12.Name = "pictureBox12";
+            pictureBox12.Size = new Size(50, 50);
+            pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox12.TabIndex = 49;
+            pictureBox12.TabStop = false;
             // 
             // pictureBox13
             // 
@@ -912,18 +874,56 @@
             panel16.Size = new Size(1149, 3);
             panel16.TabIndex = 18;
             // 
-            // pictureBox12
+            // panel13
             // 
-            pictureBox12.BackColor = Color.Transparent;
-            pictureBox12.Cursor = Cursors.Hand;
-            pictureBox12.ErrorImage = null;
-            pictureBox12.Image = Properties.Resources.Tambah_Glow;
-            pictureBox12.Location = new Point(1094, 8);
-            pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(50, 50);
-            pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox12.TabIndex = 49;
-            pictureBox12.TabStop = false;
+            panel13.BackColor = Color.FromArgb(37, 39, 48);
+            panel13.Location = new Point(1, 0);
+            panel13.Name = "panel13";
+            panel13.Padding = new Padding(50);
+            panel13.Size = new Size(1165, 662);
+            panel13.TabIndex = 6;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Font = new Font("Inter", 19F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label14.ForeColor = Color.White;
+            label14.Location = new Point(0, 3);
+            label14.Name = "label14";
+            label14.Size = new Size(233, 45);
+            label14.TabIndex = 4;
+            label14.Text = "Kelola Aturan";
+            // 
+            // panel9
+            // 
+            panel9.BackColor = Color.FromArgb(37, 39, 48);
+            panel9.Location = new Point(5, 54);
+            panel9.Name = "panel9";
+            panel9.Padding = new Padding(50);
+            panel9.Size = new Size(1165, 662);
+            panel9.TabIndex = 5;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Inter", 19F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.White;
+            label6.Location = new Point(0, 3);
+            label6.Name = "label6";
+            label6.Size = new Size(306, 45);
+            label6.TabIndex = 4;
+            label6.Text = "Pengelolaan Akun";
+            // 
+            // pictureBox14
+            // 
+            pictureBox14.Image = Properties.Resources.Virtual_tour;
+            pictureBox14.Location = new Point(10, 10);
+            pictureBox14.Name = "pictureBox14";
+            pictureBox14.Size = new Size(25, 25);
+            pictureBox14.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox14.TabIndex = 10;
+            pictureBox14.TabStop = false;
+            pictureBox14.Click += ToEditVirtualTour_AD;
             // 
             // Kelola_Aturan_Admin
             // 
@@ -950,7 +950,6 @@
             panel32.ResumeLayout(false);
             panel32.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox19).EndInit();
             panel29.ResumeLayout(false);
             panel29.PerformLayout();
             panel30.ResumeLayout(false);
@@ -988,6 +987,7 @@
             panel12.ResumeLayout(false);
             panel11.ResumeLayout(false);
             panel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox22).EndInit();
@@ -995,7 +995,7 @@
             panel14.PerformLayout();
             panel15.ResumeLayout(false);
             panel15.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
             ResumeLayout(false);
         }
 
@@ -1013,7 +1013,6 @@
         private Label label32;
         private PictureBox pictureBox18;
         private Label label33;
-        private PictureBox pictureBox19;
         private Panel panel29;
         private Panel panel30;
         private Label label31;
@@ -1069,5 +1068,6 @@
         private Label label16;
         private Panel panel16;
         private PictureBox pictureBox12;
+        private PictureBox pictureBox14;
     }
 }
