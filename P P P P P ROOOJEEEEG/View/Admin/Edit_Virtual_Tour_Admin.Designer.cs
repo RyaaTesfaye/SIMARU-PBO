@@ -99,6 +99,7 @@
             label9 = new Label();
             label8 = new Label();
             label6 = new Label();
+            pictureBox14 = new PictureBox();
             panel1.SuspendLayout();
             panel33.SuspendLayout();
             panel34.SuspendLayout();
@@ -137,6 +138,7 @@
             panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnNextPage).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnPrevPage).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -230,7 +232,7 @@
             // panel31
             // 
             panel31.BackColor = Color.Transparent;
-            panel31.Controls.Add(pictureBox11);
+            panel31.Controls.Add(pictureBox14);
             panel31.Controls.Add(panel28);
             panel31.Controls.Add(panel32);
             panel31.Controls.Add(label33);
@@ -944,6 +946,16 @@
             label6.TabIndex = 4;
             label6.Text = "Edit Virtual Tour";
             // 
+            // pictureBox14
+            // 
+            pictureBox14.Image = Properties.Resources.Virtual_tour;
+            pictureBox14.Location = new Point(10, 10);
+            pictureBox14.Name = "pictureBox14";
+            pictureBox14.Size = new Size(25, 25);
+            pictureBox14.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox14.TabIndex = 11;
+            pictureBox14.TabStop = false;
+            // 
             // Edit_Virtual_Tour_Admin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -1011,6 +1023,7 @@
             panel11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)btnNextPage).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnPrevPage).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
             ResumeLayout(false);
         }
 
@@ -1086,5 +1099,6 @@
         private PictureBox pictureBox22;
         private Label label24;
         private Label label7;
+        private PictureBox pictureBox14;
     }
 }

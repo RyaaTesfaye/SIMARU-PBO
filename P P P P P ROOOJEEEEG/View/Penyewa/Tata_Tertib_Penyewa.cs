@@ -26,27 +26,32 @@ namespace RUSUNAWAAA.View.Penyewa
 
         private void ToBeriUlasan_PE(object sender, EventArgs e)
         {
-
+            var command = new NavigateToFormCommand<_1_Penyewa>(this);
+            command.Execute();
         }
 
         private void ToLaporMasalah_PE(object sender, EventArgs e)
         {
-
+            var command = new NavigateToFormCommand<_3_Penyewa>(this);
+            command.Execute();
         }
 
         private void ToRiwayatLaporan_PE(object sender, EventArgs e)
         {
-
+            var command = new NavigateToFormCommand<_4_Penyewa>(this);
+            command.Execute();
         }
 
         private void ToRiwayatPembayaran_PE(object sender, EventArgs e)
         {
-
+            var command = new NavigateToFormCommand<_5_Penyewa>(this);
+            command.Execute();
         }
 
         private void ToPerpanjanganSewa_PE(object sender, EventArgs e)
         {
-
+            var command = new NavigateToFormCommand<_6_Penyewa>(this);
+            command.Execute();
         }
     }
 }

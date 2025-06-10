@@ -461,6 +461,7 @@
             Controls.Add(panel7);
             Controls.Add(panel1);
             Name = "_2_Penyewa";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "_2_Penyewa";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

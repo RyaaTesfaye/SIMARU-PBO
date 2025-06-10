@@ -62,11 +62,7 @@ namespace RUSUNAWAAA.View.Umum
 
         private void LoadFormSemuaUlasan_UM()
         {
-            panel9.Controls.Clear(); // Hapus konten lama kalau ada
-            Semua_Ulasan_Umum semuaUlasanum = new Semua_Ulasan_Umum();
-            semuaUlasanum.Dock = DockStyle.Fill;
-            semuaUlasanum.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            panel9.Controls.Add(semuaUlasanum);
+            
         }
 
         private void ToSemuaUlasan_UM(object sender, EventArgs e)
