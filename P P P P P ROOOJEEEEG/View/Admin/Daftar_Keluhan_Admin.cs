@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PenyewaModel = RUSUNAWAAA.Models.Penyewa;
+using RUSUNAWAAA.Utils;
 
 namespace RUSUNAWAAA.View.Admin
 {
@@ -29,6 +30,7 @@ namespace RUSUNAWAAA.View.Admin
         }
         private void Daftar_Keluhan_Admin_Load(object sender, EventArgs e)
         {
+            try
             {
                 _semuaKeluhan = _service.GetAllKeluhan();
                 ApplyFiltersAndDisplay();
