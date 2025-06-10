@@ -30,19 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_TambahVirtual));
             btn_fotoktp = new Button();
-            text_path = new TextBox();
+            txtpath = new TextBox();
             label10 = new Label();
             txtNama = new TextBox();
             label9 = new Label();
-            textBox1 = new TextBox();
+            txtKeterangan = new TextBox();
             label1 = new Label();
             button4 = new Button();
-            pictureBox6 = new PictureBox();
-            pictureBox1 = new PictureBox();
+            pictureBoxPreview = new PictureBox();
             label7 = new Label();
             ofdPilihFile = new OpenFileDialog();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            button1 = new Button();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxPreview).BeginInit();
             SuspendLayout();
             // 
             // btn_fotoktp
@@ -61,14 +60,14 @@
             btn_fotoktp.UseVisualStyleBackColor = false;
             btn_fotoktp.Click += btnPilihFile_Click;
             // 
-            // text_path
+            // txtpath
             // 
-            text_path.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            text_path.Location = new Point(161, 310);
-            text_path.Name = "text_path";
-            text_path.ReadOnly = true;
-            text_path.Size = new Size(239, 32);
-            text_path.TabIndex = 30;
+            txtpath.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtpath.Location = new Point(161, 310);
+            txtpath.Name = "txtpath";
+            txtpath.ReadOnly = true;
+            txtpath.Size = new Size(239, 32);
+            txtpath.TabIndex = 30;
             // 
             // label10
             // 
@@ -101,14 +100,14 @@
             label9.TabIndex = 32;
             label9.Text = "Nama File";
             // 
-            // textBox1
+            // txtKeterangan
             // 
-            textBox1.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(88, 456);
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "Keterangan";
-            textBox1.Size = new Size(316, 32);
-            textBox1.TabIndex = 35;
+            txtKeterangan.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtKeterangan.Location = new Point(88, 456);
+            txtKeterangan.Name = "txtKeterangan";
+            txtKeterangan.PlaceholderText = "Keterangan";
+            txtKeterangan.Size = new Size(316, 32);
+            txtKeterangan.TabIndex = 35;
             // 
             // label1
             // 
@@ -129,34 +128,24 @@
             button4.FlatStyle = FlatStyle.Flat;
             button4.Font = new Font("Inter", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button4.ForeColor = Color.White;
-            button4.Location = new Point(161, 540);
+            button4.Location = new Point(260, 540);
             button4.Name = "button4";
-            button4.Size = new Size(156, 34);
+            button4.Size = new Size(144, 34);
             button4.TabIndex = 36;
             button4.Text = "Simpan";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += btnSimpan_Click;
             // 
-            // pictureBox6
+            // pictureBoxPreview
             // 
-            pictureBox6.Cursor = Cursors.Hand;
-            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(85, 60);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(331, 220);
-            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox6.TabIndex = 37;
-            pictureBox6.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Cursor = Cursors.Hand;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(16, 35);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(41, 39);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 38;
-            pictureBox1.TabStop = false;
+            pictureBoxPreview.Cursor = Cursors.Hand;
+            pictureBoxPreview.Image = (Image)resources.GetObject("pictureBoxPreview.Image");
+            pictureBoxPreview.Location = new Point(85, 60);
+            pictureBoxPreview.Name = "pictureBoxPreview";
+            pictureBoxPreview.Size = new Size(331, 220);
+            pictureBoxPreview.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBoxPreview.TabIndex = 37;
+            pictureBoxPreview.TabStop = false;
             // 
             // label7
             // 
@@ -173,26 +162,41 @@
             // 
             ofdPilihFile.FileName = "openFileDialog1";
             // 
+            // button1
+            // 
+            button1.BackColor = Color.Red;
+            button1.Cursor = Cursors.Hand;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Inter", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(81, 540);
+            button1.Name = "button1";
+            button1.Size = new Size(142, 34);
+            button1.TabIndex = 40;
+            button1.Text = "Batal";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += btnBatal_Click;
+            // 
             // UC_TambahVirtual
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(23, 24, 29);
+            Controls.Add(button1);
             Controls.Add(label7);
-            Controls.Add(pictureBox1);
-            Controls.Add(pictureBox6);
+            Controls.Add(pictureBoxPreview);
             Controls.Add(button4);
-            Controls.Add(textBox1);
+            Controls.Add(txtKeterangan);
             Controls.Add(label1);
             Controls.Add(txtNama);
             Controls.Add(label9);
             Controls.Add(btn_fotoktp);
-            Controls.Add(text_path);
+            Controls.Add(txtpath);
             Controls.Add(label10);
             Name = "UC_TambahVirtual";
             Size = new Size(492, 594);
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxPreview).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -200,16 +204,16 @@
         #endregion
 
         private Button btn_fotoktp;
-        private TextBox text_path;
+        private TextBox txtpath;
         private Label label10;
         private TextBox txtNama;
         private Label label9;
-        private TextBox textBox1;
+        private TextBox txtKeterangan;
         private Label label1;
         private Button button4;
-        private PictureBox pictureBox6;
-        private PictureBox pictureBox1;
+        private PictureBox pictureBoxPreview;
         private Label label7;
         private OpenFileDialog ofdPilihFile;
+        private Button button1;
     }
 }

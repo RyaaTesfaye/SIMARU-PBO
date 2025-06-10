@@ -32,7 +32,7 @@
             lblKeterangan = new Label();
             lblPath = new Label();
             lblNamaMedia = new Label();
-            lblNomorKTPIsi = new Label();
+            lblIDIsi = new Label();
             SuspendLayout();
             // 
             // chkPilih
@@ -51,7 +51,7 @@
             lblKeterangan.AutoSize = true;
             lblKeterangan.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblKeterangan.ForeColor = Color.FromArgb(139, 140, 142);
-            lblKeterangan.Location = new Point(777, 11);
+            lblKeterangan.Location = new Point(759, 11);
             lblKeterangan.Name = "lblKeterangan";
             lblKeterangan.Size = new Size(128, 24);
             lblKeterangan.TabIndex = 61;
@@ -62,7 +62,7 @@
             lblPath.AutoSize = true;
             lblPath.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblPath.ForeColor = Color.FromArgb(139, 140, 142);
-            lblPath.Location = new Point(581, 11);
+            lblPath.Location = new Point(440, 11);
             lblPath.Name = "lblPath";
             lblPath.Size = new Size(134, 24);
             lblPath.TabIndex = 59;
@@ -79,16 +79,16 @@
             lblNamaMedia.TabIndex = 58;
             lblNamaMedia.Text = "Aditiya Rifki Arya Putra";
             // 
-            // lblNomorKTPIsi
+            // lblIDIsi
             // 
-            lblNomorKTPIsi.AutoSize = true;
-            lblNomorKTPIsi.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblNomorKTPIsi.ForeColor = Color.FromArgb(139, 140, 142);
-            lblNomorKTPIsi.Location = new Point(77, 12);
-            lblNomorKTPIsi.Name = "lblNomorKTPIsi";
-            lblNomorKTPIsi.Size = new Size(39, 24);
-            lblNomorKTPIsi.TabIndex = 57;
-            lblNomorKTPIsi.Text = "001";
+            lblIDIsi.AutoSize = true;
+            lblIDIsi.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblIDIsi.ForeColor = Color.FromArgb(139, 140, 142);
+            lblIDIsi.Location = new Point(77, 12);
+            lblIDIsi.Name = "lblIDIsi";
+            lblIDIsi.Size = new Size(39, 24);
+            lblIDIsi.TabIndex = 57;
+            lblIDIsi.Text = "001";
             // 
             // UC_ItemVirtualTour
             // 
@@ -99,7 +99,7 @@
             Controls.Add(lblKeterangan);
             Controls.Add(lblPath);
             Controls.Add(lblNamaMedia);
-            Controls.Add(lblNomorKTPIsi);
+            Controls.Add(lblIDIsi);
             Name = "UC_ItemVirtualTour";
             Size = new Size(1153, 45);
             ResumeLayout(false);
@@ -113,6 +113,6 @@
         private Label lblNIM;
         private Label lblPath;
         private Label lblNamaMedia;
-        private Label lblNomorKTPIsi;
+        private Label lblIDIsi;
     }
 }

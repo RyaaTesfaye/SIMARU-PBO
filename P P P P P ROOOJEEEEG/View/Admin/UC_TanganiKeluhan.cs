@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace RUSUNAWAAA.View.Admin
 {
-    public partial class Daftar_Keluhan2_Admin : UserControl
+    public partial class UC_TanganiKeluhan : UserControl
     {
-        public Daftar_Keluhan2_Admin()
+        public UC_TanganiKeluhan()
         {
             InitializeComponent();
         }

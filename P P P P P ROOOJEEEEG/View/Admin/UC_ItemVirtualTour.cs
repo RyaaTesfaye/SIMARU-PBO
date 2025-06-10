@@ -7,14 +7,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using RUSUNAWAAA.Models;
+
 
 namespace RUSUNAWAAA.View.Admin
-{
+{ 
     public partial class UC_ItemVirtualTour: UserControl
     {
+        public MediaVirtual MediaData { get; private set; }
+
+        // Properti untuk membaca status CheckBox dari luar
+        public bool IsChecked => chkPilih.Checked;
+
+        // Properti untuk mengambil ID dengan mudah, disesuaikan dengan nama di model Anda
+        public int MediaId => MediaData.Id_Media;
         public UC_ItemVirtualTour()
         {
             InitializeComponent();
+        }
+        public void SetData(MediaVirtual data)
+        {
+            this.MediaData = data;
+            lblIDIsi.Text = data.Id_Media.ToString("D3");
+            lblNamaMedia.Text = data.NamaFile;
+            lblPath.Text = Path.GetFileName(data.PathMedia); 
+            lblKeterangan.Text = data.Keterangan;
         }
     }
 }

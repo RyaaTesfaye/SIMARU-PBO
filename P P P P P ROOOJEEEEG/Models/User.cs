@@ -20,6 +20,7 @@ namespace RUSUNAWAAA.Models
         public virtual ICollection<PerpanjanganSewa> Perpanjangans { get; set; }
         public virtual ICollection<Pembayaran> Pembayarans { get; set; }
         public virtual ICollection<Laporan> Laporans { get; set; }
+        public virtual ICollection<Laporan> Notifikasis { get; set; }
         public User() { }
         public User(string nomorktp,string username, string password, string namaLengkap, string role)
         {
