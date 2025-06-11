@@ -177,7 +177,7 @@
             panel9.BackColor = Color.FromArgb(37, 39, 48);
             panel9.Controls.Add(panel6);
             panel9.Controls.Add(panel10);
-            panel9.Location = new Point(5, 54);
+            panel9.Location = new Point(5, 55);
             panel9.Name = "panel9";
             panel9.Padding = new Padding(50);
             panel9.Size = new Size(1165, 662);
@@ -209,7 +209,7 @@
             panel13.Controls.Add(pictureBox21);
             panel13.Controls.Add(label23);
             panel13.Controls.Add(label24);
-            panel13.Location = new Point(16, 420);
+            panel13.Location = new Point(31, 426);
             panel13.Name = "panel13";
             panel13.Size = new Size(486, 160);
             panel13.TabIndex = 26;
@@ -321,7 +321,7 @@
             panel12.Controls.Add(pictureBox14);
             panel12.Controls.Add(label21);
             panel12.Controls.Add(label22);
-            panel12.Location = new Point(16, 239);
+            panel12.Location = new Point(31, 239);
             panel12.Name = "panel12";
             panel12.Size = new Size(486, 160);
             panel12.TabIndex = 25;

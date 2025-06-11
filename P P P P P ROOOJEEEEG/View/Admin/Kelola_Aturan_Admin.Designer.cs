@@ -41,7 +41,6 @@
             label32 = new Label();
             pictureBox18 = new PictureBox();
             label33 = new Label();
-            pictureBox19 = new PictureBox();
             panel29 = new Panel();
             panel30 = new Panel();
             label31 = new Label();
@@ -103,7 +102,6 @@
             panel31.SuspendLayout();
             panel32.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox19).BeginInit();
             panel29.SuspendLayout();
             panel30.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox17).BeginInit();
@@ -236,9 +234,9 @@
             // panel31
             // 
             panel31.BackColor = Color.Transparent;
+            panel31.Controls.Add(pictureBox14);
             panel31.Controls.Add(panel32);
             panel31.Controls.Add(label33);
-            panel31.Controls.Add(pictureBox19);
             panel31.Cursor = Cursors.Hand;
             panel31.Location = new Point(0, 638);
             panel31.Margin = new Padding(4);
@@ -784,6 +782,19 @@
             pictureBox12.TabIndex = 49;
             pictureBox12.TabStop = false;
             // 
+            // pictureBox12
+            // 
+            pictureBox12.BackColor = Color.Transparent;
+            pictureBox12.Cursor = Cursors.Hand;
+            pictureBox12.ErrorImage = null;
+            pictureBox12.Image = Properties.Resources.Tambah_Glow;
+            pictureBox12.Location = new Point(1094, 8);
+            pictureBox12.Name = "pictureBox12";
+            pictureBox12.Size = new Size(50, 50);
+            pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox12.TabIndex = 49;
+            pictureBox12.TabStop = false;
+            // 
             // pictureBox13
             // 
             pictureBox13.BackColor = Color.Transparent;
@@ -982,7 +993,6 @@
             panel32.ResumeLayout(false);
             panel32.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox19).EndInit();
             panel29.ResumeLayout(false);
             panel29.PerformLayout();
             panel30.ResumeLayout(false);
@@ -1044,7 +1054,6 @@
         private Label label32;
         private PictureBox pictureBox18;
         private Label label33;
-        private PictureBox pictureBox19;
         private Panel panel29;
         private Panel panel30;
         private Label label31;

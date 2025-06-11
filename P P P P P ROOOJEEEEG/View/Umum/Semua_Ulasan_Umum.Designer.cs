@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Semua_Ulasan_Umum));
             panel9 = new Panel();
+            pictureBox12 = new PictureBox();
             pictureBox45 = new PictureBox();
             label4 = new Label();
             label6 = new Label();
@@ -50,8 +51,8 @@
             label1 = new Label();
             label20 = new Label();
             pictureBox28 = new PictureBox();
-            pictureBox12 = new PictureBox();
             panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox45).BeginInit();
             panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
@@ -66,7 +67,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox28).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             SuspendLayout();
             // 
             // panel9
@@ -83,6 +83,19 @@
             panel9.Padding = new Padding(50);
             panel9.Size = new Size(1165, 662);
             panel9.TabIndex = 6;
+            // 
+            // pictureBox12
+            // 
+            pictureBox12.BackColor = Color.Transparent;
+            pictureBox12.Cursor = Cursors.Hand;
+            pictureBox12.Image = (Image)resources.GetObject("pictureBox12.Image");
+            pictureBox12.Location = new Point(14, 12);
+            pictureBox12.Name = "pictureBox12";
+            pictureBox12.Size = new Size(52, 22);
+            pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox12.TabIndex = 29;
+            pictureBox12.TabStop = false;
+            pictureBox12.Click += BackToUlasanUmum_UM;
             // 
             // pictureBox45
             // 
@@ -311,18 +324,6 @@
             pictureBox28.TabIndex = 21;
             pictureBox28.TabStop = false;
             // 
-            // pictureBox12
-            // 
-            pictureBox12.BackColor = Color.Transparent;
-            pictureBox12.Cursor = Cursors.Hand;
-            pictureBox12.Image = (Image)resources.GetObject("pictureBox12.Image");
-            pictureBox12.Location = new Point(14, 12);
-            pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(52, 22);
-            pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox12.TabIndex = 29;
-            pictureBox12.TabStop = false;
-            // 
             // Semua_Ulasan_Umum
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -332,6 +333,7 @@
             Size = new Size(1165, 662);
             panel9.ResumeLayout(false);
             panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox45).EndInit();
             panel10.ResumeLayout(false);
             panel10.PerformLayout();
@@ -347,7 +349,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox28).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             ResumeLayout(false);
         }
 

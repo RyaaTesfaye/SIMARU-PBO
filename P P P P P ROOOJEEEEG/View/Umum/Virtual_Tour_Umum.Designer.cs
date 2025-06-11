@@ -31,14 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Virtual_Tour_Umum));
             panel8 = new Panel();
             panel9 = new Panel();
-            pictureBox12 = new PictureBox();
-            pictureBox11 = new PictureBox();
-            label8 = new Label();
-            label7 = new Label();
-            label9 = new Label();
-            pictureBox8 = new PictureBox();
-            pictureBox7 = new PictureBox();
-            pictureBox6 = new PictureBox();
+            btnNext = new PictureBox();
+            btnPrev = new PictureBox();
+            lblKeterangan3 = new Label();
+            lblKeterangan2 = new Label();
+            lblKeterangan1 = new Label();
+            picbox3 = new PictureBox();
+            picbox2 = new PictureBox();
+            picbox1 = new PictureBox();
             label6 = new Label();
             panel7 = new Panel();
             button5 = new Button();
@@ -69,11 +69,11 @@
             label1 = new Label();
             panel8.SuspendLayout();
             panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnNext).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnPrev).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picbox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picbox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picbox1).BeginInit();
             panel7.SuspendLayout();
             panel1.SuspendLayout();
             panel29.SuspendLayout();
@@ -106,105 +106,107 @@
             // panel9
             // 
             panel9.BackColor = Color.FromArgb(37, 39, 48);
-            panel9.Controls.Add(pictureBox12);
-            panel9.Controls.Add(pictureBox11);
-            panel9.Controls.Add(label8);
-            panel9.Controls.Add(label7);
-            panel9.Controls.Add(label9);
-            panel9.Controls.Add(pictureBox8);
-            panel9.Controls.Add(pictureBox7);
-            panel9.Controls.Add(pictureBox6);
+            panel9.Controls.Add(btnNext);
+            panel9.Controls.Add(btnPrev);
+            panel9.Controls.Add(lblKeterangan3);
+            panel9.Controls.Add(lblKeterangan2);
+            panel9.Controls.Add(lblKeterangan1);
+            panel9.Controls.Add(picbox3);
+            panel9.Controls.Add(picbox2);
+            panel9.Controls.Add(picbox1);
             panel9.Location = new Point(5, 54);
             panel9.Name = "panel9";
             panel9.Padding = new Padding(50);
             panel9.Size = new Size(1165, 662);
             panel9.TabIndex = 5;
             // 
-            // pictureBox12
+            // btnNext
             // 
-            pictureBox12.Image = Properties.Resources.Kanan;
-            pictureBox12.Location = new Point(1079, 281);
-            pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(50, 50);
-            pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox12.TabIndex = 15;
-            pictureBox12.TabStop = false;
+            btnNext.Image = Properties.Resources.Kanan;
+            btnNext.Location = new Point(1079, 281);
+            btnNext.Name = "btnNext";
+            btnNext.Size = new Size(50, 50);
+            btnNext.SizeMode = PictureBoxSizeMode.StretchImage;
+            btnNext.TabIndex = 15;
+            btnNext.TabStop = false;
+            btnNext.Click += btnNext_Click;
             // 
-            // pictureBox11
+            // btnPrev
             // 
-            pictureBox11.Image = Properties.Resources.Kiri;
-            pictureBox11.Location = new Point(48, 281);
-            pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(50, 50);
-            pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox11.TabIndex = 14;
-            pictureBox11.TabStop = false;
+            btnPrev.Image = Properties.Resources.Kiri;
+            btnPrev.Location = new Point(48, 281);
+            btnPrev.Name = "btnPrev";
+            btnPrev.Size = new Size(50, 50);
+            btnPrev.SizeMode = PictureBoxSizeMode.StretchImage;
+            btnPrev.TabIndex = 14;
+            btnPrev.TabStop = false;
+            btnPrev.Click += btnPrev_Click;
             // 
-            // label8
+            // lblKeterangan3
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Inter", 19F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.ForeColor = Color.White;
-            label8.Location = new Point(849, 565);
-            label8.Name = "label8";
-            label8.Size = new Size(117, 45);
-            label8.TabIndex = 13;
-            label8.Text = "Lantai";
-            label8.TextAlign = ContentAlignment.MiddleCenter;
+            lblKeterangan3.AutoSize = true;
+            lblKeterangan3.Font = new Font("Inter", 19F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblKeterangan3.ForeColor = Color.White;
+            lblKeterangan3.Location = new Point(770, 565);
+            lblKeterangan3.Name = "lblKeterangan3";
+            lblKeterangan3.Size = new Size(117, 45);
+            lblKeterangan3.TabIndex = 13;
+            lblKeterangan3.Text = "Lantai";
+            lblKeterangan3.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label7
+            // lblKeterangan2
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Inter", 19F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.ForeColor = Color.White;
-            label7.Location = new Point(531, 565);
-            label7.Name = "label7";
-            label7.Size = new Size(117, 45);
-            label7.TabIndex = 12;
-            label7.Text = "Lantai";
-            label7.TextAlign = ContentAlignment.MiddleCenter;
+            lblKeterangan2.AutoSize = true;
+            lblKeterangan2.Font = new Font("Inter", 19F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblKeterangan2.ForeColor = Color.White;
+            lblKeterangan2.Location = new Point(448, 565);
+            lblKeterangan2.Name = "lblKeterangan2";
+            lblKeterangan2.Size = new Size(117, 45);
+            lblKeterangan2.TabIndex = 12;
+            lblKeterangan2.Text = "Lantai";
+            lblKeterangan2.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label9
+            // lblKeterangan1
             // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Inter", 19F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.ForeColor = Color.White;
-            label9.Location = new Point(206, 565);
-            label9.Name = "label9";
-            label9.Size = new Size(117, 45);
-            label9.TabIndex = 11;
-            label9.Text = "Lantai";
-            label9.TextAlign = ContentAlignment.MiddleCenter;
+            lblKeterangan1.AutoSize = true;
+            lblKeterangan1.Font = new Font("Inter", 19F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblKeterangan1.ForeColor = Color.White;
+            lblKeterangan1.Location = new Point(126, 565);
+            lblKeterangan1.Name = "lblKeterangan1";
+            lblKeterangan1.Size = new Size(117, 45);
+            lblKeterangan1.TabIndex = 11;
+            lblKeterangan1.Text = "Lantai";
+            lblKeterangan1.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // pictureBox8
+            // picbox3
             // 
-            pictureBox8.Image = Properties.Resources.WhatsApp_Image_2025_05_13_at_23_25_21_8b528e3b_3;
-            pictureBox8.Location = new Point(770, 62);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(281, 500);
-            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox8.TabIndex = 8;
-            pictureBox8.TabStop = false;
+            picbox3.Image = Properties.Resources.WhatsApp_Image_2025_05_13_at_23_25_21_8b528e3b_3;
+            picbox3.Location = new Point(770, 62);
+            picbox3.Name = "picbox3";
+            picbox3.Size = new Size(281, 500);
+            picbox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            picbox3.TabIndex = 8;
+            picbox3.TabStop = false;
             // 
-            // pictureBox7
+            // picbox2
             // 
-            pictureBox7.Image = Properties.Resources.WhatsApp_Image_2025_05_13_at_23_25_21_8b528e3b_3;
-            pictureBox7.Location = new Point(448, 62);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(281, 500);
-            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox7.TabIndex = 7;
-            pictureBox7.TabStop = false;
+            picbox2.Image = Properties.Resources.WhatsApp_Image_2025_05_13_at_23_25_21_8b528e3b_3;
+            picbox2.Location = new Point(448, 62);
+            picbox2.Name = "picbox2";
+            picbox2.Size = new Size(281, 500);
+            picbox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            picbox2.TabIndex = 7;
+            picbox2.TabStop = false;
             // 
-            // pictureBox6
+            // picbox1
             // 
-            pictureBox6.Image = Properties.Resources.WhatsApp_Image_2025_05_13_at_23_25_21_8b528e3b_3;
-            pictureBox6.Location = new Point(126, 62);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(281, 500);
-            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox6.TabIndex = 6;
-            pictureBox6.TabStop = false;
+            picbox1.Image = Properties.Resources.WhatsApp_Image_2025_05_13_at_23_25_21_8b528e3b_3;
+            picbox1.Location = new Point(126, 62);
+            picbox1.Name = "picbox1";
+            picbox1.Size = new Size(281, 500);
+            picbox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            picbox1.TabIndex = 6;
+            picbox1.TabStop = false;
             // 
             // label6
             // 
@@ -544,15 +546,16 @@
             Name = "Virtual_Tour_Umum";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Virtual_Tour_Umum";
+            Load += Virtual_Tour_Umum_Load;
             panel8.ResumeLayout(false);
             panel8.PerformLayout();
             panel9.ResumeLayout(false);
             panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnNext).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnPrev).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picbox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picbox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picbox1).EndInit();
             panel7.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -613,13 +616,13 @@
         private PictureBox pictureBox3;
         private Label label1;
         private Panel panel6;
-        private PictureBox pictureBox8;
-        private PictureBox pictureBox7;
-        private PictureBox pictureBox6;
-        private Label label8;
-        private Label label7;
-        private Label label9;
-        private PictureBox pictureBox12;
-        private PictureBox pictureBox11;
+        private PictureBox picbox3;
+        private PictureBox picbox2;
+        private PictureBox picbox1;
+        private Label lblKeterangan3;
+        private Label lblKeterangan2;
+        private Label lblKeterangan1;
+        private PictureBox btnNext;
+        private PictureBox btnPrev;
     }
 }

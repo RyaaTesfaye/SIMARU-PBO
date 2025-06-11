@@ -1,6 +1,6 @@
 ﻿namespace RUSUNAWAAA.View.Penyewa
 {
-    partial class _3_Penyewa
+    partial class Lapor_Masalah_Penyewa
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_3_Penyewa));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Lapor_Masalah_Penyewa));
             panel1 = new Panel();
             panel29 = new Panel();
             label26 = new Label();
@@ -41,6 +41,7 @@
             pictureBox1 = new PictureBox();
             pictureBox9 = new PictureBox();
             panel5 = new Panel();
+            panel6 = new Panel();
             label5 = new Label();
             pictureBox5 = new PictureBox();
             panel4 = new Panel();
@@ -60,6 +61,7 @@
             pictureBox6 = new PictureBox();
             panel8 = new Panel();
             panel9 = new Panel();
+            panel10 = new Panel();
             label6 = new Label();
             panel1.SuspendLayout();
             panel29.SuspendLayout();
@@ -82,6 +84,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel8.SuspendLayout();
+            panel9.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -111,6 +114,7 @@
             panel29.Name = "panel29";
             panel29.Size = new Size(240, 50);
             panel29.TabIndex = 8;
+            panel29.Click += ToPerpanjanganSewa_PE;
             // 
             // label26
             // 
@@ -122,6 +126,7 @@
             label26.Size = new Size(177, 24);
             label26.TabIndex = 4;
             label26.Text = "Perpanjangan Sewa";
+            label26.Click += ToPerpanjanganSewa_PE;
             // 
             // pictureBox16
             // 
@@ -132,6 +137,7 @@
             pictureBox16.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox16.TabIndex = 2;
             pictureBox16.TabStop = false;
+            pictureBox16.Click += ToPerpanjanganSewa_PE;
             // 
             // panel22
             // 
@@ -143,6 +149,7 @@
             panel22.Name = "panel22";
             panel22.Size = new Size(240, 50);
             panel22.TabIndex = 7;
+            panel22.Click += ToRiwayatPembayaran_PE;
             // 
             // label13
             // 
@@ -154,6 +161,7 @@
             label13.Size = new Size(186, 24);
             label13.TabIndex = 4;
             label13.Text = "Riwayat Pembayaran";
+            label13.Click += ToRiwayatPembayaran_PE;
             // 
             // pictureBox10
             // 
@@ -164,6 +172,7 @@
             pictureBox10.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox10.TabIndex = 2;
             pictureBox10.TabStop = false;
+            pictureBox10.Click += ToRiwayatPembayaran_PE;
             // 
             // panel21
             // 
@@ -175,6 +184,7 @@
             panel21.Name = "panel21";
             panel21.Size = new Size(240, 50);
             panel21.TabIndex = 6;
+            panel21.Click += ToRiwayatLaporan_PE;
             // 
             // label12
             // 
@@ -186,6 +196,7 @@
             label12.Size = new Size(149, 24);
             label12.TabIndex = 4;
             label12.Text = "Riwayat Laporan";
+            label12.Click += ToRiwayatLaporan_PE;
             // 
             // pictureBox1
             // 
@@ -196,20 +207,23 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += ToRiwayatLaporan_PE;
             // 
             // pictureBox9
             // 
-            pictureBox9.Image = Properties.Resources.Icon;
+            pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
             pictureBox9.Location = new Point(10, 8);
             pictureBox9.Name = "pictureBox9";
             pictureBox9.Size = new Size(35, 35);
             pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox9.TabIndex = 5;
             pictureBox9.TabStop = false;
+            pictureBox9.Click += ToDashboard_PE;
             // 
             // panel5
             // 
             panel5.BackColor = Color.Transparent;
+            panel5.Controls.Add(panel6);
             panel5.Controls.Add(label5);
             panel5.Controls.Add(pictureBox5);
             panel5.Cursor = Cursors.Hand;
@@ -217,6 +231,14 @@
             panel5.Name = "panel5";
             panel5.Size = new Size(240, 50);
             panel5.TabIndex = 3;
+            // 
+            // panel6
+            // 
+            panel6.BackColor = Color.White;
+            panel6.Location = new Point(-1, 0);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(4, 50);
+            panel6.TabIndex = 5;
             // 
             // label5
             // 
@@ -249,6 +271,7 @@
             panel4.Name = "panel4";
             panel4.Size = new Size(240, 50);
             panel4.TabIndex = 3;
+            panel4.Click += ToTataTertib_PE;
             // 
             // label4
             // 
@@ -260,6 +283,7 @@
             label4.Size = new Size(191, 24);
             label4.TabIndex = 4;
             label4.Text = "Tata Tertib Rusunawa";
+            label4.Click += ToTataTertib_PE;
             // 
             // pictureBox4
             // 
@@ -270,6 +294,7 @@
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 2;
             pictureBox4.TabStop = false;
+            pictureBox4.Click += ToTataTertib_PE;
             // 
             // panel3
             // 
@@ -281,6 +306,7 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(240, 50);
             panel3.TabIndex = 3;
+            panel3.Click += ToBeriUlasan_UM;
             // 
             // label3
             // 
@@ -292,6 +318,7 @@
             label3.Size = new Size(105, 24);
             label3.TabIndex = 4;
             label3.Text = "Beri Ulasan";
+            label3.Click += ToBeriUlasan_UM;
             // 
             // pictureBox2
             // 
@@ -302,6 +329,7 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += ToBeriUlasan_UM;
             // 
             // panel2
             // 
@@ -309,14 +337,14 @@
             panel2.Controls.Add(panel28);
             panel2.Controls.Add(label2);
             panel2.Controls.Add(pictureBox3);
-            panel2.Location = new Point(0, 125);
+            panel2.Location = new Point(-1, 125);
             panel2.Name = "panel2";
-            panel2.Size = new Size(240, 50);
+            panel2.Size = new Size(241, 50);
             panel2.TabIndex = 2;
+            panel2.Click += ToDashboard_PE;
             // 
             // panel28
             // 
-            panel28.BackColor = Color.White;
             panel28.Location = new Point(-1, 0);
             panel28.Name = "panel28";
             panel28.Size = new Size(4, 50);
@@ -332,16 +360,18 @@
             label2.Size = new Size(99, 24);
             label2.TabIndex = 3;
             label2.Text = "Ringkasan";
+            label2.Click += ToDashboard_PE;
             // 
             // pictureBox3
             // 
             pictureBox3.ErrorImage = null;
             pictureBox3.Image = Properties.Resources.category;
-            pictureBox3.Location = new Point(10, 10);
+            pictureBox3.Location = new Point(13, 10);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(25, 25);
             pictureBox3.TabIndex = 2;
             pictureBox3.TabStop = false;
+            pictureBox3.Click += ToDashboard_PE;
             // 
             // label1
             // 
@@ -350,10 +380,11 @@
             label1.ForeColor = Color.White;
             label1.Location = new Point(43, 6);
             label1.Name = "label1";
-            label1.Size = new Size(172, 43);
+            label1.Size = new Size(139, 43);
             label1.TabIndex = 0;
-            label1.Text = "RUSAKITA";
+            label1.Text = "SIMARU";
             label1.TextAlign = ContentAlignment.MiddleCenter;
+            label1.Click += ToDashboard_PE;
             // 
             // panel7
             // 
@@ -414,11 +445,20 @@
             // panel9
             // 
             panel9.BackColor = Color.FromArgb(37, 39, 48);
+            panel9.Controls.Add(panel10);
             panel9.Location = new Point(5, 54);
             panel9.Name = "panel9";
             panel9.Padding = new Padding(50);
             panel9.Size = new Size(1165, 662);
             panel9.TabIndex = 5;
+            // 
+            // panel10
+            // 
+            panel10.BackColor = Color.FromArgb(23, 24, 30);
+            panel10.Location = new Point(26, 28);
+            panel10.Name = "panel10";
+            panel10.Size = new Size(1113, 607);
+            panel10.TabIndex = 13;
             // 
             // label6
             // 
@@ -427,11 +467,11 @@
             label6.ForeColor = Color.White;
             label6.Location = new Point(0, 3);
             label6.Name = "label6";
-            label6.Size = new Size(306, 45);
+            label6.Size = new Size(252, 45);
             label6.TabIndex = 4;
-            label6.Text = "Pengelolaan Akun";
+            label6.Text = "Lapor Masalah";
             // 
-            // _3_Penyewa
+            // Lapor_Masalah_Penyewa
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -440,7 +480,8 @@
             Controls.Add(panel8);
             Controls.Add(panel7);
             Controls.Add(panel1);
-            Name = "_3_Penyewa";
+            Name = "Lapor_Masalah_Penyewa";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "_3_Penyewa";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -472,6 +513,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             panel8.ResumeLayout(false);
             panel8.PerformLayout();
+            panel9.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -509,5 +551,7 @@
         private Panel panel8;
         private Panel panel9;
         private Label label6;
+        private Panel panel6;
+        private Panel panel10;
     }
 }

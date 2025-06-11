@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RUSUNAWAAA.Utils;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,11 +11,47 @@ using System.Windows.Forms;
 
 namespace RUSUNAWAAA.View.Penyewa
 {
-    public partial class _4_Penyewa: Form
+    public partial class Riwayat_laporan_Penyewa : Form
     {
-        public _4_Penyewa()
+        public Riwayat_laporan_Penyewa()
         {
             InitializeComponent();
+        }
+
+        private void ToDashboard_PE(object sender, EventArgs e)
+        {
+            var command = new NavigateToFormCommand<Dashboard_Penyewa>(this);
+            command.Execute();
+        }
+
+        private void ToBeriUlasan_PE(object sender, EventArgs e)
+        {
+            var command = new NavigateToFormCommand<Beri_Ulasan_Penyewa>(this);
+            command.Execute();
+        }
+
+        private void ToTataTertib_PE(object sender, EventArgs e)
+        {
+            var command = new NavigateToFormCommand<Tata_Tertib_Penyewa>(this);
+            command.Execute();
+        }
+
+        private void ToLaporMasalah_PE(object sender, EventArgs e)
+        {
+            var command = new NavigateToFormCommand<Lapor_Masalah_Penyewa>(this);
+            command.Execute();
+        }
+
+        private void ToRiwayatPembayaran_PE(object sender, EventArgs e)
+        {
+            var command = new NavigateToFormCommand<Riwayat_Pembayarn_Penyewa>(this);
+            command.Execute();
+        }
+
+        private void ToPerpanjanganSewa_PE(object sender, EventArgs e)
+        {
+            var command = new NavigateToFormCommand<Perpanjangan_Sewa_Penyewa>(this);
+            command.Execute();
         }
     }
 }

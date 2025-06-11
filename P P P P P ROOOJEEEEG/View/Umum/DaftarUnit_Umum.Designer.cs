@@ -2132,9 +2132,9 @@
             label6.ForeColor = Color.White;
             label6.Location = new Point(0, 3);
             label6.Name = "label6";
-            label6.Size = new Size(327, 45);
+            label6.Size = new Size(334, 45);
             label6.TabIndex = 4;
-            label6.Text = "Daftar Unit tersedia";
+            label6.Text = "Daftar Unit Tersedia";
             // 
             // DaftarUnit_Umum
             // 

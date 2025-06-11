@@ -533,6 +533,16 @@ namespace RUSUNAWAAA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Tambah_Glow1 {
+            get {
+                object obj = ResourceManager.GetObject("Tambah_Glow1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap tata_tertib {
             get {
                 object obj = ResourceManager.GetObject("tata_tertib", resourceCulture);

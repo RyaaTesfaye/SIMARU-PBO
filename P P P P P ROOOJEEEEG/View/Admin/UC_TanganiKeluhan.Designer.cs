@@ -1,6 +1,6 @@
 ﻿namespace RUSUNAWAAA.View.Admin
 {
-    partial class Daftar_Keluhan3_Admin
+    partial class UC_TanganiKeluhan
     {
         /// <summary> 
         /// Required designer variable.

@@ -21,5 +21,10 @@ namespace RUSUNAWAAA.View.Umum
         {
 
         }
+
+        private void BackToUlasanUmum_UM(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

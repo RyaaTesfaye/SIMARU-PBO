@@ -38,11 +38,6 @@ namespace RUSUNAWAAA.View.Umum
             UIhelper.MakeRoundedButton(button3, 3);
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void label3_Click(object sender, EventArgs e)
         {
 
@@ -55,50 +50,38 @@ namespace RUSUNAWAAA.View.Umum
 
         private void ToDaftarUnit_UM(object sender, EventArgs e)
         {
-            this.Hide();
-            DaftarUnit_Umum daftarunit = new DaftarUnit_Umum();
-            daftarunit.ShowDialog();
-            this.Close();
+            var command = new NavigateToFormCommand<DaftarUnit_Umum>(this);
+            command.Execute();
         }
 
         private void ToPengajuanSewa_UM(object sender, EventArgs e)
         {
-            this.Hide();
-            PengajuanSewa_Umum pengajuansewaum = new PengajuanSewa_Umum();
-            pengajuansewaum.ShowDialog();
-            this.Close();
+            var command = new NavigateToFormCommand<PengajuanSewa_Umum>(this);
+            command.Execute();
         }
 
         private void ToUlasan_UM(object sender, EventArgs e)
         {
-            this.Hide();
-            Ulasan_Umum ulasanum = new Ulasan_Umum();
-            ulasanum.ShowDialog();
-            this.Close();
+            var command = new NavigateToFormCommand<Ulasan_Umum>(this);
+            command.Execute();
         }
 
         private void ToVirtualTour_UM(object sender, EventArgs e)
         {
-            this.Hide();
-            Virtual_Tour_Umum virtualtourum = new Virtual_Tour_Umum();
-            virtualtourum.ShowDialog();
-            this.Close();
+            var command = new NavigateToFormCommand<Virtual_Tour_Umum>(this);
+            command.Execute();
         }
 
         private void ToTataTertib_UM(object sender, EventArgs e)
         {
-            this.Hide();
-            Tatatertib_Umum tatatertibum = new Tatatertib_Umum();
-            tatatertibum.ShowDialog();
-            this.Close();
+            var command = new NavigateToFormCommand<Tatatertib_Umum>(this);
+            command.Execute();
         }
 
         private void ToKontakLokasi_UM(object sender, EventArgs e)
         {
-            this.Hide();
-            Kontaklokasi_Umum kontaklokasium = new Kontaklokasi_Umum();
-            kontaklokasium.ShowDialog();
-            this.Close();
+            var command = new NavigateToFormCommand<Kontaklokasi_Umum>(this);
+            command.Execute();
         }
     }
 }

@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace RUSUNAWAAA.View.Admin
+namespace RUSUNAWAAA.View.Penyewa
 {
-    public partial class Daftar_Keluhan3_Admin : UserControl
+    public partial class UC_SemuaUlasan: UserControl
     {
-        public Daftar_Keluhan3_Admin()
+        public UC_SemuaUlasan()
         {
             InitializeComponent();
-        }
-
-        private void panel15_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

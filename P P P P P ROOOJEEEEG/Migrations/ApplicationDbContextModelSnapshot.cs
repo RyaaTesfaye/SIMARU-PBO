@@ -126,6 +126,10 @@ namespace RUSUNAWAAA.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<string>("NomorKTP")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<bool>("SudahDibaca")
                         .HasColumnType("boolean");
 
@@ -133,6 +137,8 @@ namespace RUSUNAWAAA.Migrations
                         .HasColumnType("timestamp with time zone");
 
                     b.HasKey("Id_Notifikasi");
+
+                    b.HasIndex("NomorKTP");
 
                     b.ToTable("Notifikasis");
                 });
@@ -465,6 +471,17 @@ namespace RUSUNAWAAA.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("RUSUNAWAAA.Models.Notifikasi", b =>
+                {
+                    b.HasOne("RUSUNAWAAA.Models.User", "User")
+                        .WithMany("Notifikasis")
+                        .HasForeignKey("NomorKTP")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("RUSUNAWAAA.Models.Pembayaran", b =>
                 {
                     b.HasOne("RUSUNAWAAA.Models.User", "User")
@@ -501,6 +518,8 @@ namespace RUSUNAWAAA.Migrations
             modelBuilder.Entity("RUSUNAWAAA.Models.User", b =>
                 {
                     b.Navigation("Laporans");
+
+                    b.Navigation("Notifikasis");
 
                     b.Navigation("Pembayarans");
 

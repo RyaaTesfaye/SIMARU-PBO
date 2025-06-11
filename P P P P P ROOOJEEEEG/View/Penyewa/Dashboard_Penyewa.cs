@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RUSUNAWAAA.Utils;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,9 +18,40 @@ namespace RUSUNAWAAA.View.Penyewa
             InitializeComponent();
         }
 
-        private void label26_Click(object sender, EventArgs e)
+        private void ToBeriUlasan_PE(object sender, EventArgs e)
         {
+            var command = new NavigateToFormCommand<Beri_Ulasan_Penyewa>(this);
+            command.Execute();
+        }
 
+        private void ToTataTertib_PE(object sender, EventArgs e)
+        {
+            var command = new NavigateToFormCommand<Tata_Tertib_Penyewa>(this);
+            command.Execute();
+        }
+
+        private void ToLaporMasalah_PE(object sender, EventArgs e)
+        {
+            var command = new NavigateToFormCommand<Lapor_Masalah_Penyewa>(this);
+            command.Execute();
+        }
+
+        private void ToRiwayatLaporan_PE(object sender, EventArgs e)
+        {
+            var command = new NavigateToFormCommand<Riwayat_laporan_Penyewa>(this);
+            command.Execute();
+        }
+
+        private void ToRiwayatPembayaran_PE(object sender, EventArgs e)
+        {
+            var command = new NavigateToFormCommand<Riwayat_Pembayarn_Penyewa>(this);
+            command.Execute();
+        }
+
+        private void ToPerpanjanganSewa_UM(object sender, EventArgs e)
+        {
+            var command = new NavigateToFormCommand<Perpanjangan_Sewa_Penyewa>(this);
+            command.Execute();
         }
     }
 }
