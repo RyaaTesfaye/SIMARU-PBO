@@ -1,4 +1,6 @@
-﻿using System;
+﻿using RUSUNAWAAA.Utils;
+using RUSUNAWAAA.View.Penyewa;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -54,8 +56,7 @@ namespace RUSUNAWAAA.View.Admin
 
             // Panggil service untuk menampilkan semua data tersebut di panel
             _aturanService.DisplayAllItemsOnPanel(allAturan);
-            
-            // Tidak ada lagi UpdatePaginationControls() karena tidak ada paginasi
+           
         }
 
         // Metode AturanItem_DeleteClicked (jika Anda punya tombol delete di UC dan ingin menanganinya)
@@ -64,6 +65,7 @@ namespace RUSUNAWAAA.View.Admin
         /*
         private void AturanItem_DeleteClicked(object sender, int idTataTertib)
         {
+<<<<<<< HEAD
             // Logika konfirmasi dan pemanggilan service.DeleteAturan
             if (MessageBox.Show("Yakin hapus?", "Konfirmasi", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
@@ -77,6 +79,9 @@ namespace RUSUNAWAAA.View.Admin
                     MessageBox.Show("Gagal menghapus.");
                 }
             }
+=======
+            var command = new NavigateToFormCommand<Pengelolaan_Akun_Admin>(this);
+            command.Execute();
         }
         */
 
@@ -85,11 +90,55 @@ namespace RUSUNAWAAA.View.Admin
         // --- Event handlers navigasi ke form Admin lainnya (tetap ada) ---
         private void ToDashboard_AD(object sender, EventArgs e) { /* ... */ }
         private void ToPengelolaAkun_AD(object sender, EventArgs e) { /* ... */ }
-        private void ToKelolaHunian_AD(object sender, EventArgs e) { /* ... */ }
-        private void ToDaftarKeluhan_AD(object sender, EventArgs e) { /* ... */ }
-        private void ToTinjauUlasan_AD(object sender, EventArgs e) { /* ... */ }
-        private void ToManajemenSewa_AD(object sender, EventArgs e) { /* ... */ }
-        private void ToEditVirtualTour_AD(object sender, EventArgs e) { /* ... */ }
-        private void ToSiaran_AD(object sender, EventArgs e) { /* ... */ }
+        private void ToKelolaHunian_AD(object sender, EventArgs e)
+        {
+            var command = new NavigateToFormCommand<Kelola_Hunian_Admin>(this);
+            command.Execute();
+        }
+
+        private void ToDaftarKeluhan_AD(object sender, EventArgs e)
+        {
+            var command = new NavigateToFormCommand<Daftar_Keluhan_Admin>(this);
+            command.Execute();
+        }
+
+        private void ToTinjauUlasan_AD(object sender, EventArgs e)
+        {
+            var command = new NavigateToFormCommand<Tinjau_Ulasan_Admin>(this);
+            command.Execute();
+        }
+
+        private void ToManajemenSewa_AD(object sender, EventArgs e)
+        {
+            var command = new NavigateToFormCommand<Manajemen_Sewa_Admin>(this);
+            command.Execute();
+        }
+
+        private void ToEditVirtualTour_AD(object sender, EventArgs e)
+        {
+            var command = new NavigateToFormCommand<Edit_Virtual_Tour_Admin>(this);
+            command.Execute();
+        }
+
+        private void ToSiaran_AD(object sender, EventArgs e)
+        {
+            var command = new NavigateToFormCommand<Siaran_Admin>(this);
+            command.Execute();
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel17_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel11_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

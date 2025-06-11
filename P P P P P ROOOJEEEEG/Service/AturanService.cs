@@ -41,6 +41,10 @@ namespace RUSUNAWAAA.Service
             LoadAllTatatertibs(); // Pastikan data terbaru dimuat
             return _semuaTatatertibs;
         }
+        private void OnDeleteClicked(object sender, int id)
+        {
+            HandleDeleteRequestFromUI(id);
+        }
 
         public void DisplayAllItemsOnPanel(List<TataTertib> itemsToDisplay)
         {
@@ -67,7 +71,8 @@ namespace RUSUNAWAAA.Service
                     item.Anchor = AnchorStyles.Left | AnchorStyles.Right;
 
                     // FIX: Subscribe to the DeleteClicked event of each UC_ItemKelolaAturan
-                    item.DeleteClicked += (s, id) => HandleDeleteRequestFromUI(id);
+                    //item.DeleteClicked += (s, id) => HandleDeleteRequestFromUI(id);
+                    item.DeleteClicked += OnDeleteClicked;
                     // If you also have an EditClicked event, subscribe it here too:
                     // item.EditClicked += (s, id) => HandleEditRequestFromUI(id);
 
