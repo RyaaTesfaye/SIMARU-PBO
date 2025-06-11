@@ -1170,6 +1170,7 @@
             Controls.Add(panel7);
             Controls.Add(panel1);
             Name = "_1_Penyewa";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "_1_Penyewa";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
