@@ -609,6 +609,7 @@
             button4.TabIndex = 0;
             button4.Text = "Ajukan Sewa";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += ToPengajuanSewa_UM;
             // 
             // panel16
             // 
@@ -688,7 +689,7 @@
             button3.TabIndex = 0;
             button3.Text = "Lihat selengkapnya";
             button3.UseVisualStyleBackColor = false;
-            button3.Click += button3_Click;
+            button3.Click += ToUlasan_UM;
             // 
             // label22
             // 
@@ -779,6 +780,7 @@
             button1.TabIndex = 0;
             button1.Text = "Lihat selengkapnya";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += ToVirtualTour_UM;
             // 
             // panel9
             // 

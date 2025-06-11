@@ -38,6 +38,7 @@
             label35 = new Label();
             pictureBox21 = new PictureBox();
             panel31 = new Panel();
+            pictureBox11 = new PictureBox();
             panel32 = new Panel();
             label32 = new Label();
             pictureBox18 = new PictureBox();
@@ -82,15 +83,6 @@
             label7 = new Label();
             panel10 = new Panel();
             label23 = new Label();
-            checkBox13 = new CheckBox();
-            checkBox14 = new CheckBox();
-            checkBox15 = new CheckBox();
-            checkBox16 = new CheckBox();
-            checkBox17 = new CheckBox();
-            checkBox18 = new CheckBox();
-            checkBox19 = new CheckBox();
-            checkBox20 = new CheckBox();
-            checkBox21 = new CheckBox();
             checkBox22 = new CheckBox();
             label22 = new Label();
             panel12 = new Panel();
@@ -109,13 +101,13 @@
             label8 = new Label();
             checkBox1 = new CheckBox();
             label6 = new Label();
-            pictureBox11 = new PictureBox();
             panel1.SuspendLayout();
             panel33.SuspendLayout();
             panel34.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox20).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox21).BeginInit();
             panel31.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             panel32.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
             panel29.SuspendLayout();
@@ -144,7 +136,6 @@
             panel9.SuspendLayout();
             panel13.SuspendLayout();
             panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -253,6 +244,17 @@
             panel31.Size = new Size(240, 50);
             panel31.TabIndex = 9;
             panel31.Click += ToEditVirtualTour_AD;
+            // 
+            // pictureBox11
+            // 
+            pictureBox11.Image = Properties.Resources.Virtual_tour;
+            pictureBox11.Location = new Point(10, 10);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(25, 25);
+            pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox11.TabIndex = 10;
+            pictureBox11.TabStop = false;
+            pictureBox11.Click += ToEditVirtualTour_AD;
             // 
             // panel32
             // 
@@ -742,15 +744,6 @@
             // 
             panel10.BackColor = Color.FromArgb(23, 24, 30);
             panel10.Controls.Add(label23);
-            panel10.Controls.Add(checkBox13);
-            panel10.Controls.Add(checkBox14);
-            panel10.Controls.Add(checkBox15);
-            panel10.Controls.Add(checkBox16);
-            panel10.Controls.Add(checkBox17);
-            panel10.Controls.Add(checkBox18);
-            panel10.Controls.Add(checkBox19);
-            panel10.Controls.Add(checkBox20);
-            panel10.Controls.Add(checkBox21);
             panel10.Controls.Add(checkBox22);
             panel10.Controls.Add(label22);
             panel10.Controls.Add(panel12);
@@ -784,105 +777,6 @@
             label23.Size = new Size(70, 24);
             label23.TabIndex = 40;
             label23.Text = "99 Hari";
-            // 
-            // checkBox13
-            // 
-            checkBox13.BackColor = Color.Transparent;
-            checkBox13.ForeColor = SystemColors.ButtonHighlight;
-            checkBox13.Location = new Point(46, 509);
-            checkBox13.Name = "checkBox13";
-            checkBox13.Size = new Size(23, 24);
-            checkBox13.TabIndex = 39;
-            checkBox13.Text = "checkBox13";
-            checkBox13.UseVisualStyleBackColor = false;
-            // 
-            // checkBox14
-            // 
-            checkBox14.BackColor = Color.Transparent;
-            checkBox14.ForeColor = SystemColors.ButtonHighlight;
-            checkBox14.Location = new Point(47, 118);
-            checkBox14.Name = "checkBox14";
-            checkBox14.Size = new Size(23, 24);
-            checkBox14.TabIndex = 38;
-            checkBox14.Text = "checkBox14";
-            checkBox14.UseVisualStyleBackColor = false;
-            // 
-            // checkBox15
-            // 
-            checkBox15.BackColor = Color.Transparent;
-            checkBox15.ForeColor = SystemColors.ButtonHighlight;
-            checkBox15.Location = new Point(47, 168);
-            checkBox15.Name = "checkBox15";
-            checkBox15.Size = new Size(23, 24);
-            checkBox15.TabIndex = 37;
-            checkBox15.Text = "checkBox15";
-            checkBox15.UseVisualStyleBackColor = false;
-            // 
-            // checkBox16
-            // 
-            checkBox16.BackColor = Color.Transparent;
-            checkBox16.ForeColor = SystemColors.ButtonHighlight;
-            checkBox16.Location = new Point(47, 218);
-            checkBox16.Name = "checkBox16";
-            checkBox16.Size = new Size(23, 24);
-            checkBox16.TabIndex = 36;
-            checkBox16.Text = "checkBox16";
-            checkBox16.UseVisualStyleBackColor = false;
-            // 
-            // checkBox17
-            // 
-            checkBox17.BackColor = Color.Transparent;
-            checkBox17.ForeColor = SystemColors.ButtonHighlight;
-            checkBox17.Location = new Point(47, 268);
-            checkBox17.Name = "checkBox17";
-            checkBox17.Size = new Size(23, 24);
-            checkBox17.TabIndex = 35;
-            checkBox17.Text = "checkBox17";
-            checkBox17.UseVisualStyleBackColor = false;
-            // 
-            // checkBox18
-            // 
-            checkBox18.BackColor = Color.Transparent;
-            checkBox18.ForeColor = SystemColors.ButtonHighlight;
-            checkBox18.Location = new Point(47, 318);
-            checkBox18.Name = "checkBox18";
-            checkBox18.Size = new Size(23, 24);
-            checkBox18.TabIndex = 34;
-            checkBox18.Text = "checkBox18";
-            checkBox18.UseVisualStyleBackColor = false;
-            // 
-            // checkBox19
-            // 
-            checkBox19.BackColor = Color.Transparent;
-            checkBox19.ForeColor = SystemColors.ButtonHighlight;
-            checkBox19.Location = new Point(46, 418);
-            checkBox19.Name = "checkBox19";
-            checkBox19.Size = new Size(23, 24);
-            checkBox19.TabIndex = 33;
-            checkBox19.Text = "checkBox19";
-            checkBox19.UseVisualStyleBackColor = false;
-            // 
-            // checkBox20
-            // 
-            checkBox20.BackColor = Color.Transparent;
-            checkBox20.ForeColor = SystemColors.ButtonHighlight;
-            checkBox20.Location = new Point(46, 368);
-            checkBox20.Name = "checkBox20";
-            checkBox20.Size = new Size(23, 24);
-            checkBox20.TabIndex = 32;
-            checkBox20.Text = "checkBox20";
-            checkBox20.UseVisualStyleBackColor = false;
-            // 
-            // checkBox21
-            // 
-            checkBox21.BackColor = Color.Transparent;
-            checkBox21.ForeColor = SystemColors.ButtonHighlight;
-            checkBox21.Location = new Point(47, 468);
-            checkBox21.Name = "checkBox21";
-            checkBox21.Size = new Size(23, 24);
-            checkBox21.TabIndex = 31;
-            checkBox21.Text = "checkBox21";
-            checkBox21.UseVisualStyleBackColor = false;
             // 
             // checkBox22
             // 
@@ -1077,17 +971,6 @@
             label6.TabIndex = 4;
             label6.Text = "Siaran";
             // 
-            // pictureBox11
-            // 
-            pictureBox11.Image = Properties.Resources.Virtual_tour;
-            pictureBox11.Location = new Point(10, 10);
-            pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(25, 25);
-            pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox11.TabIndex = 10;
-            pictureBox11.TabStop = false;
-            pictureBox11.Click += ToEditVirtualTour_AD;
-            // 
             // Siaran_Admin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -1110,6 +993,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox21).EndInit();
             panel31.ResumeLayout(false);
             panel31.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             panel32.ResumeLayout(false);
             panel32.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).EndInit();
@@ -1150,7 +1034,6 @@
             panel13.ResumeLayout(false);
             panel10.ResumeLayout(false);
             panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             ResumeLayout(false);
         }
 
@@ -1205,15 +1088,6 @@
         private Label label6;
         private Panel panel28;
         private Panel panel10;
-        private CheckBox checkBox13;
-        private CheckBox checkBox14;
-        private CheckBox checkBox15;
-        private CheckBox checkBox16;
-        private CheckBox checkBox17;
-        private CheckBox checkBox18;
-        private CheckBox checkBox19;
-        private CheckBox checkBox20;
-        private CheckBox checkBox21;
         private CheckBox checkBox22;
         private Label label22;
         private Panel panel12;

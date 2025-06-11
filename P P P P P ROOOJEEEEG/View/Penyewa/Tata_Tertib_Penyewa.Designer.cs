@@ -1,6 +1,6 @@
 ﻿namespace RUSUNAWAAA.View.Penyewa
 {
-    partial class _2_Penyewa
+    partial class Tata_Tertib_Penyewa
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_2_Penyewa));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tata_Tertib_Penyewa));
             panel1 = new Panel();
             panel29 = new Panel();
             label26 = new Label();
@@ -451,7 +451,7 @@
             label6.TabIndex = 4;
             label6.Text = "Tata Tertib";
             // 
-            // _2_Penyewa
+            // Tata_Tertib_Penyewa
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -460,7 +460,7 @@
             Controls.Add(panel8);
             Controls.Add(panel7);
             Controls.Add(panel1);
-            Name = "_2_Penyewa";
+            Name = "Tata_Tertib_Penyewa";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "_2_Penyewa";
             panel1.ResumeLayout(false);

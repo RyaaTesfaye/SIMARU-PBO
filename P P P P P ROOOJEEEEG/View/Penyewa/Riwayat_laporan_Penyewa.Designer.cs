@@ -1,6 +1,6 @@
 ﻿namespace RUSUNAWAAA.View.Penyewa
 {
-    partial class _4_Penyewa
+    partial class Riwayat_laporan_Penyewa
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_4_Penyewa));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Riwayat_laporan_Penyewa));
             panel1 = new Panel();
             panel29 = new Panel();
             label26 = new Label();
@@ -624,7 +624,7 @@
             label6.TabIndex = 4;
             label6.Text = "Riwayat Laporan";
             // 
-            // _4_Penyewa
+            // Riwayat_laporan_Penyewa
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -633,7 +633,7 @@
             Controls.Add(panel8);
             Controls.Add(panel7);
             Controls.Add(panel1);
-            Name = "_4_Penyewa";
+            Name = "Riwayat_laporan_Penyewa";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "_4_Penyewa";
             panel1.ResumeLayout(false);

@@ -38,11 +38,6 @@ namespace RUSUNAWAAA.View.Umum
             UIhelper.MakeRoundedButton(button3, 3);
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void label3_Click(object sender, EventArgs e)
         {
 

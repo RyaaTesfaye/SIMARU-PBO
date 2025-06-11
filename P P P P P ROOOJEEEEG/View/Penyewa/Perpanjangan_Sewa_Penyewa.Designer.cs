@@ -1,6 +1,6 @@
 ﻿namespace RUSUNAWAAA.View.Penyewa
 {
-    partial class _6_Penyewa
+    partial class Perpanjangan_Sewa_Penyewa
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_6_Penyewa));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Perpanjangan_Sewa_Penyewa));
             panel1 = new Panel();
             panel29 = new Panel();
             panel6 = new Panel();
@@ -451,7 +451,7 @@
             label6.TabIndex = 4;
             label6.Text = "Perpanjangan Sewa";
             // 
-            // _6_Penyewa
+            // Perpanjangan_Sewa_Penyewa
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -460,7 +460,7 @@
             Controls.Add(panel8);
             Controls.Add(panel7);
             Controls.Add(panel1);
-            Name = "_6_Penyewa";
+            Name = "Perpanjangan_Sewa_Penyewa";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "_6_Penyewa";
             panel1.ResumeLayout(false);

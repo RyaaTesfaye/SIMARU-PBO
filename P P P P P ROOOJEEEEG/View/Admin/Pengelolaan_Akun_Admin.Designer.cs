@@ -37,6 +37,7 @@
             label35 = new Label();
             pictureBox21 = new PictureBox();
             panel31 = new Panel();
+            pictureBox23 = new PictureBox();
             panel32 = new Panel();
             label32 = new Label();
             pictureBox18 = new PictureBox();
@@ -97,13 +98,15 @@
             label8 = new Label();
             checkBox1 = new CheckBox();
             label6 = new Label();
-            pictureBox23 = new PictureBox();
+            panel13 = new Panel();
+            button1 = new Button();
             panel1.SuspendLayout();
             panel33.SuspendLayout();
             panel34.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox20).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox21).BeginInit();
             panel31.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox23).BeginInit();
             panel32.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
             panel29.SuspendLayout();
@@ -137,7 +140,7 @@
             panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox15).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox23).BeginInit();
+            panel13.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -240,6 +243,17 @@
             panel31.Size = new Size(240, 50);
             panel31.TabIndex = 9;
             panel31.Click += ToEditVirtualTour_AD;
+            // 
+            // pictureBox23
+            // 
+            pictureBox23.Image = Properties.Resources.Virtual_tour;
+            pictureBox23.Location = new Point(10, 10);
+            pictureBox23.Name = "pictureBox23";
+            pictureBox23.Size = new Size(25, 25);
+            pictureBox23.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox23.TabIndex = 10;
+            pictureBox23.TabStop = false;
+            pictureBox23.Click += ToEditVirtualTour_AD;
             // 
             // panel32
             // 
@@ -675,6 +689,7 @@
             // panel9
             // 
             panel9.BackColor = Color.FromArgb(37, 39, 48);
+            panel9.Controls.Add(panel13);
             panel9.Controls.Add(pictureBox22);
             panel9.Controls.Add(pictureBox13);
             panel9.Controls.Add(pictureBox11);
@@ -927,16 +942,29 @@
             label6.TabIndex = 4;
             label6.Text = "Pengelolaan Akun";
             // 
-            // pictureBox23
+            // panel13
             // 
-            pictureBox23.Image = Properties.Resources.Virtual_tour;
-            pictureBox23.Location = new Point(10, 10);
-            pictureBox23.Name = "pictureBox23";
-            pictureBox23.Size = new Size(25, 25);
-            pictureBox23.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox23.TabIndex = 10;
-            pictureBox23.TabStop = false;
-            pictureBox23.Click += ToEditVirtualTour_AD;
+            panel13.BackColor = Color.Transparent;
+            panel13.Controls.Add(button1);
+            panel13.Location = new Point(800, 6);
+            panel13.Name = "panel13";
+            panel13.Size = new Size(127, 45);
+            panel13.TabIndex = 44;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(23, 24, 30);
+            button1.Cursor = Cursors.Hand;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(11, 3);
+            button1.Name = "button1";
+            button1.Size = new Size(104, 39);
+            button1.TabIndex = 1;
+            button1.Text = "Siaran";
+            button1.UseVisualStyleBackColor = false;
             // 
             // Pengelolaan_Akun_Admin
             // 
@@ -961,6 +989,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox21).EndInit();
             panel31.ResumeLayout(false);
             panel31.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox23).EndInit();
             panel32.ResumeLayout(false);
             panel32.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).EndInit();
@@ -1006,7 +1035,7 @@
             panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox15).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox23).EndInit();
+            panel13.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -1081,5 +1110,7 @@
         private PictureBox pictureBox22;
         private FlowLayoutPanel flowLayoutAkun;
         private PictureBox pictureBox23;
+        private Panel panel13;
+        private Button button1;
     }
 }

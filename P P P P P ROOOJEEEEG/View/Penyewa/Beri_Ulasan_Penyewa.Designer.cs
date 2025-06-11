@@ -1,6 +1,6 @@
 ﻿namespace RUSUNAWAAA.View.Penyewa
 {
-    partial class _1_Penyewa
+    partial class Beri_Ulasan_Penyewa
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_1_Penyewa));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Beri_Ulasan_Penyewa));
             panel1 = new Panel();
             panel29 = new Panel();
             label26 = new Label();
@@ -1160,7 +1160,7 @@
             label6.TabIndex = 4;
             label6.Text = "Beri Ulasan";
             // 
-            // _1_Penyewa
+            // Beri_Ulasan_Penyewa
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -1169,7 +1169,7 @@
             Controls.Add(panel8);
             Controls.Add(panel7);
             Controls.Add(panel1);
-            Name = "_1_Penyewa";
+            Name = "Beri_Ulasan_Penyewa";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "_1_Penyewa";
             panel1.ResumeLayout(false);

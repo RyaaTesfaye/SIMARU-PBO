@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace RUSUNAWAAA.View.Penyewa
 {
-    public partial class _6_Penyewa : Form
+    public partial class Perpanjangan_Sewa_Penyewa : Form
     {
-        public _6_Penyewa()
+        public Perpanjangan_Sewa_Penyewa()
         {
             InitializeComponent();
         }
@@ -27,31 +27,31 @@ namespace RUSUNAWAAA.View.Penyewa
 
         private void ToBeriUlasan_PE(object sender, EventArgs e)
         {
-            var command = new NavigateToFormCommand<_1_Penyewa>(this);
+            var command = new NavigateToFormCommand<Beri_Ulasan_Penyewa>(this);
             command.Execute();
         }
 
         private void ToTataTertib_PE(object sender, EventArgs e)
         {
-            var command = new NavigateToFormCommand<_2_Penyewa>(this);
+            var command = new NavigateToFormCommand<Tata_Tertib_Penyewa>(this);
             command.Execute();
         }
 
         private void ToLaporMasalah_PE(object sender, EventArgs e)
         {
-            var command = new NavigateToFormCommand<_3_Penyewa>(this);
+            var command = new NavigateToFormCommand<Lapor_Masalah_Penyewa>(this);
             command.Execute();
         }
 
         private void ToRiwayatLaporan_PE(object sender, EventArgs e)
         {
-            var command = new NavigateToFormCommand<_4_Penyewa>(this);
+            var command = new NavigateToFormCommand<Riwayat_laporan_Penyewa>(this);
             command.Execute();
         }
 
         private void ToRiwayatPembayaran_PE(object sender, EventArgs e)
         {
-            var command = new NavigateToFormCommand<_5_Penyewa>(this);
+            var command = new NavigateToFormCommand<Riwayat_Pembayarn_Penyewa>(this);
             command.Execute();
         }
     }

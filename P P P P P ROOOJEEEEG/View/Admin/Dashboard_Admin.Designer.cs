@@ -39,6 +39,7 @@ namespace RUSUNAWAAA.View.Admin
             label35 = new Label();
             pictureBox21 = new PictureBox();
             panel31 = new Panel();
+            pictureBox22 = new PictureBox();
             panel32 = new Panel();
             label32 = new Label();
             pictureBox18 = new PictureBox();
@@ -122,13 +123,13 @@ namespace RUSUNAWAAA.View.Admin
             label26 = new Label();
             label14 = new Label();
             label6 = new Label();
-            pictureBox22 = new PictureBox();
             panel1.SuspendLayout();
             panel33.SuspendLayout();
             panel34.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox20).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox21).BeginInit();
             panel31.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox22).BeginInit();
             panel32.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
             panel29.SuspendLayout();
@@ -175,7 +176,6 @@ namespace RUSUNAWAAA.View.Admin
             panel18.SuspendLayout();
             panel11.SuspendLayout();
             panel17.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox22).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -280,6 +280,17 @@ namespace RUSUNAWAAA.View.Admin
             panel31.Size = new Size(240, 50);
             panel31.TabIndex = 9;
             panel31.Click += ToEditVirtualTour_AD;
+            // 
+            // pictureBox22
+            // 
+            pictureBox22.Image = Properties.Resources.Virtual_tour;
+            pictureBox22.Location = new Point(10, 10);
+            pictureBox22.Name = "pictureBox22";
+            pictureBox22.Size = new Size(25, 25);
+            pictureBox22.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox22.TabIndex = 10;
+            pictureBox22.TabStop = false;
+            pictureBox22.Click += ToEditVirtualTour_AD;
             // 
             // panel32
             // 
@@ -907,6 +918,7 @@ namespace RUSUNAWAAA.View.Admin
             button1.TabIndex = 0;
             button1.Text = "Respon";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += ToDaftarKeluhan_AD;
             // 
             // panel9
             // 
@@ -1225,17 +1237,6 @@ namespace RUSUNAWAAA.View.Admin
             label6.TabIndex = 4;
             label6.Text = "Beranda Admin";
             // 
-            // pictureBox22
-            // 
-            pictureBox22.Image = Properties.Resources.Virtual_tour;
-            pictureBox22.Location = new Point(10, 10);
-            pictureBox22.Name = "pictureBox22";
-            pictureBox22.Size = new Size(25, 25);
-            pictureBox22.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox22.TabIndex = 10;
-            pictureBox22.TabStop = false;
-            pictureBox22.Click += ToEditVirtualTour_AD;
-            // 
             // Dashboard_Admin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -1260,6 +1261,7 @@ namespace RUSUNAWAAA.View.Admin
             ((System.ComponentModel.ISupportInitialize)pictureBox21).EndInit();
             panel31.ResumeLayout(false);
             panel31.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox22).EndInit();
             panel32.ResumeLayout(false);
             panel32.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).EndInit();
@@ -1327,7 +1329,6 @@ namespace RUSUNAWAAA.View.Admin
             panel11.PerformLayout();
             panel17.ResumeLayout(false);
             panel17.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox22).EndInit();
             ResumeLayout(false);
         }
 
