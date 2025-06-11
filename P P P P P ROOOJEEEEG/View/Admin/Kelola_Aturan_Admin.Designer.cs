@@ -234,7 +234,6 @@
             // panel31
             // 
             panel31.BackColor = Color.Transparent;
-            panel31.Controls.Add(pictureBox14);
             panel31.Controls.Add(panel32);
             panel31.Controls.Add(label33);
             panel31.Cursor = Cursors.Hand;
@@ -293,17 +292,6 @@
             label33.Text = "Edit Virtual Tour";
             label33.Click += ToEditVirtualTour_AD;
             // 
-            // pictureBox19
-            // 
-            pictureBox19.Image = Properties.Resources.refresh;
-            pictureBox19.Location = new Point(12, 12);
-            pictureBox19.Margin = new Padding(4);
-            pictureBox19.Name = "pictureBox19";
-            pictureBox19.Size = new Size(31, 31);
-            pictureBox19.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox19.TabIndex = 2;
-            pictureBox19.TabStop = false;
-            pictureBox19.Click += ToEditVirtualTour_AD;
             // 
             // panel29
             // 

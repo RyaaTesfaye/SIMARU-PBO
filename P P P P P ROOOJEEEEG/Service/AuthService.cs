@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using RUSUNAWAAA.Models;
 using RusunawaApp.Data;
+using Microsoft.EntityFrameworkCore;
 
 
 namespace RUSUNAWAAA.Service
@@ -68,7 +69,7 @@ namespace RUSUNAWAAA.Service
                         context.SaveChanges();
                         return true;
                     }
-                    catch (Microsoft.EntityFrameworkCore.DbUpdateException dbEx)
+                    catch (DbUpdateException dbEx)
                     {
                         Console.WriteLine($"Database update error in UpdatePassword: {dbEx.Message}");
                         if (dbEx.InnerException != null)
