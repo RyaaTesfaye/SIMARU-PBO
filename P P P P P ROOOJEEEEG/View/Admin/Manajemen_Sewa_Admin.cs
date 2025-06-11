@@ -21,7 +21,6 @@ namespace RUSUNAWAAA.View.Admin
         private List<Pengajuan> _semuaPengajuan;
         private List<PerpanjanganSewa> _semuaPerpanjangan;
 
-        // --- Variabel untuk menyimpan State Tampilan Saat Ini ---
         private List<object> _dataYangTampil; // Daftar yang sudah difilter
         private int _halamanSaatIni = 1;
         private readonly int _itemPerHalaman = 7; // Atur berapa item per halaman

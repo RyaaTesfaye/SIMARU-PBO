@@ -21,7 +21,7 @@ namespace RusunawaApp.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=RusunawaNew;Username=postgres;Password=KFM9M$JF");
+            optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=RusunawaNew;Username=postgres;Password=admin123");
         }
 
     }

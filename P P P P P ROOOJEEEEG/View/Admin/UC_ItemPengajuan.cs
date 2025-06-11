@@ -35,5 +35,10 @@ namespace RUSUNAWAAA.View.Admin
         {
             DetailButtonClicked?.Invoke(this, this.PengajuanId);
         }
+
+        private void label_NoHp_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

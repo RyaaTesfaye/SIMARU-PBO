@@ -13,5 +13,6 @@ namespace RUSUNAWAAA.Models
         public int Id_Tatatertib { get; set; }
         public string Judul { get; set; }
         public DateTime TanggalUpdate { get; set; }
+        public string TargetJenisKelamin { get; set;}
     }
 }
