@@ -77,7 +77,7 @@ namespace RUSUNAWAAA.View.Umum
         {
             if (media != null)
             {
-                // Jika ada data, tampilkan gambar dan teksnya
+
                 picbox.Visible = true;
                 label.Visible = true;
                 label.Text = media.NamaFile;
@@ -95,12 +95,12 @@ namespace RUSUNAWAAA.View.Umum
                 }
                 else
                 {
-                    picbox.Image = null; // Tampilkan gambar placeholder jika perlu
+                    picbox.Image = null; 
                 }
             }
             else
             {
-                // Jika tidak ada data untuk slot ini, sembunyikan
+               
                 picbox.Visible = false;
                 label.Visible = false;
             }

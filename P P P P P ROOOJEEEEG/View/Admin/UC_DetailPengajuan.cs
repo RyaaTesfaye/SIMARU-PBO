@@ -36,33 +36,29 @@ namespace RUSUNAWAAA.View.Admin
             if (data == null)
             {
                 MessageBox.Show("Data pengajuan tidak ditemukan.");
-                // Kirim sinyal kembali jika data tidak ada
                 BackRequested?.Invoke(this, EventArgs.Empty);
                 return;
             }
 
-            // Kolom 1
+            
             lblPengajuanIsi.Text = data.Id_Pengajuan.ToString("D3");
             lblNamaIsi.Text = data.NamaLengkap;
             lblFakultasIsi.Text = data.Fakultas;
             lblAlamatIsi.Text = data.AlamatAsal;
             lblJenisKelaminIsi.Text = data.JenisKelamin;
 
-            // Kolom 2
             lblNIMIsi.Text = data.NIM;
             lblProdiIsi.Text = data.Prodi;
             lblAsalKotaIsi.Text = data.AsalKota;
             lblNomorHPIsi.Text = data.NomorHP;
             lblOrtuIsi.Text = data.NamaOrangTua;
 
-            // Kolom 3
             lblTanggalIsi.Text = data.TanggalPengajuan.ToLocalTime().ToString("dd MMMM yyyy", new CultureInfo("id-ID"));
             lblNominalIsi.Text = data.EstimasiBiaya.ToString("C", new CultureInfo("id-ID"));
             lblStatusIsi.Text = data.Status;
             lblDurasiIsi.Text = data.DurasiSewa.ToString() + " Bulan";
 
-            // Kolom 4 (Berkas)
-            // Anda bisa tambahkan logika untuk menyembunyikan link jika path kosong
+            
             LinkLihatPasfoto.Visible = !string.IsNullOrEmpty(data.PathPasfoto);
             LinkLihatSurat.Visible = !string.IsNullOrEmpty(data.PathSuratPernyataan);
             LinkLihatKTP.Visible = !string.IsNullOrEmpty(data.PathKTP);
@@ -77,7 +73,7 @@ namespace RUSUNAWAAA.View.Admin
                 if (sukses)
                 {
                     MessageBox.Show("Pengajuan berhasil disetujui.", "Sukses");
-                    // Kirim sinyal bahwa aksi sudah selesai
+                   
                     ActionCompleted?.Invoke(this, EventArgs.Empty);
                 }
                 else
@@ -89,8 +85,8 @@ namespace RUSUNAWAAA.View.Admin
 
         private void btnTolak_Click(object sender, EventArgs e)
         {
-            // Anda bisa buat form input kecil untuk menanyakan alasan penolakan
-            string alasan = "Tidak memenuhi syarat."; // Contoh alasan
+           
+            string alasan = "Tidak memenuhi syarat."; 
             if (MessageBox.Show($"Anda yakin ingin menolak pengajuan ini dengan alasan: {alasan}?", "Konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 bool sukses = _service.RejectPengajuan(_currentPengajuanId, alasan);

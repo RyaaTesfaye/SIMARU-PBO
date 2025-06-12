@@ -46,5 +46,20 @@ namespace RUSUNAWAAA.Service
                 return false;
             }
         }
+        public bool BuatKeluhanBaru(Laporan laporanBaru)
+        {
+            // Validasi dasar
+            if (laporanBaru == null || string.IsNullOrWhiteSpace(laporanBaru.NomorKTP) || string.IsNullOrWhiteSpace(laporanBaru.Judul))
+            {
+                return false;
+            }
+
+            using (var context = new ApplicationDbContext())
+            {
+                context.Laporans.Add(laporanBaru);
+                context.SaveChanges();
+                return true;
+            }
+        }
     }
 }

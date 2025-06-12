@@ -21,14 +21,14 @@ namespace RUSUNAWAAA.View.Admin
         }
         private void Edit_Virtual_Tour_Admin_Load(object sender, EventArgs e)
         {
-            // Saat form pertama kali dimuat, tampilkan daftar media
+
             ShowListView();
         }
         private void LoadAndDisplayMedia()
         {
             try
             {
-                // Ambil semua data dari service
+
                 var allMedia = _service.GetAllMedia();
 
                 flowLayoutPanelMedia.Controls.Clear(); 
@@ -48,7 +48,7 @@ namespace RUSUNAWAAA.View.Admin
                 }
                 else
                 {
-                    // Tampilkan pesan jika tidak ada data virtual tour
+
                     var lblKosong = new Label { Text = "Belum ada data virtual tour.", AutoSize = true };
                     flowLayoutPanelMedia.Controls.Add(lblKosong);
                 }
@@ -62,7 +62,7 @@ namespace RUSUNAWAAA.View.Admin
 
         private void ShowListView()
         {
-            // Hapus form tambah/edit yang mungkin sedang tampil
+           
             var formView = this.Controls.OfType<UC_TambahVirtual>().FirstOrDefault();
             if (formView != null)
             {
@@ -70,20 +70,20 @@ namespace RUSUNAWAAA.View.Admin
                 formView.Dispose();
             }
 
-            // Tampilkan kembali container daftar dan muat ulang datanya
-            panel11.Visible = true; // Asumsikan Anda punya panel induk ini
+
+            panel11.Visible = true; 
             LoadAndDisplayMedia();
         }
         private void ShowAddView()
         {
-            // Sembunyikan container daftar
+
             panel11.Visible = false;
 
             var formView = new UC_TambahVirtual();
             formView.Dock = DockStyle.Fill;
-            // Berlangganan sinyal dari form tambah
-            formView.SaveCompleted += (s, ev) => ShowListView(); // Jika simpan sukses, kembali ke daftar
-            formView.Cancelled += (s, ev) => ShowListView();     // Jika batal, kembali ke daftar
+ 
+            formView.SaveCompleted += (s, ev) => ShowListView(); 
+            formView.Cancelled += (s, ev) => ShowListView();     
 
 
             this.Controls.Add(formView);
@@ -95,7 +95,7 @@ namespace RUSUNAWAAA.View.Admin
         }
         private void btnHapus_Click(object sender, EventArgs e)
         {
-            // Kumpulkan semua item yang checkbox-nya tercentang
+ 
             var itemsToDelete = flowLayoutPanelMedia.Controls
                 .OfType<UC_ItemVirtualTour>()
                 .Where(uc => uc.IsChecked)
@@ -109,16 +109,16 @@ namespace RUSUNAWAAA.View.Admin
 
             if (MessageBox.Show($"Anda yakin ingin menghapus {itemsToDelete.Count} item yang dipilih?", "Konfirmasi Hapus", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
-                // Ambil semua ID dari item yang dipilih
+
                 var idsToDelete = itemsToDelete.Select(uc => uc.MediaId).ToList();
 
-                // Panggil service untuk menghapus semuanya sekaligus
+
                 bool sukses = _service.DeleteMultipleMedia(idsToDelete);
 
                 if (sukses)
                 {
                     MessageBox.Show("Data berhasil dihapus.", "Sukses");
-                    LoadAndDisplayMedia(); // Muat ulang daftar untuk menampilkan perubahan
+                    LoadAndDisplayMedia();
                 }
                 else
                 {

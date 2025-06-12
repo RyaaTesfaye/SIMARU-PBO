@@ -33,7 +33,7 @@ namespace RUSUNAWAAA.View.Admin
         }
         private void btnDetail_Click(object sender, EventArgs e)
         {
-            // Kirim sinyal "DetailButtonClicked" keluar, beserta NomorKTP dari penyewa ini
+ 
             if (PenyewaData != null)
             {
                 DetailButtonClicked?.Invoke(this, this.PenyewaData.NomorKTP);

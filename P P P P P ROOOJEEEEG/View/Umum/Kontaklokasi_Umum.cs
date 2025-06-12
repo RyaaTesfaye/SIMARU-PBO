@@ -32,13 +32,13 @@ namespace RUSUNAWAAA.View.Umum
                 var processInfo = new System.Diagnostics.ProcessStartInfo
                 {
                     FileName = url,
-                    UseShellExecute = true // Ini adalah kunci utamanya
+                    UseShellExecute = true 
                 };
                 System.Diagnostics.Process.Start(processInfo);
             }
             catch (Exception ex)
             {
-                // Tampilkan pesan jika terjadi error
+  
                 MessageBox.Show("Tidak dapat membuka link. Pastikan Anda terhubung ke internet. Error: " + ex.Message);
             }
         }
@@ -93,7 +93,7 @@ namespace RUSUNAWAAA.View.Umum
                 var processInfo = new System.Diagnostics.ProcessStartInfo
                 {
                     FileName = url,
-                    UseShellExecute = true // Ini adalah kunci utamanya
+                    UseShellExecute = true
                 };
                 System.Diagnostics.Process.Start(processInfo);
             }

@@ -100,17 +100,17 @@ namespace RUSUNAWAAA.Service
             }
             catch (Exception ex)
             {
-                // Variabel untuk menyimpan pesan error yang paling detail
+               
                 string errorMessage = ex.Message;
 
-                // Cek apakah ada "inner exception"
+                
                 if (ex.InnerException != null)
                 {
-                    // Ambil pesan error dari level yang lebih dalam, ini yang paling penting!
+                    
                     errorMessage += "\n\nInner Exception:\n" + ex.InnerException.Message;
                 }
 
-                // Tampilkan pesan error yang sudah lengkap
+                
                 MessageBox.Show("Gagal menyimpan data ke database.\n\n" + errorMessage, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
@@ -175,15 +175,13 @@ namespace RUSUNAWAAA.Service
         }
         public List<PerpanjanganSewa> GetAllPerpanjangan()
         {
-            // Untuk saat ini, kita kembalikan daftar kosong.
-            // Nanti, Anda akan isi ini dengan logika dari database.
             return new List<PerpanjanganSewa>();
         }
         public Pengajuan GetPengajuanById(int pengajuanId)
         {
             using (var context = new ApplicationDbContext())
             {
-                // FindAsync adalah cara paling efisien untuk mencari berdasarkan Primary Key
+                
                 return context.Pengajuans.Find(pengajuanId);
             }
         }
@@ -202,7 +200,7 @@ namespace RUSUNAWAAA.Service
                     Password = GenerateRandomPassword(),
                     Role = "Penyewa",
 
-                    // Pindahkan data spesifik lainnya
+                   
                     AlamatAsal = pengajuan.AlamatAsal,
                     NomorHP = pengajuan.NomorHP,
                     Fakultas = pengajuan.Fakultas,

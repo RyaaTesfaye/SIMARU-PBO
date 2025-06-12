@@ -61,19 +61,6 @@
             panel8 = new Panel();
             panel9 = new Panel();
             panel10 = new Panel();
-            panel14 = new Panel();
-            panel13 = new Panel();
-            panel11 = new Panel();
-            panel12 = new Panel();
-            label27 = new Label();
-            label25 = new Label();
-            label24 = new Label();
-            label23 = new Label();
-            label20 = new Label();
-            label18 = new Label();
-            label19 = new Label();
-            label21 = new Label();
-            label22 = new Label();
             label6 = new Label();
             panel1.SuspendLayout();
             panel29.SuspendLayout();
@@ -97,8 +84,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel8.SuspendLayout();
             panel9.SuspendLayout();
-            panel10.SuspendLayout();
-            panel12.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -461,157 +446,10 @@
             // panel10
             // 
             panel10.BackColor = Color.FromArgb(23, 24, 30);
-            panel10.Controls.Add(panel14);
-            panel10.Controls.Add(panel13);
-            panel10.Controls.Add(panel11);
-            panel10.Controls.Add(panel12);
             panel10.Location = new Point(27, 28);
             panel10.Name = "panel10";
             panel10.Size = new Size(1113, 607);
             panel10.TabIndex = 12;
-            // 
-            // panel14
-            // 
-            panel14.BackColor = Color.FromArgb(37, 39, 48);
-            panel14.Location = new Point(564, 325);
-            panel14.Name = "panel14";
-            panel14.Size = new Size(521, 256);
-            panel14.TabIndex = 29;
-            // 
-            // panel13
-            // 
-            panel13.BackColor = Color.FromArgb(37, 39, 48);
-            panel13.Location = new Point(24, 325);
-            panel13.Name = "panel13";
-            panel13.Size = new Size(521, 256);
-            panel13.TabIndex = 29;
-            // 
-            // panel11
-            // 
-            panel11.BackColor = Color.FromArgb(37, 39, 48);
-            panel11.Location = new Point(564, 28);
-            panel11.Name = "panel11";
-            panel11.Size = new Size(521, 271);
-            panel11.TabIndex = 29;
-            // 
-            // panel12
-            // 
-            panel12.BackColor = Color.FromArgb(37, 39, 48);
-            panel12.Controls.Add(label27);
-            panel12.Controls.Add(label25);
-            panel12.Controls.Add(label24);
-            panel12.Controls.Add(label23);
-            panel12.Controls.Add(label20);
-            panel12.Controls.Add(label18);
-            panel12.Controls.Add(label19);
-            panel12.Controls.Add(label21);
-            panel12.Controls.Add(label22);
-            panel12.Location = new Point(24, 28);
-            panel12.Name = "panel12";
-            panel12.Size = new Size(521, 270);
-            panel12.TabIndex = 26;
-            // 
-            // label27
-            // 
-            label27.BackColor = Color.Transparent;
-            label27.Font = new Font("Inter", 7F);
-            label27.ForeColor = Color.White;
-            label27.Location = new Point(89, 159);
-            label27.Name = "label27";
-            label27.Size = new Size(179, 61);
-            label27.TabIndex = 29;
-            label27.Text = "Kemarin sudah di perbaiki sama mas Riski, katanya ada kebocoran di bagian...";
-            // 
-            // label25
-            // 
-            label25.BackColor = Color.Transparent;
-            label25.Font = new Font("Inter", 7F);
-            label25.ForeColor = Color.White;
-            label25.Location = new Point(130, 125);
-            label25.Name = "label25";
-            label25.Size = new Size(97, 22);
-            label25.TabIndex = 28;
-            label25.Text = "25 Maret 2025";
-            label25.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label24
-            // 
-            label24.BackColor = Color.Transparent;
-            label24.Font = new Font("Inter", 7F);
-            label24.ForeColor = Color.White;
-            label24.Location = new Point(75, 97);
-            label24.Name = "label24";
-            label24.Size = new Size(113, 22);
-            label24.TabIndex = 27;
-            label24.Text = "Sudah di Tangani";
-            label24.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label23
-            // 
-            label23.BackColor = Color.Transparent;
-            label23.Font = new Font("Inter", 7F);
-            label23.ForeColor = Color.White;
-            label23.Location = new Point(24, 159);
-            label23.Name = "label23";
-            label23.Size = new Size(181, 23);
-            label23.TabIndex = 26;
-            label23.Text = "Catatan:";
-            // 
-            // label20
-            // 
-            label20.BackColor = Color.Transparent;
-            label20.Font = new Font("Inter", 7F);
-            label20.ForeColor = Color.White;
-            label20.Location = new Point(24, 128);
-            label20.Name = "label20";
-            label20.Size = new Size(181, 23);
-            label20.TabIndex = 25;
-            label20.Text = "Diperbarui pada:";
-            // 
-            // label18
-            // 
-            label18.BackColor = Color.Transparent;
-            label18.Font = new Font("Inter", 7F);
-            label18.ForeColor = Color.White;
-            label18.Location = new Point(24, 100);
-            label18.Name = "label18";
-            label18.Size = new Size(181, 23);
-            label18.TabIndex = 24;
-            label18.Text = "Status:";
-            // 
-            // label19
-            // 
-            label19.BackColor = Color.Transparent;
-            label19.Font = new Font("Inter", 7F);
-            label19.ForeColor = Color.White;
-            label19.Location = new Point(130, 65);
-            label19.Name = "label19";
-            label19.Size = new Size(97, 22);
-            label19.TabIndex = 23;
-            label19.Text = "25 Maret 2025";
-            label19.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label21
-            // 
-            label21.AutoSize = true;
-            label21.Font = new Font("Inter", 10F, FontStyle.Bold);
-            label21.ForeColor = Color.White;
-            label21.Location = new Point(24, 18);
-            label21.Name = "label21";
-            label21.Size = new Size(245, 24);
-            label21.TabIndex = 15;
-            label21.Text = "#L001 - Sampah Menumpuk";
-            // 
-            // label22
-            // 
-            label22.BackColor = Color.Transparent;
-            label22.Font = new Font("Inter", 7F);
-            label22.ForeColor = Color.White;
-            label22.Location = new Point(24, 68);
-            label22.Name = "label22";
-            label22.Size = new Size(181, 23);
-            label22.TabIndex = 14;
-            label22.Text = "Tanggal Dikirim:";
             // 
             // label6
             // 
@@ -667,9 +505,6 @@
             panel8.ResumeLayout(false);
             panel8.PerformLayout();
             panel9.ResumeLayout(false);
-            panel10.ResumeLayout(false);
-            panel12.ResumeLayout(false);
-            panel12.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -708,18 +543,5 @@
         private Label label6;
         private Panel panel6;
         private Panel panel10;
-        private Panel panel14;
-        private Panel panel13;
-        private Panel panel11;
-        private Panel panel12;
-        private Label label19;
-        private Label label21;
-        private Label label22;
-        private Label label23;
-        private Label label20;
-        private Label label18;
-        private Label label27;
-        private Label label25;
-        private Label label24;
     }
 }

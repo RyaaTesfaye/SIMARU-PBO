@@ -19,15 +19,15 @@ namespace RUSUNAWAAA.View.Admin
     {
         private readonly PengajuanSewaService _service = new PengajuanSewaService();
 
-        // --- Variabel untuk menyimpan data Master ---
+        
         private List<Pengajuan> _semuaPengajuan;
         private List<PerpanjanganSewa> _semuaPerpanjangan;
 
-        private List<object> _dataYangTampil; // Daftar yang sudah difilter
+        private List<object> _dataYangTampil; 
         private int _halamanSaatIni = 1;
-        private readonly int _itemPerHalaman = 7; // Atur berapa item per halaman
-        private string _filterJenisKelamin = "Perempuan"; // Default: tampilkan semua
-        private string _tipeTampilan = "Pengajuan"; // Default: tampilkan Pengajuan
+        private readonly int _itemPerHalaman = 7; 
+        private string _filterJenisKelamin = "Perempuan"; 
+        private string _tipeTampilan = "Pengajuan"; 
         public Manajemen_Sewa_Admin()
         {
             InitializeComponent();
@@ -106,10 +106,8 @@ namespace RUSUNAWAAA.View.Admin
             }
             else if (_tipeTampilan == "Perpanjangan")
             {
-                // Filter data perpanjangan (logika sama, tapi pada _semuaPerpanjangan)
-                // Karena masih kosong, hasilnya akan kosong
                 var filteredList = _semuaPerpanjangan.AsQueryable();
-                // if (_filterJenisKelamin != "Semua") { ... filter di sini ... }
+                // if (_filterJenisKelamin != "Semua")
                 _dataYangTampil = filteredList.Cast<object>().ToList();
             }
             _halamanSaatIni = 1;
@@ -126,7 +124,7 @@ namespace RUSUNAWAAA.View.Admin
 
             if (itemsUntukHalamanIni.Count == 0)
             {
-                // Tampilkan label "Tidak ada data" jika perlu
+               
             }
             else
             {
@@ -141,7 +139,7 @@ namespace RUSUNAWAAA.View.Admin
                     }
                     else if (itemData is PerpanjanganSewa perpanjangan)
                     {
-                        // Nanti Anda akan buat ucItemPerpanjangan di sini
+                        // ucItemPerpanjangan 
                     }
                 }
             }
@@ -157,31 +155,30 @@ namespace RUSUNAWAAA.View.Admin
         }
         private void OnItemDetailClicked(object sender, int pengajuanId)
         {
-            // Panggil metode baru untuk menampilkan detail
+           
             ShowDetailView(pengajuanId);
         }
         private void ShowDetailView(int pengajuanId)
         {
-            // 1. Sembunyikan semua kontrol yang berhubungan dengan tampilan daftar
+            
             panel11.Visible = false;
 
 
-            // 2. Buat instance dari UC Detail
+           
             var detailView = new UC_DetailPengajuan();
-            detailView.Dock = DockStyle.Fill; // Penuhi seluruh area
+            detailView.Dock = DockStyle.Fill; 
 
-            // 3. Berlangganan sinyal dari UC Detail
-            detailView.ActionCompleted += (s, ev) => ShowListView(); // Jika ACC/Tolak, kembali ke list
-            detailView.BackRequested += (s, ev) => ShowListView(); // Jika Kembali, kembali ke list
-
-            // 4. Tambahkan ke panel induk dan muat datanya
+           
+            detailView.ActionCompleted += (s, ev) => ShowListView(); 
+            detailView.BackRequested += (s, ev) => ShowListView(); 
+           
             this.Controls.Add(detailView);
             detailView.BringToFront();
             detailView.LoadDetail(pengajuanId);
         }
         private void ShowListView()
         {
-            // Hapus UC Detail yang sedang tampil
+           
             var detailView = this.Controls.OfType<UC_DetailPengajuan>().FirstOrDefault();
             if (detailView != null)
             {
@@ -189,10 +186,10 @@ namespace RUSUNAWAAA.View.Admin
                 detailView.Dispose();
             }
 
-            // Tampilkan kembali semua kontrol untuk daftar
+           
             panel11.Visible = true;
 
-            // Muat ulang data daftar agar update (misalnya, pengajuan yang di-ACC hilang)
+           
             Manajemen_Sewa_Admin_Load(this, EventArgs.Empty);
         }
         private void btnTipePengajuan_Click(object sender, EventArgs e)

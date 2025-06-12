@@ -16,10 +16,10 @@ namespace RUSUNAWAAA.View.Admin
     {
         public MediaVirtual MediaData { get; private set; }
 
-        // Properti untuk membaca status CheckBox dari luar
+        
         public bool IsChecked => chkPilih.Checked;
 
-        // Properti untuk mengambil ID dengan mudah, disesuaikan dengan nama di model Anda
+     
         public int MediaId => MediaData.Id_Media;
         public UC_ItemVirtualTour()
         {

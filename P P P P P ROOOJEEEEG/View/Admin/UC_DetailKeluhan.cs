@@ -33,12 +33,11 @@ namespace RUSUNAWAAA.View.Admin
                 return;
             }
 
-            // Isi semua kontrol dengan data yang didapat
+            
             lblNama.Text = data.User?.NamaLengkap ?? "N/A";
             lblTanggal.Text = data.Tanggal.ToLocalTime().ToString("dd MMMM yyyy");
-            txtIsiKeluhan.Text = data.Isi; // Gunakan TextBox jika isinya panjang
-
-            // Tampilkan gambar jika ada
+            txtIsiKeluhan.Text = data.Isi;
+            
             if (!string.IsNullOrEmpty(data.PathGambar) && File.Exists(data.PathGambar))
             {
                 try

@@ -24,7 +24,7 @@ namespace RUSUNAWAAA.View.Admin
         {
             this.Id_Keluhan = data.Id_Laporan;
 
-            // Isi semua label dengan data yang sesuai
+            
             lblID.Text = data.Id_Laporan.ToString();
             lblNama.Text = data.User?.NamaLengkap ?? "Nama Tidak Tersedia";
             lblJudul.Text = data.Judul;
@@ -40,17 +40,17 @@ namespace RUSUNAWAAA.View.Admin
                 lblStatus.BackColor = Color.Orange;
                 lblStatus.ForeColor = Color.Black;
             }
-            else // Misal: "Selesai"
+            else 
             {
                 lblStatus.BackColor = Color.Green;
                 lblStatus.ForeColor = Color.White;
             }
         }
 
-        // Event handler untuk tombol Detail
+       
         private void btnDetail_Click(object sender, EventArgs e)
         {
-            // Kirim sinyal keluar beserta ID keluhan dari item ini
+          
             DetailButtonClicked?.Invoke(this, this.Id_Keluhan);
         }
     }

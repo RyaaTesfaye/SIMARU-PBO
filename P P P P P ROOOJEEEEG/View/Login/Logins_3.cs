@@ -13,11 +13,10 @@ namespace RUSUNAWAAA.View.Login
 {
     public partial class Logins_3 : UserControl
     {
-        // Pastikan event ini ada!
         public event EventHandler BackToLoginRequested;
         public event EventHandler ResetPasswordCompleted;
 
-        private readonly AuthService _authService = new AuthService(); // Ini tetap dibutuhkan untuk update password
+        private readonly AuthService _authService = new AuthService(); 
         private string _usernameOrEmailToReset;
 
         public Logins_3()
@@ -28,8 +27,6 @@ namespace RUSUNAWAAA.View.Login
         public void SetDataFromPreviousStep(string usernameOrangYangMauDireseti)
         {
             _usernameOrEmailToReset = usernameOrangYangMauDireseti;
-            // Anda bisa tampilkan _usernameOrEmailToReset di label jika perlu
-            // Contoh: lblTargetUser.Text = $"Resetting password for: {_usernameOrEmailToReset}";
         }
 
         private void btnResetPasswordFinal_Click(object sender, EventArgs e)
@@ -61,9 +58,7 @@ namespace RUSUNAWAAA.View.Login
 
                 if (success)
                 {
-                    // Jangan tampilkan MessageBox di sini lagi, biarkan Loginss yang tangani.
-                    // MessageBox.Show("Kata sandi Anda berhasil direset! Silakan login dengan kata sandi baru Anda.", "Reset Berhasil", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    ResetPasswordCompleted?.Invoke(this, EventArgs.Empty); // Memanggil event yang akan ditangkap Loginss
+                    ResetPasswordCompleted?.Invoke(this, EventArgs.Empty); 
                 }
                 else
                 {
@@ -78,7 +73,7 @@ namespace RUSUNAWAAA.View.Login
 
         private void btnKembali_Click(object sender, EventArgs e)
         {
-            BackToLoginRequested?.Invoke(this, EventArgs.Empty); // Memanggil event yang akan ditangkap Loginss
+            BackToLoginRequested?.Invoke(this, EventArgs.Empty); 
         }
     }
 }

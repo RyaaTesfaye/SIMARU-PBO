@@ -14,9 +14,22 @@ namespace RUSUNAWAAA.View.Penyewa
 {
     public partial class Lapor_Masalah_Penyewa : Form
     {
+
         public Lapor_Masalah_Penyewa()
         {
             InitializeComponent();
+        }
+        private void LaporMasalah_Load(object sender, EventArgs e)
+        {
+           
+            UC_Lapor ucLapor = new UC_Lapor();
+
+            ucLapor.Dock = DockStyle.Fill;
+
+            panel11.Controls.Clear();
+
+
+            panel11.Controls.Add(ucLapor);
         }
 
         private void ToDashboard_PE(object sender, EventArgs e)

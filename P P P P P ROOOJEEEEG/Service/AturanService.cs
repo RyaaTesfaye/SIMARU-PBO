@@ -11,13 +11,13 @@ namespace RUSUNAWAAA.Service
 {
     public class AturanService
     {
-        private readonly Panel _targetPanel; // Panel di form utama tempat UC akan ditambahkan
-        private List<TataTertib> _semuaTatatertibs; // Semua data dari DB (internal service)
+        private readonly Panel _targetPanel;
+        private List<TataTertib> _semuaTatatertibs; 
 
         public AturanService(Panel targetPanel)
         {
             _targetPanel = targetPanel;
-            LoadAllTatatertibs(); // Muat data awal saat service diinisialisasi
+            LoadAllTatatertibs(); 
         }
 
         private void LoadAllTatatertibs()
@@ -38,7 +38,7 @@ namespace RUSUNAWAAA.Service
 
         public List<TataTertib> GetAllAturan()
         {
-            LoadAllTatatertibs(); // Pastikan data terbaru dimuat
+            LoadAllTatatertibs(); 
             return _semuaTatatertibs;
         }
         private void OnDeleteClicked(object sender, int id)
@@ -54,7 +54,7 @@ namespace RUSUNAWAAA.Service
                 return;
             }
 
-            _targetPanel.Controls.Clear(); // Bersihkan panel
+            _targetPanel.Controls.Clear(); 
 
             if (itemsToDisplay != null && itemsToDisplay.Any())
             {
@@ -70,11 +70,9 @@ namespace RUSUNAWAAA.Service
                     item.Width = _targetPanel.ClientSize.Width - 20;
                     item.Anchor = AnchorStyles.Left | AnchorStyles.Right;
 
-                    // FIX: Subscribe to the DeleteClicked event of each UC_ItemKelolaAturan
-                    //item.DeleteClicked += (s, id) => HandleDeleteRequestFromUI(id);
+                    
                     item.DeleteClicked += OnDeleteClicked;
-                    // If you also have an EditClicked event, subscribe it here too:
-                    // item.EditClicked += (s, id) => HandleEditRequestFromUI(id);
+                  
 
                     _targetPanel.Controls.Add(item);
                     yPos += item.Height + 5;
@@ -90,10 +88,10 @@ namespace RUSUNAWAAA.Service
             }
         }
 
-        // --- New method to handle delete requests coming from the UI (UC_ItemKelolaAturan) ---
+        
         private void HandleDeleteRequestFromUI(int idTataTertib)
         {
-            // Add a confirmation dialog before deleting
+          
             DialogResult confirmResult = MessageBox.Show(
                 "Apakah Anda yakin ingin menghapus aturan ini?",
                 "Konfirmasi Hapus",
@@ -103,13 +101,12 @@ namespace RUSUNAWAAA.Service
 
             if (confirmResult == DialogResult.Yes)
             {
-                bool success = DeleteAturan(idTataTertib); // Call the actual delete method
+                bool success = DeleteAturan(idTataTertib); 
 
                 if (success)
                 {
                     MessageBox.Show("Aturan berhasil dihapus.", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    // The LoadAllTatatertibs() and DisplayAllItemsOnPanel() calls inside DeleteAturan
-                    // will automatically refresh the display.
+                    
                 }
                 else
                 {
@@ -118,10 +115,10 @@ namespace RUSUNAWAAA.Service
             }
         }
 
-        // --- CRUD Methods ---
+      
         public bool AddAturan(TataTertib newTataTertib)
         {
-            // ... (existing AddAturan logic) ...
+           
             using (var context = new ApplicationDbContext())
             {
                 try
@@ -130,7 +127,7 @@ namespace RUSUNAWAAA.Service
                     newTataTertib.TanggalUpdate = DateTime.Now;
                     context.SaveChanges();
                     LoadAllTatatertibs();
-                    DisplayAllItemsOnPanel(_semuaTatatertibs); // Refresh display
+                    DisplayAllItemsOnPanel(_semuaTatatertibs); 
                     return true;
                 }
                 catch (Exception ex) { MessageBox.Show($"Error adding rule: {ex.Message}", "Error"); return false; }
@@ -139,7 +136,7 @@ namespace RUSUNAWAAA.Service
 
         public TataTertib GetAturanById(int idAturan)
         {
-            // ... (existing GetAturanById logic) ...
+          
             using (var context = new ApplicationDbContext())
             {
                 try { return context.TataTertibs.Find(idAturan); }
@@ -149,7 +146,7 @@ namespace RUSUNAWAAA.Service
 
         public bool DeleteAturan(int idTataTertib)
         {
-            // This method now includes the refresh logic.
+           
             using (var context = new ApplicationDbContext())
             {
                 try
@@ -158,8 +155,8 @@ namespace RUSUNAWAAA.Service
                     if (tataTertibToDelete == null) return false;
                     context.TataTertibs.Remove(tataTertibToDelete);
                     context.SaveChanges();
-                    LoadAllTatatertibs(); // Reload internal data after delete
-                    DisplayAllItemsOnPanel(_semuaTatatertibs); // Refresh the UI
+                    LoadAllTatatertibs(); 
+                    DisplayAllItemsOnPanel(_semuaTatatertibs); 
                     return true;
                 }
                 catch (Exception ex) { MessageBox.Show($"Error deleting rule: {ex.Message}", "Error"); return false; }

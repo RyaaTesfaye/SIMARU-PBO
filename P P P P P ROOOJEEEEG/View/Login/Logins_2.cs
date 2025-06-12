@@ -47,7 +47,6 @@ namespace RUSUNAWAAA.View.Login
                 if (dataExists)
                 {
                     MessageBox.Show("Data ditemukan. Silakan lanjutkan untuk mengatur ulang kata sandi Anda.", "Verifikasi Berhasil", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    // Kirim NIK (atau identifier unik lainnya) sebagai data verifikasi ke Logins_3
                     ProceedToNextStepRequested?.Invoke(this, new string[] { nik });
                 }
                 else
@@ -63,7 +62,6 @@ namespace RUSUNAWAAA.View.Login
 
         private void btnKembali_Click(object sender, EventArgs e)
         {
-            // Memicu event untuk kembali ke login utama
             BackToLoginRequested?.Invoke(this, EventArgs.Empty);
         }
     }

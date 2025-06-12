@@ -29,16 +29,17 @@
         private void InitializeComponent()
         {
             panel12 = new Panel();
+            btnPilihGambar = new Button();
             panel13 = new Panel();
-            button4 = new Button();
-            txtAsalKota = new TextBox();
+            btnKirim = new Button();
+            txtIsiKeluhan = new TextBox();
             label11 = new Label();
-            txtAlamat = new TextBox();
+            txtPathGambar = new TextBox();
             label10 = new Label();
-            txtNama = new TextBox();
+            txtJudul = new TextBox();
             label9 = new Label();
             label8 = new Label();
-            btn_fotoktp = new Button();
+            ofdPilihFile = new OpenFileDialog();
             panel12.SuspendLayout();
             panel13.SuspendLayout();
             SuspendLayout();
@@ -46,13 +47,13 @@
             // panel12
             // 
             panel12.BackColor = Color.Transparent;
-            panel12.Controls.Add(btn_fotoktp);
+            panel12.Controls.Add(btnPilihGambar);
             panel12.Controls.Add(panel13);
-            panel12.Controls.Add(txtAsalKota);
+            panel12.Controls.Add(txtIsiKeluhan);
             panel12.Controls.Add(label11);
-            panel12.Controls.Add(txtAlamat);
+            panel12.Controls.Add(txtPathGambar);
             panel12.Controls.Add(label10);
-            panel12.Controls.Add(txtNama);
+            panel12.Controls.Add(txtJudul);
             panel12.Controls.Add(label9);
             panel12.Controls.Add(label8);
             panel12.Location = new Point(0, 0);
@@ -60,37 +61,55 @@
             panel12.Size = new Size(464, 597);
             panel12.TabIndex = 3;
             // 
+            // btnPilihGambar
+            // 
+            btnPilihGambar.BackColor = Color.LightGray;
+            btnPilihGambar.Cursor = Cursors.Hand;
+            btnPilihGambar.FlatAppearance.BorderSize = 2;
+            btnPilihGambar.FlatStyle = FlatStyle.Flat;
+            btnPilihGambar.Font = new Font("Inter", 6F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnPilihGambar.ForeColor = Color.Black;
+            btnPilihGambar.Location = new Point(70, 230);
+            btnPilihGambar.Name = "btnPilihGambar";
+            btnPilihGambar.Size = new Size(61, 32);
+            btnPilihGambar.TabIndex = 29;
+            btnPilihGambar.Text = "Pilih File";
+            btnPilihGambar.UseVisualStyleBackColor = false;
+            btnPilihGambar.Click += btnPilihGambar_Click;
+            // 
             // panel13
             // 
-            panel13.Controls.Add(button4);
+            panel13.Controls.Add(btnKirim);
             panel13.Location = new Point(0, 515);
             panel13.Name = "panel13";
-            panel13.Size = new Size(461, 57);
+            panel13.Size = new Size(461, 52);
             panel13.TabIndex = 26;
             // 
-            // button4
+            // btnKirim
             // 
-            button4.BackColor = Color.FromArgb(10, 100, 236);
-            button4.Cursor = Cursors.Hand;
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Inter", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button4.ForeColor = Color.White;
-            button4.Location = new Point(48, 0);
-            button4.Name = "button4";
-            button4.Size = new Size(368, 57);
-            button4.TabIndex = 1;
-            button4.Text = "Kirim";
-            button4.UseVisualStyleBackColor = false;
+            btnKirim.BackColor = Color.FromArgb(10, 100, 236);
+            btnKirim.Cursor = Cursors.Hand;
+            btnKirim.FlatAppearance.BorderSize = 0;
+            btnKirim.FlatStyle = FlatStyle.Flat;
+            btnKirim.Font = new Font("Inter", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnKirim.ForeColor = Color.White;
+            btnKirim.Location = new Point(121, 0);
+            btnKirim.Name = "btnKirim";
+            btnKirim.Size = new Size(192, 49);
+            btnKirim.TabIndex = 1;
+            btnKirim.Text = "Kirim";
+            btnKirim.UseVisualStyleBackColor = false;
+            btnKirim.Click += btnKirim_Click;
             // 
-            // txtAsalKota
+            // txtIsiKeluhan
             // 
-            txtAsalKota.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtAsalKota.Location = new Point(70, 328);
-            txtAsalKota.Name = "txtAsalKota";
-            txtAsalKota.PlaceholderText = "Ketik Pesan";
-            txtAsalKota.Size = new Size(316, 32);
-            txtAsalKota.TabIndex = 21;
+            txtIsiKeluhan.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtIsiKeluhan.Location = new Point(70, 328);
+            txtIsiKeluhan.Multiline = true;
+            txtIsiKeluhan.Name = "txtIsiKeluhan";
+            txtIsiKeluhan.PlaceholderText = "Ketik Pesan";
+            txtIsiKeluhan.Size = new Size(316, 164);
+            txtIsiKeluhan.TabIndex = 21;
             // 
             // label11
             // 
@@ -103,13 +122,13 @@
             label11.TabIndex = 20;
             label11.Text = "Pesan";
             // 
-            // txtAlamat
+            // txtPathGambar
             // 
-            txtAlamat.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtAlamat.Location = new Point(146, 230);
-            txtAlamat.Name = "txtAlamat";
-            txtAlamat.Size = new Size(240, 32);
-            txtAlamat.TabIndex = 19;
+            txtPathGambar.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtPathGambar.Location = new Point(146, 230);
+            txtPathGambar.Name = "txtPathGambar";
+            txtPathGambar.Size = new Size(240, 32);
+            txtPathGambar.TabIndex = 19;
             // 
             // label10
             // 
@@ -122,14 +141,14 @@
             label10.TabIndex = 18;
             label10.Text = "Unggah Foto";
             // 
-            // txtNama
+            // txtJudul
             // 
-            txtNama.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtNama.Location = new Point(70, 125);
-            txtNama.Name = "txtNama";
-            txtNama.PlaceholderText = "Judul";
-            txtNama.Size = new Size(316, 32);
-            txtNama.TabIndex = 17;
+            txtJudul.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtJudul.Location = new Point(70, 125);
+            txtJudul.Name = "txtJudul";
+            txtJudul.PlaceholderText = "Judul";
+            txtJudul.Size = new Size(316, 32);
+            txtJudul.TabIndex = 17;
             // 
             // label9
             // 
@@ -153,20 +172,9 @@
             label8.TabIndex = 6;
             label8.Text = "Lapor Masalah";
             // 
-            // btn_fotoktp
+            // ofdPilihFile
             // 
-            btn_fotoktp.BackColor = Color.LightGray;
-            btn_fotoktp.Cursor = Cursors.Hand;
-            btn_fotoktp.FlatAppearance.BorderSize = 2;
-            btn_fotoktp.FlatStyle = FlatStyle.Flat;
-            btn_fotoktp.Font = new Font("Inter", 6F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_fotoktp.ForeColor = Color.Black;
-            btn_fotoktp.Location = new Point(70, 230);
-            btn_fotoktp.Name = "btn_fotoktp";
-            btn_fotoktp.Size = new Size(61, 32);
-            btn_fotoktp.TabIndex = 29;
-            btn_fotoktp.Text = "Pilih File";
-            btn_fotoktp.UseVisualStyleBackColor = false;
+            ofdPilihFile.FileName = "openFileDialog1";
             // 
             // UC_Lapor
             // 
@@ -186,14 +194,15 @@
 
         private Panel panel12;
         private Panel panel13;
-        private Button button4;
-        private TextBox txtAsalKota;
+        private Button btnKirim;
+        private TextBox txtIsiKeluhan;
         private Label label11;
-        private TextBox txtAlamat;
+        private TextBox txtPathGambar;
         private Label label10;
-        private TextBox txtNama;
+        private TextBox txtJudul;
         private Label label9;
         private Label label8;
-        private Button btn_fotoktp;
+        private Button btnPilihGambar;
+        private OpenFileDialog ofdPilihFile;
     }
 }

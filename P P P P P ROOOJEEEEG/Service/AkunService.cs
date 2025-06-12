@@ -22,17 +22,16 @@ namespace RUSUNAWAAA.Service
         {
             using (var context = new ApplicationDbContext())
             {
-                // 1. Mulai dengan query ke tabel Users
+                
                 var query = context.Users.OfType<Penyewa>();
 
-                // 3. Terapkan filter jika bukan "Semua"
-                // Asumsi properti JenisKelamin ada di class Penyewa
+               
                 if (genderFilter != "Semua")
                 {
                     query = query.Where(p => p.JenisKelamin == genderFilter);
                 }
 
-                // 4. Eksekusi query dan kembalikan hasilnya
+                
                 return query.ToList();
             }
         }

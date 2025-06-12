@@ -14,13 +14,12 @@ namespace RUSUNAWAAA.Service
         {
             using (var context = new ApplicationDbContext())
             {
-                // Anda bisa tambahkan .OrderBy() jika ingin diurutkan
+                
                 return context.MediaVirtuals.ToList();
             }
         }
         public bool AddMedia(MediaVirtual media)
         {
-            // Validasi dasar
             if (media == null) return false;
 
             using (var context = new ApplicationDbContext())
@@ -36,11 +35,11 @@ namespace RUSUNAWAAA.Service
 
             using (var context = new ApplicationDbContext())
             {
-                // Cari data yang ada di database berdasarkan ID
+               
                 var existingMedia = context.MediaVirtuals.Find(media.Id_Media);
                 if (existingMedia != null)
                 {
-                    // Perbarui propertinya dengan data baru
+                    
                     existingMedia.NamaFile = media.NamaFile;
                     existingMedia.PathMedia = media.PathMedia;
                     existingMedia.Keterangan = media.Keterangan;
@@ -48,7 +47,7 @@ namespace RUSUNAWAAA.Service
                     context.SaveChanges();
                     return true;
                 }
-                return false; // Gagal jika data tidak ditemukan
+                return false; 
             }
         }
         public bool DeleteMultipleMedia(List<int> mediaIds)

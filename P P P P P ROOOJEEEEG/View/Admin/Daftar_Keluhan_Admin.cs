@@ -102,16 +102,16 @@ namespace RUSUNAWAAA.View.Admin
             detailView.ActionCompleted += (s, ev) => ShowListView();
             detailView.BackRequested += (s, ev) => ShowListView();
 
-            // 4. Tambahkan ke form utama dan muat datanya
+
             this.Controls.Add(detailView);
             detailView.BringToFront();
             detailView.LoadDetail(keluhanId);
         }
 
-        // Metode baru untuk kembali menampilkan halaman daftar
+
         private void ShowListView()
         {
-            // Hapus UC Detail yang sedang tampil
+
             var detailView = this.Controls.OfType<UC_DetailKeluhan>().FirstOrDefault();
             if (detailView != null)
             {
@@ -119,10 +119,10 @@ namespace RUSUNAWAAA.View.Admin
                 detailView.Dispose();
             }
 
-            // Tampilkan kembali container daftar
+
             panel12.Visible = true;
 
-            // Muat ulang data daftar agar statusnya update
+
             Daftar_Keluhan_Admin_Load(this, EventArgs.Empty);
         }
         private void btnFilterLaki_Click(object sender, EventArgs e)

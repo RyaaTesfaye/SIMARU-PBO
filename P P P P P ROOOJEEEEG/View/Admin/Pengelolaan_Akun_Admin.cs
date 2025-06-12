@@ -57,13 +57,12 @@ namespace RUSUNAWAAA.View.Admin
         }
         private void btnHapusMaster_Click(object sender, EventArgs e)
         {
-            // 1. Kumpulkan semua item yang checkbox-nya tercentang
             var itemsToDelete = flowLayoutAkun.Controls
                 .OfType<UC_ItemAkun>()
                 .Where(uc => uc.IsChecked)
                 .ToList();
 
-            // 2. Cek apakah ada yang dipilih
+
             if (!itemsToDelete.Any())
             {
                 MessageBox.Show("Harap pilih setidaknya satu akun untuk dihapus.", "Tidak Ada yang Dipilih", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -73,7 +72,6 @@ namespace RUSUNAWAAA.View.Admin
             {
                 var ktpToDelete = itemsToDelete.Select(uc => uc.NomorKTP).ToList();
 
-                // 5. Panggil service untuk menghapus semuanya sekaligus
                 bool sukses = _userService.DeleteMultipleUsers(ktpToDelete);
 
                 if (sukses)
@@ -107,23 +105,22 @@ namespace RUSUNAWAAA.View.Admin
         }
         private void ShowDetailView(string nomorKtp)
         {
-            // Sembunyikan container yang berisi daftar akun
-            panel10.Visible = false; // Asumsikan Anda punya panel induk ini
 
-            var detailView = new UC_DetailAkun(); // Buat instance UC Detail
+            panel10.Visible = false; 
+
+            var detailView = new UC_DetailAkun(); 
             detailView.Dock = DockStyle.Fill;
-            // Berlangganan event 'BackRequested' dari UC Detail
             detailView.BackRequested += (s, ev) => ShowListView();
 
-            // Tambahkan UC Detail ke form utama
+           
             this.Controls.Add(detailView);
             detailView.BringToFront();
-            // Muat data spesifik ke dalam UC Detail
+          
             detailView.LoadData(nomorKtp);
         }
         private void ShowListView()
         {
-            // Hapus UC Detail yang mungkin sedang tampil
+         
             var detailView = this.Controls.OfType<UC_DetailAkun>().FirstOrDefault();
             if (detailView != null)
             {
@@ -131,10 +128,9 @@ namespace RUSUNAWAAA.View.Admin
                 detailView.Dispose();
             }
 
-            // Tampilkan kembali container daftar akun
+    
             panel10.Visible = true;
 
-            // Muat ulang data dari database untuk memastikan datanya paling baru
             LoadAndDisplayPenyewa("Semua");
         }
         private void ToDashboard_AD(object sender, EventArgs e)

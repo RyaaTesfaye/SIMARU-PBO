@@ -49,7 +49,7 @@ namespace RUSUNAWAAA.Service
             }
         }
         // In AuthService.cs
-        public bool UpdatePassword(string identifierNIK, string newPassword) // Renamed parameter for clarity
+        public bool UpdatePassword(string identifierNIK, string newPassword)
         {
             if (string.IsNullOrWhiteSpace(identifierNIK) || string.IsNullOrWhiteSpace(newPassword))
             {
@@ -58,13 +58,13 @@ namespace RUSUNAWAAA.Service
 
             using (var context = new ApplicationDbContext())
             {
-                // CHANGE THIS LINE: Query by NomorKTP (NIK) instead of Username
-                var penyewa = context.Penyewas.FirstOrDefault(p => p.NomorKTP == identifierNIK); // <--- CHANGE IS HERE
+                
+                var penyewa = context.Penyewas.FirstOrDefault(p => p.NomorKTP == identifierNIK); 
 
                 if (penyewa != null)
                 {
                     penyewa.Password = newPassword;
-                    try // Added try-catch for better error diagnosis
+                    try 
                     {
                         context.SaveChanges();
                         return true;

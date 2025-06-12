@@ -62,6 +62,7 @@
             panel8 = new Panel();
             panel9 = new Panel();
             panel10 = new Panel();
+            panel11 = new Panel();
             label6 = new Label();
             panel1.SuspendLayout();
             panel29.SuspendLayout();
@@ -85,6 +86,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel8.SuspendLayout();
             panel9.SuspendLayout();
+            panel10.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -455,10 +457,18 @@
             // panel10
             // 
             panel10.BackColor = Color.FromArgb(23, 24, 30);
+            panel10.Controls.Add(panel11);
             panel10.Location = new Point(26, 28);
             panel10.Name = "panel10";
             panel10.Size = new Size(1113, 607);
             panel10.TabIndex = 13;
+            // 
+            // panel11
+            // 
+            panel11.Location = new Point(347, 7);
+            panel11.Name = "panel11";
+            panel11.Size = new Size(464, 597);
+            panel11.TabIndex = 0;
             // 
             // label6
             // 
@@ -483,6 +493,7 @@
             Name = "Lapor_Masalah_Penyewa";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "_3_Penyewa";
+            Load += LaporMasalah_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel29.ResumeLayout(false);
@@ -514,6 +525,7 @@
             panel8.ResumeLayout(false);
             panel8.PerformLayout();
             panel9.ResumeLayout(false);
+            panel10.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -553,5 +565,6 @@
         private Label label6;
         private Panel panel6;
         private Panel panel10;
+        private Panel panel11;
     }
 }
