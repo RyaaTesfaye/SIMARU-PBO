@@ -23,6 +23,8 @@ namespace RUSUNAWAAA.View.Admin
         public Pengelolaan_Akun_Admin()
         {
             InitializeComponent();
+            UIhelper.MakePanelRound(panel9, 20);
+            UIhelper.MakePanelRound(panel10, 20);
         }
         private void Pengelolaan_Akun_Admin_Load(object sender, EventArgs e)
         {

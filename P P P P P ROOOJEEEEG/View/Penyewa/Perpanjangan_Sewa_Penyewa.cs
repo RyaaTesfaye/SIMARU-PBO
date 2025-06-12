@@ -25,6 +25,7 @@ namespace RUSUNAWAAA.View.Penyewa
         {
             _perpanjanganService = new PerpanjanganService();
             InitializeComponent();
+            UIhelper.MakePanelRound(panel9, 20);
         }
         private void PerpanjanganSewaView_Load(object sender, EventArgs e)
         {

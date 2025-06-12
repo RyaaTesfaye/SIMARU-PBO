@@ -37,6 +37,7 @@
             label35 = new Label();
             pictureBox21 = new PictureBox();
             panel31 = new Panel();
+            pictureBox13 = new PictureBox();
             panel32 = new Panel();
             label32 = new Label();
             pictureBox18 = new PictureBox();
@@ -105,6 +106,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox20).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox21).BeginInit();
             panel31.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
             panel32.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
             panel29.SuspendLayout();
@@ -220,7 +222,7 @@
             // 
             // pictureBox21
             // 
-            pictureBox21.Image = Properties.Resources.refresh;
+            pictureBox21.Image = (Image)resources.GetObject("pictureBox21.Image");
             pictureBox21.Location = new Point(10, 10);
             pictureBox21.Name = "pictureBox21";
             pictureBox21.Size = new Size(25, 25);
@@ -232,6 +234,7 @@
             // panel31
             // 
             panel31.BackColor = Color.Transparent;
+            panel31.Controls.Add(pictureBox13);
             panel31.Controls.Add(panel32);
             panel31.Controls.Add(label33);
             panel31.Cursor = Cursors.Hand;
@@ -240,6 +243,17 @@
             panel31.Size = new Size(240, 50);
             panel31.TabIndex = 9;
             panel31.Click += ToEditVirtualTour_AD;
+            // 
+            // pictureBox13
+            // 
+            pictureBox13.Image = Properties.Resources.Virtual_tour;
+            pictureBox13.Location = new Point(10, 10);
+            pictureBox13.Name = "pictureBox13";
+            pictureBox13.Size = new Size(25, 25);
+            pictureBox13.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox13.TabIndex = 12;
+            pictureBox13.TabStop = false;
+            pictureBox13.Click += ToEditVirtualTour_AD;
             // 
             // panel32
             // 
@@ -344,7 +358,7 @@
             // 
             // pictureBox16
             // 
-            pictureBox16.Image = Properties.Resources.refresh;
+            pictureBox16.Image = (Image)resources.GetObject("pictureBox16.Image");
             pictureBox16.Location = new Point(10, 10);
             pictureBox16.Name = "pictureBox16";
             pictureBox16.Size = new Size(25, 25);
@@ -379,7 +393,7 @@
             // 
             // pictureBox10
             // 
-            pictureBox10.Image = Properties.Resources.star;
+            pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
             pictureBox10.Location = new Point(10, 10);
             pictureBox10.Name = "pictureBox10";
             pictureBox10.Size = new Size(25, 25);
@@ -414,7 +428,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.laporan;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(10, 10);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(25, 25);
@@ -491,7 +505,7 @@
             // 
             // pictureBox5
             // 
-            pictureBox5.Image = Properties.Resources.refresh;
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
             pictureBox5.Location = new Point(10, 10);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(25, 25);
@@ -970,6 +984,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox21).EndInit();
             panel31.ResumeLayout(false);
             panel31.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
             panel32.ResumeLayout(false);
             panel32.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).EndInit();
@@ -1092,5 +1107,6 @@
         private PictureBox pictureBox15;
         private PictureBox pictureBox14;
         private FlowLayoutPanel flowLayoutPanelKeluhan;
+        private PictureBox pictureBox13;
     }
 }

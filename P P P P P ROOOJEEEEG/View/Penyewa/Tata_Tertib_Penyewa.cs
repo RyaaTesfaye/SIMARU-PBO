@@ -46,6 +46,7 @@ namespace RUSUNAWAAA.View.Penyewa
         {
             _filterAktif = "Laki-laki";
             RefreshDataGridView(); 
+            UIhelper.MakePanelRound(panel9, 20);
         }
 
         private void ToDashboard_PE(object sender, EventArgs e)

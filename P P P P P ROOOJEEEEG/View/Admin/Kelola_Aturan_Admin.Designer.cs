@@ -37,6 +37,7 @@
             label35 = new Label();
             pictureBox21 = new PictureBox();
             panel31 = new Panel();
+            pictureBox14 = new PictureBox();
             panel32 = new Panel();
             label32 = new Label();
             pictureBox18 = new PictureBox();
@@ -79,6 +80,7 @@
             panel12 = new Panel();
             panel11 = new Panel();
             pictureBox12 = new PictureBox();
+            panel16 = new Panel();
             pictureBox13 = new PictureBox();
             pictureBox11 = new PictureBox();
             pictureBox22 = new PictureBox();
@@ -89,7 +91,6 @@
             label7 = new Label();
             panel15 = new Panel();
             flowLayoutPanelAturan = new FlowLayoutPanel();
-            panel16 = new Panel();
             panel13 = new Panel();
             label14 = new Label();
             panel9 = new Panel();
@@ -100,6 +101,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox20).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox21).BeginInit();
             panel31.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
             panel32.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
             panel29.SuspendLayout();
@@ -227,6 +229,7 @@
             // panel31
             // 
             panel31.BackColor = Color.Transparent;
+            panel31.Controls.Add(pictureBox14);
             panel31.Controls.Add(panel32);
             panel31.Controls.Add(label33);
             panel31.Cursor = Cursors.Hand;
@@ -235,6 +238,17 @@
             panel31.Size = new Size(240, 50);
             panel31.TabIndex = 9;
             panel31.Click += ToEditVirtualTour_AD;
+            // 
+            // pictureBox14
+            // 
+            pictureBox14.Image = Properties.Resources.Virtual_tour;
+            pictureBox14.Location = new Point(10, 10);
+            pictureBox14.Name = "pictureBox14";
+            pictureBox14.Size = new Size(25, 25);
+            pictureBox14.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox14.TabIndex = 12;
+            pictureBox14.TabStop = false;
+            pictureBox14.Click += ToEditVirtualTour_AD;
             // 
             // panel32
             // 
@@ -693,6 +707,7 @@
             // 
             panel11.BackColor = Color.FromArgb(37, 39, 48);
             panel11.Controls.Add(pictureBox12);
+            panel11.Controls.Add(panel16);
             panel11.Controls.Add(pictureBox13);
             panel11.Controls.Add(pictureBox11);
             panel11.Controls.Add(pictureBox22);
@@ -707,7 +722,7 @@
             panel11.TabIndex = 8;
             panel11.Paint += panel11_Paint_1;
             // 
-            // pictureBox12
+            // panel16
             // 
             pictureBox12.BackColor = Color.Transparent;
             pictureBox12.Cursor = Cursors.Hand;
@@ -905,6 +920,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox21).EndInit();
             panel31.ResumeLayout(false);
             panel31.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
             panel32.ResumeLayout(false);
             panel32.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).EndInit();
@@ -1022,5 +1038,6 @@
         private Panel panel16;
         private PictureBox pictureBox12;
         private FlowLayoutPanel flowLayoutPanelAturan;
+        private PictureBox pictureBox14;
     }
 }

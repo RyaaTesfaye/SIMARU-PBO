@@ -17,6 +17,8 @@ namespace RUSUNAWAAA.View.Admin
         public Kelola_Hunian_Admin()
         {
             InitializeComponent();
+            UIhelper.MakePanelRound(panel10, 20);
+            UIhelper.MakePanelRound(panel13, 20);
         }
 
         private void ToDashboard_AD(object sender, EventArgs e)

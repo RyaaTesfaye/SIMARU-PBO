@@ -17,6 +17,12 @@ namespace RUSUNAWAAA.View.Admin
         public Tinjau_Ulasan_Admin()
         {
             InitializeComponent();
+            UIhelper.MakePanelRound(panel10, 20);
+            UIhelper.MakePanelRound(panel11, 20);
+            UIhelper.MakePanelRound(panel12, 20);
+            UIhelper.MakePanelRound(panel13, 20);
+            UIhelper.MakePanelRound(panel14, 20);
+            UIhelper.MakePanelRound(panel17, 20);
         }
 
         private void ToDashboard_AD(object sender, EventArgs e)

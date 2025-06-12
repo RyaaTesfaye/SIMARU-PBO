@@ -30,6 +30,9 @@ namespace RUSUNAWAAA.View.Login
             _loginService.BackToLoginRequested += HandleBackToLoginRequest;
             _loginService.ResetPasswordCompleted += Logins_3_ResetPasswordCompleted;
 
+            UIhelper.MakePanelRound(panel15, 20);
+            UIhelper.MakeRoundedButton(btnLogin, 10);
+
             ShowAllLoginControls();
         }
 

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using RUSUNAWAAA.Models;
 using static System.Runtime.InteropServices.JavaScript.JSType;
+using RUSUNAWAAA.Utils;
 
 namespace RUSUNAWAAA.View.Umum
 {
@@ -19,6 +20,8 @@ namespace RUSUNAWAAA.View.Umum
         public Form_Sewa1()
         {
             InitializeComponent();
+            UIhelper.MakePanelRound(panel12, 20);
+            UIhelper.MakeRoundedButton(button4, 10);
         }
         public void MuatData(Pengajuan data)
         {

@@ -120,7 +120,6 @@
             label4.Name = "label4";
             label4.Size = new Size(87, 24);
             label4.TabIndex = 15;
-            label4.Text = "SIMARU";
             // 
             // label3
             // 
@@ -130,7 +129,7 @@
             label3.Name = "label3";
             label3.Size = new Size(164, 24);
             label3.TabIndex = 14;
-            label3.Text = "Selamat datang di ";
+            label3.Text = "Selamat datang di SIMARU";
             // 
             // btnLupaPassword
             // 

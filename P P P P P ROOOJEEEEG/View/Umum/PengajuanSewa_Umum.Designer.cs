@@ -214,9 +214,9 @@
             // 
             panel10.BackColor = Color.FromArgb(23, 24, 29);
             panel10.Cursor = Cursors.Hand;
-            panel10.Location = new Point(598, 13);
+            panel10.Location = new Point(568, 13);
             panel10.Name = "panel10";
-            panel10.Size = new Size(498, 632);
+            panel10.Size = new Size(528, 632);
             panel10.TabIndex = 8;
             // 
             // label6

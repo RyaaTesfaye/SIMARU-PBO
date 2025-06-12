@@ -93,7 +93,7 @@
             btnKirim.FlatStyle = FlatStyle.Flat;
             btnKirim.Font = new Font("Inter", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnKirim.ForeColor = Color.White;
-            btnKirim.Location = new Point(121, 0);
+            btnKirim.Location = new Point(135, 0);
             btnKirim.Name = "btnKirim";
             btnKirim.Size = new Size(192, 49);
             btnKirim.TabIndex = 1;

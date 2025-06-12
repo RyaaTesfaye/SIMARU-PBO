@@ -140,9 +140,9 @@
             // 
             pictureBoxPreview.Cursor = Cursors.Hand;
             pictureBoxPreview.Image = (Image)resources.GetObject("pictureBoxPreview.Image");
-            pictureBoxPreview.Location = new Point(85, 60);
+            pictureBoxPreview.Location = new Point(81, 60);
             pictureBoxPreview.Name = "pictureBoxPreview";
-            pictureBoxPreview.Size = new Size(331, 220);
+            pictureBoxPreview.Size = new Size(330, 220);
             pictureBoxPreview.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxPreview.TabIndex = 37;
             pictureBoxPreview.TabStop = false;

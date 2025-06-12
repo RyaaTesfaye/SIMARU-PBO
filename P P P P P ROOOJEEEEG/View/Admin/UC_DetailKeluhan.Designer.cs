@@ -57,9 +57,10 @@
             // pictureKeluhan
             // 
             pictureKeluhan.ErrorImage = null;
+            pictureKeluhan.Image = (Image)resources.GetObject("pictureKeluhan.Image");
             pictureKeluhan.Location = new Point(23, 36);
             pictureKeluhan.Name = "pictureKeluhan";
-            pictureKeluhan.Size = new Size(445, 216);
+            pictureKeluhan.Size = new Size(445, 215);
             pictureKeluhan.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureKeluhan.TabIndex = 11;
             pictureKeluhan.TabStop = false;

@@ -21,6 +21,8 @@ namespace RUSUNAWAAA.View.Penyewa
         public UC_Lapor()
         {
             InitializeComponent();
+            UIhelper.MakePanelRound(panel12, 20);
+            UIhelper.MakeRoundedButton(btnKirim, 10);
         }
         private void ClearForm()
         {

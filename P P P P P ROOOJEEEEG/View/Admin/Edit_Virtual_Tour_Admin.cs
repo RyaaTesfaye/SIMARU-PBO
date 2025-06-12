@@ -18,6 +18,8 @@ namespace RUSUNAWAAA.View.Admin
         public Edit_Virtual_Tour_Admin()
         {
             InitializeComponent();
+            UIhelper.MakePanelRound(panel9, 20);
+            UIhelper.MakePanelRound(panel11, 20);
         }
         private void Edit_Virtual_Tour_Admin_Load(object sender, EventArgs e)
         {

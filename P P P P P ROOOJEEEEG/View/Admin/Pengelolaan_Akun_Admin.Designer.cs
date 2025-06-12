@@ -77,6 +77,8 @@
             pictureBox6 = new PictureBox();
             panel8 = new Panel();
             panel9 = new Panel();
+            panel13 = new Panel();
+            button1 = new Button();
             pictureBox22 = new PictureBox();
             pictureBox13 = new PictureBox();
             pictureBox11 = new PictureBox();
@@ -98,8 +100,6 @@
             label8 = new Label();
             checkBox1 = new CheckBox();
             label6 = new Label();
-            panel13 = new Panel();
-            button1 = new Button();
             panel1.SuspendLayout();
             panel33.SuspendLayout();
             panel34.SuspendLayout();
@@ -133,6 +133,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel8.SuspendLayout();
             panel9.SuspendLayout();
+            panel13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox22).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
@@ -140,7 +141,6 @@
             panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox15).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
-            panel13.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -222,7 +222,7 @@
             // 
             // pictureBox21
             // 
-            pictureBox21.Image = Properties.Resources.refresh;
+            pictureBox21.Image = (Image)resources.GetObject("pictureBox21.Image");
             pictureBox21.Location = new Point(10, 10);
             pictureBox21.Name = "pictureBox21";
             pictureBox21.Size = new Size(25, 25);
@@ -358,7 +358,7 @@
             // 
             // pictureBox16
             // 
-            pictureBox16.Image = Properties.Resources.refresh;
+            pictureBox16.Image = (Image)resources.GetObject("pictureBox16.Image");
             pictureBox16.Location = new Point(10, 10);
             pictureBox16.Name = "pictureBox16";
             pictureBox16.Size = new Size(25, 25);
@@ -393,7 +393,7 @@
             // 
             // pictureBox10
             // 
-            pictureBox10.Image = Properties.Resources.star;
+            pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
             pictureBox10.Location = new Point(10, 10);
             pictureBox10.Name = "pictureBox10";
             pictureBox10.Size = new Size(25, 25);
@@ -428,7 +428,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.laporan;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(10, 10);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(25, 25);
@@ -498,7 +498,7 @@
             // 
             // pictureBox5
             // 
-            pictureBox5.Image = Properties.Resources.refresh;
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
             pictureBox5.Location = new Point(10, 10);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(25, 25);
@@ -704,10 +704,34 @@
             panel9.TabIndex = 5;
             panel9.Paint += panel9_Paint;
             // 
+            // panel13
+            // 
+            panel13.BackColor = Color.Transparent;
+            panel13.Controls.Add(button1);
+            panel13.Location = new Point(800, 6);
+            panel13.Name = "panel13";
+            panel13.Size = new Size(127, 45);
+            panel13.TabIndex = 44;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(23, 24, 30);
+            button1.Cursor = Cursors.Hand;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(11, 3);
+            button1.Name = "button1";
+            button1.Size = new Size(104, 39);
+            button1.TabIndex = 1;
+            button1.Text = "Siaran";
+            button1.UseVisualStyleBackColor = false;
+            // 
             // pictureBox22
             // 
             pictureBox22.Image = Properties.Resources.Ijo_kecil;
-            pictureBox22.Location = new Point(16, 29);
+            pictureBox22.Location = new Point(16, 31);
             pictureBox22.Name = "pictureBox22";
             pictureBox22.Size = new Size(10, 10);
             pictureBox22.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -760,7 +784,7 @@
             label24.AutoSize = true;
             label24.Font = new Font("Inter SemiBold", 7F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label24.ForeColor = Color.FromArgb(139, 140, 142);
-            label24.Location = new Point(29, 26);
+            label24.Location = new Point(29, 28);
             label24.Name = "label24";
             label24.Size = new Size(86, 17);
             label24.TabIndex = 10;
@@ -771,7 +795,7 @@
             label7.AutoSize = true;
             label7.Font = new Font("Inter", 10F, FontStyle.Bold);
             label7.ForeColor = Color.White;
-            label7.Location = new Point(6, 1);
+            label7.Location = new Point(6, 3);
             label7.Name = "label7";
             label7.Size = new Size(125, 24);
             label7.TabIndex = 7;
@@ -942,30 +966,6 @@
             label6.TabIndex = 4;
             label6.Text = "Pengelolaan Akun";
             // 
-            // panel13
-            // 
-            panel13.BackColor = Color.Transparent;
-            panel13.Controls.Add(button1);
-            panel13.Location = new Point(800, 6);
-            panel13.Name = "panel13";
-            panel13.Size = new Size(127, 45);
-            panel13.TabIndex = 44;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.FromArgb(23, 24, 30);
-            button1.Cursor = Cursors.Hand;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(11, 3);
-            button1.Name = "button1";
-            button1.Size = new Size(104, 39);
-            button1.TabIndex = 1;
-            button1.Text = "Siaran";
-            button1.UseVisualStyleBackColor = false;
-            // 
             // Pengelolaan_Akun_Admin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -1027,6 +1027,7 @@
             panel8.PerformLayout();
             panel9.ResumeLayout(false);
             panel9.PerformLayout();
+            panel13.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox22).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
@@ -1035,7 +1036,6 @@
             panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox15).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
-            panel13.ResumeLayout(false);
             ResumeLayout(false);
         }
 

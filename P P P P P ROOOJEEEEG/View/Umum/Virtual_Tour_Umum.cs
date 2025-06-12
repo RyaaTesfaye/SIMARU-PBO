@@ -24,6 +24,7 @@ namespace RUSUNAWAAA.View.Umum
         public Virtual_Tour_Umum()
         {
             InitializeComponent();
+            UIhelper.MakePanelRound(panel9, 20);
         }
         private void Virtual_Tour_Umum_Load(object sender, EventArgs e)
         {

@@ -224,7 +224,7 @@
             // 
             // pictureBox21
             // 
-            pictureBox21.Image = Properties.Resources.refresh;
+            pictureBox21.Image = (Image)resources.GetObject("pictureBox21.Image");
             pictureBox21.Location = new Point(10, 10);
             pictureBox21.Name = "pictureBox21";
             pictureBox21.Size = new Size(25, 25);
@@ -359,7 +359,7 @@
             // 
             // pictureBox16
             // 
-            pictureBox16.Image = Properties.Resources.refresh;
+            pictureBox16.Image = (Image)resources.GetObject("pictureBox16.Image");
             pictureBox16.Location = new Point(10, 10);
             pictureBox16.Name = "pictureBox16";
             pictureBox16.Size = new Size(25, 25);
@@ -394,7 +394,7 @@
             // 
             // pictureBox10
             // 
-            pictureBox10.Image = Properties.Resources.star;
+            pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
             pictureBox10.Location = new Point(10, 10);
             pictureBox10.Name = "pictureBox10";
             pictureBox10.Size = new Size(25, 25);
@@ -429,7 +429,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.laporan;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(10, 10);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(25, 25);
@@ -499,7 +499,7 @@
             // 
             // pictureBox5
             // 
-            pictureBox5.Image = Properties.Resources.refresh;
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
             pictureBox5.Location = new Point(10, 10);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(25, 25);
@@ -723,7 +723,7 @@
             label24.AutoSize = true;
             label24.Font = new Font("Inter SemiBold", 7F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label24.ForeColor = Color.FromArgb(139, 140, 142);
-            label24.Location = new Point(8, 27);
+            label24.Location = new Point(8, 29);
             label24.Name = "label24";
             label24.Size = new Size(85, 17);
             label24.TabIndex = 27;
@@ -734,7 +734,7 @@
             label7.AutoSize = true;
             label7.Font = new Font("Inter", 10F, FontStyle.Bold);
             label7.ForeColor = Color.White;
-            label7.Location = new Point(8, 1);
+            label7.Location = new Point(8, 3);
             label7.Name = "label7";
             label7.Size = new Size(125, 24);
             label7.TabIndex = 26;

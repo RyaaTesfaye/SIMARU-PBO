@@ -27,6 +27,8 @@ namespace RUSUNAWAAA.View.Admin
         public Daftar_Keluhan_Admin()
         {
             InitializeComponent();
+            UIhelper.MakePanelRound(panel11, 20);
+            UIhelper.MakePanelRound(panel12, 20);
         }
         private void Daftar_Keluhan_Admin_Load(object sender, EventArgs e)
         {

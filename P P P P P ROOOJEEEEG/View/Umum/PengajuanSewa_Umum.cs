@@ -19,6 +19,10 @@ namespace RUSUNAWAAA.View.Umum
         public PengajuanSewa_Umum()
         {
             InitializeComponent();
+            UIhelper.MakePanelRound(panel9, 20);
+            UIhelper.MakePanelRound(panel10, 20);
+            UIhelper.MakePanelRound(panel11, 20);
+            UIhelper.MakePanelRound(panel12, 20);
         }
 
         private void panel12_Paint(object sender, PaintEventArgs e)
