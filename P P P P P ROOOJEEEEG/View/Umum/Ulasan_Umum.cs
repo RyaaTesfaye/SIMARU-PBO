@@ -17,6 +17,9 @@ namespace RUSUNAWAAA.View.Umum
         public Ulasan_Umum()
         {
             InitializeComponent();
+            UIhelper.MakePanelRound(panel6, 20);
+            UIhelper.MakePanelRound(panel9, 20);
+            UIhelper.MakePanelRound(panel10, 20);
         }
 
         private void panel12_Paint(object sender, PaintEventArgs e)

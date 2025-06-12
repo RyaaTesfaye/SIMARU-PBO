@@ -154,7 +154,7 @@
             panel12.BackColor = Color.FromArgb(23, 24, 30);
             panel12.Controls.Add(panel13);
             panel12.Controls.Add(pictureBox13);
-            panel12.Location = new Point(607, 13);
+            panel12.Location = new Point(593, 13);
             panel12.Name = "panel12";
             panel12.Size = new Size(548, 641);
             panel12.TabIndex = 11;
@@ -174,9 +174,9 @@
             panel13.Controls.Add(linkLabel1);
             panel13.Controls.Add(label25);
             panel13.Controls.Add(label27);
-            panel13.Location = new Point(23, 216);
+            panel13.Location = new Point(23, 224);
             panel13.Name = "panel13";
-            panel13.Size = new Size(502, 399);
+            panel13.Size = new Size(502, 387);
             panel13.TabIndex = 7;
             // 
             // panel14
@@ -337,7 +337,7 @@
             // pictureBox13
             // 
             pictureBox13.Image = Properties.Resources.Rusun_Putri;
-            pictureBox13.Location = new Point(23, 16);
+            pictureBox13.Location = new Point(23, 24);
             pictureBox13.Name = "pictureBox13";
             pictureBox13.Size = new Size(502, 271);
             pictureBox13.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -349,7 +349,7 @@
             panel10.BackColor = Color.FromArgb(23, 24, 30);
             panel10.Controls.Add(panel11);
             panel10.Controls.Add(pictureBox6);
-            panel10.Location = new Point(7, 13);
+            panel10.Location = new Point(21, 11);
             panel10.Name = "panel10";
             panel10.Size = new Size(548, 641);
             panel10.TabIndex = 10;
@@ -369,9 +369,9 @@
             panel11.Controls.Add(linkLokasiPutra);
             panel11.Controls.Add(label11);
             panel11.Controls.Add(label10);
-            panel11.Location = new Point(23, 216);
+            panel11.Location = new Point(23, 224);
             panel11.Name = "panel11";
-            panel11.Size = new Size(502, 399);
+            panel11.Size = new Size(502, 389);
             panel11.TabIndex = 7;
             // 
             // panel16
@@ -533,7 +533,7 @@
             // pictureBox6
             // 
             pictureBox6.Image = Properties.Resources.Rusunawa_Putra;
-            pictureBox6.Location = new Point(23, 16);
+            pictureBox6.Location = new Point(23, 24);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(502, 271);
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;

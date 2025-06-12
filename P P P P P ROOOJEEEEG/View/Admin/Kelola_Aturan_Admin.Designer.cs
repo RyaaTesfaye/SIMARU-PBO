@@ -94,6 +94,7 @@
             label14 = new Label();
             panel9 = new Panel();
             label6 = new Label();
+            pictureBox14 = new PictureBox();
             panel1.SuspendLayout();
             panel33.SuspendLayout();
             panel34.SuspendLayout();
@@ -134,6 +135,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox22).BeginInit();
             panel14.SuspendLayout();
             panel15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -152,9 +154,8 @@
             panel1.Controls.Add(label1);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(300, 1004);
+            panel1.Size = new Size(240, 803);
             panel1.TabIndex = 1;
             // 
             // panel33
@@ -164,10 +165,9 @@
             panel33.Controls.Add(label35);
             panel33.Controls.Add(pictureBox21);
             panel33.Cursor = Cursors.Hand;
-            panel33.Location = new Point(0, 706);
-            panel33.Margin = new Padding(4);
+            panel33.Location = new Point(0, 565);
             panel33.Name = "panel33";
-            panel33.Size = new Size(300, 62);
+            panel33.Size = new Size(240, 50);
             panel33.TabIndex = 10;
             panel33.Click += ToSiaran_AD;
             // 
@@ -177,10 +177,9 @@
             panel34.Controls.Add(label34);
             panel34.Controls.Add(pictureBox20);
             panel34.Cursor = Cursors.Hand;
-            panel34.Location = new Point(0, 638);
-            panel34.Margin = new Padding(4);
+            panel34.Location = new Point(0, 510);
             panel34.Name = "panel34";
-            panel34.Size = new Size(300, 62);
+            panel34.Size = new Size(240, 50);
             panel34.TabIndex = 9;
             // 
             // label34
@@ -188,20 +187,18 @@
             label34.AutoSize = true;
             label34.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold);
             label34.ForeColor = Color.White;
-            label34.Location = new Point(56, 15);
-            label34.Margin = new Padding(4, 0, 4, 0);
+            label34.Location = new Point(45, 12);
             label34.Name = "label34";
-            label34.Size = new Size(118, 25);
+            label34.Size = new Size(101, 20);
             label34.TabIndex = 4;
             label34.Text = "Tata Tertib";
             // 
             // pictureBox20
             // 
             pictureBox20.Image = Properties.Resources.refresh;
-            pictureBox20.Location = new Point(12, 12);
-            pictureBox20.Margin = new Padding(4);
+            pictureBox20.Location = new Point(10, 10);
             pictureBox20.Name = "pictureBox20";
-            pictureBox20.Size = new Size(31, 31);
+            pictureBox20.Size = new Size(25, 25);
             pictureBox20.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox20.TabIndex = 2;
             pictureBox20.TabStop = false;
@@ -211,10 +208,9 @@
             label35.AutoSize = true;
             label35.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold);
             label35.ForeColor = Color.White;
-            label35.Location = new Point(56, 15);
-            label35.Margin = new Padding(4, 0, 4, 0);
+            label35.Location = new Point(45, 12);
             label35.Name = "label35";
-            label35.Size = new Size(75, 25);
+            label35.Size = new Size(63, 20);
             label35.TabIndex = 4;
             label35.Text = "Siaran";
             label35.Click += ToSiaran_AD;
@@ -222,10 +218,9 @@
             // pictureBox21
             // 
             pictureBox21.Image = Properties.Resources.refresh;
-            pictureBox21.Location = new Point(12, 12);
-            pictureBox21.Margin = new Padding(4);
+            pictureBox21.Location = new Point(10, 10);
             pictureBox21.Name = "pictureBox21";
-            pictureBox21.Size = new Size(31, 31);
+            pictureBox21.Size = new Size(25, 25);
             pictureBox21.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox21.TabIndex = 2;
             pictureBox21.TabStop = false;
@@ -234,13 +229,13 @@
             // panel31
             // 
             panel31.BackColor = Color.Transparent;
+            panel31.Controls.Add(pictureBox14);
             panel31.Controls.Add(panel32);
             panel31.Controls.Add(label33);
             panel31.Cursor = Cursors.Hand;
-            panel31.Location = new Point(0, 638);
-            panel31.Margin = new Padding(4);
+            panel31.Location = new Point(0, 510);
             panel31.Name = "panel31";
-            panel31.Size = new Size(300, 62);
+            panel31.Size = new Size(240, 50);
             panel31.TabIndex = 9;
             panel31.Click += ToEditVirtualTour_AD;
             // 
@@ -250,10 +245,9 @@
             panel32.Controls.Add(label32);
             panel32.Controls.Add(pictureBox18);
             panel32.Cursor = Cursors.Hand;
-            panel32.Location = new Point(0, 638);
-            panel32.Margin = new Padding(4);
+            panel32.Location = new Point(0, 510);
             panel32.Name = "panel32";
-            panel32.Size = new Size(300, 62);
+            panel32.Size = new Size(240, 50);
             panel32.TabIndex = 9;
             // 
             // label32
@@ -261,20 +255,18 @@
             label32.AutoSize = true;
             label32.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold);
             label32.ForeColor = Color.White;
-            label32.Location = new Point(56, 15);
-            label32.Margin = new Padding(4, 0, 4, 0);
+            label32.Location = new Point(45, 12);
             label32.Name = "label32";
-            label32.Size = new Size(118, 25);
+            label32.Size = new Size(101, 20);
             label32.TabIndex = 4;
             label32.Text = "Tata Tertib";
             // 
             // pictureBox18
             // 
             pictureBox18.Image = Properties.Resources.refresh;
-            pictureBox18.Location = new Point(12, 12);
-            pictureBox18.Margin = new Padding(4);
+            pictureBox18.Location = new Point(10, 10);
             pictureBox18.Name = "pictureBox18";
-            pictureBox18.Size = new Size(31, 31);
+            pictureBox18.Size = new Size(25, 25);
             pictureBox18.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox18.TabIndex = 2;
             pictureBox18.TabStop = false;
@@ -284,14 +276,12 @@
             label33.AutoSize = true;
             label33.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold);
             label33.ForeColor = Color.White;
-            label33.Location = new Point(56, 15);
-            label33.Margin = new Padding(4, 0, 4, 0);
+            label33.Location = new Point(45, 12);
             label33.Name = "label33";
-            label33.Size = new Size(168, 25);
+            label33.Size = new Size(147, 20);
             label33.TabIndex = 4;
             label33.Text = "Edit Virtual Tour";
             label33.Click += ToEditVirtualTour_AD;
-            // 
             // 
             // panel29
             // 
@@ -300,10 +290,9 @@
             panel29.Controls.Add(label30);
             panel29.Controls.Add(pictureBox16);
             panel29.Cursor = Cursors.Hand;
-            panel29.Location = new Point(0, 569);
-            panel29.Margin = new Padding(4);
+            panel29.Location = new Point(0, 455);
             panel29.Name = "panel29";
-            panel29.Size = new Size(300, 62);
+            panel29.Size = new Size(240, 50);
             panel29.TabIndex = 8;
             panel29.Click += ToManajemenSewa_AD;
             // 
@@ -313,10 +302,9 @@
             panel30.Controls.Add(label31);
             panel30.Controls.Add(pictureBox17);
             panel30.Cursor = Cursors.Hand;
-            panel30.Location = new Point(0, 638);
-            panel30.Margin = new Padding(4);
+            panel30.Location = new Point(0, 510);
             panel30.Name = "panel30";
-            panel30.Size = new Size(300, 62);
+            panel30.Size = new Size(240, 50);
             panel30.TabIndex = 9;
             // 
             // label31
@@ -324,20 +312,18 @@
             label31.AutoSize = true;
             label31.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold);
             label31.ForeColor = Color.White;
-            label31.Location = new Point(56, 15);
-            label31.Margin = new Padding(4, 0, 4, 0);
+            label31.Location = new Point(45, 12);
             label31.Name = "label31";
-            label31.Size = new Size(118, 25);
+            label31.Size = new Size(101, 20);
             label31.TabIndex = 4;
             label31.Text = "Tata Tertib";
             // 
             // pictureBox17
             // 
             pictureBox17.Image = Properties.Resources.refresh;
-            pictureBox17.Location = new Point(12, 12);
-            pictureBox17.Margin = new Padding(4);
+            pictureBox17.Location = new Point(10, 10);
             pictureBox17.Name = "pictureBox17";
-            pictureBox17.Size = new Size(31, 31);
+            pictureBox17.Size = new Size(25, 25);
             pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox17.TabIndex = 2;
             pictureBox17.TabStop = false;
@@ -347,10 +333,9 @@
             label30.AutoSize = true;
             label30.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold);
             label30.ForeColor = Color.White;
-            label30.Location = new Point(56, 15);
-            label30.Margin = new Padding(4, 0, 4, 0);
+            label30.Location = new Point(45, 12);
             label30.Name = "label30";
-            label30.Size = new Size(184, 25);
+            label30.Size = new Size(155, 20);
             label30.TabIndex = 4;
             label30.Text = "Manajemen Sewa";
             label30.Click += ToManajemenSewa_AD;
@@ -358,10 +343,9 @@
             // pictureBox16
             // 
             pictureBox16.Image = Properties.Resources.refresh;
-            pictureBox16.Location = new Point(12, 12);
-            pictureBox16.Margin = new Padding(4);
+            pictureBox16.Location = new Point(10, 10);
             pictureBox16.Name = "pictureBox16";
-            pictureBox16.Size = new Size(31, 31);
+            pictureBox16.Size = new Size(25, 25);
             pictureBox16.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox16.TabIndex = 2;
             pictureBox16.TabStop = false;
@@ -374,19 +358,17 @@
             panel22.Controls.Add(label13);
             panel22.Controls.Add(pictureBox10);
             panel22.Cursor = Cursors.Hand;
-            panel22.Location = new Point(0, 500);
-            panel22.Margin = new Padding(4);
+            panel22.Location = new Point(0, 400);
             panel22.Name = "panel22";
-            panel22.Size = new Size(300, 62);
+            panel22.Size = new Size(240, 50);
             panel22.TabIndex = 7;
             // 
             // panel28
             // 
             panel28.BackColor = Color.White;
             panel28.Location = new Point(-1, 0);
-            panel28.Margin = new Padding(4);
             panel28.Name = "panel28";
-            panel28.Size = new Size(5, 62);
+            panel28.Size = new Size(4, 50);
             panel28.TabIndex = 5;
             // 
             // label13
@@ -394,20 +376,18 @@
             label13.AutoSize = true;
             label13.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold);
             label13.ForeColor = Color.White;
-            label13.Location = new Point(56, 15);
-            label13.Margin = new Padding(4, 0, 4, 0);
+            label13.Location = new Point(45, 12);
             label13.Name = "label13";
-            label13.Size = new Size(143, 25);
+            label13.Size = new Size(122, 20);
             label13.TabIndex = 4;
             label13.Text = "Kelola Aturan";
             // 
             // pictureBox10
             // 
             pictureBox10.Image = Properties.Resources.star;
-            pictureBox10.Location = new Point(12, 12);
-            pictureBox10.Margin = new Padding(4);
+            pictureBox10.Location = new Point(10, 10);
             pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(31, 31);
+            pictureBox10.Size = new Size(25, 25);
             pictureBox10.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox10.TabIndex = 2;
             pictureBox10.TabStop = false;
@@ -418,10 +398,9 @@
             panel21.Controls.Add(label12);
             panel21.Controls.Add(pictureBox1);
             panel21.Cursor = Cursors.Hand;
-            panel21.Location = new Point(0, 431);
-            panel21.Margin = new Padding(4);
+            panel21.Location = new Point(0, 345);
             panel21.Name = "panel21";
-            panel21.Size = new Size(300, 62);
+            panel21.Size = new Size(240, 50);
             panel21.TabIndex = 6;
             panel21.Click += ToTinjauUlasan_AD;
             // 
@@ -430,10 +409,9 @@
             label12.AutoSize = true;
             label12.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold);
             label12.ForeColor = Color.White;
-            label12.Location = new Point(56, 15);
-            label12.Margin = new Padding(4, 0, 4, 0);
+            label12.Location = new Point(45, 12);
             label12.Name = "label12";
-            label12.Size = new Size(145, 25);
+            label12.Size = new Size(124, 20);
             label12.TabIndex = 4;
             label12.Text = "Tinjau Ulasan";
             label12.Click += ToTinjauUlasan_AD;
@@ -441,10 +419,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.laporan;
-            pictureBox1.Location = new Point(12, 12);
-            pictureBox1.Margin = new Padding(4);
+            pictureBox1.Location = new Point(10, 10);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(31, 31);
+            pictureBox1.Size = new Size(25, 25);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
@@ -453,10 +430,9 @@
             // pictureBox9
             // 
             pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
-            pictureBox9.Location = new Point(12, 10);
-            pictureBox9.Margin = new Padding(4);
+            pictureBox9.Location = new Point(10, 8);
             pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(44, 44);
+            pictureBox9.Size = new Size(35, 35);
             pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox9.TabIndex = 5;
             pictureBox9.TabStop = false;
@@ -466,10 +442,9 @@
             // 
             panel6.BackColor = Color.Transparent;
             panel6.Controls.Add(button2);
-            panel6.Location = new Point(0, 892);
-            panel6.Margin = new Padding(4);
+            panel6.Location = new Point(0, 714);
             panel6.Name = "panel6";
-            panel6.Size = new Size(275, 56);
+            panel6.Size = new Size(220, 45);
             panel6.TabIndex = 4;
             // 
             // button2
@@ -480,10 +455,9 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(72, 4);
-            button2.Margin = new Padding(4);
+            button2.Location = new Point(58, 3);
             button2.Name = "button2";
-            button2.Size = new Size(130, 49);
+            button2.Size = new Size(104, 39);
             button2.TabIndex = 1;
             button2.Text = "Keluar";
             button2.UseVisualStyleBackColor = false;
@@ -494,10 +468,9 @@
             panel5.Controls.Add(label5);
             panel5.Controls.Add(pictureBox5);
             panel5.Cursor = Cursors.Hand;
-            panel5.Location = new Point(0, 362);
-            panel5.Margin = new Padding(4);
+            panel5.Location = new Point(0, 290);
             panel5.Name = "panel5";
-            panel5.Size = new Size(300, 62);
+            panel5.Size = new Size(240, 50);
             panel5.TabIndex = 3;
             panel5.Click += ToDaftarKeluhan_AD;
             // 
@@ -506,10 +479,9 @@
             label5.AutoSize = true;
             label5.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(56, 15);
-            label5.Margin = new Padding(4, 0, 4, 0);
+            label5.Location = new Point(45, 12);
             label5.Name = "label5";
-            label5.Size = new Size(156, 25);
+            label5.Size = new Size(135, 20);
             label5.TabIndex = 4;
             label5.Text = "Daftar Keluhan";
             label5.Click += ToDaftarKeluhan_AD;
@@ -517,10 +489,9 @@
             // pictureBox5
             // 
             pictureBox5.Image = Properties.Resources.refresh;
-            pictureBox5.Location = new Point(12, 12);
-            pictureBox5.Margin = new Padding(4);
+            pictureBox5.Location = new Point(10, 10);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(31, 31);
+            pictureBox5.Size = new Size(25, 25);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox5.TabIndex = 2;
             pictureBox5.TabStop = false;
@@ -532,10 +503,9 @@
             panel4.Controls.Add(label4);
             panel4.Controls.Add(pictureBox4);
             panel4.Cursor = Cursors.Hand;
-            panel4.Location = new Point(0, 294);
-            panel4.Margin = new Padding(4);
+            panel4.Location = new Point(0, 235);
             panel4.Name = "panel4";
-            panel4.Size = new Size(300, 62);
+            panel4.Size = new Size(240, 50);
             panel4.TabIndex = 3;
             panel4.Click += ToKelolaHunian_AD;
             // 
@@ -544,10 +514,9 @@
             label4.AutoSize = true;
             label4.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(56, 15);
-            label4.Margin = new Padding(4, 0, 4, 0);
+            label4.Location = new Point(45, 12);
             label4.Name = "label4";
-            label4.Size = new Size(147, 25);
+            label4.Size = new Size(126, 20);
             label4.TabIndex = 4;
             label4.Text = "Kelola Hunian";
             label4.Click += ToKelolaHunian_AD;
@@ -555,10 +524,9 @@
             // pictureBox4
             // 
             pictureBox4.Image = Properties.Resources.bank;
-            pictureBox4.Location = new Point(12, 12);
-            pictureBox4.Margin = new Padding(4);
+            pictureBox4.Location = new Point(10, 10);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(31, 31);
+            pictureBox4.Size = new Size(25, 25);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 2;
             pictureBox4.TabStop = false;
@@ -570,10 +538,9 @@
             panel3.Controls.Add(label3);
             panel3.Controls.Add(pictureBox2);
             panel3.Cursor = Cursors.Hand;
-            panel3.Location = new Point(0, 225);
-            panel3.Margin = new Padding(4);
+            panel3.Location = new Point(0, 180);
             panel3.Name = "panel3";
-            panel3.Size = new Size(300, 62);
+            panel3.Size = new Size(240, 50);
             panel3.TabIndex = 3;
             panel3.Click += ToPengelolaAkun_AD;
             // 
@@ -582,10 +549,9 @@
             label3.AutoSize = true;
             label3.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(56, 15);
-            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Location = new Point(45, 12);
             label3.Name = "label3";
-            label3.Size = new Size(188, 25);
+            label3.Size = new Size(158, 20);
             label3.TabIndex = 4;
             label3.Text = "Pengelolaan Akun";
             label3.Click += ToPengelolaAkun_AD;
@@ -593,10 +559,9 @@
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.profile_2user;
-            pictureBox2.Location = new Point(12, 12);
-            pictureBox2.Margin = new Padding(4);
+            pictureBox2.Location = new Point(10, 10);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(31, 31);
+            pictureBox2.Size = new Size(25, 25);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
@@ -607,10 +572,9 @@
             panel2.BackColor = Color.Transparent;
             panel2.Controls.Add(label2);
             panel2.Controls.Add(pictureBox3);
-            panel2.Location = new Point(0, 156);
-            panel2.Margin = new Padding(4);
+            panel2.Location = new Point(0, 125);
             panel2.Name = "panel2";
-            panel2.Size = new Size(300, 62);
+            panel2.Size = new Size(240, 50);
             panel2.TabIndex = 2;
             panel2.Click += ToDashboard_AD;
             // 
@@ -619,10 +583,9 @@
             label2.AutoSize = true;
             label2.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(56, 15);
-            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Location = new Point(45, 12);
             label2.Name = "label2";
-            label2.Size = new Size(113, 25);
+            label2.Size = new Size(96, 20);
             label2.TabIndex = 3;
             label2.Text = "Ringkasan";
             label2.Click += ToDashboard_AD;
@@ -631,10 +594,9 @@
             // 
             pictureBox3.ErrorImage = null;
             pictureBox3.Image = Properties.Resources.category;
-            pictureBox3.Location = new Point(12, 12);
-            pictureBox3.Margin = new Padding(4);
+            pictureBox3.Location = new Point(10, 10);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(31, 31);
+            pictureBox3.Size = new Size(25, 25);
             pictureBox3.TabIndex = 2;
             pictureBox3.TabStop = false;
             pictureBox3.Click += ToDashboard_AD;
@@ -644,10 +606,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(54, 8);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(43, 6);
             label1.Name = "label1";
-            label1.Size = new Size(162, 40);
+            label1.Size = new Size(139, 36);
             label1.TabIndex = 0;
             label1.Text = "SIMARU";
             label1.TextAlign = ContentAlignment.MiddleCenter;
@@ -659,10 +620,9 @@
             panel7.Controls.Add(pictureBox7);
             panel7.Controls.Add(pictureBox6);
             panel7.Dock = DockStyle.Top;
-            panel7.Location = new Point(300, 0);
-            panel7.Margin = new Padding(4);
+            panel7.Location = new Point(240, 0);
             panel7.Name = "panel7";
-            panel7.Size = new Size(1478, 88);
+            panel7.Size = new Size(1182, 70);
             panel7.TabIndex = 2;
             // 
             // pictureBox8
@@ -670,10 +630,9 @@
             pictureBox8.BackColor = Color.Transparent;
             pictureBox8.Cursor = Cursors.Hand;
             pictureBox8.Image = Properties.Resources.setting_2;
-            pictureBox8.Location = new Point(1356, 29);
-            pictureBox8.Margin = new Padding(4);
+            pictureBox8.Location = new Point(1085, 23);
             pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(30, 30);
+            pictureBox8.Size = new Size(24, 24);
             pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox8.TabIndex = 4;
             pictureBox8.TabStop = false;
@@ -683,10 +642,9 @@
             pictureBox7.BackColor = Color.Transparent;
             pictureBox7.Cursor = Cursors.Hand;
             pictureBox7.Image = Properties.Resources.notification;
-            pictureBox7.Location = new Point(1294, 29);
-            pictureBox7.Margin = new Padding(4);
+            pictureBox7.Location = new Point(1035, 23);
             pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(30, 30);
+            pictureBox7.Size = new Size(24, 24);
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox7.TabIndex = 3;
             pictureBox7.TabStop = false;
@@ -695,10 +653,9 @@
             // 
             pictureBox6.Cursor = Cursors.Hand;
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(1402, 15);
-            pictureBox6.Margin = new Padding(4);
+            pictureBox6.Location = new Point(1122, 12);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(60, 60);
+            pictureBox6.Size = new Size(48, 48);
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox6.TabIndex = 2;
             pictureBox6.TabStop = false;
@@ -709,10 +666,9 @@
             panel8.Controls.Add(panel9);
             panel8.Controls.Add(label6);
             panel8.Dock = DockStyle.Fill;
-            panel8.Location = new Point(300, 88);
-            panel8.Margin = new Padding(4);
+            panel8.Location = new Point(240, 70);
             panel8.Name = "panel8";
-            panel8.Size = new Size(1478, 916);
+            panel8.Size = new Size(1182, 733);
             panel8.TabIndex = 13;
             // 
             // panel10
@@ -721,9 +677,8 @@
             panel10.Controls.Add(label14);
             panel10.Dock = DockStyle.Fill;
             panel10.Location = new Point(0, 0);
-            panel10.Margin = new Padding(4);
             panel10.Name = "panel10";
-            panel10.Size = new Size(1478, 916);
+            panel10.Size = new Size(1182, 733);
             panel10.TabIndex = 13;
             // 
             // panel12
@@ -731,11 +686,10 @@
             panel12.BackColor = Color.FromArgb(37, 39, 48);
             panel12.Controls.Add(panel11);
             panel12.Controls.Add(panel13);
-            panel12.Location = new Point(6, 68);
-            panel12.Margin = new Padding(4);
+            panel12.Location = new Point(5, 54);
             panel12.Name = "panel12";
-            panel12.Padding = new Padding(62);
-            panel12.Size = new Size(1456, 828);
+            panel12.Padding = new Padding(50, 50, 50, 50);
+            panel12.Size = new Size(1165, 662);
             panel12.TabIndex = 5;
             // 
             // panel11
@@ -750,10 +704,9 @@
             panel11.Controls.Add(label7);
             panel11.Controls.Add(panel15);
             panel11.Location = new Point(0, 0);
-            panel11.Margin = new Padding(4);
             panel11.Name = "panel11";
-            panel11.Padding = new Padding(62);
-            panel11.Size = new Size(1456, 828);
+            panel11.Padding = new Padding(50, 50, 50, 50);
+            panel11.Size = new Size(1165, 662);
             panel11.TabIndex = 8;
             // 
             // pictureBox12
@@ -762,23 +715,9 @@
             pictureBox12.Cursor = Cursors.Hand;
             pictureBox12.ErrorImage = null;
             pictureBox12.Image = Properties.Resources.Tambah_Glow;
-            pictureBox12.Location = new Point(1368, 10);
-            pictureBox12.Margin = new Padding(4);
+            pictureBox12.Location = new Point(875, 6);
             pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(62, 62);
-            pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox12.TabIndex = 49;
-            pictureBox12.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            pictureBox12.BackColor = Color.Transparent;
-            pictureBox12.Cursor = Cursors.Hand;
-            pictureBox12.ErrorImage = null;
-            pictureBox12.Image = Properties.Resources.Tambah_Glow;
-            pictureBox12.Location = new Point(1094, 8);
-            pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(50, 50);
+            pictureBox12.Size = new Size(40, 40);
             pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox12.TabIndex = 49;
             pictureBox12.TabStop = false;
@@ -789,10 +728,9 @@
             pictureBox13.Cursor = Cursors.Hand;
             pictureBox13.ErrorImage = null;
             pictureBox13.Image = Properties.Resources.LK_Mati;
-            pictureBox13.Location = new Point(1236, 10);
-            pictureBox13.Margin = new Padding(4);
+            pictureBox13.Location = new Point(989, 8);
             pictureBox13.Name = "pictureBox13";
-            pictureBox13.Size = new Size(62, 62);
+            pictureBox13.Size = new Size(50, 50);
             pictureBox13.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox13.TabIndex = 48;
             pictureBox13.TabStop = false;
@@ -803,10 +741,9 @@
             pictureBox11.Cursor = Cursors.Hand;
             pictureBox11.ErrorImage = null;
             pictureBox11.Image = Properties.Resources.PR_HIDUP;
-            pictureBox11.Location = new Point(1166, 10);
-            pictureBox11.Margin = new Padding(4);
+            pictureBox11.Location = new Point(933, 8);
             pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(62, 62);
+            pictureBox11.Size = new Size(50, 50);
             pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox11.TabIndex = 47;
             pictureBox11.TabStop = false;
@@ -814,10 +751,9 @@
             // pictureBox22
             // 
             pictureBox22.Image = Properties.Resources.Ijo_kecil;
-            pictureBox22.Location = new Point(20, 34);
-            pictureBox22.Margin = new Padding(4);
+            pictureBox22.Location = new Point(16, 27);
             pictureBox22.Name = "pictureBox22";
-            pictureBox22.Size = new Size(12, 12);
+            pictureBox22.Size = new Size(10, 10);
             pictureBox22.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox22.TabIndex = 46;
             pictureBox22.TabStop = false;
@@ -827,10 +763,9 @@
             panel14.BackColor = Color.FromArgb(23, 24, 30);
             panel14.Controls.Add(label9);
             panel14.Controls.Add(label23);
-            panel14.Location = new Point(8, 72);
-            panel14.Margin = new Padding(4);
+            panel14.Location = new Point(6, 58);
             panel14.Name = "panel14";
-            panel14.Size = new Size(1436, 46);
+            panel14.Size = new Size(1149, 37);
             panel14.TabIndex = 32;
             // 
             // label9
@@ -838,10 +773,9 @@
             label9.AutoSize = true;
             label9.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label9.ForeColor = Color.FromArgb(139, 140, 142);
-            label9.Location = new Point(172, 10);
-            label9.Margin = new Padding(4, 0, 4, 0);
+            label9.Location = new Point(138, 8);
             label9.Name = "label9";
-            label9.Size = new Size(76, 25);
+            label9.Size = new Size(64, 20);
             label9.TabIndex = 13;
             label9.Text = "Aturan";
             // 
@@ -850,10 +784,9 @@
             label23.AutoSize = true;
             label23.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label23.ForeColor = Color.FromArgb(139, 140, 142);
-            label23.Location = new Point(66, 10);
-            label23.Margin = new Padding(4, 0, 4, 0);
+            label23.Location = new Point(53, 8);
             label23.Name = "label23";
-            label23.Size = new Size(39, 25);
+            label23.Size = new Size(32, 20);
             label23.TabIndex = 12;
             label23.Text = "No";
             // 
@@ -862,10 +795,9 @@
             label24.AutoSize = true;
             label24.Font = new Font("Microsoft Sans Serif", 7F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label24.ForeColor = Color.FromArgb(139, 140, 142);
-            label24.Location = new Point(36, 31);
-            label24.Margin = new Padding(4, 0, 4, 0);
+            label24.Location = new Point(29, 25);
             label24.Name = "label24";
-            label24.Size = new Size(111, 17);
+            label24.Size = new Size(96, 15);
             label24.TabIndex = 45;
             label24.Text = "Ada 50 aturan";
             // 
@@ -874,10 +806,9 @@
             label7.AutoSize = true;
             label7.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold);
             label7.ForeColor = Color.White;
-            label7.Location = new Point(8, 0);
-            label7.Margin = new Padding(4, 0, 4, 0);
+            label7.Location = new Point(6, 0);
             label7.Name = "label7";
-            label7.Size = new Size(146, 25);
+            label7.Size = new Size(129, 20);
             label7.TabIndex = 44;
             label7.Text = "List Peraturan";
             // 
@@ -887,38 +818,36 @@
             panel15.BackColor = Color.FromArgb(23, 24, 30);
             panel15.Controls.Add(flowLayoutPanelAturan);
             panel15.Controls.Add(panel16);
-            panel15.Location = new Point(8, 119);
-            panel15.Margin = new Padding(4);
+            panel15.Location = new Point(6, 95);
             panel15.Name = "panel15";
-            panel15.Padding = new Padding(62);
-            panel15.Size = new Size(1436, 688);
+            panel15.Padding = new Padding(50, 50, 50, 50);
+            panel15.Size = new Size(1149, 550);
             panel15.TabIndex = 6;
             // 
             // flowLayoutPanelAturan
             // 
             flowLayoutPanelAturan.AutoScroll = true;
-            flowLayoutPanelAturan.Location = new Point(0, 3);
+            flowLayoutPanelAturan.Location = new Point(0, 2);
+            flowLayoutPanelAturan.Margin = new Padding(2, 2, 2, 2);
             flowLayoutPanelAturan.Name = "flowLayoutPanelAturan";
-            flowLayoutPanelAturan.Size = new Size(1436, 685);
+            flowLayoutPanelAturan.Size = new Size(1149, 548);
             flowLayoutPanelAturan.TabIndex = 19;
             // 
             // panel16
             // 
             panel16.BackColor = Color.FromArgb(139, 140, 142);
             panel16.Location = new Point(0, 0);
-            panel16.Margin = new Padding(4);
             panel16.Name = "panel16";
-            panel16.Size = new Size(1436, 4);
+            panel16.Size = new Size(1149, 3);
             panel16.TabIndex = 18;
             // 
             // panel13
             // 
             panel13.BackColor = Color.FromArgb(37, 39, 48);
             panel13.Location = new Point(1, 0);
-            panel13.Margin = new Padding(4);
             panel13.Name = "panel13";
-            panel13.Padding = new Padding(62);
-            panel13.Size = new Size(1456, 828);
+            panel13.Padding = new Padding(50, 50, 50, 50);
+            panel13.Size = new Size(1165, 662);
             panel13.TabIndex = 6;
             // 
             // label14
@@ -926,21 +855,19 @@
             label14.AutoSize = true;
             label14.Font = new Font("Microsoft Sans Serif", 19F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label14.ForeColor = Color.White;
-            label14.Location = new Point(0, 4);
-            label14.Margin = new Padding(4, 0, 4, 0);
+            label14.Location = new Point(0, 3);
             label14.Name = "label14";
-            label14.Size = new Size(260, 44);
+            label14.Size = new Size(223, 37);
             label14.TabIndex = 4;
             label14.Text = "Kelola Aturan";
             // 
             // panel9
             // 
             panel9.BackColor = Color.FromArgb(37, 39, 48);
-            panel9.Location = new Point(6, 68);
-            panel9.Margin = new Padding(4);
+            panel9.Location = new Point(5, 54);
             panel9.Name = "panel9";
-            panel9.Padding = new Padding(62);
-            panel9.Size = new Size(1456, 828);
+            panel9.Padding = new Padding(50, 50, 50, 50);
+            panel9.Size = new Size(1165, 662);
             panel9.TabIndex = 5;
             // 
             // label6
@@ -948,23 +875,32 @@
             label6.AutoSize = true;
             label6.Font = new Font("Microsoft Sans Serif", 19F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.White;
-            label6.Location = new Point(0, 4);
-            label6.Margin = new Padding(4, 0, 4, 0);
+            label6.Location = new Point(0, 3);
             label6.Name = "label6";
-            label6.Size = new Size(342, 44);
+            label6.Size = new Size(293, 37);
             label6.TabIndex = 4;
             label6.Text = "Pengelolaan Akun";
             // 
+            // pictureBox14
+            // 
+            pictureBox14.Image = Properties.Resources.Virtual_tour;
+            pictureBox14.Location = new Point(10, 10);
+            pictureBox14.Name = "pictureBox14";
+            pictureBox14.Size = new Size(25, 25);
+            pictureBox14.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox14.TabIndex = 12;
+            pictureBox14.TabStop = false;
+            pictureBox14.Click += ToEditVirtualTour_AD;
+            // 
             // Kelola_Aturan_Admin
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(23, 24, 30);
-            ClientSize = new Size(1778, 1004);
+            ClientSize = new Size(1422, 803);
             Controls.Add(panel8);
             Controls.Add(panel7);
             Controls.Add(panel1);
-            Margin = new Padding(4);
             Name = "Kelola_Aturan_Admin";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "1440; 850";
@@ -1025,6 +961,7 @@
             panel14.ResumeLayout(false);
             panel14.PerformLayout();
             panel15.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
             ResumeLayout(false);
         }
 
@@ -1095,5 +1032,6 @@
         private Panel panel16;
         private PictureBox pictureBox12;
         private FlowLayoutPanel flowLayoutPanelAturan;
+        private PictureBox pictureBox14;
     }
 }

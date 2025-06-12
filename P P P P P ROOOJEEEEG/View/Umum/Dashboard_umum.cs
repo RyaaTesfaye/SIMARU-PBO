@@ -17,6 +17,7 @@ namespace RUSUNAWAAA.View.Umum
         public Dashboard_umum()
         {
             InitializeComponent();
+            UIhelper.MakePanelRound(panel6, 20);
             UIhelper.MakePanelRound(panel9, 20);
             UIhelper.MakePanelRound(panel10, 20);
             UIhelper.MakePanelRound(panel11, 20);
@@ -30,7 +31,7 @@ namespace RUSUNAWAAA.View.Umum
             UIhelper.MakePanelRound(panel19, 20);
             UIhelper.MakePanelRound(panel20, 20);
             UIhelper.MakePanelRound(panel24, 20);
-            UIhelper.MakePanelRound(panel25, 3);
+            UIhelper.MakePanelRound(panel25, 20);
             UIhelper.MakePanelRound(panel26, 3);
             UIhelper.MakeRoundedButton(button1, 3);
             UIhelper.MakeRoundedButton(button5, 3);

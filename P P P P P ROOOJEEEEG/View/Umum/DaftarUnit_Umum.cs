@@ -16,6 +16,13 @@ namespace RUSUNAWAAA.View.Umum
         public DaftarUnit_Umum()
         {
             InitializeComponent();
+            UIhelper.MakePanelRound(panel6, 20);
+            UIhelper.MakePanelRound(panel9, 20);
+            UIhelper.MakePanelRound(panel10, 20);
+            UIhelper.MakePanelRound(panel11, 20);
+            UIhelper.MakePanelRound(panel12, 20);
+            UIhelper.MakePanelRound(panel13, 20);
+            UIhelper.MakePanelRound(panel15, 20);
         }
 
         private void label20_Click(object sender, EventArgs e)
