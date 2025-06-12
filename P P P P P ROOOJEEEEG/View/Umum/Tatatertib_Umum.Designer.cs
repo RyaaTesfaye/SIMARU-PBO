@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tatatertib_Umum));
             panel8 = new Panel();
             panel9 = new Panel();
-            dataGridView1 = new DataGridView();
+            dgvAturan = new DataGridView();
             label6 = new Label();
             panel7 = new Panel();
             button5 = new Button();
@@ -60,9 +60,11 @@
             label2 = new Label();
             pictureBox3 = new PictureBox();
             label1 = new Label();
+            pictureBox13 = new PictureBox();
+            pictureBox11 = new PictureBox();
             panel8.SuspendLayout();
             panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvAturan).BeginInit();
             panel7.SuspendLayout();
             panel1.SuspendLayout();
             panel29.SuspendLayout();
@@ -80,10 +82,14 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             SuspendLayout();
             // 
             // panel8
             // 
+            panel8.Controls.Add(pictureBox13);
+            panel8.Controls.Add(pictureBox11);
             panel8.Controls.Add(panel9);
             panel8.Controls.Add(label6);
             panel8.Dock = DockStyle.Fill;
@@ -96,21 +102,21 @@
             // 
             panel9.AutoScroll = true;
             panel9.BackColor = Color.FromArgb(37, 39, 48);
-            panel9.Controls.Add(dataGridView1);
+            panel9.Controls.Add(dgvAturan);
             panel9.Location = new Point(5, 54);
             panel9.Name = "panel9";
             panel9.Padding = new Padding(50);
             panel9.Size = new Size(1165, 662);
             panel9.TabIndex = 5;
             // 
-            // dataGridView1
+            // dgvAturan
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(1, 1);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1164, 661);
-            dataGridView1.TabIndex = 0;
+            dgvAturan.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvAturan.Location = new Point(1, 1);
+            dgvAturan.Name = "dgvAturan";
+            dgvAturan.RowHeadersWidth = 51;
+            dgvAturan.Size = new Size(1164, 661);
+            dgvAturan.TabIndex = 0;
             // 
             // label6
             // 
@@ -146,6 +152,7 @@
             button5.TabIndex = 2;
             button5.Text = "Masuk";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // panel1
             // 
@@ -438,6 +445,34 @@
             label1.TextAlign = ContentAlignment.MiddleCenter;
             label1.Click += ToDashboard_UM;
             // 
+            // pictureBox13
+            // 
+            pictureBox13.BackColor = Color.Transparent;
+            pictureBox13.Cursor = Cursors.Hand;
+            pictureBox13.ErrorImage = null;
+            pictureBox13.Image = Properties.Resources.LK_Mati;
+            pictureBox13.Location = new Point(1018, 6);
+            pictureBox13.Name = "pictureBox13";
+            pictureBox13.Size = new Size(50, 50);
+            pictureBox13.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox13.TabIndex = 30;
+            pictureBox13.TabStop = false;
+            pictureBox13.Click += btnFilterLakiLaki_Click;
+            // 
+            // pictureBox11
+            // 
+            pictureBox11.BackColor = Color.Transparent;
+            pictureBox11.Cursor = Cursors.Hand;
+            pictureBox11.ErrorImage = null;
+            pictureBox11.Image = Properties.Resources.PR_HIDUP;
+            pictureBox11.Location = new Point(962, 6);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(50, 50);
+            pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox11.TabIndex = 29;
+            pictureBox11.TabStop = false;
+            pictureBox11.Click += btnFilterPerempuan_Click;
+            // 
             // Tatatertib_Umum
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -450,10 +485,11 @@
             Name = "Tatatertib_Umum";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Tatatertib_Umum";
+            Load += Tata_Tertib_Umum_Load;
             panel8.ResumeLayout(false);
             panel8.PerformLayout();
             panel9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvAturan).EndInit();
             panel7.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -479,6 +515,8 @@
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             ResumeLayout(false);
         }
 
@@ -514,6 +552,8 @@
         private PictureBox pictureBox3;
         private Label label1;
         private Panel panel6;
-        private DataGridView dataGridView1;
+        private DataGridView dgvAturan;
+        private PictureBox pictureBox13;
+        private PictureBox pictureBox11;
     }
 }

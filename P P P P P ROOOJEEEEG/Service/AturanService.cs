@@ -5,7 +5,7 @@ using System.Windows.Forms;
 using RUSUNAWAAA.Models;
 using RusunawaApp.Data;
 using Microsoft.EntityFrameworkCore;
-using RUSUNAWAAA.View.Admin; // Diperlukan untuk UC_ItemKelolaAturan
+using RUSUNAWAAA.View.Admin;
 
 namespace RUSUNAWAAA.Service
 {
@@ -124,7 +124,7 @@ namespace RUSUNAWAAA.Service
                 try
                 {
                     context.TataTertibs.Add(newTataTertib);
-                    newTataTertib.TanggalUpdate = DateTime.Now;
+                    newTataTertib.TanggalUpdate = DateTime.UtcNow;
                     context.SaveChanges();
                     LoadAllTatatertibs();
                     DisplayAllItemsOnPanel(_semuaTatatertibs); 
@@ -160,6 +160,44 @@ namespace RUSUNAWAAA.Service
                     return true;
                 }
                 catch (Exception ex) { MessageBox.Show($"Error deleting rule: {ex.Message}", "Error"); return false; }
+            }
+        }
+
+        //======================================================================
+        public void DisplayItemsOnDataGridView(DataGridView targetDgv, string filterJenisKelamin)
+        {
+            try
+            {
+                List<TataTertib> semuaAturan = this.GetAllAturan();
+
+                var filteredList = semuaAturan
+                    .Where(a => a.TargetJenisKelamin == "Semua" || a.TargetJenisKelamin == filterJenisKelamin)
+                    .ToList();
+
+
+                targetDgv.Rows.Clear(); 
+
+                if (targetDgv.Columns.Count == 0)
+                {
+                    targetDgv.AutoGenerateColumns = false;
+                    targetDgv.Columns.Add("Nomor", "No.");
+                    targetDgv.Columns.Add("Aturan", "Aturan");
+                    targetDgv.Columns["Nomor"].Width = 50;
+                    targetDgv.Columns["Aturan"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                    targetDgv.RowHeadersVisible = false;
+                    targetDgv.AllowUserToAddRows = false;
+                }
+
+                int nomorUrut = 1;
+                foreach (var aturan in filteredList)
+                {
+                    targetDgv.Rows.Add(nomorUrut, aturan.Judul);
+                    nomorUrut++;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Gagal menampilkan aturan di tabel: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

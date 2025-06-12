@@ -12,22 +12,23 @@ using System.Reflection.PortableExecutable;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PenyewaModel = RUSUNAWAAA.Models.Penyewa;
 
 namespace RUSUNAWAAA.View.Admin
 {
     public partial class Manajemen_Sewa_Admin : Form
     {
-        private readonly PengajuanSewaService _service = new PengajuanSewaService();
+        private readonly PengajuanSewaService _pengajuanService = new PengajuanSewaService();
+        private readonly PerpanjanganService _perpanjanganService = new PerpanjanganService();
 
-        
         private List<Pengajuan> _semuaPengajuan;
         private List<PerpanjanganSewa> _semuaPerpanjangan;
 
-        private List<object> _dataYangTampil; 
+        private List<object> _dataYangTampil;
         private int _halamanSaatIni = 1;
-        private readonly int _itemPerHalaman = 7; 
-        private string _filterJenisKelamin = "Perempuan"; 
-        private string _tipeTampilan = "Pengajuan"; 
+        private readonly int _itemPerHalaman = 7;
+        private string _filterJenisKelamin = "Perempuan";
+        private string _tipeTampilan = "Pengajuan";
         public Manajemen_Sewa_Admin()
         {
             InitializeComponent();
@@ -88,9 +89,8 @@ namespace RUSUNAWAAA.View.Admin
 
         private void Manajemen_Sewa_Admin_Load(object sender, EventArgs e)
         {
-            _semuaPengajuan = _service.GetAllPendingApplications();
-            _semuaPerpanjangan = _service.GetAllPerpanjangan();
-
+            _semuaPengajuan = _pengajuanService.GetAllPendingApplications();
+            _semuaPerpanjangan = _perpanjanganService.GetAllPerpanjangan();
             ApplyFiltersAndDisplay();
         }
         private void ApplyFiltersAndDisplay()
@@ -106,8 +106,8 @@ namespace RUSUNAWAAA.View.Admin
             }
             else if (_tipeTampilan == "Perpanjangan")
             {
-                var filteredList = _semuaPerpanjangan.AsQueryable();
-                // if (_filterJenisKelamin != "Semua")
+                var filteredList = _semuaPerpanjangan
+                                    .Where(p => p.User is PenyewaModel && (p.User as PenyewaModel).JenisKelamin == _filterJenisKelamin);
                 _dataYangTampil = filteredList.Cast<object>().ToList();
             }
             _halamanSaatIni = 1;
@@ -139,7 +139,10 @@ namespace RUSUNAWAAA.View.Admin
                     }
                     else if (itemData is PerpanjanganSewa perpanjangan)
                     {
-                        // ucItemPerpanjangan 
+                        var itemUc = new UC_ItemPerpanjangan();
+                        itemUc.SetData(perpanjangan);
+                        itemUc.DetailButtonClicked += OnPerpanjanganDetailClicked;
+                        flowLayoutPanelPengajuan.Controls.Add(itemUc);
                     }
                 }
             }
@@ -155,26 +158,41 @@ namespace RUSUNAWAAA.View.Admin
         }
         private void OnItemDetailClicked(object sender, int pengajuanId)
         {
-           
-            ShowDetailView(pengajuanId);
+            var dataPengajuan = _semuaPengajuan.FirstOrDefault(p => p.Id_Pengajuan == pengajuanId);
+            if (dataPengajuan != null)
+            {
+                ShowDetailView(dataPengajuan); 
+            }
         }
-        private void ShowDetailView(int pengajuanId)
+        private void OnPerpanjanganDetailClicked(object sender, int perpanjanganId)
         {
-            
-            panel11.Visible = false;
-
-
-           
+            var dataPerpanjangan = _semuaPerpanjangan.FirstOrDefault(p => p.Id_Perpanjangan == perpanjanganId);
+            if (dataPerpanjangan != null)
+            {
+                ShowDetailView(dataPerpanjangan); 
+            }
+        }
+        private void ShowDetailView(Pengajuan data)
+        {
+            panel11.Visible = false; 
             var detailView = new UC_DetailPengajuan();
-            detailView.Dock = DockStyle.Fill; 
-
-           
-            detailView.ActionCompleted += (s, ev) => ShowListView(); 
-            detailView.BackRequested += (s, ev) => ShowListView(); 
-           
+            detailView.Dock = DockStyle.Fill;
+            detailView.ActionCompleted += (s, ev) => ShowListView();
+            detailView.BackRequested += (s, ev) => ShowListView();
             this.Controls.Add(detailView);
             detailView.BringToFront();
-            detailView.LoadDetail(pengajuanId);
+            detailView.LoadDetail(data); 
+        }
+        private void ShowDetailView(PerpanjanganSewa data)
+        {
+            panel11.Visible = false; 
+            var detailView = new UC_DetailPengajuan();
+            detailView.Dock = DockStyle.Fill;
+            detailView.ActionCompleted += (s, ev) => ShowListView();
+            detailView.BackRequested += (s, ev) => ShowListView();
+            this.Controls.Add(detailView);
+            detailView.BringToFront();
+            detailView.LoadDetail(data); 
         }
         private void ShowListView()
         {

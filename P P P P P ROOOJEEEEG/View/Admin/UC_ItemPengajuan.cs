@@ -40,5 +40,10 @@ namespace RUSUNAWAAA.View.Admin
         {
 
         }
+
+        private void UC_ItemPengajuan_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

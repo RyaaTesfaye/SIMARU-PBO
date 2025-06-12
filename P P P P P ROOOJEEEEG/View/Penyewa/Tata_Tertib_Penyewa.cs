@@ -1,4 +1,5 @@
-﻿using RUSUNAWAAA.Utils;
+﻿using RUSUNAWAAA.Service;
+using RUSUNAWAAA.Utils;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,14 +9,43 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PenyewaModel = RUSUNAWAAA.Models.Penyewa;
 
 namespace RUSUNAWAAA.View.Penyewa
 {
+    
     public partial class Tata_Tertib_Penyewa : Form
     {
+        private AturanService _aturanService;
+        private string _filterAktif = "Semua";
         public Tata_Tertib_Penyewa()
         {
             InitializeComponent();
+            _aturanService = new AturanService(new Panel());
+        }
+        private void Tata_Tertib_Penyewa_Load(object sender, EventArgs e)
+        {
+            if (SesiLogin.IsLoggedIn() && SesiLogin.LoggedInUser is PenyewaModel penyewa)
+            {
+                _filterAktif = penyewa.JenisKelamin;
+            }
+
+            RefreshDataGridView();
+        }
+        private void RefreshDataGridView()
+        {
+            _aturanService.DisplayItemsOnDataGridView(dgvAturan, _filterAktif);
+        }
+        private void btnFilterPerempuan_Click(object sender, EventArgs e)
+        {
+            _filterAktif = "Perempuan";
+            RefreshDataGridView(); 
+        }
+
+        private void btnFilterLakiLaki_Click(object sender, EventArgs e)
+        {
+            _filterAktif = "Laki-laki";
+            RefreshDataGridView(); 
         }
 
         private void ToDashboard_PE(object sender, EventArgs e)

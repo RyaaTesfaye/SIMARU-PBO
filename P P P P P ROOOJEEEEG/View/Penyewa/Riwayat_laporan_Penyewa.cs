@@ -1,4 +1,6 @@
-﻿using RUSUNAWAAA.Utils;
+﻿using RUSUNAWAAA.Models;
+using RUSUNAWAAA.Service;
+using RUSUNAWAAA.Utils;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,9 +15,52 @@ namespace RUSUNAWAAA.View.Penyewa
 {
     public partial class Riwayat_laporan_Penyewa : Form
     {
+        private readonly KeluhanService _keluhanService;
         public Riwayat_laporan_Penyewa()
         {
             InitializeComponent();
+            _keluhanService = new KeluhanService();
+        }
+        private void RiwayatLaporanView_Load(object sender, EventArgs e)
+        {
+            LoadRiwayatLaporan();
+        }
+        private void LoadRiwayatLaporan()
+        {
+            try
+            {
+                string nomorKtpPenyewa = SesiLogin.LoggedInUser.NomorKTP;
+                flowLayoutPanelRiwayat.Controls.Clear();
+
+                List<Laporan> daftarLaporan = _keluhanService.GetLaporanByPenyewa(nomorKtpPenyewa);
+                if (daftarLaporan != null && daftarLaporan.Count > 0)
+                {
+                    int nomorUrut = 1; 
+                    foreach (Laporan laporan in daftarLaporan)
+                    {
+                        UC_ItemRIwayatLapor item = new UC_ItemRIwayatLapor();
+
+                        // b. Kirim data laporan dan nomor urut ke UserControl item
+                        item.SetData(laporan, nomorUrut);
+
+                        // c. Tambahkan item yang sudah jadi ke dalam FlowLayoutPanel
+                        flowLayoutPanelRiwayat.Controls.Add(item);
+
+                        nomorUrut++;
+                    }
+                }
+                else
+                {
+                   
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Gagal memuat data riwayat. Error: " + ex.Message,
+                                "Error Kritis",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
+            }
         }
 
         private void ToDashboard_PE(object sender, EventArgs e)

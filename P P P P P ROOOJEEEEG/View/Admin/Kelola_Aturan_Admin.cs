@@ -15,36 +15,90 @@ namespace RUSUNAWAAA.View.Admin
 {
     public partial class Kelola_Aturan_Admin : Form
     {
-        private readonly AturanService _aturanService; 
+        private readonly AturanService _aturanService;
+        private UC_TambahAturan _ucTambahAturan; 
 
+        private string _filterJenisKelamin = "Perempuan";
         public Kelola_Aturan_Admin()
         {
             InitializeComponent();
-            
-            _aturanService = new AturanService(flowLayoutPanelAturan); 
-            
-            // Muat dan tampilkan semua data saat form pertama kali dibuka
-            LoadAndDisplayAllAturan();
 
-            // Event handlers untuk tombol paginasi tidak ada lagi
-            // btnPrevAturan.Click += btnPrevAturan_Click;
-            // btnNextAturan.Click += btnNextAturan_Click;
+            _aturanService = new AturanService(flowLayoutPanelAturan);
+
         }
 
-        private void LoadAndDisplayAllAturan()
+        private void Kelola_Aturan_Admin_Load(object sender, EventArgs e)
         {
-            if (flowLayoutPanelAturan == null)
+            ApplyFilterAndDisplay();
+        }
+        private void ApplyFilterAndDisplay()
+        {
+            try
             {
-                MessageBox.Show("Error: flowLayoutPanelAturan tidak ditemukan. Pastikan sudah ditambahkan di designer.", "Error Konfigurasi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                List<TataTertib> semuaAturan = _aturanService.GetAllAturan();
+
+
+                var filteredList = semuaAturan
+                    .Where(a => a.TargetJenisKelamin == _filterJenisKelamin || a.TargetJenisKelamin == "Semua")
+                    .ToList();
+
+                _aturanService.DisplayAllItemsOnPanel(filteredList);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Gagal menerapkan filter dan menampilkan data: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void btnFilterPerempuan_Click(object sender, EventArgs e)
+        {
+            _filterJenisKelamin = "Perempuan";
+            ApplyFilterAndDisplay();
+        }
+
+        private void btnFilterLakiLaki_Click(object sender, EventArgs e)
+        {
+            _filterJenisKelamin = "Laki-laki";
+            ApplyFilterAndDisplay();
+        }
+        private void btnTambah_Click(object sender, EventArgs e)
+        {
+            if (_ucTambahAturan == null)
+            {
+                _ucTambahAturan = new UC_TambahAturan();
+                _ucTambahAturan.Dock = DockStyle.Fill;
+
+                // "Dengarkan" sinyal dari UC Tambah Aturan
+                _ucTambahAturan.SimpanClicked += UcTambahAturan_SimpanClicked;
+                _ucTambahAturan.BatalClicked += UcTambahAturan_BatalClicked;
+
+                // Tambahkan UC ke form (di atas kontrol lain)
+                this.Controls.Add(_ucTambahAturan);
             }
 
-
-            List<TataTertib> allAturan = _aturanService.GetAllAturan();
-
- 
-            _aturanService.DisplayAllItemsOnPanel(allAturan);
-           
+            _ucTambahAturan.BringToFront();
+            _ucTambahAturan.Visible = true;
+        }
+        private void UcTambahAturan_BatalClicked(object sender, EventArgs e)
+        {
+            // Cukup sembunyikan form tambah jika dibatalkan
+            if (_ucTambahAturan != null)
+            {
+                _ucTambahAturan.Visible = false;
+            }
+        }
+        private void UcTambahAturan_SimpanClicked(object sender, TataTertib aturanBaru)
+        {
+            bool sukses = _aturanService.AddAturan(aturanBaru);
+            if (sukses)
+            {
+                MessageBox.Show("Aturan baru berhasil ditambahkan.", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                _ucTambahAturan.Visible = false; 
+                _ucTambahAturan.ClearForm();
+            }
+            else
+            {
+                MessageBox.Show("Gagal menambahkan aturan baru.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
         private void ToDashboard_AD(object sender, EventArgs e) { /* ... */ }
         private void ToPengelolaAkun_AD(object sender, EventArgs e) { /* ... */ }
@@ -95,6 +149,11 @@ namespace RUSUNAWAAA.View.Admin
         }
 
         private void panel11_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel11_Paint_1(object sender, PaintEventArgs e)
         {
 
         }

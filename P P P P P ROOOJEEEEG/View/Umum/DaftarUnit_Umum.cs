@@ -1,4 +1,5 @@
 ﻿using RUSUNAWAAA.Utils;
+using RUSUNAWAAA.View.Login;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -61,6 +62,12 @@ namespace RUSUNAWAAA.View.Umum
         private void ToKontakLokasi_UM(object sender, EventArgs e)
         {
             var command = new NavigateToFormCommand<Kontaklokasi_Umum>(this);
+            command.Execute();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            var command = new NavigateToFormCommand<Loginss>(this);
             command.Execute();
         }
     }

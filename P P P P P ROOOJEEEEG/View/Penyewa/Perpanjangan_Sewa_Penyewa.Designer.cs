@@ -60,6 +60,8 @@
             pictureBox6 = new PictureBox();
             panel8 = new Panel();
             panel9 = new Panel();
+            panel11 = new Panel();
+            panel10 = new Panel();
             label6 = new Label();
             panel1.SuspendLayout();
             panel29.SuspendLayout();
@@ -82,6 +84,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel8.SuspendLayout();
+            panel9.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -434,11 +437,27 @@
             // panel9
             // 
             panel9.BackColor = Color.FromArgb(37, 39, 48);
+            panel9.Controls.Add(panel11);
+            panel9.Controls.Add(panel10);
             panel9.Location = new Point(5, 54);
             panel9.Name = "panel9";
             panel9.Padding = new Padding(50);
             panel9.Size = new Size(1165, 662);
             panel9.TabIndex = 5;
+            // 
+            // panel11
+            // 
+            panel11.Location = new Point(630, 34);
+            panel11.Name = "panel11";
+            panel11.Size = new Size(464, 597);
+            panel11.TabIndex = 1;
+            // 
+            // panel10
+            // 
+            panel10.Location = new Point(77, 34);
+            panel10.Name = "panel10";
+            panel10.Size = new Size(464, 597);
+            panel10.TabIndex = 0;
             // 
             // label6
             // 
@@ -463,6 +482,7 @@
             Name = "Perpanjangan_Sewa_Penyewa";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "_6_Penyewa";
+            Load += PerpanjanganSewaView_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel29.ResumeLayout(false);
@@ -493,6 +513,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             panel8.ResumeLayout(false);
             panel8.PerformLayout();
+            panel9.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -530,5 +551,7 @@
         private Panel panel9;
         private Label label6;
         private Panel panel6;
+        private Panel panel11;
+        private Panel panel10;
     }
 }

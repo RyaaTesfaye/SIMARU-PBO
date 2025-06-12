@@ -557,6 +557,7 @@
             button5.TabIndex = 2;
             button5.Text = "Masuk";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // panel8
             // 

@@ -62,12 +62,18 @@ namespace RUSUNAWAAA.View.Umum
 
         private void LoadFormSemuaUlasan_UM()
         {
-            
+
         }
 
         private void ToSemuaUlasan_UM(object sender, EventArgs e)
         {
             LoadFormSemuaUlasan_UM();
+        }
+
+        private void ToMasuk_Click(object sender, EventArgs e)
+        {
+            var command = new NavigateToFormCommand<Loginss>(this);
+            command.Execute();
         }
     }
 }

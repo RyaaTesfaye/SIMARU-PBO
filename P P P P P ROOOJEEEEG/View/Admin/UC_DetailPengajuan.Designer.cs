@@ -64,10 +64,10 @@
             lblAlamatIsi = new Label();
             lblFakultasIsi = new Label();
             lblNamaIsi = new Label();
-            label37 = new Label();
-            label38 = new Label();
-            button2 = new Button();
-            button1 = new Button();
+            btnKembali = new Label();
+            lblJudulDetail = new Label();
+            btnTolak = new Button();
+            btnTerima = new Button();
             SuspendLayout();
             // 
             // label24
@@ -290,6 +290,7 @@
             LinkLihatBukti.Size = new Size(99, 24);
             LinkLihatBukti.TabIndex = 47;
             LinkLihatBukti.Text = "Lihat Bukti";
+            LinkLihatBukti.Click += LinkLihatFile_Click;
             // 
             // LinkLihatKTP
             // 
@@ -301,7 +302,7 @@
             LinkLihatKTP.Size = new Size(90, 24);
             LinkLihatKTP.TabIndex = 48;
             LinkLihatKTP.Text = "Lihat KTP";
-            LinkLihatKTP.Click += linkLihatKTP_LinkClicked;
+            LinkLihatKTP.Click += LinkLihatFile_Click;
             // 
             // LinkLihatSurat
             // 
@@ -313,6 +314,7 @@
             LinkLihatSurat.Size = new Size(101, 24);
             LinkLihatSurat.TabIndex = 49;
             LinkLihatSurat.Text = "Lihat Surat";
+            LinkLihatSurat.Click += LinkLihatFile_Click;
             // 
             // LinkLihatPasfoto
             // 
@@ -324,6 +326,7 @@
             LinkLihatPasfoto.Size = new Size(120, 24);
             LinkLihatPasfoto.TabIndex = 50;
             LinkLihatPasfoto.Text = "Lihat Pasfoto";
+            LinkLihatPasfoto.Click += LinkLihatFile_Click;
             // 
             // lblDurasiIsi
             // 
@@ -468,70 +471,70 @@
             lblNamaIsi.TabIndex = 63;
             lblNamaIsi.Text = "Total Kamar";
             // 
-            // label37
+            // btnKembali
             // 
-            label37.AutoSize = true;
-            label37.Font = new Font("Inter", 10F, FontStyle.Bold);
-            label37.ForeColor = Color.White;
-            label37.Location = new Point(75, 74);
-            label37.Name = "label37";
-            label37.Size = new Size(78, 24);
-            label37.TabIndex = 64;
-            label37.Text = "Kembali";
-            label37.Click += btnKembali_Click;
+            btnKembali.AutoSize = true;
+            btnKembali.Font = new Font("Inter", 10F, FontStyle.Bold);
+            btnKembali.ForeColor = Color.White;
+            btnKembali.Location = new Point(75, 74);
+            btnKembali.Name = "btnKembali";
+            btnKembali.Size = new Size(78, 24);
+            btnKembali.TabIndex = 64;
+            btnKembali.Text = "Kembali";
+            btnKembali.Click += BtnKembali_Click;
             // 
-            // label38
+            // lblJudulDetail
             // 
-            label38.AutoSize = true;
-            label38.Font = new Font("Inter", 18F, FontStyle.Bold);
-            label38.ForeColor = Color.White;
-            label38.Location = new Point(451, 55);
-            label38.Name = "label38";
-            label38.Size = new Size(265, 43);
-            label38.TabIndex = 65;
-            label38.Text = "Detail Pengajuan";
+            lblJudulDetail.AutoSize = true;
+            lblJudulDetail.Font = new Font("Inter", 18F, FontStyle.Bold);
+            lblJudulDetail.ForeColor = Color.White;
+            lblJudulDetail.Location = new Point(451, 55);
+            lblJudulDetail.Name = "lblJudulDetail";
+            lblJudulDetail.Size = new Size(265, 43);
+            lblJudulDetail.TabIndex = 65;
+            lblJudulDetail.Text = "Detail Pengajuan";
             // 
-            // button2
+            // btnTolak
             // 
-            button2.BackColor = Color.Red;
-            button2.Cursor = Cursors.Hand;
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(638, 511);
-            button2.Name = "button2";
-            button2.Size = new Size(104, 39);
-            button2.TabIndex = 66;
-            button2.Text = "Tolak";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += btnTolak_Click;
+            btnTolak.BackColor = Color.Red;
+            btnTolak.Cursor = Cursors.Hand;
+            btnTolak.FlatAppearance.BorderSize = 0;
+            btnTolak.FlatStyle = FlatStyle.Flat;
+            btnTolak.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnTolak.ForeColor = Color.White;
+            btnTolak.Location = new Point(638, 511);
+            btnTolak.Name = "btnTolak";
+            btnTolak.Size = new Size(104, 39);
+            btnTolak.TabIndex = 66;
+            btnTolak.Text = "Tolak";
+            btnTolak.UseVisualStyleBackColor = false;
+            btnTolak.Click += BtnTolak_Click;
             // 
-            // button1
+            // btnTerima
             // 
-            button1.BackColor = Color.Blue;
-            button1.Cursor = Cursors.Hand;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(872, 511);
-            button1.Name = "button1";
-            button1.Size = new Size(104, 39);
-            button1.TabIndex = 67;
-            button1.Text = "Terima";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += btnTerima_Click;
+            btnTerima.BackColor = Color.Blue;
+            btnTerima.Cursor = Cursors.Hand;
+            btnTerima.FlatAppearance.BorderSize = 0;
+            btnTerima.FlatStyle = FlatStyle.Flat;
+            btnTerima.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnTerima.ForeColor = Color.White;
+            btnTerima.Location = new Point(872, 511);
+            btnTerima.Name = "btnTerima";
+            btnTerima.Size = new Size(104, 39);
+            btnTerima.TabIndex = 67;
+            btnTerima.Text = "Terima";
+            btnTerima.UseVisualStyleBackColor = false;
+            btnTerima.Click += BtnTerima_Click;
             // 
             // UC_DetailPengajuan
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(23, 24, 29);
-            Controls.Add(button1);
-            Controls.Add(button2);
-            Controls.Add(label38);
-            Controls.Add(label37);
+            Controls.Add(btnTerima);
+            Controls.Add(btnTolak);
+            Controls.Add(lblJudulDetail);
+            Controls.Add(btnKembali);
             Controls.Add(lblNamaIsi);
             Controls.Add(lblFakultasIsi);
             Controls.Add(lblAlamatIsi);
@@ -612,9 +615,9 @@
         private Label lblAlamatIsi;
         private Label lblFakultasIsi;
         private Label lblNamaIsi;
-        private Label label37;
-        private Label label38;
-        private Button button2;
-        private Button button1;
+        private Label btnKembali;
+        private Label lblJudulDetail;
+        private Button btnTolak;
+        private Button btnTerima;
     }
 }

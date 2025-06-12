@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using RUSUNAWAAA.Utils;
+using RUSUNAWAAA.View.Login;
 
 namespace RUSUNAWAAA.View.Umum
 {
@@ -19,7 +20,7 @@ namespace RUSUNAWAAA.View.Umum
         private List<MediaVirtual> _semuaMedia;
 
         private int _halamanSaatIni = 1;
-        private readonly int _itemPerHalaman = 3;   
+        private readonly int _itemPerHalaman = 3;
         public Virtual_Tour_Umum()
         {
             InitializeComponent();
@@ -95,12 +96,12 @@ namespace RUSUNAWAAA.View.Umum
                 }
                 else
                 {
-                    picbox.Image = null; 
+                    picbox.Image = null;
                 }
             }
             else
             {
-               
+
                 picbox.Visible = false;
                 label.Visible = false;
             }
@@ -138,6 +139,12 @@ namespace RUSUNAWAAA.View.Umum
         private void ToKontakLokasi_UM(object sender, EventArgs e)
         {
             var command = new NavigateToFormCommand<Kontaklokasi_Umum>(this);
+            command.Execute();
+        }
+
+        private void ToMasuk_Click(object sender, EventArgs e)
+        {
+            var command = new NavigateToFormCommand<Loginss>(this);
             command.Execute();
         }
     }

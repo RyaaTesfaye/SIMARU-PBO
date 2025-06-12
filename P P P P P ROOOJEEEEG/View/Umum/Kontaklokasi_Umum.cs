@@ -1,4 +1,5 @@
 ﻿using RUSUNAWAAA.Utils;
+using RUSUNAWAAA.View.Login;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -32,13 +33,13 @@ namespace RUSUNAWAAA.View.Umum
                 var processInfo = new System.Diagnostics.ProcessStartInfo
                 {
                     FileName = url,
-                    UseShellExecute = true 
+                    UseShellExecute = true
                 };
                 System.Diagnostics.Process.Start(processInfo);
             }
             catch (Exception ex)
             {
-  
+
                 MessageBox.Show("Tidak dapat membuka link. Pastikan Anda terhubung ke internet. Error: " + ex.Message);
             }
         }
@@ -102,7 +103,12 @@ namespace RUSUNAWAAA.View.Umum
                 MessageBox.Show("Tidak dapat membuka link. Pastikan Anda terhubung ke internet. Error: " + ex.Message);
             }
         }
-        
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            var command = new NavigateToFormCommand<Loginss>(this);
+            command.Execute();
+        }
     }
 }
 

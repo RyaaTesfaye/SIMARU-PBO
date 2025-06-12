@@ -13,6 +13,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using RUSUNAWAAA.Models;
 using RUSUNAWAAA.Utils;
+using RUSUNAWAAA.View.Umum;
 
 
 namespace RUSUNAWAAA.View.Login
@@ -120,6 +121,12 @@ namespace RUSUNAWAAA.View.Login
             ShowAllLoginControls();
             textUsername.Text = "";
             textPassword.Text = "";
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var command = new NavigateToFormCommand<Dashboard_umum>(this);
+            command.Execute();
         }
     }
 }
