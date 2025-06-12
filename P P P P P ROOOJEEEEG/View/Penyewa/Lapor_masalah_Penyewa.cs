@@ -18,6 +18,9 @@ namespace RUSUNAWAAA.View.Penyewa
         public Lapor_Masalah_Penyewa()
         {
             InitializeComponent();
+            UIhelper.MakePanelRound(panel9, 20);
+            UIhelper.MakePanelRound(panel10, 20);
+            UIhelper.MakePanelRound(panel11, 20);
         }
         private void LaporMasalah_Load(object sender, EventArgs e)
         {

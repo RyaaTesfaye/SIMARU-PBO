@@ -37,6 +37,7 @@
             label35 = new Label();
             pictureBox21 = new PictureBox();
             panel31 = new Panel();
+            pictureBox13 = new PictureBox();
             panel32 = new Panel();
             label32 = new Label();
             pictureBox18 = new PictureBox();
@@ -99,13 +100,13 @@
             label9 = new Label();
             label23 = new Label();
             label6 = new Label();
-            pictureBox13 = new PictureBox();
             panel1.SuspendLayout();
             panel33.SuspendLayout();
             panel34.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox20).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox21).BeginInit();
             panel31.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
             panel32.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
             panel29.SuspendLayout();
@@ -140,7 +141,6 @@
             panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox15).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -243,6 +243,17 @@
             panel31.Size = new Size(240, 50);
             panel31.TabIndex = 9;
             panel31.Click += ToEditVirtualTour_AD;
+            // 
+            // pictureBox13
+            // 
+            pictureBox13.Image = Properties.Resources.Virtual_tour;
+            pictureBox13.Location = new Point(10, 10);
+            pictureBox13.Name = "pictureBox13";
+            pictureBox13.Size = new Size(25, 25);
+            pictureBox13.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox13.TabIndex = 12;
+            pictureBox13.TabStop = false;
+            pictureBox13.Click += ToEditVirtualTour_AD;
             // 
             // panel32
             // 
@@ -950,17 +961,6 @@
             label6.TabIndex = 4;
             label6.Text = "Daftar Keluhan";
             // 
-            // pictureBox13
-            // 
-            pictureBox13.Image = Properties.Resources.Virtual_tour;
-            pictureBox13.Location = new Point(10, 10);
-            pictureBox13.Name = "pictureBox13";
-            pictureBox13.Size = new Size(25, 25);
-            pictureBox13.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox13.TabIndex = 12;
-            pictureBox13.TabStop = false;
-            pictureBox13.Click += ToEditVirtualTour_AD;
-            // 
             // Daftar_Keluhan_Admin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -984,6 +984,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox21).EndInit();
             panel31.ResumeLayout(false);
             panel31.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
             panel32.ResumeLayout(false);
             panel32.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).EndInit();
@@ -1031,7 +1032,6 @@
             panel12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox15).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
             ResumeLayout(false);
         }
 

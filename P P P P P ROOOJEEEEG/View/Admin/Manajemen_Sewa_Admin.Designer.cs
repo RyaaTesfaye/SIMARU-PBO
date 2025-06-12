@@ -37,6 +37,7 @@
             label35 = new Label();
             pictureBox21 = new PictureBox();
             panel31 = new Panel();
+            pictureBox14 = new PictureBox();
             panel32 = new Panel();
             label32 = new Label();
             pictureBox18 = new PictureBox();
@@ -98,13 +99,13 @@
             pictureBox7 = new PictureBox();
             pictureBox8 = new PictureBox();
             panel7 = new Panel();
-            pictureBox14 = new PictureBox();
             panel1.SuspendLayout();
             panel33.SuspendLayout();
             panel34.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox20).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox21).BeginInit();
             panel31.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
             panel32.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
             panel29.SuspendLayout();
@@ -140,7 +141,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -243,6 +243,17 @@
             panel31.Size = new Size(240, 50);
             panel31.TabIndex = 9;
             panel31.Click += ToEditVirtualTour_AD;
+            // 
+            // pictureBox14
+            // 
+            pictureBox14.Image = Properties.Resources.Virtual_tour;
+            pictureBox14.Location = new Point(10, 10);
+            pictureBox14.Name = "pictureBox14";
+            pictureBox14.Size = new Size(25, 25);
+            pictureBox14.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox14.TabIndex = 10;
+            pictureBox14.TabStop = false;
+            pictureBox14.Click += ToEditVirtualTour_AD;
             // 
             // panel32
             // 
@@ -673,7 +684,7 @@
             // pictureBox22
             // 
             pictureBox22.Image = Properties.Resources.Ijo_kecil;
-            pictureBox22.Location = new Point(16, 29);
+            pictureBox22.Location = new Point(16, 31);
             pictureBox22.Name = "pictureBox22";
             pictureBox22.Size = new Size(10, 10);
             pictureBox22.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -726,7 +737,7 @@
             label24.AutoSize = true;
             label24.Font = new Font("Inter SemiBold", 7F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label24.ForeColor = Color.FromArgb(139, 140, 142);
-            label24.Location = new Point(29, 27);
+            label24.Location = new Point(29, 29);
             label24.Name = "label24";
             label24.Size = new Size(86, 17);
             label24.TabIndex = 10;
@@ -737,7 +748,7 @@
             label7.AutoSize = true;
             label7.Font = new Font("Inter", 10F, FontStyle.Bold);
             label7.ForeColor = Color.White;
-            label7.Location = new Point(6, 2);
+            label7.Location = new Point(6, 4);
             label7.Name = "label7";
             label7.Size = new Size(125, 24);
             label7.TabIndex = 7;
@@ -943,17 +954,6 @@
             panel7.Size = new Size(1182, 70);
             panel7.TabIndex = 2;
             // 
-            // pictureBox14
-            // 
-            pictureBox14.Image = Properties.Resources.Virtual_tour;
-            pictureBox14.Location = new Point(10, 10);
-            pictureBox14.Name = "pictureBox14";
-            pictureBox14.Size = new Size(25, 25);
-            pictureBox14.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox14.TabIndex = 10;
-            pictureBox14.TabStop = false;
-            pictureBox14.Click += ToEditVirtualTour_AD;
-            // 
             // Manajemen_Sewa_Admin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -977,6 +977,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox21).EndInit();
             panel31.ResumeLayout(false);
             panel31.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
             panel32.ResumeLayout(false);
             panel32.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).EndInit();
@@ -1024,7 +1025,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
             ResumeLayout(false);
         }
 

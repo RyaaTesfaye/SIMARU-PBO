@@ -37,6 +37,7 @@
             label35 = new Label();
             pictureBox21 = new PictureBox();
             panel31 = new Panel();
+            pictureBox14 = new PictureBox();
             panel32 = new Panel();
             label32 = new Label();
             pictureBox18 = new PictureBox();
@@ -79,6 +80,7 @@
             panel12 = new Panel();
             panel11 = new Panel();
             pictureBox12 = new PictureBox();
+            panel16 = new Panel();
             pictureBox13 = new PictureBox();
             pictureBox11 = new PictureBox();
             pictureBox22 = new PictureBox();
@@ -89,18 +91,17 @@
             label7 = new Label();
             panel15 = new Panel();
             flowLayoutPanelAturan = new FlowLayoutPanel();
-            panel16 = new Panel();
             panel13 = new Panel();
             label14 = new Label();
             panel9 = new Panel();
             label6 = new Label();
-            pictureBox14 = new PictureBox();
             panel1.SuspendLayout();
             panel33.SuspendLayout();
             panel34.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox20).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox21).BeginInit();
             panel31.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
             panel32.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
             panel29.SuspendLayout();
@@ -135,7 +136,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox22).BeginInit();
             panel14.SuspendLayout();
             panel15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -238,6 +238,17 @@
             panel31.Size = new Size(240, 50);
             panel31.TabIndex = 9;
             panel31.Click += ToEditVirtualTour_AD;
+            // 
+            // pictureBox14
+            // 
+            pictureBox14.Image = Properties.Resources.Virtual_tour;
+            pictureBox14.Location = new Point(10, 10);
+            pictureBox14.Name = "pictureBox14";
+            pictureBox14.Size = new Size(25, 25);
+            pictureBox14.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox14.TabIndex = 12;
+            pictureBox14.TabStop = false;
+            pictureBox14.Click += ToEditVirtualTour_AD;
             // 
             // panel32
             // 
@@ -688,7 +699,7 @@
             panel12.Controls.Add(panel13);
             panel12.Location = new Point(5, 54);
             panel12.Name = "panel12";
-            panel12.Padding = new Padding(50, 50, 50, 50);
+            panel12.Padding = new Padding(50);
             panel12.Size = new Size(1165, 662);
             panel12.TabIndex = 5;
             // 
@@ -696,6 +707,7 @@
             // 
             panel11.BackColor = Color.FromArgb(37, 39, 48);
             panel11.Controls.Add(pictureBox12);
+            panel11.Controls.Add(panel16);
             panel11.Controls.Add(pictureBox13);
             panel11.Controls.Add(pictureBox11);
             panel11.Controls.Add(pictureBox22);
@@ -705,7 +717,7 @@
             panel11.Controls.Add(panel15);
             panel11.Location = new Point(0, 0);
             panel11.Name = "panel11";
-            panel11.Padding = new Padding(50, 50, 50, 50);
+            panel11.Padding = new Padding(50);
             panel11.Size = new Size(1165, 662);
             panel11.TabIndex = 8;
             // 
@@ -721,6 +733,14 @@
             pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox12.TabIndex = 49;
             pictureBox12.TabStop = false;
+            // 
+            // panel16
+            // 
+            panel16.BackColor = Color.FromArgb(139, 140, 142);
+            panel16.Location = new Point(6, 103);
+            panel16.Name = "panel16";
+            panel16.Size = new Size(1149, 3);
+            panel16.TabIndex = 18;
             // 
             // pictureBox13
             // 
@@ -751,7 +771,7 @@
             // pictureBox22
             // 
             pictureBox22.Image = Properties.Resources.Ijo_kecil;
-            pictureBox22.Location = new Point(16, 27);
+            pictureBox22.Location = new Point(16, 32);
             pictureBox22.Name = "pictureBox22";
             pictureBox22.Size = new Size(10, 10);
             pictureBox22.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -765,7 +785,7 @@
             panel14.Controls.Add(label23);
             panel14.Location = new Point(6, 58);
             panel14.Name = "panel14";
-            panel14.Size = new Size(1149, 37);
+            panel14.Size = new Size(1149, 62);
             panel14.TabIndex = 32;
             // 
             // label9
@@ -795,7 +815,7 @@
             label24.AutoSize = true;
             label24.Font = new Font("Microsoft Sans Serif", 7F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label24.ForeColor = Color.FromArgb(139, 140, 142);
-            label24.Location = new Point(29, 25);
+            label24.Location = new Point(29, 30);
             label24.Name = "label24";
             label24.Size = new Size(96, 15);
             label24.TabIndex = 45;
@@ -806,7 +826,7 @@
             label7.AutoSize = true;
             label7.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold);
             label7.ForeColor = Color.White;
-            label7.Location = new Point(6, 0);
+            label7.Location = new Point(6, 5);
             label7.Name = "label7";
             label7.Size = new Size(129, 20);
             label7.TabIndex = 44;
@@ -817,36 +837,27 @@
             panel15.AutoScroll = true;
             panel15.BackColor = Color.FromArgb(23, 24, 30);
             panel15.Controls.Add(flowLayoutPanelAturan);
-            panel15.Controls.Add(panel16);
             panel15.Location = new Point(6, 95);
             panel15.Name = "panel15";
-            panel15.Padding = new Padding(50, 50, 50, 50);
+            panel15.Padding = new Padding(50);
             panel15.Size = new Size(1149, 550);
             panel15.TabIndex = 6;
             // 
             // flowLayoutPanelAturan
             // 
             flowLayoutPanelAturan.AutoScroll = true;
-            flowLayoutPanelAturan.Location = new Point(0, 2);
-            flowLayoutPanelAturan.Margin = new Padding(2, 2, 2, 2);
+            flowLayoutPanelAturan.Location = new Point(0, -15);
+            flowLayoutPanelAturan.Margin = new Padding(2);
             flowLayoutPanelAturan.Name = "flowLayoutPanelAturan";
-            flowLayoutPanelAturan.Size = new Size(1149, 548);
+            flowLayoutPanelAturan.Size = new Size(1149, 565);
             flowLayoutPanelAturan.TabIndex = 19;
-            // 
-            // panel16
-            // 
-            panel16.BackColor = Color.FromArgb(139, 140, 142);
-            panel16.Location = new Point(0, 0);
-            panel16.Name = "panel16";
-            panel16.Size = new Size(1149, 3);
-            panel16.TabIndex = 18;
             // 
             // panel13
             // 
             panel13.BackColor = Color.FromArgb(37, 39, 48);
             panel13.Location = new Point(1, 0);
             panel13.Name = "panel13";
-            panel13.Padding = new Padding(50, 50, 50, 50);
+            panel13.Padding = new Padding(50);
             panel13.Size = new Size(1165, 662);
             panel13.TabIndex = 6;
             // 
@@ -866,7 +877,7 @@
             panel9.BackColor = Color.FromArgb(37, 39, 48);
             panel9.Location = new Point(5, 54);
             panel9.Name = "panel9";
-            panel9.Padding = new Padding(50, 50, 50, 50);
+            panel9.Padding = new Padding(50);
             panel9.Size = new Size(1165, 662);
             panel9.TabIndex = 5;
             // 
@@ -880,17 +891,6 @@
             label6.Size = new Size(293, 37);
             label6.TabIndex = 4;
             label6.Text = "Pengelolaan Akun";
-            // 
-            // pictureBox14
-            // 
-            pictureBox14.Image = Properties.Resources.Virtual_tour;
-            pictureBox14.Location = new Point(10, 10);
-            pictureBox14.Name = "pictureBox14";
-            pictureBox14.Size = new Size(25, 25);
-            pictureBox14.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox14.TabIndex = 12;
-            pictureBox14.TabStop = false;
-            pictureBox14.Click += ToEditVirtualTour_AD;
             // 
             // Kelola_Aturan_Admin
             // 
@@ -914,6 +914,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox21).EndInit();
             panel31.ResumeLayout(false);
             panel31.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
             panel32.ResumeLayout(false);
             panel32.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).EndInit();
@@ -961,7 +962,6 @@
             panel14.ResumeLayout(false);
             panel14.PerformLayout();
             panel15.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
             ResumeLayout(false);
         }
 

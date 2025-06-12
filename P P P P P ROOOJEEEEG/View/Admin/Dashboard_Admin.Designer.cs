@@ -856,7 +856,7 @@ namespace RUSUNAWAAA.View.Admin
             // pictureBox12
             // 
             pictureBox12.ErrorImage = null;
-            pictureBox12.Location = new Point(14, 36);
+            pictureBox12.Location = new Point(15, 36);
             pictureBox12.Name = "pictureBox12";
             pictureBox12.Size = new Size(217, 97);
             pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;

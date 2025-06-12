@@ -37,6 +37,7 @@
             label35 = new Label();
             pictureBox21 = new PictureBox();
             panel31 = new Panel();
+            pictureBox14 = new PictureBox();
             panel28 = new Panel();
             panel32 = new Panel();
             label32 = new Label();
@@ -99,13 +100,13 @@
             label9 = new Label();
             label8 = new Label();
             label6 = new Label();
-            pictureBox14 = new PictureBox();
             panel1.SuspendLayout();
             panel33.SuspendLayout();
             panel34.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox20).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox21).BeginInit();
             panel31.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
             panel32.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
             panel29.SuspendLayout();
@@ -138,7 +139,6 @@
             panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnNextPage).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnPrevPage).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -241,6 +241,16 @@
             panel31.Name = "panel31";
             panel31.Size = new Size(240, 50);
             panel31.TabIndex = 9;
+            // 
+            // pictureBox14
+            // 
+            pictureBox14.Image = Properties.Resources.Virtual_tour;
+            pictureBox14.Location = new Point(10, 10);
+            pictureBox14.Name = "pictureBox14";
+            pictureBox14.Size = new Size(25, 25);
+            pictureBox14.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox14.TabIndex = 11;
+            pictureBox14.TabStop = false;
             // 
             // panel28
             // 
@@ -765,7 +775,7 @@
             panel11.Controls.Add(label10);
             panel11.Controls.Add(label9);
             panel11.Controls.Add(label8);
-            panel11.Location = new Point(1, 64);
+            panel11.Location = new Point(8, 64);
             panel11.Name = "panel11";
             panel11.Padding = new Padding(50);
             panel11.Size = new Size(1149, 589);
@@ -946,16 +956,6 @@
             label6.TabIndex = 4;
             label6.Text = "Edit Virtual Tour";
             // 
-            // pictureBox14
-            // 
-            pictureBox14.Image = Properties.Resources.Virtual_tour;
-            pictureBox14.Location = new Point(10, 10);
-            pictureBox14.Name = "pictureBox14";
-            pictureBox14.Size = new Size(25, 25);
-            pictureBox14.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox14.TabIndex = 11;
-            pictureBox14.TabStop = false;
-            // 
             // Edit_Virtual_Tour_Admin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -979,6 +979,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox21).EndInit();
             panel31.ResumeLayout(false);
             panel31.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
             panel32.ResumeLayout(false);
             panel32.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).EndInit();
@@ -1023,7 +1024,6 @@
             panel11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)btnNextPage).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnPrevPage).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
             ResumeLayout(false);
         }
 

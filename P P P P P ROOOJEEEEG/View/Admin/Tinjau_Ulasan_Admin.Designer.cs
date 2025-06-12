@@ -37,6 +37,7 @@
             label35 = new Label();
             pictureBox21 = new PictureBox();
             panel31 = new Panel();
+            pictureBox30 = new PictureBox();
             panel32 = new Panel();
             label32 = new Label();
             pictureBox18 = new PictureBox();
@@ -134,13 +135,13 @@
             label39 = new Label();
             label40 = new Label();
             label6 = new Label();
-            pictureBox30 = new PictureBox();
             panel1.SuspendLayout();
             panel33.SuspendLayout();
             panel34.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox20).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox21).BeginInit();
             panel31.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox30).BeginInit();
             panel32.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
             panel29.SuspendLayout();
@@ -193,7 +194,6 @@
             panel19.SuspendLayout();
             panel18.SuspendLayout();
             panel35.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox30).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -296,6 +296,17 @@
             panel31.Size = new Size(240, 50);
             panel31.TabIndex = 9;
             panel31.Click += ToEditVirtualTour_AD;
+            // 
+            // pictureBox30
+            // 
+            pictureBox30.Image = Properties.Resources.Virtual_tour;
+            pictureBox30.Location = new Point(10, 10);
+            pictureBox30.Name = "pictureBox30";
+            pictureBox30.Size = new Size(25, 25);
+            pictureBox30.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox30.TabIndex = 10;
+            pictureBox30.TabStop = false;
+            pictureBox30.Click += ToEditVirtualTour_AD;
             // 
             // panel32
             // 
@@ -758,7 +769,7 @@
             panel11.Controls.Add(label17);
             panel11.Controls.Add(label9);
             panel11.Controls.Add(label8);
-            panel11.Location = new Point(585, 11);
+            panel11.Location = new Point(585, 24);
             panel11.Name = "panel11";
             panel11.Size = new Size(548, 607);
             panel11.TabIndex = 12;
@@ -1039,7 +1050,7 @@
             panel14.BackColor = Color.FromArgb(23, 24, 30);
             panel14.Controls.Add(panel15);
             panel14.Controls.Add(panel17);
-            panel14.Location = new Point(44, 11);
+            panel14.Location = new Point(44, 25);
             panel14.Name = "panel14";
             panel14.Size = new Size(500, 607);
             panel14.TabIndex = 11;
@@ -1385,17 +1396,6 @@
             label6.TabIndex = 4;
             label6.Text = "Tinjau Ulasan";
             // 
-            // pictureBox30
-            // 
-            pictureBox30.Image = Properties.Resources.Virtual_tour;
-            pictureBox30.Location = new Point(10, 10);
-            pictureBox30.Name = "pictureBox30";
-            pictureBox30.Size = new Size(25, 25);
-            pictureBox30.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox30.TabIndex = 10;
-            pictureBox30.TabStop = false;
-            pictureBox30.Click += ToEditVirtualTour_AD;
-            // 
             // Tinjau_Ulasan_Admin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -1418,6 +1418,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox21).EndInit();
             panel31.ResumeLayout(false);
             panel31.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox30).EndInit();
             panel32.ResumeLayout(false);
             panel32.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).EndInit();
@@ -1485,7 +1486,6 @@
             panel19.ResumeLayout(false);
             panel18.ResumeLayout(false);
             panel35.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox30).EndInit();
             ResumeLayout(false);
         }
 

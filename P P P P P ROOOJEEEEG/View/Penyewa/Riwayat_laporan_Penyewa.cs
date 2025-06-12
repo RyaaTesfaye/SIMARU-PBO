@@ -16,6 +16,8 @@ namespace RUSUNAWAAA.View.Penyewa
         public Riwayat_laporan_Penyewa()
         {
             InitializeComponent();
+            UIhelper.MakePanelRound(panel9, 20);
+            UIhelper.MakePanelRound(panel10, 20);
         }
 
         private void ToDashboard_PE(object sender, EventArgs e)

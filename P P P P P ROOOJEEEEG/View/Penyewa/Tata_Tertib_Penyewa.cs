@@ -16,6 +16,7 @@ namespace RUSUNAWAAA.View.Penyewa
         public Tata_Tertib_Penyewa()
         {
             InitializeComponent();
+            UIhelper.MakePanelRound(panel9, 20);
         }
 
         private void ToDashboard_PE(object sender, EventArgs e)

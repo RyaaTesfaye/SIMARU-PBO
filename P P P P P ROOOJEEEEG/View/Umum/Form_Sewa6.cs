@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using RUSUNAWAAA.Models;
+using RUSUNAWAAA.Utils;
 
 namespace RUSUNAWAAA.View.Umum
 {
@@ -18,6 +19,8 @@ namespace RUSUNAWAAA.View.Umum
         public Form_Sewa6()
         {
             InitializeComponent();
+            UIhelper.MakePanelRound(panel12, 20);
+            UIhelper.MakeRoundedButton(button4, 10);
         }
         public void MuatData(Pengajuan data)
         {

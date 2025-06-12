@@ -23,6 +23,7 @@ namespace RUSUNAWAAA.View.Umum
             UIhelper.MakePanelRound(panel12, 20);
             UIhelper.MakePanelRound(panel13, 20);
             UIhelper.MakePanelRound(panel15, 20);
+            UIhelper.MakePanelRound(panel16, 20);
         }
 
         private void label20_Click(object sender, EventArgs e)

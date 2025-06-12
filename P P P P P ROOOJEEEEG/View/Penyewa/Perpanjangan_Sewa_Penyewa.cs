@@ -17,6 +17,7 @@ namespace RUSUNAWAAA.View.Penyewa
         public Perpanjangan_Sewa_Penyewa()
         {
             InitializeComponent();
+            UIhelper.MakePanelRound(panel9, 20);
         }
 
         private void ToDashboard_PE(object sender, EventArgs e)

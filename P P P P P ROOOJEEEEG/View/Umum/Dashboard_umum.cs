@@ -33,10 +33,10 @@ namespace RUSUNAWAAA.View.Umum
             UIhelper.MakePanelRound(panel24, 20);
             UIhelper.MakePanelRound(panel25, 20);
             UIhelper.MakePanelRound(panel26, 3);
-            UIhelper.MakeRoundedButton(button1, 3);
-            UIhelper.MakeRoundedButton(button5, 3);
-            UIhelper.MakeRoundedButton(button4, 3);
-            UIhelper.MakeRoundedButton(button3, 3);
+            UIhelper.MakeRoundedButton(button1, 10);
+            UIhelper.MakeRoundedButton(button5, 10);
+            UIhelper.MakeRoundedButton(button4, 10);
+            UIhelper.MakeRoundedButton(button3, 10);
         }
 
         private void label3_Click(object sender, EventArgs e)

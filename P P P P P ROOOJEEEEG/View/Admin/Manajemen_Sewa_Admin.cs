@@ -31,6 +31,8 @@ namespace RUSUNAWAAA.View.Admin
         public Manajemen_Sewa_Admin()
         {
             InitializeComponent();
+            UIhelper.MakePanelRound(panel10, 20);
+            UIhelper.MakePanelRound(panel11, 20);
         }
 
         private void ToDashboard_AD(object sender, EventArgs e)

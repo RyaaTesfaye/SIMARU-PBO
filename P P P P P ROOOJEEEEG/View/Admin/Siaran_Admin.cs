@@ -17,6 +17,8 @@ namespace RUSUNAWAAA.View.Admin
         public Siaran_Admin()
         {
             InitializeComponent();
+            UIhelper.MakePanelRound(panel9, 20);
+            UIhelper.MakePanelRound(panel10, 20);
         }
 
         private void ToDashboard_AD(object sender, EventArgs e)

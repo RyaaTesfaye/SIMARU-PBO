@@ -723,7 +723,7 @@
             label24.AutoSize = true;
             label24.Font = new Font("Inter SemiBold", 7F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label24.ForeColor = Color.FromArgb(139, 140, 142);
-            label24.Location = new Point(8, 27);
+            label24.Location = new Point(8, 29);
             label24.Name = "label24";
             label24.Size = new Size(85, 17);
             label24.TabIndex = 27;
@@ -734,7 +734,7 @@
             label7.AutoSize = true;
             label7.Font = new Font("Inter", 10F, FontStyle.Bold);
             label7.ForeColor = Color.White;
-            label7.Location = new Point(8, 1);
+            label7.Location = new Point(8, 3);
             label7.Name = "label7";
             label7.Size = new Size(125, 24);
             label7.TabIndex = 26;

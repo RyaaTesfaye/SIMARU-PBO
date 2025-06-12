@@ -485,7 +485,6 @@
             // 
             panel10.BackColor = Color.FromArgb(37, 39, 48);
             panel10.Controls.Add(panel6);
-            panel10.Controls.Add(label34);
             panel10.Controls.Add(label33);
             panel10.Controls.Add(label32);
             panel10.Controls.Add(panel25);
@@ -502,6 +501,7 @@
             // 
             panel6.BackColor = Color.FromArgb(23, 24, 30);
             panel6.Controls.Add(pictureBox6);
+            panel6.Controls.Add(label34);
             panel6.Location = new Point(878, 43);
             panel6.Name = "panel6";
             panel6.Size = new Size(250, 303);
@@ -522,7 +522,7 @@
             label34.AutoSize = true;
             label34.Font = new Font("Inter", 10F, FontStyle.Bold);
             label34.ForeColor = Color.White;
-            label34.Location = new Point(960, 61);
+            label34.Location = new Point(43, 14);
             label34.Name = "label34";
             label34.Size = new Size(183, 24);
             label34.TabIndex = 11;
@@ -566,7 +566,7 @@
             // 
             pictureBox13.ErrorImage = null;
             pictureBox13.Image = Properties.Resources.listharga;
-            pictureBox13.Location = new Point(14, 36);
+            pictureBox13.Location = new Point(17, 36);
             pictureBox13.Name = "pictureBox13";
             pictureBox13.Size = new Size(217, 97);
             pictureBox13.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -611,7 +611,7 @@
             button4.FlatStyle = FlatStyle.Flat;
             button4.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button4.ForeColor = Color.White;
-            button4.Location = new Point(0, 3);
+            button4.Location = new Point(2, 3);
             button4.Name = "button4";
             button4.Size = new Size(217, 39);
             button4.TabIndex = 0;
@@ -690,7 +690,7 @@
             button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button3.ForeColor = Color.White;
-            button3.Location = new Point(0, 3);
+            button3.Location = new Point(3, 3);
             button3.Name = "button3";
             button3.Size = new Size(217, 39);
             button3.TabIndex = 0;
@@ -1134,6 +1134,7 @@
             panel10.ResumeLayout(false);
             panel10.PerformLayout();
             panel6.ResumeLayout(false);
+            panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             panel25.ResumeLayout(false);
             panel25.PerformLayout();

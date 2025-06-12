@@ -16,6 +16,20 @@ namespace RUSUNAWAAA.View.Penyewa
         public Dashboard_Penyewa()
         {
             InitializeComponent();
+            UIhelper.MakePanelRound(panel6, 20);
+            UIhelper.MakePanelRound(panel9, 20);
+            UIhelper.MakePanelRound(panel10, 20);
+            UIhelper.MakePanelRound(panel11, 20);
+            UIhelper.MakePanelRound(panel12, 20);
+            UIhelper.MakePanelRound(panel13, 20);
+            UIhelper.MakePanelRound(panel14, 20);
+            UIhelper.MakePanelRound(panel15, 20);
+            UIhelper.MakePanelRound(panel16, 20);
+            UIhelper.MakePanelRound(panel25, 20);
+            UIhelper.MakeRoundedButton(button1, 10);
+            UIhelper.MakeRoundedButton(button2, 10);
+            UIhelper.MakeRoundedButton(button3, 10);
+            UIhelper.MakeRoundedButton(button4, 10);
         }
 
         private void ToBeriUlasan_PE(object sender, EventArgs e)
