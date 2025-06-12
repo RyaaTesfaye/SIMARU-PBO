@@ -222,7 +222,7 @@
             // 
             // pictureBox21
             // 
-            pictureBox21.Image = Properties.Resources.refresh;
+            pictureBox21.Image = (Image)resources.GetObject("pictureBox21.Image");
             pictureBox21.Location = new Point(10, 10);
             pictureBox21.Name = "pictureBox21";
             pictureBox21.Size = new Size(25, 25);
@@ -358,7 +358,7 @@
             // 
             // pictureBox16
             // 
-            pictureBox16.Image = Properties.Resources.refresh;
+            pictureBox16.Image = (Image)resources.GetObject("pictureBox16.Image");
             pictureBox16.Location = new Point(10, 10);
             pictureBox16.Name = "pictureBox16";
             pictureBox16.Size = new Size(25, 25);
@@ -393,7 +393,7 @@
             // 
             // pictureBox10
             // 
-            pictureBox10.Image = Properties.Resources.star;
+            pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
             pictureBox10.Location = new Point(10, 10);
             pictureBox10.Name = "pictureBox10";
             pictureBox10.Size = new Size(25, 25);
@@ -428,7 +428,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.laporan;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(10, 10);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(25, 25);
@@ -505,7 +505,7 @@
             // 
             // pictureBox5
             // 
-            pictureBox5.Image = Properties.Resources.refresh;
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
             pictureBox5.Location = new Point(10, 10);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(25, 25);

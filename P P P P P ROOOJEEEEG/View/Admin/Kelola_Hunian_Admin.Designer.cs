@@ -86,6 +86,7 @@
             label8 = new Label();
             label9 = new Label();
             label23 = new Label();
+            panel16 = new Panel();
             label24 = new Label();
             label7 = new Label();
             panel14 = new Panel();
@@ -93,7 +94,6 @@
             label10 = new Label();
             label17 = new Label();
             label16 = new Label();
-            panel16 = new Panel();
             label6 = new Label();
             panel1.SuspendLayout();
             panel33.SuspendLayout();
@@ -215,7 +215,7 @@
             // 
             // pictureBox21
             // 
-            pictureBox21.Image = Properties.Resources.refresh;
+            pictureBox21.Image = (Image)resources.GetObject("pictureBox21.Image");
             pictureBox21.Location = new Point(10, 10);
             pictureBox21.Name = "pictureBox21";
             pictureBox21.Size = new Size(25, 25);
@@ -351,7 +351,7 @@
             // 
             // pictureBox16
             // 
-            pictureBox16.Image = Properties.Resources.refresh;
+            pictureBox16.Image = (Image)resources.GetObject("pictureBox16.Image");
             pictureBox16.Location = new Point(10, 10);
             pictureBox16.Name = "pictureBox16";
             pictureBox16.Size = new Size(25, 25);
@@ -386,7 +386,7 @@
             // 
             // pictureBox10
             // 
-            pictureBox10.Image = Properties.Resources.star;
+            pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
             pictureBox10.Location = new Point(10, 10);
             pictureBox10.Name = "pictureBox10";
             pictureBox10.Size = new Size(25, 25);
@@ -421,7 +421,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.laporan;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(10, 10);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(25, 25);
@@ -491,7 +491,7 @@
             // 
             // pictureBox5
             // 
-            pictureBox5.Image = Properties.Resources.refresh;
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
             pictureBox5.Location = new Point(10, 10);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(25, 25);
@@ -798,6 +798,14 @@
             label23.TabIndex = 12;
             label23.Text = "ID";
             // 
+            // panel16
+            // 
+            panel16.BackColor = Color.FromArgb(139, 140, 142);
+            panel16.Location = new Point(0, 38);
+            panel16.Name = "panel16";
+            panel16.Size = new Size(1149, 3);
+            panel16.TabIndex = 18;
+            // 
             // label24
             // 
             label24.AutoSize = true;
@@ -881,14 +889,6 @@
             label16.Size = new Size(39, 24);
             label16.TabIndex = 19;
             label16.Text = "001";
-            // 
-            // panel16
-            // 
-            panel16.BackColor = Color.FromArgb(139, 140, 142);
-            panel16.Location = new Point(0, 38);
-            panel16.Name = "panel16";
-            panel16.Size = new Size(1149, 3);
-            panel16.TabIndex = 18;
             // 
             // label6
             // 

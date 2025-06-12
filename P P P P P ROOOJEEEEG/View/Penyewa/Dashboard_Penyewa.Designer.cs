@@ -502,7 +502,7 @@
             panel6.BackColor = Color.FromArgb(23, 24, 30);
             panel6.Controls.Add(pictureBox6);
             panel6.Controls.Add(label34);
-            panel6.Location = new Point(878, 43);
+            panel6.Location = new Point(878, 40);
             panel6.Name = "panel6";
             panel6.Size = new Size(250, 303);
             panel6.TabIndex = 12;
@@ -510,7 +510,7 @@
             // pictureBox6
             // 
             pictureBox6.Image = Properties.Resources.Kaming_sun;
-            pictureBox6.Location = new Point(3, 0);
+            pictureBox6.Location = new Point(3, 1);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(244, 300);
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;

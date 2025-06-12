@@ -275,7 +275,7 @@
             // 
             // pictureBox21
             // 
-            pictureBox21.Image = Properties.Resources.refresh;
+            pictureBox21.Image = (Image)resources.GetObject("pictureBox21.Image");
             pictureBox21.Location = new Point(10, 10);
             pictureBox21.Name = "pictureBox21";
             pictureBox21.Size = new Size(25, 25);
@@ -411,7 +411,7 @@
             // 
             // pictureBox16
             // 
-            pictureBox16.Image = Properties.Resources.refresh;
+            pictureBox16.Image = (Image)resources.GetObject("pictureBox16.Image");
             pictureBox16.Location = new Point(10, 10);
             pictureBox16.Name = "pictureBox16";
             pictureBox16.Size = new Size(25, 25);
@@ -446,7 +446,7 @@
             // 
             // pictureBox10
             // 
-            pictureBox10.Image = Properties.Resources.star;
+            pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
             pictureBox10.Location = new Point(10, 10);
             pictureBox10.Name = "pictureBox10";
             pictureBox10.Size = new Size(25, 25);
@@ -488,7 +488,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.laporan;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(10, 10);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(25, 25);
@@ -511,7 +511,7 @@
             // 
             panel6.BackColor = Color.Transparent;
             panel6.Controls.Add(button2);
-            panel6.Location = new Point(0, 714);
+            panel6.Location = new Point(11, 714);
             panel6.Name = "panel6";
             panel6.Size = new Size(220, 45);
             panel6.TabIndex = 4;
@@ -557,7 +557,7 @@
             // 
             // pictureBox5
             // 
-            pictureBox5.Image = Properties.Resources.refresh;
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
             pictureBox5.Location = new Point(10, 10);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(25, 25);
@@ -786,7 +786,7 @@
             panel13.Controls.Add(pictureBox22);
             panel13.Controls.Add(label23);
             panel13.Controls.Add(label24);
-            panel13.Location = new Point(16, 420);
+            panel13.Location = new Point(32, 420);
             panel13.Name = "panel13";
             panel13.Size = new Size(486, 160);
             panel13.TabIndex = 26;
@@ -898,7 +898,7 @@
             panel12.Controls.Add(pictureBox28);
             panel12.Controls.Add(label21);
             panel12.Controls.Add(label22);
-            panel12.Location = new Point(16, 239);
+            panel12.Location = new Point(32, 239);
             panel12.Name = "panel12";
             panel12.Size = new Size(486, 160);
             panel12.TabIndex = 25;
@@ -1003,7 +1003,7 @@
             label18.BackColor = Color.Transparent;
             label18.Font = new Font("Inter", 9F);
             label18.ForeColor = Color.White;
-            label18.Location = new Point(16, 180);
+            label18.Location = new Point(26, 180);
             label18.Name = "label18";
             label18.Size = new Size(231, 36);
             label18.TabIndex = 24;
@@ -1015,7 +1015,7 @@
             label17.BackColor = Color.Transparent;
             label17.Font = new Font("Inter", 9F);
             label17.ForeColor = Color.White;
-            label17.Location = new Point(332, 186);
+            label17.Location = new Point(357, 186);
             label17.Name = "label17";
             label17.Size = new Size(163, 25);
             label17.TabIndex = 23;
@@ -1027,7 +1027,7 @@
             label9.BackColor = Color.Transparent;
             label9.Font = new Font("Inter", 9F);
             label9.ForeColor = Color.White;
-            label9.Location = new Point(31, 73);
+            label9.Location = new Point(36, 73);
             label9.Name = "label9";
             label9.Size = new Size(479, 77);
             label9.TabIndex = 22;

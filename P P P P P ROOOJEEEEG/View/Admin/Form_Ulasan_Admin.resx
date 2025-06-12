@@ -117,6 +117,40 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBox14.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAFIAAAAkCAYAAAAaV21HAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAAAkFJREFUaEPtmoFRwzAMRTNCR2CEjsAIHYERugFsUDYoG3SEsgEjdARGEPdd/Zyi
+        S2jiKAGK3p0PYgXbvNpynGvTNE0jInsReclSVfZwSIkP5SKZDNwVmbDqg8k0isMUOZ8UGUSKDCJFBpEi
+        g0iRQaTIq4StiJxFZONjY/n3IkVkJyKfcuWjVmaKFHlTiaRK5iSRInLUsu2JPWvseu78Q0TInCqSXHxH
+        mmPAu62PQM+y6BNl5+MR9MhEX6PfP9SKBAcXW1okefLxKObInCMStLNjSKQm85MOCve0IlQQ6lAeTT3S
+        BOoOuqNiqRH8fm47CKZWZq1I7nL4WZZ4n0gV0kcrwgy81EGouQ+i7XUL/34J4MN1d1NmrchXbRxQQEek
+        W45lA9I6fghlNrs6SGO7R9OvlbnKu9OpMmtFohMsOYJ/zovkQDAAiGDhfVYU76XQzqDXypEeM1YymFKq
+        Req1FcA8RpE+13hsCti4WGc8PyGyJy0tMyNNnf/UKBLLH/gZydI+i0KOa+PCmMZXFambnOVbiSBCpM1x
+        gCKxWwPE7DJFGoBk5kjMRuZF1LMt3wdZVKQeKiw3JYLZIrUecohdslzuGAwegezsLTPSLKEyC83s9B+A
+        fVIYzFVzqJUIQkRqrO/xBzPJ50qIsDs2sc+XbOtk6iCYMxdMOsLdYo5EMElkLbp8IW30wIbQdpaWuOxZ
+        +x6JkAhSZL6PjCPfkP8iUmQQKTKIFBlEigwiRQZBkau8LL1X9LTV+dau/0pvlnGlSPwCHpCrTdH4LzkA
+        AAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="pictureBox13.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAFIAAAAkCAYAAAAaV21HAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAAApFJREFUaEPtmlt13EAMQBdCIBRCIZRBy6CBEAYpg5RBwiBlkDIohJRBIKjnzkqu
+        rB0/xh7vz+qeMx/2yPbMtSw/dk+n0+kkIg8i8iPbpvaAQ5P4qSwkzeCuyMRq7EzaKA5T5H5SZCdSZCdS
+        ZCdSZCd2ixSROxF5E5HPse+W2CVSJf6RMx8i8i3G3AqbRQaJxkuMuxU2iUyJlzSL1Neh96MkUh5E5LnS
+        eKc95DVWRL6449zF/jU0iTxaIqiwObrXYRG5d/vfdLJWi7yGRHAiuXkxQRofVViG97jNXq4mckLizxjX
+        AydyJIzj2YHDeiS86vh4DCNuJENr+qPWdRrxw+NaTST9uj/aV7+/GosiJyROxu9lRiQTgl9uHXIMy1hg
+        vKXWTYzfKN8Ro8iwzasfxxRrRNoEjLcY05NwaVtGmCSyzQSRZb9F5K8Twk3DuNd1L7qMGPqRZOs+NMaL
+        JBNN4nBCllgjsnZGH2NcL8LNBkm0oT6KyPfKNkhFALXUMJHDSXDxzMm+brOtF2mJw7FW18tFkXBNmTOX
+        9lAjySxdh7g4LgM5jHtY9vvzBJEGtXRVNsIqkTAh8znG7WVG5EhKuIx5/uP5M8aQbcb5d5X/Gcz2tJiR
+        /kXjyY9hjtUi4RoyayJ1sk/umEizyfu4iwx0l+qQYb4E6HKskRfZv0STSDhaZqiRNYq4SkYyeeqh1UQT
+        6eMYt8+4Ujcrd21OXNMNp1kk6IHiu3YXmTMiETR6Rgyx9JNp3JxgqImawf7kl325/tpzpD8Bi5f4JpFw
+        pMwWdBwli2JfRONWxbayWSQEmfk9cqtIUJn5hXyvyORMiuxEiuxEiuxEiuxEiuxEiuyEicw/mu5A35ZG
+        /9q1j53Z2lqR+A/WvzGrSlo0EwAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="label20.Text" xml:space="preserve">
     <value>Rusunawa Universitas Jember merupakan hunian yang sangat nyaman dan layak bagi para mahasiswa. Fasilitas yang disediakan cukup lengkap, mulai dari tempat tidur, lemari, meja belajar, hingga akses internet yang memadai. Lingkungannya bersih dan terawat, menciptakan suasana yang mendukung untuk belajar dan beristirahat. Keamanan juga terjaga dengan baik, sehingga penghuni merasa aman dan tenang selama tinggal di sana. Lokasinya strategis dan dekat dengan lingkungan kampus, membuat mobilitas menjadi lebih mudah. Pengelola rusunawa juga responsif terhadap kebutuhan dan keluhan penghuni. Secara keseluruhan, rusunawa ini sangat direkomendasikan bagi mahasiswa yang mencari tempat tinggal yang nyaman, aman, dan kondusif.</value>
   </data>

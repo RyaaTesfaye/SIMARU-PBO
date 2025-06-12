@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Ulasan_Admin));
             panel9 = new Panel();
-            pictureBox45 = new PictureBox();
             label4 = new Label();
             label6 = new Label();
             panel10 = new Panel();
+            pictureBox12 = new PictureBox();
             pictureBox11 = new PictureBox();
             pictureBox10 = new PictureBox();
             pictureBox8 = new PictureBox();
@@ -49,11 +49,11 @@
             pictureBox9 = new PictureBox();
             label1 = new Label();
             label20 = new Label();
-            pictureBox28 = new PictureBox();
-            pictureBox12 = new PictureBox();
+            pictureBox13 = new PictureBox();
+            pictureBox14 = new PictureBox();
             panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox45).BeginInit();
             panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
@@ -65,35 +65,23 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox28).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
             SuspendLayout();
             // 
             // panel9
             // 
             panel9.BackColor = Color.FromArgb(37, 39, 48);
-            panel9.Controls.Add(pictureBox45);
+            panel9.Controls.Add(pictureBox14);
+            panel9.Controls.Add(pictureBox13);
             panel9.Controls.Add(label4);
             panel9.Controls.Add(label6);
             panel9.Controls.Add(panel10);
-            panel9.Controls.Add(pictureBox28);
             panel9.Location = new Point(0, 0);
             panel9.Name = "panel9";
             panel9.Padding = new Padding(50);
             panel9.Size = new Size(1165, 662);
             panel9.TabIndex = 7;
-            // 
-            // pictureBox45
-            // 
-            pictureBox45.BackColor = Color.Transparent;
-            pictureBox45.Cursor = Cursors.Hand;
-            pictureBox45.Image = Properties.Resources.IKON_TOL;
-            pictureBox45.Location = new Point(649, 630);
-            pictureBox45.Name = "pictureBox45";
-            pictureBox45.Size = new Size(52, 22);
-            pictureBox45.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox45.TabIndex = 28;
-            pictureBox45.TabStop = false;
             // 
             // label4
             // 
@@ -141,6 +129,16 @@
             panel10.Name = "panel10";
             panel10.Size = new Size(542, 271);
             panel10.TabIndex = 11;
+            // 
+            // pictureBox12
+            // 
+            pictureBox12.Image = Properties.Resources.Icon;
+            pictureBox12.Location = new Point(499, 235);
+            pictureBox12.Name = "pictureBox12";
+            pictureBox12.Size = new Size(25, 25);
+            pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox12.TabIndex = 29;
+            pictureBox12.TabStop = false;
             // 
             // pictureBox11
             // 
@@ -298,27 +296,29 @@
             label20.TabIndex = 14;
             label20.Text = resources.GetString("label20.Text");
             // 
-            // pictureBox28
+            // pictureBox13
             // 
-            pictureBox28.BackColor = Color.Transparent;
-            pictureBox28.Cursor = Cursors.Hand;
-            pictureBox28.Image = Properties.Resources.IKON_TOL;
-            pictureBox28.Location = new Point(466, 630);
-            pictureBox28.Name = "pictureBox28";
-            pictureBox28.Size = new Size(52, 22);
-            pictureBox28.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox28.TabIndex = 21;
-            pictureBox28.TabStop = false;
+            pictureBox13.BackColor = Color.Transparent;
+            pictureBox13.Cursor = Cursors.Hand;
+            pictureBox13.Image = (Image)resources.GetObject("pictureBox13.Image");
+            pictureBox13.Location = new Point(466, 630);
+            pictureBox13.Name = "pictureBox13";
+            pictureBox13.Size = new Size(52, 22);
+            pictureBox13.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox13.TabIndex = 29;
+            pictureBox13.TabStop = false;
             // 
-            // pictureBox12
+            // pictureBox14
             // 
-            pictureBox12.Image = Properties.Resources.Icon;
-            pictureBox12.Location = new Point(499, 235);
-            pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(25, 25);
-            pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox12.TabIndex = 29;
-            pictureBox12.TabStop = false;
+            pictureBox14.BackColor = Color.Transparent;
+            pictureBox14.Cursor = Cursors.Hand;
+            pictureBox14.Image = (Image)resources.GetObject("pictureBox14.Image");
+            pictureBox14.Location = new Point(649, 630);
+            pictureBox14.Name = "pictureBox14";
+            pictureBox14.Size = new Size(52, 22);
+            pictureBox14.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox14.TabIndex = 30;
+            pictureBox14.TabStop = false;
             // 
             // Form_Ulasan_Admin
             // 
@@ -329,9 +329,9 @@
             Size = new Size(1165, 662);
             panel9.ResumeLayout(false);
             panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox45).EndInit();
             panel10.ResumeLayout(false);
             panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
@@ -343,15 +343,14 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox28).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
         private Panel panel9;
-        private PictureBox pictureBox45;
         private Label label4;
         private Label label6;
         private Panel panel10;
@@ -370,7 +369,8 @@
         private PictureBox pictureBox9;
         private Label label1;
         private Label label20;
-        private PictureBox pictureBox28;
         private PictureBox pictureBox12;
+        private PictureBox pictureBox13;
+        private PictureBox pictureBox14;
     }
 }

@@ -105,7 +105,7 @@
             label3.Name = "label3";
             label3.Size = new Size(368, 192);
             label3.TabIndex = 35;
-            label3.Text = "p";
+            label3.Text = "Masukkan pesan";
             // 
             // label2
             // 
@@ -183,13 +183,13 @@
             label23.TabIndex = 8;
             label23.Text = "BERI CATATAN";
             // 
-            // Daftar_Keluhan3_Admin
+            // UC_TanganiKeluhan
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(23, 24, 30);
             Controls.Add(panel15);
-            Name = "Daftar_Keluhan3_Admin";
+            Name = "UC_TanganiKeluhan";
             Size = new Size(492, 556);
             panel15.ResumeLayout(false);
             panel15.PerformLayout();

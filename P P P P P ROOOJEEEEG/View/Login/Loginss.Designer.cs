@@ -55,31 +55,28 @@
             panel15.Controls.Add(label3);
             panel15.Controls.Add(btnLupaPassword);
             panel15.Controls.Add(panel1);
-            panel15.Location = new Point(1016, 134);
-            panel15.Margin = new Padding(4);
+            panel15.Location = new Point(813, 107);
             panel15.Name = "panel15";
-            panel15.Size = new Size(674, 769);
+            panel15.Size = new Size(539, 615);
             panel15.TabIndex = 13;
             // 
             // textUsername
             // 
             textUsername.BorderStyle = BorderStyle.FixedSingle;
             textUsername.Font = new Font("Segoe UI", 10F);
-            textUsername.Location = new Point(66, 276);
-            textUsername.Margin = new Padding(4);
+            textUsername.Location = new Point(49, 221);
             textUsername.Name = "textUsername";
             textUsername.PlaceholderText = "Username";
-            textUsername.Size = new Size(556, 34);
+            textUsername.Size = new Size(445, 30);
             textUsername.TabIndex = 20;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(66, 229);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(49, 183);
             label1.Name = "label1";
-            label1.Size = new Size(227, 22);
+            label1.Size = new Size(189, 18);
             label1.TabIndex = 19;
             label1.Text = "Masukkan Password Anda:";
             // 
@@ -87,32 +84,30 @@
             // 
             textPassword.BorderStyle = BorderStyle.FixedSingle;
             textPassword.Font = new Font("Segoe UI", 10F);
-            textPassword.Location = new Point(66, 409);
-            textPassword.Margin = new Padding(4);
+            textPassword.Location = new Point(49, 327);
             textPassword.Name = "textPassword";
             textPassword.PlaceholderText = "Password";
-            textPassword.Size = new Size(556, 34);
+            textPassword.Size = new Size(445, 30);
             textPassword.TabIndex = 18;
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.Location = new Point(66, 352);
-            label6.Margin = new Padding(4, 0, 4, 0);
+            label6.Location = new Point(49, 282);
             label6.Name = "label6";
-            label6.Size = new Size(230, 22);
+            label6.Size = new Size(191, 18);
             label6.TabIndex = 17;
             label6.Text = "Masukkan Username Anda:";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(66, 66);
-            label5.Margin = new Padding(4, 0, 4, 0);
+            label5.BackColor = Color.Transparent;
+            label5.Font = new Font("Inter Black", 25.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(26, 62);
             label5.Name = "label5";
-            label5.Size = new Size(207, 58);
+            label5.Size = new Size(189, 61);
             label5.TabIndex = 16;
             label5.Text = "MASUK";
             // 
@@ -120,23 +115,20 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(275, 32);
-            label4.Margin = new Padding(4, 0, 4, 0);
+            label4.Location = new Point(220, 26);
             label4.Name = "label4";
-            label4.Size = new Size(104, 26);
+            label4.Size = new Size(0, 24);
             label4.TabIndex = 15;
-            label4.Text = "SIMARU";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(66, 32);
-            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Font = new Font("Inter Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(32, 36);
             label3.Name = "label3";
-            label3.Size = new Size(194, 26);
+            label3.Size = new Size(277, 28);
             label3.TabIndex = 14;
-            label3.Text = "Selamat datang di ";
+            label3.Text = "Selamat datang di SIMARU";
             // 
             // btnLupaPassword
             // 
@@ -145,10 +137,9 @@
             btnLupaPassword.Font = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnLupaPassword.LinkArea = new LinkArea(0, 60);
             btnLupaPassword.LinkColor = Color.FromArgb(60, 138, 255);
-            btnLupaPassword.Location = new Point(519, 484);
-            btnLupaPassword.Margin = new Padding(4, 0, 4, 0);
+            btnLupaPassword.Location = new Point(415, 387);
             btnLupaPassword.Name = "btnLupaPassword";
-            btnLupaPassword.Size = new Size(96, 23);
+            btnLupaPassword.Size = new Size(80, 20);
             btnLupaPassword.TabIndex = 13;
             btnLupaPassword.TabStop = true;
             btnLupaPassword.Text = "Lupa Sandi?";
@@ -158,10 +149,9 @@
             // panel1
             // 
             panel1.Controls.Add(btnLogin);
-            panel1.Location = new Point(0, 622);
-            panel1.Margin = new Padding(4);
+            panel1.Location = new Point(0, 498);
             panel1.Name = "panel1";
-            panel1.Size = new Size(674, 68);
+            panel1.Size = new Size(539, 54);
             panel1.TabIndex = 0;
             // 
             // btnLogin
@@ -172,10 +162,9 @@
             btnLogin.FlatStyle = FlatStyle.Flat;
             btnLogin.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnLogin.ForeColor = Color.White;
-            btnLogin.Location = new Point(58, 0);
-            btnLogin.Margin = new Padding(4);
+            btnLogin.Location = new Point(46, 0);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(564, 68);
+            btnLogin.Size = new Size(451, 54);
             btnLogin.TabIndex = 1;
             btnLogin.Text = "Masuk";
             btnLogin.UseVisualStyleBackColor = false;
@@ -183,15 +172,14 @@
             // 
             // Loginss
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(5, 7, 20);
             BackgroundImage = Properties.Resources.LOGIN2;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1778, 1004);
+            ClientSize = new Size(1422, 803);
             Controls.Add(panel15);
             DoubleBuffered = true;
-            Margin = new Padding(4);
             Name = "Loginss";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Loginss";

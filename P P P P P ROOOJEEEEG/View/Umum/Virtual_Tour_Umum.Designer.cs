@@ -180,30 +180,30 @@
             // 
             // picbox3
             // 
-            picbox3.Image = Properties.Resources.WhatsApp_Image_2025_05_13_at_23_25_21_8b528e3b_3;
+            picbox3.Image = (Image)resources.GetObject("picbox3.Image");
             picbox3.Location = new Point(770, 62);
             picbox3.Name = "picbox3";
-            picbox3.Size = new Size(281, 500);
+            picbox3.Size = new Size(280, 500);
             picbox3.SizeMode = PictureBoxSizeMode.StretchImage;
             picbox3.TabIndex = 8;
             picbox3.TabStop = false;
             // 
             // picbox2
             // 
-            picbox2.Image = Properties.Resources.WhatsApp_Image_2025_05_13_at_23_25_21_8b528e3b_3;
+            picbox2.Image = (Image)resources.GetObject("picbox2.Image");
             picbox2.Location = new Point(448, 62);
             picbox2.Name = "picbox2";
-            picbox2.Size = new Size(281, 500);
+            picbox2.Size = new Size(280, 500);
             picbox2.SizeMode = PictureBoxSizeMode.StretchImage;
             picbox2.TabIndex = 7;
             picbox2.TabStop = false;
             // 
             // picbox1
             // 
-            picbox1.Image = Properties.Resources.WhatsApp_Image_2025_05_13_at_23_25_21_8b528e3b_3;
+            picbox1.Image = (Image)resources.GetObject("picbox1.Image");
             picbox1.Location = new Point(126, 62);
             picbox1.Name = "picbox1";
-            picbox1.Size = new Size(281, 500);
+            picbox1.Size = new Size(280, 500);
             picbox1.SizeMode = PictureBoxSizeMode.StretchImage;
             picbox1.TabIndex = 6;
             picbox1.TabStop = false;
