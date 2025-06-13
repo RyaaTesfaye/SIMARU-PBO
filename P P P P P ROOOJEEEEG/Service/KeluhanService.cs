@@ -12,6 +12,21 @@ namespace RUSUNAWAAA.Service
     public class KeluhanService
     {
         private readonly ApplicationDbContext _context;
+        public KeluhanService()
+        {
+            // --- PERBAIKAN DI SINI: Menambahkan try-catch di constructor ---
+            try
+            {
+                _context = new ApplicationDbContext();
+            }
+            catch (Exception ex)
+            {
+                // Ini akan menangkap error yang sebenarnya saat koneksi database gagal dibuat.
+                MessageBox.Show("Gagal menginisialisasi koneksi database. Pastikan connection string Anda benar dan database server berjalan.\n\nError Detail: " + ex.Message, "Error Koneksi Database", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                // Set _context menjadi null secara eksplisit jika gagal.
+                _context = null;
+            }
+        }
         public List<Laporan> GetAllKeluhan()
         {
             try
@@ -58,29 +73,53 @@ namespace RUSUNAWAAA.Service
         }
         public bool BuatKeluhanBaru(Laporan laporanBaru)
         {
-            if (laporanBaru == null || string.IsNullOrWhiteSpace(laporanBaru.NomorKTP) || string.IsNullOrWhiteSpace(laporanBaru.Judul))
+            using (var context = new ApplicationDbContext())
             {
-                MessageBox.Show("Data keluhan tidak lengkap.", "Validasi Gagal", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return false;
-            }
-
-            try
-            {
-                laporanBaru.Tanggal = DateTime.UtcNow;
-                _context.Laporans.Add(laporanBaru);
-                _context.SaveChanges();
-                return true;
-            }
-            catch (Exception ex)
-            {
-                string errorMessage = "Gagal membuat keluhan baru: " + ex.Message;
-                if (ex.InnerException != null)
+                if (laporanBaru == null || string.IsNullOrWhiteSpace(laporanBaru.NomorKTP) || string.IsNullOrWhiteSpace(laporanBaru.Judul))
                 {
-                    errorMessage += "\n--> Detail: " + ex.InnerException.Message;
+                    MessageBox.Show("Data keluhan tidak lengkap.", "Validasi Gagal", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return false;
                 }
-                MessageBox.Show(errorMessage, "Error Database", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
+
+                try
+                {
+                    laporanBaru.Tanggal = DateTime.UtcNow;
+                    if (_context == null)
+                    {
+                        MessageBox.Show("Konteks database (DbContext) belum diinisialisasi.", "Error Kritis", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return false;
+                    }
+
+                    // --- PENAMBAHAN KODE PENGAMAN BARU ---
+                    // Cek apakah DbSet 'Laporans' null. Ini terjadi jika lupa didefinisikan di ApplicationDbContext.cs
+                    if (_context.Laporans == null)
+                    {
+                        MessageBox.Show("Error Konfigurasi: Properti 'Laporans' di DbContext bernilai null.\n\nPastikan Anda sudah menambahkan baris berikut di file ApplicationDbContext.cs Anda:\n\npublic DbSet<Laporan> Laporans { get; set; }", "Error Konfigurasi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return false;
+                    }
+                    _context.Laporans.Add(laporanBaru);
+                    _context.SaveChanges();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    string errorMessage = "Gagal membuat keluhan baru: " + ex.Message;
+
+                    // Cek apakah masalahnya ada di InnerException (error dari database)
+                    if (ex.InnerException != null)
+                    {
+                        errorMessage += "\n--> Detail DB: " + ex.InnerException.Message;
+                    }
+                    // Cek stack trace untuk melihat baris mana yang error
+                    errorMessage += "\n\nStack Trace:\n" + ex.StackTrace;
+
+                    MessageBox.Show(errorMessage, "Error Database Detail", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
+                }
             }
+            
+                
+            
         }
         public List<Laporan> GetLaporanByPenyewa(string nomorKtp)
         {

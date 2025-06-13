@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             panel15 = new Panel();
+            linkLabel1 = new LinkLabel();
             textUsername = new TextBox();
             label1 = new Label();
             textPassword = new TextBox();
@@ -39,7 +40,6 @@
             btnLupaPassword = new LinkLabel();
             panel1 = new Panel();
             btnLogin = new Button();
-            linkLabel1 = new LinkLabel();
             panel15.SuspendLayout();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -62,6 +62,23 @@
             panel15.Size = new Size(539, 615);
             panel15.TabIndex = 13;
             // 
+            // linkLabel1
+            // 
+            linkLabel1.ActiveLinkColor = Color.DarkOrchid;
+            linkLabel1.AutoSize = true;
+            linkLabel1.Cursor = Cursors.Hand;
+            linkLabel1.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            linkLabel1.LinkArea = new LinkArea(0, 60);
+            linkLabel1.LinkColor = Color.FromArgb(60, 138, 255);
+            linkLabel1.Location = new Point(182, 570);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(185, 24);
+            linkLabel1.TabIndex = 21;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "Masuk Sebagai Umum";
+            linkLabel1.UseCompatibleTextRendering = true;
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
+            // 
             // textUsername
             // 
             textUsername.BorderStyle = BorderStyle.FixedSingle;
@@ -78,9 +95,9 @@
             label1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.Location = new Point(53, 183);
             label1.Name = "label1";
-            label1.Size = new Size(189, 18);
+            label1.Size = new Size(191, 18);
             label1.TabIndex = 19;
-            label1.Text = "Masukkan Password Anda:";
+            label1.Text = "Masukkan Username Anda:";
             // 
             // textPassword
             // 
@@ -98,9 +115,9 @@
             label6.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label6.Location = new Point(53, 282);
             label6.Name = "label6";
-            label6.Size = new Size(191, 18);
+            label6.Size = new Size(189, 18);
             label6.TabIndex = 17;
-            label6.Text = "Masukkan Username Anda:";
+            label6.Text = "Masukkan Password Anda:";
             // 
             // label5
             // 
@@ -118,7 +135,7 @@
             label4.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.Location = new Point(220, 26);
             label4.Name = "label4";
-            label4.Size = new Size(87, 24);
+            label4.Size = new Size(0, 24);
             label4.TabIndex = 15;
             // 
             // label3
@@ -127,7 +144,7 @@
             label3.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.Location = new Point(53, 26);
             label3.Name = "label3";
-            label3.Size = new Size(164, 24);
+            label3.Size = new Size(235, 24);
             label3.TabIndex = 14;
             label3.Text = "Selamat datang di SIMARU";
             // 
@@ -170,23 +187,6 @@
             btnLogin.Text = "Masuk";
             btnLogin.UseVisualStyleBackColor = false;
             btnLogin.Click += btnLogin_Click;
-            // 
-            // linkLabel1
-            // 
-            linkLabel1.ActiveLinkColor = Color.DarkOrchid;
-            linkLabel1.AutoSize = true;
-            linkLabel1.Cursor = Cursors.Hand;
-            linkLabel1.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            linkLabel1.LinkArea = new LinkArea(0, 60);
-            linkLabel1.LinkColor = Color.FromArgb(60, 138, 255);
-            linkLabel1.Location = new Point(182, 570);
-            linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(185, 24);
-            linkLabel1.TabIndex = 21;
-            linkLabel1.TabStop = true;
-            linkLabel1.Text = "Masuk Sebagai Umum";
-            linkLabel1.UseCompatibleTextRendering = true;
-            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
             // Loginss
             // 
