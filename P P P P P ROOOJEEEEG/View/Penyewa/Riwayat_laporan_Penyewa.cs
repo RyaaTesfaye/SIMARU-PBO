@@ -62,7 +62,6 @@ namespace RUSUNAWAAA.View.Penyewa
                                 MessageBoxIcon.Error);
             }
             UIhelper.MakePanelRound(panel9, 20);
-            UIhelper.MakePanelRound(panel10, 20);
         }
 
         private void ToDashboard_PE(object sender, EventArgs e)

@@ -26,10 +26,10 @@ namespace RUSUNAWAAA.View.Admin
             UIhelper.MakePanelRound(panel14, 20);
             UIhelper.MakePanelRound(flowLayoutPanelAturan, 20);
 
-            _aturanService = new AturanService(flowLayoutPanelAturan); 
+            _aturanService = new AturanService(flowLayoutPanelAturan);
+        }
             
             // Muat dan tampilkan semua data saat form pertama kali dibuka
-            LoadAndDisplayAllAturan();
 
         private void Kelola_Aturan_Admin_Load(object sender, EventArgs e)
         {
