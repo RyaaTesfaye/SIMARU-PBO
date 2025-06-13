@@ -1,6 +1,7 @@
 ﻿using RUSUNAWAAA.Models;
 using RUSUNAWAAA.Service;
 using RUSUNAWAAA.Utils;
+using RUSUNAWAAA.View.Login;
 using RUSUNAWAAA.View.Penyewa;
 using System;
 using System.Collections.Generic;
@@ -78,11 +79,7 @@ namespace RUSUNAWAAA.View.Admin
             command.Execute();
         }
 
-        private void ToSiaran_AD(object sender, EventArgs e)
-        {
-            var command = new NavigateToFormCommand<Siaran_Admin>(this);
-            command.Execute();
-        }
+
 
         private void panel10_Paint(object sender, PaintEventArgs e)
         {
@@ -126,7 +123,7 @@ namespace RUSUNAWAAA.View.Admin
 
             if (itemsUntukHalamanIni.Count == 0)
             {
-               
+
             }
             else
             {
@@ -163,7 +160,7 @@ namespace RUSUNAWAAA.View.Admin
             var dataPengajuan = _semuaPengajuan.FirstOrDefault(p => p.Id_Pengajuan == pengajuanId);
             if (dataPengajuan != null)
             {
-                ShowDetailView(dataPengajuan); 
+                ShowDetailView(dataPengajuan);
             }
         }
         private void OnPerpanjanganDetailClicked(object sender, int perpanjanganId)
@@ -171,34 +168,34 @@ namespace RUSUNAWAAA.View.Admin
             var dataPerpanjangan = _semuaPerpanjangan.FirstOrDefault(p => p.Id_Perpanjangan == perpanjanganId);
             if (dataPerpanjangan != null)
             {
-                ShowDetailView(dataPerpanjangan); 
+                ShowDetailView(dataPerpanjangan);
             }
         }
         private void ShowDetailView(Pengajuan data)
         {
-            panel11.Visible = false; 
+            panel11.Visible = false;
             var detailView = new UC_DetailPengajuan();
             detailView.Dock = DockStyle.Fill;
             detailView.ActionCompleted += (s, ev) => ShowListView();
             detailView.BackRequested += (s, ev) => ShowListView();
             this.Controls.Add(detailView);
             detailView.BringToFront();
-            detailView.LoadDetail(data); 
+            detailView.LoadDetail(data);
         }
         private void ShowDetailView(PerpanjanganSewa data)
         {
-            panel11.Visible = false; 
+            panel11.Visible = false;
             var detailView = new UC_DetailPengajuan();
             detailView.Dock = DockStyle.Fill;
             detailView.ActionCompleted += (s, ev) => ShowListView();
             detailView.BackRequested += (s, ev) => ShowListView();
             this.Controls.Add(detailView);
             detailView.BringToFront();
-            detailView.LoadDetail(data); 
+            detailView.LoadDetail(data);
         }
         private void ShowListView()
         {
-           
+
             var detailView = this.Controls.OfType<UC_DetailPengajuan>().FirstOrDefault();
             if (detailView != null)
             {
@@ -206,10 +203,10 @@ namespace RUSUNAWAAA.View.Admin
                 detailView.Dispose();
             }
 
-           
+
             panel11.Visible = true;
 
-           
+
             Manajemen_Sewa_Admin_Load(this, EventArgs.Empty);
         }
         private void btnTipePengajuan_Click(object sender, EventArgs e)
@@ -248,6 +245,24 @@ namespace RUSUNAWAAA.View.Admin
         {
             _halamanSaatIni--;
             DisplayCurrentPage();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DialogResult konfirmasi = MessageBox.Show(
+               "Anda yakin ingin keluar dari aplikasi?",
+               "Konfirmasi Keluar",
+               MessageBoxButtons.YesNo,
+               MessageBoxIcon.Question
+           );
+
+            if (konfirmasi == DialogResult.Yes)
+            {
+                SesiLogin.Logout();
+
+                var command = new NavigateToFormCommand<Loginss>(this);
+                command.Execute();
+            }
         }
     }
 }

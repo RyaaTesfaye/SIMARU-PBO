@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using RUSUNAWAAA.Utils;
+using RUSUNAWAAA.View.Login;
 
 namespace RUSUNAWAAA.View.Admin
 {
@@ -33,7 +34,7 @@ namespace RUSUNAWAAA.View.Admin
 
                 var allMedia = _service.GetAllMedia();
 
-                flowLayoutPanelMedia.Controls.Clear(); 
+                flowLayoutPanelMedia.Controls.Clear();
 
                 if (allMedia.Any())
                 {
@@ -42,7 +43,7 @@ namespace RUSUNAWAAA.View.Admin
                         var itemUc = new UC_ItemVirtualTour();
                         itemUc.SetData(media);
 
-                
+
                         // itemUc.EditButtonClicked += OnItemEditClicked; 
 
                         flowLayoutPanelMedia.Controls.Add(itemUc);
@@ -64,7 +65,7 @@ namespace RUSUNAWAAA.View.Admin
 
         private void ShowListView()
         {
-           
+
             var formView = this.Controls.OfType<UC_TambahVirtual>().FirstOrDefault();
             if (formView != null)
             {
@@ -73,7 +74,7 @@ namespace RUSUNAWAAA.View.Admin
             }
 
 
-            panel11.Visible = true; 
+            panel11.Visible = true;
             LoadAndDisplayMedia();
         }
         private void ShowAddView()
@@ -83,9 +84,9 @@ namespace RUSUNAWAAA.View.Admin
 
             var formView = new UC_TambahVirtual();
             formView.Dock = DockStyle.Fill;
- 
-            formView.SaveCompleted += (s, ev) => ShowListView(); 
-            formView.Cancelled += (s, ev) => ShowListView();     
+
+            formView.SaveCompleted += (s, ev) => ShowListView();
+            formView.Cancelled += (s, ev) => ShowListView();
 
 
             this.Controls.Add(formView);
@@ -97,7 +98,7 @@ namespace RUSUNAWAAA.View.Admin
         }
         private void btnHapus_Click(object sender, EventArgs e)
         {
- 
+
             var itemsToDelete = flowLayoutPanelMedia.Controls
                 .OfType<UC_ItemVirtualTour>()
                 .Where(uc => uc.IsChecked)
@@ -170,10 +171,24 @@ namespace RUSUNAWAAA.View.Admin
             command.Execute();
         }
 
-        private void ToSiaran_AD(object sender, EventArgs e)
+
+
+        private void button2_Click(object sender, EventArgs e)
         {
-            var command = new NavigateToFormCommand<Siaran_Admin>(this);
-            command.Execute();
+            DialogResult konfirmasi = MessageBox.Show(
+               "Anda yakin ingin keluar dari aplikasi?",
+               "Konfirmasi Keluar",
+               MessageBoxButtons.YesNo,
+               MessageBoxIcon.Question
+           );
+
+            if (konfirmasi == DialogResult.Yes)
+            {
+                SesiLogin.Logout();
+
+                var command = new NavigateToFormCommand<Loginss>(this);
+                command.Execute();
+            }
         }
     }
 }

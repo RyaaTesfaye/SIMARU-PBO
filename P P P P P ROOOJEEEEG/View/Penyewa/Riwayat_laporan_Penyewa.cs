@@ -1,6 +1,7 @@
 ﻿using RUSUNAWAAA.Models;
 using RUSUNAWAAA.Service;
 using RUSUNAWAAA.Utils;
+using RUSUNAWAAA.View.Login;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -35,7 +36,7 @@ namespace RUSUNAWAAA.View.Penyewa
                 List<Laporan> daftarLaporan = _keluhanService.GetLaporanByPenyewa(nomorKtpPenyewa);
                 if (daftarLaporan != null && daftarLaporan.Count > 0)
                 {
-                    int nomorUrut = 1; 
+                    int nomorUrut = 1;
                     foreach (Laporan laporan in daftarLaporan)
                     {
                         UC_ItemRIwayatLapor item = new UC_ItemRIwayatLapor();
@@ -51,7 +52,7 @@ namespace RUSUNAWAAA.View.Penyewa
                 }
                 else
                 {
-                   
+
                 }
             }
             catch (Exception ex)
@@ -98,6 +99,24 @@ namespace RUSUNAWAAA.View.Penyewa
         {
             var command = new NavigateToFormCommand<Perpanjangan_Sewa_Penyewa>(this);
             command.Execute();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DialogResult konfirmasi = MessageBox.Show(
+            "Anda yakin ingin keluar dari aplikasi?",
+            "Konfirmasi Keluar",
+            MessageBoxButtons.YesNo,
+            MessageBoxIcon.Question
+        );
+
+            if (konfirmasi == DialogResult.Yes)
+            {
+                SesiLogin.Logout();
+
+                var command = new NavigateToFormCommand<Loginss>(this);
+                command.Execute();
+            }
         }
     }
 }

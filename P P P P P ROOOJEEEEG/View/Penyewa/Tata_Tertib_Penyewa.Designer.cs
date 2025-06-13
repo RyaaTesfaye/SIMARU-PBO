@@ -59,11 +59,13 @@
             pictureBox7 = new PictureBox();
             pictureBox6 = new PictureBox();
             panel8 = new Panel();
+            pictureBox13 = new PictureBox();
+            pictureBox11 = new PictureBox();
             panel9 = new Panel();
             dgvAturan = new DataGridView();
             label6 = new Label();
-            pictureBox13 = new PictureBox();
-            pictureBox11 = new PictureBox();
+            panel27 = new Panel();
+            button2 = new Button();
             panel1.SuspendLayout();
             panel29.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
@@ -85,14 +87,16 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel8.SuspendLayout();
-            panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dgvAturan).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
+            panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvAturan).BeginInit();
+            panel27.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
+            panel1.Controls.Add(panel27);
             panel1.Controls.Add(panel29);
             panel1.Controls.Add(panel22);
             panel1.Controls.Add(panel21);
@@ -440,6 +444,34 @@
             panel8.Size = new Size(1182, 733);
             panel8.TabIndex = 14;
             // 
+            // pictureBox13
+            // 
+            pictureBox13.BackColor = Color.Transparent;
+            pictureBox13.Cursor = Cursors.Hand;
+            pictureBox13.ErrorImage = null;
+            pictureBox13.Image = Properties.Resources.LK_Mati;
+            pictureBox13.Location = new Point(1035, 6);
+            pictureBox13.Name = "pictureBox13";
+            pictureBox13.Size = new Size(50, 50);
+            pictureBox13.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox13.TabIndex = 30;
+            pictureBox13.TabStop = false;
+            pictureBox13.Click += btnFilterLakiLaki_Click;
+            // 
+            // pictureBox11
+            // 
+            pictureBox11.BackColor = Color.Transparent;
+            pictureBox11.Cursor = Cursors.Hand;
+            pictureBox11.ErrorImage = null;
+            pictureBox11.Image = Properties.Resources.PR_HIDUP;
+            pictureBox11.Location = new Point(979, 6);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(50, 50);
+            pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox11.TabIndex = 29;
+            pictureBox11.TabStop = false;
+            pictureBox11.Click += btnFilterPerempuan_Click;
+            // 
             // panel9
             // 
             panel9.BackColor = Color.FromArgb(37, 39, 48);
@@ -470,33 +502,30 @@
             label6.TabIndex = 4;
             label6.Text = "Tata Tertib";
             // 
-            // pictureBox13
+            // panel27
             // 
-            pictureBox13.BackColor = Color.Transparent;
-            pictureBox13.Cursor = Cursors.Hand;
-            pictureBox13.ErrorImage = null;
-            pictureBox13.Image = Properties.Resources.LK_Mati;
-            pictureBox13.Location = new Point(1035, 6);
-            pictureBox13.Name = "pictureBox13";
-            pictureBox13.Size = new Size(50, 50);
-            pictureBox13.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox13.TabIndex = 30;
-            pictureBox13.TabStop = false;
-            pictureBox13.Click += btnFilterLakiLaki_Click;
+            panel27.BackColor = Color.Transparent;
+            panel27.Controls.Add(button2);
+            panel27.Location = new Point(14, 714);
+            panel27.Name = "panel27";
+            panel27.Size = new Size(220, 45);
+            panel27.TabIndex = 10;
             // 
-            // pictureBox11
+            // button2
             // 
-            pictureBox11.BackColor = Color.Transparent;
-            pictureBox11.Cursor = Cursors.Hand;
-            pictureBox11.ErrorImage = null;
-            pictureBox11.Image = Properties.Resources.PR_HIDUP;
-            pictureBox11.Location = new Point(979, 6);
-            pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(50, 50);
-            pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox11.TabIndex = 29;
-            pictureBox11.TabStop = false;
-            pictureBox11.Click += btnFilterPerempuan_Click;
+            button2.BackColor = Color.Red;
+            button2.Cursor = Cursors.Hand;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(58, 3);
+            button2.Name = "button2";
+            button2.Size = new Size(104, 39);
+            button2.TabIndex = 1;
+            button2.Text = "Keluar";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // Tata_Tertib_Penyewa
             // 
@@ -541,10 +570,11 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             panel8.ResumeLayout(false);
             panel8.PerformLayout();
-            panel9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dgvAturan).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
+            panel9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvAturan).EndInit();
+            panel27.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -585,5 +615,7 @@
         private DataGridView dgvAturan;
         private PictureBox pictureBox13;
         private PictureBox pictureBox11;
+        private Panel panel27;
+        private Button button2;
     }
 }

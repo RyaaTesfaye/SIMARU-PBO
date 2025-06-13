@@ -1,4 +1,5 @@
 ﻿using RUSUNAWAAA.Utils;
+using RUSUNAWAAA.View.Login;
 using RUSUNAWAAA.View.Penyewa;
 using System;
 using System.Collections.Generic;
@@ -63,10 +64,23 @@ namespace RUSUNAWAAA.View.Admin
             command.Execute();
         }
 
-        private void ToSiaran_AD(object sender, EventArgs e)
+
+        private void button2_Click(object sender, EventArgs e)
         {
-            var command = new NavigateToFormCommand<Siaran_Admin>(this);
-            command.Execute();
+            DialogResult konfirmasi = MessageBox.Show(
+               "Anda yakin ingin keluar dari aplikasi?",
+               "Konfirmasi Keluar",
+               MessageBoxButtons.YesNo,
+               MessageBoxIcon.Question
+           );
+
+            if (konfirmasi == DialogResult.Yes)
+            {
+                SesiLogin.Logout();
+
+                var command = new NavigateToFormCommand<Loginss>(this);
+                command.Execute();
+            }
         }
     }
 }

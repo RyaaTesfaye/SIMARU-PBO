@@ -30,12 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Kelola_Hunian_Admin));
             panel1 = new Panel();
-            panel33 = new Panel();
-            panel34 = new Panel();
-            label34 = new Label();
-            pictureBox20 = new PictureBox();
-            label35 = new Label();
-            pictureBox21 = new PictureBox();
             panel31 = new Panel();
             pictureBox12 = new PictureBox();
             panel32 = new Panel();
@@ -96,10 +90,6 @@
             label16 = new Label();
             label6 = new Label();
             panel1.SuspendLayout();
-            panel33.SuspendLayout();
-            panel34.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox20).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox21).BeginInit();
             panel31.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             panel32.SuspendLayout();
@@ -138,7 +128,6 @@
             // 
             // panel1
             // 
-            panel1.Controls.Add(panel33);
             panel1.Controls.Add(panel31);
             panel1.Controls.Add(panel29);
             panel1.Controls.Add(panel22);
@@ -155,74 +144,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(240, 803);
             panel1.TabIndex = 1;
-            // 
-            // panel33
-            // 
-            panel33.BackColor = Color.Transparent;
-            panel33.Controls.Add(panel34);
-            panel33.Controls.Add(label35);
-            panel33.Controls.Add(pictureBox21);
-            panel33.Cursor = Cursors.Hand;
-            panel33.Location = new Point(0, 565);
-            panel33.Name = "panel33";
-            panel33.Size = new Size(240, 50);
-            panel33.TabIndex = 10;
-            panel33.Click += ToSiaran_AD;
-            // 
-            // panel34
-            // 
-            panel34.BackColor = Color.Transparent;
-            panel34.Controls.Add(label34);
-            panel34.Controls.Add(pictureBox20);
-            panel34.Cursor = Cursors.Hand;
-            panel34.Location = new Point(0, 510);
-            panel34.Name = "panel34";
-            panel34.Size = new Size(240, 50);
-            panel34.TabIndex = 9;
-            // 
-            // label34
-            // 
-            label34.AutoSize = true;
-            label34.Font = new Font("Inter", 10F, FontStyle.Bold);
-            label34.ForeColor = Color.White;
-            label34.Location = new Point(45, 12);
-            label34.Name = "label34";
-            label34.Size = new Size(99, 24);
-            label34.TabIndex = 4;
-            label34.Text = "Tata Tertib";
-            // 
-            // pictureBox20
-            // 
-            pictureBox20.Image = Properties.Resources.refresh;
-            pictureBox20.Location = new Point(10, 10);
-            pictureBox20.Name = "pictureBox20";
-            pictureBox20.Size = new Size(25, 25);
-            pictureBox20.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox20.TabIndex = 2;
-            pictureBox20.TabStop = false;
-            // 
-            // label35
-            // 
-            label35.AutoSize = true;
-            label35.Font = new Font("Inter", 10F, FontStyle.Bold);
-            label35.ForeColor = Color.White;
-            label35.Location = new Point(45, 12);
-            label35.Name = "label35";
-            label35.Size = new Size(64, 24);
-            label35.TabIndex = 4;
-            label35.Text = "Siaran";
-            label35.Click += ToSiaran_AD;
-            // 
-            // pictureBox21
-            // 
-            pictureBox21.Image = (Image)resources.GetObject("pictureBox21.Image");
-            pictureBox21.Location = new Point(10, 10);
-            pictureBox21.Name = "pictureBox21";
-            pictureBox21.Size = new Size(25, 25);
-            pictureBox21.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox21.TabIndex = 2;
-            pictureBox21.TabStop = false;
-            pictureBox21.Click += ToSiaran_AD;
             // 
             // panel31
             // 
@@ -464,6 +385,7 @@
             button2.TabIndex = 1;
             button2.Text = "Keluar";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // panel5
             // 
@@ -915,12 +837,6 @@
             Text = "Kelola_Hunian_Admin";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            panel33.ResumeLayout(false);
-            panel33.PerformLayout();
-            panel34.ResumeLayout(false);
-            panel34.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox20).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox21).EndInit();
             panel31.ResumeLayout(false);
             panel31.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
@@ -975,12 +891,6 @@
         #endregion
 
         private Panel panel1;
-        private Panel panel33;
-        private Panel panel34;
-        private Label label34;
-        private PictureBox pictureBox20;
-        private Label label35;
-        private PictureBox pictureBox21;
         private Panel panel31;
         private Panel panel32;
         private Label label32;

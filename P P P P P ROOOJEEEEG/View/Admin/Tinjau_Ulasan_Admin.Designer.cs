@@ -30,12 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tinjau_Ulasan_Admin));
             panel1 = new Panel();
-            panel33 = new Panel();
-            panel34 = new Panel();
-            label34 = new Label();
-            pictureBox20 = new PictureBox();
-            label35 = new Label();
-            pictureBox21 = new PictureBox();
             panel31 = new Panel();
             pictureBox30 = new PictureBox();
             panel32 = new Panel();
@@ -77,69 +71,11 @@
             pictureBox6 = new PictureBox();
             panel8 = new Panel();
             panel9 = new Panel();
-            panel10 = new Panel();
-            panel11 = new Panel();
-            panel13 = new Panel();
-            pictureBox15 = new PictureBox();
-            pictureBox11 = new PictureBox();
-            pictureBox12 = new PictureBox();
-            pictureBox13 = new PictureBox();
-            pictureBox14 = new PictureBox();
-            label20 = new Label();
-            pictureBox22 = new PictureBox();
-            label23 = new Label();
-            label24 = new Label();
-            panel12 = new Panel();
-            pictureBox23 = new PictureBox();
-            pictureBox24 = new PictureBox();
-            pictureBox25 = new PictureBox();
-            pictureBox26 = new PictureBox();
-            pictureBox27 = new PictureBox();
-            label19 = new Label();
-            pictureBox28 = new PictureBox();
-            label21 = new Label();
-            label22 = new Label();
-            label18 = new Label();
-            label17 = new Label();
-            label9 = new Label();
-            label8 = new Label();
-            panel14 = new Panel();
-            panel15 = new Panel();
-            panel16 = new Panel();
-            label15 = new Label();
-            pictureBox29 = new PictureBox();
-            label11 = new Label();
-            label10 = new Label();
-            label7 = new Label();
-            panel17 = new Panel();
-            label14 = new Label();
-            label16 = new Label();
-            label25 = new Label();
-            label26 = new Label();
-            label27 = new Label();
-            label28 = new Label();
-            label29 = new Label();
-            label36 = new Label();
-            label37 = new Label();
-            label38 = new Label();
-            panel25 = new Panel();
-            panel26 = new Panel();
-            panel23 = new Panel();
-            panel24 = new Panel();
-            panel19 = new Panel();
-            panel20 = new Panel();
-            panel18 = new Panel();
-            panel27 = new Panel();
-            panel35 = new Panel();
-            progressbar1 = new Panel();
-            label39 = new Label();
-            label40 = new Label();
+            panelSemua = new Panel();
+            panelKanan = new Panel();
+            panelKiri = new Panel();
             label6 = new Label();
             panel1.SuspendLayout();
-            panel33.SuspendLayout();
-            panel34.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox20).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox21).BeginInit();
             panel31.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox30).BeginInit();
             panel32.SuspendLayout();
@@ -168,37 +104,11 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel8.SuspendLayout();
             panel9.SuspendLayout();
-            panel10.SuspendLayout();
-            panel11.SuspendLayout();
-            panel13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox15).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox22).BeginInit();
-            panel12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox23).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox24).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox25).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox26).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox27).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox28).BeginInit();
-            panel14.SuspendLayout();
-            panel15.SuspendLayout();
-            panel16.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox29).BeginInit();
-            panel17.SuspendLayout();
-            panel25.SuspendLayout();
-            panel23.SuspendLayout();
-            panel19.SuspendLayout();
-            panel18.SuspendLayout();
-            panel35.SuspendLayout();
+            panelSemua.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
-            panel1.Controls.Add(panel33);
             panel1.Controls.Add(panel31);
             panel1.Controls.Add(panel29);
             panel1.Controls.Add(panel22);
@@ -215,74 +125,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(240, 803);
             panel1.TabIndex = 1;
-            // 
-            // panel33
-            // 
-            panel33.BackColor = Color.Transparent;
-            panel33.Controls.Add(panel34);
-            panel33.Controls.Add(label35);
-            panel33.Controls.Add(pictureBox21);
-            panel33.Cursor = Cursors.Hand;
-            panel33.Location = new Point(0, 565);
-            panel33.Name = "panel33";
-            panel33.Size = new Size(240, 50);
-            panel33.TabIndex = 10;
-            panel33.Click += ToSiaran_AD;
-            // 
-            // panel34
-            // 
-            panel34.BackColor = Color.Transparent;
-            panel34.Controls.Add(label34);
-            panel34.Controls.Add(pictureBox20);
-            panel34.Cursor = Cursors.Hand;
-            panel34.Location = new Point(0, 510);
-            panel34.Name = "panel34";
-            panel34.Size = new Size(240, 50);
-            panel34.TabIndex = 9;
-            // 
-            // label34
-            // 
-            label34.AutoSize = true;
-            label34.Font = new Font("Inter", 10F, FontStyle.Bold);
-            label34.ForeColor = Color.White;
-            label34.Location = new Point(45, 12);
-            label34.Name = "label34";
-            label34.Size = new Size(99, 24);
-            label34.TabIndex = 4;
-            label34.Text = "Tata Tertib";
-            // 
-            // pictureBox20
-            // 
-            pictureBox20.Image = Properties.Resources.refresh;
-            pictureBox20.Location = new Point(10, 10);
-            pictureBox20.Name = "pictureBox20";
-            pictureBox20.Size = new Size(25, 25);
-            pictureBox20.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox20.TabIndex = 2;
-            pictureBox20.TabStop = false;
-            // 
-            // label35
-            // 
-            label35.AutoSize = true;
-            label35.Font = new Font("Inter", 10F, FontStyle.Bold);
-            label35.ForeColor = Color.White;
-            label35.Location = new Point(45, 12);
-            label35.Name = "label35";
-            label35.Size = new Size(64, 24);
-            label35.TabIndex = 4;
-            label35.Text = "Siaran";
-            label35.Click += ToSiaran_AD;
-            // 
-            // pictureBox21
-            // 
-            pictureBox21.Image = (Image)resources.GetObject("pictureBox21.Image");
-            pictureBox21.Location = new Point(10, 10);
-            pictureBox21.Name = "pictureBox21";
-            pictureBox21.Size = new Size(25, 25);
-            pictureBox21.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox21.TabIndex = 2;
-            pictureBox21.TabStop = false;
-            pictureBox21.Click += ToSiaran_AD;
             // 
             // panel31
             // 
@@ -530,6 +372,7 @@
             button2.TabIndex = 1;
             button2.Text = "Keluar";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // panel5
             // 
@@ -742,648 +585,39 @@
             // panel9
             // 
             panel9.BackColor = Color.FromArgb(37, 39, 48);
-            panel9.Controls.Add(panel10);
+            panel9.Controls.Add(panelSemua);
             panel9.Location = new Point(5, 54);
             panel9.Name = "panel9";
             panel9.Padding = new Padding(50);
             panel9.Size = new Size(1165, 662);
             panel9.TabIndex = 5;
             // 
-            // panel10
-            // 
-            panel10.BackColor = Color.FromArgb(37, 39, 48);
-            panel10.Controls.Add(panel11);
-            panel10.Controls.Add(panel14);
-            panel10.Location = new Point(1, 1);
-            panel10.Name = "panel10";
-            panel10.Padding = new Padding(50);
-            panel10.Size = new Size(1165, 662);
-            panel10.TabIndex = 6;
-            // 
-            // panel11
-            // 
-            panel11.BackColor = Color.FromArgb(23, 24, 30);
-            panel11.Controls.Add(panel13);
-            panel11.Controls.Add(panel12);
-            panel11.Controls.Add(label18);
-            panel11.Controls.Add(label17);
-            panel11.Controls.Add(label9);
-            panel11.Controls.Add(label8);
-            panel11.Location = new Point(585, 24);
-            panel11.Name = "panel11";
-            panel11.Size = new Size(548, 607);
-            panel11.TabIndex = 12;
-            // 
-            // panel13
-            // 
-            panel13.BackColor = Color.FromArgb(37, 39, 48);
-            panel13.Controls.Add(pictureBox15);
-            panel13.Controls.Add(pictureBox11);
-            panel13.Controls.Add(pictureBox12);
-            panel13.Controls.Add(pictureBox13);
-            panel13.Controls.Add(pictureBox14);
-            panel13.Controls.Add(label20);
-            panel13.Controls.Add(pictureBox22);
-            panel13.Controls.Add(label23);
-            panel13.Controls.Add(label24);
-            panel13.Location = new Point(32, 420);
-            panel13.Name = "panel13";
-            panel13.Size = new Size(486, 160);
-            panel13.TabIndex = 26;
-            // 
-            // pictureBox15
-            // 
-            pictureBox15.Image = Properties.Resources.star_kosong1;
-            pictureBox15.Location = new Point(180, 44);
-            pictureBox15.Name = "pictureBox15";
-            pictureBox15.Size = new Size(20, 20);
-            pictureBox15.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox15.TabIndex = 28;
-            pictureBox15.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            pictureBox11.Image = Properties.Resources.star_kosong1;
-            pictureBox11.Location = new Point(155, 44);
-            pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(20, 20);
-            pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox11.TabIndex = 27;
-            pictureBox11.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            pictureBox12.Image = Properties.Resources.star_kosong1;
-            pictureBox12.Location = new Point(130, 44);
-            pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(20, 20);
-            pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox12.TabIndex = 26;
-            pictureBox12.TabStop = false;
-            // 
-            // pictureBox13
-            // 
-            pictureBox13.Image = Properties.Resources.star_kosong1;
-            pictureBox13.Location = new Point(105, 44);
-            pictureBox13.Name = "pictureBox13";
-            pictureBox13.Size = new Size(20, 20);
-            pictureBox13.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox13.TabIndex = 25;
-            pictureBox13.TabStop = false;
-            // 
-            // pictureBox14
-            // 
-            pictureBox14.Image = Properties.Resources.star_kosong1;
-            pictureBox14.Location = new Point(80, 44);
-            pictureBox14.Name = "pictureBox14";
-            pictureBox14.Size = new Size(20, 20);
-            pictureBox14.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox14.TabIndex = 24;
-            pictureBox14.TabStop = false;
-            // 
-            // label20
-            // 
-            label20.BackColor = Color.Transparent;
-            label20.Font = new Font("Inter", 7F);
-            label20.ForeColor = Color.White;
-            label20.Location = new Point(386, 15);
-            label20.Name = "label20";
-            label20.Size = new Size(97, 22);
-            label20.TabIndex = 23;
-            label20.Text = "10 Mei 2025";
-            label20.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox22
-            // 
-            pictureBox22.BackColor = Color.Transparent;
-            pictureBox22.Image = Properties.Resources.IKON_TOL;
-            pictureBox22.Location = new Point(24, 14);
-            pictureBox22.Name = "pictureBox22";
-            pictureBox22.Size = new Size(50, 50);
-            pictureBox22.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox22.TabIndex = 21;
-            pictureBox22.TabStop = false;
-            // 
-            // label23
-            // 
-            label23.AutoSize = true;
-            label23.Font = new Font("Inter", 10F, FontStyle.Bold);
-            label23.ForeColor = Color.White;
-            label23.Location = new Point(75, 18);
-            label23.Name = "label23";
-            label23.Size = new Size(121, 24);
-            label23.TabIndex = 15;
-            label23.Text = "Khosyatullah";
-            // 
-            // label24
-            // 
-            label24.BackColor = Color.Transparent;
-            label24.Font = new Font("Inter", 7F);
-            label24.ForeColor = Color.White;
-            label24.Location = new Point(24, 68);
-            label24.Name = "label24";
-            label24.Size = new Size(455, 99);
-            label24.TabIndex = 14;
-            label24.Text = resources.GetString("label24.Text");
-            // 
-            // panel12
-            // 
-            panel12.BackColor = Color.FromArgb(37, 39, 48);
-            panel12.Controls.Add(pictureBox23);
-            panel12.Controls.Add(pictureBox24);
-            panel12.Controls.Add(pictureBox25);
-            panel12.Controls.Add(pictureBox26);
-            panel12.Controls.Add(pictureBox27);
-            panel12.Controls.Add(label19);
-            panel12.Controls.Add(pictureBox28);
-            panel12.Controls.Add(label21);
-            panel12.Controls.Add(label22);
-            panel12.Location = new Point(32, 239);
-            panel12.Name = "panel12";
-            panel12.Size = new Size(486, 160);
-            panel12.TabIndex = 25;
-            // 
-            // pictureBox23
-            // 
-            pictureBox23.Image = Properties.Resources.star_kosong1;
-            pictureBox23.Location = new Point(180, 44);
-            pictureBox23.Name = "pictureBox23";
-            pictureBox23.Size = new Size(20, 20);
-            pictureBox23.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox23.TabIndex = 28;
-            pictureBox23.TabStop = false;
-            // 
-            // pictureBox24
-            // 
-            pictureBox24.Image = Properties.Resources.star_kosong1;
-            pictureBox24.Location = new Point(155, 44);
-            pictureBox24.Name = "pictureBox24";
-            pictureBox24.Size = new Size(20, 20);
-            pictureBox24.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox24.TabIndex = 27;
-            pictureBox24.TabStop = false;
-            // 
-            // pictureBox25
-            // 
-            pictureBox25.Image = Properties.Resources.star_kosong1;
-            pictureBox25.Location = new Point(130, 44);
-            pictureBox25.Name = "pictureBox25";
-            pictureBox25.Size = new Size(20, 20);
-            pictureBox25.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox25.TabIndex = 26;
-            pictureBox25.TabStop = false;
-            // 
-            // pictureBox26
-            // 
-            pictureBox26.Image = Properties.Resources.star_kosong1;
-            pictureBox26.Location = new Point(105, 44);
-            pictureBox26.Name = "pictureBox26";
-            pictureBox26.Size = new Size(20, 20);
-            pictureBox26.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox26.TabIndex = 25;
-            pictureBox26.TabStop = false;
-            // 
-            // pictureBox27
-            // 
-            pictureBox27.Image = Properties.Resources.star_kosong1;
-            pictureBox27.Location = new Point(80, 44);
-            pictureBox27.Name = "pictureBox27";
-            pictureBox27.Size = new Size(20, 20);
-            pictureBox27.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox27.TabIndex = 24;
-            pictureBox27.TabStop = false;
-            // 
-            // label19
-            // 
-            label19.BackColor = Color.Transparent;
-            label19.Font = new Font("Inter", 7F);
-            label19.ForeColor = Color.White;
-            label19.Location = new Point(386, 15);
-            label19.Name = "label19";
-            label19.Size = new Size(97, 22);
-            label19.TabIndex = 23;
-            label19.Text = "10 Mei 2025";
-            label19.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox28
-            // 
-            pictureBox28.BackColor = Color.Transparent;
-            pictureBox28.Image = Properties.Resources.IKON_TOL;
-            pictureBox28.Location = new Point(24, 14);
-            pictureBox28.Name = "pictureBox28";
-            pictureBox28.Size = new Size(50, 50);
-            pictureBox28.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox28.TabIndex = 21;
-            pictureBox28.TabStop = false;
-            // 
-            // label21
-            // 
-            label21.AutoSize = true;
-            label21.Font = new Font("Inter", 10F, FontStyle.Bold);
-            label21.ForeColor = Color.White;
-            label21.Location = new Point(75, 18);
-            label21.Name = "label21";
-            label21.Size = new Size(121, 24);
-            label21.TabIndex = 15;
-            label21.Text = "Khosyatullah";
-            // 
-            // label22
-            // 
-            label22.BackColor = Color.Transparent;
-            label22.Font = new Font("Inter", 7F);
-            label22.ForeColor = Color.White;
-            label22.Location = new Point(24, 68);
-            label22.Name = "label22";
-            label22.Size = new Size(455, 99);
-            label22.TabIndex = 14;
-            label22.Text = resources.GetString("label22.Text");
-            // 
-            // label18
-            // 
-            label18.BackColor = Color.Transparent;
-            label18.Font = new Font("Inter", 9F);
-            label18.ForeColor = Color.White;
-            label18.Location = new Point(26, 180);
-            label18.Name = "label18";
-            label18.Size = new Size(231, 36);
-            label18.TabIndex = 24;
-            label18.Text = "2.000+ ulasan dari penghuni ";
-            label18.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label17
-            // 
-            label17.BackColor = Color.Transparent;
-            label17.Font = new Font("Inter", 9F);
-            label17.ForeColor = Color.White;
-            label17.Location = new Point(357, 186);
-            label17.Name = "label17";
-            label17.Size = new Size(163, 25);
-            label17.TabIndex = 23;
-            label17.Text = "Lihat Semua Ulasan >";
-            label17.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label9
-            // 
-            label9.BackColor = Color.Transparent;
-            label9.Font = new Font("Inter", 9F);
-            label9.ForeColor = Color.White;
-            label9.Location = new Point(36, 73);
-            label9.Name = "label9";
-            label9.Size = new Size(479, 77);
-            label9.TabIndex = 22;
-            label9.Text = "“Temukan pendapat asli para penghuni mengenai kenyamanan, fasilitas, dan layanan di Rusunawa Universitas Jember.”";
-            label9.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Inter", 19F, FontStyle.Bold);
-            label8.ForeColor = Color.White;
-            label8.Location = new Point(146, 17);
-            label8.Name = "label8";
-            label8.Size = new Size(260, 45);
-            label8.TabIndex = 16;
-            label8.Text = "Ulasan Terbaru";
-            // 
-            // panel14
-            // 
-            panel14.BackColor = Color.FromArgb(23, 24, 30);
-            panel14.Controls.Add(panel15);
-            panel14.Controls.Add(panel17);
-            panel14.Location = new Point(44, 25);
-            panel14.Name = "panel14";
-            panel14.Size = new Size(500, 607);
-            panel14.TabIndex = 11;
-            // 
-            // panel15
-            // 
-            panel15.Controls.Add(panel16);
-            panel15.Controls.Add(pictureBox29);
-            panel15.Controls.Add(label11);
-            panel15.Controls.Add(label10);
-            panel15.Controls.Add(label7);
-            panel15.Location = new Point(106, 30);
-            panel15.Name = "panel15";
-            panel15.Size = new Size(302, 186);
-            panel15.TabIndex = 13;
-            // 
-            // panel16
-            // 
-            panel16.BackColor = Color.FromArgb(87, 89, 101);
-            panel16.Controls.Add(label15);
-            panel16.Location = new Point(49, 135);
-            panel16.Name = "panel16";
-            panel16.Size = new Size(200, 33);
-            panel16.TabIndex = 19;
-            // 
-            // label15
-            // 
-            label15.BackColor = Color.Transparent;
-            label15.Font = new Font("Inter", 9F);
-            label15.ForeColor = Color.White;
-            label15.Location = new Point(7, 4);
-            label15.Name = "label15";
-            label15.Size = new Size(194, 25);
-            label15.TabIndex = 16;
-            label15.Text = "Dari 1000 Penyewa";
-            label15.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox29
-            // 
-            pictureBox29.ErrorImage = null;
-            pictureBox29.Image = Properties.Resources.star_ratngsolo;
-            pictureBox29.Location = new Point(184, 63);
-            pictureBox29.Name = "pictureBox29";
-            pictureBox29.Size = new Size(35, 35);
-            pictureBox29.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox29.TabIndex = 18;
-            pictureBox29.TabStop = false;
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Inter", 14F, FontStyle.Bold | FontStyle.Italic);
-            label11.ForeColor = Color.White;
-            label11.Location = new Point(149, 66);
-            label11.Name = "label11";
-            label11.Size = new Size(39, 35);
-            label11.TabIndex = 17;
-            label11.Text = "/5";
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Inter", 23F, FontStyle.Bold | FontStyle.Italic);
-            label10.ForeColor = Color.White;
-            label10.Location = new Point(76, 52);
-            label10.Name = "label10";
-            label10.Size = new Size(88, 56);
-            label10.TabIndex = 16;
-            label10.Text = "4.4";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Inter", 19F, FontStyle.Bold);
-            label7.ForeColor = Color.White;
-            label7.Location = new Point(66, 1);
-            label7.Name = "label7";
-            label7.Size = new Size(179, 45);
-            label7.TabIndex = 15;
-            label7.Text = "Total Skor";
-            // 
-            // panel17
-            // 
-            panel17.BackColor = Color.FromArgb(37, 39, 48);
-            panel17.Controls.Add(label14);
-            panel17.Controls.Add(label16);
-            panel17.Controls.Add(label25);
-            panel17.Controls.Add(label26);
-            panel17.Controls.Add(label27);
-            panel17.Controls.Add(label28);
-            panel17.Controls.Add(label29);
-            panel17.Controls.Add(label36);
-            panel17.Controls.Add(label37);
-            panel17.Controls.Add(label38);
-            panel17.Controls.Add(panel25);
-            panel17.Controls.Add(panel23);
-            panel17.Controls.Add(panel19);
-            panel17.Controls.Add(panel18);
-            panel17.Controls.Add(panel35);
-            panel17.Controls.Add(label39);
-            panel17.Controls.Add(label40);
-            panel17.Location = new Point(24, 239);
-            panel17.Name = "panel17";
-            panel17.Size = new Size(454, 347);
-            panel17.TabIndex = 12;
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Font = new Font("Inter", 10F, FontStyle.Bold | FontStyle.Italic);
-            label14.ForeColor = Color.White;
-            label14.Location = new Point(397, 108);
-            label14.Name = "label14";
-            label14.Size = new Size(43, 24);
-            label14.TabIndex = 36;
-            label14.Text = "999";
-            // 
-            // label16
-            // 
-            label16.AutoSize = true;
-            label16.Font = new Font("Inter", 10F, FontStyle.Bold | FontStyle.Italic);
-            label16.ForeColor = Color.White;
-            label16.Location = new Point(397, 139);
-            label16.Name = "label16";
-            label16.Size = new Size(43, 24);
-            label16.TabIndex = 35;
-            label16.Text = "999";
-            // 
-            // label25
-            // 
-            label25.AutoSize = true;
-            label25.Font = new Font("Inter", 10F, FontStyle.Bold | FontStyle.Italic);
-            label25.ForeColor = Color.White;
-            label25.Location = new Point(397, 170);
-            label25.Name = "label25";
-            label25.Size = new Size(43, 24);
-            label25.TabIndex = 34;
-            label25.Text = "999";
-            // 
-            // label26
-            // 
-            label26.AutoSize = true;
-            label26.Font = new Font("Inter", 10F, FontStyle.Bold | FontStyle.Italic);
-            label26.ForeColor = Color.White;
-            label26.Location = new Point(397, 77);
-            label26.Name = "label26";
-            label26.Size = new Size(43, 24);
-            label26.TabIndex = 33;
-            label26.Text = "999";
-            // 
-            // label27
-            // 
-            label27.AutoSize = true;
-            label27.Font = new Font("Inter", 10F, FontStyle.Bold | FontStyle.Italic);
-            label27.ForeColor = Color.White;
-            label27.Location = new Point(397, 46);
-            label27.Name = "label27";
-            label27.Size = new Size(43, 24);
-            label27.TabIndex = 32;
-            label27.Text = "999";
-            // 
-            // label28
-            // 
-            label28.AutoSize = true;
-            label28.Font = new Font("Inter", 10F, FontStyle.Bold | FontStyle.Italic);
-            label28.ForeColor = Color.White;
-            label28.Location = new Point(11, 108);
-            label28.Name = "label28";
-            label28.Size = new Size(21, 24);
-            label28.TabIndex = 31;
-            label28.Text = "3";
-            // 
-            // label29
-            // 
-            label29.AutoSize = true;
-            label29.Font = new Font("Inter", 10F, FontStyle.Bold | FontStyle.Italic);
-            label29.ForeColor = Color.White;
-            label29.Location = new Point(11, 139);
-            label29.Name = "label29";
-            label29.Size = new Size(21, 24);
-            label29.TabIndex = 30;
-            label29.Text = "2";
-            // 
-            // label36
-            // 
-            label36.AutoSize = true;
-            label36.Font = new Font("Inter", 10F, FontStyle.Bold | FontStyle.Italic);
-            label36.ForeColor = Color.White;
-            label36.Location = new Point(11, 170);
-            label36.Name = "label36";
-            label36.Size = new Size(17, 24);
-            label36.TabIndex = 29;
-            label36.Text = "1";
-            // 
-            // label37
-            // 
-            label37.AutoSize = true;
-            label37.Font = new Font("Inter", 10F, FontStyle.Bold | FontStyle.Italic);
-            label37.ForeColor = Color.White;
-            label37.Location = new Point(11, 77);
-            label37.Name = "label37";
-            label37.Size = new Size(22, 24);
-            label37.TabIndex = 28;
-            label37.Text = "4";
-            // 
-            // label38
-            // 
-            label38.AutoSize = true;
-            label38.Font = new Font("Inter", 10F, FontStyle.Bold | FontStyle.Italic);
-            label38.ForeColor = Color.White;
-            label38.Location = new Point(11, 46);
-            label38.Name = "label38";
-            label38.Size = new Size(21, 24);
-            label38.TabIndex = 27;
-            label38.Text = "5";
-            // 
-            // panel25
-            // 
-            panel25.BackColor = Color.FromArgb(139, 140, 142);
-            panel25.Controls.Add(panel26);
-            panel25.Location = new Point(35, 113);
-            panel25.Name = "panel25";
-            panel25.Size = new Size(356, 15);
-            panel25.TabIndex = 26;
-            // 
-            // panel26
-            // 
-            panel26.BackColor = Color.FromArgb(251, 255, 0);
-            panel26.Dock = DockStyle.Left;
-            panel26.Location = new Point(0, 0);
-            panel26.MaximumSize = new Size(356, 15);
-            panel26.Name = "panel26";
-            panel26.Size = new Size(20, 15);
-            panel26.TabIndex = 0;
-            // 
-            // panel23
-            // 
-            panel23.BackColor = Color.FromArgb(139, 140, 142);
-            panel23.Controls.Add(panel24);
-            panel23.Location = new Point(36, 175);
-            panel23.Name = "panel23";
-            panel23.Size = new Size(356, 15);
-            panel23.TabIndex = 25;
-            // 
-            // panel24
-            // 
-            panel24.BackColor = Color.FromArgb(251, 255, 0);
-            panel24.Dock = DockStyle.Left;
-            panel24.Location = new Point(0, 0);
-            panel24.MaximumSize = new Size(356, 15);
-            panel24.Name = "panel24";
-            panel24.Size = new Size(20, 15);
-            panel24.TabIndex = 0;
-            // 
-            // panel19
-            // 
-            panel19.BackColor = Color.FromArgb(139, 140, 142);
-            panel19.Controls.Add(panel20);
-            panel19.Location = new Point(36, 144);
-            panel19.Name = "panel19";
-            panel19.Size = new Size(356, 15);
-            panel19.TabIndex = 24;
-            // 
-            // panel20
-            // 
-            panel20.BackColor = Color.FromArgb(251, 255, 0);
-            panel20.Dock = DockStyle.Left;
-            panel20.Location = new Point(0, 0);
-            panel20.MaximumSize = new Size(356, 15);
-            panel20.Name = "panel20";
-            panel20.Size = new Size(20, 15);
-            panel20.TabIndex = 0;
-            // 
-            // panel18
-            // 
-            panel18.BackColor = Color.FromArgb(139, 140, 142);
-            panel18.Controls.Add(panel27);
-            panel18.Location = new Point(35, 82);
-            panel18.Name = "panel18";
-            panel18.Size = new Size(356, 15);
-            panel18.TabIndex = 23;
-            // 
-            // panel27
-            // 
-            panel27.BackColor = Color.FromArgb(251, 255, 0);
-            panel27.Dock = DockStyle.Left;
-            panel27.Location = new Point(0, 0);
-            panel27.MaximumSize = new Size(356, 15);
-            panel27.Name = "panel27";
-            panel27.Size = new Size(20, 15);
-            panel27.TabIndex = 0;
-            // 
-            // panel35
-            // 
-            panel35.BackColor = Color.FromArgb(139, 140, 142);
-            panel35.Controls.Add(progressbar1);
-            panel35.Location = new Point(35, 51);
-            panel35.Name = "panel35";
-            panel35.Size = new Size(356, 15);
-            panel35.TabIndex = 22;
-            // 
-            // progressbar1
-            // 
-            progressbar1.BackColor = Color.FromArgb(251, 255, 0);
-            progressbar1.Dock = DockStyle.Left;
-            progressbar1.Location = new Point(0, 0);
-            progressbar1.MaximumSize = new Size(356, 15);
-            progressbar1.Name = "progressbar1";
-            progressbar1.Size = new Size(20, 15);
-            progressbar1.TabIndex = 0;
-            // 
-            // label39
-            // 
-            label39.BackColor = Color.Transparent;
-            label39.Font = new Font("Inter", 9F);
-            label39.ForeColor = Color.White;
-            label39.Location = new Point(0, 227);
-            label39.Name = "label39";
-            label39.Size = new Size(454, 107);
-            label39.TabIndex = 21;
-            label39.Text = resources.GetString("label39.Text");
-            label39.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label40
-            // 
-            label40.AutoSize = true;
-            label40.Font = new Font("Inter", 12F, FontStyle.Bold);
-            label40.ForeColor = Color.White;
-            label40.Location = new Point(15, 9);
-            label40.Name = "label40";
-            label40.Size = new Size(117, 28);
-            label40.TabIndex = 20;
-            label40.Text = "Detail Skor";
+            // panelSemua
+            // 
+            panelSemua.BackColor = Color.FromArgb(37, 39, 48);
+            panelSemua.Controls.Add(panelKanan);
+            panelSemua.Controls.Add(panelKiri);
+            panelSemua.Location = new Point(1, 1);
+            panelSemua.Name = "panelSemua";
+            panelSemua.Padding = new Padding(50);
+            panelSemua.Size = new Size(1165, 662);
+            panelSemua.TabIndex = 6;
+            // 
+            // panelKanan
+            // 
+            panelKanan.BackColor = Color.FromArgb(23, 24, 30);
+            panelKanan.Location = new Point(585, 24);
+            panelKanan.Name = "panelKanan";
+            panelKanan.Size = new Size(548, 607);
+            panelKanan.TabIndex = 12;
+            // 
+            // panelKiri
+            // 
+            panelKiri.BackColor = Color.FromArgb(23, 24, 30);
+            panelKiri.Location = new Point(44, 25);
+            panelKiri.Name = "panelKiri";
+            panelKiri.Size = new Size(500, 607);
+            panelKiri.TabIndex = 11;
             // 
             // label6
             // 
@@ -1408,14 +642,9 @@
             Name = "Tinjau_Ulasan_Admin";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Tinjau_Keluhan";
+            Load += Lihat_Ulasan_Admin_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            panel33.ResumeLayout(false);
-            panel33.PerformLayout();
-            panel34.ResumeLayout(false);
-            panel34.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox20).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox21).EndInit();
             panel31.ResumeLayout(false);
             panel31.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox30).EndInit();
@@ -1455,49 +684,13 @@
             panel8.ResumeLayout(false);
             panel8.PerformLayout();
             panel9.ResumeLayout(false);
-            panel10.ResumeLayout(false);
-            panel11.ResumeLayout(false);
-            panel11.PerformLayout();
-            panel13.ResumeLayout(false);
-            panel13.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox15).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox22).EndInit();
-            panel12.ResumeLayout(false);
-            panel12.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox23).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox24).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox25).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox26).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox27).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox28).EndInit();
-            panel14.ResumeLayout(false);
-            panel15.ResumeLayout(false);
-            panel15.PerformLayout();
-            panel16.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox29).EndInit();
-            panel17.ResumeLayout(false);
-            panel17.PerformLayout();
-            panel25.ResumeLayout(false);
-            panel23.ResumeLayout(false);
-            panel19.ResumeLayout(false);
-            panel18.ResumeLayout(false);
-            panel35.ResumeLayout(false);
+            panelSemua.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
 
         private Panel panel1;
-        private Panel panel33;
-        private Panel panel34;
-        private Label label34;
-        private PictureBox pictureBox20;
-        private Label label35;
-        private PictureBox pictureBox21;
         private Panel panel31;
         private Panel panel32;
         private Label label32;
@@ -1539,63 +732,9 @@
         private Panel panel9;
         private Label label6;
         private Panel panel28;
-        private Panel panel10;
-        private Panel panel11;
-        private Panel panel13;
-        private PictureBox pictureBox15;
-        private PictureBox pictureBox11;
-        private PictureBox pictureBox12;
-        private PictureBox pictureBox13;
-        private PictureBox pictureBox14;
-        private Label label20;
-        private PictureBox pictureBox22;
-        private Label label23;
-        private Label label24;
-        private Panel panel12;
-        private PictureBox pictureBox23;
-        private PictureBox pictureBox24;
-        private PictureBox pictureBox25;
-        private PictureBox pictureBox26;
-        private PictureBox pictureBox27;
-        private Label label19;
-        private PictureBox pictureBox28;
-        private Label label21;
-        private Label label22;
-        private Label label18;
-        private Label label17;
-        private Label label9;
-        private Label label8;
-        private Panel panel14;
-        private Panel panel15;
-        private Panel panel16;
-        private Label label15;
-        private PictureBox pictureBox29;
-        private Label label11;
-        private Label label10;
-        private Label label7;
-        private Panel panel17;
-        private Label label14;
-        private Label label16;
-        private Label label25;
-        private Label label26;
-        private Label label27;
-        private Label label28;
-        private Label label29;
-        private Label label36;
-        private Label label37;
-        private Label label38;
-        private Panel panel25;
-        private Panel panel26;
-        private Panel panel23;
-        private Panel panel24;
-        private Panel panel19;
-        private Panel panel20;
-        private Panel panel18;
-        private Panel panel27;
-        private Panel panel35;
-        private Panel progressbar1;
-        private Label label39;
-        private Label label40;
+        private Panel panelSemua;
+        private Panel panelKanan;
+        private Panel panelKiri;
         private PictureBox pictureBox30;
     }
 }

@@ -61,6 +61,8 @@
             panel8 = new Panel();
             panel9 = new Panel();
             label6 = new Label();
+            panel27 = new Panel();
+            button2 = new Button();
             panel1.SuspendLayout();
             panel29.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
@@ -82,10 +84,12 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel8.SuspendLayout();
+            panel27.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
+            panel1.Controls.Add(panel27);
             panel1.Controls.Add(panel29);
             panel1.Controls.Add(panel22);
             panel1.Controls.Add(panel21);
@@ -451,6 +455,31 @@
             label6.TabIndex = 4;
             label6.Text = "Riwayat Pembayaran";
             // 
+            // panel27
+            // 
+            panel27.BackColor = Color.Transparent;
+            panel27.Controls.Add(button2);
+            panel27.Location = new Point(10, 705);
+            panel27.Name = "panel27";
+            panel27.Size = new Size(220, 45);
+            panel27.TabIndex = 15;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.Red;
+            button2.Cursor = Cursors.Hand;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(58, 3);
+            button2.Name = "button2";
+            button2.Size = new Size(104, 39);
+            button2.TabIndex = 1;
+            button2.Text = "Keluar";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
             // Riwayat_Pembayarn_Penyewa
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -493,6 +522,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             panel8.ResumeLayout(false);
             panel8.PerformLayout();
+            panel27.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -530,5 +560,7 @@
         private Panel panel9;
         private Label label6;
         private Panel panel6;
+        private Panel panel27;
+        private Button button2;
     }
 }

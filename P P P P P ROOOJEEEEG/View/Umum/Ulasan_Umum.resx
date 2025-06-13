@@ -117,15 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label24.Text" xml:space="preserve">
-    <value>Rusunawa Universitas Jember merupakan hunian yang sangat nyaman dan layak bagi para mahasiswa. Fasilitas yang disediakan cukup lengkap, mulai dari tempat tidur, lemari, meja belajar, hingga akses internet yang memadai. Lingkungannya bersih dan terawat, menciptakan suasana yang mendukung untuk belajar dan beristirahat. Keamanan juga terjaga dengan baik, sehingga penghuni merasa aman dan tenang selama tinggal di sana. Lokasinya strategis dan dekat dengan lingkungan kampus, membuat mobilitas menjadi lebih mudah. Pengelola rusunawa juga responsif terhadap kebutuhan dan keluhan penghuni. Secara keseluruhan, rusunawa ini sangat direkomendasikan bagi mahasiswa yang mencari tempat tinggal yang nyaman, aman, dan kondusif.</value>
-  </data>
-  <data name="label22.Text" xml:space="preserve">
-    <value>Rusunawa Universitas Jember merupakan hunian yang sangat nyaman dan layak bagi para mahasiswa. Fasilitas yang disediakan cukup lengkap, mulai dari tempat tidur, lemari, meja belajar, hingga akses internet yang memadai. Lingkungannya bersih dan terawat, menciptakan suasana yang mendukung untuk belajar dan beristirahat. Keamanan juga terjaga dengan baik, sehingga penghuni merasa aman dan tenang selama tinggal di sana. Lokasinya strategis dan dekat dengan lingkungan kampus, membuat mobilitas menjadi lebih mudah. Pengelola rusunawa juga responsif terhadap kebutuhan dan keluhan penghuni. Secara keseluruhan, rusunawa ini sangat direkomendasikan bagi mahasiswa yang mencari tempat tinggal yang nyaman, aman, dan kondusif.</value>
-  </data>
-  <data name="label16.Text" xml:space="preserve">
-    <value>“Rating Rusunawa Universitas Jember disusun berdasarkan skor bintang yang diberikan oleh para penghuni. Skor ini mencerminkan penilaian terhadap aspek seperti fasilitas, kebersihan, keamanan, dan kenyamanan.”</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox9.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

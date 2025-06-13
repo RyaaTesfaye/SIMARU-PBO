@@ -118,20 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBox21.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAAAOxJREFUOE+dlIsNwjAMRDsCIzACIzACG9EN6AZlBDaAEdgANugIhy5yjGPHpeJJ
-        lXrN5RrnNwx/AmAH4AxgkWfmN+/bBIAjgBciF+9dRYKuLmQvD1l8nwYxngBMAO4mhCUWjPerARykgxoT
-        2M7wOqIYKI1Z0BvAQ0JYrk56NQRtSuHccOUaY4b3qa4vHGnPmOF9qk25pRxvzPA+1aZkbsww2Rnep/rH
-        onDz8odlUTYFimDoTWNy+INuJV4rtkH2Z+Vp3pVevwZTfjhSoteOXjdwbP2FyXkY0LscZutTZBHqtTT6
-        diKHgKNVH799ADSYw+Lx/nFUAAAAAElFTkSuQmCC
-</value>
-  </data>
   <data name="pictureBox16.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAAASlJREFUSEu9VVEVwjAQQwISkIAEJEwCEuYAJOAAJOCAOQAHSEBCeCm3cVzbLezx
+        DQAACw0B7QfALAAAASlJREFUSEu9VVEVwjAQQwISkIAEJEwCEuYAJOAAJOCAOQAHSEBCeCm3cVzbLezx
         yHv9WJZc2rW3Lhb/BIANgAOAy8xB7yrWTQCwwwsPADcAnTDuzsNngtw6Fl/bS85g+fFyBDbru3teWQAD
         33Ws8GMgRFhAFziGEPtRoYKaD8AVwNkTReEUar6MzwgRNV/GR8I2Km0egDYcxbbmq/KRKAT4ozkaYJvM
         U3T0ZCZUYD4W8yvkM8e74X4Q4FeYd3MMKHyir/YgQxQWAuQ9KEIWBsg+WRgg+2RhgOyThQGyTxYGyL4o
@@ -141,21 +131,21 @@
   </data>
   <data name="pictureBox10.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAGiSURBVEhLzdVNq45RFMbx42VAjFAm4hOcnAxQZ2DA51AMGFGGXko+AEWHgTI0YEokRcZSPoAo
-        DMRERgg/razn2Pfe9356ekj+tSfXvtZa9151r7Ww8C/BWmyo9VmJWKyp9bhYj2v4gh94hVs4im21f0Lc
-        4Qhu4yW+4zNWsK40nvKLKziDm3ibWgREgr2Ff39q8UFBeCPmLK6mdrIscBdPV4Xf+m5cxId82f08wfu8
-        WxqJe4Y7pfA4zsBVgM35dfGaOKexqfZNaPI1Qoe5fbWAZRzCQWzs+Xo0vlLAYvZ4wokx3zQaXy1gX77g
-        QPlf1L4eja8WihbFWe75ejS+UhhpUbBY+6bR+GqhaFGc8gf7OwV6zO1rhA5z+xqhw9w+PMKTgWuEJrBD
-        5IqcpRCj+lMMt4GzYpYCOSAj10op7irG8zvcy4G2VC6QukDcYQ/O4UFO2OANdq4WSPNWHMcNPM/lEbzA
-        eeyYFIhgXMglE4Q3RvR1HMOWQfIxsD231cNMEMvldX7dV3zL3XB42tabiWzh5eztR1yKF9W+Pyb27GDX
-        /g/8BC0zJFcLC1jbAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAaJJREFUSEvN
+        1U2rjlEUxvHjZUCMUCbiE5ycDFBnYMDnUAwYUYZeSj4ARYeBMjRgSiRFxlI+gCgMxERGCD+trOfY9973
+        fnp6SP61J9e+1lr3XnWvtbDwL8FabKj1WYlYrKn1uFiPa/iCH3iFWziKbbV/QtzhCG7jJb7jM1awrjSe
+        8osrOIObeJtaBESCvYV/f2rxQUF4I+YsrqZ2sixwF09Xhd/6blzEh3zZ/TzB+7xbGol7hjul8DjOwFWA
+        zfl18Zo4p7Gp9k1o8jVCh7l9tYBlHMJBbOz5ejS+UsBi9njCiTHfNBpfLWBfvuBA+V/Uvh6NrxaKFsVZ
+        7vl6NL5SGGlRsFj7ptH4aqFoUZzyB/s7BXrM7WuEDnP7GqHD3D48wpOBa4QmsEPkipylEKP6Uwy3gbNi
+        lgI5ICPXSinuKsbzO9zLgbZULpC6QNxhD87hQU7Y4A12rhZI81Ycxw08z+URvMB57JgUiGBcyCUThDdG
+        9HUcw5ZB8jGwPbfVw0wQy+V1ft1XfMvdcHja1puJbOHl7O1HXIoX1b4/JvbsYNf+D/wELTMkVwsLWNsA
+        AAAASUVORK5CYII=
 </value>
   </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAAAUZJREFUSEvNlGuRAjEQhJGABCQgAQlIQAIODgk44CScg8MBEsABEppqrqfovNjU
+        DQAACw0B7QfALAAAAUZJREFUSEvNlGuRAjEQhJGABCQgAQlIQAIODgk44CScg8MBEsABEppqrqfovNjU
         hh/3VaUWMq/MZCaLxX8BwArAUWuVy4eQ8yuAuxZ/L3O92QD4xh8MxEUOud4szOHJ9hiQmYxn4ae3vc9k
         UTu9ySKL/gtnygA2APbqlrjYwomCx4VTlza0Lcsm5V+dNqDxGcA61w9kRx3qOqckkNX5AGBbO/EUlj19
         MODRhT8ALonFACrb2Td2yuAr0ZwBfcjXLhcwtaEg5rzeviNBJp0HFmSTy1pYid87D9QFxXC1iKHL95vo
@@ -4048,7 +4038,7 @@
   <data name="pictureBox5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAAAURJREFUSEvVlH0NAjEMxZGABCQgASlIwMHhAByAA3AADsABOEDCI2+8y7p295G7
+        DQAACw0B7QfALAAAAURJREFUSEvVlH0NAjEMxZGABCQgASlIwMHhAByAA3AADsABOEDCI2+8y7p295G7
         v/glzS29ru26rovFvwCgAbD3+ioAVgA2A7Iy9gcAF0l3EABbAA+M46o9TOYFYK31xwa3znlEcgewq2Ts
         Zal9Z2Zt9FzfvHNGJpfixwDK+mXWKbBOtLGGjEri0Xpgpiyr1iyvXedTyPBh9o5C+5hccq7S8stLv3vD
         rPjpaNxYnUelPeoerFCXq9ETgPBfKJ1qHfQk/KsFkJ5B2Ha8NNv36XLbVvXIX/7XFYCYPk9dJmmDrr09
@@ -4059,7 +4049,7 @@
   <data name="pictureBox6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAHgAAAB2iCAYAAACV1t40AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAEh
-        bQABIW0Bqg9mzgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAP+NSURBVHhe7N17
+        agABIWoB+EvAsQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAP+NSURBVHhe7N17
         rOZ3Yef39zlz9YWxPb5hG2MbY4wxvmBjfMlI2W7cdbZlokqNF2lVZtttMlU3XUbtpnarJutJlRIrXRqm
         kqNMu1TrqWiElW5VRtlEmCa7xCHAmkCgXMwlELCNL4HYBowvM/OrxjlR0t/zI/FlLs9zzuslvf+1zzyX
         3/P9/vUpAAAAAAAAAAAAAAAAAADgaLu1+tNqOEIdrPZWJ4//RwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -33182,14 +33172,5 @@
         /2b+2pZ/W+Pf3cV/g1+/+Pe69d/1E7f8+x8L0i/+nXj08o8KAAAAAAAAAAAAAAAAAMB99f8BOIMVCqan
         SAEAAAAASUVORK5CYII=
 </value>
-  </data>
-  <data name="label24.Text" xml:space="preserve">
-    <value>Rusunawa Universitas Jember merupakan hunian yang sangat nyaman dan layak bagi para mahasiswa. Fasilitas yang disediakan cukup lengkap, mulai dari tempat tidur, lemari, meja belajar, hingga akses internet yang memadai. Lingkungannya bersih dan terawat, menciptakan suasana yang mendukung untuk belajar dan beristirahat. Keamanan juga terjaga dengan baik, sehingga penghuni merasa aman dan tenang selama tinggal di sana. Lokasinya strategis dan dekat dengan lingkungan kampus, membuat mobilitas menjadi lebih mudah. Pengelola rusunawa juga responsif terhadap kebutuhan dan keluhan penghuni. Secara keseluruhan, rusunawa ini sangat direkomendasikan bagi mahasiswa yang mencari tempat tinggal yang nyaman, aman, dan kondusif.</value>
-  </data>
-  <data name="label22.Text" xml:space="preserve">
-    <value>Rusunawa Universitas Jember merupakan hunian yang sangat nyaman dan layak bagi para mahasiswa. Fasilitas yang disediakan cukup lengkap, mulai dari tempat tidur, lemari, meja belajar, hingga akses internet yang memadai. Lingkungannya bersih dan terawat, menciptakan suasana yang mendukung untuk belajar dan beristirahat. Keamanan juga terjaga dengan baik, sehingga penghuni merasa aman dan tenang selama tinggal di sana. Lokasinya strategis dan dekat dengan lingkungan kampus, membuat mobilitas menjadi lebih mudah. Pengelola rusunawa juga responsif terhadap kebutuhan dan keluhan penghuni. Secara keseluruhan, rusunawa ini sangat direkomendasikan bagi mahasiswa yang mencari tempat tinggal yang nyaman, aman, dan kondusif.</value>
-  </data>
-  <data name="label39.Text" xml:space="preserve">
-    <value>“Rating Rusunawa Universitas Jember disusun berdasarkan skor bintang yang diberikan oleh para penghuni. Skor ini mencerminkan penilaian terhadap aspek seperti fasilitas, kebersihan, keamanan, dan kenyamanan.”</value>
   </data>
 </root>

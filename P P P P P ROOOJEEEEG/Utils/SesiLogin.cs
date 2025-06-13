@@ -22,6 +22,10 @@ namespace RUSUNAWAAA.Utils
         {
             return LoggedInUser != null;
         }
+        public static void Logout()
+        {
+            LoggedInUser = null;
+        }
     }
 
 }

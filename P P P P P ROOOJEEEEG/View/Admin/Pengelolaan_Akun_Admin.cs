@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using RUSUNAWAAA.Models;
 using RUSUNAWAAA.Service;
 using RUSUNAWAAA.Utils;
+using RUSUNAWAAA.View.Login;
 using RUSUNAWAAA.View.Penyewa;
 using PenyewaModel = RUSUNAWAAA.Models.Penyewa;
 
@@ -79,7 +80,7 @@ namespace RUSUNAWAAA.View.Admin
                 if (sukses)
                 {
                     MessageBox.Show($"{itemsToDelete.Count} akun berhasil dihapus.", "Sukses");
-                    LoadAndDisplayPenyewa("Semua"); 
+                    LoadAndDisplayPenyewa("Semua");
                 }
                 else
                 {
@@ -108,21 +109,21 @@ namespace RUSUNAWAAA.View.Admin
         private void ShowDetailView(string nomorKtp)
         {
 
-            panel10.Visible = false; 
+            panel10.Visible = false;
 
-            var detailView = new UC_DetailAkun(); 
+            var detailView = new UC_DetailAkun();
             detailView.Dock = DockStyle.Fill;
             detailView.BackRequested += (s, ev) => ShowListView();
 
-           
+
             this.Controls.Add(detailView);
             detailView.BringToFront();
-          
+
             detailView.LoadData(nomorKtp);
         }
         private void ShowListView()
         {
-         
+
             var detailView = this.Controls.OfType<UC_DetailAkun>().FirstOrDefault();
             if (detailView != null)
             {
@@ -130,7 +131,7 @@ namespace RUSUNAWAAA.View.Admin
                 detailView.Dispose();
             }
 
-    
+
             panel10.Visible = true;
 
             LoadAndDisplayPenyewa("Semua");
@@ -177,11 +178,7 @@ namespace RUSUNAWAAA.View.Admin
             command.Execute();
         }
 
-        private void ToSiaran_AD(object sender, EventArgs e)
-        {
-            var command = new NavigateToFormCommand<Siaran_Admin>(this);
-            command.Execute();
-        }
+
 
         private void panel10_Paint(object sender, PaintEventArgs e)
         {
@@ -195,6 +192,24 @@ namespace RUSUNAWAAA.View.Admin
 
         private void ToHapusAkun_AD(object sender, EventArgs e)
         {
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DialogResult konfirmasi = MessageBox.Show(
+               "Anda yakin ingin keluar dari aplikasi?",
+               "Konfirmasi Keluar",
+               MessageBoxButtons.YesNo,
+               MessageBoxIcon.Question
+           );
+
+            if (konfirmasi == DialogResult.Yes)
+            {
+                SesiLogin.Logout();
+
+                var command = new NavigateToFormCommand<Loginss>(this);
+                command.Execute();
+            }
         }
     }
 }

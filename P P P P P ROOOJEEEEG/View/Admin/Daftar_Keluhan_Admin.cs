@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using PenyewaModel = RUSUNAWAAA.Models.Penyewa;
 using RUSUNAWAAA.Utils;
+using RUSUNAWAAA.View.Login;
 
 namespace RUSUNAWAAA.View.Admin
 {
@@ -182,11 +183,6 @@ namespace RUSUNAWAAA.View.Admin
             command.Execute();
         }
 
-        private void ToSiaran_AD(object sender, EventArgs e)
-        {
-            var command = new NavigateToFormCommand<Siaran_Admin>(this);
-            command.Execute();
-        }
 
         private void checkBox8_CheckedChanged(object sender, EventArgs e)
         {
@@ -204,6 +200,23 @@ namespace RUSUNAWAAA.View.Admin
             {
                 _filterStatus = cmbStatusFilter.SelectedItem.ToString();
                 ApplyFiltersAndDisplay();
+            }
+        }
+        private void btnKeluar_Click(object sender, EventArgs e)
+        {
+            DialogResult konfirmasi = MessageBox.Show(
+                "Anda yakin ingin keluar dari aplikasi?",
+                "Konfirmasi Keluar",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (konfirmasi == DialogResult.Yes)
+            {
+                SesiLogin.Logout();
+
+                var command = new NavigateToFormCommand<Loginss>(this);
+                command.Execute();
             }
         }
     }

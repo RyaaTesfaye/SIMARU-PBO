@@ -10,13 +10,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using RUSUNAWAAA.Models;
 using RUSUNAWAAA.Service;
+using RUSUNAWAAA.View.Login;
 
 namespace RUSUNAWAAA.View.Admin
 {
     public partial class Kelola_Aturan_Admin : Form
     {
         private readonly AturanService _aturanService;
-        private UC_TambahAturan _ucTambahAturan; 
+        private UC_TambahAturan _ucTambahAturan;
 
         private string _filterJenisKelamin = "Perempuan";
         public Kelola_Aturan_Admin()
@@ -28,8 +29,8 @@ namespace RUSUNAWAAA.View.Admin
 
             _aturanService = new AturanService(flowLayoutPanelAturan);
         }
-            
-            // Muat dan tampilkan semua data saat form pertama kali dibuka
+
+        // Muat dan tampilkan semua data saat form pertama kali dibuka
 
         private void Kelola_Aturan_Admin_Load(object sender, EventArgs e)
         {
@@ -96,7 +97,7 @@ namespace RUSUNAWAAA.View.Admin
             if (sukses)
             {
                 MessageBox.Show("Aturan baru berhasil ditambahkan.", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                _ucTambahAturan.Visible = false; 
+                _ucTambahAturan.Visible = false;
                 _ucTambahAturan.ClearForm();
             }
             else
@@ -136,11 +137,6 @@ namespace RUSUNAWAAA.View.Admin
             command.Execute();
         }
 
-        private void ToSiaran_AD(object sender, EventArgs e)
-        {
-            var command = new NavigateToFormCommand<Siaran_Admin>(this);
-            command.Execute();
-        }
 
         private void label11_Click(object sender, EventArgs e)
         {
@@ -160,6 +156,24 @@ namespace RUSUNAWAAA.View.Admin
         private void panel11_Paint_1(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DialogResult konfirmasi = MessageBox.Show(
+               "Anda yakin ingin keluar dari aplikasi?",
+               "Konfirmasi Keluar",
+               MessageBoxButtons.YesNo,
+               MessageBoxIcon.Question
+           );
+
+            if (konfirmasi == DialogResult.Yes)
+            {
+                SesiLogin.Logout();
+
+                var command = new NavigateToFormCommand<Loginss>(this);
+                command.Execute();
+            }
         }
     }
 }
