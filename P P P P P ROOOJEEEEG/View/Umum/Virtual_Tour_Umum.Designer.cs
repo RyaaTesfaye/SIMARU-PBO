@@ -181,6 +181,7 @@
             // picbox3
             // 
             picbox3.Image = (Image)resources.GetObject("picbox3.Image");
+            picbox3.InitialImage = null;
             picbox3.Location = new Point(770, 62);
             picbox3.Name = "picbox3";
             picbox3.Size = new Size(280, 500);
@@ -191,6 +192,7 @@
             // picbox2
             // 
             picbox2.Image = (Image)resources.GetObject("picbox2.Image");
+            picbox2.InitialImage = null;
             picbox2.Location = new Point(448, 62);
             picbox2.Name = "picbox2";
             picbox2.Size = new Size(280, 500);
@@ -201,6 +203,7 @@
             // picbox1
             // 
             picbox1.Image = (Image)resources.GetObject("picbox1.Image");
+            picbox1.InitialImage = null;
             picbox1.Location = new Point(126, 62);
             picbox1.Name = "picbox1";
             picbox1.Size = new Size(280, 500);

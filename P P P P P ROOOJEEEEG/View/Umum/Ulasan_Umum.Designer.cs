@@ -107,7 +107,7 @@
             // panelKanan
             // 
             panelKanan.BackColor = Color.FromArgb(23, 24, 30);
-            panelKanan.Location = new Point(585, 25);
+            panelKanan.Location = new Point(593, 25);
             panelKanan.Name = "panelKanan";
             panelKanan.Size = new Size(548, 607);
             panelKanan.TabIndex = 12;
@@ -115,9 +115,9 @@
             // panelKiri
             // 
             panelKiri.BackColor = Color.FromArgb(23, 24, 30);
-            panelKiri.Location = new Point(44, 24);
+            panelKiri.Location = new Point(23, 24);
             panelKiri.Name = "panelKiri";
-            panelKiri.Size = new Size(500, 607);
+            panelKiri.Size = new Size(548, 607);
             panelKiri.TabIndex = 11;
             // 
             // label6
@@ -262,7 +262,7 @@
             label12.AutoSize = true;
             label12.Font = new Font("Inter", 10F, FontStyle.Bold);
             label12.ForeColor = Color.White;
-            label12.Location = new Point(45, 12);
+            label12.Location = new Point(44, 12);
             label12.Name = "label12";
             label12.Size = new Size(201, 24);
             label12.TabIndex = 4;

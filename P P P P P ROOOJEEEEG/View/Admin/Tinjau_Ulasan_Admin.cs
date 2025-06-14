@@ -30,6 +30,7 @@ namespace RUSUNAWAAA.View.Admin
             InitializeComponent();
             UIhelper.MakePanelRound(panelSemua, 20);
             UIhelper.MakePanelRound(panelKanan, 20);
+            UIhelper.MakePanelRound(panelKiri, 20);
             _ulasanService = new UlasanService();
             // Set mode default untuk Admin/Umum
             _currentMode = TampilanUlasanMode.AdminOrUmum;

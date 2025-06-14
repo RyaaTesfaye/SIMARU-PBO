@@ -597,7 +597,7 @@
             panelSemua.BackColor = Color.FromArgb(37, 39, 48);
             panelSemua.Controls.Add(panelKanan);
             panelSemua.Controls.Add(panelKiri);
-            panelSemua.Location = new Point(1, 1);
+            panelSemua.Location = new Point(0, 1);
             panelSemua.Name = "panelSemua";
             panelSemua.Padding = new Padding(50);
             panelSemua.Size = new Size(1165, 662);
@@ -606,7 +606,7 @@
             // panelKanan
             // 
             panelKanan.BackColor = Color.FromArgb(23, 24, 30);
-            panelKanan.Location = new Point(585, 24);
+            panelKanan.Location = new Point(594, 24);
             panelKanan.Name = "panelKanan";
             panelKanan.Size = new Size(548, 607);
             panelKanan.TabIndex = 12;
@@ -614,9 +614,9 @@
             // panelKiri
             // 
             panelKiri.BackColor = Color.FromArgb(23, 24, 30);
-            panelKiri.Location = new Point(44, 25);
+            panelKiri.Location = new Point(24, 25);
             panelKiri.Name = "panelKiri";
-            panelKiri.Size = new Size(500, 607);
+            panelKiri.Size = new Size(548, 607);
             panelKiri.TabIndex = 11;
             // 
             // label6
