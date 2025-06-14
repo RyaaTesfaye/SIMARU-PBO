@@ -53,7 +53,7 @@
             cmbDurasi.Font = new Font("Inter", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cmbDurasi.FormattingEnabled = true;
             cmbDurasi.Items.AddRange(new object[] { "3", "6", "9", "12" });
-            cmbDurasi.Location = new Point(65, 136);
+            cmbDurasi.Location = new Point(70, 136);
             cmbDurasi.Name = "cmbDurasi";
             cmbDurasi.Size = new Size(316, 32);
             cmbDurasi.TabIndex = 29;
@@ -64,7 +64,7 @@
             label9.BackColor = Color.Transparent;
             label9.Font = new Font("Inter", 8F);
             label9.ForeColor = Color.White;
-            label9.Location = new Point(65, 108);
+            label9.Location = new Point(70, 108);
             label9.Name = "label9";
             label9.Size = new Size(199, 24);
             label9.TabIndex = 28;
@@ -84,7 +84,7 @@
             // txtBiaya
             // 
             txtBiaya.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtBiaya.Location = new Point(65, 248);
+            txtBiaya.Location = new Point(70, 248);
             txtBiaya.Name = "txtBiaya";
             txtBiaya.ReadOnly = true;
             txtBiaya.Size = new Size(316, 32);
@@ -95,7 +95,7 @@
             estimasibulan.BackColor = Color.Transparent;
             estimasibulan.Font = new Font("Inter", 8F);
             estimasibulan.ForeColor = Color.White;
-            estimasibulan.Location = new Point(65, 221);
+            estimasibulan.Location = new Point(70, 221);
             estimasibulan.Name = "estimasibulan";
             estimasibulan.Size = new Size(316, 24);
             estimasibulan.TabIndex = 57;

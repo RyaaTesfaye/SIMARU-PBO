@@ -83,7 +83,7 @@
             // 
             textUsername.BorderStyle = BorderStyle.FixedSingle;
             textUsername.Font = new Font("Segoe UI", 10F);
-            textUsername.Location = new Point(53, 221);
+            textUsername.Location = new Point(49, 221);
             textUsername.Name = "textUsername";
             textUsername.PlaceholderText = "Username";
             textUsername.Size = new Size(445, 30);
@@ -93,7 +93,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(53, 183);
+            label1.Location = new Point(52, 183);
             label1.Name = "label1";
             label1.Size = new Size(191, 18);
             label1.TabIndex = 19;
@@ -103,7 +103,7 @@
             // 
             textPassword.BorderStyle = BorderStyle.FixedSingle;
             textPassword.Font = new Font("Segoe UI", 10F);
-            textPassword.Location = new Point(53, 327);
+            textPassword.Location = new Point(49, 327);
             textPassword.Name = "textPassword";
             textPassword.PlaceholderText = "Password";
             textPassword.Size = new Size(445, 30);
@@ -113,7 +113,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.Location = new Point(53, 282);
+            label6.Location = new Point(53, 292);
             label6.Name = "label6";
             label6.Size = new Size(189, 18);
             label6.TabIndex = 17;
@@ -121,13 +121,14 @@
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(53, 53);
+            label5.BackColor = Color.Transparent;
+            label5.Font = new Font("Inter Black", 25.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(44, 57);
             label5.Name = "label5";
-            label5.Size = new Size(174, 48);
+            label5.Size = new Size(198, 61);
             label5.TabIndex = 16;
-            label5.Text = "MASUK";
+            label5.Text = "SIMARU";
+            label5.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
@@ -141,12 +142,13 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(53, 26);
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Inter Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(51, 30);
             label3.Name = "label3";
-            label3.Size = new Size(235, 24);
+            label3.Size = new Size(192, 28);
             label3.TabIndex = 14;
-            label3.Text = "Selamat datang di SIMARU";
+            label3.Text = "Selamat datang di";
             // 
             // btnLupaPassword
             // 
@@ -155,7 +157,7 @@
             btnLupaPassword.Font = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnLupaPassword.LinkArea = new LinkArea(0, 60);
             btnLupaPassword.LinkColor = Color.FromArgb(60, 138, 255);
-            btnLupaPassword.Location = new Point(415, 387);
+            btnLupaPassword.Location = new Point(419, 387);
             btnLupaPassword.Name = "btnLupaPassword";
             btnLupaPassword.Size = new Size(80, 20);
             btnLupaPassword.TabIndex = 13;

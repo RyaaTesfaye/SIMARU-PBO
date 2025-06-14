@@ -45,7 +45,7 @@
             btnDetail.FlatStyle = FlatStyle.Flat;
             btnDetail.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnDetail.ForeColor = Color.White;
-            btnDetail.Location = new Point(930, 0);
+            btnDetail.Location = new Point(940, 5);
             btnDetail.Name = "btnDetail";
             btnDetail.Size = new Size(72, 33);
             btnDetail.TabIndex = 68;

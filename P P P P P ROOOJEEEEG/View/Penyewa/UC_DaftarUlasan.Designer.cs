@@ -52,7 +52,7 @@
             linkLihatSemua.BackColor = Color.Transparent;
             linkLihatSemua.Font = new Font("Inter", 9F);
             linkLihatSemua.ForeColor = Color.White;
-            linkLihatSemua.Location = new Point(340, 188);
+            linkLihatSemua.Location = new Point(342, 188);
             linkLihatSemua.Name = "linkLihatSemua";
             linkLihatSemua.Size = new Size(163, 25);
             linkLihatSemua.TabIndex = 29;
@@ -85,7 +85,7 @@
             // 
             // flowLayoutPanelUlasan
             // 
-            flowLayoutPanelUlasan.Location = new Point(24, 245);
+            flowLayoutPanelUlasan.Location = new Point(20, 235);
             flowLayoutPanelUlasan.Name = "flowLayoutPanelUlasan";
             flowLayoutPanelUlasan.Size = new Size(509, 359);
             flowLayoutPanelUlasan.TabIndex = 31;

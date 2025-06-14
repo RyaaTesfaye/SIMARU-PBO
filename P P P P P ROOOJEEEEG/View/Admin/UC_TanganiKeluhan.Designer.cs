@@ -91,7 +91,7 @@
             // 
             panel1.BackColor = Color.White;
             panel1.Controls.Add(label3);
-            panel1.Location = new Point(51, 286);
+            panel1.Location = new Point(59, 286);
             panel1.Name = "panel1";
             panel1.Size = new Size(371, 192);
             panel1.TabIndex = 35;
@@ -101,7 +101,7 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Inter", 8F);
             label3.ForeColor = Color.Black;
-            label3.Location = new Point(3, 0);
+            label3.Location = new Point(0, 0);
             label3.Name = "label3";
             label3.Size = new Size(368, 192);
             label3.TabIndex = 35;
@@ -112,7 +112,7 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Inter", 10F, FontStyle.Bold);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(51, 249);
+            label2.Location = new Point(57, 249);
             label2.Name = "label2";
             label2.Size = new Size(77, 24);
             label2.TabIndex = 34;
@@ -121,7 +121,7 @@
             // textBox1
             // 
             textBox1.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(51, 121);
+            textBox1.Location = new Point(59, 121);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(371, 32);
             textBox1.TabIndex = 33;
@@ -131,7 +131,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Inter", 10F, FontStyle.Bold);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(51, 88);
+            label1.Location = new Point(59, 88);
             label1.Name = "label1";
             label1.Size = new Size(77, 24);
             label1.TabIndex = 32;
@@ -145,7 +145,7 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Inter", 6F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.Black;
-            button1.Location = new Point(51, 203);
+            button1.Location = new Point(59, 203);
             button1.Name = "button1";
             button1.Size = new Size(61, 32);
             button1.TabIndex = 31;
@@ -155,7 +155,7 @@
             // textBox2
             // 
             textBox2.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(127, 203);
+            textBox2.Location = new Point(136, 203);
             textBox2.Name = "textBox2";
             textBox2.ReadOnly = true;
             textBox2.Size = new Size(295, 32);
@@ -166,7 +166,7 @@
             label10.BackColor = Color.Transparent;
             label10.Font = new Font("Inter", 10F, FontStyle.Bold);
             label10.ForeColor = Color.White;
-            label10.Location = new Point(47, 170);
+            label10.Location = new Point(57, 170);
             label10.Name = "label10";
             label10.Size = new Size(127, 24);
             label10.TabIndex = 29;

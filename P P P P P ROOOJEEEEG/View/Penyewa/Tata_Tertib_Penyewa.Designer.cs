@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tata_Tertib_Penyewa));
             panel1 = new Panel();
+            panel27 = new Panel();
+            button2 = new Button();
             panel29 = new Panel();
             label26 = new Label();
             pictureBox16 = new PictureBox();
@@ -64,9 +66,8 @@
             panel9 = new Panel();
             dgvAturan = new DataGridView();
             label6 = new Label();
-            panel27 = new Panel();
-            button2 = new Button();
             panel1.SuspendLayout();
+            panel27.SuspendLayout();
             panel29.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
             panel22.SuspendLayout();
@@ -91,7 +92,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvAturan).BeginInit();
-            panel27.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -111,6 +111,31 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(240, 803);
             panel1.TabIndex = 3;
+            // 
+            // panel27
+            // 
+            panel27.BackColor = Color.Transparent;
+            panel27.Controls.Add(button2);
+            panel27.Location = new Point(14, 714);
+            panel27.Name = "panel27";
+            panel27.Size = new Size(220, 45);
+            panel27.TabIndex = 10;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.Red;
+            button2.Cursor = Cursors.Hand;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(58, 3);
+            button2.Name = "button2";
+            button2.Size = new Size(104, 39);
+            button2.TabIndex = 1;
+            button2.Text = "Keluar";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // panel29
             // 
@@ -502,31 +527,6 @@
             label6.TabIndex = 4;
             label6.Text = "Tata Tertib";
             // 
-            // panel27
-            // 
-            panel27.BackColor = Color.Transparent;
-            panel27.Controls.Add(button2);
-            panel27.Location = new Point(14, 714);
-            panel27.Name = "panel27";
-            panel27.Size = new Size(220, 45);
-            panel27.TabIndex = 10;
-            // 
-            // button2
-            // 
-            button2.BackColor = Color.Red;
-            button2.Cursor = Cursors.Hand;
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(58, 3);
-            button2.Name = "button2";
-            button2.Size = new Size(104, 39);
-            button2.TabIndex = 1;
-            button2.Text = "Keluar";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
-            // 
             // Tata_Tertib_Penyewa
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -542,6 +542,7 @@
             Load += Tata_Tertib_Penyewa_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            panel27.ResumeLayout(false);
             panel29.ResumeLayout(false);
             panel29.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox16).EndInit();
@@ -574,7 +575,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             panel9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgvAturan).EndInit();
-            panel27.ResumeLayout(false);
             ResumeLayout(false);
         }
 

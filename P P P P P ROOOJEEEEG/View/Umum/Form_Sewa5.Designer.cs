@@ -75,7 +75,7 @@
             // txtBiaya
             // 
             txtBiaya.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtBiaya.Location = new Point(27, 125);
+            txtBiaya.Location = new Point(48, 123);
             txtBiaya.Name = "txtBiaya";
             txtBiaya.ReadOnly = true;
             txtBiaya.Size = new Size(359, 32);
@@ -231,7 +231,7 @@
             estimasibulan.BackColor = Color.Transparent;
             estimasibulan.Font = new Font("Inter", 8F);
             estimasibulan.ForeColor = Color.White;
-            estimasibulan.Location = new Point(27, 98);
+            estimasibulan.Location = new Point(47, 98);
             estimasibulan.Name = "estimasibulan";
             estimasibulan.Size = new Size(315, 24);
             estimasibulan.TabIndex = 16;

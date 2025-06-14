@@ -131,7 +131,7 @@
             lblTotalSkor.AutoSize = true;
             lblTotalSkor.Font = new Font("Inter", 23F, FontStyle.Bold | FontStyle.Italic);
             lblTotalSkor.ForeColor = Color.White;
-            lblTotalSkor.Location = new Point(76, 52);
+            lblTotalSkor.Location = new Point(66, 52);
             lblTotalSkor.Name = "lblTotalSkor";
             lblTotalSkor.Size = new Size(88, 56);
             lblTotalSkor.TabIndex = 16;
@@ -169,7 +169,7 @@
             panel11.Controls.Add(panelBgBintang5);
             panel11.Controls.Add(label16);
             panel11.Controls.Add(label14);
-            panel11.Location = new Point(8, 235);
+            panel11.Location = new Point(32, 235);
             panel11.Name = "panel11";
             panel11.Size = new Size(481, 347);
             panel11.TabIndex = 14;
@@ -179,7 +179,7 @@
             linkBeriUlasan.BackColor = Color.Transparent;
             linkBeriUlasan.Font = new Font("Inter", 9F);
             linkBeriUlasan.ForeColor = Color.White;
-            linkBeriUlasan.Location = new Point(351, 0);
+            linkBeriUlasan.Location = new Point(359, 1);
             linkBeriUlasan.Name = "linkBeriUlasan";
             linkBeriUlasan.Size = new Size(109, 25);
             linkBeriUlasan.TabIndex = 24;
@@ -192,7 +192,7 @@
             lblJmlBintang3.AutoSize = true;
             lblJmlBintang3.Font = new Font("Inter", 10F, FontStyle.Bold | FontStyle.Italic);
             lblJmlBintang3.ForeColor = Color.White;
-            lblJmlBintang3.Location = new Point(397, 108);
+            lblJmlBintang3.Location = new Point(404, 108);
             lblJmlBintang3.Name = "lblJmlBintang3";
             lblJmlBintang3.Size = new Size(43, 24);
             lblJmlBintang3.TabIndex = 36;
@@ -203,7 +203,7 @@
             lblJmlBintang2.AutoSize = true;
             lblJmlBintang2.Font = new Font("Inter", 10F, FontStyle.Bold | FontStyle.Italic);
             lblJmlBintang2.ForeColor = Color.White;
-            lblJmlBintang2.Location = new Point(397, 139);
+            lblJmlBintang2.Location = new Point(404, 139);
             lblJmlBintang2.Name = "lblJmlBintang2";
             lblJmlBintang2.Size = new Size(43, 24);
             lblJmlBintang2.TabIndex = 35;
@@ -214,7 +214,7 @@
             lblJmlBintang1.AutoSize = true;
             lblJmlBintang1.Font = new Font("Inter", 10F, FontStyle.Bold | FontStyle.Italic);
             lblJmlBintang1.ForeColor = Color.White;
-            lblJmlBintang1.Location = new Point(397, 170);
+            lblJmlBintang1.Location = new Point(404, 170);
             lblJmlBintang1.Name = "lblJmlBintang1";
             lblJmlBintang1.Size = new Size(43, 24);
             lblJmlBintang1.TabIndex = 34;
@@ -225,7 +225,7 @@
             lblJmlBintang4.AutoSize = true;
             lblJmlBintang4.Font = new Font("Inter", 10F, FontStyle.Bold | FontStyle.Italic);
             lblJmlBintang4.ForeColor = Color.White;
-            lblJmlBintang4.Location = new Point(397, 77);
+            lblJmlBintang4.Location = new Point(404, 77);
             lblJmlBintang4.Name = "lblJmlBintang4";
             lblJmlBintang4.Size = new Size(43, 24);
             lblJmlBintang4.TabIndex = 33;
@@ -236,7 +236,7 @@
             lblJmlBintang5.AutoSize = true;
             lblJmlBintang5.Font = new Font("Inter", 10F, FontStyle.Bold | FontStyle.Italic);
             lblJmlBintang5.ForeColor = Color.White;
-            lblJmlBintang5.Location = new Point(397, 46);
+            lblJmlBintang5.Location = new Point(404, 46);
             lblJmlBintang5.Name = "lblJmlBintang5";
             lblJmlBintang5.Size = new Size(43, 24);
             lblJmlBintang5.TabIndex = 32;
@@ -247,7 +247,7 @@
             label30.AutoSize = true;
             label30.Font = new Font("Inter", 10F, FontStyle.Bold | FontStyle.Italic);
             label30.ForeColor = Color.White;
-            label30.Location = new Point(11, 108);
+            label30.Location = new Point(18, 108);
             label30.Name = "label30";
             label30.Size = new Size(21, 24);
             label30.TabIndex = 31;
@@ -258,7 +258,7 @@
             label29.AutoSize = true;
             label29.Font = new Font("Inter", 10F, FontStyle.Bold | FontStyle.Italic);
             label29.ForeColor = Color.White;
-            label29.Location = new Point(11, 139);
+            label29.Location = new Point(18, 139);
             label29.Name = "label29";
             label29.Size = new Size(21, 24);
             label29.TabIndex = 30;
@@ -269,7 +269,7 @@
             label28.AutoSize = true;
             label28.Font = new Font("Inter", 10F, FontStyle.Bold | FontStyle.Italic);
             label28.ForeColor = Color.White;
-            label28.Location = new Point(11, 170);
+            label28.Location = new Point(18, 170);
             label28.Name = "label28";
             label28.Size = new Size(17, 24);
             label28.TabIndex = 29;
@@ -280,7 +280,7 @@
             label27.AutoSize = true;
             label27.Font = new Font("Inter", 10F, FontStyle.Bold | FontStyle.Italic);
             label27.ForeColor = Color.White;
-            label27.Location = new Point(11, 77);
+            label27.Location = new Point(18, 77);
             label27.Name = "label27";
             label27.Size = new Size(22, 24);
             label27.TabIndex = 28;
@@ -291,7 +291,7 @@
             label25.AutoSize = true;
             label25.Font = new Font("Inter", 10F, FontStyle.Bold | FontStyle.Italic);
             label25.ForeColor = Color.White;
-            label25.Location = new Point(11, 46);
+            label25.Location = new Point(18, 46);
             label25.Name = "label25";
             label25.Size = new Size(21, 24);
             label25.TabIndex = 27;
@@ -301,7 +301,7 @@
             // 
             panelBgBintang3.BackColor = Color.FromArgb(139, 140, 142);
             panelBgBintang3.Controls.Add(panelBarBintang3);
-            panelBgBintang3.Location = new Point(35, 113);
+            panelBgBintang3.Location = new Point(42, 113);
             panelBgBintang3.Name = "panelBgBintang3";
             panelBgBintang3.Size = new Size(356, 15);
             panelBgBintang3.TabIndex = 26;
@@ -320,7 +320,7 @@
             // 
             panelBgBintang1.BackColor = Color.FromArgb(139, 140, 142);
             panelBgBintang1.Controls.Add(panelBarBintang1);
-            panelBgBintang1.Location = new Point(36, 175);
+            panelBgBintang1.Location = new Point(43, 175);
             panelBgBintang1.Name = "panelBgBintang1";
             panelBgBintang1.Size = new Size(356, 15);
             panelBgBintang1.TabIndex = 25;
@@ -339,7 +339,7 @@
             // 
             panelBgBintang2.BackColor = Color.FromArgb(139, 140, 142);
             panelBgBintang2.Controls.Add(panelBarBintang2);
-            panelBgBintang2.Location = new Point(36, 144);
+            panelBgBintang2.Location = new Point(43, 144);
             panelBgBintang2.Name = "panelBgBintang2";
             panelBgBintang2.Size = new Size(356, 15);
             panelBgBintang2.TabIndex = 24;
@@ -358,7 +358,7 @@
             // 
             panelBgBintang4.BackColor = Color.FromArgb(139, 140, 142);
             panelBgBintang4.Controls.Add(panelBarBintang4);
-            panelBgBintang4.Location = new Point(35, 82);
+            panelBgBintang4.Location = new Point(42, 82);
             panelBgBintang4.Name = "panelBgBintang4";
             panelBgBintang4.Size = new Size(356, 15);
             panelBgBintang4.TabIndex = 23;
@@ -377,7 +377,7 @@
             // 
             panelBgBintang5.BackColor = Color.FromArgb(139, 140, 142);
             panelBgBintang5.Controls.Add(panelBarBintang5);
-            panelBgBintang5.Location = new Point(35, 51);
+            panelBgBintang5.Location = new Point(42, 51);
             panelBgBintang5.Name = "panelBgBintang5";
             panelBgBintang5.Size = new Size(356, 15);
             panelBgBintang5.TabIndex = 22;
@@ -397,7 +397,7 @@
             label16.BackColor = Color.Transparent;
             label16.Font = new Font("Inter", 9F);
             label16.ForeColor = Color.White;
-            label16.Location = new Point(25, 219);
+            label16.Location = new Point(14, 219);
             label16.Name = "label16";
             label16.Size = new Size(454, 107);
             label16.TabIndex = 21;

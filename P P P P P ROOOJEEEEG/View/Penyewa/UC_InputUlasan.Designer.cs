@@ -49,7 +49,7 @@
             btnPilihFile.FlatStyle = FlatStyle.Flat;
             btnPilihFile.Font = new Font("Inter", 6F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnPilihFile.ForeColor = Color.Black;
-            btnPilihFile.Location = new Point(93, 247);
+            btnPilihFile.Location = new Point(102, 247);
             btnPilihFile.Name = "btnPilihFile";
             btnPilihFile.Size = new Size(61, 32);
             btnPilihFile.TabIndex = 33;
@@ -64,7 +64,7 @@
             cmbRating.Font = new Font("Inter", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cmbRating.FormattingEnabled = true;
             cmbRating.Items.AddRange(new object[] { "1", "2", "3", "4", "5" });
-            cmbRating.Location = new Point(89, 143);
+            cmbRating.Location = new Point(101, 143);
             cmbRating.Name = "cmbRating";
             cmbRating.Size = new Size(337, 32);
             cmbRating.TabIndex = 32;
@@ -72,7 +72,7 @@
             // txtPathGambar
             // 
             txtPathGambar.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtPathGambar.Location = new Point(169, 247);
+            txtPathGambar.Location = new Point(180, 247);
             txtPathGambar.Name = "txtPathGambar";
             txtPathGambar.ReadOnly = true;
             txtPathGambar.Size = new Size(257, 32);
@@ -83,7 +83,7 @@
             label10.BackColor = Color.Transparent;
             label10.Font = new Font("Inter", 8F);
             label10.ForeColor = Color.White;
-            label10.Location = new Point(89, 220);
+            label10.Location = new Point(101, 220);
             label10.Name = "label10";
             label10.Size = new Size(127, 24);
             label10.TabIndex = 30;
@@ -94,7 +94,7 @@
             label9.BackColor = Color.Transparent;
             label9.Font = new Font("Inter", 8F);
             label9.ForeColor = Color.White;
-            label9.Location = new Point(89, 115);
+            label9.Location = new Point(101, 115);
             label9.Name = "label9";
             label9.Size = new Size(199, 24);
             label9.TabIndex = 29;
@@ -105,7 +105,7 @@
             label8.AutoSize = true;
             label8.Font = new Font("Inter", 19F, FontStyle.Bold);
             label8.ForeColor = Color.White;
-            label8.Location = new Point(89, 23);
+            label8.Location = new Point(101, 23);
             label8.Name = "label8";
             label8.Size = new Size(337, 45);
             label8.TabIndex = 34;
@@ -114,7 +114,7 @@
             // txtKomentar
             // 
             txtKomentar.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtKomentar.Location = new Point(93, 333);
+            txtKomentar.Location = new Point(103, 333);
             txtKomentar.Multiline = true;
             txtKomentar.Name = "txtKomentar";
             txtKomentar.PlaceholderText = "Klik Untuk Memberikan komentar";
@@ -126,7 +126,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Inter", 10F);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(93, 305);
+            label1.Location = new Point(101, 305);
             label1.Name = "label1";
             label1.Size = new Size(242, 24);
             label1.TabIndex = 43;
@@ -140,7 +140,7 @@
             btnBatal.FlatStyle = FlatStyle.Flat;
             btnBatal.Font = new Font("Inter", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnBatal.ForeColor = Color.White;
-            btnBatal.Location = new Point(91, 524);
+            btnBatal.Location = new Point(101, 524);
             btnBatal.Name = "btnBatal";
             btnBatal.Size = new Size(142, 34);
             btnBatal.TabIndex = 46;
@@ -156,7 +156,7 @@
             btnSimpan.FlatStyle = FlatStyle.Flat;
             btnSimpan.Font = new Font("Inter", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnSimpan.ForeColor = Color.White;
-            btnSimpan.Location = new Point(282, 524);
+            btnSimpan.Location = new Point(292, 524);
             btnSimpan.Name = "btnSimpan";
             btnSimpan.Size = new Size(144, 34);
             btnSimpan.TabIndex = 45;

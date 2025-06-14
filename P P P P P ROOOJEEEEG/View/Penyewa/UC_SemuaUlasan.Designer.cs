@@ -44,7 +44,7 @@
             // 
             // panel9
             // 
-            panel9.BackColor = Color.FromArgb(37, 39, 48);
+            panel9.BackColor = Color.FromArgb(23, 24, 29);
             panel9.Controls.Add(flowLayoutPanelSemuaUlasan);
             panel9.Controls.Add(btnKembali);
             panel9.Controls.Add(pictureBox45);
@@ -106,7 +106,7 @@
             label6.AutoSize = true;
             label6.Font = new Font("Inter", 19F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.White;
-            label6.Location = new Point(460, 12);
+            label6.Location = new Point(456, 11);
             label6.Name = "label6";
             label6.Size = new Size(244, 45);
             label6.TabIndex = 12;

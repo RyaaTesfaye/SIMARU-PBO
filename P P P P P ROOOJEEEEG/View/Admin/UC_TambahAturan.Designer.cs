@@ -51,10 +51,10 @@
             // txtAturan
             // 
             txtAturan.Font = new Font("Inter", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtAturan.Location = new Point(49, 146);
+            txtAturan.Location = new Point(52, 146);
             txtAturan.Multiline = true;
             txtAturan.Name = "txtAturan";
-            txtAturan.PlaceholderText = "Aturan";
+            txtAturan.PlaceholderText = "Masukkan pesan";
             txtAturan.Size = new Size(382, 281);
             txtAturan.TabIndex = 42;
             // 
@@ -63,7 +63,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Inter", 10F);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(49, 118);
+            label1.Location = new Point(51, 118);
             label1.Name = "label1";
             label1.Size = new Size(82, 24);
             label1.TabIndex = 41;

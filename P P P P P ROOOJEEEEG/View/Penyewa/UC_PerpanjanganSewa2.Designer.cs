@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_PerpanjanganSewa2));
             gambar_bp = new PictureBox();
             btn_fotobayar = new Button();
             panel13 = new Panel();
@@ -43,10 +44,10 @@
             // 
             // gambar_bp
             // 
-            gambar_bp.Image = Properties.Resources.WhatsApp_Image_2025_05_13_at_23_25_21_8b528e3b_3;
-            gambar_bp.Location = new Point(152, 205);
+            gambar_bp.Image = (Image)resources.GetObject("gambar_bp.Image");
+            gambar_bp.Location = new Point(130, 206);
             gambar_bp.Name = "gambar_bp";
-            gambar_bp.Size = new Size(153, 272);
+            gambar_bp.Size = new Size(210, 280);
             gambar_bp.SizeMode = PictureBoxSizeMode.StretchImage;
             gambar_bp.TabIndex = 36;
             gambar_bp.TabStop = false;

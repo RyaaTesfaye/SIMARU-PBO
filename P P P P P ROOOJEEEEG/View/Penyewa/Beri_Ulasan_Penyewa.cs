@@ -104,9 +104,10 @@ namespace RUSUNAWAAA.View.Penyewa
 
             _ucSemuaUlasan.MuatDanTampilkan(_semuaUlasan);
 
-            panelKanan.Controls.Clear();
-            panelKanan.Controls.Add(_ucSemuaUlasan);
+            panelSemua.Controls.Clear();
+            panelSemua.Controls.Add(_ucSemuaUlasan);
         }
+
 
         private void UcInput_KirimUlasanClicked(object sender, Ulasan ulasanBaru)
         {

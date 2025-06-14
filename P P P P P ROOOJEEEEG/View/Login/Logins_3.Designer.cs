@@ -56,9 +56,8 @@
             panel15.Controls.Add(linkLabel3);
             panel15.Controls.Add(panel1);
             panel15.Location = new Point(0, 0);
-            panel15.Margin = new Padding(4);
             panel15.Name = "panel15";
-            panel15.Size = new Size(674, 769);
+            panel15.Size = new Size(539, 615);
             panel15.TabIndex = 14;
             // 
             // label3
@@ -66,20 +65,18 @@
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(4, 712);
-            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Location = new Point(3, 570);
             label3.Name = "label3";
-            label3.Size = new Size(151, 20);
+            label3.Size = new Size(129, 16);
             label3.TabIndex = 23;
             label3.Text = "Kembali ke halaman";
             // 
             // label2
             // 
             label2.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(66, 108);
-            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Location = new Point(53, 86);
             label2.Name = "label2";
-            label2.Size = new Size(479, 61);
+            label2.Size = new Size(383, 49);
             label2.TabIndex = 22;
             label2.Text = "Pastikan kata sandi mengandung huruf besar, huruf kecil, angka, dan karakter khusus";
             // 
@@ -87,10 +84,9 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(225, 30);
-            label5.Margin = new Padding(4, 0, 4, 0);
+            label5.Location = new Point(180, 24);
             label5.Name = "label5";
-            label5.Size = new Size(198, 26);
+            label5.Size = new Size(168, 24);
             label5.TabIndex = 21;
             label5.Text = "Reset Kata Sandi";
             // 
@@ -98,45 +94,41 @@
             // 
             textPassword.BorderStyle = BorderStyle.FixedSingle;
             textPassword.Font = new Font("Segoe UI", 10F);
-            textPassword.Location = new Point(66, 276);
-            textPassword.Margin = new Padding(4);
+            textPassword.Location = new Point(53, 221);
             textPassword.Name = "textPassword";
             textPassword.PlaceholderText = "Kata Sandi";
-            textPassword.Size = new Size(556, 34);
+            textPassword.Size = new Size(445, 30);
             textPassword.TabIndex = 20;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(66, 229);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(53, 183);
             label1.Name = "label1";
-            label1.Size = new Size(184, 22);
+            label1.Size = new Size(153, 18);
             label1.TabIndex = 19;
-            label1.Text = "Masukkan sandi anda";
+            label1.Text = "Masukkan sandi Anda";
             // 
             // textConfirmPassword
             // 
             textConfirmPassword.BorderStyle = BorderStyle.FixedSingle;
             textConfirmPassword.Font = new Font("Segoe UI", 10F);
-            textConfirmPassword.Location = new Point(66, 409);
-            textConfirmPassword.Margin = new Padding(4);
+            textConfirmPassword.Location = new Point(53, 327);
             textConfirmPassword.Name = "textConfirmPassword";
             textConfirmPassword.PlaceholderText = "Kata Sandi";
-            textConfirmPassword.Size = new Size(556, 34);
+            textConfirmPassword.Size = new Size(445, 30);
             textConfirmPassword.TabIndex = 18;
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.Location = new Point(66, 362);
-            label6.Margin = new Padding(4, 0, 4, 0);
+            label6.Location = new Point(53, 290);
             label6.Name = "label6";
-            label6.Size = new Size(233, 22);
+            label6.Size = new Size(192, 18);
             label6.TabIndex = 17;
-            label6.Text = "Masukkan ulang sandi anda";
+            label6.Text = "Masukkan ulang sandi Anda";
             // 
             // linkLabel3
             // 
@@ -145,10 +137,9 @@
             linkLabel3.Font = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             linkLabel3.LinkArea = new LinkArea(0, 60);
             linkLabel3.LinkColor = Color.FromArgb(60, 138, 255);
-            linkLabel3.Location = new Point(162, 714);
-            linkLabel3.Margin = new Padding(4, 0, 4, 0);
+            linkLabel3.Location = new Point(130, 571);
             linkLabel3.Name = "linkLabel3";
-            linkLabel3.Size = new Size(45, 23);
+            linkLabel3.Size = new Size(38, 20);
             linkLabel3.TabIndex = 13;
             linkLabel3.TabStop = true;
             linkLabel3.Text = "Login";
@@ -158,10 +149,9 @@
             // panel1
             // 
             panel1.Controls.Add(button4);
-            panel1.Location = new Point(0, 622);
-            panel1.Margin = new Padding(4);
+            panel1.Location = new Point(0, 498);
             panel1.Name = "panel1";
-            panel1.Size = new Size(674, 68);
+            panel1.Size = new Size(539, 54);
             panel1.TabIndex = 0;
             // 
             // button4
@@ -172,10 +162,9 @@
             button4.FlatStyle = FlatStyle.Flat;
             button4.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button4.ForeColor = Color.White;
-            button4.Location = new Point(58, 0);
-            button4.Margin = new Padding(4);
+            button4.Location = new Point(46, 0);
             button4.Name = "button4";
-            button4.Size = new Size(564, 68);
+            button4.Size = new Size(451, 54);
             button4.TabIndex = 1;
             button4.Text = "Konfirmasi";
             button4.UseVisualStyleBackColor = false;
@@ -183,12 +172,11 @@
             // 
             // Logins_3
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(panel15);
-            Margin = new Padding(4);
             Name = "Logins_3";
-            Size = new Size(674, 769);
+            Size = new Size(539, 615);
             panel15.ResumeLayout(false);
             panel15.PerformLayout();
             panel1.ResumeLayout(false);
