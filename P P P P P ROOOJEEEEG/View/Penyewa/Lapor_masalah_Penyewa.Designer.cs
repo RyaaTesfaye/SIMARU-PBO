@@ -521,7 +521,7 @@
             Controls.Add(panel1);
             Name = "Lapor_Masalah_Penyewa";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "_3_Penyewa";
+            Text = "Lapor Masalah";
             Load += LaporMasalah_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

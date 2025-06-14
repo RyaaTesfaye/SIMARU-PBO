@@ -111,7 +111,7 @@
             // pictureBox24
             // 
             pictureBox24.BackColor = Color.Transparent;
-            pictureBox24.Image = Properties.Resources.IKON_TOL;
+            pictureBox24.Image = (Image)resources.GetObject("pictureBox24.Image");
             pictureBox24.Location = new Point(14, 4);
             pictureBox24.Name = "pictureBox24";
             pictureBox24.Size = new Size(50, 50);

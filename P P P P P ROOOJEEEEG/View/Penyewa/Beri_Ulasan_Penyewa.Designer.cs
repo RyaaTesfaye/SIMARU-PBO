@@ -483,7 +483,7 @@
             Controls.Add(panel1);
             Name = "Beri_Ulasan_Penyewa";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "_1_Penyewa";
+            Text = "Beri Ulasan";
             Load += Beri_Ulasan_Penyewa_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

@@ -57,7 +57,7 @@
             panel15.Controls.Add(textBox2);
             panel15.Controls.Add(label10);
             panel15.Controls.Add(label23);
-            panel15.Location = new Point(3, 3);
+            panel15.Location = new Point(0, 3);
             panel15.Name = "panel15";
             panel15.Size = new Size(492, 556);
             panel15.TabIndex = 7;

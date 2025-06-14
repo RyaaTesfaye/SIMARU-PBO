@@ -510,7 +510,7 @@
             Controls.Add(panel1);
             Name = "Perpanjangan_Sewa_Penyewa";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "_6_Penyewa";
+            Text = "Perpanjaangan Sewa";
             Load += PerpanjanganSewaView_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

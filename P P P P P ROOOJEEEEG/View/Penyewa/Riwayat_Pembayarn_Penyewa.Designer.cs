@@ -491,7 +491,7 @@
             Controls.Add(panel1);
             Name = "Riwayat_Pembayarn_Penyewa";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "_5_Penyewa";
+            Text = "Riwayat Pembayaran";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel27.ResumeLayout(false);

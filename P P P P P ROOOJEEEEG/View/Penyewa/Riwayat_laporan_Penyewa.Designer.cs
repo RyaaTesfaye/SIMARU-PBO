@@ -702,7 +702,7 @@
             Controls.Add(panel1);
             Name = "Riwayat_laporan_Penyewa";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "_4_Penyewa";
+            Text = "Riwayat Laporan";
             Load += RiwayatLaporanView_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

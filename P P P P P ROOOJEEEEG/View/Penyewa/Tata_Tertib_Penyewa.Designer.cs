@@ -538,7 +538,7 @@
             Controls.Add(panel1);
             Name = "Tata_Tertib_Penyewa";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "_2_Penyewa";
+            Text = "Tata Tertib";
             Load += Tata_Tertib_Penyewa_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

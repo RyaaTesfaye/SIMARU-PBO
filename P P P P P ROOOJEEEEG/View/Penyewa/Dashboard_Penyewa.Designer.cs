@@ -1104,7 +1104,7 @@
             Controls.Add(panel1);
             Name = "Dashboard_Penyewa";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Dashboard_Penyewa";
+            Text = "Dashboard";
             Load += Beranda_Penyewa_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

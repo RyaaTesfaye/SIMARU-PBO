@@ -51,7 +51,7 @@
             // 
             lblJudul.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblJudul.ForeColor = Color.FromArgb(139, 140, 142);
-            lblJudul.Location = new Point(395, 11);
+            lblJudul.Location = new Point(387, 11);
             lblJudul.Name = "lblJudul";
             lblJudul.Size = new Size(275, 24);
             lblJudul.TabIndex = 54;
@@ -62,7 +62,7 @@
             lblNama.AutoSize = true;
             lblNama.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblNama.ForeColor = Color.FromArgb(139, 140, 142);
-            lblNama.Location = new Point(145, 11);
+            lblNama.Location = new Point(142, 11);
             lblNama.Name = "lblNama";
             lblNama.Size = new Size(198, 24);
             lblNama.TabIndex = 53;
@@ -73,7 +73,7 @@
             lblID.AutoSize = true;
             lblID.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblID.ForeColor = Color.FromArgb(139, 140, 142);
-            lblID.Location = new Point(45, 11);
+            lblID.Location = new Point(54, 11);
             lblID.Name = "lblID";
             lblID.Size = new Size(39, 24);
             lblID.TabIndex = 52;
@@ -100,7 +100,7 @@
             lblStatus.AutoSize = true;
             lblStatus.Font = new Font("Inter SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblStatus.ForeColor = Color.FromArgb(139, 140, 142);
-            lblStatus.Location = new Point(852, 11);
+            lblStatus.Location = new Point(850, 11);
             lblStatus.Name = "lblStatus";
             lblStatus.Size = new Size(109, 24);
             lblStatus.TabIndex = 58;
