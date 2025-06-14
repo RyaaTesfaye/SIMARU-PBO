@@ -1,4 +1,5 @@
-﻿using RUSUNAWAAA.Utils;
+﻿using RUSUNAWAAA.Service;
+using RUSUNAWAAA.Utils;
 using RUSUNAWAAA.View.Login;
 using System;
 using System.Collections.Generic;
@@ -14,6 +15,8 @@ namespace RUSUNAWAAA.View.Penyewa
 {
     public partial class Dashboard_Penyewa : Form
     {
+        private readonly UlasanService _ulasanService;
+        private readonly VirtualTourService _virtualTourService;
         public Dashboard_Penyewa()
         {
             InitializeComponent();
@@ -24,13 +27,98 @@ namespace RUSUNAWAAA.View.Penyewa
             UIhelper.MakePanelRound(panel12, 20);
             UIhelper.MakePanelRound(panel13, 20);
             UIhelper.MakePanelRound(panel14, 20);
-            UIhelper.MakePanelRound(panel15, 20);
-            UIhelper.MakePanelRound(panel16, 20);
+            UIhelper.MakePanelRound(panelVirtualTour, 20);
+            UIhelper.MakePanelRound(panelSkorUlasan, 20);
             UIhelper.MakePanelRound(panel25, 20);
             UIhelper.MakeRoundedButton(button1, 10);
             UIhelper.MakeRoundedButton(button2, 10);
             UIhelper.MakeRoundedButton(button3, 10);
             UIhelper.MakeRoundedButton(button4, 10);
+            _ulasanService = new UlasanService();
+            _virtualTourService = new VirtualTourService();
+        }
+        private void Beranda_Penyewa_Load(object sender, EventArgs e)
+        {
+            LoadRingkasanData();
+            LoadUlasanTerbaru();
+            LoadVirtualTourTerbaru();
+        }
+        private void LoadRingkasanData()
+        {
+            try
+            {
+
+                var semuaUlasan = _ulasanService.GetAllUlasan();
+                if (semuaUlasan.Any())
+                {
+                    double rataRata = semuaUlasan.Average(u => u.Rating);
+                    lblRating.Text = rataRata.ToString("F1"); // Format 1 angka desimal
+                }
+                else
+                {
+                    lblRating.Text = "N/A";
+                }
+            }
+            catch (Exception ex)
+            {
+                lblRating.Text = "Error";
+                Console.WriteLine("Error memuat rating: " + ex.Message);
+            }
+        }
+        private void LoadUlasanTerbaru()
+        {
+            try
+            {
+                var ulasanTerbaru = _ulasanService.GetAllUlasan().FirstOrDefault();
+
+                if (ulasanTerbaru != null)
+                {
+                    // --- PERBAIKAN DI SINI: Mengisi kontrol yang SUDAH ADA ---
+                    // Pastikan nama kontrol di desainer Anda cocok (contoh: lblNamaUlasan, picProfilUlasan, dll)
+                    lblJudulTour.Text = ulasanTerbaru.User?.NamaLengkap ?? "Penghuni Anonim";
+                    lblTanggalUlasan.Text = ulasanTerbaru.Tanggal.ToLocalTime().ToString("dd MMMM yyyy");
+                    lblKomentarUlasan.Text = ulasanTerbaru.Komentar;
+                }
+                else
+                {
+                    // Sembunyikan panel jika tidak ada ulasan
+                    panelSkorUlasan.Visible = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error memuat ulasan terbaru: " + ex.Message);
+                panelSkorUlasan.Visible = false;
+            }
+        }
+        private void LoadVirtualTourTerbaru()
+        {
+            try
+            {
+                var tourTerbaru = _virtualTourService.GetTourTerbaru();
+
+                if (tourTerbaru != null)
+                {
+                    // --- PERBAIKAN DI SINI: Mengisi kontrol yang SUDAH ADA ---
+                    // Pastikan nama kontrol di desainer Anda cocok (contoh: lblJudulTour, picThumbnailTour, dll)
+                    lblJudulTour.Text = tourTerbaru.Keterangan;
+
+
+                    if (!string.IsNullOrEmpty(tourTerbaru.PathMedia) && File.Exists(tourTerbaru.PathMedia))
+                    {
+                        picThumbnailTour.Image = new Bitmap(tourTerbaru.PathMedia);
+                    }
+                }
+                else
+                {
+                    panelVirtualTour.Visible = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error memuat virtual tour: " + ex.Message);
+                panelVirtualTour.Visible = false;
+            }
         }
 
         private void ToBeriUlasan_PE(object sender, EventArgs e)

@@ -50,6 +50,15 @@ namespace RUSUNAWAAA.Service
                 return false; 
             }
         }
+        public MediaVirtual GetTourTerbaru()
+        {
+            using (var context = new ApplicationDbContext())
+            {
+                return context.MediaVirtuals
+                              .OrderByDescending(m => m.Id_Media)
+                              .FirstOrDefault();
+            }
+        }
         public bool DeleteMultipleMedia(List<int> mediaIds)
         {
             if (mediaIds == null || !mediaIds.Any()) return false;

@@ -121,7 +121,7 @@
   <data name="pictureBox16.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAASlJREFUSEu9VVEVwjAQQwISkIAEJEwCEuYAJOAAJOCAOQAHSEBCeCm3cVzbLezx
+        DgAACw4BQL7hQQAAASlJREFUSEu9VVEVwjAQQwISkIAEJEwCEuYAJOAAJOCAOQAHSEBCeCm3cVzbLezx
         yHv9WJZc2rW3Lhb/BIANgAOAy8xB7yrWTQCwwwsPADcAnTDuzsNngtw6Fl/bS85g+fFyBDbru3teWQAD
         33Ws8GMgRFhAFziGEPtRoYKaD8AVwNkTReEUar6MzwgRNV/GR8I2Km0egDYcxbbmq/KRKAT4ozkaYJvM
         U3T0ZCZUYD4W8yvkM8e74X4Q4FeYd3MMKHyir/YgQxQWAuQ9KEIWBsg+WRgg+2RhgOyThQGyTxYGyL4o
@@ -145,7 +145,7 @@
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAAUZJREFUSEvNlGuRAjEQhJGABCQgAQlIQAIODgk44CScg8MBEsABEppqrqfovNjU
+        DgAACw4BQL7hQQAAAUZJREFUSEvNlGuRAjEQhJGABCQgAQlIQAIODgk44CScg8MBEsABEppqrqfovNjU
         hh/3VaUWMq/MZCaLxX8BwArAUWuVy4eQ8yuAuxZ/L3O92QD4xh8MxEUOud4szOHJ9hiQmYxn4ae3vc9k
         UTu9ySKL/gtnygA2APbqlrjYwomCx4VTlza0Lcsm5V+dNqDxGcA61w9kRx3qOqckkNX5AGBbO/EUlj19
         MODRhT8ALonFACrb2Td2yuAr0ZwBfcjXLhcwtaEg5rzeviNBJp0HFmSTy1pYid87D9QFxXC1iKHL95vo
@@ -4038,7 +4038,7 @@
   <data name="pictureBox5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAAURJREFUSEvVlH0NAjEMxZGABCQgASlIwMHhAByAA3AADsABOEDCI2+8y7p295G7
+        DgAACw4BQL7hQQAAAURJREFUSEvVlH0NAjEMxZGABCQgASlIwMHhAByAA3AADsABOEDCI2+8y7p295G7
         v/glzS29ru26rovFvwCgAbD3+ioAVgA2A7Iy9gcAF0l3EABbAA+M46o9TOYFYK31xwa3znlEcgewq2Ts
         Zal9Z2Zt9FzfvHNGJpfixwDK+mXWKbBOtLGGjEri0Xpgpiyr1iyvXedTyPBh9o5C+5hccq7S8stLv3vD
         rPjpaNxYnUelPeoerFCXq9ETgPBfKJ1qHfQk/KsFkJ5B2Ha8NNv36XLbVvXIX/7XFYCYPk9dJmmDrr09
@@ -4049,7 +4049,7 @@
   <data name="pictureBox6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAHgAAAB2iCAYAAACV1t40AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAEh
-        bAABIWwBeEiEKgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAP+NSURBVHhe7N17
+        agABIWoB+EvAsQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAP+NSURBVHhe7N17
         rOZ3Yef39zlz9YWxPb5hG2MbY4wxvmBjfMlI2W7cdbZlokqNF2lVZtttMlU3XUbtpnarJutJlRIrXRqm
         kqNMu1TrqWiElW5VRtlEmCa7xCHAmkCgXMwlELCNL4HYBowvM/OrxjlR0t/zI/FlLs9zzuslvf+1zzyX
         3/P9/vUpAAAAAAAAAAAAAAAAAADgaLu1+tNqOEIdrPZWJ4//RwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -33173,10 +33173,16 @@
         SAEAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="label25.Text" xml:space="preserve">
+  <data name="lblIsiLaporan.Text" xml:space="preserve">
     <value>Sudah tiga hari ini air kran di unit A203 bocor terus, walaupun sudah ditutup tetap aja netes. Lantainya jadi sering basah dan bikin agak repot pas beraktivitas. Tolong bisa segera dicek ya, biar nggak makin parah atau ngerusak yang lain.</value>
   </data>
-  <metadata name="label28.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="lblMenungguKonfirmasi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="label17.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lblMenungguKonfirmasi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="label17.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -33188,13 +33194,31 @@
   <metadata name="label18.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="label27.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="label29.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="label18.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lblPenyewaAktif.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="label16.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="label26.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="lblPenyewaAktif.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="label16.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lblUserTerdaftar.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="label14.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lblUserTerdaftar.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="label14.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

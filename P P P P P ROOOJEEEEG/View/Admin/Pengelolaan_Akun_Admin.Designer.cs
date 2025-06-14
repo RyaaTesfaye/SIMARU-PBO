@@ -72,7 +72,6 @@
             panel8 = new Panel();
             panel9 = new Panel();
             panel13 = new Panel();
-            button1 = new Button();
             pictureBox22 = new PictureBox();
             pictureBox13 = new PictureBox();
             pictureBox11 = new PictureBox();
@@ -92,7 +91,6 @@
             label10 = new Label();
             label9 = new Label();
             label8 = new Label();
-            checkBox1 = new CheckBox();
             label6 = new Label();
             panel1.SuspendLayout();
             panel31.SuspendLayout();
@@ -123,7 +121,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel8.SuspendLayout();
             panel9.SuspendLayout();
-            panel13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox22).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
@@ -629,26 +626,10 @@
             // panel13
             // 
             panel13.BackColor = Color.Transparent;
-            panel13.Controls.Add(button1);
             panel13.Location = new Point(800, 6);
             panel13.Name = "panel13";
             panel13.Size = new Size(127, 45);
             panel13.TabIndex = 44;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.FromArgb(23, 24, 30);
-            button1.Cursor = Cursors.Hand;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(11, 3);
-            button1.Name = "button1";
-            button1.Size = new Size(104, 39);
-            button1.TabIndex = 1;
-            button1.Text = "Siaran";
-            button1.UseVisualStyleBackColor = false;
             // 
             // pictureBox22
             // 
@@ -738,7 +719,6 @@
             panel10.Controls.Add(label10);
             panel10.Controls.Add(label9);
             panel10.Controls.Add(label8);
-            panel10.Controls.Add(checkBox1);
             panel10.Location = new Point(6, 56);
             panel10.Name = "panel10";
             panel10.Padding = new Padding(50);
@@ -866,17 +846,6 @@
             label8.TabIndex = 12;
             label8.Text = "ID";
             // 
-            // checkBox1
-            // 
-            checkBox1.BackColor = Color.Transparent;
-            checkBox1.ForeColor = SystemColors.ButtonHighlight;
-            checkBox1.Location = new Point(24, 10);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(23, 24);
-            checkBox1.TabIndex = 0;
-            checkBox1.Text = "checkBox1";
-            checkBox1.UseVisualStyleBackColor = false;
-            // 
             // label6
             // 
             label6.AutoSize = true;
@@ -943,7 +912,6 @@
             panel8.PerformLayout();
             panel9.ResumeLayout(false);
             panel9.PerformLayout();
-            panel13.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox22).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
@@ -1000,7 +968,6 @@
         private Label label6;
         private Panel panel28;
         private Panel panel10;
-        private CheckBox checkBox1;
         private Label label7;
         private Label label24;
         private Label label15;
@@ -1021,6 +988,5 @@
         private FlowLayoutPanel flowLayoutAkun;
         private PictureBox pictureBox23;
         private Panel panel13;
-        private Button button1;
     }
 }

@@ -166,17 +166,17 @@
             // linkLabel3
             // 
             linkLabel3.ActiveLinkColor = Color.DarkOrchid;
-            linkLabel3.AutoSize = true;
             linkLabel3.Font = new Font("Inter", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             linkLabel3.LinkArea = new LinkArea(0, 60);
             linkLabel3.LinkColor = Color.FromArgb(60, 138, 255);
-            linkLabel3.Location = new Point(48, 548);
+            linkLabel3.Location = new Point(48, 550);
             linkLabel3.Name = "linkLabel3";
-            linkLabel3.Size = new Size(357, 24);
+            linkLabel3.Size = new Size(379, 22);
             linkLabel3.TabIndex = 16;
             linkLabel3.TabStop = true;
-            linkLabel3.Text = "https://maps.app.goo.gl/6akmR9Z8Py6W31Bm9";
+            linkLabel3.Text = "https://drive.google.com/drive/folders/1mX0TCQI9J1pgr6iqc4bIDnhR4SSXhtPr?usp=sharing";
             linkLabel3.UseCompatibleTextRendering = true;
+            linkLabel3.LinkClicked += linkLabel3_LinkClicked;
             // 
             // label22
             // 

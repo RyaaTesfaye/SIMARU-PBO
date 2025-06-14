@@ -4003,13 +4003,13 @@
   <data name="label30.Text" xml:space="preserve">
     <value>Pembayaran sewa Rusunawa Universitas Jember dilakukan setiap 3 bulan sekali. Satu kamar dapat diisi 2 hingga 3 orang, dengan harga bervariasi tergantung jumlah penghuni. Harga yang tertera berlaku untuk dua orang per kamar. Penempatan kamar akan dilakukan secara acak oleh pengelola sesuai ketersediaan unit.</value>
   </data>
-  <data name="label27.Text" xml:space="preserve">
+  <data name="lblKomentarUlasan.Text" xml:space="preserve">
     <value>Tinggal di Rusunawa Universitas Jember sangat membantu saya sebagai mahasiswa dari luar kota. Lokasinya dekat kampus jadi tidak perlu keluar banyak biaya untuk transportasi. Biaya sewanya juga jauh lebih terjangkau dibandingkan kos di sekitar, dan fasilitasnya cukup memadai untuk kebutuhan sehari-hari.</value>
   </data>
   <data name="label25.Text" xml:space="preserve">
     <value>Rumah Susun Sederhana Sewa (Rusunawa) Universitas Jember merupakan fasilitas hunian yang disediakan bagi mahasiswa, khususnya dari luar kota. Terletak strategis dekat kampus dan dengan biaya sewa yang terjangkau, Rusunawa menjadi alternatif tempat tinggal yang nyaman dan mendukung kehidupan akademik maupun keseharian mahasiswa selama studi di Universitas Jember.</value>
   </data>
-  <metadata name="label17.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="lblRating.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="label18.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

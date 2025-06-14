@@ -69,19 +69,18 @@
             label31 = new Label();
             panel26 = new Panel();
             button4 = new Button();
-            panel16 = new Panel();
+            panelSkorUlasan = new Panel();
             pictureBox11 = new PictureBox();
-            label27 = new Label();
-            label28 = new Label();
-            label29 = new Label();
+            lblKomentarUlasan = new Label();
+            lblTanggalUlasan = new Label();
+            lblNamaUlasan = new Label();
             panel24 = new Panel();
             button3 = new Button();
             label22 = new Label();
-            panel15 = new Panel();
-            pictureBox12 = new PictureBox();
+            panelVirtualTour = new Panel();
+            picThumbnailTour = new PictureBox();
             label25 = new Label();
-            label24 = new Label();
-            label23 = new Label();
+            lblJudulTour = new Label();
             panel23 = new Panel();
             button1 = new Button();
             panel9 = new Panel();
@@ -90,7 +89,7 @@
             label20 = new Label();
             label10 = new Label();
             panel19 = new Panel();
-            label17 = new Label();
+            lblRating = new Label();
             panel13 = new Panel();
             label21 = new Label();
             label11 = new Label();
@@ -131,11 +130,11 @@
             panel25.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
             panel26.SuspendLayout();
-            panel16.SuspendLayout();
+            panelSkorUlasan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             panel24.SuspendLayout();
-            panel15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
+            panelVirtualTour.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)picThumbnailTour).BeginInit();
             panel23.SuspendLayout();
             panel9.SuspendLayout();
             panel14.SuspendLayout();
@@ -482,9 +481,9 @@
             panel10.Controls.Add(label33);
             panel10.Controls.Add(label32);
             panel10.Controls.Add(panel25);
-            panel10.Controls.Add(panel16);
+            panel10.Controls.Add(panelSkorUlasan);
             panel10.Controls.Add(label22);
-            panel10.Controls.Add(panel15);
+            panel10.Controls.Add(panelVirtualTour);
             panel10.Location = new Point(5, 354);
             panel10.Name = "panel10";
             panel10.Padding = new Padding(50);
@@ -612,18 +611,18 @@
             button4.UseVisualStyleBackColor = false;
             button4.Click += ToPengajuanSewa_UM;
             // 
-            // panel16
+            // panelSkorUlasan
             // 
-            panel16.BackColor = Color.FromArgb(23, 24, 30);
-            panel16.Controls.Add(pictureBox11);
-            panel16.Controls.Add(label27);
-            panel16.Controls.Add(label28);
-            panel16.Controls.Add(label29);
-            panel16.Controls.Add(panel24);
-            panel16.Location = new Point(305, 43);
-            panel16.Name = "panel16";
-            panel16.Size = new Size(250, 303);
-            panel16.TabIndex = 7;
+            panelSkorUlasan.BackColor = Color.FromArgb(23, 24, 30);
+            panelSkorUlasan.Controls.Add(pictureBox11);
+            panelSkorUlasan.Controls.Add(lblKomentarUlasan);
+            panelSkorUlasan.Controls.Add(lblTanggalUlasan);
+            panelSkorUlasan.Controls.Add(lblNamaUlasan);
+            panelSkorUlasan.Controls.Add(panel24);
+            panelSkorUlasan.Location = new Point(305, 43);
+            panelSkorUlasan.Name = "panelSkorUlasan";
+            panelSkorUlasan.Size = new Size(250, 303);
+            panelSkorUlasan.TabIndex = 7;
             // 
             // pictureBox11
             // 
@@ -635,37 +634,37 @@
             pictureBox11.TabIndex = 11;
             pictureBox11.TabStop = false;
             // 
-            // label27
+            // lblKomentarUlasan
             // 
-            label27.Font = new Font("Inter", 5F);
-            label27.ForeColor = Color.FromArgb(139, 140, 142);
-            label27.Location = new Point(14, 163);
-            label27.Name = "label27";
-            label27.Size = new Size(217, 77);
-            label27.TabIndex = 10;
-            label27.Text = resources.GetString("label27.Text");
+            lblKomentarUlasan.Font = new Font("Inter", 5F);
+            lblKomentarUlasan.ForeColor = Color.FromArgb(139, 140, 142);
+            lblKomentarUlasan.Location = new Point(14, 163);
+            lblKomentarUlasan.Name = "lblKomentarUlasan";
+            lblKomentarUlasan.Size = new Size(217, 77);
+            lblKomentarUlasan.TabIndex = 10;
+            lblKomentarUlasan.Text = resources.GetString("lblKomentarUlasan.Text");
             // 
-            // label28
+            // lblTanggalUlasan
             // 
-            label28.AutoSize = true;
-            label28.Font = new Font("Inter SemiBold", 5F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label28.ForeColor = Color.White;
-            label28.Location = new Point(14, 144);
-            label28.Name = "label28";
-            label28.Size = new Size(68, 13);
-            label28.TabIndex = 9;
-            label28.Text = "28 April 2025";
+            lblTanggalUlasan.AutoSize = true;
+            lblTanggalUlasan.Font = new Font("Inter SemiBold", 5F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTanggalUlasan.ForeColor = Color.White;
+            lblTanggalUlasan.Location = new Point(14, 144);
+            lblTanggalUlasan.Name = "lblTanggalUlasan";
+            lblTanggalUlasan.Size = new Size(68, 13);
+            lblTanggalUlasan.TabIndex = 9;
+            lblTanggalUlasan.Text = "28 April 2025";
             // 
-            // label29
+            // lblNamaUlasan
             // 
-            label29.AutoSize = true;
-            label29.Font = new Font("Inter", 9F, FontStyle.Bold);
-            label29.ForeColor = Color.White;
-            label29.Location = new Point(47, 7);
-            label29.Name = "label29";
-            label29.Size = new Size(161, 22);
-            label29.TabIndex = 8;
-            label29.Text = "Khosyatullah Ahmad";
+            lblNamaUlasan.AutoSize = true;
+            lblNamaUlasan.Font = new Font("Inter", 9F, FontStyle.Bold);
+            lblNamaUlasan.ForeColor = Color.White;
+            lblNamaUlasan.Location = new Point(47, 7);
+            lblNamaUlasan.Name = "lblNamaUlasan";
+            lblNamaUlasan.Size = new Size(161, 22);
+            lblNamaUlasan.TabIndex = 8;
+            lblNamaUlasan.Text = "Khosyatullah Ahmad";
             // 
             // panel24
             // 
@@ -703,28 +702,27 @@
             label22.TabIndex = 6;
             label22.Text = "Virtual Tour";
             // 
-            // panel15
+            // panelVirtualTour
             // 
-            panel15.BackColor = Color.FromArgb(23, 24, 30);
-            panel15.Controls.Add(pictureBox12);
-            panel15.Controls.Add(label25);
-            panel15.Controls.Add(label24);
-            panel15.Controls.Add(label23);
-            panel15.Controls.Add(panel23);
-            panel15.Location = new Point(22, 42);
-            panel15.Name = "panel15";
-            panel15.Size = new Size(250, 303);
-            panel15.TabIndex = 1;
+            panelVirtualTour.BackColor = Color.FromArgb(23, 24, 30);
+            panelVirtualTour.Controls.Add(picThumbnailTour);
+            panelVirtualTour.Controls.Add(label25);
+            panelVirtualTour.Controls.Add(lblJudulTour);
+            panelVirtualTour.Controls.Add(panel23);
+            panelVirtualTour.Location = new Point(22, 42);
+            panelVirtualTour.Name = "panelVirtualTour";
+            panelVirtualTour.Size = new Size(250, 303);
+            panelVirtualTour.TabIndex = 1;
             // 
-            // pictureBox12
+            // picThumbnailTour
             // 
-            pictureBox12.ErrorImage = null;
-            pictureBox12.Location = new Point(14, 36);
-            pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(217, 97);
-            pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox12.TabIndex = 11;
-            pictureBox12.TabStop = false;
+            picThumbnailTour.ErrorImage = null;
+            picThumbnailTour.Location = new Point(14, 36);
+            picThumbnailTour.Name = "picThumbnailTour";
+            picThumbnailTour.Size = new Size(217, 97);
+            picThumbnailTour.SizeMode = PictureBoxSizeMode.StretchImage;
+            picThumbnailTour.TabIndex = 11;
+            picThumbnailTour.TabStop = false;
             // 
             // label25
             // 
@@ -736,27 +734,16 @@
             label25.TabIndex = 10;
             label25.Text = resources.GetString("label25.Text");
             // 
-            // label24
+            // lblJudulTour
             // 
-            label24.AutoSize = true;
-            label24.Font = new Font("Inter SemiBold", 5F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label24.ForeColor = Color.White;
-            label24.Location = new Point(14, 144);
-            label24.Name = "label24";
-            label24.Size = new Size(68, 13);
-            label24.TabIndex = 9;
-            label24.Text = "28 April 2025";
-            // 
-            // label23
-            // 
-            label23.AutoSize = true;
-            label23.Font = new Font("Inter", 9F, FontStyle.Bold);
-            label23.ForeColor = Color.White;
-            label23.Location = new Point(92, 7);
-            label23.Name = "label23";
-            label23.Size = new Size(59, 22);
-            label23.TabIndex = 8;
-            label23.Text = "Kamar";
+            lblJudulTour.AutoSize = true;
+            lblJudulTour.Font = new Font("Inter", 9F, FontStyle.Bold);
+            lblJudulTour.ForeColor = Color.White;
+            lblJudulTour.Location = new Point(92, 7);
+            lblJudulTour.Name = "lblJudulTour";
+            lblJudulTour.Size = new Size(59, 22);
+            lblJudulTour.TabIndex = 8;
+            lblJudulTour.Text = "Kamar";
             // 
             // panel23
             // 
@@ -844,24 +831,24 @@
             // panel19
             // 
             panel19.BackColor = Color.FromArgb(37, 39, 48);
-            panel19.Controls.Add(label17);
+            panel19.Controls.Add(lblRating);
             panel19.Location = new Point(89, 22);
             panel19.Name = "panel19";
             panel19.Size = new Size(70, 70);
             panel19.TabIndex = 2;
             // 
-            // label17
+            // lblRating
             // 
-            label17.AutoSize = true;
-            label17.BackColor = Color.Transparent;
-            label17.Font = new Font("Inter", 18F, FontStyle.Bold);
-            label17.ForeColor = Color.White;
-            label17.Location = new Point(6, 13);
-            label17.Name = "label17";
-            label17.Size = new Size(58, 43);
-            label17.TabIndex = 6;
-            label17.Text = "50";
-            label17.TextAlign = ContentAlignment.MiddleCenter;
+            lblRating.AutoSize = true;
+            lblRating.BackColor = Color.Transparent;
+            lblRating.Font = new Font("Inter", 18F, FontStyle.Bold);
+            lblRating.ForeColor = Color.White;
+            lblRating.Location = new Point(6, 13);
+            lblRating.Name = "lblRating";
+            lblRating.Size = new Size(58, 43);
+            lblRating.TabIndex = 6;
+            lblRating.Text = "50";
+            lblRating.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // panel13
             // 
@@ -970,9 +957,9 @@
             label16.ForeColor = Color.White;
             label16.Location = new Point(6, 13);
             label16.Name = "label16";
-            label16.Size = new Size(58, 43);
+            label16.Size = new Size(59, 43);
             label16.TabIndex = 6;
-            label16.Text = "50";
+            label16.Text = "40";
             label16.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // panel11
@@ -1028,7 +1015,7 @@
             label14.Name = "label14";
             label14.Size = new Size(58, 43);
             label14.TabIndex = 5;
-            label14.Text = "50";
+            label14.Text = "30";
             label14.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label6
@@ -1054,6 +1041,7 @@
             Name = "Dashboard_umum";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Dashboard Umum";
+            Load += Beranda_Umum_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel29.ResumeLayout(false);
@@ -1089,13 +1077,13 @@
             panel25.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
             panel26.ResumeLayout(false);
-            panel16.ResumeLayout(false);
-            panel16.PerformLayout();
+            panelSkorUlasan.ResumeLayout(false);
+            panelSkorUlasan.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             panel24.ResumeLayout(false);
-            panel15.ResumeLayout(false);
-            panel15.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
+            panelVirtualTour.ResumeLayout(false);
+            panelVirtualTour.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)picThumbnailTour).EndInit();
             panel23.ResumeLayout(false);
             panel9.ResumeLayout(false);
             panel9.PerformLayout();
@@ -1146,11 +1134,10 @@
         private Panel panel8;
         private Panel panel10;
         private Label label22;
-        private Panel panel15;
-        private PictureBox pictureBox12;
+        private Panel panelVirtualTour;
+        private PictureBox picThumbnailTour;
         private Label label25;
-        private Label label24;
-        private Label label23;
+        private Label lblJudulTour;
         private Panel panel23;
         private Button button1;
         private Panel panel9;
@@ -1159,7 +1146,7 @@
         private Label label20;
         private Label label10;
         private Panel panel19;
-        private Label label17;
+        private Label lblRating;
         private Panel panel13;
         private Label label21;
         private Label label11;
@@ -1185,11 +1172,11 @@
         private Label label31;
         private Panel panel26;
         private Button button4;
-        private Panel panel16;
+        private Panel panelSkorUlasan;
         private PictureBox pictureBox11;
-        private Label label27;
-        private Label label28;
-        private Label label29;
+        private Label lblKomentarUlasan;
+        private Label lblTanggalUlasan;
+        private Label lblNamaUlasan;
         private Panel panel24;
         private Button button3;
         private Label label33;

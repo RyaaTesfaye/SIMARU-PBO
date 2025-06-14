@@ -83,5 +83,24 @@ namespace RUSUNAWAAA.View.Umum
             var command = new NavigateToFormCommand<Loginss>(this);
             command.Execute();
         }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            string url = (sender as LinkLabel).Text;
+
+            try
+            {
+                var processInfo = new System.Diagnostics.ProcessStartInfo
+                {
+                    FileName = url,
+                    UseShellExecute = true
+                };
+                System.Diagnostics.Process.Start(processInfo);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Tidak dapat membuka link. Pastikan Anda terhubung ke internet. Error: " + ex.Message);
+            }
+        }
     }
 }
