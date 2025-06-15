@@ -81,6 +81,7 @@ namespace RUSUNAWAAA.Service
                         return false;
                     }
                 }
+                return false;
                 Console.WriteLine($"User with NIK '{identifierNIK}' not found for password update."); 
             }
         }
