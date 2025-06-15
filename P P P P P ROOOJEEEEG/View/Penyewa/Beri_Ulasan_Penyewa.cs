@@ -8,7 +8,6 @@ using RUSUNAWAAA.Utils;// Pastikan namespace ini benar
 
 namespace RUSUNAWAAA.View.Penyewa
 {
-    // Definisikan mode tampilan di luar kelas agar bisa diakses dari tempat lain
     public enum TampilanUlasanMode { Penyewa, AdminOrUmum }
 
     public partial class Beri_Ulasan_Penyewa : Form
@@ -18,21 +17,17 @@ namespace RUSUNAWAAA.View.Penyewa
         private UC_InputUlasan _ucInputUlasan;
         private UC_SemuaUlasan _ucSemuaUlasan;
 
-        // --- PERUBAHAN 1: Tambahkan variabel untuk menyimpan mode saat ini ---
         private readonly TampilanUlasanMode _currentMode;
 
-        // Constructor lama tetap ada untuk Penyewa
         public Beri_Ulasan_Penyewa() : this(TampilanUlasanMode.Penyewa)
         {
-            // Konstruktor ini akan otomatis memanggil constructor utama dengan mode Penyewa
         }
 
-        // --- PERUBAHAN 2: Constructor baru yang lebih fleksibel ---
         public Beri_Ulasan_Penyewa(TampilanUlasanMode mode)
         {
             InitializeComponent();
             _ulasanService = new UlasanService();
-            _currentMode = mode; // Simpan mode yang dipilih
+            _currentMode = mode; 
         }
 
         private void Beri_Ulasan_Penyewa_Load(object sender, EventArgs e)

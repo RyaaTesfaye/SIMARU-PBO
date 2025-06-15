@@ -12,7 +12,6 @@ namespace RUSUNAWAAA.Models
         public Admin() { }
         public Admin(string nomorktp, string username, string password, string namaLengkap, string Role) : base(nomorktp, username, password, namaLengkap, "Admin")
         {
-
         }
     }
 }

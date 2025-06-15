@@ -73,15 +73,12 @@ namespace RUSUNAWAAA.View.Penyewa
 
                 if (ulasanTerbaru != null)
                 {
-                    // --- PERBAIKAN DI SINI: Mengisi kontrol yang SUDAH ADA ---
-                    // Pastikan nama kontrol di desainer Anda cocok (contoh: lblNamaUlasan, picProfilUlasan, dll)
                     lblJudulTour.Text = ulasanTerbaru.User?.NamaLengkap ?? "Penghuni Anonim";
                     lblTanggalUlasan.Text = ulasanTerbaru.Tanggal.ToLocalTime().ToString("dd MMMM yyyy");
                     lblKomentarUlasan.Text = ulasanTerbaru.Komentar;
                 }
                 else
                 {
-                    // Sembunyikan panel jika tidak ada ulasan
                     panelSkorUlasan.Visible = false;
                 }
             }
@@ -99,8 +96,6 @@ namespace RUSUNAWAAA.View.Penyewa
 
                 if (tourTerbaru != null)
                 {
-                    // --- PERBAIKAN DI SINI: Mengisi kontrol yang SUDAH ADA ---
-                    // Pastikan nama kontrol di desainer Anda cocok (contoh: lblJudulTour, picThumbnailTour, dll)
                     lblJudulTour.Text = tourTerbaru.Keterangan;
 
 
