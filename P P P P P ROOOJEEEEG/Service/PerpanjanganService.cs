@@ -35,7 +35,6 @@ namespace RUSUNAWAAA.Service
             }
             catch (Exception ex)
             {
-                // Kita gali InnerException untuk menemukan pesan error yang sebenarnya.
                 string errorMessage = "Gagal menyimpan data perpanjangan: " + ex.Message;
                 Exception innerException = ex.InnerException;
                 while (innerException != null)

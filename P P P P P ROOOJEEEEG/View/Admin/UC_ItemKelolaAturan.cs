@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using RUSUNAWAAA.Models; // Memastikan model TataTertib dapat diakses
+using RUSUNAWAAA.Models; 
 
 namespace RUSUNAWAAA.View.Admin
 {

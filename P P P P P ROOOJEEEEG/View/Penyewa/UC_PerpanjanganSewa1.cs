@@ -24,24 +24,17 @@ namespace RUSUNAWAAA.View.Penyewa
         private void cmbDurasi_SelectedIndexChanged(object sender, EventArgs e)
         {
             string pilihanTeks = cmbDurasi.SelectedItem?.ToString();
-            int durasiBulan = 0; // Default ke 0
-
-            // Langsung coba ubah seluruh teks yang dipilih menjadi angka.
-            // Tidak perlu lagi memecah string (Split).
-            // int.TryParse lebih aman karena tidak akan error jika pilihanTeks bukan angka.
+            int durasiBulan = 0; 
             if (!string.IsNullOrEmpty(pilihanTeks))
             {
                 int.TryParse(pilihanTeks, out durasiBulan);
             }
 
-            // Simpan nilai ke properti
             this.SelectedDurasiBulan = durasiBulan;
             this.CalculatedNominal = durasiBulan * TARIF_SEWA_BULANAN;
 
-            // Tampilkan biaya dengan format Rupiah
             txtBiaya.Text = "Rp. " + this.CalculatedNominal.ToString("N0");
 
-            // Kirim sinyal/laporan ke form utama beserta nilainya yang sudah dikonversi
             DurasiChanged?.Invoke(this, durasiBulan);
 
         }

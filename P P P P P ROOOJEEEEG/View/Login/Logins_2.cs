@@ -13,11 +13,10 @@ namespace RUSUNAWAAA.View.Login
 {
     public partial class Logins_2 : UserControl
     {
-        // Pastikan event ini ada!
         public event EventHandler BackToLoginRequested;
         public event EventHandler<string[]> ProceedToNextStepRequested;
 
-        private readonly AuthService _authService = new AuthService(); // Ini tetap dibutuhkan untuk verifikasi
+        private readonly AuthService _authService = new AuthService(); 
 
         public Logins_2()
         {

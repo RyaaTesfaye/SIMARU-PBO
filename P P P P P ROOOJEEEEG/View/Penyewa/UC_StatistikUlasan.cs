@@ -22,7 +22,6 @@ namespace RUSUNAWAAA.View.Penyewa
         }
         private void LinkBeriUlasan_Click(object sender, EventArgs e)
         {
-            // Memicu event untuk memberitahu form utama.
             BeriUlasanClicked?.Invoke(this, EventArgs.Empty);
         }
         public void TampilkanStatistik(List<Ulasan> semuaUlasan, TampilanUlasanMode mode)
@@ -36,7 +35,6 @@ namespace RUSUNAWAAA.View.Penyewa
             {
                 lblTotalSkor.Text = "N/A";
                 lblJumlahPenyewa.Text = "Belum ada ulasan";
-                // Atur semua lebar panel bar ke 0
                 panelBarBintang5.Width = 0;
                 panelBarBintang4.Width = 0;
                 panelBarBintang3.Width = 0;

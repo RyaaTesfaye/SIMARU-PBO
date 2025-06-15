@@ -1,5 +1,4 @@
-﻿// File: RUSUNAWAAA.View.Login/Loginss.cs
-using RUSUNAWAAA.Service;
+﻿using RUSUNAWAAA.Service;
 using RUSUNAWAAA.View.Admin;
 using RUSUNAWAAA.View.Penyewa;
 using System;

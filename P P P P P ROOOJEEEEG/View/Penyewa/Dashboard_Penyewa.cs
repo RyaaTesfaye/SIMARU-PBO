@@ -52,7 +52,7 @@ namespace RUSUNAWAAA.View.Penyewa
                 if (semuaUlasan.Any())
                 {
                     double rataRata = semuaUlasan.Average(u => u.Rating);
-                    lblRating.Text = rataRata.ToString("F1"); // Format 1 angka desimal
+                    lblRating.Text = rataRata.ToString("F1"); 
                 }
                 else
                 {

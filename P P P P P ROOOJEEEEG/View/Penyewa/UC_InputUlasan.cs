@@ -29,30 +29,25 @@ namespace RUSUNAWAAA.View.Penyewa
             ofdPilihFile.Title = "Pilih Gambar Bukti";
                 if (ofdPilihFile.ShowDialog() == DialogResult.OK)
                 {
-                    // Tampilkan nama file di textbox
                     txtPathGambar.Text = Path.GetFileName(ofdPilihFile.FileName);
-                    // Simpan path lengkap di dalam Properti Tag untuk digunakan nanti
                     txtPathGambar.Tag = ofdPilihFile.FileName;
                 }
             
         }
         private void BtnSimpan_Click(object sender, EventArgs e)
         {
-            // Validasi Rating
             if (cmbRating.SelectedItem == null || string.IsNullOrEmpty(cmbRating.SelectedItem.ToString()))
             {
                 MessageBox.Show("Harap berikan rating bintang terlebih dahulu.", "Validasi Gagal", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            // Validasi Komentar
             if (string.IsNullOrWhiteSpace(txtKomentar.Text))
             {
                 MessageBox.Show("Komentar tidak boleh kosong.", "Validasi Gagal", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            // --- PERUBAHAN DI SINI: Validasi Gambar Wajib ---
             string pathGambar = txtPathGambar.Tag as string;
             if (string.IsNullOrWhiteSpace(pathGambar))
             {
@@ -66,7 +61,6 @@ namespace RUSUNAWAAA.View.Penyewa
                 return;
             }
 
-            // Buat objek Ulasan baru dari semua input
             var ulasanBaru = new Ulasan
             {
                 Rating = ratingValue,
@@ -74,8 +68,6 @@ namespace RUSUNAWAAA.View.Penyewa
                 PathGambar = pathGambar,
                 NomorKTP = SesiLogin.LoggedInUser.NomorKTP
             };
-
-            // Kirim sinyal ke form utama
             KirimUlasanClicked?.Invoke(this, ulasanBaru);
         }
         private void BtnBatal_Click(object sender, EventArgs e)

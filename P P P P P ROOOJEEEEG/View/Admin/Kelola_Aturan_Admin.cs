@@ -100,8 +100,8 @@ namespace RUSUNAWAAA.View.Admin
                 MessageBox.Show("Gagal menambahkan aturan baru.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        private void ToDashboard_AD(object sender, EventArgs e) { /* ... */ }
-        private void ToPengelolaAkun_AD(object sender, EventArgs e) { /* ... */ }
+        private void ToDashboard_AD(object sender, EventArgs e) {  }
+        private void ToPengelolaAkun_AD(object sender, EventArgs e) {  }
 
 
         private void ToDaftarKeluhan_AD(object sender, EventArgs e)

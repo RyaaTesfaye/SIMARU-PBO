@@ -160,7 +160,6 @@ namespace RUSUNAWAAA.View.Admin
         }
         private void SetVisibility(bool isPengajuan)
         {
-            // Atur visibilitas label dan link yang hanya ada di pengajuan
             lblNIMIsi.Visible = isPengajuan; lblNIMIsi.Visible = isPengajuan;
             lblProdiIsi.Visible = isPengajuan; lblProdiIsi.Visible = isPengajuan;
             lblFakultasIsi.Visible = isPengajuan;
@@ -176,9 +175,9 @@ namespace RUSUNAWAAA.View.Admin
         private void LinkLihatFile_Click(object sender, EventArgs e)
         {
             string filePath = "";
-            var link = sender as Label; // Menggunakan Label, bukan LinkLabel
+            var link = sender as Label; 
 
-            if (link == null) return; // Pengaman jika sender bukan Label
+            if (link == null) return; 
 
             if (_tipeDataSaatIni == TipeData.Pengajuan)
             {

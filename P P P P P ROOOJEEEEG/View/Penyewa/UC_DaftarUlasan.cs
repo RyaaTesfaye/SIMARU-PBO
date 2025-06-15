@@ -23,8 +23,6 @@ namespace RUSUNAWAAA.View.Penyewa
         {
             flowLayoutPanelUlasan.Controls.Clear();
 
-            // Tampilkan juga jumlah total ulasan di label header
-            // Asumsikan ada label bernama lblJumlahUlasan
             lblJumlahUlasan.Text = (semuaUlasan?.Count ?? 0).ToString("N0") + "+ ulasan dari penghuni";
 
             if (semuaUlasan == null || !semuaUlasan.Any())
@@ -39,7 +37,6 @@ namespace RUSUNAWAAA.View.Penyewa
                 return;
             }
 
-            // Hanya tampilkan 2 ulasan terbaru
             foreach (var ulasan in semuaUlasan.Take(2))
             {
                 var itemUlasan = new UC_ItemUlasan();

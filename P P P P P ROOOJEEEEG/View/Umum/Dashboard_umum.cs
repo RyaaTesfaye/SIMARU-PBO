@@ -61,7 +61,7 @@ namespace RUSUNAWAAA.View.Umum
                 if (semuaUlasan.Any())
                 {
                     double rataRata = semuaUlasan.Average(u => u.Rating);
-                    lblRating.Text = rataRata.ToString("F1"); // Format 1 angka desimal
+                    lblRating.Text = rataRata.ToString("F1"); 
                 }
                 else
                 {
@@ -82,15 +82,12 @@ namespace RUSUNAWAAA.View.Umum
 
                 if (ulasanTerbaru != null)
                 {
-                    // --- PERBAIKAN DI SINI: Mengisi kontrol yang SUDAH ADA ---
-                    // Pastikan nama kontrol di desainer Anda cocok (contoh: lblNamaUlasan, picProfilUlasan, dll)
                     lblNamaUlasan.Text = ulasanTerbaru.User?.NamaLengkap ?? "Penghuni Anonim";
                     lblTanggalUlasan.Text = ulasanTerbaru.Tanggal.ToLocalTime().ToString("dd MMMM yyyy");
                     lblKomentarUlasan.Text = ulasanTerbaru.Komentar;
                 }
                 else
                 {
-                    // Sembunyikan panel jika tidak ada ulasan
                     panelSkorUlasan.Visible = false;
                 }
             }
@@ -108,8 +105,6 @@ namespace RUSUNAWAAA.View.Umum
 
                 if (tourTerbaru != null)
                 {
-                    // --- PERBAIKAN DI SINI: Mengisi kontrol yang SUDAH ADA ---
-                    // Pastikan nama kontrol di desainer Anda cocok (contoh: lblJudulTour, picThumbnailTour, dll)
                     lblJudulTour.Text = tourTerbaru.Keterangan;
                     
 

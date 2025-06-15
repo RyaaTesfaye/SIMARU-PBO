@@ -51,7 +51,6 @@ namespace RUSUNAWAAA.View.Admin
                 {
                     int jumlahPenyewa = context.Users.OfType<PenyewaModel>().Count();
 
-                    // Samakan nilainya sesuai permintaan
                     lblUserTerdaftar.Text = jumlahPenyewa.ToString();
                     lblPenyewaAktif.Text = jumlahPenyewa.ToString();
                 }
@@ -60,7 +59,6 @@ namespace RUSUNAWAAA.View.Admin
             }
             catch (Exception ex)
             {
-                // Jika gagal, tampilkan pesan error dan set angka ke "0"
                 MessageBox.Show("Gagal memuat data ringkasan dashboard: " + ex.Message, "Error Database", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 lblUserTerdaftar.Text = "0";
                 lblPenyewaAktif.Text = "0";

@@ -87,7 +87,6 @@ namespace RUSUNAWAAA.View.Admin
                 flowLayoutPanelKeluhan.Controls.Add(lblKosong);
             }
 
-            //UpdatePagingButtons();
         }
         private void OnItemDetailClicked(object sender, int keluhanId)
         {

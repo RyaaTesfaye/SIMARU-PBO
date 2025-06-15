@@ -10,7 +10,6 @@ namespace RUSUNAWAAA.Service
 {
     public class AkunService
     {
-        //=============================Admin============================
         public List<User> GetAllUsers()
         {
             using (var context = new ApplicationDbContext())

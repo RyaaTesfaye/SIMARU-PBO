@@ -15,7 +15,6 @@ namespace RUSUNAWAAA.View.Penyewa
     {
         public event EventHandler _BackRequested;
         private List<Ulasan> _semuaUlasan;
-        //private int _halamanSaatIni = 1;
         private readonly int _itemPerHalaman = 4;
         public UC_SemuaUlasan()
         {

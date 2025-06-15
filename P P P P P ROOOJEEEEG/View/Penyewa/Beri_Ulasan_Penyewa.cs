@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 using RUSUNAWAAA.View.Penyewa;
-using RUSUNAWAAA.Utils;// Pastikan namespace ini benar
+using RUSUNAWAAA.Utils;
 
 namespace RUSUNAWAAA.View.Penyewa
 {

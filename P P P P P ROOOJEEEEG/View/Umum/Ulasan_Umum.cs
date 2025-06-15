@@ -20,7 +20,6 @@ namespace RUSUNAWAAA.View.Umum
         private readonly UlasanService _ulasanService;
         private List<Ulasan> _semuaUlasan;
 
-        // Variabel untuk menyimpan instance UserControl agar tidak dibuat berulang kali
         private UC_SemuaUlasan _ucSemuaUlasan;
 
         private readonly TampilanUlasanMode _currentMode;
@@ -31,12 +30,10 @@ namespace RUSUNAWAAA.View.Umum
             UIhelper.MakePanelRound(panelSemua, 20);
             UIhelper.MakePanelRound(panelKiri, 20);
             _ulasanService = new UlasanService();
-            // Set mode default untuk Admin/Umum
             _currentMode = TampilanUlasanMode.AdminOrUmum;
         }
         private void Lihat_Ulasan_Umum_Load(object sender, EventArgs e)
         {
-            // Panggil metode untuk memuat data dan menampilkan UI awal.
             RefreshHalaman();
         }
         private void RefreshHalaman()
@@ -44,7 +41,7 @@ namespace RUSUNAWAAA.View.Umum
             try
             {
                 _semuaUlasan = _ulasanService.GetAllUlasan();
-                LoadTampilanAwal(); // Kembali ke tampilan default (statistik & preview)
+                LoadTampilanAwal(); 
             }
             catch (Exception ex)
             {

@@ -33,21 +33,14 @@ namespace RUSUNAWAAA.View.Penyewa
             LoadUserControls();
         }
 
-        /// <summary>
-        /// Metode untuk membuat, mengkonfigurasi, dan menampilkan UserControl secara dinamis.
-        /// </summary>
         private void LoadUserControls()
         {
-            // Buat instance baru dari UserControl
             ucFormKiri = new UC_PerpanjanganSewa1();
             ucFormKanan = new UC_PerpanjanganSewa2();
 
-            // Atur agar UC mengisi seluruh area panel
             ucFormKiri.Dock = DockStyle.Fill;
             ucFormKanan.Dock = DockStyle.Fill;
 
-            // Tambahkan UC ke panel yang sesuai.
-            // PASTIKAN nama panel Anda adalah 'panelKiri' dan 'panelKanan' di desainer.
             panel10.Controls.Clear();
             panel10.Controls.Add(ucFormKiri);
 
@@ -59,7 +52,6 @@ namespace RUSUNAWAAA.View.Penyewa
         }
         private void UcFormKiri_DurasiChanged(object sender, int durasiBulan)
         {
-            // Manajer mencatat durasi yang dilaporkan ke buku catatannya.
             _durasiSewaTerpilih = durasiBulan;
         }
 
@@ -67,7 +59,6 @@ namespace RUSUNAWAAA.View.Penyewa
         {
             try
             {
-                // 1. Validasi Input
                 if (_durasiSewaTerpilih <= 0)
                 {
                     MessageBox.Show("Harap pilih durasi penyewaan terlebih dahulu.", "Validasi Gagal", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -84,7 +75,6 @@ namespace RUSUNAWAAA.View.Penyewa
                     return;
                 }
 
-                // 2. Kumpulkan Data
                 var perpanjanganBaru = new PerpanjanganSewa
                 {
                     NomorKTP = SesiLogin.LoggedInUser.NomorKTP,
@@ -93,7 +83,6 @@ namespace RUSUNAWAAA.View.Penyewa
                     PathBuktiPembayaran = ucFormKanan.PathBuktiPembayaran
                 };
 
-                // 3. Panggil Service
                 bool sukses = _perpanjanganService.AjukanPerpanjangan(perpanjanganBaru);
 
                 if (sukses)

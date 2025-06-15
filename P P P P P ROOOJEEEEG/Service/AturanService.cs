@@ -163,7 +163,6 @@ namespace RUSUNAWAAA.Service
             }
         }
 
-        //======================================================================
         public void DisplayItemsOnDataGridView(DataGridView targetDgv, string filterJenisKelamin)
         {
             try

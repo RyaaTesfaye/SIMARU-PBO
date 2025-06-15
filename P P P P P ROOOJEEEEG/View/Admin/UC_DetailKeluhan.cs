@@ -45,7 +45,7 @@ namespace RUSUNAWAAA.View.Admin
                 {
                     pictureKeluhan.Image = Image.FromFile(data.PathGambar);
                 }
-                catch { /* Abaikan jika file rusak */ }
+                catch {  }
             }
             btnTangani.Visible = (data.Status == "Belum Ditangani");
         }
@@ -60,7 +60,6 @@ namespace RUSUNAWAAA.View.Admin
 
             if (konfirmasi == DialogResult.Yes)
             {
-                // Panggil service untuk mengubah status di database
                 bool sukses = _service.UpdateStatusKeluhan(_currentKeluhanId, "Selesai");
 
                 if (sukses)

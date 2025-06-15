@@ -40,16 +40,15 @@ namespace RUSUNAWAAA.View.Umum
         }
         private void DisplayCurrentPage()
         {
-            // Ambil 3 item untuk halaman saat ini
             var mediaUntukHalamanIni = _semuaMedia
                 .Skip((_halamanSaatIni - 1) * _itemPerHalaman)
                 .Take(_itemPerHalaman)
                 .ToList();
-            // Slot 1
+
             UpdateSlot(picbox1, lblKeterangan1, mediaUntukHalamanIni.ElementAtOrDefault(0));
-            // Slot 2
+
             UpdateSlot(picbox2, lblKeterangan2, mediaUntukHalamanIni.ElementAtOrDefault(1));
-            // Slot 3
+
             UpdateSlot(picbox3, lblKeterangan3, mediaUntukHalamanIni.ElementAtOrDefault(2));
 
             UpdatePagingButtons();
@@ -142,7 +141,6 @@ namespace RUSUNAWAAA.View.Umum
             var command = new NavigateToFormCommand<Kontaklokasi_Umum>(this);
             command.Execute();
         }
-
         private void ToMasuk_Click(object sender, EventArgs e)
         {
             var command = new NavigateToFormCommand<Loginss>(this);
