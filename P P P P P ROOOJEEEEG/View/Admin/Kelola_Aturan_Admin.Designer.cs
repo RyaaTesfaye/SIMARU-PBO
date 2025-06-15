@@ -55,9 +55,6 @@
             panel5 = new Panel();
             label5 = new Label();
             pictureBox5 = new PictureBox();
-            panel4 = new Panel();
-            label4 = new Label();
-            pictureBox4 = new PictureBox();
             panel3 = new Panel();
             label3 = new Label();
             pictureBox2 = new PictureBox();
@@ -106,8 +103,6 @@
             panel6.SuspendLayout();
             panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel2.SuspendLayout();
@@ -137,7 +132,6 @@
             panel1.Controls.Add(pictureBox9);
             panel1.Controls.Add(panel6);
             panel1.Controls.Add(panel5);
-            panel1.Controls.Add(panel4);
             panel1.Controls.Add(panel3);
             panel1.Controls.Add(panel2);
             panel1.Controls.Add(label1);
@@ -154,7 +148,7 @@
             panel31.Controls.Add(panel32);
             panel31.Controls.Add(label33);
             panel31.Cursor = Cursors.Hand;
-            panel31.Location = new Point(0, 510);
+            panel31.Location = new Point(0, 235);
             panel31.Name = "panel31";
             panel31.Size = new Size(240, 50);
             panel31.TabIndex = 9;
@@ -429,41 +423,6 @@
             pictureBox5.TabIndex = 2;
             pictureBox5.TabStop = false;
             pictureBox5.Click += ToDaftarKeluhan_AD;
-            // 
-            // panel4
-            // 
-            panel4.BackColor = Color.Transparent;
-            panel4.Controls.Add(label4);
-            panel4.Controls.Add(pictureBox4);
-            panel4.Cursor = Cursors.Hand;
-            panel4.Location = new Point(0, 235);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(240, 50);
-            panel4.TabIndex = 3;
-            panel4.Click += ToKelolaHunian_AD;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold);
-            label4.ForeColor = Color.White;
-            label4.Location = new Point(45, 12);
-            label4.Name = "label4";
-            label4.Size = new Size(126, 20);
-            label4.TabIndex = 4;
-            label4.Text = "Kelola Hunian";
-            label4.Click += ToKelolaHunian_AD;
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.Image = Properties.Resources.bank;
-            pictureBox4.Location = new Point(10, 10);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(25, 25);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 2;
-            pictureBox4.TabStop = false;
-            pictureBox4.Click += ToKelolaHunian_AD;
             // 
             // panel3
             // 
@@ -856,9 +815,6 @@
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            panel4.ResumeLayout(false);
-            panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
@@ -912,9 +868,6 @@
         private Panel panel5;
         private Label label5;
         private PictureBox pictureBox5;
-        private Panel panel4;
-        private Label label4;
-        private PictureBox pictureBox4;
         private Panel panel3;
         private Label label3;
         private PictureBox pictureBox2;

@@ -35,7 +35,7 @@
             lblTanggal = new Label();
             lblNama = new Label();
             panel23 = new Panel();
-            button1 = new Button();
+            btnTangani = new Button();
             panel15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureKeluhan).BeginInit();
             panel23.SuspendLayout();
@@ -100,26 +100,27 @@
             // panel23
             // 
             panel23.BackColor = Color.Transparent;
-            panel23.Controls.Add(button1);
+            panel23.Controls.Add(btnTangani);
             panel23.Location = new Point(119, 492);
             panel23.Name = "panel23";
             panel23.Size = new Size(220, 45);
             panel23.TabIndex = 5;
             // 
-            // button1
+            // btnTangani
             // 
-            button1.BackColor = Color.FromArgb(10, 100, 236);
-            button1.Cursor = Cursors.Hand;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(25, 3);
-            button1.Name = "button1";
-            button1.Size = new Size(171, 39);
-            button1.TabIndex = 0;
-            button1.Text = "Tangani";
-            button1.UseVisualStyleBackColor = false;
+            btnTangani.BackColor = Color.FromArgb(10, 100, 236);
+            btnTangani.Cursor = Cursors.Hand;
+            btnTangani.FlatAppearance.BorderSize = 0;
+            btnTangani.FlatStyle = FlatStyle.Flat;
+            btnTangani.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnTangani.ForeColor = Color.White;
+            btnTangani.Location = new Point(25, 3);
+            btnTangani.Name = "btnTangani";
+            btnTangani.Size = new Size(171, 39);
+            btnTangani.TabIndex = 0;
+            btnTangani.Text = "Tangani";
+            btnTangani.UseVisualStyleBackColor = false;
+            btnTangani.Click += btnTangani_Click;
             // 
             // UC_DetailKeluhan
             // 
@@ -144,6 +145,6 @@
         private Label lblTanggal;
         private Label lblNama;
         private Panel panel23;
-        private Button button1;
+        private Button btnTangani;
     }
 }

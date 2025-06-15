@@ -56,9 +56,6 @@ namespace RUSUNAWAAA.View.Admin
             panel5 = new Panel();
             label5 = new Label();
             pictureBox5 = new PictureBox();
-            panel4 = new Panel();
-            label4 = new Label();
-            pictureBox4 = new PictureBox();
             panel3 = new Panel();
             label3 = new Label();
             pictureBox2 = new PictureBox();
@@ -92,10 +89,10 @@ namespace RUSUNAWAAA.View.Admin
             panel9 = new Panel();
             label7 = new Label();
             panel14 = new Panel();
+            lblMenungguKonfirmasi = new Label();
             label20 = new Label();
             label10 = new Label();
             panel19 = new Panel();
-            lblMenungguKonfirmasi = new Label();
             panel13 = new Panel();
             label21 = new Label();
             label11 = new Label();
@@ -129,8 +126,6 @@ namespace RUSUNAWAAA.View.Admin
             panel6.SuspendLayout();
             panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel2.SuspendLayout();
@@ -170,7 +165,6 @@ namespace RUSUNAWAAA.View.Admin
             panel1.Controls.Add(pictureBox9);
             panel1.Controls.Add(panel6);
             panel1.Controls.Add(panel5);
-            panel1.Controls.Add(panel4);
             panel1.Controls.Add(panel3);
             panel1.Controls.Add(panel2);
             panel1.Controls.Add(label1);
@@ -188,7 +182,7 @@ namespace RUSUNAWAAA.View.Admin
             panel31.Controls.Add(panel32);
             panel31.Controls.Add(label33);
             panel31.Cursor = Cursors.Hand;
-            panel31.Location = new Point(0, 510);
+            panel31.Location = new Point(0, 235);
             panel31.Name = "panel31";
             panel31.Size = new Size(240, 50);
             panel31.TabIndex = 9;
@@ -456,41 +450,6 @@ namespace RUSUNAWAAA.View.Admin
             pictureBox5.TabIndex = 2;
             pictureBox5.TabStop = false;
             pictureBox5.Click += ToDaftarKeluhan_AD;
-            // 
-            // panel4
-            // 
-            panel4.BackColor = Color.Transparent;
-            panel4.Controls.Add(label4);
-            panel4.Controls.Add(pictureBox4);
-            panel4.Cursor = Cursors.Hand;
-            panel4.Location = new Point(0, 235);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(240, 50);
-            panel4.TabIndex = 3;
-            panel4.Click += ToKelolaHunian_AD;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Inter", 10F, FontStyle.Bold);
-            label4.ForeColor = Color.White;
-            label4.Location = new Point(45, 12);
-            label4.Name = "label4";
-            label4.Size = new Size(126, 24);
-            label4.TabIndex = 4;
-            label4.Text = "Kelola Hunian";
-            label4.Click += ToKelolaHunian_AD;
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.Image = Properties.Resources.bank;
-            pictureBox4.Location = new Point(10, 10);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(25, 25);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 2;
-            pictureBox4.TabStop = false;
-            pictureBox4.Click += ToKelolaHunian_AD;
             // 
             // panel3
             // 
@@ -859,6 +818,20 @@ namespace RUSUNAWAAA.View.Admin
             panel14.Size = new Size(255, 235);
             panel14.TabIndex = 3;
             // 
+            // lblMenungguKonfirmasi
+            // 
+            lblMenungguKonfirmasi.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            lblMenungguKonfirmasi.AutoSize = true;
+            lblMenungguKonfirmasi.BackColor = Color.FromArgb(37, 39, 48);
+            lblMenungguKonfirmasi.Font = new Font("Inter", 18F, FontStyle.Bold);
+            lblMenungguKonfirmasi.ForeColor = Color.White;
+            lblMenungguKonfirmasi.Location = new Point(95, 35);
+            lblMenungguKonfirmasi.Name = "lblMenungguKonfirmasi";
+            lblMenungguKonfirmasi.Size = new Size(58, 43);
+            lblMenungguKonfirmasi.TabIndex = 7;
+            lblMenungguKonfirmasi.Text = "50";
+            lblMenungguKonfirmasi.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // label20
             // 
             label20.BackColor = Color.Transparent;
@@ -888,20 +861,6 @@ namespace RUSUNAWAAA.View.Admin
             panel19.Name = "panel19";
             panel19.Size = new Size(70, 70);
             panel19.TabIndex = 2;
-            // 
-            // lblMenungguKonfirmasi
-            // 
-            lblMenungguKonfirmasi.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            lblMenungguKonfirmasi.AutoSize = true;
-            lblMenungguKonfirmasi.BackColor = Color.FromArgb(37, 39, 48);
-            lblMenungguKonfirmasi.Font = new Font("Inter", 18F, FontStyle.Bold);
-            lblMenungguKonfirmasi.ForeColor = Color.White;
-            lblMenungguKonfirmasi.Location = new Point(95, 35);
-            lblMenungguKonfirmasi.Name = "lblMenungguKonfirmasi";
-            lblMenungguKonfirmasi.Size = new Size(58, 43);
-            lblMenungguKonfirmasi.TabIndex = 7;
-            lblMenungguKonfirmasi.Text = "50";
-            lblMenungguKonfirmasi.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // panel13
             // 
@@ -1126,9 +1085,6 @@ namespace RUSUNAWAAA.View.Admin
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            panel4.ResumeLayout(false);
-            panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
@@ -1178,17 +1134,14 @@ namespace RUSUNAWAAA.View.Admin
         private Panel panel1;
         private Label label1;
         private Panel panel5;
-        private Panel panel4;
         private Panel panel3;
         private Panel panel2;
         private Panel panel6;
-        private PictureBox pictureBox4;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private PictureBox pictureBox5;
         private Label label2;
         private Label label5;
-        private Label label4;
         private Label label3;
         private Panel panel7;
         private PictureBox pictureBox6;

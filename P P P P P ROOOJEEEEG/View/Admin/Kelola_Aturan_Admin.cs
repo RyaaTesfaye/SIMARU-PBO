@@ -107,11 +107,7 @@ namespace RUSUNAWAAA.View.Admin
         }
         private void ToDashboard_AD(object sender, EventArgs e) { /* ... */ }
         private void ToPengelolaAkun_AD(object sender, EventArgs e) { /* ... */ }
-        private void ToKelolaHunian_AD(object sender, EventArgs e)
-        {
-            var command = new NavigateToFormCommand<Kelola_Hunian_Admin>(this);
-            command.Execute();
-        }
+
 
         private void ToDaftarKeluhan_AD(object sender, EventArgs e)
         {

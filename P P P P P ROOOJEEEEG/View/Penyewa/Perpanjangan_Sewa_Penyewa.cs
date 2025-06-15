@@ -138,11 +138,7 @@ namespace RUSUNAWAAA.View.Penyewa
             command.Execute();
         }
 
-        private void ToRiwayatPembayaran_PE(object sender, EventArgs e)
-        {
-            var command = new NavigateToFormCommand<Riwayat_Pembayarn_Penyewa>(this);
-            command.Execute();
-        }
+
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -160,6 +156,11 @@ namespace RUSUNAWAAA.View.Penyewa
                 var command = new NavigateToFormCommand<Loginss>(this);
                 command.Execute();
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

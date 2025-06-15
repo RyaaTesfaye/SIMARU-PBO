@@ -21,6 +21,7 @@ namespace RUSUNAWAAA.View.Admin
         public UC_DetailKeluhan()
         {
             InitializeComponent();
+            btnTangani.Click += btnTangani_Click;
         }
         public void LoadDetail(int keluhanId)
         {
@@ -46,10 +47,28 @@ namespace RUSUNAWAAA.View.Admin
                 }
                 catch { /* Abaikan jika file rusak */ }
             }
+            btnTangani.Visible = (data.Status == "Belum Ditangani");
         }
         private void btnTangani_Click(object sender, EventArgs e)
         {
+            DialogResult konfirmasi = MessageBox.Show(
+               "Anda yakin ingin menangani keluhan ini? Status akan diubah menjadi 'Selesai'.",
+               "Konfirmasi Tindakan",
+               MessageBoxButtons.YesNo,
+               MessageBoxIcon.Question
+           );
 
+            if (konfirmasi == DialogResult.Yes)
+            {
+                // Panggil service untuk mengubah status di database
+                bool sukses = _service.UpdateStatusKeluhan(_currentKeluhanId, "Selesai");
+
+                if (sukses)
+                {
+                    MessageBox.Show("Status keluhan berhasil diperbarui.", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ActionCompleted?.Invoke(this, EventArgs.Empty);
+                }
+            }
         }
 
         private void panel15_Paint(object sender, PaintEventArgs e)

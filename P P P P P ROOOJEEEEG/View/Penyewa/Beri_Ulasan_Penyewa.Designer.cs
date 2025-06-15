@@ -33,9 +33,6 @@
             panel29 = new Panel();
             label26 = new Label();
             pictureBox16 = new PictureBox();
-            panel22 = new Panel();
-            label13 = new Label();
-            pictureBox10 = new PictureBox();
             panel21 = new Panel();
             label12 = new Label();
             pictureBox1 = new PictureBox();
@@ -66,8 +63,6 @@
             panel1.SuspendLayout();
             panel29.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
-            panel22.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             panel21.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
@@ -90,7 +85,6 @@
             // panel1
             // 
             panel1.Controls.Add(panel29);
-            panel1.Controls.Add(panel22);
             panel1.Controls.Add(panel21);
             panel1.Controls.Add(pictureBox9);
             panel1.Controls.Add(panel5);
@@ -110,7 +104,7 @@
             panel29.Controls.Add(label26);
             panel29.Controls.Add(pictureBox16);
             panel29.Cursor = Cursors.Hand;
-            panel29.Location = new Point(0, 455);
+            panel29.Location = new Point(0, 400);
             panel29.Name = "panel29";
             panel29.Size = new Size(240, 50);
             panel29.TabIndex = 8;
@@ -138,41 +132,6 @@
             pictureBox16.TabIndex = 2;
             pictureBox16.TabStop = false;
             pictureBox16.Click += ToPerpanjanganSewa_PE;
-            // 
-            // panel22
-            // 
-            panel22.BackColor = Color.Transparent;
-            panel22.Controls.Add(label13);
-            panel22.Controls.Add(pictureBox10);
-            panel22.Cursor = Cursors.Hand;
-            panel22.Location = new Point(0, 400);
-            panel22.Name = "panel22";
-            panel22.Size = new Size(240, 50);
-            panel22.TabIndex = 7;
-            panel22.Click += ToRiwayatLaporan_PE;
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.Font = new Font("Inter", 10F, FontStyle.Bold);
-            label13.ForeColor = Color.White;
-            label13.Location = new Point(45, 12);
-            label13.Name = "label13";
-            label13.Size = new Size(186, 24);
-            label13.TabIndex = 4;
-            label13.Text = "Riwayat Pembayaran";
-            label13.Click += ToRiwayatLaporan_PE;
-            // 
-            // pictureBox10
-            // 
-            pictureBox10.Image = Properties.Resources.tata_tertib;
-            pictureBox10.Location = new Point(10, 10);
-            pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(25, 25);
-            pictureBox10.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox10.TabIndex = 2;
-            pictureBox10.TabStop = false;
-            pictureBox10.Click += ToRiwayatLaporan_PE;
             // 
             // panel21
             // 
@@ -490,9 +449,6 @@
             panel29.ResumeLayout(false);
             panel29.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox16).EndInit();
-            panel22.ResumeLayout(false);
-            panel22.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             panel21.ResumeLayout(false);
             panel21.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -525,9 +481,6 @@
         private Panel panel29;
         private Label label26;
         private PictureBox pictureBox16;
-        private Panel panel22;
-        private Label label13;
-        private PictureBox pictureBox10;
         private Panel panel21;
         private Label label12;
         private PictureBox pictureBox1;

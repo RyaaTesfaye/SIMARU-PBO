@@ -105,12 +105,10 @@ namespace RUSUNAWAAA.Service
                 {
                     string errorMessage = "Gagal membuat keluhan baru: " + ex.Message;
 
-                    // Cek apakah masalahnya ada di InnerException (error dari database)
                     if (ex.InnerException != null)
                     {
                         errorMessage += "\n--> Detail DB: " + ex.InnerException.Message;
                     }
-                    // Cek stack trace untuk melihat baris mana yang error
                     errorMessage += "\n\nStack Trace:\n" + ex.StackTrace;
 
                     MessageBox.Show(errorMessage, "Error Database Detail", MessageBoxButtons.OK, MessageBoxIcon.Error);

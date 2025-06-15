@@ -120,11 +120,7 @@ namespace RUSUNAWAAA.View.Admin
             command.Execute();
         }
 
-        private void ToKelolaHunian_AD(object sender, EventArgs e)
-        {
-            var command = new NavigateToFormCommand<Kelola_Hunian_Admin>(this);
-            command.Execute();
-        }
+
 
         private void ToDaftarKeluhan_AD(object sender, EventArgs e)
         {

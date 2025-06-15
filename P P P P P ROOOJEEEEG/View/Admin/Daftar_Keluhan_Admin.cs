@@ -95,13 +95,13 @@ namespace RUSUNAWAAA.View.Admin
         }
         private void ShowDetailView(int keluhanId)
         {
-            panel12.Visible = false; 
+            panel12.Visible = false;
 
-       
-            var detailView = new UC_DetailKeluhan(); 
+
+            var detailView = new UC_DetailKeluhan();
             detailView.Dock = DockStyle.Fill;
 
-   
+
             detailView.ActionCompleted += (s, ev) => ShowListView();
             detailView.BackRequested += (s, ev) => ShowListView();
 
@@ -153,11 +153,7 @@ namespace RUSUNAWAAA.View.Admin
             command.Execute();
         }
 
-        private void ToKelolaHunian_AD(object sender, EventArgs e)
-        {
-            var command = new NavigateToFormCommand<Kelola_Hunian_Admin>(this);
-            command.Execute();
-        }
+
 
         private void ToTinjauUlasan_AD(object sender, EventArgs e)
         {
@@ -218,6 +214,11 @@ namespace RUSUNAWAAA.View.Admin
                 var command = new NavigateToFormCommand<Loginss>(this);
                 command.Execute();
             }
+        }
+
+        private void panel31_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
