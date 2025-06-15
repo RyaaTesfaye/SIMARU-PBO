@@ -24,7 +24,7 @@ namespace RUSUNAWAAA.View.Penyewa
         private void btnPilihFile_Click(object sender, EventArgs e)
         {
             
-                ofdPilihFile.Title = "Pilih Gambar Bukti Pembayaran";.
+                ofdPilihFile.Title = "Pilih Gambar Bukti Pembayaran";
                 ofdPilihFile.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.bmp";
 
                 if (ofdPilihFile.ShowDialog() == DialogResult.OK)
