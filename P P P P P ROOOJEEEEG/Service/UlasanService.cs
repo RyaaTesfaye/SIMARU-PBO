@@ -13,7 +13,6 @@ namespace RUSUNAWAAA.Service
     {
         public bool AddUlasan(Ulasan ulasanBaru)
         {
-            // Validasi dasar di service
             if (ulasanBaru == null || ulasanBaru.Rating < 1 || ulasanBaru.Rating > 5 || string.IsNullOrEmpty(ulasanBaru.NomorKTP))
             {
                 return false;
@@ -23,7 +22,6 @@ namespace RUSUNAWAAA.Service
             {
                 using (var context = new ApplicationDbContext())
                 {
-                    // Selalu gunakan UTC untuk tanggal di database
                     ulasanBaru.Tanggal = DateTime.UtcNow;
                     context.Ulasans.Add(ulasanBaru);
                     context.SaveChanges();
@@ -32,8 +30,6 @@ namespace RUSUNAWAAA.Service
             }
             catch (Exception ex)
             {
-                // Di aplikasi nyata, ini seharusnya dicatat ke file log.
-                // Kita return false untuk menandakan ada error.
                 Console.WriteLine("Error saat menambah ulasan: " + ex.Message);
                 return false;
             }
@@ -44,7 +40,6 @@ namespace RUSUNAWAAA.Service
             {
                 using (var context = new ApplicationDbContext())
                 {
-                    // .Include(u => u.User) penting untuk mengambil data pengguna (nama, dll) yang berelasi.
                     return context.Ulasans
                                   .Include(u => u.User)
                                   .OrderByDescending(u => u.Tanggal)
@@ -58,7 +53,7 @@ namespace RUSUNAWAAA.Service
         }
         public bool SudahMemberiUlasan(string nomorKtp)
         {
-            if (string.IsNullOrEmpty(nomorKtp)) return true; // Anggap sudah jika KTP tidak valid
+            if (string.IsNullOrEmpty(nomorKtp)) return true; 
 
             try
             {

@@ -14,16 +14,13 @@ namespace RUSUNAWAAA.Service
         private readonly ApplicationDbContext _context;
         public KeluhanService()
         {
-            // --- PERBAIKAN DI SINI: Menambahkan try-catch di constructor ---
             try
             {
                 _context = new ApplicationDbContext();
             }
             catch (Exception ex)
             {
-                // Ini akan menangkap error yang sebenarnya saat koneksi database gagal dibuat.
                 MessageBox.Show("Gagal menginisialisasi koneksi database. Pastikan connection string Anda benar dan database server berjalan.\n\nError Detail: " + ex.Message, "Error Koneksi Database", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                // Set _context menjadi null secara eksplisit jika gagal.
                 _context = null;
             }
         }
@@ -89,9 +86,6 @@ namespace RUSUNAWAAA.Service
                         MessageBox.Show("Konteks database (DbContext) belum diinisialisasi.", "Error Kritis", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return false;
                     }
-
-                    // --- PENAMBAHAN KODE PENGAMAN BARU ---
-                    // Cek apakah DbSet 'Laporans' null. Ini terjadi jika lupa didefinisikan di ApplicationDbContext.cs
                     if (_context.Laporans == null)
                     {
                         MessageBox.Show("Error Konfigurasi: Properti 'Laporans' di DbContext bernilai null.\n\nPastikan Anda sudah menambahkan baris berikut di file ApplicationDbContext.cs Anda:\n\npublic DbSet<Laporan> Laporans { get; set; }", "Error Konfigurasi", MessageBoxButtons.OK, MessageBoxIcon.Error);

@@ -20,22 +20,17 @@ namespace RUSUNAWAAA.View.Penyewa
         public UC_SemuaUlasan()
         {
             InitializeComponent();
-            //btnNext.Click += BtnNext_Click;
-            //btnPrev.Click += BtnPrev_Click;
             btnKembali.Click += BtnKembali_Click;
         }
         public void MuatDanTampilkan(List<Ulasan> daftarUlasan)
         {
             _semuaUlasan = daftarUlasan ?? new List<Ulasan>();
-            //_halamanSaatIni = 1; // Selalu mulai dari halaman pertama
             DisplayAllItems();
         }
         private void DisplayAllItems()
         {
             flowLayoutPanelSemuaUlasan.Controls.Clear();
 
-            // Logika paginasi (.Skip() dan .Take()) dihapus.
-            // Langsung loop melalui semua item.
             if (_semuaUlasan.Any())
             {
                 foreach (var ulasan in _semuaUlasan)
@@ -52,7 +47,6 @@ namespace RUSUNAWAAA.View.Penyewa
                 flowLayoutPanelSemuaUlasan.Controls.Add(lblPesanKosong);
             }
 
-            // Panggilan ke UpdatePagingControls() dihapus.
         }
         private void BtnKembali_Click(object sender, EventArgs e)
         {

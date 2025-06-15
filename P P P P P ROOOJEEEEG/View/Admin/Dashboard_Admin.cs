@@ -40,7 +40,6 @@ namespace RUSUNAWAAA.View.Admin
         }
         private void Dashboard_Admin_Load(object sender, EventArgs e)
         {
-            // Panggil metode untuk memuat semua data ke kartu ringkasan
             LoadRingkasanData();
             LoadLaporanTerbaru();
         }
@@ -72,15 +71,11 @@ namespace RUSUNAWAAA.View.Admin
         {
             try
             {
-                // Ambil semua keluhan, yang sudah diurutkan dari terbaru oleh service
                 var laporanTerbaru = _keluhanService.GetAllKeluhan().FirstOrDefault();
 
-                // Pastikan nama panelnya benar, contoh: panelLaporanTerbaru
                 if (laporanTerbaru != null)
                 {
                     panelLaporanTerbaru.Visible = true;
-                    // Isi kontrol yang sudah ada di desainer
-                    // Pastikan nama kontrolnya cocok: lblNamaPelapor, lblTanggalLaporan, dll.
                     lblNamaPelapor.Text = laporanTerbaru.User?.NamaLengkap ?? "Nama tidak tersedia";
                     lblTanggalLaporan.Text = laporanTerbaru.Tanggal.ToLocalTime().ToString("dd MMMM yyyy");
                     lblIsiLaporan.Text = laporanTerbaru.Isi;
@@ -88,7 +83,6 @@ namespace RUSUNAWAAA.View.Admin
                 }
                 else
                 {
-                    // Jika tidak ada laporan sama sekali, sembunyikan panelnya
                     panelLaporanTerbaru.Visible = false;
                 }
             }

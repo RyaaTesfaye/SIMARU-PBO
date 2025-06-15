@@ -43,9 +43,6 @@ namespace RUSUNAWAAA.View.Admin
                         var itemUc = new UC_ItemVirtualTour();
                         itemUc.SetData(media);
 
-
-                        // itemUc.EditButtonClicked += OnItemEditClicked; 
-
                         flowLayoutPanelMedia.Controls.Add(itemUc);
                     }
                 }

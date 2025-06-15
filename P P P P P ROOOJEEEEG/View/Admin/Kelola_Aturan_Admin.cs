@@ -30,8 +30,6 @@ namespace RUSUNAWAAA.View.Admin
             _aturanService = new AturanService(flowLayoutPanelAturan);
         }
 
-        // Muat dan tampilkan semua data saat form pertama kali dibuka
-
         private void Kelola_Aturan_Admin_Load(object sender, EventArgs e)
         {
             ApplyFilterAndDisplay();
@@ -72,11 +70,9 @@ namespace RUSUNAWAAA.View.Admin
                 _ucTambahAturan = new UC_TambahAturan();
                 _ucTambahAturan.Dock = DockStyle.Fill;
 
-                // "Dengarkan" sinyal dari UC Tambah Aturan
                 _ucTambahAturan.SimpanClicked += UcTambahAturan_SimpanClicked;
                 _ucTambahAturan.BatalClicked += UcTambahAturan_BatalClicked;
 
-                // Tambahkan UC ke form (di atas kontrol lain)
                 this.Controls.Add(_ucTambahAturan);
             }
 
@@ -85,7 +81,6 @@ namespace RUSUNAWAAA.View.Admin
         }
         private void UcTambahAturan_BatalClicked(object sender, EventArgs e)
         {
-            // Cukup sembunyikan form tambah jika dibatalkan
             if (_ucTambahAturan != null)
             {
                 _ucTambahAturan.Visible = false;

@@ -50,7 +50,6 @@ namespace RUSUNAWAAA.View.Admin
                 }
                 else
                 {
-                    // Tampilkan pesan jika tidak ada data
                 }
             }
             catch (Exception ex)

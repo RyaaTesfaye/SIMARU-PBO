@@ -13,20 +13,20 @@ namespace RUSUNAWAAA.Service
 {
     public class AuthService
     {
-        public User Login(string username, string password)
-        {
-            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
+            public User Login(string username, string password)
             {
-                return null;
-            }
+                if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
+                {
+                    return null;
+                }
 
-            using (var context = new ApplicationDbContext())
-            {
-                var user = context.Users.FirstOrDefault(u => u.Username == username && u.Password == password);
+                using (var context = new ApplicationDbContext())
+                {
+                    var user = context.Users.FirstOrDefault(u => u.Username == username && u.Password == password);
 
-                return user;
+                    return user;
+                }
             }
-        }
         public bool CheckUserAccountDetails(string noHp, string username, string nik, string namaOrangTua)
         {
             if (string.IsNullOrWhiteSpace(noHp) ||
@@ -48,7 +48,6 @@ namespace RUSUNAWAAA.Service
                 return penyewa != null;
             }
         }
-        // In AuthService.cs
         public bool UpdatePassword(string identifierNIK, string newPassword)
         {
             if (string.IsNullOrWhiteSpace(identifierNIK) || string.IsNullOrWhiteSpace(newPassword))

@@ -36,52 +36,6 @@ namespace RUSUNAWAAA.View.Admin
             UIhelper.MakePanelRound(panel10, 20);
             UIhelper.MakePanelRound(panel11, 20);
         }
-
-        private void ToDashboard_AD(object sender, EventArgs e)
-        {
-            var command = new NavigateToFormCommand<Dashboard_Admin>(this);
-            command.Execute();
-        }
-
-        private void ToPengelolaAkun_AD(object sender, EventArgs e)
-        {
-            var command = new NavigateToFormCommand<Pengelolaan_Akun_Admin>(this);
-            command.Execute();
-        }
-
-  
-
-        private void ToDaftarKeluhan_AD(object sender, EventArgs e)
-        {
-            var command = new NavigateToFormCommand<Daftar_Keluhan_Admin>(this);
-            command.Execute();
-        }
-
-        private void ToTinjauUlasan_AD(object sender, EventArgs e)
-        {
-            var command = new NavigateToFormCommand<Tinjau_Ulasan_Admin>(this);
-            command.Execute();
-        }
-
-        private void ToKelolaAturan_AD(object sender, EventArgs e)
-        {
-            var command = new NavigateToFormCommand<Kelola_Aturan_Admin>(this);
-            command.Execute();
-        }
-
-        private void ToEditVirtualTour_AD(object sender, EventArgs e)
-        {
-            var command = new NavigateToFormCommand<Edit_Virtual_Tour_Admin>(this);
-            command.Execute();
-        }
-
-
-
-        private void panel10_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void Manajemen_Sewa_Admin_Load(object sender, EventArgs e)
         {
             _semuaPengajuan = _pengajuanService.GetAllPendingApplications();
@@ -205,6 +159,54 @@ namespace RUSUNAWAAA.View.Admin
 
             Manajemen_Sewa_Admin_Load(this, EventArgs.Empty);
         }
+
+        private void ToDashboard_AD(object sender, EventArgs e)
+        {
+            var command = new NavigateToFormCommand<Dashboard_Admin>(this);
+            command.Execute();
+        }
+
+        private void ToPengelolaAkun_AD(object sender, EventArgs e)
+        {
+            var command = new NavigateToFormCommand<Pengelolaan_Akun_Admin>(this);
+            command.Execute();
+        }
+
+  
+
+        private void ToDaftarKeluhan_AD(object sender, EventArgs e)
+        {
+            var command = new NavigateToFormCommand<Daftar_Keluhan_Admin>(this);
+            command.Execute();
+        }
+
+        private void ToTinjauUlasan_AD(object sender, EventArgs e)
+        {
+            var command = new NavigateToFormCommand<Tinjau_Ulasan_Admin>(this);
+            command.Execute();
+        }
+
+        private void ToKelolaAturan_AD(object sender, EventArgs e)
+        {
+            var command = new NavigateToFormCommand<Kelola_Aturan_Admin>(this);
+            command.Execute();
+        }
+
+        private void ToEditVirtualTour_AD(object sender, EventArgs e)
+        {
+            var command = new NavigateToFormCommand<Edit_Virtual_Tour_Admin>(this);
+            command.Execute();
+        }
+
+
+
+        private void panel10_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+      
+        
         private void btnTipePengajuan_Click(object sender, EventArgs e)
         {
             _tipeTampilan = "Pengajuan";
