@@ -38,13 +38,13 @@
             panel17 = new Panel();
             pictureBox12 = new PictureBox();
             label8 = new Label();
-            label9 = new Label();
-            label19 = new Label();
+            lblNomorNaraPutri = new Label();
+            lblNamaNaraPutri = new Label();
             label21 = new Label();
             label22 = new Label();
             label23 = new Label();
             label24 = new Label();
-            linkLabel1 = new LinkLabel();
+            linkLokasiPutri = new LinkLabel();
             label25 = new Label();
             label27 = new Label();
             pictureBox13 = new PictureBox();
@@ -55,8 +55,8 @@
             panel15 = new Panel();
             pictureBox8 = new PictureBox();
             label18 = new Label();
-            label17 = new Label();
-            label16 = new Label();
+            lblNomorNaraPutra = new Label();
+            lblNamaNaraPutra = new Label();
             label15 = new Label();
             label14 = new Label();
             label7 = new Label();
@@ -165,13 +165,13 @@
             panel13.Controls.Add(panel14);
             panel13.Controls.Add(panel17);
             panel13.Controls.Add(label8);
-            panel13.Controls.Add(label9);
-            panel13.Controls.Add(label19);
+            panel13.Controls.Add(lblNomorNaraPutri);
+            panel13.Controls.Add(lblNamaNaraPutri);
             panel13.Controls.Add(label21);
             panel13.Controls.Add(label22);
             panel13.Controls.Add(label23);
             panel13.Controls.Add(label24);
-            panel13.Controls.Add(linkLabel1);
+            panel13.Controls.Add(linkLokasiPutri);
             panel13.Controls.Add(label25);
             panel13.Controls.Add(label27);
             panel13.Location = new Point(23, 224);
@@ -228,27 +228,27 @@
             label8.TabIndex = 19;
             label8.Text = "Lokasi";
             // 
-            // label9
+            // lblNomorNaraPutri
             // 
-            label9.BackColor = Color.Transparent;
-            label9.Font = new Font("Inter", 9F);
-            label9.ForeColor = Color.White;
-            label9.Location = new Point(93, 284);
-            label9.Name = "label9";
-            label9.Size = new Size(149, 21);
-            label9.TabIndex = 18;
-            label9.Text = "081456789877";
+            lblNomorNaraPutri.BackColor = Color.Transparent;
+            lblNomorNaraPutri.Font = new Font("Inter", 9F);
+            lblNomorNaraPutri.ForeColor = Color.White;
+            lblNomorNaraPutri.Location = new Point(93, 284);
+            lblNomorNaraPutri.Name = "lblNomorNaraPutri";
+            lblNomorNaraPutri.Size = new Size(149, 21);
+            lblNomorNaraPutri.TabIndex = 18;
+            lblNomorNaraPutri.Text = "081456789877";
             // 
-            // label19
+            // lblNamaNaraPutri
             // 
-            label19.BackColor = Color.Transparent;
-            label19.Font = new Font("Inter", 9F);
-            label19.ForeColor = Color.White;
-            label19.Location = new Point(93, 260);
-            label19.Name = "label19";
-            label19.Size = new Size(149, 21);
-            label19.TabIndex = 17;
-            label19.Text = "Almadita Dwi";
+            lblNamaNaraPutri.BackColor = Color.Transparent;
+            lblNamaNaraPutri.Font = new Font("Inter", 9F);
+            lblNamaNaraPutri.ForeColor = Color.White;
+            lblNamaNaraPutri.Location = new Point(93, 260);
+            lblNamaNaraPutri.Name = "lblNamaNaraPutri";
+            lblNamaNaraPutri.Size = new Size(149, 21);
+            lblNamaNaraPutri.TabIndex = 17;
+            lblNamaNaraPutri.Text = "Almadita Dwi";
             // 
             // label21
             // 
@@ -295,21 +295,22 @@
             label24.Text = resources.GetString("label24.Text");
             label24.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // linkLabel1
+            // linkLokasiPutri
             // 
-            linkLabel1.ActiveLinkColor = Color.DarkOrchid;
-            linkLabel1.AutoSize = true;
-            linkLabel1.Font = new Font("Inter", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            linkLabel1.LinkArea = new LinkArea(0, 60);
-            linkLabel1.LinkColor = Color.FromArgb(60, 138, 255);
-            linkLabel1.Location = new Point(60, 352);
-            linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(310, 21);
-            linkLabel1.TabIndex = 12;
-            linkLabel1.TabStop = true;
-            linkLabel1.Text = "https://maps.app.goo.gl/W9zGeU45b4ZdYpzQ6";
-            linkLabel1.UseCompatibleTextRendering = true;
-            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
+            linkLokasiPutri.ActiveLinkColor = Color.DarkOrchid;
+            linkLokasiPutri.AutoSize = true;
+            linkLokasiPutri.Font = new Font("Inter", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            linkLokasiPutri.LinkArea = new LinkArea(0, 60);
+            linkLokasiPutri.LinkColor = Color.FromArgb(60, 138, 255);
+            linkLokasiPutri.Location = new Point(60, 352);
+            linkLokasiPutri.Name = "linkLokasiPutri";
+            linkLokasiPutri.Size = new Size(310, 21);
+            linkLokasiPutri.TabIndex = 12;
+            linkLokasiPutri.TabStop = true;
+            linkLokasiPutri.Tag = "linkLokasiPutri";
+            linkLokasiPutri.Text = "https://maps.app.goo.gl/W9zGeU45b4ZdYpzQ6";
+            linkLokasiPutri.UseCompatibleTextRendering = true;
+            linkLokasiPutri.LinkClicked += linkLabel1_LinkClicked;
             // 
             // label25
             // 
@@ -360,8 +361,8 @@
             panel11.Controls.Add(panel16);
             panel11.Controls.Add(panel15);
             panel11.Controls.Add(label18);
-            panel11.Controls.Add(label17);
-            panel11.Controls.Add(label16);
+            panel11.Controls.Add(lblNomorNaraPutra);
+            panel11.Controls.Add(lblNamaNaraPutra);
             panel11.Controls.Add(label15);
             panel11.Controls.Add(label14);
             panel11.Controls.Add(label7);
@@ -423,27 +424,27 @@
             label18.TabIndex = 19;
             label18.Text = "Lokasi";
             // 
-            // label17
+            // lblNomorNaraPutra
             // 
-            label17.BackColor = Color.Transparent;
-            label17.Font = new Font("Inter", 9F);
-            label17.ForeColor = Color.White;
-            label17.Location = new Point(93, 284);
-            label17.Name = "label17";
-            label17.Size = new Size(149, 21);
-            label17.TabIndex = 18;
-            label17.Text = "081456789877";
+            lblNomorNaraPutra.BackColor = Color.Transparent;
+            lblNomorNaraPutra.Font = new Font("Inter", 9F);
+            lblNomorNaraPutra.ForeColor = Color.White;
+            lblNomorNaraPutra.Location = new Point(93, 284);
+            lblNomorNaraPutra.Name = "lblNomorNaraPutra";
+            lblNomorNaraPutra.Size = new Size(149, 21);
+            lblNomorNaraPutra.TabIndex = 18;
+            lblNomorNaraPutra.Text = "081456789877";
             // 
-            // label16
+            // lblNamaNaraPutra
             // 
-            label16.BackColor = Color.Transparent;
-            label16.Font = new Font("Inter", 9F);
-            label16.ForeColor = Color.White;
-            label16.Location = new Point(93, 260);
-            label16.Name = "label16";
-            label16.Size = new Size(149, 21);
-            label16.TabIndex = 17;
-            label16.Text = "Wilsen Pranowo";
+            lblNamaNaraPutra.BackColor = Color.Transparent;
+            lblNamaNaraPutra.Font = new Font("Inter", 9F);
+            lblNamaNaraPutra.ForeColor = Color.White;
+            lblNamaNaraPutra.Location = new Point(93, 260);
+            lblNamaNaraPutra.Name = "lblNamaNaraPutra";
+            lblNamaNaraPutra.Size = new Size(149, 21);
+            lblNamaNaraPutra.TabIndex = 17;
+            lblNamaNaraPutra.Text = "Wilsen Pranowo";
             // 
             // label15
             // 
@@ -503,6 +504,7 @@
             linkLokasiPutra.Size = new Size(309, 21);
             linkLokasiPutra.TabIndex = 12;
             linkLokasiPutra.TabStop = true;
+            linkLokasiPutra.Tag = "linkLokasiPutra";
             linkLokasiPutra.Text = "https://maps.app.goo.gl/6akmR9Z8Py6W31Bm9";
             linkLokasiPutra.UseCompatibleTextRendering = true;
             linkLokasiPutra.LinkClicked += linkLabel3_LinkClicked;
@@ -966,8 +968,8 @@
         private Label label10;
         private Label label20;
         private Label label7;
-        private Label label17;
-        private Label label16;
+        private Label lblNomorNaraPutra;
+        private Label lblNamaNaraPutra;
         private Label label15;
         private Label label14;
         private Label label18;
@@ -982,13 +984,13 @@
         private Panel panel17;
         private PictureBox pictureBox12;
         private Label label8;
-        private Label label9;
-        private Label label19;
+        private Label lblNomorNaraPutri;
+        private Label lblNamaNaraPutri;
         private Label label21;
         private Label label22;
         private Label label23;
         private Label label24;
-        private LinkLabel linkLabel1;
+        private LinkLabel linkLokasiPutri;
         private Label label25;
         private Label label27;
         private PictureBox pictureBox13;

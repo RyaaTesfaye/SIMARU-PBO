@@ -117,11 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label24.Text" xml:space="preserve">
-    <value>Rusunawa Putri Universitas Jember terletak di area kampus Universitas Jember (UNEJ), dengan lokasi yang strategis dan nyaman bagi mahasiswi. Rusunawa ini berada di dekat Stadion Universitas Jember dan Fakultas keguruan dan Ilmu Pendidikan(FKIP), serta tidak jauh dari Gedung Soetardjo dan perpustakaan pusat. Lingkungannya tenang dan mendukung suasana belajar, dengan akses mudah ke berbagai fasilitas kampus seperti kantin, taman kebangsaan, dan jalur kendaraan umum.</value>
-  </data>
   <data name="label20.Text" xml:space="preserve">
     <value>Rusunawa Putra Universitas Jember terletak di dalam kawasan kampus Universitas Jember (UNEJ). Lokasinya berada tepat di sebelah lapangan Shaun the Sheep dan berbatasan langsung dengan Fakultas Matematika dan Ilmu Pengetahuan Alam (FMIPA). Selain itu, Rusunawa Putra juga cukup dekat dengan berbagai fasilitas kampus lainnya, seperti perpustakaan pusat, Masjid Al-Hikmah, dan area parkir kendaraan mahasiswa, sehingga sangat strategis dan mudah dijangkau oleh para penghuni. Lingkungan di sekitar rusunawa pun tergolong tenang dan asri.</value>
+  </data>
+  <data name="label24.Text" xml:space="preserve">
+    <value>Rusunawa Putri Universitas Jember terletak di area kampus Universitas Jember (UNEJ), dengan lokasi yang strategis dan nyaman bagi mahasiswi. Rusunawa ini berada di dekat Stadion Universitas Jember dan Fakultas keguruan dan Ilmu Pendidikan(FKIP), serta tidak jauh dari Gedung Soetardjo dan perpustakaan pusat. Lingkungannya tenang dan mendukung suasana belajar, dengan akses mudah ke berbagai fasilitas kampus seperti kantin, taman kebangsaan, dan jalur kendaraan umum.</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox9.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

@@ -1,4 +1,6 @@
-﻿using RUSUNAWAAA.Utils;
+﻿using RUSUNAWAAA.Models;
+using RUSUNAWAAA.Service;
+using RUSUNAWAAA.Utils;
 using RUSUNAWAAA.View.Login;
 using System;
 using System.Collections.Generic;
@@ -9,17 +11,50 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using RUSUNAWAAA.Service;
 
 namespace RUSUNAWAAA.View.Umum
 {
     public partial class Kontaklokasi_Umum : Form
     {
+        private readonly KontakService _kontakService;
         public Kontaklokasi_Umum()
         {
             InitializeComponent();
             UIhelper.MakePanelRound(panel9, 20);
             UIhelper.MakePanelRound(panel10, 20);
             UIhelper.MakePanelRound(panel12, 20);
+            _kontakService = new KontakService();
+        }
+        private void Kontaklokasi_Umum_Load(object sender, EventArgs e)
+        {
+            LoadKontakPutra();
+            LoadKontakPutri();
+        }
+        private void LoadKontakPutra()
+        {
+            Kontak dataPutra = _kontakService.GetKontakById(1);
+
+            if (dataPutra != null)
+            {
+                lblNamaNaraPutra.Text = dataPutra.NamaKontak;
+                lblNomorNaraPutra.Text = dataPutra.Telepon;
+
+                linkLokasiPutra.Tag = dataPutra.Lokasi;
+
+            }
+        }
+        private void LoadKontakPutri()
+        {
+            Kontak dataPutri = _kontakService.GetKontakById(2);
+
+            if (dataPutri != null)
+            {
+                lblNamaNaraPutri.Text = dataPutri.NamaKontak;
+                lblNomorNaraPutri.Text = dataPutri.Telepon;
+
+                linkLokasiPutri.Tag = dataPutri.Lokasi;
+            }
         }
 
         private void panel13_Paint(object sender, PaintEventArgs e)

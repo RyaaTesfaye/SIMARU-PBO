@@ -97,14 +97,14 @@
             label18 = new Label();
             panel12 = new Panel();
             label19 = new Label();
-            label9 = new Label();
             panel18 = new Panel();
-            label16 = new Label();
+            lblPenyewaAktif = new Label();
+            label9 = new Label();
             panel11 = new Panel();
             label15 = new Label();
             label8 = new Label();
             panel17 = new Panel();
-            label14 = new Label();
+            lblUserTerdaftar = new Label();
             label6 = new Label();
             panel1.SuspendLayout();
             panel29.SuspendLayout();
@@ -369,9 +369,9 @@
             label3.ForeColor = Color.White;
             label3.Location = new Point(45, 12);
             label3.Name = "label3";
-            label3.Size = new Size(176, 24);
+            label3.Size = new Size(99, 24);
             label3.TabIndex = 4;
-            label3.Text = "Daftar Unit Tersedia";
+            label3.Text = "Daftar Unit";
             label3.Click += ToDaftarUnit_UM;
             // 
             // pictureBox2
@@ -910,8 +910,8 @@
             // 
             panel12.BackColor = Color.FromArgb(23, 24, 30);
             panel12.Controls.Add(label19);
-            panel12.Controls.Add(label9);
             panel12.Controls.Add(panel18);
+            panel12.Controls.Add(label9);
             panel12.Location = new Point(305, 43);
             panel12.Name = "panel12";
             panel12.Size = new Size(255, 235);
@@ -923,44 +923,44 @@
             label19.BackColor = Color.Transparent;
             label19.Font = new Font("Inter", 7.8F);
             label19.ForeColor = Color.FromArgb(139, 140, 142);
-            label19.Location = new Point(53, 140);
+            label19.Location = new Point(57, 143);
             label19.Name = "label19";
-            label19.Size = new Size(142, 18);
-            label19.TabIndex = 7;
-            label19.Text = "Kamar Putri Siap Huni";
+            label19.Size = new Size(143, 18);
+            label19.TabIndex = 9;
+            label19.Text = "Jumlah penyewa aktif";
+            // 
+            // panel18
+            // 
+            panel18.BackColor = Color.FromArgb(37, 39, 48);
+            panel18.Controls.Add(lblPenyewaAktif);
+            panel18.Location = new Point(89, 22);
+            panel18.Name = "panel18";
+            panel18.Size = new Size(70, 70);
+            panel18.TabIndex = 2;
+            // 
+            // lblPenyewaAktif
+            // 
+            lblPenyewaAktif.AutoSize = true;
+            lblPenyewaAktif.BackColor = Color.Transparent;
+            lblPenyewaAktif.Font = new Font("Inter", 18F, FontStyle.Bold);
+            lblPenyewaAktif.ForeColor = Color.White;
+            lblPenyewaAktif.Location = new Point(6, 13);
+            lblPenyewaAktif.Name = "lblPenyewaAktif";
+            lblPenyewaAktif.Size = new Size(59, 43);
+            lblPenyewaAktif.TabIndex = 6;
+            lblPenyewaAktif.Text = "40";
+            lblPenyewaAktif.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label9
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Inter", 11F, FontStyle.Bold);
             label9.ForeColor = Color.White;
-            label9.Location = new Point(26, 102);
+            label9.Location = new Point(56, 105);
             label9.Name = "label9";
-            label9.Size = new Size(206, 27);
-            label9.TabIndex = 5;
-            label9.Text = "Kamar Putri Tersedia";
-            // 
-            // panel18
-            // 
-            panel18.BackColor = Color.FromArgb(37, 39, 48);
-            panel18.Controls.Add(label16);
-            panel18.Location = new Point(89, 22);
-            panel18.Name = "panel18";
-            panel18.Size = new Size(70, 70);
-            panel18.TabIndex = 2;
-            // 
-            // label16
-            // 
-            label16.AutoSize = true;
-            label16.BackColor = Color.Transparent;
-            label16.Font = new Font("Inter", 18F, FontStyle.Bold);
-            label16.ForeColor = Color.White;
-            label16.Location = new Point(6, 13);
-            label16.Name = "label16";
-            label16.Size = new Size(59, 43);
-            label16.TabIndex = 6;
-            label16.Text = "40";
-            label16.TextAlign = ContentAlignment.MiddleCenter;
+            label9.Size = new Size(145, 27);
+            label9.TabIndex = 8;
+            label9.Text = "Penyewa Aktif";
             // 
             // panel11
             // 
@@ -979,44 +979,44 @@
             label15.BackColor = Color.Transparent;
             label15.Font = new Font("Inter", 7.8F);
             label15.ForeColor = Color.FromArgb(139, 140, 142);
-            label15.Location = new Point(51, 140);
+            label15.Location = new Point(42, 143);
             label15.Name = "label15";
-            label15.Size = new Size(146, 18);
-            label15.TabIndex = 6;
-            label15.Text = "Kamar Putra Siap Huni";
+            label15.Size = new Size(171, 18);
+            label15.TabIndex = 8;
+            label15.Text = "Jumlah total user terdaftar";
             // 
             // label8
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Inter", 11F, FontStyle.Bold);
             label8.ForeColor = Color.White;
-            label8.Location = new Point(19, 102);
+            label8.Location = new Point(56, 105);
             label8.Name = "label8";
-            label8.Size = new Size(212, 27);
-            label8.TabIndex = 5;
-            label8.Text = "Kamar Putra Tersedia";
+            label8.Size = new Size(147, 27);
+            label8.TabIndex = 7;
+            label8.Text = "User Terdaftar";
             // 
             // panel17
             // 
             panel17.BackColor = Color.FromArgb(37, 39, 48);
-            panel17.Controls.Add(label14);
+            panel17.Controls.Add(lblUserTerdaftar);
             panel17.Location = new Point(89, 22);
             panel17.Name = "panel17";
             panel17.Size = new Size(70, 70);
             panel17.TabIndex = 2;
             // 
-            // label14
+            // lblUserTerdaftar
             // 
-            label14.AutoSize = true;
-            label14.BackColor = Color.Transparent;
-            label14.Font = new Font("Inter", 18F, FontStyle.Bold);
-            label14.ForeColor = Color.White;
-            label14.Location = new Point(6, 13);
-            label14.Name = "label14";
-            label14.Size = new Size(58, 43);
-            label14.TabIndex = 5;
-            label14.Text = "30";
-            label14.TextAlign = ContentAlignment.MiddleCenter;
+            lblUserTerdaftar.AutoSize = true;
+            lblUserTerdaftar.BackColor = Color.Transparent;
+            lblUserTerdaftar.Font = new Font("Inter", 18F, FontStyle.Bold);
+            lblUserTerdaftar.ForeColor = Color.White;
+            lblUserTerdaftar.Location = new Point(6, 13);
+            lblUserTerdaftar.Name = "lblUserTerdaftar";
+            lblUserTerdaftar.Size = new Size(58, 43);
+            lblUserTerdaftar.TabIndex = 5;
+            lblUserTerdaftar.Text = "30";
+            lblUserTerdaftar.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label6
             // 
@@ -1153,15 +1153,11 @@
         private Panel panel20;
         private Label label18;
         private Panel panel12;
-        private Label label19;
-        private Label label9;
         private Panel panel18;
-        private Label label16;
+        private Label lblPenyewaAktif;
         private Panel panel11;
-        private Label label15;
-        private Label label8;
         private Panel panel17;
-        private Label label14;
+        private Label lblUserTerdaftar;
         private Label label6;
         private Panel panel29;
         private Label label26;
@@ -1185,5 +1181,9 @@
         private Button button5;
         private Panel panel6;
         private PictureBox pictureBox6;
+        private Label label15;
+        private Label label8;
+        private Label label19;
+        private Label label9;
     }
 }

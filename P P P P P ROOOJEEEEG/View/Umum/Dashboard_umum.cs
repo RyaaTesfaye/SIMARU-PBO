@@ -4,6 +4,7 @@ using RUSUNAWAAA.Utils;
 using RUSUNAWAAA.View.Admin;
 using RUSUNAWAAA.View.Login;
 using RUSUNAWAAA.View.Penyewa;
+using RusunawaApp.Data;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +14,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PenyewaModel = RUSUNAWAAA.Models.Penyewa;
 
 namespace RUSUNAWAAA.View.Umum
 {
@@ -56,7 +58,13 @@ namespace RUSUNAWAAA.View.Umum
         {
             try
             {
-                
+                using (var context = new ApplicationDbContext())
+                {
+                    int jumlahPenyewa = context.Users.OfType<PenyewaModel>().Count();
+
+                    lblUserTerdaftar.Text = jumlahPenyewa.ToString();
+                    lblPenyewaAktif.Text = jumlahPenyewa.ToString();
+                }
                 var semuaUlasan = _ulasanService.GetAllUlasan();
                 if (semuaUlasan.Any())
                 {
