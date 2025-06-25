@@ -29,7 +29,7 @@ SIMARU-PBO adalah sistem informasi berbasis desktop yang dibangun dengan C# Wind
 * C#
 * Windows Forms
 * Entity Framework Core
-* SQL Server
+* POSTGRE SQL
 
 ---
 
