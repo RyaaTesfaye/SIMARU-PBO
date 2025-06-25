@@ -56,7 +56,6 @@ namespace RUSUNAWAAA.Service
         private void HandleNextStep(object sender, EventArgs e)
         {
             var currentUc = sender as UserControl;
-            // Panggil SimpanData untuk UC yang sekarang
             if (currentUc is Form_Sewa1 s1) s1.SimpanData(_dataPengajuan);
             if (currentUc is Form_Sewa2 s2) s2.SimpanData(_dataPengajuan);
             if (currentUc is Form_Sewa3 s3)
@@ -65,7 +64,6 @@ namespace RUSUNAWAAA.Service
                 HitungEstimasiBiaya();
             }
 
-            // Tentukan UC berikutnya
             UserControl nextUc = null;
             if (sender is Form_Sewa1) nextUc = new Form_Sewa2();
             else if (sender is Form_Sewa2) nextUc = new Form_Sewa3();
@@ -90,13 +88,7 @@ namespace RUSUNAWAAA.Service
                     context.SaveChanges();
                 }
                 MessageBox.Show("Pengajuan berhasil dikirim!", "Sukses");
-                Form formWizard = _contentPanel.FindForm();
-                if (formWizard != null)
-                {
-                    Dashboard_umum formDashboard = new Dashboard_umum();
-                    formDashboard.FormClosed += (s, args) => formWizard.Close();
-                    formWizard.Hide();
-                }
+                Start();
             }
             catch (Exception ex)
             {

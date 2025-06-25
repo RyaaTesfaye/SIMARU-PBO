@@ -13,5 +13,9 @@ namespace RUSUNAWAAA.Models
         public Admin(string nomorktp, string username, string password, string namaLengkap, string Role) : base(nomorktp, username, password, namaLengkap, "Admin")
         {
         }
+        public override string GetRoleName()
+        {
+            return "Admin";
+        }
     }
 }

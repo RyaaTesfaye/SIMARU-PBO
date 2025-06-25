@@ -1,6 +1,7 @@
 ﻿using RUSUNAWAAA.Service;
 using RUSUNAWAAA.Utils;
 using RUSUNAWAAA.View.Login;
+using RusunawaApp.Data;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,6 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PenyewaModel = RUSUNAWAAA.Models.Penyewa; 
 
 namespace RUSUNAWAAA.View.Penyewa
 {
@@ -25,7 +27,6 @@ namespace RUSUNAWAAA.View.Penyewa
             UIhelper.MakePanelRound(panel10, 20);
             UIhelper.MakePanelRound(panel11, 20);
             UIhelper.MakePanelRound(panel12, 20);
-            UIhelper.MakePanelRound(panel13, 20);
             UIhelper.MakePanelRound(panel14, 20);
             UIhelper.MakePanelRound(panelVirtualTour, 20);
             UIhelper.MakePanelRound(panelSkorUlasan, 20);
@@ -47,7 +48,13 @@ namespace RUSUNAWAAA.View.Penyewa
         {
             try
             {
+                using (var context = new ApplicationDbContext())
+                {
+                    int jumlahPenyewa = context.Users.OfType<PenyewaModel>().Count();
 
+                    lblUserTerdaftar.Text = jumlahPenyewa.ToString();
+                    lblPenyewaAktif.Text = jumlahPenyewa.ToString();
+                }
                 var semuaUlasan = _ulasanService.GetAllUlasan();
                 if (semuaUlasan.Any())
                 {

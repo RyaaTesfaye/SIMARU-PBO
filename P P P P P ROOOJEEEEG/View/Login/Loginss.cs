@@ -13,6 +13,8 @@ using System.Windows.Forms;
 using RUSUNAWAAA.Models;
 using RUSUNAWAAA.Utils;
 using RUSUNAWAAA.View.Umum;
+using AdminModel = RUSUNAWAAA.Models.Admin;
+using PenyewaModel = RUSUNAWAAA.Models.Penyewa;
 
 
 namespace RUSUNAWAAA.View.Login
@@ -53,25 +55,21 @@ namespace RUSUNAWAAA.View.Login
                 if (user != null)
                 {
                     SesiLogin.SetLoggedInUser(user);
-                    MessageBox.Show($"Selamat datang, {user.NamaLengkap}!", "Login Berhasil", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    this.Hide();
+                    string namaPeran = user.GetRoleName();
 
-                    if (user.Role == "Admin")
+                    MessageBox.Show($"Selamat datang, {user.NamaLengkap}! Anda login sebagai {namaPeran}.", "Login Berhasil", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    if (user is AdminModel)
                     {
-                        var dashboardAdmin = new Dashboard_Admin();
-                        dashboardAdmin.ShowDialog();
+                        var command = new NavigateToFormCommand<Dashboard_Admin>(this);
+                        command.Execute();
                     }
-                    else if (user.Role == "Penyewa")
+                    else if (user is PenyewaModel)
                     {
-                        var dashboardPenyewa = new Dashboard_Penyewa();
-                        dashboardPenyewa.ShowDialog();
+                        var command = new NavigateToFormCommand<Dashboard_Penyewa>(this);
+                        command.Execute();
                     }
-                    else
-                    {
-                        MessageBox.Show("Role pengguna tidak dikenal. Aplikasi akan ditutup.", "Error");
-                    }
-                    this.Close();
                 }
                 else
                 {
@@ -108,7 +106,6 @@ namespace RUSUNAWAAA.View.Login
             if (btnLogin != null) btnLogin.Visible = false;
             if (btnLupaPassword != null) btnLupaPassword.Visible = false;
         }
-
         private void ShowAllLoginControls()
         {
             if (textUsername != null) textUsername.Visible = true;

@@ -4049,7 +4049,7 @@
   <data name="pictureBox6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAA+gAAAPoCAYAAABNo9TkAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vwAADr8BOAVTJAAAqTJJREFUeF7s3Qfct+X8//H/3d5pD2U0ZIRKSYSQPSLyQyibMgstexMhEUlWsgqh
+        vgAADr4B6kKxwAAAqTJJREFUeF7s3Qfct+X8//H/3d5pD2U0ZIRKSYSQPSLyQyibMgstexMhEUlWsgqh
         jJLMNGgI7ZJEe+/x+j+Oq7Nb1/u+7vta33Ge3+P1fDw8Hh73dXVd1/d9fI7j/H7P8xj/7/9JkqSeAlYF
         1gc2BZ4APAt4IbAjsBPwduA9wMeAfYEDgUOAHwG/BI4FjgNOAk4F/g6cDVwA/Bu4FLgKuJ55lX8rXyvf
         U763/Dflvy0/o/ys8jPLzy6/o/yu8jvL7y5/Q/lbyt9U/rbyN5a/tfzN5W8vr6G8lvKaymtbNV+3JEmS
@@ -4778,9 +4778,6 @@
     <value>Sudah tiga hari ini air kran di unit A203 bocor terus, walaupun sudah ditutup tetap aja netes. Lantainya jadi sering basah dan bikin agak repot pas beraktivitas. Tolong bisa segera dicek ya, biar nggak makin parah atau ngerusak yang lain.</value>
   </data>
   <metadata name="lblMenungguKonfirmasi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="label29.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="lblPenyewaAktif.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

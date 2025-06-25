@@ -25,6 +25,10 @@ namespace RUSUNAWAAA.Models
         {
 
         }
+        public override string GetRoleName()
+        {
+            return "Penyewa";
+        }
     }
 
 

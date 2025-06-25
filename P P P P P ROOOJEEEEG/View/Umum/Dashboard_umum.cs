@@ -30,14 +30,12 @@ namespace RUSUNAWAAA.View.Umum
             UIhelper.MakePanelRound(panel10, 20);
             UIhelper.MakePanelRound(panel11, 20);
             UIhelper.MakePanelRound(panel12, 20);
-            UIhelper.MakePanelRound(panel13, 20);
             UIhelper.MakePanelRound(panel14, 20);
             UIhelper.MakePanelRound(panelVirtualTour, 20);
             UIhelper.MakePanelRound(panelSkorUlasan, 20);
             UIhelper.MakePanelRound(panel17, 20);
             UIhelper.MakePanelRound(panel18, 20);
             UIhelper.MakePanelRound(panel19, 20);
-            UIhelper.MakePanelRound(panel20, 20);
             UIhelper.MakePanelRound(panel24, 20);
             UIhelper.MakePanelRound(panel25, 20);
             UIhelper.MakePanelRound(panel26, 3);

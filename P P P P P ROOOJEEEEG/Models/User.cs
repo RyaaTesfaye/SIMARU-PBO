@@ -28,5 +28,9 @@ namespace RUSUNAWAAA.Models
             NamaLengkap = namaLengkap;
             Role = role;
         }
+        public virtual string GetRoleName()
+        {
+            return "Pengguna Umum";
+        }
     }
 }

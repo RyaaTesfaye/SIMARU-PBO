@@ -90,11 +90,6 @@
             label10 = new Label();
             panel19 = new Panel();
             lblRating = new Label();
-            panel13 = new Panel();
-            label21 = new Label();
-            label11 = new Label();
-            panel20 = new Panel();
-            label18 = new Label();
             panel12 = new Panel();
             label19 = new Label();
             panel18 = new Panel();
@@ -139,8 +134,6 @@
             panel9.SuspendLayout();
             panel14.SuspendLayout();
             panel19.SuspendLayout();
-            panel13.SuspendLayout();
-            panel20.SuspendLayout();
             panel12.SuspendLayout();
             panel18.SuspendLayout();
             panel11.SuspendLayout();
@@ -775,7 +768,6 @@
             panel9.BackColor = Color.FromArgb(37, 39, 48);
             panel9.Controls.Add(label7);
             panel9.Controls.Add(panel14);
-            panel9.Controls.Add(panel13);
             panel9.Controls.Add(panel12);
             panel9.Controls.Add(panel11);
             panel9.Location = new Point(5, 54);
@@ -849,62 +841,6 @@
             lblRating.TabIndex = 6;
             lblRating.Text = "50";
             lblRating.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // panel13
-            // 
-            panel13.BackColor = Color.FromArgb(23, 24, 30);
-            panel13.Controls.Add(label21);
-            panel13.Controls.Add(label11);
-            panel13.Controls.Add(panel20);
-            panel13.Location = new Point(878, 43);
-            panel13.Name = "panel13";
-            panel13.Size = new Size(255, 235);
-            panel13.TabIndex = 2;
-            // 
-            // label21
-            // 
-            label21.AutoSize = true;
-            label21.BackColor = Color.Transparent;
-            label21.Font = new Font("Inter", 7.8F);
-            label21.ForeColor = Color.FromArgb(139, 140, 142);
-            label21.Location = new Point(45, 140);
-            label21.Name = "label21";
-            label21.Size = new Size(161, 18);
-            label21.TabIndex = 7;
-            label21.Text = "Jumlah Total Unit Rusun ";
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Inter", 11F, FontStyle.Bold);
-            label11.ForeColor = Color.White;
-            label11.Location = new Point(68, 102);
-            label11.Name = "label11";
-            label11.Size = new Size(113, 27);
-            label11.TabIndex = 5;
-            label11.Text = "Unit Rusun";
-            // 
-            // panel20
-            // 
-            panel20.BackColor = Color.FromArgb(37, 39, 48);
-            panel20.Controls.Add(label18);
-            panel20.Location = new Point(89, 22);
-            panel20.Name = "panel20";
-            panel20.Size = new Size(70, 70);
-            panel20.TabIndex = 2;
-            // 
-            // label18
-            // 
-            label18.AutoSize = true;
-            label18.BackColor = Color.Transparent;
-            label18.Font = new Font("Inter", 18F, FontStyle.Bold);
-            label18.ForeColor = Color.White;
-            label18.Location = new Point(6, 13);
-            label18.Name = "label18";
-            label18.Size = new Size(58, 43);
-            label18.TabIndex = 6;
-            label18.Text = "50";
-            label18.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // panel12
             // 
@@ -1091,10 +1027,6 @@
             panel14.PerformLayout();
             panel19.ResumeLayout(false);
             panel19.PerformLayout();
-            panel13.ResumeLayout(false);
-            panel13.PerformLayout();
-            panel20.ResumeLayout(false);
-            panel20.PerformLayout();
             panel12.ResumeLayout(false);
             panel12.PerformLayout();
             panel18.ResumeLayout(false);
@@ -1147,11 +1079,6 @@
         private Label label10;
         private Panel panel19;
         private Label lblRating;
-        private Panel panel13;
-        private Label label21;
-        private Label label11;
-        private Panel panel20;
-        private Label label18;
         private Panel panel12;
         private Panel panel18;
         private Label lblPenyewaAktif;

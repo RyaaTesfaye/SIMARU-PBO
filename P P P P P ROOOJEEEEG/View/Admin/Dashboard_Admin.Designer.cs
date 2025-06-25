@@ -70,13 +70,6 @@ namespace RUSUNAWAAA.View.Admin
             pictureBox6 = new PictureBox();
             panel8 = new Panel();
             panel10 = new Panel();
-            panel24 = new Panel();
-            panel27 = new Panel();
-            pictureBox15 = new PictureBox();
-            panel26 = new Panel();
-            pictureBox14 = new PictureBox();
-            panel25 = new Panel();
-            pictureBox13 = new PictureBox();
             label22 = new Label();
             panel16 = new Panel();
             panelLaporanTerbaru = new Panel();
@@ -93,11 +86,6 @@ namespace RUSUNAWAAA.View.Admin
             label20 = new Label();
             label10 = new Label();
             panel19 = new Panel();
-            panel13 = new Panel();
-            label21 = new Label();
-            label11 = new Label();
-            panel20 = new Panel();
-            label29 = new Label();
             panel12 = new Panel();
             label19 = new Label();
             label9 = new Label();
@@ -136,20 +124,11 @@ namespace RUSUNAWAAA.View.Admin
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel8.SuspendLayout();
             panel10.SuspendLayout();
-            panel24.SuspendLayout();
-            panel27.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox15).BeginInit();
-            panel26.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
-            panel25.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
             panelLaporanTerbaru.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             panel23.SuspendLayout();
             panel9.SuspendLayout();
             panel14.SuspendLayout();
-            panel13.SuspendLayout();
-            panel20.SuspendLayout();
             panel12.SuspendLayout();
             panel18.SuspendLayout();
             panel11.SuspendLayout();
@@ -599,7 +578,6 @@ namespace RUSUNAWAAA.View.Admin
             // panel10
             // 
             panel10.BackColor = Color.FromArgb(37, 39, 48);
-            panel10.Controls.Add(panel24);
             panel10.Controls.Add(label22);
             panel10.Controls.Add(panel16);
             panel10.Controls.Add(panelLaporanTerbaru);
@@ -608,79 +586,6 @@ namespace RUSUNAWAAA.View.Admin
             panel10.Padding = new Padding(50);
             panel10.Size = new Size(1165, 362);
             panel10.TabIndex = 6;
-            // 
-            // panel24
-            // 
-            panel24.BackColor = Color.FromArgb(23, 24, 30);
-            panel24.Controls.Add(panel27);
-            panel24.Controls.Add(panel26);
-            panel24.Controls.Add(panel25);
-            panel24.Location = new Point(1045, 42);
-            panel24.Name = "panel24";
-            panel24.Size = new Size(80, 303);
-            panel24.TabIndex = 8;
-            // 
-            // panel27
-            // 
-            panel27.BackColor = Color.FromArgb(37, 39, 48);
-            panel27.Controls.Add(pictureBox15);
-            panel27.Cursor = Cursors.Hand;
-            panel27.Location = new Point(18, 215);
-            panel27.Name = "panel27";
-            panel27.Size = new Size(45, 45);
-            panel27.TabIndex = 4;
-            // 
-            // pictureBox15
-            // 
-            pictureBox15.BackColor = Color.Transparent;
-            pictureBox15.Image = Properties.Resources.home_trend_up;
-            pictureBox15.Location = new Point(5, 5);
-            pictureBox15.Name = "pictureBox15";
-            pictureBox15.Size = new Size(35, 35);
-            pictureBox15.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox15.TabIndex = 9;
-            pictureBox15.TabStop = false;
-            // 
-            // panel26
-            // 
-            panel26.BackColor = Color.FromArgb(37, 39, 48);
-            panel26.Controls.Add(pictureBox14);
-            panel26.Location = new Point(18, 125);
-            panel26.Name = "panel26";
-            panel26.Size = new Size(45, 45);
-            panel26.TabIndex = 3;
-            // 
-            // pictureBox14
-            // 
-            pictureBox14.BackColor = Color.Transparent;
-            pictureBox14.Cursor = Cursors.Hand;
-            pictureBox14.Image = Properties.Resources.money_recive;
-            pictureBox14.Location = new Point(5, 5);
-            pictureBox14.Name = "pictureBox14";
-            pictureBox14.Size = new Size(35, 35);
-            pictureBox14.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox14.TabIndex = 9;
-            pictureBox14.TabStop = false;
-            // 
-            // panel25
-            // 
-            panel25.BackColor = Color.FromArgb(37, 39, 48);
-            panel25.Controls.Add(pictureBox13);
-            panel25.Location = new Point(18, 35);
-            panel25.Name = "panel25";
-            panel25.Size = new Size(45, 45);
-            panel25.TabIndex = 2;
-            // 
-            // pictureBox13
-            // 
-            pictureBox13.BackColor = Color.Transparent;
-            pictureBox13.Image = Properties.Resources.user_cirlce_add;
-            pictureBox13.Location = new Point(5, 5);
-            pictureBox13.Name = "pictureBox13";
-            pictureBox13.Size = new Size(35, 35);
-            pictureBox13.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox13.TabIndex = 8;
-            pictureBox13.TabStop = false;
             // 
             // label22
             // 
@@ -698,7 +603,7 @@ namespace RUSUNAWAAA.View.Admin
             panel16.BackColor = Color.FromArgb(23, 24, 30);
             panel16.Location = new Point(305, 42);
             panel16.Name = "panel16";
-            panel16.Size = new Size(734, 303);
+            panel16.Size = new Size(833, 303);
             panel16.TabIndex = 2;
             // 
             // panelLaporanTerbaru
@@ -786,7 +691,6 @@ namespace RUSUNAWAAA.View.Admin
             panel9.BackColor = Color.FromArgb(37, 39, 48);
             panel9.Controls.Add(label7);
             panel9.Controls.Add(panel14);
-            panel9.Controls.Add(panel13);
             panel9.Controls.Add(panel12);
             panel9.Controls.Add(panel11);
             panel9.Location = new Point(5, 54);
@@ -861,64 +765,6 @@ namespace RUSUNAWAAA.View.Admin
             panel19.Name = "panel19";
             panel19.Size = new Size(70, 70);
             panel19.TabIndex = 2;
-            // 
-            // panel13
-            // 
-            panel13.BackColor = Color.FromArgb(23, 24, 30);
-            panel13.Controls.Add(label21);
-            panel13.Controls.Add(label11);
-            panel13.Controls.Add(panel20);
-            panel13.Location = new Point(878, 43);
-            panel13.Name = "panel13";
-            panel13.Size = new Size(255, 235);
-            panel13.TabIndex = 2;
-            // 
-            // label21
-            // 
-            label21.AutoSize = true;
-            label21.BackColor = Color.Transparent;
-            label21.Font = new Font("Inter", 7.8F);
-            label21.ForeColor = Color.FromArgb(139, 140, 142);
-            label21.Location = new Point(45, 140);
-            label21.Name = "label21";
-            label21.Size = new Size(161, 18);
-            label21.TabIndex = 7;
-            label21.Text = "Jumlah Total Unit Rusun ";
-            label21.Click += label21_Click;
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Inter", 11F, FontStyle.Bold);
-            label11.ForeColor = Color.White;
-            label11.Location = new Point(68, 102);
-            label11.Name = "label11";
-            label11.Size = new Size(113, 27);
-            label11.TabIndex = 5;
-            label11.Text = "Unit Rusun";
-            // 
-            // panel20
-            // 
-            panel20.BackColor = Color.FromArgb(37, 39, 48);
-            panel20.Controls.Add(label29);
-            panel20.Location = new Point(89, 22);
-            panel20.Name = "panel20";
-            panel20.Size = new Size(70, 70);
-            panel20.TabIndex = 2;
-            // 
-            // label29
-            // 
-            label29.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            label29.AutoSize = true;
-            label29.BackColor = Color.Transparent;
-            label29.Font = new Font("Inter", 18F, FontStyle.Bold);
-            label29.ForeColor = Color.White;
-            label29.Location = new Point(7, 13);
-            label29.Name = "label29";
-            label29.Size = new Size(58, 43);
-            label29.TabIndex = 7;
-            label29.Text = "50";
-            label29.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // panel12
             // 
@@ -1099,13 +945,6 @@ namespace RUSUNAWAAA.View.Admin
             panel8.PerformLayout();
             panel10.ResumeLayout(false);
             panel10.PerformLayout();
-            panel24.ResumeLayout(false);
-            panel27.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox15).EndInit();
-            panel26.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
-            panel25.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
             panelLaporanTerbaru.ResumeLayout(false);
             panelLaporanTerbaru.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
@@ -1114,10 +953,6 @@ namespace RUSUNAWAAA.View.Admin
             panel9.PerformLayout();
             panel14.ResumeLayout(false);
             panel14.PerformLayout();
-            panel13.ResumeLayout(false);
-            panel13.PerformLayout();
-            panel20.ResumeLayout(false);
-            panel20.PerformLayout();
             panel12.ResumeLayout(false);
             panel12.PerformLayout();
             panel18.ResumeLayout(false);
@@ -1152,18 +987,15 @@ namespace RUSUNAWAAA.View.Admin
         private Panel panel9;
         private Panel panel10;
         private Panel panel14;
-        private Panel panel13;
         private Panel panel12;
         private Panel panel11;
         private Panel panel16;
         private Panel panelLaporanTerbaru;
         private Panel panel19;
-        private Panel panel20;
         private Panel panel18;
         private Panel panel17;
         private Label label7;
         private Label label10;
-        private Label label11;
         private Label label9;
         private Label label8;
         private PictureBox pictureBox9;
@@ -1175,7 +1007,6 @@ namespace RUSUNAWAAA.View.Admin
         private PictureBox pictureBox1;
         private Label label15;
         private Label label20;
-        private Label label21;
         private Label label19;
         private Label label22;
         private Panel panel23;
@@ -1184,17 +1015,9 @@ namespace RUSUNAWAAA.View.Admin
         private Label lblTanggalLaporan;
         private PictureBox pictureBox12;
         private Label lblIsiLaporan;
-        private Panel panel24;
-        private Panel panel27;
-        private Panel panel26;
-        private Panel panel25;
         private Button button2;
-        private PictureBox pictureBox15;
-        private PictureBox pictureBox14;
-        private PictureBox pictureBox13;
         private Panel panel28;
         private Label lblMenungguKonfirmasi;
-        private Label label29;
         private Label lblPenyewaAktif;
         private Label lblUserTerdaftar;
         private Panel panel29;
